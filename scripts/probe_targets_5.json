@@ -1,0 +1,22 @@
+[
+  ["lp_cargo_nowhere", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&limit=10&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_cargo_where_str", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=Tournament%3D%22LCK%202026%20Season%20Play-In%22&limit=10&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_cargo_holds", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%20HOLDS%20%222026-10%22&limit=10&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_cargo_teams_table", "https://lol.fandom.com/api.php?action=cargoquery&tables=Teams&fields=Name,Region&limit=5&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_revisions_team", "https://lol.fandom.com/api.php?action=query&prop=revisions&titles=Solid%20Gaming&rvprop=content&rvslots=main&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_parse_team", "https://lol.fandom.com/api.php?action=parse&page=Solid%20Gaming&prop=wikitext&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_parse_tournament", "https://lol.fandom.com/api.php?action=parse&page=Komplettligaen/2026%20Autumn&prop=wikitext&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_query_team_titles", "https://lol.fandom.com/api.php?action=query&titles=Solid%20Gaming|Mind%20Blue%20eSports|LAST%20DANCE&redirects=1&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+
+  ["bo3_api_events", "https://api.bo3.gg/api/v1/ll/matches/finished", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", "Referer": "https://bo3.gg/"}],
+  ["bo3_api_alt", "https://bo3.gg/api/ll/matches/finished", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"}],
+  ["bo3_page_data", "https://bo3.gg/ll/matches/finished", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"}],
+
+  ["oe_bucket_a", "https://oracleselixir-tools.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+  ["oe_bucket_b", "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir_20250715.csv", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+  ["oe_bucket_c", "https://oracleselixir.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=50", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+  ["oe_site", "https://oracleselixir.com/tools/downloads", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+
+  ["golgg_team_matchlist", "https://gol.gg/teams/team-matchlist/3108/split-ALL/tournament-ALL/", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["golgg_tournament_list_json", "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}]
+]
