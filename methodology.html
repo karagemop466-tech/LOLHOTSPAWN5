@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology · Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Independent win probabilities and picks for every League of Legends match listed on Hotspawn Play pick'ems.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LoL</span>
+      <span class="brand-text">Hotspawn LoL Pick Desk</span>
+    </a>
+    <div class="fresh">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Updated <time datetime="2026-10-21T20:36:05Z">2026-10-21 20:36:05 UTC</time></span>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink active" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
+</header>
+<main id="main">
+<section class="panel pad">
+  <h1>Methodology</h1>
+  <p class="lede small">How each number on this site is produced, in the order it is applied.</p>
+
+  <h2>1. Fixture inventory</h2>
+  <p>The match list is taken from <a href="https://play.hotspawn.com/lol-pickems">play.hotspawn.com/lol-pickems</a>.
+  That page is an Angular server-rendered app; the complete board is embedded in its
+  <code>ng-state</code> transfer-state script. We parse that payload directly, which is why the
+  inventory is the full 264 fixtures rather than the first page of a rendered list.
+  Fields taken verbatim: match id, tournament, tier, stage, start time, lock time, both team names,
+  their Hotspawn pick share, and the link to the Hotspawn match page.</p>
+
+  <h2>2. External market lines</h2>
+  <p>We query Pinnacle's guest API for every league whose name contains
+  <em>League of Legends</em>, take the period-0 <code>moneyline</code> market, and convert American
+  odds to implied probability:</p>
+  <pre>p = 100 / (price + 100)        if price &gt; 0
+p = -price / (-price + 100)    if price &lt; 0</pre>
+  <p>Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
+  de-vigged proportionally:</p>
+  <pre>p_no_vig(a) = p(a) / (p(a) + p(b))</pre>
+  <p>A Hotspawn fixture only takes a market price when <strong>both</strong> team names match the
+  Pinnacle matchup and the two start times agree within 8.0 hours.
+  Any partial match is discarded — a wrong join is worse than no join.</p>
+
+  <h2>3. Our own Elo model</h2>
+  <p>For fixtures no bookmaker prices, we rate teams ourselves from
+  <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule">Leaguepedia's
+  MatchSchedule</a> results, walking matches in chronological order:</p>
+  <pre>E(a)       = 1 / (1 + 10^((Rb - Ra) / 400))
+Ra'        = Ra + K · (S(a) - E(a))
+K          = {'1': 20.0, '2': 24.0, '3': 28.0, '5': 36.0} by series length (BestOf)
+decay      = 0.5 ^ (days_since_last_match / 365)
+R_effective = 1500 + (R - 1500) · n / (n + 8)</pre>
+  <p>New teams move faster (K is multiplied by 1.6 until they have 10 results), inactive teams drift
+  back toward the mean, and small samples are shrunk toward 1500 so a
+  2-match team cannot produce a 95% probability. The probability we publish is
+  <code>E(a)</code> at the shrunk ratings.</p>
+
+  <h2>4. Confidence tiers</h2>
+  <div class="tablewrap">
+    <table class="data">
+      <thead><tr><th>Tier</th><th>Rule</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td data-l="Tier">Market-priced</td><td data-l="Rule">A matched Pinnacle moneyline</td>
+            <td data-l="Meaning">External price; strongest evidence on the site.</td></tr>
+        <tr><td data-l="Tier">High</td><td data-l="Rule">Both teams ≥ 20 rated results</td>
+            <td data-l="Meaning">Model has a solid sample.</td></tr>
+        <tr><td data-l="Tier">Medium</td><td data-l="Rule">Both teams ≥ 8</td>
+            <td data-l="Meaning">Reasonable, watch for roster churn.</td></tr>
+        <tr><td data-l="Tier">Low</td><td data-l="Rule">Both teams ≥ 3</td>
+            <td data-l="Meaning">Thin sample; treat as indicative only.</td></tr>
+        <tr><td data-l="Tier">Insufficient data</td><td data-l="Rule">A team has &lt; 3</td>
+            <td data-l="Meaning">No pick is published unless a market exists.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>5. What we deliberately do not do</h2>
+  <ul class="reasons">
+    <li><strong>We never use Hotspawn's "picked %" as a probability.</strong> It measures how other
+      users voted, not how likely a team is to win. It is shown for transparency only.</li>
+    <li><strong>We never invent a price.</strong> If no book quotes a match, the model is labelled as
+      a model, not dressed up as a market.</li>
+    <li><strong>We never backfill a missing value.</strong> Blank stays blank and is published on the
+      <a href="review.html">Flagged for review</a> page.</li>
+    <li><strong>We do not use Polymarket or Kalshi per-match prices</strong> in this snapshot, because
+      neither had a live market for the fixtures in the board (see the
+      <a href="unresolved.html">Unresolved page</a>).</li>
+  </ul>
+
+  <h2>6. Refresh cadence</h2>
+  <p>A GitHub Actions workflow re-runs the whole pipeline on a 4-hour schedule and redeploys this
+  site, so the board follows Hotspawn's own updates without manual input. Every snapshot carries the
+  collection timestamp shown in the header.</p>
+</section>
+</main>
+<footer class="footer">
+  <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
+  <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
+     (collected 2026-10-21 20:24:40 UTC). Probabilities: external sportsbook lines where available,
+     otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
+  <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
