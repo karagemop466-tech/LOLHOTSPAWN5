@@ -1,11 +1,15 @@
 {
- "generated_at": "2026-10-21T20:16:23.617204+00:00",
- "lobby": "https://play.hotspawn.com/lol-pickems",
- "lobby_http": 200,
- "lobby_bytes": 1985584,
- "parser": "html-token-stream",
- "matches_parsed": 195,
- "polymarket_markets": 1573,
- "oddspapi_fixtures_priced": 0,
- "elo_teams": 253
+  "generated_at": "2026-10-21T20:24:19.041923+00:00",
+  "lobbies": [
+    "https://play.hotspawn.com/lol-pickems",
+    "https://play.hotspawn.com/lobby"
+  ],
+  "lobby_http": 200,
+  "lobby_bytes": 1985584,
+  "active_lobby": "https://play.hotspawn.com/lol-pickems",
+  "parser": "html-token-stream",
+  "matches_parsed": 195,
+  "polymarket_markets": 2154,
+  "oddspapi_fixtures_priced": 0,
+  "elo_teams": 0
 }
