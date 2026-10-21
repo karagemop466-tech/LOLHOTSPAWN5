@@ -18,7 +18,8 @@ import time
 import urllib.error
 import urllib.request
 
-OUT_DIR = os.path.join(os.path.dirname(__.path__), "evidence", "raw")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_DIR = os.path.join(REPO_ROOT, "evidence", "raw")
 MAX_BYTES = 12 * 1024 * 1024
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 
@@ -109,7 +110,7 @@ def fetch(name: str, url: str, extra_headers: dict[str, str]) -> dict:
             path = os.path.join(OUT_DIR, name + suffix)
             with open(path, "wb") as fh:
                 fh.write(body)
-            record["file"] = os.path.relpath(path, os.path.dirname(os.path.dirname(OUT_DIR)))
+            record["file"] = os.path.relpath(path, REPO_ROOT)
             record["sample"] = body[:400].decode("utf-8", "replace")
     except urllib.error.HTTPError as exc:
         body = exc.read(2000)
@@ -130,7 +131,7 @@ def main() -> int:
         print(f"{name:38s} status={rec.get('status')} bytes={rec.get('bytes', 0)} {rec.get('error', '')}")
         sys.stdout.flush()
         time.sleep(0.7)
-    manifest = os.path.join(os.path.dirname(OUT_DIR), "probe_manifest.json")
+    manifest = os.path.join(REPO_ROOT, "evidence", "probe_manifest.json")
     with open(manifest, "w", encoding="utf-8") as fh:
         json.dump({"generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "targets": records},
                   fh, indent=2)
