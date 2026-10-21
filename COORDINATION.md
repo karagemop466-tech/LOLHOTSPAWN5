@@ -266,3 +266,23 @@ Claimed rows are done. Result of the lift (pipeline run 39678069533, published 2
 6. `.github/workflows/update.yml`: push trigger also on this integration branch (scoped to this session's branch so parallel sessions' pushes cannot trigger duplicate runs).
 
 **PR record (coverage lift):** PR #11 - https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/11 (arena/1e8f1e2e-lolhotspawn5 -> main). Merge commit recorded below after merge.
+
+<!-- record kept from main@8f9b222 (session 074eaec9, merged while this PR was open) -->
+### Publication record — correction pass
+
+| PR | Purpose | Result |
+|---|---|---|
+| [#8](https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/8) | Blank undefendable picks, publication gate, per-row evidence links, Kalshi correction | **Merged** into `main` (`--squash`, `921e30a`) |
+
+- **Deploy:** `pages build and deployment` for `921e30a` → `success`. Live
+  `unresolved.html` was fetched back over HTTPS and shows **110 / 69 / 41 / 145** with every row's
+  limitation, remedy and source — i.e. the rebuilt site, not the pre-fix one.
+- **Automation proof with the new gate:** the merge triggered `update-picks` (run `39673902636`,
+  `success`) end to end: collect Hotspawn → collect lines → collect results → build model →
+  **Enforce publication invariants (success)** → build site → check links → publish
+  (`43b4dc8 data: scheduled refresh 2026-10-21T20:52Z`). The gate therefore runs inside the real
+  pipeline, not only locally.
+- **Post-refresh audit of the committed data** (`data/picks.json` at `43b4dc8`): 264 rows,
+  9 market / 145 model / 110 unresolved, `0` rows with a pick and `confidence=insufficient`,
+  `0` picks on past-kickoff rows, `0` model rows missing evidence links,
+  `data/invariants.json` → `pass`, 0 errors.
