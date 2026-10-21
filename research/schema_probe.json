@@ -1,0 +1,78 @@
+{
+ "schema_status": 403,
+ "schema_bytes": 5742,
+ "fields_found": [],
+ "fields_count": 0,
+ "field_tests": [
+  {
+   "fields": [
+    "Team1",
+    "Team2",
+    "Winner",
+    "DateTime_UTC"
+   ],
+   "status": 200,
+   "ok": true,
+   "snippet": "[\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"DateTime UTC__precision\": 0\n    },\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"Da"
+  },
+  {
+   "fields": [
+    "Team1",
+    "Team2",
+    "Winner",
+    "DateTime_UTC",
+    "BestOf"
+   ],
+   "status": 200,
+   "ok": true,
+   "snippet": "[\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"BestOf\": 3,\n        \"DateTime UTC__precision\": 0\n    },\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winne"
+  },
+  {
+   "fields": [
+    "OverviewPage",
+    "Team1",
+    "Team2",
+    "Winner",
+    "DateTime_UTC",
+    "BestOf"
+   ],
+   "status": 200,
+   "ok": true,
+   "snippet": "[\n    {\n        \"OverviewPage\": \"RIVALS LEAGUE\\/2026 Season\\/Season 2 Playoffs\",\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"BestOf\": 3,\n        \"DateTime UTC__precision\": 0\n  "
+  },
+  {
+   "fields": [
+    "OverviewPage",
+    "Team1",
+    "Team2",
+    "Winner",
+    "DateTime_UTC",
+    "BestOf",
+    "MatchId",
+    "Tab"
+   ],
+   "status": 200,
+   "ok": true,
+   "snippet": "[\n    {\n        \"OverviewPage\": \"RIVALS LEAGUE\\/2026 Season\\/Season 2 Playoffs\",\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"BestOf\": 3,\n        \"MatchId\": \"RIVALS LEAGUE\\/2026"
+  },
+  {
+   "fields": [
+    "Team1",
+    "Team2",
+    "Team1Score",
+    "Team2Score",
+    "Winner",
+    "DateTime_UTC",
+    "BestOf"
+   ],
+   "status": 200,
+   "ok": true,
+   "snippet": "[\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Team1Score\": null,\n        \"Team2Score\": null,\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"BestOf\": 3,\n        \"DateTime UTC__precision\": 0\n    },\n    {\n      "
+  }
+ ],
+ "dated_query": {
+  "status": 200,
+  "bytes": 4032,
+  "snippet": "[\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-13 17:00:00\",\n        \"BestOf\": 3,\n        \"DateTime UTC__precision\": 0\n    },\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-12-12 17:00:00\",\n        \"BestOf\": 3,\n        \"DateTime UTC__precision\": 0\n    },\n    {\n        \"Team1\": \"TBD\",\n        \"Team2\": \"TBD\",\n        \"Winner\": null,\n        \"DateTime UTC\": \"2026-11-29 17:0"
+ }
+}
