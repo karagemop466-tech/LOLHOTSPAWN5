@@ -1,0 +1,3681 @@
+{
+ "pinnacle": {
+  "sport_list": [
+   {
+    "id": 1,
+    "name": "Badminton",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 2,
+    "name": "Bandy",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 3,
+    "name": "Baseball",
+    "slug": null,
+    "matchupCount": 10,
+    "leagueCount": null
+   },
+   {
+    "id": 4,
+    "name": "Basketball",
+    "slug": null,
+    "matchupCount": 258,
+    "leagueCount": null
+   },
+   {
+    "id": 5,
+    "name": "Beach Volleyball",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 6,
+    "name": "Boxing",
+    "slug": null,
+    "matchupCount": 20,
+    "leagueCount": null
+   },
+   {
+    "id": 7,
+    "name": "Chess",
+    "slug": null,
+    "matchupCount": 1,
+    "leagueCount": null
+   },
+   {
+    "id": 8,
+    "name": "Cricket",
+    "slug": null,
+    "matchupCount": 8,
+    "leagueCount": null
+   },
+   {
+    "id": 9,
+    "name": "Curling",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 10,
+    "name": "Darts",
+    "slug": null,
+    "matchupCount": 16,
+    "leagueCount": null
+   },
+   {
+    "id": 12,
+    "name": "E Sports",
+    "slug": null,
+    "matchupCount": 43,
+    "leagueCount": null
+   },
+   {
+    "id": 13,
+    "name": "Field Hockey",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 14,
+    "name": "Floorball",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 15,
+    "name": "Football",
+    "slug": null,
+    "matchupCount": 108,
+    "leagueCount": null
+   },
+   {
+    "id": 16,
+    "name": "Futsal",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 17,
+    "name": "Golf",
+    "slug": null,
+    "matchupCount": 138,
+    "leagueCount": null
+   },
+   {
+    "id": 18,
+    "name": "Handball",
+    "slug": null,
+    "matchupCount": 31,
+    "leagueCount": null
+   },
+   {
+    "id": 19,
+    "name": "Hockey",
+    "slug": null,
+    "matchupCount": 218,
+    "leagueCount": null
+   },
+   {
+    "id": 20,
+    "name": "Horse Racing",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 21,
+    "name": "Lacrosse",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 22,
+    "name": "Mixed Martial Arts",
+    "slug": null,
+    "matchupCount": 22,
+    "leagueCount": null
+   },
+   {
+    "id": 23,
+    "name": "Other Sports",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 24,
+    "name": "Politics",
+    "slug": null,
+    "matchupCount": 7,
+    "leagueCount": null
+   },
+   {
+    "id": 26,
+    "name": "Rugby League",
+    "slug": null,
+    "matchupCount": 1,
+    "leagueCount": null
+   },
+   {
+    "id": 27,
+    "name": "Rugby Union",
+    "slug": null,
+    "matchupCount": 1,
+    "leagueCount": null
+   },
+   {
+    "id": 28,
+    "name": "Snooker",
+    "slug": null,
+    "matchupCount": 5,
+    "leagueCount": null
+   },
+   {
+    "id": 29,
+    "name": "Soccer",
+    "slug": null,
+    "matchupCount": 1059,
+    "leagueCount": null
+   },
+   {
+    "id": 30,
+    "name": "Softball",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 31,
+    "name": "Squash",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 32,
+    "name": "Table Tennis",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 33,
+    "name": "Tennis",
+    "slug": null,
+    "matchupCount": 148,
+    "leagueCount": null
+   },
+   {
+    "id": 34,
+    "name": "Volleyball",
+    "slug": null,
+    "matchupCount": 12,
+    "leagueCount": null
+   },
+   {
+    "id": 36,
+    "name": "Water Polo",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 37,
+    "name": "Padel Tennis",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 39,
+    "name": "Aussie Rules",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 40,
+    "name": "Alpine Skiing",
+    "slug": null,
+    "matchupCount": 20,
+    "leagueCount": null
+   },
+   {
+    "id": 41,
+    "name": "Biathlon",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 42,
+    "name": "Ski Jumping",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 43,
+    "name": "Cross Country",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 44,
+    "name": "Formula 1",
+    "slug": null,
+    "matchupCount": 11,
+    "leagueCount": null
+   },
+   {
+    "id": 45,
+    "name": "Cycling",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 46,
+    "name": "Bobsleigh",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 47,
+    "name": "Figure Skating",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 48,
+    "name": "Freestyle Skiing",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 49,
+    "name": "Luge",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 50,
+    "name": "Nordic Combined",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 51,
+    "name": "Short Track",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 52,
+    "name": "Skeleton",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 53,
+    "name": "Snow Boarding",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 54,
+    "name": "Speed Skating",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 55,
+    "name": "Olympics",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 56,
+    "name": "Athletics",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 57,
+    "name": "Crossfit",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 58,
+    "name": "Entertainment",
+    "slug": null,
+    "matchupCount": 1,
+    "leagueCount": null
+   },
+   {
+    "id": 59,
+    "name": "Archery",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 60,
+    "name": "Drone Racing",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 62,
+    "name": "Poker",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 63,
+    "name": "Motorsport",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 64,
+    "name": "Simulated Games",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 65,
+    "name": "Sumo",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 66,
+    "name": "Slap Fighting",
+    "slug": null,
+    "matchupCount": 8,
+    "leagueCount": null
+   },
+   {
+    "id": 67,
+    "name": "Pickleball",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   },
+   {
+    "id": 68,
+    "name": "Ski Mountaineering",
+    "slug": null,
+    "matchupCount": 0,
+    "leagueCount": null
+   }
+  ],
+  "lol_leagues": [
+   {
+    "sportId": 12,
+    "leagueId": 235322,
+    "name": "CS2 - DACH CS Masters",
+    "matchupCount": 1,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 276139,
+    "name": "CS2 - DraculaN",
+    "matchupCount": 2,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 218605,
+    "name": "Mobile Legends - MPL Philippines",
+    "matchupCount": 1,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 271265,
+    "name": "Rainbow Six - Asia Pacific League - Asia",
+    "matchupCount": 1,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 258576,
+    "name": "CS2 - PGL Masters Bucharest",
+    "matchupCount": 8,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 9587,
+    "name": "League of Legends - World Championship",
+    "matchupCount": 10,
+    "homeTeamType": null,
+    "is_lol": true
+   },
+   {
+    "sportId": 12,
+    "leagueId": 280466,
+    "name": "CS2 - NODWIN Clutch Series",
+    "matchupCount": 1,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 295914,
+    "name": "Rainbow Six - Challenger League",
+    "matchupCount": 4,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 222848,
+    "name": "Valorant - Champions Tour: Game Changers Championship",
+    "matchupCount": 4,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 295831,
+    "name": "Dota 2 - P Universe",
+    "matchupCount": 5,
+    "homeTeamType": null,
+    "is_lol": false
+   },
+   {
+    "sportId": 12,
+    "leagueId": 225201,
+    "name": "League of Legends - EMEA Masters",
+    "matchupCount": 1,
+    "homeTeamType": null,
+    "is_lol": true
+   },
+   {
+    "sportId": 12,
+    "leagueId": 294867,
+    "name": "CS2 - Circuit X Curitiba",
+    "matchupCount": 2,
+    "homeTeamType": null,
+    "is_lol": false
+   }
+  ],
+  "sample_matchups": [
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1638750815,
+    "startTime": "2026-10-23T20:00:00Z",
+    "participants": [
+     "G2",
+     "Dplus KIA"
+    ],
+    "type": "matchup",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-23T20:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 130,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -153,
+        "participantId": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1638750902,
+    "startTime": "2026-10-23T19:00:00Z",
+    "participants": [
+     "Anyone's Legend",
+     "Karmine Corp"
+    ],
+    "type": "matchup",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-23T19:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": -200,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": 167,
+        "participantId": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1637769687,
+    "startTime": "2026-10-18T18:00:00Z",
+    "participants": [
+     "LCK",
+     "LPL",
+     "LEC",
+     "LCS",
+     "CBLOL",
+     "LCP"
+    ],
+    "type": "special",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-22T18:00:00+00:00",
+      "prices": [
+       {
+        "designation": null,
+        "price": -352,
+        "participantId": 1637769688
+       },
+       {
+        "designation": null,
+        "price": 360,
+        "participantId": 1637769689
+       },
+       {
+        "designation": null,
+        "price": 1677,
+        "participantId": 1637769690
+       },
+       {
+        "designation": null,
+        "price": 3230,
+        "participantId": 1637769691
+       },
+       {
+        "designation": null,
+        "price": 12258,
+        "participantId": 1637769692
+       },
+       {
+        "designation": null,
+        "price": 12189,
+        "participantId": 1637769693
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1637750238,
+    "startTime": "2026-10-18T18:00:00Z",
+    "participants": [
+     "Gen.G",
+     "Hanwha Life",
+     "T1",
+     "Bilibili",
+     "Anyone's Legend",
+     "Dplus KIA",
+     "G2",
+     "Invictus",
+     "Top Esports",
+     "LYON",
+     "Liquid",
+     "Karmine Corp",
+     "Movistar KOI",
+     "Cloud9",
+     "LOS",
+     "Secret Whales",
+     "CTBC Flying Oyster",
+     "FURIA",
+     "MVK"
+    ],
+    "type": "special",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-22T18:00:00+00:00",
+      "prices": [
+       {
+        "designation": null,
+        "price": 125,
+        "participantId": 1637768329
+       },
+       {
+        "designation": null,
+        "price": 379,
+        "participantId": 1637768330
+       },
+       {
+        "designation": null,
+        "price": 590,
+        "participantId": 1637768331
+       },
+       {
+        "designation": null,
+        "price": 470,
+        "participantId": 1637768332
+       },
+       {
+        "designation": null,
+        "price": 1654,
+        "participantId": 1637768333
+       },
+       {
+        "designation": null,
+        "price": 1264,
+        "participantId": 1637768334
+       },
+       {
+        "designation": null,
+        "price": 1032,
+        "participantId": 1637768335
+       },
+       {
+        "designation": null,
+        "price": 2970,
+        "participantId": 1637768336
+       },
+       {
+        "designation": null,
+        "price": 4678,
+        "participantId": 1637768337
+       },
+       {
+        "designation": null,
+        "price": 6657,
+        "participantId": 1637768338
+       },
+       {
+        "designation": null,
+        "price": 3857,
+        "participantId": 1637768339
+       },
+       {
+        "designation": null,
+        "price": 4957,
+        "participantId": 1637768340
+       },
+       {
+        "designation": null,
+        "price": 8141,
+        "participantId": 1637768341
+       },
+       {
+        "designation": null,
+        "price": 16224,
+        "participantId": 1637768343
+       },
+       {
+        "designation": null,
+        "price": 16224,
+        "participantId": 1637768344
+       },
+       {
+        "designation": null,
+        "price": 16224,
+        "participantId": 1637768345
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1638748205,
+    "startTime": "2026-10-23T22:00:00Z",
+    "participants": [
+     "LOS",
+     "T1"
+    ],
+    "type": "matchup",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-23T22:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 516,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -800,
+        "participantId": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "leagueId": 9587,
+    "matchupId": 1638754606,
+    "startTime": "2026-10-23T23:00:00Z",
+    "participants": [
+     "Secret Whales",
+     "LYON"
+    ],
+    "type": "matchup",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-23T23:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 123,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -145,
+        "participantId": null
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "league": "League of Legends - EMEA Masters",
+    "leagueId": 225201,
+    "matchupId": 1638717698,
+    "startTime": "2026-10-22T16:00:00Z",
+    "participants": [
+     "Solary 0, Galions 3",
+     "Solary 1, Galions 3",
+     "Solary 2, Galions 3",
+     "Solary 3, Galions 0",
+     "Solary 3, Galions 1",
+     "Solary 3, Galions 2"
+    ],
+    "type": "special",
+    "parent": {
+     "hasMarkets": true,
+     "id": 1638709103,
+     "isLive": false,
+     "participants": [
+      {
+       "alignment": "home",
+       "name": "Solary",
+       "order": 0,
+       "stats": [
+        {
+         "period": 0
+        },
+        {
+         "period": 1
+        },
+        {
+         "period": 2
+        },
+        {
+         "period": 4
+        },
+        {
+         "period": 3
+        },
+        {
+         "period": 5
+        }
+       ]
+      },
+      {
+       "alignment": "away",
+       "name": "Galions",
+       "order": 1,
+       "stats": [
+        {
+         "period": 0
+        },
+        {
+         "period": 1
+        },
+        {
+         "period": 2
+        },
+        {
+         "period": 4
+        },
+        {
+         "period": 3
+        },
+        {
+         "period": 5
+        }
+       ]
+      }
+     ],
+     "startTime": "2026-10-22T16:00:00Z",
+     "state": {}
+    },
+    "markets": []
+   },
+   {
+    "league": "League of Legends - EMEA Masters",
+    "leagueId": 225201,
+    "matchupId": 1638709103,
+    "startTime": "2026-10-22T16:00:00Z",
+    "participants": [
+     "Solary",
+     "Galions"
+    ],
+    "type": "matchup",
+    "parent": null,
+    "markets": [
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 105,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -127,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "spread",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": -209,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": 166,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "spread",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 464,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -972,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "spread",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": 197,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": -277,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "spread",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "home",
+        "price": -763,
+        "participantId": null
+       },
+       {
+        "designation": "away",
+        "price": 401,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "total",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "over",
+        "price": 153,
+        "participantId": null
+       },
+       {
+        "designation": "under",
+        "price": -214,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "total",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": "over",
+        "price": -338,
+        "participantId": null
+       },
+       {
+        "designation": "under",
+        "price": 204,
+        "participantId": null
+       }
+      ]
+     },
+     {
+      "type": "moneyline",
+      "cutoff": "2026-10-22T16:00:00+00:00",
+      "prices": [
+       {
+        "designation": null,
+        "price": 407,
+        "participantId": 1638717699
+       },
+       {
+        "designation": null,
+        "price": 308,
+        "participantId": 1638717700
+       },
+       {
+        "designation": null,
+        "price": 331,
+        "participantId": 1638717701
+       },
+       {
+        "designation": null,
+        "price": 485,
+        "participantId": 1638717702
+       },
+       {
+        "designation": null,
+        "price": 360,
+        "participantId": 1638717703
+       },
+       {
+        "designation": null,
+        "price": 371,
+        "participantId": 1638717704
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "sports_status": 200,
+  "esports_sport_ids": [],
+  "seconds": 2.3
+ },
+ "polymarket": {
+  "status": 200,
+  "events": [
+   {
+    "title": "League of Legends Global Power Rankings Post Worlds: Rank 1",
+    "slug": "league-of-legends-global-power-rankings-post-worlds-rank-1-20260729165154424",
+    "startDate": "2026-07-31T03:43:15.638659Z",
+    "markets": [
+     {
+      "question": "Will HLE be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.26\", \"0.74\"]",
+      "closed": false,
+      "volume": "8718.417732999998"
+     },
+     {
+      "question": "Will BLG be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.29\", \"0.71\"]",
+      "closed": false,
+      "volume": "15042.921914000006"
+     },
+     {
+      "question": "Will GEN be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.315\", \"0.685\"]",
+      "closed": false,
+      "volume": "33181.479285999994"
+     },
+     {
+      "question": "Will T1 be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.045\", \"0.955\"]",
+      "closed": false,
+      "volume": "9592.035436"
+     },
+     {
+      "question": "Will G2 be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.063\", \"0.937\"]",
+      "closed": false,
+      "volume": "6459.814734999999"
+     },
+     {
+      "question": "Will LYON be number 1 on the end of year Global Power Rankings?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0.007\", \"0.993\"]",
+      "closed": false,
+      "volume": "8454.527888"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-dkc-ktc-2026-09-14",
+    "startDate": "2026-09-11T15:30:24Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "402518.87933100015"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "579302.643572"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 3 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "449547.20206999924"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 4 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "511530.179087"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1008599.6768140004"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "41173.91050300001"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-t1a-ktc-2026-09-15",
+    "startDate": "2026-09-14T14:30:24Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "588682.5061780004"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "518636.54901199904"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "721416.4510090005"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 4 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0.5\", \"0.5\"]",
+      "closed": true,
+      "volume": "10206.955925"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "481809.63099999994"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "18015.088889999995"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth (BO5) - LCK Challengers League Play-In",
+    "slug": "lol-drxc-foxy-2026-08-25",
+    "startDate": "2026-08-24T15:30:21Z",
+    "markets": [
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 1 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "301630.08886000013"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 2 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "372333.6349770001"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 3 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "417624.418913"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 4 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "485757.81475200027"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth (BO5) - LCK Challengers League Play-In",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "610211.0352740001"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "16349.309217"
+     }
+    ]
+   },
+   {
+    "title": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-dnsc-nsea-2026-09-09",
+    "startDate": "2026-09-08T15:30:31Z",
+    "markets": [
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "204138.67435700004"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "412079.07567699975"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 3 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "544783.1687850002"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 4 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "382233.51629899966"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "653941.2198499995"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "6814.802710999999"
+     }
+    ]
+   },
+   {
+    "title": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-dnsc-nsea-2026-08-18",
+    "startDate": "2026-08-14T14:50:24Z",
+    "markets": [
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "302703.601581"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "315610.9358790001"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1281176.3907049994"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "4574.6760079999995"
+     },
+     {
+      "question": "Game Handicap: NS.EA (-1.5) vs DN SOOPers Challengers (+1.5)",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "2813.694217"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: KT Rolster Challengers vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-ktc-dnsc-2026-09-11",
+    "startDate": "2026-09-09T16:10:31Z",
+    "markets": [
+     {
+      "question": "LoL: KT Rolster Challengers vs DN SOOPers Challengers - Game 1 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "388444.022326"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs DN SOOPers Challengers - Game 2 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "496449.442316"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs DN SOOPers Challengers - Game 3 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "314549.911347"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs DN SOOPers Challengers - Game 4 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "363875.95349700056"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"KT Rolster Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "261957.78656500013"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "4109.2722650000005"
+     }
+    ]
+   },
+   {
+    "title": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In",
+    "slug": "lol-dnsc-drxc-2026-08-24",
+    "startDate": "2026-08-21T14:50:29Z",
+    "markets": [
+     {
+      "question": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers - Game 1 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "380488.9517220003"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers - Game 2 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "295342.92710000015"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers - Game 3 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "384055.5313169997"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers - Game 4 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "294552.9029659998"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "463346.6012149997"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "8669.187503000001"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-t1a-ktc-2026-09-08",
+    "startDate": "2026-09-01T04:30:21Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "279100.778696"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "328688.18538800004"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "404494.6024690002"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers - Game 4 Winner",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "454308.4122320003"
+     },
+     {
+      "question": "LoL: T1 Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"T1 Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "279100.73323700007"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "5946.881471999999"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-t1a-nsea-2026-03-03",
+    "startDate": "2026-03-02T12:33:31.685549Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "567794.683493"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "287406.182437"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "292506.871698"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "307013.494379"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 4 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "296573.963743"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "4282.833168"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Nongshim Esports Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-nsea-ktc-2026-03-02",
+    "startDate": "2026-02-26T19:05:51.306974Z",
+    "markets": [
+     {
+      "question": "LoL: Nongshim Esports Academy vs KT Rolster Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"Nongshim Esports Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "468499.276434"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs KT Rolster Challengers - Game 1 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "387258.977293"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs KT Rolster Challengers - Game 2 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "159585.985206"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs KT Rolster Challengers - Game 3 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"KT Rolster Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "176178.069689"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "5108.257226"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "187.761714"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Dplus KIA Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-t1a-dkc-2026-09-10",
+    "startDate": "2026-09-08T15:30:43Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "304538.48202199984"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "395415.7708720001"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "276394.44884799985"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 4 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "306623.88428800006"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "261997.0667280001"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "9119.603751"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-drxc-foxy-2026-08-11",
+    "startDate": "2026-08-07T19:51:20Z",
+    "markets": [
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 1 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "285173.97639199987"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth - Game 2 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "709430.0106999994"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "570660.7278059999"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "13073.733909999999"
+     },
+     {
+      "question": "Game Handicap: KRX.C (-1.5) vs BNK FearX Youth (+1.5)",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "7880.490973999999"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Nongshim Esports Academy vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-nsea-dkc-2026-08-11",
+    "startDate": "2026-08-07T19:51:29Z",
+    "markets": [
+     {
+      "question": "LoL: Nongshim Esports Academy vs Dplus KIA Challengers - Game 1 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "179251.054339"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs Dplus KIA Challengers - Game 2 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "881986.9986349995"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "443914.5844939997"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "4320.09836"
+     },
+     {
+      "question": "Game Handicap: NS.EA (-1.5) vs Dplus KIA Challengers (+1.5)",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "7323.420795000001"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: HANJIN BRION Challengers vs DN SOOPers Challengers (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-bro1-dnsc-2026-04-06",
+    "startDate": "2026-04-03T21:49:56.966485Z",
+    "markets": [
+     {
+      "question": "LoL: HANJIN BRION Challengers vs DN SOOPers Challengers (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1024695.3629609997"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs DN SOOPers Challengers - Game 1 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "193300.008879"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs DN SOOPers Challengers - Game 2 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "259213.2399639999"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "6783.945701"
+     },
+     {
+      "question": "Game Handicap: DNS.C (-1.5) vs HANJIN BRION Challengers (+1.5)",
+      "outcomes": "[\"DN SOOPers Challengers\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "445.27224199999995"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "126.72999999999999"
+     }
+    ]
+   },
+   {
+    "title": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers (BO5) - LCK Challengers League Play-In",
+    "slug": "lol-foxy-hle-2026-08-24",
+    "startDate": "2026-08-21T14:50:37Z",
+    "markets": [
+     {
+      "question": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers - Game 1 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "346351.4126410002"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers - Game 2 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "390378.62063300016"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers - Game 3 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "391011.438976"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers - Game 4 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"0.5\", \"0.5\"]",
+      "closed": true,
+      "volume": "4242.084844999999"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs Hanwha Life Esports Challengers (BO5) - LCK Challengers League Play-In",
+      "outcomes": "[\"BNK FearX Youth\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "279567.7931109999"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "10619.090172000002"
+     }
+    ]
+   },
+   {
+    "title": "LoL: KT Rolster Challengers vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-ktc-dkc-2026-07-28",
+    "startDate": "2026-07-22T14:45:00.699933Z",
+    "markets": [
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers - Game 1 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "297908.67925600015"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers - Game 2 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "355176.84254200023"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "640057.9015110002"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "665.5827289999999"
+     },
+     {
+      "question": "Game Handicap: DK.C (-1.5) vs KT Rolster Challengers (+1.5)",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "223.38109199999997"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: DN SOOPers Challengers vs Gen.G Global Academy (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-dnsc-genga-2026-04-27",
+    "startDate": "2026-04-24T15:13:18.270336Z",
+    "markets": [
+     {
+      "question": "LoL: DN SOOPers Challengers vs Gen.G Global Academy (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "222294.95950600013"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Gen.G Global Academy - Game 1 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "312941.3616959997"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Gen.G Global Academy - Game 2 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "562970.4208519997"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "4462.3410870000025"
+     },
+     {
+      "question": "Game Handicap: DNS.C (-1.5) vs Gen.G Global Academy (+1.5)",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "145132.31627899996"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "75.57"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-dkc-nsea-2026-09-08",
+    "startDate": "2026-09-01T04:30:33Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "154306.16385400004"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "210823.55067999993"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 3 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "210943.245852"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 4 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "281014.551321"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "286910.0019039999"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "2616.210083"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Hanwha Life Esports Challengers vs DRX Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-hle-drxc-2026-02-10",
+    "startDate": "2026-02-09T16:03:28.650475Z",
+    "markets": [
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DRX Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "483671.718745"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DRX Challengers - Game 1 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "70331.370125"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DRX Challengers - Game 2 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "340303.496168"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DRX Challengers - Game 3 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "139877.775052"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "6617.157523"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "3964.790053"
+     }
+    ]
+   },
+   {
+    "title": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-dnsc-nsea-2026-02-23",
+    "startDate": "2026-02-12T17:36:07.831161Z",
+    "markets": [
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "491492.999753"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "103107.509664"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "147526.479512"
+     },
+     {
+      "question": "LoL: DN SOOPers Challengers vs Nongshim Esports Academy - Game 3 Winner",
+      "outcomes": "[\"DN SOOPers Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "166698.534479"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "20284.459245"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "4807.831552"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Gen.G Global Academy vs HANJIN BRION Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-genga-bro1-2026-08-18",
+    "startDate": "2026-08-14T15:00:25Z",
+    "markets": [
+     {
+      "question": "LoL: Gen.G Global Academy vs HANJIN BRION Challengers - Game 1 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "209350.20484999992"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs HANJIN BRION Challengers - Game 2 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "285018.6884239998"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs HANJIN BRION Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"Gen.G Global Academy\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "541405.0950309997"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1300.1437560000002"
+     },
+     {
+      "question": "Game Handicap: BRO (-1.5) vs Gen.G Global Academy (+1.5)",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "11164.569070000003"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Hanwha Life Esports Challengers vs DN SOOPers Challengers (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-hle-dnsc-2026-04-21",
+    "startDate": "2026-04-16T14:04:06.642919Z",
+    "markets": [
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DN SOOPers Challengers (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "493388.8142589997"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DN SOOPers Challengers - Game 1 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "256355.05119699996"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs DN SOOPers Challengers - Game 2 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "201598.82010400016"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "600.9939349999999"
+     },
+     {
+      "question": "Game Handicap: HLE (-1.5) vs DN SOOPers Challengers (+1.5)",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "11291.803511"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-nsea-dnsc-2026-08-31",
+    "startDate": "2026-08-26T04:00:38Z",
+    "markets": [
+     {
+      "question": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers - Game 1 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "416.528451"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers - Game 2 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "28.52"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers - Game 3 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "43236.996803999995"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers - Game 4 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "442617.58398799965"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"Nongshim Esports Academy\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "461086.91270099976"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1921.184314"
+     }
+    ]
+   },
+   {
+    "title": "LoL: HANJIN BRION Challengers vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-bro1-foxy-2026-08-03",
+    "startDate": "2026-07-30T22:31:45Z",
+    "markets": [
+     {
+      "question": "LoL: HANJIN BRION Challengers vs BNK FearX Youth - Game 1 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "125529.21880799999"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs BNK FearX Youth - Game 2 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "316671.04260599986"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "437727.90269900026"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "2664.880951"
+     },
+     {
+      "question": "Game Handicap: FOX.Y (-1.5) vs HANJIN BRION Challengers (+1.5)",
+      "outcomes": "[\"BNK FearX Youth\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "27763.930305999995"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: BIG vs G2 NORD (BO5) - Prime League 1st Division Playoffs",
+    "slug": "lol-big1-g2nord-2026-08-27",
+    "startDate": "2026-08-21T20:40:29Z",
+    "markets": [
+     {
+      "question": "LoL: BIG vs G2 NORD - Game 1 Winner",
+      "outcomes": "[\"BIG\", \"G2 NORD\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "201874.75654600005"
+     },
+     {
+      "question": "LoL: BIG vs G2 NORD - Game 2 Winner",
+      "outcomes": "[\"BIG\", \"G2 NORD\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "89446.975246"
+     },
+     {
+      "question": "LoL: BIG vs G2 NORD - Game 3 Winner",
+      "outcomes": "[\"BIG\", \"G2 NORD\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "111487.03620100001"
+     },
+     {
+      "question": "LoL: BIG vs G2 NORD - Game 4 Winner",
+      "outcomes": "[\"BIG\", \"G2 NORD\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "169477.03508699997"
+     },
+     {
+      "question": "LoL: BIG vs G2 NORD (BO5) - Prime League 1st Division Playoffs",
+      "outcomes": "[\"BIG\", \"G2 NORD\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "314082.0878009998"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "2002.7469649999998"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-dkc-drxc-2026-04-21",
+    "startDate": "2026-04-16T14:04:10.101892Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "531893.14674"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Kiwoom DRX Challengers - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "163027.11860099997"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Kiwoom DRX Challengers - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "166441.98748100028"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "8981.572874"
+     },
+     {
+      "question": "Game Handicap: DK.C (-1.5) vs Kiwoom DRX Challengers (+1.5)",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "19614.623515000007"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Myth Esports vs Dynasty (BO3) - Road Of Legends Regular Season",
+    "slug": "lol-myth-dyn1-2026-07-23",
+    "startDate": "2026-07-19T21:53:40.740256Z",
+    "markets": [
+     {
+      "question": "LoL: Myth Esports vs Dynasty - Game 1 Winner",
+      "outcomes": "[\"Myth Esports\", \"Dynasty\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "257606.55982199986"
+     },
+     {
+      "question": "LoL: Myth Esports vs Dynasty - Game 2 Winner",
+      "outcomes": "[\"Myth Esports\", \"Dynasty\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "60866.135997"
+     },
+     {
+      "question": "LoL: Myth Esports vs Dynasty (BO3) - Road Of Legends Regular Season",
+      "outcomes": "[\"Myth Esports\", \"Dynasty\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "469948.3330260008"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "86872.02618100001"
+     },
+     {
+      "question": "Game Handicap: MYTH (-1.5) vs Dynasty (+1.5)",
+      "outcomes": "[\"Myth Esports\", \"Dynasty\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "13770.905273999999"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: DRX Challengers vs T1 Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-drxc-t1a-2026-02-09",
+    "startDate": "2026-02-05T11:35:21.71107Z",
+    "markets": [
+     {
+      "question": "LoL: DRX Challengers vs T1 Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"DRX Challengers\", \"T1 Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "574584.438413"
+     },
+     {
+      "question": "LoL: DRX Challengers vs T1 Academy - Game 1 Winner",
+      "outcomes": "[\"DRX Challengers\", \"T1 Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "62085.801782"
+     },
+     {
+      "question": "LoL: DRX Challengers vs T1 Academy - Game 2 Winner",
+      "outcomes": "[\"DRX Challengers\", \"T1 Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "116359.912024"
+     },
+     {
+      "question": "LoL: DRX Challengers vs T1 Academy - Game 3 Winner",
+      "outcomes": "[\"DRX Challengers\", \"T1 Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "61395.05469"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1463.805166"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1417.289863"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-t1a-nsea-2026-04-07",
+    "startDate": "2026-04-04T05:20:31.938305Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "366742.7834710001"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "213323.10960599987"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "264749.57743099995"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1409.2033299999998"
+     },
+     {
+      "question": "Game Handicap: NS.EA (-1.5) vs T1 Academy (+1.5)",
+      "outcomes": "[\"Nongshim Esports Academy\", \"T1 Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "8666.005930000003"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "85.57"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Winthrop University vs CCG Esports (BO5) - North American Challengers League Playoffs",
+    "slug": "lol-wu-ccg-2026-06-04",
+    "startDate": "2026-05-31T15:20:32.341264Z",
+    "markets": [
+     {
+      "question": "LoL: Winthrop University vs CCG Esports (BO5) - North American Challengers League Playoffs",
+      "outcomes": "[\"Winthrop University\", \"CCG Esports\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "373585.6939869998"
+     },
+     {
+      "question": "LoL: Winthrop University vs CCG Esports - Game 1 Winner",
+      "outcomes": "[\"Winthrop University\", \"CCG Esports\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "100454.59149899999"
+     },
+     {
+      "question": "LoL: Winthrop University vs CCG Esports - Game 2 Winner",
+      "outcomes": "[\"Winthrop University\", \"CCG Esports\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "166565.30565799994"
+     },
+     {
+      "question": "LoL: Winthrop University vs CCG Esports - Game 3 Winner",
+      "outcomes": "[\"Winthrop University\", \"CCG Esports\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "101333.4300800001"
+     },
+     {
+      "question": "LoL: Winthrop University vs CCG Esports - Game 4 Winner",
+      "outcomes": "[\"Winthrop University\", \"CCG Esports\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "108725.0804040001"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1957.1205049999999"
+     }
+    ]
+   },
+   {
+    "title": "LoL: KT Rolster Challengers vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-ktc-dkc-2026-04-06",
+    "startDate": "2026-04-03T21:49:55.934625Z",
+    "markets": [
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "390103.65718399984"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers - Game 1 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "183987.38585500003"
+     },
+     {
+      "question": "LoL: KT Rolster Challengers vs Dplus KIA Challengers - Game 2 Winner",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "224522.0286149997"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "3489.9501069999997"
+     },
+     {
+      "question": "Game Handicap: KT.C (-1.5) vs Dplus KIA Challengers (+1.5)",
+      "outcomes": "[\"KT Rolster Challengers\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "23771.050721"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "111.61999999999999"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+    "slug": "lol-drxc-dnsc-2026-09-07",
+    "startDate": "2026-08-31T19:50:21Z",
+    "markets": [
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers - Game 1 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "209184.25976199986"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers - Game 2 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "78593.419924"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers - Game 3 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "303375.13874599995"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers - Game 4 Winner",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0.5\", \"0.5\"]",
+      "closed": true,
+      "volume": "2409.274502"
+     },
+     {
+      "question": "LoL: Kiwoom DRX Challengers vs DN SOOPers Challengers (BO5) - LCK Challengers League Playoffs",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"DN SOOPers Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "152007.18542499997"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1489.432808"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Winthrop University vs Maryville University (BO5) - North American Challengers League Playoffs",
+    "slug": "lol-wu-mvu-2026-09-10",
+    "startDate": "2026-09-10T01:50:35Z",
+    "markets": [
+     {
+      "question": "LoL: Winthrop University vs Maryville University - Game 1 Winner",
+      "outcomes": "[\"Winthrop University\", \"Maryville University\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "106156.947906"
+     },
+     {
+      "question": "LoL: Winthrop University vs Maryville University - Game 2 Winner",
+      "outcomes": "[\"Winthrop University\", \"Maryville University\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "104934.18928400001"
+     },
+     {
+      "question": "LoL: Winthrop University vs Maryville University - Game 3 Winner",
+      "outcomes": "[\"Winthrop University\", \"Maryville University\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "119355.23842600003"
+     },
+     {
+      "question": "LoL: Winthrop University vs Maryville University - Game 4 Winner",
+      "outcomes": "[\"Winthrop University\", \"Maryville University\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "68717.01217199999"
+     },
+     {
+      "question": "LoL: Winthrop University vs Maryville University (BO5) - North American Challengers League Playoffs",
+      "outcomes": "[\"Winthrop University\", \"Maryville University\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "360763.9408890001"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "3823.8873589999994"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs KT Rolster Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-dkc-ktc-2026-08-17",
+    "startDate": "2026-08-14T14:40:27Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "274351.83958599996"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "265941.607326"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs KT Rolster Challengers (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "197097.05567300002"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "4135.340712"
+     },
+     {
+      "question": "Game Handicap: DK.C (-1.5) vs KT Rolster Challengers (+1.5)",
+      "outcomes": "[\"Dplus KIA Challengers\", \"KT Rolster Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1858.74299"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Gen.G Global Academy vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-genga-foxy-2026-07-27",
+    "startDate": "2026-07-22T14:44:21.642624Z",
+    "markets": [
+     {
+      "question": "LoL: Gen.G Global Academy vs BNK FearX Youth - Game 1 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "64610.37272499994"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs BNK FearX Youth - Game 2 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"BNK FearX Youth\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "192186.342837"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs BNK FearX Youth (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"Gen.G Global Academy\", \"BNK FearX Youth\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "444201.53458599997"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "7231.430335"
+     },
+     {
+      "question": "Game Handicap: FOX.Y (-1.5) vs Gen.G Global Academy (+1.5)",
+      "outcomes": "[\"BNK FearX Youth\", \"Gen.G Global Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "6833.0806189999985"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs (BO5) - Prime League 1st Division Playoffs",
+    "slug": "lol-use1-ross-2026-08-25",
+    "startDate": "2026-08-20T19:40:24Z",
+    "markets": [
+     {
+      "question": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs - Game 1 Winner",
+      "outcomes": "[\"Unicorns Of Love Sexy Edition\", \"ROSSMANN Centaurs\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "95661.580794"
+     },
+     {
+      "question": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs - Game 2 Winner",
+      "outcomes": "[\"Unicorns Of Love Sexy Edition\", \"ROSSMANN Centaurs\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "142389.14849699993"
+     },
+     {
+      "question": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs - Game 3 Winner",
+      "outcomes": "[\"Unicorns Of Love Sexy Edition\", \"ROSSMANN Centaurs\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "148083.43846099998"
+     },
+     {
+      "question": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs - Game 4 Winner",
+      "outcomes": "[\"Unicorns Of Love Sexy Edition\", \"ROSSMANN Centaurs\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "127561.86960200002"
+     },
+     {
+      "question": "LoL: Unicorns Of Love Sexy Edition vs ROSSMANN Centaurs (BO5) - Prime League 1st Division Playoffs",
+      "outcomes": "[\"Unicorns Of Love Sexy Edition\", \"ROSSMANN Centaurs\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "178396.867744"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "992.7082640000001"
+     }
+    ]
+   },
+   {
+    "title": "LoL: BIG vs Unicorns Of Love Sexy Edition (BO5) - Prime League 1st Division Playoffs",
+    "slug": "lol-big1-use1-2026-08-19",
+    "startDate": "2026-08-14T08:20:30Z",
+    "markets": [
+     {
+      "question": "LoL: BIG vs Unicorns Of Love Sexy Edition - Game 1 Winner",
+      "outcomes": "[\"BIG\", \"Unicorns Of Love Sexy Edition\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "120535.72692800002"
+     },
+     {
+      "question": "LoL: BIG vs Unicorns Of Love Sexy Edition - Game 2 Winner",
+      "outcomes": "[\"BIG\", \"Unicorns Of Love Sexy Edition\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "85792.330434"
+     },
+     {
+      "question": "LoL: BIG vs Unicorns Of Love Sexy Edition - Game 3 Winner",
+      "outcomes": "[\"BIG\", \"Unicorns Of Love Sexy Edition\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "126357.26914799999"
+     },
+     {
+      "question": "LoL: BIG vs Unicorns Of Love Sexy Edition - Game 4 Winner",
+      "outcomes": "[\"BIG\", \"Unicorns Of Love Sexy Edition\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "92453.61371300004"
+     },
+     {
+      "question": "LoL: BIG vs Unicorns Of Love Sexy Edition (BO5) - Prime League 1st Division Playoffs",
+      "outcomes": "[\"BIG\", \"Unicorns Of Love Sexy Edition\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "261827.6619759999"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "247.814954"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Dplus KIA Challengers (BO5) - LCK Challengers League Kickoff Group Stage",
+    "slug": "lol-t1a-dkc-2026-01-26",
+    "startDate": "2026-01-23T18:05:25.224416Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers (BO5) - LCK Challengers League Kickoff Group Stage",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "388310.714582"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "49050.832987"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "111852.68594"
+     },
+     {
+      "question": "LoL: T1 Academy vs Dplus KIA Challengers - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "119978.093873"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "260.448"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "19562.619195"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs T1 Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-dkc-t1a-2026-07-30",
+    "startDate": "2026-07-22T14:45:23.082606Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs T1 Academy - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"T1 Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "196227.01521299998"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs T1 Academy - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"T1 Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "177182.77367999998"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs T1 Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"Dplus KIA Challengers\", \"T1 Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "310198.13424300007"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "1081.065873"
+     },
+     {
+      "question": "Game Handicap: T1.A (-1.5) vs Dplus KIA Challengers (+1.5)",
+      "outcomes": "[\"T1 Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "6262.2266150000005"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-dkc-nsea-2026-04-27",
+    "startDate": "2026-04-24T15:13:22.336943Z",
+    "markets": [
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "182509.07559499994"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "189035.94486099968"
+     },
+     {
+      "question": "LoL: Dplus KIA Challengers vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"Dplus KIA Challengers\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "290678.64381400007"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "2712.6853719999995"
+     },
+     {
+      "question": "Game Handicap: NS.EA (-1.5) vs Dplus KIA Challengers (+1.5)",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Dplus KIA Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "18819.125043999997"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "5"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-t1a-nsea-2026-02-25",
+    "startDate": "2026-02-23T17:19:25.452517Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "252530.950909"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "86953.235902"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "196528.541557"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 3 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "138296.871729"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "2116.194634"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "140.75"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Hanwha Life Esports Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 1-2",
+    "slug": "lol-hle-drxc-2026-04-07",
+    "startDate": "2026-04-04T05:20:30.193472Z",
+    "markets": [
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 1-2",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "204422.3813049996"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs Kiwoom DRX Challengers - Game 1 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "198429.0921389999"
+     },
+     {
+      "question": "LoL: Hanwha Life Esports Challengers vs Kiwoom DRX Challengers - Game 2 Winner",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "272971.32950500026"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1372.7972870000006"
+     },
+     {
+      "question": "Game Handicap: KRX.C (-1.5) vs Hanwha Life Esports Challengers (+1.5)",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "76.606094"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "21.16"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Nongshim Esports Academy vs Hanwha Life Esports Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+    "slug": "lol-nsea-hle-2026-02-09",
+    "startDate": "2026-02-05T11:35:27.64745Z",
+    "markets": [
+     {
+      "question": "LoL: Nongshim Esports Academy vs Hanwha Life Esports Challengers (BO5) - LCK Challengers League Kickoff Playoffs",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "417785.299002"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs Hanwha Life Esports Challengers - Game 1 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "28491.347819"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs Hanwha Life Esports Challengers - Game 2 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "45527.050678"
+     },
+     {
+      "question": "LoL: Nongshim Esports Academy vs Hanwha Life Esports Challengers - Game 3 Winner",
+      "outcomes": "[\"Nongshim Esports Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "77342.77076"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "858.886594"
+     },
+     {
+      "question": "Games Total: O/U 4.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "3022.311355"
+     }
+    ]
+   },
+   {
+    "title": "LoL: Gen.G Global Academy vs Hanwha Life Esports Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-genga-hle-2026-08-04",
+    "startDate": "2026-07-30T22:32:59Z",
+    "markets": [
+     {
+      "question": "LoL: Gen.G Global Academy vs Hanwha Life Esports Challengers - Game 1 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "129756.34603699998"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs Hanwha Life Esports Challengers - Game 2 Winner",
+      "outcomes": "[\"Gen.G Global Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "174042.74298499996"
+     },
+     {
+      "question": "LoL: Gen.G Global Academy vs Hanwha Life Esports Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"Gen.G Global Academy\", \"Hanwha Life Esports Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "343482.809194"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "6960.358563000001"
+     },
+     {
+      "question": "Game Handicap: HLE (-1.5) vs Gen.G Global Academy (+1.5)",
+      "outcomes": "[\"Hanwha Life Esports Challengers\", \"Gen.G Global Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "9850.018212"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "8.255316"
+     }
+    ]
+   },
+   {
+    "title": "LoL: T1 Academy vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+    "slug": "lol-t1a-nsea-2026-07-27",
+    "startDate": "2026-07-22T14:43:52.410808Z",
+    "markets": [
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 1 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "143200.53547600014"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy - Game 2 Winner",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "226602.72880499993"
+     },
+     {
+      "question": "LoL: T1 Academy vs Nongshim Esports Academy (BO3) - LCK Challengers League Rounds 3-4 Challenge Group",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "277270.87226100004"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "7647.93161"
+     },
+     {
+      "question": "Game Handicap: T1.A (-1.5) vs Nongshim Esports Academy (+1.5)",
+      "outcomes": "[\"T1 Academy\", \"Nongshim Esports Academy\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "323.26595100000003"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: BNK FearX Youth vs HANJIN BRION Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-foxy-bro1-2026-08-14",
+    "startDate": "2026-08-07T19:52:19Z",
+    "markets": [
+     {
+      "question": "LoL: BNK FearX Youth vs HANJIN BRION Challengers - Game 1 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "222044.0332069999"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs HANJIN BRION Challengers - Game 2 Winner",
+      "outcomes": "[\"BNK FearX Youth\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "176085.19111800002"
+     },
+     {
+      "question": "LoL: BNK FearX Youth vs HANJIN BRION Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"BNK FearX Youth\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "183463.623056"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "59034.148661999985"
+     },
+     {
+      "question": "Game Handicap: FOX.Y (-1.5) vs HANJIN BRION Challengers (+1.5)",
+      "outcomes": "[\"BNK FearX Youth\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "1131.1838579999999"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   },
+   {
+    "title": "LoL: Eintracht Spandau vs Kaufland Hangry Knights (BO5) - Prime League 1st Division Playoffs",
+    "slug": "lol-es1-khk-2026-08-26",
+    "startDate": "2026-08-21T20:40:22Z",
+    "markets": [
+     {
+      "question": "LoL: Eintracht Spandau vs Kaufland Hangry Knights - Game 1 Winner",
+      "outcomes": "[\"Eintracht Spandau\", \"Kaufland Hangry Knights\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "106305.27469200004"
+     },
+     {
+      "question": "LoL: Eintracht Spandau vs Kaufland Hangry Knights - Game 2 Winner",
+      "outcomes": "[\"Eintracht Spandau\", \"Kaufland Hangry Knights\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "131306.95495400007"
+     },
+     {
+      "question": "LoL: Eintracht Spandau vs Kaufland Hangry Knights - Game 3 Winner",
+      "outcomes": "[\"Eintracht Spandau\", \"Kaufland Hangry Knights\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "172073.22535099997"
+     },
+     {
+      "question": "LoL: Eintracht Spandau vs Kaufland Hangry Knights - Game 4 Winner",
+      "outcomes": "[\"Eintracht Spandau\", \"Kaufland Hangry Knights\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "92382.34730099999"
+     },
+     {
+      "question": "LoL: Eintracht Spandau vs Kaufland Hangry Knights (BO5) - Prime League 1st Division Playoffs",
+      "outcomes": "[\"Eintracht Spandau\", \"Kaufland Hangry Knights\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "118810.70582199999"
+     },
+     {
+      "question": "Games Total: O/U 3.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "2347.747509"
+     }
+    ]
+   },
+   {
+    "title": "LoL: G2 NORD vs E WIE EINFACH E-SPORTS (BO3) - Prime League 1st Division Group B",
+    "slug": "lol-g2nord-ewi-2026-04-27",
+    "startDate": "2026-04-24T16:17:25.075705Z",
+    "markets": [
+     {
+      "question": "LoL: G2 NORD vs E WIE EINFACH E-SPORTS (BO3) - Prime League 1st Division Group B",
+      "outcomes": "[\"G2 NORD\", \"E WIE EINFACH E-SPORTS\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "295540.1509779999"
+     },
+     {
+      "question": "LoL: G2 NORD vs E WIE EINFACH E-SPORTS - Game 1 Winner",
+      "outcomes": "[\"G2 NORD\", \"E WIE EINFACH E-SPORTS\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "131219.9348329999"
+     },
+     {
+      "question": "LoL: G2 NORD vs E WIE EINFACH E-SPORTS - Game 2 Winner",
+      "outcomes": "[\"G2 NORD\", \"E WIE EINFACH E-SPORTS\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "167517.7392249999"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "18092.778864999997"
+     },
+     {
+      "question": "Game Handicap: G2N (-1.5) vs E WIE EINFACH E-SPORTS (+1.5)",
+      "outcomes": "[\"G2 NORD\", \"E WIE EINFACH E-SPORTS\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "12332.26355500017"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "5"
+     }
+    ]
+   },
+   {
+    "title": "LoL: HANJIN BRION Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+    "slug": "lol-bro1-drxc-2026-08-20",
+    "startDate": "2026-08-14T14:51:20Z",
+    "markets": [
+     {
+      "question": "LoL: HANJIN BRION Challengers vs Kiwoom DRX Challengers - Game 1 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "104984.47910600001"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs Kiwoom DRX Challengers - Game 2 Winner",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "158148.25236999997"
+     },
+     {
+      "question": "LoL: HANJIN BRION Challengers vs Kiwoom DRX Challengers (BO3) - LCK Challengers League Rounds 3-4 Trial Group",
+      "outcomes": "[\"HANJIN BRION Challengers\", \"Kiwoom DRX Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "348615.5199800003"
+     },
+     {
+      "question": "Games Total: O/U 2.5",
+      "outcomes": "[\"Over\", \"Under\"]",
+      "prices": "[\"1\", \"0\"]",
+      "closed": true,
+      "volume": "8555.452166"
+     },
+     {
+      "question": "Game Handicap: KRX.C (-1.5) vs HANJIN BRION Challengers (+1.5)",
+      "outcomes": "[\"Kiwoom DRX Challengers\", \"HANJIN BRION Challengers\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": "2362.771101"
+     },
+     {
+      "question": "Game 1: Both Teams Slay Baron Nashor?",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "prices": "[\"0\", \"1\"]",
+      "closed": true,
+      "volume": null
+     }
+    ]
+   }
+  ],
+  "seconds": 1.9
+ },
+ "kalshi": {
+  "events_status": 200,
+  "open_events": [
+   {
+    "ticker": "KXLOL-WORLDS26",
+    "title": "Worlds 2026 Champion",
+    "sub_title": "League of Legends Worlds"
+   }
+  ],
+  "markets_status": 200,
+  "sample_markets": [
+   {
+    "ticker": "KXLOL-WORLDS26-DK",
+    "title": "Will Dplus KIA win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-G2",
+    "title": "Will G2 Esports win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-TES",
+    "title": "Will Top Esports win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-TL",
+    "title": "Will Team Liquid win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-C9",
+    "title": "Will Cloud9 win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "finalized"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-FUR",
+    "title": "Will FURIA Esports win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "finalized"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-LOS",
+    "title": "Will LOS win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-MVK",
+    "title": "Will MVK Esports win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "finalized"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-AL",
+    "title": "Will Anyone's Legend win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-TSW",
+    "title": "Will Team Secret Whales win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-KC",
+    "title": "Will Karmine Corp win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-MKOI",
+    "title": "Will Movistar KOI win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-BLG",
+    "title": "Will Bilibili Gaming win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-HLE",
+    "title": "Will Hanwha Life Esports win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   },
+   {
+    "ticker": "KXLOL-WORLDS26-GEN",
+    "title": "Will Gen.G win League of Legends Worlds?",
+    "yes_bid": null,
+    "yes_ask": null,
+    "last_price": null,
+    "status": "active"
+   }
+  ],
+  "seconds": 0.3
+ },
+ "oddsportal": {
+  "status": 200,
+  "bytes": 336077,
+  "has_json_payload": false,
+  "home_away_pairs": [],
+  "match_links": [
+   "league-of-legends-world-championship",
+   "league-of-legends-emea-masters",
+   "league-of-legends-world-championship",
+   "league-of-legends-emea-masters"
+  ],
+  "seconds": 2.0
+ }
+}
