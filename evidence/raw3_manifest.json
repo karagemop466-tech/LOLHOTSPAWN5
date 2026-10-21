@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T20:35:20Z",
+  "generated_at": "2026-10-21T20:39:44Z",
   "targets": [
     {
       "name": "sofascore_lol_tournaments",
       "url": "https://api.sofascore.com/api/v1/sport/league-of-legends/tournaments",
-      "fetched_at": "2026-10-21T20:35:07Z",
+      "fetched_at": "2026-10-21T20:39:29Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
@@ -13,7 +13,7 @@
     {
       "name": "sofascore_lol_seasons",
       "url": "https://api.sofascore.com/api/v1/sport/league-of-legends/seasons",
-      "fetched_at": "2026-10-21T20:35:07Z",
+      "fetched_at": "2026-10-21T20:39:30Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
@@ -22,7 +22,7 @@
     {
       "name": "sofascore_lol_last_events",
       "url": "https://api.sofascore.com/api/v1/sport/league-of-legends/events/last/0",
-      "fetched_at": "2026-10-21T20:35:08Z",
+      "fetched_at": "2026-10-21T20:39:30Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
@@ -31,16 +31,16 @@
     {
       "name": "sofascore_lol_upcoming",
       "url": "https://api.sofascore.com/api/v1/sport/league-of-legends/events/upcoming/0",
-      "fetched_at": "2026-10-21T20:35:09Z",
+      "fetched_at": "2026-10-21T20:39:31Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
-      "elapsed_s": 0.05
+      "elapsed_s": 0.01
     },
     {
       "name": "sofascore_unique_tournaments",
       "url": "https://api.sofascore.com/api/v1/config/all/unique-tournaments",
-      "fetched_at": "2026-10-21T20:35:10Z",
+      "fetched_at": "2026-10-21T20:39:32Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
@@ -49,16 +49,16 @@
     {
       "name": "sofascore_team_events",
       "url": "https://api.sofascore.com/api/v1/team/2695/events/last/0",
-      "fetched_at": "2026-10-21T20:35:10Z",
+      "fetched_at": "2026-10-21T20:39:32Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
-      "elapsed_s": 0.02
+      "elapsed_s": 0.01
     },
     {
       "name": "lp_cargo_games",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win,Tournament&where=DateTime_UTC%3E=%222026-10-01%22&limit=100&format=json",
-      "fetched_at": "2026-10-21T20:35:11Z",
+      "fetched_at": "2026-10-21T20:39:33Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -66,12 +66,12 @@
       "x_cache": "",
       "file": "evidence/raw3/lp_cargo_games.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.15
+      "elapsed_s": 0.21
     },
     {
       "name": "lp_cargo_games_page2",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-01-01%22&limit=500&offset=500&format=json",
-      "fetched_at": "2026-10-21T20:35:12Z",
+      "fetched_at": "2026-10-21T20:39:34Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -79,25 +79,25 @@
       "x_cache": "",
       "file": "evidence/raw3/lp_cargo_games_page2.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.2
+      "elapsed_s": 0.21
     },
     {
       "name": "lp_cargo_tournaments",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=Tournaments&fields=Name,League,Region,DateTime_UTC,OverviewPage&where=DateTime_UTC%3E=%222026-06-01%22&limit=50&format=json",
-      "fetched_at": "2026-10-21T20:35:13Z",
+      "fetched_at": "2026-10-21T20:39:35Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 159,
+      "bytes": 372,
       "age": "",
       "x_cache": "",
       "file": "evidence/raw3/lp_cargo_tournaments.json",
-      "sample": "{\"error\":{\"code\":\"internal_api_error_MWException\",\"info\":\"[bc0d26c42d0160753ce61da6038c976c] Caught exception of type MWException\",\"errorclass\":\"MWException\"}}",
-      "elapsed_s": 0.09
+      "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
+      "elapsed_s": 0.29
     },
     {
       "name": "lp_cargo_scoreboardteams",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardTeams&fields=Team,DateTime_UTC,Opponent,Result,Score,Side,Tournament&where=DateTime_UTC%3E=%222026-10-01%22&limit=100&format=json",
-      "fetched_at": "2026-10-21T20:35:14Z",
+      "fetched_at": "2026-10-21T20:39:36Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -105,65 +105,65 @@
       "x_cache": "",
       "file": "evidence/raw3/lp_cargo_scoreboardteams.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.07
+      "elapsed_s": 0.22
     },
     {
       "name": "poly_events_by_tag",
       "url": "https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&closed=false&limit=100",
-      "fetched_at": "2026-10-21T20:35:14Z",
+      "fetched_at": "2026-10-21T20:39:37Z",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 4322768,
+      "bytes": 4327198,
       "age": "",
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw3/poly_events_by_tag.json",
       "sample": "[{\"id\":\"131447\",\"ticker\":\"lol-worlds-2026-winning-region-226\",\"slug\":\"lol-worlds-2026-winning-region-226\",\"title\":\"Worlds 2026 Winning Region\",\"description\":\"This market will resolve according to the region or country of the esports team winning 1st place in the League of Legends 2026 Season World C",
-      "elapsed_s": 0.84
+      "elapsed_s": 0.72
     },
     {
       "name": "kalshi_public_page",
       "url": "https://kalshi.com/markets/kxlolgame/kxlolgame-26oct232000mkoiblg",
-      "fetched_at": "2026-10-21T20:35:16Z",
+      "fetched_at": "2026-10-21T20:39:38Z",
       "status": 429,
       "error": "HTTPError 429",
       "sample": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-4wdtffzm><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"theme-color\" content=\"#000\"><link rel=\"icon\" href=\"data:,\"><title>Vercel Security Checkpoint</title><style>.spinner[data-astro-cid-ijmsm3",
-      "elapsed_s": 0.03
+      "elapsed_s": 0.09
     },
     {
       "name": "oe_github_org",
       "url": "https://api.github.com/orgs/OraclesElixirTools/repos?per_page=100&sort=updated",
-      "fetched_at": "2026-10-21T20:35:17Z",
+      "fetched_at": "2026-10-21T20:39:39Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#list-organization-repositories\",\n  \"status\": \"404\"\n}\n",
-      "elapsed_s": 0.08
+      "elapsed_s": 0.13
     },
     {
       "name": "oe_csv_2026_retry",
       "url": "https://oracleselixir.s3-us-west-2.amazonaws.com/2026_LoL_esports_match_data_from_OraclesElixir.csv",
-      "fetched_at": "2026-10-21T20:35:17Z",
+      "fetched_at": "2026-10-21T20:39:40Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>D9A0TAF2KPADAX4A</RequestId><HostId>+mpNY/Joa06F+fOrTe0WOXjP6CFO2A4i4LQzDwmr987whUEyQDLOmBlQBDo5k5lYP2X/iKzmgA4=</HostId></Err",
-      "elapsed_s": 0.25
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>EXFJZG1KG1T52SQ1</RequestId><HostId>zsMcvhRWJ82i2F9mEYQfeACXFHrgcz4lropou8ewqPxn9A81kZp/VNwGsM//QKh1b4F9JYst1mM=</HostId></Err",
+      "elapsed_s": 0.08
     },
     {
       "name": "golgg_worlds_matchlist",
       "url": "https://gol.gg/tournament/tournamentmatchlist/Worlds%202026%20Main%20Event/",
-      "fetched_at": "2026-10-21T20:35:18Z",
+      "fetched_at": "2026-10-21T20:39:41Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "  <!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>League of Legends esport statistics - Games of legends</title>\r\n<base href=\"https://gol.gg/esports/\" >\r\n  <meta name=\"description\" content=\"Games of legends provides statistics on league of legends esport matches. Winrate, picks and bans, kda an",
-      "elapsed_s": 0.29
+      "elapsed_s": 0.64
     },
     {
       "name": "golgg_tournament_list_s16_all",
       "url": "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:35:19Z",
+      "fetched_at": "2026-10-21T20:39:42Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "  <!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>League of Legends esport statistics - Games of legends</title>\r\n<base href=\"https://gol.gg/esports/\" >\r\n  <meta name=\"description\" content=\"Games of legends provides statistics on league of legends esport matches. Winrate, picks and bans, kda an",
-      "elapsed_s": 0.27
+      "elapsed_s": 0.72
     }
   ]
 }
