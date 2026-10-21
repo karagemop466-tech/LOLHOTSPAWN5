@@ -31,6 +31,8 @@ jobs:
         run: python scripts/probe.py --targets scripts/probe_targets.json --out evidence/raw
       - name: Probe round 2 (routes + reference data)
         run: python scripts/probe.py --targets scripts/probe_targets_2.json --out evidence/raw2
+      - name: Probe round 3 (reference data deep dive)
+        run: python scripts/probe.py --targets scripts/probe_targets_3.json --out evidence/raw3
       - name: Commit evidence
         run: |
           git config user.name 'github-actions[bot]'

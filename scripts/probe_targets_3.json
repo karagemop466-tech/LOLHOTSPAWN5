@@ -1,0 +1,21 @@
+[
+  ["sofascore_lol_tournaments", "https://api.sofascore.com/api/v1/sport/league-of-legends/tournaments", {}],
+  ["sofascore_lol_seasons", "https://api.sofascore.com/api/v1/sport/league-of-legends/seasons", {}],
+  ["sofascore_lol_last_events", "https://api.sofascore.com/api/v1/sport/league-of-legends/events/last/0", {}],
+  ["sofascore_lol_upcoming", "https://api.sofascore.com/api/v1/sport/league-of-legends/events/upcoming/0", {}],
+  ["sofascore_unique_tournaments", "https://api.sofascore.com/api/v1/config/all/unique-tournaments", {}],
+  ["sofascore_team_events", "https://api.sofascore.com/api/v1/team/2695/events/last/0", {}],
+
+  ["lp_cargo_games", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win,Tournament&where=DateTime_UTC%3E=%222026-10-01%22&limit=100&format=json", {}],
+  ["lp_cargo_games_page2", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-01-01%22&limit=500&offset=500&format=json", {}],
+  ["lp_cargo_tournaments", "https://lol.fandom.com/api.php?action=cargoquery&tables=Tournaments&fields=Name,League,Region,DateTime_UTC,OverviewPage&where=DateTime_UTC%3E=%222026-06-01%22&limit=50&format=json", {}],
+  ["lp_cargo_scoreboardteams", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardTeams&fields=Team,DateTime_UTC,Opponent,Result,Score,Side,Tournament&where=DateTime_UTC%3E=%222026-10-01%22&limit=100&format=json", {}],
+
+  ["poly_events_by_tag", "https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&closed=false&limit=100", {}],
+  ["kalshi_public_page", "https://kalshi.com/markets/kxlolgame/kxlolgame-26oct232000mkoiblg", {}],
+
+  ["oe_github_org", "https://api.github.com/orgs/OraclesElixirTools/repos?per_page=100&sort=updated", {}],
+  ["oe_csv_2026_retry", "https://oracleselixir.s3-us-west-2.amazonaws.com/2026_LoL_esports_match_data_from_OraclesElixir.csv", {}],
+  ["golgg_worlds_matchlist", "https://gol.gg/tournament/tournamentmatchlist/Worlds%202026%20Main%20Event/", {}],
+  ["golgg_tournament_list_s16_all", "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/", {}]
+]
