@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T22:27:41.825040+00:00",
+ "generated_at": "2026-10-21T22:57:36.957688+00:00",
  "sources": [
   {
    "name": "Hotspawn Pick'em fixture API",
@@ -20,7 +20,7 @@
    "url": "https://www.pinnacle.com/en/esports/",
    "role": "Sharp esportsbook moneyline prices, de-vigged into probabilities.",
    "verified": true,
-   "verification": "9 League of Legends matchups priced from 237 esports matchups."
+   "verification": "9 League of Legends matchups priced from 235 esports matchups."
   },
   {
    "name": "Unibet (Kambi offering feed) — Esports",
@@ -41,7 +41,7 @@
    "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery",
    "role": "Official LoL esports match-history database. Input to the proprietary Elo/form model used to originate lines with no market coverage.",
    "verified": true,
-   "verification": "1660 completed games pulled across 17 Cargo calls; 228 teams rated."
+   "verification": "1734 completed games pulled across 17 Cargo calls; 225 teams rated."
   }
  ]
 }

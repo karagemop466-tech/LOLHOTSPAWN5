@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T22:27:41.825040+00:00",
+ "generated_at": "2026-10-21T22:57:36.957688+00:00",
  "pipeline": "v2",
  "hotspawn_total_fixtures": 12016,
  "hotspawn_lol_fixtures_alltime": 1501,
@@ -14,12 +14,12 @@
  },
  "lobby_html_bytes": 1985584,
  "lobby_permalinks_found": 195,
- "pinnacle_matchups": 237,
- "pinnacle_markets": 1014,
- "pinnacle_moneyline_match_markets": 80,
- "pinnacle_lol_matchups": 12,
+ "pinnacle_matchups": 235,
+ "pinnacle_markets": 1058,
+ "pinnacle_moneyline_match_markets": 76,
+ "pinnacle_lol_matchups": 13,
  "pinnacle_lol_matchup_types": {
-  "matchup": 9,
+  "matchup": 10,
   "special": 3
  },
  "pinnacle_lol_priced": 9,
@@ -33,132 +33,10 @@
  "leaguepedia_teams_from_cache": 61,
  "leaguepedia_competitions": 27,
  "leaguepedia_cargo_calls": 17,
- "leaguepedia_teams_missing_after_pass1": 128,
- "leaguepedia_games": 1660,
- "elo_teams_rated": 228,
+ "leaguepedia_teams_missing_after_pass1": 127,
+ "leaguepedia_games": 1734,
+ "elo_teams_rated": 225,
  "permalink_constructed": 69,
- "permalink_rule_hits": 180,
- "permalink_rule_misses": 15,
- "permalink_miss_examples": [
-  {
-   "id": "1071215",
-   "guess": "https://www.hotspawn.com/matches/playwell-r-d-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
-   "actual": "https://www.hotspawn.com/matches/playwell-rod-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
-   "team1": "Playwell Rød Q",
-   "team2": "Rich Gang",
-   "competition": "Komplettligaen 2026 Autumn"
-  },
-  {
-   "id": "1067675",
-   "guess": "https://www.hotspawn.com/matches/anyone-s-legend-vs-karmine-corp-worlds-2026-main-event-1067675",
-   "actual": "https://www.hotspawn.com/matches/anyones-legend-vs-karmine-corp-worlds-2026-main-event-1067675",
-   "team1": "Anyone's Legend",
-   "team2": "Karmine Corp",
-   "competition": "Worlds 2026 Main Event"
-  },
-  {
-   "id": "1067678",
-   "guess": "https://www.hotspawn.com/matches/l-s-vs-t1-worlds-2026-main-event-1067678",
-   "actual": "https://www.hotspawn.com/matches/los-vs-t1-worlds-2026-main-event-1067678",
-   "team1": "LØS",
-   "team2": "T1",
-   "competition": "Worlds 2026 Main Event"
-  },
-  {
-   "id": "1081083",
-   "guess": "https://www.hotspawn.com/matches/docta-esports-club-vs-cl-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
-   "actual": "https://www.hotspawn.com/matches/docta-esports-club-vs-cla-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
-   "team1": "Docta Esports Club",
-   "team2": "Clã NKZ Revengers",
-   "competition": "LigaGG CELOL B 2026 Split 2 Playoffs"
-  },
-  {
-   "id": "1074665",
-   "guess": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-rich-gang-sweden-rivals-league-season-2-1074665",
-   "actual": "https://www.hotspawn.com/matches/rich-gang-sweden-vs-northern-wolves-esports-rivals-league-season-2-1074665",
-   "team1": "Northern Wolves Esports",
-   "team2": "Rich Gang Sweden",
-   "competition": "RIVALS LEAGUE Season 2"
-  },
-  {
-   "id": "1075756",
-   "guess": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-m-nster-esports-prm-3rd-division-26-27-fall-1075756",
-   "actual": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075756",
-   "team1": "Packmiko E-Sports DACH",
-   "team2": "Atruvia Münster Esports",
-   "competition": "PRM 3rd Division 26-27 Fall"
-  },
-  {
-   "id": "1079031",
-   "guess": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-v-buffalo-prm-2nd-division-26-27-fall-1079031",
-   "actual": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079031",
-   "team1": "DKB XPERION NXT",
-   "team2": "Phong Vũ Buffalo",
-   "competition": "PRM 2nd Division 26-27 Fall"
-  },
-  {
-   "id": "1075734",
-   "guess": "https://www.hotspawn.com/matches/atruvia-m-nster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
-   "actual": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
-   "team1": "Atruvia Münster Esports",
-   "team2": "Defiance eSports",
-   "competition": "PRM 3rd Division 26-27 Fall"
-  },
-  {
-   "id": "1079145",
-   "guess": "https://www.hotspawn.com/matches/pegasus-esports-vs-jsk-academy-arabian-league-2nd-division-2026-summer-1079145",
-   "actual": "https://www.hotspawn.com/matches/jsk-academy-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079145",
-   "team1": "Pegasus Esports",
-   "team2": "JSK Academy",
-   "competition": "Arabian League 2nd Division 2026 Summer"
-  },
-  {
-   "id": "1079038",
-   "guess": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-v-buffalo-prm-2nd-division-26-27-fall-1079038",
-   "actual": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079038",
-   "team1": "VfB eSports",
-   "team2": "Phong Vũ Buffalo",
-   "competition": "PRM 2nd Division 26-27 Fall"
-  },
-  {
-   "id": "1082746",
-   "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
-   "actual": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
-   "team1": "Phong Vũ Buffalo",
-   "team2": "404 Multigaming e.V.",
-   "competition": "PRM 2nd Division 26-27 Fall"
-  },
-  {
-   "id": "1075785",
-   "guess": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-m-nster-esports-prm-3rd-division-26-27-fall-1075785",
-   "actual": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075785",
-   "team1": "REH Gaming",
-   "team2": "Atruvia Münster Esports",
-   "competition": "PRM 3rd Division 26-27 Fall"
-  },
-  {
-   "id": "1079053",
-   "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
-   "actual": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
-   "team1": "Phong Vũ Buffalo",
-   "team2": "MT1 Esports",
-   "competition": "PRM 2nd Division 26-27 Fall"
-  },
-  {
-   "id": "1079057",
-   "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-regnum4games-prm-2nd-division-26-27-fall-1079057",
-   "actual": "https://www.hotspawn.com/matches/regnum4games-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079057",
-   "team1": "Phong Vũ Buffalo",
-   "team2": "regnum4games",
-   "competition": "PRM 2nd Division 26-27 Fall"
-  },
-  {
-   "id": "1075793",
-   "guess": "https://www.hotspawn.com/matches/atruvia-m-nster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793",
-   "actual": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793",
-   "team1": "Atruvia Münster Esports",
-   "team2": "Kanji Esports AKA",
-   "competition": "PRM 3rd Division 26-27 Fall"
-  }
- ]
+ "permalink_rule_hits": 195,
+ "permalink_rule_accuracy": "195/195"
 }
