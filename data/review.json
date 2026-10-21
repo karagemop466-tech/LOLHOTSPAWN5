@@ -1,0 +1,23 @@
+{
+  "generated_at": null,
+  "flags": [
+    {
+      "title": "No automated snapshot has been verified yet",
+      "detail": "The current repository had no match feed or odds dataset. The collector only publishes records when the Hotspawn page exposes an identifiable League of Legends selection and match cards. Until a successful run, coverage is unverified and no picks are fabricated.",
+      "source_url": "https://play.hotspawn.com/lobby",
+      "source_name": "Hotspawn Pick'ems Lobby"
+    },
+    {
+      "title": "External odds API access is not configured",
+      "detail": "OddsPapi documents a free API-key signup and match-winner odds feed. No key is available in this repository/session. Without an accessible external odds feed, match probabilities are left blank; there is no Hotspawn popularity fallback.",
+      "source_url": "https://oddspapi.io/sports/esports/lol",
+      "source_name": "OddsPapi League of Legends odds documentation"
+    },
+    {
+      "title": "Prediction market and sportsbook coverage is incomplete by design",
+      "detail": "Polymarket and sportsbooks do not quote every league/tier. Missing or ambiguous markets remain unresolved; market absence is not converted to a 50% probability. Confirm line availability and jurisdiction at the operator before relying on it.",
+      "source_url": "https://polymarket.com/esports/league-of-legends",
+      "source_name": "Polymarket League of Legends markets"
+    }
+  ]
+}

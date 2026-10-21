@@ -1,0 +1,56 @@
+name: Refresh Hotspawn LoL match data
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-hotspawn-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser automation
+        run: |
+          python -m pip install --upgrade pip playwright
+          python -m playwright install --with-deps chromium
+      - name: Collect and validate fixtures
+        id: collect
+        env:
+          ODDSPAPI_API_KEY: ${{ secrets.ODDSPAPI_API_KEY }}
+          HOTSPAWN_LOBBY_URL: https://play.hotspawn.com/lobby
+        run: python scripts/refresh_matches.py
+        continue-on-error: true
+      - name: Commit latest valid snapshot or failure flag
+        if: always() && steps.collect.outcome != 'skipped'
+        run: |
+          if git diff --quiet -- data/matches.json data/review.json; then
+            echo 'No data changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/matches.json data/review.json
+          git commit -m 'data: refresh Hotspawn LoL fixtures and odds'
+          git push origin HEAD:main
+      - name: Mark unsuccessful source refresh as failed
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo 'Source refresh failed closed; previous match snapshot was preserved and the review flag was committed if changed.'
+          exit 1

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "fetched_at": null,
+  "source_url": "https://play.hotspawn.com/lobby",
+  "matches": [],
+  "collector": {
+    "status": "not_run",
+    "message": "No verified match snapshot has been published yet. The scheduled collector validates the selected LoL tab before publishing; an unverified parse does not overwrite this file."
+  }
+}

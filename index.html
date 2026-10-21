@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="Transparent League of Legends match inventory and externally sourced betting probabilities for Hotspawn Pick'ems.">
+  <title>Hotspawn LoL Picks — Match Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Hotspawn LoL Picks home"><span class="brand-mark">HS</span><span>LoL Picks <small>Independent odds dashboard</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#picks">Match picks</a><a href="sources/">Sources & method</a><a href="review/">Flagged for review</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">League of Legends · Hotspawn Pick'ems</p>
+        <h1 id="page-title">Every match. Clear odds. No invented picks.</h1>
+        <p class="lede">An independent view of Hotspawn's LoL match list, with win probabilities only when an external betting market can be verified. Hotspawn crowd picks are never used to calculate a probability.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#picks">See updated match picks <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="https://play.hotspawn.com/lobby" target="_blank" rel="noopener">Open Hotspawn lobby <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="update-card" aria-live="polite"><span class="status-dot"></span><div><strong id="update-status">Checking dashboard data…</strong><p id="updated-at">Match inventory and source status</p></div></aside>
+    </section>
+
+    <section class="summary section-wrap" aria-labelledby="summary-heading">
+      <div class="section-heading"><div><p class="eyebrow">Executive summary</p><h2 id="summary-heading">What the current board tells us</h2></div></div>
+      <p class="summary-intro">This dashboard separates matches with a quoted external market from matches that currently have no verifiable line. A missing line is <strong>not</strong> a 50/50 estimate, and Hotspawn's community pick share is not evidence of win probability.</p>
+      <div class="stats-grid" aria-label="Current coverage summary">
+        <article class="stat-card"><span class="stat-label">Listed LoL matches</span><strong id="stat-total">—</strong><small>from Hotspawn's public lobby</small></article>
+        <article class="stat-card"><span class="stat-label">External lines found</span><strong id="stat-priced">—</strong><small>independent odds source required</small></article>
+        <article class="stat-card"><span class="stat-label">Unresolved / unpriced</span><strong id="stat-unresolved">—</strong><small>review limitations below</small></article>
+      </div>
+      <div class="summary-links"><a href="#picks">Go to the current match list <span aria-hidden="true">→</span></a><a href="#unresolved">See unresolved matches and limitations <span aria-hidden="true">→</span></a><a href="sources/">Review source and probability method <span aria-hidden="true">→</span></a></div>
+      <div class="notice"><strong>Coverage status:</strong> <span id="coverage-note">No verified match snapshot has been published yet. The automated collector will only publish data it can tie to Hotspawn's official match listing; unsupported records remain flagged rather than guessed.</span></div>
+    </section>
+
+    <section class="section-wrap picks-section" id="picks" aria-labelledby="picks-heading">
+      <div class="section-heading section-heading-row"><div><p class="eyebrow">Live board</p><h2 id="picks-heading">League of Legends match picks</h2><p class="section-description">Use the search box to find a team or event. Each priced pick shows its external source and timestamp.</p></div><div class="filters"><label for="match-search">Search matches</label><input id="match-search" type="search" placeholder="Team or tournament" autocomplete="off"></div></div>
+      <div class="table-shell"><table class="match-table"><thead><tr><th scope="col">Match / start</th><th scope="col">Market probability</th><th scope="col">Pick</th><th scope="col">Source & status</th></tr></thead><tbody id="priced-matches"><tr><td colspan="4" class="empty-state">Loading verified match data…</td></tr></tbody></table></div>
+      <p class="mobile-hint">On a phone, each match is displayed as a readable card. Swipe only if your screen reader or browser needs the table view.</p>
+    </section>
+
+    <section class="section-wrap unresolved-section" id="unresolved" aria-labelledby="unresolved-heading">
+      <div class="section-heading"><div><p class="eyebrow">Separate unresolved section</p><h2 id="unresolved-heading">Matches without a verified external line</h2><p class="section-description">We still show listed matches when books or prediction markets do not quote them. A pick is withheld until independent evidence exists.</p></div></div>
+      <div class="limitations-grid">
+        <article><span class="limitation-icon" aria-hidden="true">01</span><h3>Low-tier / regional coverage</h3><p>Books often do not post a moneyline for lower-tier, academy, or regional matches. If no market is found, the winning team and probability stay blank.</p></article>
+        <article><span class="limitation-icon" aria-hidden="true">02</span><h3>Market coverage gaps</h3><p>Polymarket and other public prediction markets list selected events, not every Hotspawn fixture. Market absence does not imply equal chances or a team preference.</p></article>
+        <article><span class="limitation-icon" aria-hidden="true">03</span><h3>Line freshness & identity</h3><p>Odds may open late, suspend in-play, or use a different team spelling. We only match a line when both teams and event identity can be checked; stale or ambiguous matches are flagged.</p></article>
+      </div>
+      <div class="table-shell unresolved-table-shell"><table class="match-table"><thead><tr><th scope="col">Match</th><th scope="col">Probability</th><th scope="col">Why unresolved</th><th scope="col">Hotspawn source</th></tr></thead><tbody id="unresolved-matches"><tr><td colspan="4" class="empty-state">Loading unresolved matches…</td></tr></tbody></table></div>
+      <p class="review-link"><a href="review/">Open the Flagged for Review page for source failures, data gaps, and irregularities <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <section class="closing section-wrap"><div><p class="eyebrow">Method, not crowd consensus</p><h2>Probabilities come from external match-winner prices.</h2><p>When supported by market coverage, decimal odds are converted to implied probabilities and normalized across both teams to remove the bookmaker margin. No Hotspawn popularity share enters that calculation. We do not invent results when the market is absent.</p></div><a class="button button-primary" href="sources/">Read how picks are generated <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="site-footer"><p>Independent informational project; not affiliated with or endorsed by Hotspawn, Riot Games, or any sportsbook. No betting functionality. Gambling laws vary by location.</p><div><a href="sources/">Sources & method</a><a href="review/">Flagged for Review</a><a href="https://play.hotspawn.com/lobby" target="_blank" rel="noopener">Hotspawn lobby</a></div></footer>
+</body>
+</html>
