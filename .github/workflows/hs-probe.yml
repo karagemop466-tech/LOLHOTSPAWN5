@@ -16,6 +16,7 @@ on:
       - 'scraper/probe.sh'
       - 'scraper/probe_api.sh'
       - 'scraper/probe_collect.sh'
+      - 'scraper/probe_odds.sh'
   workflow_dispatch:
 
 permissions:
@@ -35,9 +36,9 @@ jobs:
       - name: Probe
         run: |
           mkdir -p research probe
-          bash scraper/probe_collect.sh > research/probe-collect.txt 2>&1
-          echo "collect probe exit: $?"
-          cat research/probe-collect.txt
+          bash scraper/probe_odds.sh > research/probe-odds.txt 2>&1
+          echo "odds probe exit: $?"
+          cat research/probe-odds.txt
 
       - name: Commit report
         if: always()
