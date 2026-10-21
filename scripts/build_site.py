@@ -455,6 +455,9 @@ def build_unresolved(doc):
 def build_methodology(doc):
     t = doc["totals"]
     m = doc.get("methodology", {})
+    k_map = m.get("k_by_best_of", {}) or {}
+    k_text = ", ".join(f"BestOf {k} → {int(v)}" for k, v in sorted(k_map.items(),
+                                                                 key=lambda kv: int(kv[0])))
     body = f"""
 <section class="panel pad">
   <h1>Methodology</h1>
@@ -474,21 +477,21 @@ def build_methodology(doc):
   odds to implied probability:</p>
   <pre>p = 100 / (price + 100)        if price &gt; 0
 p = -price / (-price + 100)    if price &lt; 0</pre>
-  <p>Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
+  <p>K rises with series length, so longer series move ratings further. Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
   de-vigged proportionally:</p>
   <pre>p_no_vig(a) = p(a) / (p(a) + p(b))</pre>
   <p>A Hotspawn fixture only takes a market price when <strong>both</strong> team names match the
-  Pinnacle matchup and the two start times agree within {m.get('market_tolerance_hours')} hours.
+  Pinnacle matchup and the two start times agree within {m.get('market_tolerance_hours'):g} hours.
   Any partial match is discarded — a wrong join is worse than no join.</p>
 
   <h2>3. Our own Elo model</h2>
   <p>For fixtures no bookmaker prices, we rate teams ourselves from
   <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule">Leaguepedia's
   MatchSchedule</a> results, walking matches in chronological order:</p>
-  <pre>E(a)       = 1 / (1 + 10^((Rb - Ra) / {int(m.get('elo_scale', 400))}))
-Ra'        = Ra + K · (S(a) - E(a))
-K          = {m.get('k_by_best_of', {})} by series length (BestOf)
-decay      = 0.5 ^ (days_since_last_match / {int(m.get('half_life_days', 365))})
+  <pre>E(a)        = 1 / (1 + 10^((Rb - Ra) / {int(m.get('elo_scale', 400))}))
+Ra'         = Ra + K · (S(a) - E(a))
+K           = {k_text}
+decay       = 0.5 ^ (days_since_last_match / {int(m.get('half_life_days', 365))})
 R_effective = {int(m.get('elo_start', 1500))} + (R - {int(m.get('elo_start', 1500))}) · n / (n + {int(m.get('shrink_pseudo_matches', 8))})</pre>
   <p>New teams move faster (K is multiplied by 1.6 until they have 10 results), inactive teams drift
   back toward the mean, and small samples are shrunk toward {int(m.get('elo_start', 1500))} so a
