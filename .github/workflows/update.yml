@@ -7,8 +7,10 @@ on:
     - cron: '17 */4 * * *'   # 00:17, 04:17, 08:17, 12:17, 16:17, 20:17 UTC
   workflow_dispatch:
   push:
-    branches: [main]
-    paths: ['.github/workflows/update.yml']
+    # main: keep the original trigger. arena/1e8f1e2e: this session's integration branch
+    # only (other sessions' branches are never written to by this workflow).
+    branches: [main, 'arena/1e8f1e2e-lolhotspawn5']
+    paths: ['.github/workflows/update.yml', 'scripts/**']
 
 permissions:
   contents: write
