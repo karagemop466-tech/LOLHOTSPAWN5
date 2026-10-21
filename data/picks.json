@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-10-21T20:42:45Z",
+ "generated_utc": "2026-10-21T20:45:07Z",
  "inventory_source": "https://play.hotspawn.com/lol-pickems",
- "inventory_collected_utc": "2026-10-21T20:41:16Z",
+ "inventory_collected_utc": "2026-10-21T20:44:43Z",
  "results_source": "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule",
- "results_collected_utc": "2026-10-21T20:41:39Z",
+ "results_collected_utc": "2026-10-21T20:45:07Z",
  "results_rows": 7579,
  "teams_rated": 1394,
  "totals": {

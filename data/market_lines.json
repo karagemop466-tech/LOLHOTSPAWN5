@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-21T20:41:16Z",
+ "collected_utc": "2026-10-21T20:44:43Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "bovada": "Best-effort secondary book; only recorded if it answers.",
@@ -69,18 +69,18 @@
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1638750814,
-    "start_utc": "2026-10-23T18:00:00Z",
+    "matchup_id": 1638750902,
+    "start_utc": "2026-10-23T19:00:00Z",
     "is_live": false,
     "participants": [
      {
       "id": null,
-      "name": "Liquid",
+      "name": "Anyone's Legend",
       "alignment": "home"
      },
      {
       "id": null,
-      "name": "CTBC Flying Oyster",
+      "name": "Karmine Corp",
       "alignment": "away"
      }
     ],
@@ -88,118 +88,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": -285,
-      "implied_raw": 0.74026,
-      "team": "Liquid"
+      "american": -200,
+      "implied_raw": 0.66667,
+      "team": "Anyone's Legend"
      },
      {
       "designation": "away",
-      "american": 228,
-      "implied_raw": 0.30488,
-      "team": "CTBC Flying Oyster"
+      "american": 167,
+      "implied_raw": 0.37453,
+      "team": "Karmine Corp"
      }
     ],
     "devigged": [
      {
-      "team": "Liquid",
-      "prob": 0.70829
+      "team": "Anyone's Legend",
+      "prob": 0.64029
      },
      {
-      "team": "CTBC Flying Oyster",
-      "prob": 0.29171
+      "team": "Karmine Corp",
+      "prob": 0.35971
      }
     ],
-    "cutoff_utc": "2026-10-23T18:00:00+00:00"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1638750815,
-    "start_utc": "2026-10-23T20:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "G2",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Dplus KIA",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 126,
-      "implied_raw": 0.44248,
-      "team": "G2"
-     },
-     {
-      "designation": "away",
-      "american": -148,
-      "implied_raw": 0.59677,
-      "team": "Dplus KIA"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "G2",
-      "prob": 0.42577
-     },
-     {
-      "team": "Dplus KIA",
-      "prob": 0.57423
-     }
-    ],
-    "cutoff_utc": "2026-10-23T20:00:00+00:00"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1638755459,
-    "start_utc": "2026-10-24T00:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Movistar KOI",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -512,
-      "implied_raw": 0.8366,
-      "team": "Bilibili"
-     },
-     {
-      "designation": "away",
-      "american": 368,
-      "implied_raw": 0.21368,
-      "team": "Movistar KOI"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Bilibili",
-      "prob": 0.79655
-     },
-     {
-      "team": "Movistar KOI",
-      "prob": 0.20345
-     }
-    ],
-    "cutoff_utc": "2026-10-24T00:00:00+00:00"
+    "cutoff_utc": "2026-10-23T19:00:00+00:00"
    },
    {
     "league": "League of Legends - World Championship",
@@ -339,51 +249,6 @@
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1638750902,
-    "start_utc": "2026-10-23T19:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Anyone's Legend",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Karmine Corp",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -200,
-      "implied_raw": 0.66667,
-      "team": "Anyone's Legend"
-     },
-     {
-      "designation": "away",
-      "american": 167,
-      "implied_raw": 0.37453,
-      "team": "Karmine Corp"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Anyone's Legend",
-      "prob": 0.64029
-     },
-     {
-      "team": "Karmine Corp",
-      "prob": 0.35971
-     }
-    ],
-    "cutoff_utc": "2026-10-23T19:00:00+00:00"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
     "matchup_id": 1638748203,
     "start_utc": "2026-10-23T21:00:00Z",
     "is_live": false,
@@ -425,6 +290,141 @@
      }
     ],
     "cutoff_utc": "2026-10-23T21:00:00+00:00"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1638755459,
+    "start_utc": "2026-10-24T00:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Movistar KOI",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -512,
+      "implied_raw": 0.8366,
+      "team": "Bilibili"
+     },
+     {
+      "designation": "away",
+      "american": 368,
+      "implied_raw": 0.21368,
+      "team": "Movistar KOI"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Bilibili",
+      "prob": 0.79655
+     },
+     {
+      "team": "Movistar KOI",
+      "prob": 0.20345
+     }
+    ],
+    "cutoff_utc": "2026-10-24T00:00:00+00:00"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1638750814,
+    "start_utc": "2026-10-23T18:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Liquid",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "CTBC Flying Oyster",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -285,
+      "implied_raw": 0.74026,
+      "team": "Liquid"
+     },
+     {
+      "designation": "away",
+      "american": 228,
+      "implied_raw": 0.30488,
+      "team": "CTBC Flying Oyster"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Liquid",
+      "prob": 0.70829
+     },
+     {
+      "team": "CTBC Flying Oyster",
+      "prob": 0.29171
+     }
+    ],
+    "cutoff_utc": "2026-10-23T18:00:00+00:00"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1638750815,
+    "start_utc": "2026-10-23T20:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "G2",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Dplus KIA",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 126,
+      "implied_raw": 0.44248,
+      "team": "G2"
+     },
+     {
+      "designation": "away",
+      "american": -148,
+      "implied_raw": 0.59677,
+      "team": "Dplus KIA"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "G2",
+      "prob": 0.42577
+     },
+     {
+      "team": "Dplus KIA",
+      "prob": 0.57423
+     }
+    ],
+    "cutoff_utc": "2026-10-23T20:00:00+00:00"
    }
   ],
   "errors": [],
