@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-10-21T21:22:22Z",
+ "checked_utc": "2026-10-21T21:27:56Z",
  "rows": 264,
  "by_method": {
   "market": 9,
@@ -10,7 +10,7 @@
  "errors": [],
  "warnings": [],
  "notes": [
-  "match_results.json collected 2026-10-21T21:22:21Z (23268 rows)"
+  "match_results.json collected 2026-10-21T21:27:55Z (23284 rows)"
  ],
  "status": "pass",
  "results_snapshot_age_hours": 0.0

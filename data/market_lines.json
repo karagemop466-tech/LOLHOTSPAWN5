@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-21T21:21:17Z",
+ "collected_utc": "2026-10-21T21:26:49Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -489,8 +489,8 @@
       "yes_bid_dollars": "0.4500",
       "yes_ask_dollars": "0.4600",
       "last_price_dollars": "0.4600",
-      "volume_dollars": "3736.94",
-      "open_interest": "3128.64"
+      "volume_dollars": "3944.94",
+      "open_interest": "3336.64"
      },
      {
       "team": "Galions",
@@ -598,7 +598,7 @@
       "team": "Team Liquid",
       "title": "Team Liquid wins",
       "ticker": "KXLOLGAME-26OCT231400CFOTL-TL",
-      "yes_bid_dollars": "0.7100",
+      "yes_bid_dollars": "0.7000",
       "yes_ask_dollars": "0.7200",
       "last_price_dollars": "0.7300",
       "volume_dollars": "15415.75",
@@ -608,11 +608,11 @@
     "devigged": [
      {
       "team": "CTBC Flying Oyster",
-      "prob": 0.28141
+      "prob": 0.28283
      },
      {
       "team": "Team Liquid",
-      "prob": 0.71859
+      "prob": 0.71717
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct231400cfotl",
@@ -743,9 +743,9 @@
       "ticker": "KXLOLGAME-26OCT231700TESHLE-TES",
       "yes_bid_dollars": "0.2200",
       "yes_ask_dollars": "0.2300",
-      "last_price_dollars": "0.2200",
-      "volume_dollars": "19381.85",
-      "open_interest": "18872.52"
+      "last_price_dollars": "0.2300",
+      "volume_dollars": "19421.85",
+      "open_interest": "18912.52"
      },
      {
       "team": "Hanwha Life Esports",
@@ -754,8 +754,8 @@
       "yes_bid_dollars": "0.7700",
       "yes_ask_dollars": "0.7800",
       "last_price_dollars": "0.7800",
-      "volume_dollars": "11270.51",
-      "open_interest": "11049.64"
+      "volume_dollars": "11295.51",
+      "open_interest": "11074.64"
      }
     ],
     "devigged": [
@@ -990,7 +990,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2635,
+   "body_bytes": 2636,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
