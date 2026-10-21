@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-10-21T21:00:21Z",
+  "generated_at": "2026-10-21T21:13:01Z",
   "tournament_map": {
     "4 Nations 2026 Halloween Heist": "4 Nations/2026 Season/Halloween Heist",
     "Arabian League 2nd Division 2026 Summer": "Arabian League 2nd Division/2026 Season/Summer Split",
+    "Arabian Regional Championship 2026: Lebanon-Libya-Syria-Palestine": "Arabian Regional Championship 2026/Qualifiers/LB-Li-SY-PS",
     "Arabian Regional Championship 2026: Qatar-Bahrain-Kuwait": "Arabian Regional Championship 2026/Qualifiers/QA-BH-KW",
     "Benelux Ascend Series 2026 Summer Playoffs": "Benelux Ascend Series/2026 Season/Summer Playoffs",
     "Benelux Ascend Series 2026 Summer Split": "Benelux Ascend Series/2026 Season/Summer Split",
@@ -20,6 +21,7 @@
     "LigaGG CELOL B 2026 Split 2": "LigaGG/CELOL Série B/2026 Season/Split 2",
     "LigaGG CELOL B 2026 Split 2 Playoffs": "LigaGG/CELOL Série B/2026 Season/Split 2 Playoffs",
     "POP Esports Masters Season 7": "POP Esports Masters/Season 7",
+    "PRM 2nd Division 26-27 Fall": "Prime League 2nd Division/2027 Season/Fall Split",
     "PRM 3rd Division 26-27 Fall": "Prime League 3rd Division/2027 Season/Fall Split",
     "RIVALS LEAGUE Season 2": "RIVALS LEAGUE/2026 Season/Season 2",
     "Superstrike League 2026": "Superstrike League 2026",
@@ -27,8 +29,6 @@
     "Worlds 2026 Main Event": "2026 Season World Championship/Main Event"
   },
   "tournament_notes": {
-    "Arabian Regional Championship 2026: Lebanon-Libya-Syria-Palestine": "no Leaguepedia page found",
-    "Arabian Regional Championship 2026: Qatar-Bahrain-Kuwait": "auto-resolved (score 0.51) from 1 search hits",
     "Benelux Ascend Series 2027 Winter Promotion": "auto-resolved (score 0.90) from 1 search hits",
     "EM 2026 Summer Main Event": "auto-resolved (score 0.72) from 8 search hits",
     "Hitpoint 2nd Div Challengers 2026 Summer Playoffs": "auto-resolved (score 0.77) from 8 search hits",
@@ -39,13 +39,10 @@
     "LigaGG CELOL A 2026 Split 2": "auto-resolved (score 0.90) from 8 search hits",
     "LigaGG CELOL B 2026 Split 2": "auto-resolved (score 0.90) from 8 search hits",
     "LigaGG CELOL B 2026 Split 2 Playoffs": "auto-resolved (score 0.90) from 8 search hits",
-    "POP Esports Masters Season 7": "auto-resolved (score 1.00) from 8 search hits",
-    "PRM 2nd Division 26-27 Fall": "no Leaguepedia page found"
+    "POP Esports Masters Season 7": "auto-resolved (score 1.00) from 8 search hits"
   },
   "unresolved_tournaments": [
-    "Arabian Regional Championship 2026: Lebanon-Libya-Syria-Palestine",
-    "LGC Rising 2026 Playoffs",
-    "PRM 2nd Division 26-27 Fall"
+    "LGC Rising 2026 Playoffs"
   ],
   "team_map": {
     "2 Massive": "2 Massive",
@@ -328,9 +325,9 @@
     "التريس": "no Leaguepedia team page"
   },
   "counts": {
-    "games": 1755,
-    "teams_rated": 592,
-    "tournaments_mapped": 24,
-    "tournaments_unresolved": 3
+    "games": 1792,
+    "teams_rated": 612,
+    "tournaments_mapped": 26,
+    "tournaments_unresolved": 1
   }
 }
