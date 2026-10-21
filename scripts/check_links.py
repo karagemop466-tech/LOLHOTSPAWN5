@@ -131,14 +131,23 @@ def check_external(limit: int = 40) -> tuple[list[str], list[dict]]:
 def main() -> int:
     problems = check_internal() + check_picks()
     results: list[dict] = []
-    if "--external" in sys.argv:
-        external_problems, results = check_external()
-        problems.extend(external_problems)
+    external_problems: list[str] = []
 
-    report = {"generated_at": utcnow(), "problems": problems, "external": results}
+    report = {"generated_at": utcnow(), "problems": problems}
     os.makedirs(EVIDENCE_DIR, exist_ok=True)
     with open(os.path.join(EVIDENCE_DIR, "link_check.json"), "w", encoding="utf-8") as fh:
         json.dump(report, fh, indent=2)
+
+    if "--external" in sys.argv:
+        # A source that blocks automated requests is a note for a human, not a broken
+        # site: the external results are reported separately and never fail the build.
+        external_problems, results = check_external()
+        with open(os.path.join(EVIDENCE_DIR, "link_check_external.json"), "w", encoding="utf-8") as fh:
+            json.dump({"generated_at": utcnow(), "problems": external_problems,
+                       "results": results}, fh, indent=2)
+        print(f"external check: {len(results)} link(s) tried, {len(external_problems)} did not answer")
+        for problem in external_problems[:40]:
+            print(f"  - {problem}")
 
     if problems:
         print(f"FAILED: {len(problems)} problem(s)")

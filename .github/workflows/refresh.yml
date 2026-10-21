@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - main
       - arena/3552c64a-lolhotspawn5
     paths:
       - 'scripts/**'
@@ -47,9 +48,17 @@ jobs:
       - name: Build site
         run: python scripts/build_site.py
       - name: Check internal links
+        id: linkcheck
         run: python scripts/check_links.py
-      - name: Commit refreshed data and site
+      - name: Check external source links (sample, never blocks the publish)
         if: always()
+        continue-on-error: true
+        run: python scripts/check_links.py --external
+      # The site is only published when the link check is green: a broken site is
+      # never pushed. A collector that failed is not fatal - the last good data
+      # is kept and the failure is reported in evidence/source_health_*.json.
+      - name: Commit refreshed data and site
+        if: always() && (steps.linkcheck.outcome == 'success' || steps.linkcheck.outcome == 'skipped')
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
