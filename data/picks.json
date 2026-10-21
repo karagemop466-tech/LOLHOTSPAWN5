@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:25:46Z",
+  "generated_at": "2026-10-21T21:32:12Z",
   "note": "HotSpawn supplies the fixture list only. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line built on verified match results. HotSpawn crowd percentages are never used.",
   "summary": {
     "fixtures": 264,
@@ -5084,8 +5084,8 @@
           "source_url": "https://polymarket.com/event/lol-hle1-tes-2026-10-23/lol-hle1-tes-2026-10-23",
           "event_title": "Hanwha Life Esports vs Top Esports (BO1) - Worlds Group Stage",
           "league": null,
-          "prob_a": 0.775,
-          "prob_b": 0.225,
+          "prob_a": 0.785,
+          "prob_b": 0.215,
           "decimal_a": null,
           "decimal_b": null,
           "overround": 1.0,
