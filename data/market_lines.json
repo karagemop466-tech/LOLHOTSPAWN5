@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-21T20:44:43Z",
+ "collected_utc": "2026-10-21T20:51:50Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "bovada": "Best-effort secondary book; only recorded if it answers.",
