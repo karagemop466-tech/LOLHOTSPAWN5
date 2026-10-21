@@ -757,13 +757,19 @@ def build_review(doc):
          "2026 plus a power-ranking market — none matched a fixture on the current board, so Polymarket "
          "contributes no probability.",
          "https://polymarket.com/markets/esports/lol"),
-        ("Kalshi per-match markets exist but are not ingested here",
-         "The KXLOLGAME series does list per-match Worlds moneylines (a verified snapshot showed 9 open "
-         "fixtures), so these are not futures. This pipeline does not yet read them: those fixtures are "
-         "priced by Pinnacle where a line exists, otherwise by the model. Wiring Kalshi in would move "
-         "some model-priced Worlds rows onto a real exchange price — an open improvement, stated here "
-         "rather than implied.",
-         "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&status=open"),
+        ("Verified alias: Hotspawn \"Phong Vu Buffalo\" = Leaguepedia \"PvB (Swiss Team)\"",
+         "These five fixtures are joined to Leaguepedia team \"PvB (Swiss Team)\" via a documented "
+         "alias rather than guesswork: same league (PRM 2nd Division 26-27 Fall) and the identical "
+         "next five opponents in order (DKB XPERION NXT, VfB eSports, 404 Multigaming, MT1 Esports, "
+         "regnum4games). Org handles are \"PvBnation\"/\"pvb-nation\". If that schedule slot ever "
+         "diverges from Hotspawn's, the alias must be reverted.",
+         "https://lol.fandom.com/wiki/PvB_(Swiss_Team)"),
+        ("Kalshi per-match markets are now ingested as a secondary source",
+         "The KXLOLGAME series lists per-match moneylines (9 open fixtures at collection). Probabilities "
+         "are quoted at Pinnacle where both books cover a fixture (Pinnacle odds remain primary), and "
+         "the Kalshi bid/ask is recorded as a corroborating line with its event ticker and API URL. "
+         "Every ingested price is an exchange quote; none is inferred.",
+         "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true"),
         ("Unverified values are left blank",
          f"{len(insuff)} fixtures carry no probability at all — {len([r for r in insuff if r.get('unresolved_kind') == 'stale_fixture'])} "
          f"stale rows and {len([r for r in insuff if r.get('unresolved_kind') == 'insufficient_history'])} "

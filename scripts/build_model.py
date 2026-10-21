@@ -24,7 +24,7 @@ recorded verbatim in the output so it can be published on the "Flagged for Revie
 
 A probability is never published for a row we cannot defend. Blank beats plausible.
 """
-import json, math, os, re, sys, datetime as dt, urllib.parse
+import json, math, os, re, sys, unicodedata, datetime as dt, urllib.parse
 
 DATA = "data"
 TOLERANCE_HOURS = 8.0
@@ -80,6 +80,11 @@ ALIASES = {
     "gen g": "geng",
     "solary": "solary",
     "galions": "galions",
+    # Verified alias (sources recorded on review.html): Hotspawn "Phong Vu Buffalo"
+    # is Leaguepedia "PvB (Swiss Team)" - same league (PRM 2nd Div 26-27 Fall) and
+    # the identical next five opponents in order (DKB XPERION NXT, VfB eSports,
+    # 404 Multigaming, MT1 Esports, regnum4games) per lol.fandom.com/wiki/PvB_(Swiss_Team).
+    "phong vu buffalo": "pvb",
 }
 
 DROPPED_TOKENS = {
@@ -100,6 +105,11 @@ def norm(name):
     # not part of the name; strip them before matching. Verified rule: Leaguepedia's
     # own pages list these teams under the parenthetical-free name in standings tables.
     s = re.sub(r"\([^)]*\)", " ", s)
+    # Fold diacritics (NFKD) so "Phong Vu"/"Phong Vũ" join; then keep only
+    # alphanumerics. The small fallback list covers characters that survive
+    # NFKD differently across Python builds.
+    s = "".join(c for c in unicodedata.normalize("NFKD", s)
+                if not unicodedata.combining(c))
     s = (s.replace("ø", "o").replace("æ", "ae").replace("å", "a")
           .replace("ü", "u").replace("é", "e").replace("ñ", "n"))
     s = re.sub(r"[^a-z0-9]+", " ", s).strip()
