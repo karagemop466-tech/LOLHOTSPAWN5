@@ -1,0 +1,91 @@
+
+==================== 1. lobby HTML ====================
+bytes: 1985698
+--- status line ---
+HTTP/2 200 
+--- content-type / server ---
+server: nginx
+content-type: text/html;charset=UTF-8
+x-cache: HIT
+
+==================== 1a. script srcs ====================
+main-GNDEYCXE.js
+polyfills-5CFQRCPP.js
+
+==================== 1b. preload / modulepreload links ====================
+chunk-2GDXQTAU.js
+chunk-2L66CBQB.js
+chunk-EGAGP4I3.js
+chunk-KETMVSVA.js
+chunk-O4YNOJX5.js
+chunk-QMOY57BV.js
+chunk-RFR2IGEB.js
+chunk-TA7QC7RM.js
+chunk-W6IXPXDB.js
+chunk-ZGIZFQXP.js
+styles-TRE4N5KM.css
+
+==================== 1c. api-ish strings in HTML ====================
+"https://fonts.googleapis.com"
+"https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks"
+"https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures"
+"https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/tenants/slug/hotspawn"
+"https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget"
+
+==================== 1d. framework markers ====================
+window.__jsaction_bootstrap
+
+==================== 1e. count of 'hotspawn.com/matches/' links (server-rendered matches?) ====================
+195
+
+==================== 1f. any JSON blobs ====================
+      1 application/json
+
+==================== 2. candidate API paths on play.hotspawn.com ====================
+GET play.hotspawn.com/api/matches -> 404 (150B)
+GET play.hotspawn.com/api/match -> 404 (148B)
+GET play.hotspawn.com/api/lobby -> 404 (148B)
+GET play.hotspawn.com/api/events -> 404 (149B)
+GET play.hotspawn.com/api/pickems -> 404 (150B)
+GET play.hotspawn.com/api/fixtures -> 404 (151B)
+GET play.hotspawn.com/api/v1/matches -> 404 (153B)
+GET play.hotspawn.com/api/v1/match -> 404 (151B)
+GET play.hotspawn.com/api/v1/lobby -> 404 (151B)
+GET play.hotspawn.com/api/v1/events -> 404 (152B)
+GET play.hotspawn.com/api/v1/fixtures -> 404 (154B)
+GET play.hotspawn.com/api/week -> 404 (147B)
+GET play.hotspawn.com/api/matches/lol -> 404 (154B)
+GET play.hotspawn.com/api/lol/matches -> 404 (154B)
+GET play.hotspawn.com/api/games/lol/matches -> 404 (160B)
+GET play.hotspawn.com/api/tournaments -> 404 (154B)
+GET play.hotspawn.com/api/leaderboard -> 404 (154B)
+GET play.hotspawn.com/api/user -> 404 (147B)
+GET play.hotspawn.com/api/me -> 404 (145B)
+GET play.hotspawn.com/api/config -> 404 (149B)
+
+==================== 3. alternate hosts ====================
+https://api.play.hotspawn.com/ -> 000ERR
+https://api.hotspawn.com/ -> 000ERR
+https://backend.play.hotspawn.com/ -> 000ERR
+https://play-api.hotspawn.com/ -> 000ERR
+https://data.hotspawn.com/ -> 000ERR
+https://graphql.hotspawn.com/ -> 000ERR
+
+==================== 4. www.hotspawn.com WP REST API ====================
+wp-json root -> 403 (5633B)
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-imZM3Njk3QFbwtRlMIi2PD&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="imZM3Njk3QFbwtRlMIi2PD">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'yITXI0fbeWCKkoejcusq428jDT.NndfEkg7si2mOLk0-1792614298-1.2.1.1-X3q4Y620RwjeXlHO_esfHH9VNqHBbiCDhifjsFiH3L9TMhKKHdeDpfbWvnvh2lyF',cITimeS: '1792614298',cN: 'imZM3Njk3QFbwtRlMIi2PD',cRay: 'a4e2fd231f1875f1',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/wp-json/?__cf_chl_tk=bpYqZloYug7Nf4.zXRte7wWUm.zwZRZqmZ0QYSwjzSY-1792614298-1.0.1.1-Qt3gAf9Lm7hE0zWk7u7rPetmbPdqi0TzeMD1WL4XeOU",cvId: '3',cZone: 'www.hotspawn.com',fa:"/wp-json/?__cf_chl_f_tk=bpYqZloYug7Nf4.zXRte7wWUm.zwZRZqmZ0QYSwjzSY-1792614298-1.0.1.1-Qt3gAf9Lm7hE0zWk7u7rPetmbPdqi0TzeMD1WL4XeOU",md: 'XdKI
+--- routes mentioning 'match' or 'fixture' ---
+parse fail: Expecting value: line 1 column 1 (char 0)
+
+==================== 5. WP namespaces ====================
+parse fail: Expecting value: line 1 column 1 (char 0)
+
+==================== 6. robots.txt of both sites ====================
+--- play ---
+User-agent: *
+Allow: /
+
+Sitemap: https://play.hotspawn.com/sitemap.xml
+--- www ---
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-nuzIhA6AisZxtJjtuxsXFt&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="nuzIhA6AisZxtJjtuxsXFt">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 'c6ghA2otahEZw_cCA2zOdgFNQIGxoLzc91ZTypF5.C8-1792614298-1.2.1.1-z6Na0osrkhJH7t4z0VBKbfE.tsdTEXe6N43VBImuQ14KJFavyS8XkoG6EI2km_hP',cITimeS: '1792614298',cN: 'nuzIhA6AisZxtJjtuxsXFt',cRay: 'a4e2fd266ae5ad72',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/robots.txt?__cf_chl_tk=365XRL2KEzusXVtbUIwlwLn2OjeDBxAdx_COBxbERIo-1792614298-1.0.1.1-dPSvsrpFzGB8R3SusE8p3bMtrNfUijPGuE6OdiYcqIw",cvId: '3',cZone: 'www.hotspawn.com',fa:"/robots.txt?__cf_chl_f_tk=365XRL2KEzusXVtbUIwlwLn2OjeDBxAdx_COBxbERIo-1792614298-1.0.1.1-dPSvsrpFzGB8R3SusE8p3bMtrNfUijPGuE6OdiYcqIw",md: 'tsFYCiypzVNxECZNnbjOdk.7x.PDsYoHnbz0x7pCdIo-1792614298-1.2.1.1-v658JgAvNasqpOKJf3Tcn9iNJVwptqS3j5C7pDM9w9bWGln1hWO3aDrTSRgqg5_PcHsB4Snz0i3wBYrQD35lw8LrsgDDyjzNLgFrAzzily3SRQfFYaVZvhf.WxFNfwecf0MU.a6cKqmOqcaexu1TF2NSiU6.ZO2Sj78I9KpOPq6LoJytn.sefk0E3SwKiqExP0IlyW7gsLuBnn1Gchj0t5H_BzG_WROb9OQWMOnTdiaTNRd5C2vwjdPPuW4SOkxQR6YxaDyxODEeAYqPvbqyEbVqPJlkTskUMRWeX7h2wGkeoBrAwPe9f.d0.aif0YaEOhF6z72_6uIxq313kbLUJ7e4Kt_ma0BcOP_j4x.6dln0Jy8jRmCYe8_nvDjbu_coXihujrZuLeijlv8XZ8pHwx6NQ1fkh.RNNhjRsB0QzgAE.8v_gY3aYtQYwBgdS9VkP7_0PUT4Vmrf4ik5OIRjaVEGg1z.yOEieZBlHWfBrce_D3mjmLIFa6H6WYP3Nu23Iiw.9JU2BAks8edC479xnwKfnmkNYdFHda5QYheprSPAW4A.mYFbsD4r0ueyJ_wMfmdQq5St_q9qR7YRo92_E71YEXh_WPNARrdvDGK6eTSTGOVDvlQca6OTWSjXklIKL424Y_VNXCLqh6RQxExW7hHlFhSwT1z0t9e4C8TM1hMQ_TC5oBXLRE9H0s0YV4.Me3ua.HZOjf8PfVNHpV6TG0PK4NRs.qvjZqfg1jShVZePs0UTv9cd83ZY3R1Os9joD9eB_MNsQHDAveDoFNuggpUknA.cO04TB_ylEh02UDdgf_tj6N3sPaibQ6T0SwwPBHGdc_cGMrZiddIMG_2HHMePfZafMY5BReFvUr49oi3m1eThGQUVnqwzQ2cC9aMZ_pEk1qzK13mj.kRGZ80ts_Ruk.NdR0bqbTUn1xL.pZBrSsQ0brSR0p.zjTt2HtJB.JirqXkijs2LcSX_W0WTblL.5ses87jvt2PVD__6Z19bU6Scj3WUc3WU2Dk7Cw3f4KlUO4M61uJreOFFV5UqdTKP3O7fkewsSOc.xCNMMn43EfGHyLrHag3qRZ8cCTrXkSn5GRktcGr2R9CJv6CgWsmlmkIh9g173wwXsdoSA5Obo7wVAKWWESE37i8gBvgaKaKXFJZfWPbitQg6j0DbqChcPemXZtqzhb5osaT5bnLv5LBF9_9Hw8yYB8XBKwhXwhU3axgmaWFwoJGR76KjHA',mdrd: 'uJ0tPdvoEC493_steugZOgVvPYtNXSXlzDQQJDhs4QE-1792614298-1.2.1.1-omW5FVDGQx3801_.lh0Y37IZMgfP5h67SJvHwiTNpSJCvisU2RYDcWzFAsaPtrK9e4AdoZrNjUXHUnmb543BG_9Wvy5hbE1wkzE8RwCK5_.p9s7qKLHEt3Bh0ZKoCZzcS7AWTwiJE63Ooz5gJJXtWl91NZG8qO16ljGfgD2HsQHs0g2SPD1pXn9H.HhXQv0BS5wsGG_r930b9JibODupeqGj_8PUyhvHy66NBUu.IXAg_jX9b94ufnpQ4nk3Fr_hFEMP3YRTarOGsLJmBunA2oVp995Za6_DgfDE8cUU4TnBr35PsDWjr1bhd1ciItwjtJEYS.xPIqbarUwHtiv4YA',};var a = document.createElement('script');a.nonce = 'nuzIhA6AisZxtJjtuxsXFt';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a4e2fd266ae5ad72';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/robots.txt?__cf_chl_rt_tk=365XRL2KEzusXVtbUIwlwLn2OjeDBxAdx_COBxbERIo-1792614298-1.0.1.1-dPSvsrpFzGB8R3SusE8p3bMtrNfUijPGuE6OdiYcqIw"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+==================== DONE ====================

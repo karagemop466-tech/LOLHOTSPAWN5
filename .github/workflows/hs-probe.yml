@@ -14,6 +14,7 @@ on:
     paths:
       - '.github/workflows/hs-probe.yml'
       - 'scraper/probe.sh'
+      - 'scraper/probe_api.sh'
   workflow_dispatch:
 
 permissions:
@@ -33,9 +34,9 @@ jobs:
       - name: Probe
         run: |
           mkdir -p research probe
-          bash scraper/probe.sh > research/probe-results.txt 2>&1
-          echo "probe exit: $?"
-          cat research/probe-results.txt
+          bash scraper/probe_api.sh > research/probe-api-results.txt 2>&1
+          echo "api probe exit: $?"
+          cat research/probe-api-results.txt
 
       - name: Commit report
         if: always()
