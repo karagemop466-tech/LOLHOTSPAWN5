@@ -37,7 +37,7 @@ read-only inputs.
 | 4 | Own-line model + market join | 6cee5599 | **done** | `scripts/pipeline.py`; de-vig + Elo + shrinkage; unresolved instead of placeholders |
 | 5 | Mobile-first site (summary, picks, unresolved, method, sources, review) | 6cee5599 | **done** | `scripts/build_site.py`, `assets/site.css`, `assets/app.js` |
 | 6 | 4–8h automation + failure audit trail | 6cee5599 | **done** | `.github/workflows/refresh.yml` cron `17 */6 * * *`; traceback committed to `data/error.json` |
-| 7 | Final integration, PR, merge, Pages verification | 6cee5599 | in progress | see log below |
+| 7 | Final integration, PR, merge, Pages verification | 6cee5599 | **PR #2 open** | https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/2 |
 
 ## Log
 
@@ -103,3 +103,20 @@ read-only inputs.
 6. Team-name collisions exist (`T1` vs `SYR T1`, `LØS` vs `LOS`); joins require exact normalised names plus
    a 36-hour window, so a collision can only drop a quote, never attach a wrong one.
 7. “waiting for information” is a Hotspawn state, not a tier; it is displayed as `tier n/a`.
+8. Three completed matches disagree between Hotspawn and Leaguepedia (Team Reds vs New Era Team 2026-10-03;
+   Berlin 5 vs Duplex Silva Pigeons Edition 2026-10-04; Your Saviours vs DMG Esports Norway 2026-10-18).
+   Both winners and both source links are published on `/review/`; the model prefers Leaguepedia and the rows
+   are not otherwise adjusted.
+
+## Integration record
+
+- Branch rebased onto `main@7ec53a5` and squashed into one integration commit (`fa8f307`) so the diff is
+  reviewable: original session history is preserved by SHA reference (pre-rebase head `b248ce2`).
+- Removed as superseded: `docs/` (duplicate static build), `assets/style.css`, `scripts/update_picks.py`,
+  `data/debug.json`, `.github/workflows/update-picks.yml`. The old flat URLs are kept as redirects.
+- Repository weight: 43 MB of probe payloads untracked and `research/` git-ignored; the published tree is now
+  35 files / 1.5 MB of data.
+- Verification performed before the PR: `scripts/verify.py` → 0 errors, 0 warnings over 264 rows and 6 pages;
+  results cross-check 948/951 agree; every market-backed row recomputes to its published probability.
+- PR: **#2** — https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/2
+- Merge result: recorded in the follow-up documentation commit after the deploy check.
