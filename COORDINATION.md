@@ -209,3 +209,41 @@ had no market and no meaningful sample, and the 69 stale rows cannot be acted on
    scheduled run must be observed after changing it.
 3. `best_of` is still `null` for every Hotspawn row (upstream gap).
 4. 69 stale Hotspawn rows remain upstream; they are blanked, not hidden.
+
+---
+
+## Session `1e8f1e2e` — coverage lift & integration (2026-10-21)
+
+**Claim:** `scripts/collect_lines.py`, `scripts/collect_results.py`, `scripts/build_model.py`,
+`scripts/build_site.py`, `scripts/check_invariants.py`, pipeline-generated `data/**`, this log.
+Task: resolve the open items left by the correction pass (Kalshi ingest, results window), try
+established esportsbooks for the thin-history fixtures, and put a dedicated *Unresolved picks &
+limitations* section in the executive summary.
+
+**Branch history note:** the branch `arena/1e8f1e2e-lolhotspawn5` originally carried this session's
+first, superseded parallel implementation (`cea2d26`, `c758186`) plus its auto-refresh stub-data
+commit (`6f4da26`). None of it was another session's work; it was replaced in place (force-with-lease)
+by `main@921e30a` + this session's scoped commits so the branch diffs cleanly against `main`. The
+discarded SHAs remain referenced here so nothing is lost to history. No work from `074eaec9`,
+`6cee5599`, `3552c64a`, `b041f9d1` or `ecc9fc8c` was touched.
+
+**Changes in this claim:**
+1. `collect_lines.py`: Kalshi `KXLOLGAME` per-match exchange moneylines ingested (open item 1 of the
+   correction pass) — bid/ask midpoints, proportional de-vig, per-row event ticker + API URL
+   evidence. Established esportsbooks (GG.BET, BC.GAME, N1 Bet, Melbet, Thunderpick, Rivalry,
+   1xBet, EGamersWorld) probed every refresh; statuses recorded verbatim in
+   `data/market_lines.json` → `book_probes`; no price is ever taken from a probe that did not
+   return parseable prices.
+2. `collect_results.py`: Leaguepedia window widened 365 → 1095 days, cap 8,000 → 24,000 rows
+   (open item 2). The Elo pass keeps its 365-day half-life, so old rows decay.
+3. `build_model.py`: market join extended to Pinnacle > Kalshi > Bovada with source-priority and
+   per-row evidence URLs. Name-join integrity fixes (both flagged on review.html):
+   (a) Leaguepedia parenthetical disambiguators ("Rich Gang (Norwegian Team)") stripped before
+   matching; (b) token "academy" no longer dropped, so academy rosters cannot collide with parent
+   orgs (Babos Gaming Academy vs Babos Gaming). MIN_MATCHES_RELIABLE=3 gate unchanged — the
+   correction pass's "blank beats plausible" rule stands.
+4. `build_site.py`: dedicated **Unresolved picks & limitations** panel inside the executive summary
+   (requirement), generic market-source labels, methodology honesty updates (Kalshi ingest; the old
+   "we do not use Kalshi" bullet was removed because it became false), sources page lists every
+   esportsbook probe with its live status.
+5. `check_invariants.py`: market_source may now be Pinnacle / Kalshi / Bovada (was Pinnacle-only).
