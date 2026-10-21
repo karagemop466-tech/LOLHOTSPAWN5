@@ -46,7 +46,6 @@ SHELL = """<!doctype html>
       </span>
     </a>
     <span class="stamp">Data updated<br><b id="updated">&mdash;</b></span>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
   </div>
   <nav class="site-nav" id="mainnav" aria-label="Main">
     <ul>

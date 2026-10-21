@@ -361,6 +361,75 @@
       });
   }
 
+  /* ------------------------- sources + flagged pages ---------------------- */
+
+  function initSources() {
+    var el = $("#sources-list");
+    if (!el) return;
+    fetch("data/sources.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (d) {
+        var rows = (d.sources || []).map(function (s) {
+          return '<div class="card">' +
+            '<h3 style="margin-top:0"><a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' +
+            esc(s.name) + "</a> " +
+            (s.verified
+              ? '<span class="badge verified">Verified reachable</span>'
+              : '<span class="badge unverified">Not reachable this run</span>') +
+            "</h3>" +
+            '<p style="margin:6px 0"><b>Role:</b> ' + esc(s.role) + "</p>" +
+            '<p class="small" style="margin:6px 0"><b>Verification performed:</b> ' + esc(s.verification) + "</p>" +
+            '<p class="small" style="margin:6px 0"><code>' + esc(s.url) + "</code></p>" +
+            "</div>";
+        }).join("");
+        el.innerHTML = '<div class="stack">' + rows + "</div>" +
+          '<p class="small muted">Verified at ' + esc(d.generated_at || "") + ".</p>";
+      })
+      .catch(function (e) {
+        el.innerHTML = '<div class="err">Could not load <code>data/sources.json</code> (' +
+          esc(e.message) + ").</div>";
+      });
+  }
+
+  function initFlagged() {
+    var el = $("#flagged-list");
+    if (!el) return;
+    fetch("data/flagged.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (d) {
+        var items = d.items || [];
+        if (!items.length) {
+          el.innerHTML = '<div class="note good">No flagged items in the current run.</div>';
+          return;
+        }
+        var sevClass = { high: "bad", medium: "warn", low: "" };
+        var grouped = {};
+        items.forEach(function (i) { (grouped[i.kind] = grouped[i.kind] || []).push(i); });
+        var html = Object.keys(grouped).sort().map(function (kind) {
+          var list = grouped[kind];
+          return '<h3>' + esc(kind.replace(/-/g, " ")) +
+            ' <span class="badge ' + (sevClass[list[0].severity] || "") + '">' +
+            esc(list[0].severity) + '</span> <span class="small muted">' + list.length + " items</span></h3>" +
+            list.map(function (i) {
+              return '<div class="card">' +
+                '<div style="font-weight:700">' + esc(i.title) + "</div>" +
+                '<div class="small muted">' + esc(i.match || "") +
+                (i.tournament ? " — " + esc(i.tournament) : "") +
+                (i.start_utc ? " — " + esc(fmtTime(i.start_utc).utc) : "") + "</div>" +
+                '<p class="small" style="margin:8px 0 4px">' + esc(i.detail) + "</p>" +
+                srcLinks(i.sources, 4) +
+                "</div>";
+            }).join("");
+        }).join("");
+        el.innerHTML = '<p class="small muted">' + esc(String(d.count)) +
+          " flagged items in this run.</p>" + html;
+      })
+      .catch(function (e) {
+        el.innerHTML = '<div class="err">Could not load <code>data/flagged.json</code> (' +
+          esc(e.message) + ").</div>";
+      });
+  }
+
   function initNavToggle() {
     var btn = $(".nav-toggle");
     var nav = $(".site-nav");
@@ -374,7 +443,6 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initNavToggle();
     initSummary();
     initList();
     initSources();

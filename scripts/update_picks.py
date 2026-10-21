@@ -81,9 +81,9 @@ LEAGUEPEDIA_HELP = "https://lol.fandom.com/api.php?action=help&modules=cargoquer
 HISTORY_DAYS = 420          # how far back to pull Leaguepedia match history
 ELO_START = 1500.0
 ELO_K = 28.0
-WIKI_SLEEP = 1.2            # seconds between Leaguepedia calls (be polite)
-MAX_WIKI_PAGES = 2          # 500 rows each, per team chunk
-WIKI_CHUNK = 16             # teams per Cargo query
+WIKI_SLEEP = 1.0            # seconds between Leaguepedia calls (be polite)
+MAX_WIKI_PAGES = 3          # 500 rows each, per query
+WIKI_CHUNK = 10             # teams per Cargo query
 WIKI_BUDGET_SEC = 1500      # hard wall-clock budget for Leaguepedia collection
 CACHE_TTL_DAYS = 7          # how long a team's cached Leaguepedia history stays fresh
 
@@ -373,8 +373,10 @@ def load_unibet(debug):
             if home not in by_part or away not in by_part:
                 continue
             try:
-                dh = float(by_part[home]) / 100.0
-                da = float(by_part[away]) / 100.0
+                # Kambi reports decimal odds multiplied by 1000
+                # (e.g. "odds": 1190, oddsAmerican "-2000", oddsFractional "1/20" -> 1.19).
+                dh = float(by_part[home]) / 1000.0
+                da = float(by_part[away]) / 1000.0
             except Exception:                          # noqa: BLE001
                 continue
             # Sanity check: the two outcomes must be complementary, so the
@@ -389,7 +391,7 @@ def load_unibet(debug):
             out[key] = (
                 probs[0],
                 "https://www.unibet.com/sportsbook-feeds/views/filter/esports",
-                f"Unibet (Kambi) Match Odds {home} ({dh:.2f}) vs {away} ({da:.2f})"
+                f"Unibet (Kambi) Match Odds {home} ({dh:.3f}) vs {away} ({da:.3f})"
                 f" — de-vigged {probs[0]*100:.1f}% / {probs[1]*100:.1f}%",
                 ev.get("start") or "",
                 path.replace("Esports / ", ""),
@@ -597,9 +599,11 @@ def leaguepedia_games(teams, competitions, debug):
 
     # ---- pass 0: cached history ------------------------------------------ #
     cached_teams = 0
+    empty_cut = (NOW - timedelta(days=1)).isoformat()   # retry empty results daily
     for t in teams:
         entry = cache.get(norm(t))
-        if entry and (entry.get("fetched_at") or "") >= fresh_cut:
+        ttl_cut = fresh_cut if (entry and entry.get("games")) else empty_cut
+        if entry and (entry.get("fetched_at") or "") >= ttl_cut:
             cached_teams += 1
             absorb([{"title": {"Team1": g[0], "Team2": g[1], "WinTeam": g[2],
                                "DateTime UTC": g[3], "Tournament": g[4]}}
@@ -614,23 +618,32 @@ def leaguepedia_games(teams, competitions, debug):
     comps = sorted({c for c in competitions if c})
     debug["leaguepedia_competitions"] = len(comps)
     if comps and time.time() < deadline:
-        conds = [f'ScoreboardGames.Tournament="{esc(c)}"' for c in comps]
-        where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
-        print(f"      pass 1: {len(comps)} competitions …")
+        # Batched: a single query with 27 OR conditions reliably times out.
+        batches = [comps[i:i + 8] for i in range(0, len(comps), 8)]
+        print(f"      pass 1: {len(comps)} competitions in {len(batches)} batched queries …")
         before = len(games)
-        for page in range(MAX_WIKI_PAGES * 4):
+        for bi, batch in enumerate(batches):
             if time.time() > deadline:
                 debug["leaguepedia_budget_exceeded"] = True
                 break
-            rows = cargo(where, fields, order_by="ScoreboardGames.DateTime_UTC DESC",
-                         limit=500, offset=page * 500)
-            debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
-            if not rows:
-                break
-            absorb(rows)
+            conds = [f'ScoreboardGames.Tournament="{esc(c)}"' for c in batch]
+            where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
+            for page in range(MAX_WIKI_PAGES):
+                if time.time() > deadline:
+                    debug["leaguepedia_budget_exceeded"] = True
+                    break
+                rows = cargo(where, fields, order_by="ScoreboardGames.DateTime_UTC DESC",
+                             limit=500, offset=page * 500)
+                debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
+                if not rows:
+                    break
+                absorb(rows)
+                time.sleep(WIKI_SLEEP)
+                if len(rows) < 500:
+                    break
             time.sleep(WIKI_SLEEP)
-            if len(rows) < 500:
-                break
+            if (bi + 1) % 2 == 0:
+                print(f"        {bi+1}/{len(batches)} batches, {len(games)} games total")
         print(f"        +{len(games) - before} games from competition pass")
 
     # ---- pass 2: teams with no games yet --------------------------------- #
@@ -1049,7 +1062,7 @@ def main():
             "match": f"{row.get('team1')} vs {row.get('team2')}",
             "tournament": row.get("tournament"),
             "start_utc": row.get("start_utc"),
-            "sources": row.get("sources") or [],
+            "sources": (row.get("sources") or [])[:2],
         })
 
     for r in rows:
