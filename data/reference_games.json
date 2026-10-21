@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-10-21T20:53:27Z",
+  "note": "Leaguepedia series results used only for our own line. No HotSpawn data is used here.",
+  "tournament_pages": [
+    {
+      "tournament": "4 Nations 2026 Halloween Heist",
+      "title": "4 Nations/2026 Season/Halloween Heist",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Arabian League 2nd Division 2026 Summer",
+      "title": "Arabian League 2nd Division/2026 Season/Summer Split",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Benelux Ascend Series 2026 Summer Playoffs",
+      "title": "Benelux Ascend Series/2026 Season/Summer Playoffs",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Benelux Ascend Series 2026 Summer Split",
+      "title": "Benelux Ascend Series/2026 Season/Summer Split",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Benelux Ascend Series Rising 2026 Summer Playoffs",
+      "title": "Benelux Ascend Series Rising/2026 Season/Summer Playoffs",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "FPL 2026 Summer Playoffs",
+      "title": "Finnish Pro League/2026 Season/Summer Playoffs",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Komplettligaen 2026 Autumn",
+      "title": "Komplettligaen/2026 Season/Autumn Split",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "LCP 2027 Promotion",
+      "title": "LCP/2027 Season/Promotion",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "PRM 3rd Division 26-27 Fall",
+      "title": "Prime League 3rd Division/2027 Season/Fall Split",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "RIVALS LEAGUE Season 2",
+      "title": "RIVALS LEAGUE/2026 Season/Season 2",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Superstrike League 2026",
+      "title": "Superstrike League 2026",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Tunisian Super League 2026",
+      "title": "Tunisian Super League/2026 Season",
+      "status": "ok",
+      "series": 0
+    },
+    {
+      "tournament": "Worlds 2026 Main Event",
+      "title": "2026 Season World Championship/Main Event",
+      "status": "ok",
+      "series": 0
+    }
+  ],
+  "unresolved_tournaments": [
+    "Arabian Regional Championship 2026: Lebanon-Libya-Syria-Palestine",
+    "Arabian Regional Championship 2026: Qatar-Bahrain-Kuwait",
+    "Benelux Ascend Series 2027 Winter Promotion",
+    "EM 2026 Summer Main Event",
+    "Hitpoint 2nd Div Challengers 2026 Summer Playoffs",
+    "Icelandic Esports League 2026 Autumn",
+    "LGC Rising 2026 Playoffs",
+    "LIT 2027 Winter Promotion",
+    "Legends Academy powered by Żabka Season 3 Playoffs",
+    "LigaGG CELOL A 2026 Split 2",
+    "LigaGG CELOL B 2026 Split 2",
+    "LigaGG CELOL B 2026 Split 2 Playoffs",
+    "POP Esports Masters Season 7",
+    "PRM 2nd Division 26-27 Fall"
+  ],
+  "team_resolution": {
+    "resolved": 0,
+    "total": 189
+  },
+  "games": []
+}

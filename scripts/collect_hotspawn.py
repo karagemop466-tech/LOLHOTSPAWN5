@@ -98,7 +98,7 @@ def main() -> int:
         "generated_at": utcnow(),
         "sources": {
             "fixtures_api": {"url": FIXTURES_API, "meta": fx_meta},
-            "lobby_html": {"url": LOBY_HTML, "meta": lobby_meta,
+            "lobby_html": {"url": LOBBY_HTML, "meta": lobby_meta,
                            "permalink_count": len(permalinks)},
         },
         "note": "HotSpawn is used for fixture identity, lock times, tiers and points only. "
