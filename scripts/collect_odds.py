@@ -183,6 +183,14 @@ def collect_polymarket(http: Http, quotes: list) -> dict:
                 continue
             if not market.get("active") or market.get("closed"):
                 continue
+            # only the series match-winner market: Polymarket also lists per-game
+            # winners and props for the same fixture, and those are not series prices
+            group = (market.get("groupItemTitle") or "").strip().lower()
+            slug = market.get("slug") or ""
+            if group and group != "match winner":
+                continue
+            if not group and (re.search(r"-game\d", slug) or re.search(r"Game \d", question)):
+                continue
             outcomes = json.loads(market.get("outcomes") or "[]")
             prices = json.loads(market.get("outcomePrices") or "[]")
             if len(outcomes) != 2 or len(prices) != 2:
@@ -235,6 +243,7 @@ def collect_pinnacle(http: Http, quotes: list) -> dict:
         return {"source": "pinnacle", "quotes": 0, "error": "league list unavailable"}
     lol_leagues = [lg for lg in leagues if str(lg.get("name", "")).startswith("League of Legends")]
     count = 0
+    seen_markets: set[tuple] = set()
     for league in lol_leagues:
         league_id = league.get("id")
         matchups, mmeta = http.get_json(f"{PINNACLE_BASE}/leagues/{league_id}/matchups")
@@ -255,6 +264,11 @@ def collect_pinnacle(http: Http, quotes: list) -> dict:
                 if market.get("type") != "moneyline" or market.get("status") != "open":
                     continue
                 period = market.get("period")
+                market_key = market.get("key") or f"{period}"
+                dedupe = (matchup.get("id"), market_key)
+                if dedupe in seen_markets:
+                    continue
+                seen_markets.add(dedupe)
                 scope = "series" if period == 0 else "game"
                 prices = market.get("prices") or []
                 if len(prices) != 2:
@@ -285,6 +299,7 @@ def collect_pinnacle(http: Http, quotes: list) -> dict:
                     "retrieved_at": utcnow(),
                     "raw": {"american": [price_a, price_b], "period": period,
                             "key": market.get("key"), "cutoff": market.get("cutoffAt")},
+                    "market_key": market_key,
                 })
                 count += 1
     return {"source": "pinnacle", "api_url": f"{PINNACLE_BASE}/sports/12/leagues",
@@ -299,6 +314,7 @@ def collect_bovada(http: Http, quotes: list) -> dict:
     if not payload:
         return {"source": "bovada", "quotes": 0, "error": "events feed unavailable"}
     count = 0
+    seen_bovada: set[tuple] = set()
     for block in payload:
         path = block.get("path") or []
         is_lol = any("league-of-legends" in str(p.get("link", "")) for p in path)
@@ -315,6 +331,10 @@ def collect_bovada(http: Http, quotes: list) -> dict:
                 for market in group.get("markets", []):
                     if market.get("descriptionKey") != "Head To Head":
                         continue
+                    dedupe = (event.get("id"), market.get("id"))
+                    if dedupe in seen_bovada:
+                        continue
+                    seen_bovada.add(dedupe)
                     outcomes = market.get("outcomes") or []
                     if len(outcomes) != 2:
                         continue

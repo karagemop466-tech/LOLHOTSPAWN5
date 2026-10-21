@@ -17,9 +17,12 @@ averaged into a consensus and every individual quote is kept for review.
 """
 from __future__ import annotations
 
+import datetime
 import json
 import os
+import re
 import sys
+import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -29,6 +32,43 @@ from model import build_ratings, predict, series_from_map  # noqa: E402
 MATCH_THRESHOLD = 0.8
 SOURCE_RANK = {"pinnacle": 0, "bovada": 1, "polymarket": 2, "kalshi": 3}
 SCOPE_RANK = {"series": 0, "game": 1}
+MAX_TIME_GAP_DAYS = 10
+
+
+def parse_when(value):
+    """Parse the ISO-ish timestamps the different sources publish."""
+    if not value:
+        return None
+    text = str(value).strip().replace("Z", "+00:00")
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d %H:%M:%S%z", "%Y-%m-%dT%H:%M:%S",
+                "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+        try:
+            parsed = datetime.datetime.strptime(text, fmt)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+            return parsed
+        except ValueError:
+            continue
+    try:
+        parsed = datetime.datetime.fromisoformat(text)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+        return parsed
+    except ValueError:
+        return None
+
+
+def time_compatible(fixture_time, quote_time) -> bool:
+    """Reject a quote that belongs to a different meeting of the same teams."""
+    left, right = parse_when(fixture_time), parse_when(quote_time)
+    if left is None or right is None:
+        return True
+    return abs((left - right).total_seconds()) <= MAX_TIME_GAP_DAYS * 86400
+
+
+def base_name(value: str) -> str:
+    """Team name without a Leaguepedia disambiguator in brackets."""
+    return re.sub(r"\s*\([^)]*\)", " ", str(value)).strip()
 
 
 def load(rel: str, default=None):
@@ -56,14 +96,24 @@ def quote_orientation(q: dict, team_a: str, team_b: str) -> bool:
 def resolve_team(name: str, canonical: dict[str, dict]) -> tuple[str | None, dict | None, str | None]:
     """Map a HotSpawn team name onto a canonical (wiki) team name.
 
-    Returns (canonical_name, rating_info, note). Exact normalised matches win;
-    otherwise the best fuzzy match is used and an ambiguity note is returned when
-    a second candidate is almost as good.
+    Returns (canonical_name, rating_info, note). An exact match on the base name
+    (the name without a Leaguepedia disambiguator) wins; otherwise the best fuzzy
+    match is used and an ambiguity note is returned when a second candidate is
+    almost as good.
     """
     if name in canonical:
         return name, canonical[name], None
     if not canonical:
         return None, None, None
+
+    wanted = base_name(name)
+    exact_base = [cand for cand in canonical if base_name(cand).lower() == wanted.lower()]
+    if len(exact_base) == 1:
+        return exact_base[0], canonical[exact_base[0]], None
+    if len(exact_base) > 1:
+        return (exact_base[0], canonical[exact_base[0]],
+                f"several Leaguepedia pages share the base name '{wanted}'")
+
     scored = sorted(((team_match_score(name, cand), cand) for cand in canonical), reverse=True)
     best_score, best = scored[0]
     if best_score < 0.75:
@@ -86,6 +136,10 @@ def main() -> int:
     fixtures = [m for m in inventory.get("matches", []) if m.get("status") == "scheduled"]
     if reference.get("games"):
         rebuilt = build_ratings(reference["games"])
+        for team, info in rebuilt.items():
+            info.setdefault("source", "leaguepedia")
+            info.setdefault("source_url",
+                            "https://lol.fandom.com/wiki/" + urllib.parse.quote(team.replace(" ", "_")))
         teams_strength = {**teams_strength, **rebuilt}
 
     picks = []
@@ -97,13 +151,18 @@ def main() -> int:
         matched = []
         for quote in quotes:
             score = pair_score(quote, team_a, team_b)
-            if score >= MATCH_THRESHOLD:
-                matched.append((score, quote))
+            if score < MATCH_THRESHOLD:
+                continue
+            # a quote from a different meeting of the same teams is not this match
+            if not time_compatible(fixture.get("start_time"), quote.get("start_time")):
+                continue
+            matched.append((score, quote))
         matched.sort(key=lambda item: -item[0])
 
         market_rows = []
-        consensus_a = None
+        consensus_values = []
         best_of = None
+        seen_rows: set[tuple] = set()
         for score, quote in matched:
             flipped = not quote_orientation(quote, team_a, team_b)
             prob_a = quote.get("prob_a")
@@ -112,6 +171,11 @@ def main() -> int:
                 continue
             if flipped:
                 prob_a, prob_b = prob_b, prob_a
+            row_key = (quote.get("source"), quote.get("market_scope"),
+                       round(prob_a, 4), quote.get("source_url"))
+            if row_key in seen_rows:
+                continue
+            seen_rows.add(row_key)
             market_rows.append({
                 "source": quote.get("source"),
                 "source_kind": quote.get("source_kind"),
@@ -126,18 +190,18 @@ def main() -> int:
                 "decimal_b": quote.get("decimal_b"),
                 "overround": quote.get("overround"),
                 "best_of": quote.get("best_of"),
+                "quote_start": quote.get("start_time"),
                 "match_score": round(score, 3),
             })
             if quote.get("best_of"):
                 best_of = quote["best_of"]
-            if consensus_a is None:
-                consensus_a = prob_a
-            else:
-                consensus_a = (consensus_a + prob_a) / 2
+            if quote.get("market_scope") == "series":
+                consensus_values.append(prob_a)
 
         market_rows.sort(key=lambda row: (SCOPE_RANK.get(row.get("scope"), 2),
                                          SOURCE_RANK.get(row.get("source"), 9)))
         primary = market_rows[0] if market_rows else None
+        consensus_a = sum(consensus_values) / len(consensus_values) if consensus_values else None
 
         rating_a = teams_strength.get(team_a, {}).get("rating")
         rating_b = teams_strength.get(team_b, {}).get("rating")
@@ -162,11 +226,10 @@ def main() -> int:
             headline = primary["prob_a"]
             confidence = "market"
             basis = "external series line"
-            if len(market_rows) > 1:
-                consensus = consensus_a
-                if consensus is not None and abs(consensus - headline) >= 0.02:
-                    headline = consensus
-                    flags.append("consensus of several external lines differs from the primary line by >=2 points")
+            if consensus_a is not None and len(consensus_values) > 1:
+                if abs(consensus_a - headline) >= 0.02:
+                    headline = consensus_a
+                    flags.append("consensus of the external series lines differs from the primary line by 2 points or more")
         elif primary and primary["scope"] == "game":
             headline = primary["prob_a"]
             confidence = "market-map"

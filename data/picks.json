@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-21T21:00:30Z",
+  "generated_at": "2026-10-21T21:05:39Z",
   "note": "HotSpawn supplies the fixture list only. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line built on verified match results. HotSpawn crowd percentages are never used.",
   "summary": {
     "fixtures": 264,
     "with_series_market": 8,
-    "with_map_market_only": 1,
-    "own_line": 255,
+    "with_map_market_only": 0,
+    "own_line": 256,
     "default_50_50": 0,
     "unresolved": 256,
-    "coverage_pct": 3.4
+    "coverage_pct": 3.0
   },
   "picks": [
     {
@@ -23,36 +23,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Mind Blue eSports",
-        "prob": 0.5005,
+        "prob": 0.4749,
         "rating": 1494.13,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mind_Blue_eSports",
         "wiki_name": "Mind Blue eSports"
       },
       "team_b": {
         "name": "LAST DANCE",
-        "prob": 0.4995,
-        "rating": 1493.75,
-        "games": 2,
-        "source_url": null,
-        "wiki_name": "The Last Dance"
+        "prob": 0.5251,
+        "rating": 1511.6,
+        "games": 9,
+        "source_url": "https://lol.fandom.com/wiki/Last_Dance_%28Benelux_Team%29",
+        "wiki_name": "Last Dance (Benelux Team)"
       },
-      "pick": "Mind Blue eSports",
-      "pick_prob": 0.5005,
+      "pick": "LAST DANCE",
+      "pick_prob": 0.5251,
       "confidence": "model",
       "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5005,
+        "prob_a": 0.4749,
         "reason": "elo",
         "rating_a": 1494.13,
-        "rating_b": 1493.75,
+        "rating_b": 1511.6,
         "wiki_name_a": "Mind Blue eSports",
-        "wiki_name_b": "The Last Dance"
+        "wiki_name_b": "Last Dance (Benelux Team)"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: The Last Dance)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -72,7 +71,7 @@
         "prob": 0.4143,
         "rating": 1489.09,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Nameless_%28Benelux_Team%29",
         "wiki_name": "Nameless (Benelux Team)"
       },
       "team_b": {
@@ -80,7 +79,7 @@
         "prob": 0.5857,
         "rating": 1549.26,
         "games": 11,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BiPOLAR_%28Benelux_Team%29",
         "wiki_name": "BiPOLAR (Benelux Team)"
       },
       "pick": "BiPOLAR",
@@ -98,8 +97,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Nameless (Benelux Team))",
-        "team name is ambiguous on Leaguepedia (closest: BiPOLAR (Benelux Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -119,7 +116,7 @@
         "prob": 0.4222,
         "rating": 1454.45,
         "games": 33,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Epic_Avalanche",
         "wiki_name": "Epic Avalanche"
       },
       "team_b": {
@@ -127,7 +124,7 @@
         "prob": 0.5778,
         "rating": 1508.95,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Finnish_Red_Mafia",
         "wiki_name": "Finnish Red Mafia"
       },
       "pick": "Finnish Red Mafia",
@@ -164,7 +161,7 @@
         "prob": 0.4886,
         "rating": 1485.85,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VS_Esport",
         "wiki_name": "Team VS Esport"
       },
       "team_b": {
@@ -172,7 +169,7 @@
         "prob": 0.5114,
         "rating": 1493.75,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/GALA_Esports",
         "wiki_name": "GALA Esports"
       },
       "pick": "GALA Esports",
@@ -209,7 +206,7 @@
         "prob": 0.4426,
         "rating": 1470.46,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/P11_Esports",
         "wiki_name": "P11 Esports"
       },
       "team_b": {
@@ -217,7 +214,7 @@
         "prob": 0.5574,
         "rating": 1510.54,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/HANGMEN",
         "wiki_name": "HANGMEN"
       },
       "pick": "HANGMEN",
@@ -254,7 +251,7 @@
         "prob": 0.5,
         "rating": 1496.93,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Triforce_Esport",
         "wiki_name": "Triforce Esport"
       },
       "team_b": {
@@ -301,7 +298,7 @@
         "prob": 0.4988,
         "rating": 1493.75,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/GALA_Esports",
         "wiki_name": "GALA Esports"
       },
       "team_b": {
@@ -309,7 +306,7 @@
         "prob": 0.5012,
         "rating": 1494.56,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Academy",
         "wiki_name": "The Bandits Academy"
       },
       "pick": "The Bandits Academy",
@@ -346,7 +343,7 @@
         "prob": 0.5084,
         "rating": 1543.73,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Docta_Esports_Club",
         "wiki_name": "Docta Esports Club"
       },
       "team_b": {
@@ -354,7 +351,7 @@
         "prob": 0.4916,
         "rating": 1537.89,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Viktus",
         "wiki_name": "Viktus"
       },
       "pick": "Docta Esports Club",
@@ -391,7 +388,7 @@
         "prob": 0.3958,
         "rating": 1456.55,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DMG_Esports_Norway",
         "wiki_name": "DMG Esports Norway"
       },
       "team_b": {
@@ -399,7 +396,7 @@
         "prob": 0.6042,
         "rating": 1530.04,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Playwell_R%C3%B8d_Q",
         "wiki_name": "Playwell Rød Q"
       },
       "pick": "Playwell Rød Q",
@@ -436,7 +433,7 @@
         "prob": 0.3952,
         "rating": 1487.28,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solid_Gaming",
         "wiki_name": "Solid Gaming"
       },
       "team_b": {
@@ -444,7 +441,7 @@
         "prob": 0.6048,
         "rating": 1561.21,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VES_Japan",
         "wiki_name": "VES Japan"
       },
       "pick": "VES Japan",
@@ -481,7 +478,7 @@
         "prob": 0.4583,
         "rating": 1450.56,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim",
         "wiki_name": "Mixlag fra Trondheim"
       },
       "team_b": {
@@ -489,7 +486,7 @@
         "prob": 0.5417,
         "rating": 1479.58,
         "games": 13,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/CNG_Royal",
         "wiki_name": "CNG Royal"
       },
       "pick": "CNG Royal",
@@ -523,36 +520,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Frost Tails",
-        "prob": 0.5405,
+        "prob": 0.5149,
         "rating": 1521.98,
         "games": 11,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Frost_Tails",
         "wiki_name": "Frost Tails"
       },
       "team_b": {
         "name": "LAST DANCE",
-        "prob": 0.4595,
-        "rating": 1493.75,
-        "games": 2,
-        "source_url": null,
-        "wiki_name": "The Last Dance"
+        "prob": 0.4851,
+        "rating": 1511.6,
+        "games": 9,
+        "source_url": "https://lol.fandom.com/wiki/Last_Dance_%28Benelux_Team%29",
+        "wiki_name": "Last Dance (Benelux Team)"
       },
       "pick": "Frost Tails",
-      "pick_prob": 0.5405,
+      "pick_prob": 0.5149,
       "confidence": "model",
       "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5405,
+        "prob_a": 0.5149,
         "reason": "elo",
         "rating_a": 1521.98,
-        "rating_b": 1493.75,
+        "rating_b": 1511.6,
         "wiki_name_a": "Frost Tails",
-        "wiki_name_b": "The Last Dance"
+        "wiki_name_b": "Last Dance (Benelux Team)"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: The Last Dance)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -572,7 +568,7 @@
         "prob": 0.466,
         "rating": 1485.85,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VS_Esport",
         "wiki_name": "Team VS Esport"
       },
       "team_b": {
@@ -580,7 +576,7 @@
         "prob": 0.534,
         "rating": 1509.54,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Les_Ravag%C3%A9s",
         "wiki_name": "Les Ravagés"
       },
       "pick": "Les Ravagés",
@@ -617,7 +613,7 @@
         "prob": 0.5211,
         "rating": 1512.77,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Marere_Academy",
         "wiki_name": "Marere Academy"
       },
       "team_b": {
@@ -625,7 +621,7 @@
         "prob": 0.4789,
         "rating": 1498.13,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Torin",
         "wiki_name": "Torin"
       },
       "pick": "Marere Academy",
@@ -662,7 +658,7 @@
         "prob": 0.5208,
         "rating": 1472.63,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Invictus_Team",
         "wiki_name": "Invictus Team"
       },
       "team_b": {
@@ -670,7 +666,7 @@
         "prob": 0.4792,
         "rating": 1458.2,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Smoke_Tram_Ascension",
         "wiki_name": "Smoke Tram Ascension"
       },
       "pick": "Invictus Team",
@@ -707,7 +703,7 @@
         "prob": 0.387,
         "rating": 1513.21,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LANdits",
         "wiki_name": "LANdits"
       },
       "team_b": {
@@ -715,7 +711,7 @@
         "prob": 0.613,
         "rating": 1593.14,
         "games": 29,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Frites_Esports_Club",
         "wiki_name": "Frites Esports Club"
       },
       "pick": "Frites Esports Club",
@@ -752,7 +748,7 @@
         "prob": 0.4966,
         "rating": 1494.56,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Academy",
         "wiki_name": "The Bandits Academy"
       },
       "team_b": {
@@ -760,7 +756,7 @@
         "prob": 0.5034,
         "rating": 1496.93,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Triforce_Esport",
         "wiki_name": "Triforce Esport"
       },
       "pick": "Triforce Esport",
@@ -797,7 +793,7 @@
         "prob": 0.586,
         "rating": 1553.88,
         "games": 37,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization",
         "wiki_name": "Lund Esports Organization"
       },
       "team_b": {
@@ -805,7 +801,7 @@
         "prob": 0.414,
         "rating": 1493.51,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna_Black",
         "wiki_name": "Karolinerna Black"
       },
       "pick": "Lund Esports Organization",
@@ -842,7 +838,7 @@
         "prob": 0.485,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Dziady_cz.67",
         "wiki_name": "Dziady cz.67"
       },
       "team_b": {
@@ -850,7 +846,7 @@
         "prob": 0.515,
         "rating": 1521.11,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Adam_West_Corp",
         "wiki_name": "Adam West Corp"
       },
       "pick": "Adam West Corp",
@@ -887,7 +883,7 @@
         "prob": 0.5126,
         "rating": 1493.51,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna_Black",
         "wiki_name": "Karolinerna Black"
       },
       "team_b": {
@@ -895,7 +891,7 @@
         "prob": 0.4874,
         "rating": 1484.77,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lundqvist_Lightside",
         "wiki_name": "Lundqvist Lightside"
       },
       "pick": "Karolinerna Black",
@@ -932,7 +928,7 @@
         "prob": 0.469,
         "rating": 1497.05,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports",
         "wiki_name": "Northern Wolves Esports"
       },
       "team_b": {
@@ -940,7 +936,7 @@
         "prob": 0.531,
         "rating": 1518.65,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lundqvist_Darkside",
         "wiki_name": "Lundqvist Darkside"
       },
       "pick": "Lundqvist Darkside",
@@ -977,7 +973,7 @@
         "prob": 0.4936,
         "rating": 1490.3,
         "games": 17,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/EXILE_esports_Academy",
         "wiki_name": "EXILE esports Academy"
       },
       "team_b": {
@@ -985,7 +981,7 @@
         "prob": 0.5064,
         "rating": 1494.78,
         "games": 13,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mighty_Eagles",
         "wiki_name": "Mighty Eagles"
       },
       "pick": "Mighty Eagles",
@@ -1118,7 +1114,7 @@
         "prob": 0.5,
         "rating": 1465.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
         "wiki_name": "Team Rift"
       },
       "team_b": {
@@ -1166,7 +1162,7 @@
         "prob": 0.5459,
         "rating": 1496.93,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Triforce_Esport",
         "wiki_name": "Triforce Esport"
       },
       "team_b": {
@@ -1174,7 +1170,7 @@
         "prob": 0.4541,
         "rating": 1464.95,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/RED_OUAT",
         "wiki_name": "RED OUAT"
       },
       "pick": "Triforce Esport",
@@ -1211,7 +1207,7 @@
         "prob": 0.5294,
         "rating": 1509.54,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Les_Ravag%C3%A9s",
         "wiki_name": "Les Ravagés"
       },
       "team_b": {
@@ -1219,7 +1215,7 @@
         "prob": 0.4706,
         "rating": 1489.09,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Nameless_%28Benelux_Team%29",
         "wiki_name": "Nameless (Benelux Team)"
       },
       "pick": "Les Ravagés",
@@ -1237,7 +1233,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Nameless (Benelux Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1257,7 +1252,7 @@
         "prob": 0.4388,
         "rating": 1487.28,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solid_Gaming",
         "wiki_name": "Solid Gaming"
       },
       "team_b": {
@@ -1265,7 +1260,7 @@
         "prob": 0.5612,
         "rating": 1530.04,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Playwell_R%C3%B8d_Q",
         "wiki_name": "Playwell Rød Q"
       },
       "pick": "Playwell Rød Q",
@@ -1302,7 +1297,7 @@
         "prob": 0.3494,
         "rating": 1445.9,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports",
         "wiki_name": "Team Lucidity Esports"
       },
       "team_b": {
@@ -1310,7 +1305,7 @@
         "prob": 0.6506,
         "rating": 1553.88,
         "games": 37,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization",
         "wiki_name": "Lund Esports Organization"
       },
       "pick": "Lund Esports Organization",
@@ -1395,7 +1390,7 @@
         "prob": 0.5,
         "rating": 1465.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
         "wiki_name": "Team Rift"
       },
       "team_b": {
@@ -1491,7 +1486,7 @@
         "prob": 0.5111,
         "rating": 1485.85,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VS_Esport",
         "wiki_name": "Team VS Esport"
       },
       "team_b": {
@@ -1499,7 +1494,7 @@
         "prob": 0.4889,
         "rating": 1478.13,
         "games": 11,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Meavedron_Benelux",
         "wiki_name": "Meavedron Benelux"
       },
       "pick": "Team VS Esport",
@@ -1584,7 +1579,7 @@
         "prob": 0.5,
         "rating": 1465.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
         "wiki_name": "Team Rift"
       },
       "team_b": {
@@ -1680,7 +1675,7 @@
         "prob": 0.3494,
         "rating": 1445.9,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports",
         "wiki_name": "Team Lucidity Esports"
       },
       "team_b": {
@@ -1688,7 +1683,7 @@
         "prob": 0.6506,
         "rating": 1553.88,
         "games": 37,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization",
         "wiki_name": "Lund Esports Organization"
       },
       "pick": "Lund Esports Organization",
@@ -1725,7 +1720,7 @@
         "prob": 0.3225,
         "rating": 1449.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/OnlyWinByFF",
         "wiki_name": "OnlyWinByFF"
       },
       "team_b": {
@@ -1733,7 +1728,7 @@
         "prob": 0.6775,
         "rating": 1578.63,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/B2U",
         "wiki_name": "B2U"
       },
       "pick": "B2U",
@@ -1770,7 +1765,7 @@
         "prob": 0.4189,
         "rating": 1423.44,
         "games": 49,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna",
         "wiki_name": "Karolinerna"
       },
       "team_b": {
@@ -1778,7 +1773,7 @@
         "prob": 0.5811,
         "rating": 1480.28,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Crazy_Kittens_E-Sport_Academy",
         "wiki_name": "Crazy Kittens E-Sport Academy"
       },
       "pick": "Crazy Kittens E-Sport Academy",
@@ -1815,7 +1810,7 @@
         "prob": 0.43,
         "rating": 1453.89,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/NextGeneration_Esports",
         "wiki_name": "NextGeneration Esports"
       },
       "team_b": {
@@ -1823,7 +1818,7 @@
         "prob": 0.57,
         "rating": 1502.84,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Slam_Dunk",
         "wiki_name": "Slam Dunk"
       },
       "pick": "Slam Dunk",
@@ -1860,7 +1855,7 @@
         "prob": 0.5474,
         "rating": 1520.29,
         "games": 16,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Volda_E-Sport",
         "wiki_name": "Volda E-Sport"
       },
       "team_b": {
@@ -1868,7 +1863,7 @@
         "prob": 0.4526,
         "rating": 1487.28,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solid_Gaming",
         "wiki_name": "Solid Gaming"
       },
       "pick": "Volda E-Sport",
@@ -1905,7 +1900,7 @@
         "prob": 0.5862,
         "rating": 1506.37,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/2_Massive",
         "wiki_name": "2 Massive"
       },
       "team_b": {
@@ -1913,7 +1908,7 @@
         "prob": 0.4138,
         "rating": 1445.9,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports",
         "wiki_name": "Team Lucidity Esports"
       },
       "pick": "2 Massive",
@@ -1950,7 +1945,7 @@
         "prob": 0.3847,
         "rating": 1497.05,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports",
         "wiki_name": "Northern Wolves Esports"
       },
       "team_b": {
@@ -1958,7 +1953,7 @@
         "prob": 0.6153,
         "rating": 1578.63,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/B2U",
         "wiki_name": "B2U"
       },
       "pick": "B2U",
@@ -1995,7 +1990,7 @@
         "prob": 0.614,
         "rating": 1504.08,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_CD",
         "wiki_name": "Team CD"
       },
       "team_b": {
@@ -2003,7 +1998,7 @@
         "prob": 0.386,
         "rating": 1423.44,
         "games": 49,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna",
         "wiki_name": "Karolinerna"
       },
       "pick": "Team cd",
@@ -2021,7 +2016,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team CD)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2041,7 +2035,7 @@
         "prob": 0.4907,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization_OGs",
         "wiki_name": "Lund Esports Organization OGs"
       },
       "team_b": {
@@ -2049,7 +2043,7 @@
         "prob": 0.5093,
         "rating": 1517.13,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Turbo_Gaming",
         "wiki_name": "Turbo Gaming"
       },
       "pick": "Turbo Gaming",
@@ -2086,7 +2080,7 @@
         "prob": 0.5196,
         "rating": 1518.65,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lundqvist_Darkside",
         "wiki_name": "Lundqvist Darkside"
       },
       "team_b": {
@@ -2094,7 +2088,7 @@
         "prob": 0.4804,
         "rating": 1505.02,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DMG_Esports_Sweden",
         "wiki_name": "DMG Esports Sweden"
       },
       "pick": "Lundqvist Darkside",
@@ -2131,7 +2125,7 @@
         "prob": 0.5,
         "rating": 1465.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
         "wiki_name": "Team Rift"
       },
       "team_b": {
@@ -2275,7 +2269,7 @@
         "prob": 0.559,
         "rating": 1487.28,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solid_Gaming",
         "wiki_name": "Solid Gaming"
       },
       "team_b": {
@@ -2283,7 +2277,7 @@
         "prob": 0.441,
         "rating": 1446.08,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/NTNUI_Kometkameratene",
         "wiki_name": "NTNUI Kometkameratene"
       },
       "pick": "Solid Gaming",
@@ -2320,7 +2314,7 @@
         "prob": 0.4764,
         "rating": 1478.13,
         "games": 11,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Meavedron_Benelux",
         "wiki_name": "Meavedron Benelux"
       },
       "team_b": {
@@ -2328,7 +2322,7 @@
         "prob": 0.5236,
         "rating": 1494.56,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Academy",
         "wiki_name": "The Bandits Academy"
       },
       "pick": "The Bandits Academy",
@@ -2365,7 +2359,7 @@
         "prob": 0.4887,
         "rating": 1489.09,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Nameless_%28Benelux_Team%29",
         "wiki_name": "Nameless (Benelux Team)"
       },
       "team_b": {
@@ -2373,7 +2367,7 @@
         "prob": 0.5113,
         "rating": 1496.93,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Triforce_Esport",
         "wiki_name": "Triforce Esport"
       },
       "pick": "Triforce Esport",
@@ -2391,7 +2385,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Nameless (Benelux Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2411,7 +2404,7 @@
         "prob": 0.5297,
         "rating": 1521.09,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Arena_%28Kuwaiti_Team%29",
         "wiki_name": "Arena (Kuwaiti Team)"
       },
       "team_b": {
@@ -2419,7 +2412,7 @@
         "prob": 0.4703,
         "rating": 1500.41,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/TeamBah",
         "wiki_name": "TeamBah"
       },
       "pick": "Arena",
@@ -2437,7 +2430,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Arena (Kuwaiti Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2454,36 +2446,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Inquisitors",
-        "prob": 0.6332,
+        "prob": 0.4809,
         "rating": 1499.54,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Inquisitors",
         "wiki_name": "Inquisitors"
       },
       "team_b": {
         "name": "OverPower",
-        "prob": 0.3668,
-        "rating": 1404.7,
-        "games": 19,
-        "source_url": null,
-        "wiki_name": "OverPower Esports"
+        "prob": 0.5191,
+        "rating": 1512.82,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Overpower_%28Kuwaiti_Team%29",
+        "wiki_name": "Overpower (Kuwaiti Team)"
       },
-      "pick": "Inquisitors",
-      "pick_prob": 0.6332,
+      "pick": "OverPower",
+      "pick_prob": 0.5191,
       "confidence": "model",
       "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.6332,
+        "prob_a": 0.4809,
         "reason": "elo",
         "rating_a": 1499.54,
-        "rating_b": 1404.7,
+        "rating_b": 1512.82,
         "wiki_name_a": "Inquisitors",
-        "wiki_name_b": "OverPower Esports"
+        "wiki_name_b": "Overpower (Kuwaiti Team)"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: OverPower Esports)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2503,7 +2494,7 @@
         "prob": 0.6869,
         "rating": 1525.2,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Void_Walkers",
         "wiki_name": "Void Walkers"
       },
       "team_b": {
@@ -2511,7 +2502,7 @@
         "prob": 0.3131,
         "rating": 1388.73,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Pegasus_Esports",
         "wiki_name": "Pegasus Esports"
       },
       "pick": "Void Walkers",
@@ -2548,7 +2539,7 @@
         "prob": 0.4629,
         "rating": 1482.38,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Fritt_Fall",
         "wiki_name": "Fritt Fall"
       },
       "team_b": {
@@ -2556,7 +2547,7 @@
         "prob": 0.5371,
         "rating": 1508.18,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Tung_Sahur_Mid",
         "wiki_name": "Tung Sahur Mid"
       },
       "pick": "Tung Sahur Mid",
@@ -2593,7 +2584,7 @@
         "prob": 0.5,
         "rating": 1465.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
         "wiki_name": "Team Rift"
       },
       "team_b": {
@@ -2785,7 +2776,7 @@
         "prob": 0.5,
         "rating": 1508.36,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/T1_Esports_Academy",
         "wiki_name": "T1 Esports Academy"
       },
       "team_b": {
@@ -2881,7 +2872,7 @@
         "prob": 0.559,
         "rating": 1543.73,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Docta_Esports_Club",
         "wiki_name": "Docta Esports Club"
       },
       "team_b": {
@@ -2889,7 +2880,7 @@
         "prob": 0.441,
         "rating": 1502.52,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BaronX",
         "wiki_name": "BaronX"
       },
       "pick": "Docta Esports Club",
@@ -2926,7 +2917,7 @@
         "prob": 0.5275,
         "rating": 1524.96,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glorp_Cat",
         "wiki_name": "Glorp Cat"
       },
       "team_b": {
@@ -2934,7 +2925,7 @@
         "prob": 0.4725,
         "rating": 1505.82,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Impel",
         "wiki_name": "Impel"
       },
       "pick": "Glorp Cat",
@@ -2971,7 +2962,7 @@
         "prob": 0.4019,
         "rating": 1492.16,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phenti",
         "wiki_name": "Phenti"
       },
       "team_b": {
@@ -2979,7 +2970,7 @@
         "prob": 0.5981,
         "rating": 1561.21,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VES_Japan",
         "wiki_name": "VES Japan"
       },
       "pick": "VES Japan",
@@ -3016,7 +3007,7 @@
         "prob": 0.5312,
         "rating": 1504.08,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_CD",
         "wiki_name": "Team CD"
       },
       "team_b": {
@@ -3024,7 +3015,7 @@
         "prob": 0.4688,
         "rating": 1482.38,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Fritt_Fall",
         "wiki_name": "Fritt Fall"
       },
       "pick": "Team cd",
@@ -3042,7 +3033,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team CD)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3062,7 +3052,7 @@
         "prob": 0.5095,
         "rating": 1500.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Emperors_Bremen",
         "wiki_name": "Emperors Bremen"
       },
       "team_b": {
@@ -3070,7 +3060,7 @@
         "prob": 0.4905,
         "rating": 1493.4,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Sissi_State_Punks",
         "wiki_name": "Sissi State Punks"
       },
       "pick": "Emperors Bremen",
@@ -3107,7 +3097,7 @@
         "prob": 0.4813,
         "rating": 1493.26,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Purple_Emperor_Lizards_-_Atomic",
         "wiki_name": "Purple Emperor Lizards - Atomic"
       },
       "team_b": {
@@ -3115,7 +3105,7 @@
         "prob": 0.5187,
         "rating": 1506.25,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_AKA",
         "wiki_name": "Kanji Esports AKA"
       },
       "pick": "Kanji Esports AKA",
@@ -3152,7 +3142,7 @@
         "prob": 0.4774,
         "rating": 1502.84,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Slam_Dunk",
         "wiki_name": "Slam Dunk"
       },
       "team_b": {
@@ -3160,7 +3150,7 @@
         "prob": 0.5226,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "pick": "JSK Academy",
@@ -3194,22 +3184,22 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Galions",
-        "prob": 0.492150628540039,
+        "prob": 0.5342,
         "rating": 1616.55,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Galions",
         "wiki_name": "Galions"
       },
       "team_b": {
         "name": "Solary",
-        "prob": 0.5078,
+        "prob": 0.4658,
         "rating": 1608.42,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solary",
         "wiki_name": "Solary"
       },
-      "pick": "Solary",
-      "pick_prob": 0.5078,
+      "pick": "Galions",
+      "pick_prob": 0.5342,
       "confidence": "market",
       "basis": "external series line",
       "model": {
@@ -3234,6 +3224,7 @@
         "decimal_b": 1.787402,
         "overround": 1.047276,
         "best_of": null,
+        "quote_start": "2026-10-22T16:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -3251,6 +3242,7 @@
           "decimal_b": 1.787402,
           "overround": 1.047276,
           "best_of": null,
+          "quote_start": "2026-10-22T16:00:00Z",
           "match_score": 1.0
         },
         {
@@ -3267,6 +3259,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-22 12:00:00+00",
           "match_score": 1.0
         },
         {
@@ -3283,6 +3276,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-22 12:00:00+00",
           "match_score": 1.0
         },
         {
@@ -3299,6 +3293,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-22 12:00:00+00",
           "match_score": 1.0
         },
         {
@@ -3315,6 +3310,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-22 12:00:00+00",
           "match_score": 1.0
         },
         {
@@ -3331,6 +3327,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 5,
+          "quote_start": "2026-10-22 12:00:00+00",
           "match_score": 1.0
         },
         {
@@ -3347,38 +3344,7 @@
           "decimal_b": 1.854701,
           "overround": 1.04656,
           "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "pinnacle",
-          "source_kind": "licensed bookmaker",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-          "event_title": null,
-          "league": "League of Legends - EMEA Masters",
-          "prob_a": 0.5152,
-          "prob_b": 0.4848,
-          "decimal_a": 1.970874,
-          "decimal_b": 1.854701,
-          "overround": 1.04656,
-          "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "pinnacle",
-          "source_kind": "licensed bookmaker",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-          "event_title": null,
-          "league": "League of Legends - EMEA Masters",
-          "prob_a": 0.5152,
-          "prob_b": 0.4848,
-          "decimal_a": 1.970874,
-          "decimal_b": 1.854701,
-          "overround": 1.04656,
-          "best_of": null,
+          "quote_start": "2026-10-22T16:00:00Z",
           "match_score": 1.0
         },
         {
@@ -3395,6 +3361,7 @@
           "decimal_b": 1.87,
           "overround": 1.069519,
           "best_of": null,
+          "quote_start": "2026-10-22T12:00:00Z",
           "match_score": 1.0
         },
         {
@@ -3411,38 +3378,7 @@
           "decimal_b": 1.833333,
           "overround": 1.069264,
           "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "bovada",
-          "source_kind": "licensed bookmaker",
-          "scope": "game",
-          "market_period": "Map 2",
-          "source_url": "https://www.bovada.lv/esports/league-of-legends/emea-masters-summer/galions-solary-202610220800",
-          "event_title": null,
-          "league": null,
-          "prob_a": 0.4899,
-          "prob_b": 0.5101,
-          "decimal_a": 1.909091,
-          "decimal_b": 1.833333,
-          "overround": 1.069264,
-          "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "bovada",
-          "source_kind": "licensed bookmaker",
-          "scope": "game",
-          "market_period": "Map 3",
-          "source_url": "https://www.bovada.lv/esports/league-of-legends/emea-masters-summer/galions-solary-202610220800",
-          "event_title": null,
-          "league": null,
-          "prob_a": 0.4899,
-          "prob_b": 0.5101,
-          "decimal_a": 1.909091,
-          "decimal_b": 1.833333,
-          "overround": 1.069264,
-          "best_of": null,
+          "quote_start": "2026-10-22T12:00:00Z",
           "match_score": 1.0
         },
         {
@@ -3459,44 +3395,11 @@
           "decimal_b": null,
           "overround": 0.99,
           "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "kalshi",
-          "source_kind": "prediction market (CFTC-regulated)",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26SEP250500GALSLY",
-          "event_title": "Galions vs. Solary",
-          "league": null,
-          "prob_a": 0.5,
-          "prob_b": 0.5,
-          "decimal_a": null,
-          "decimal_b": null,
-          "overround": 1.0,
-          "best_of": null,
-          "match_score": 1.0
-        },
-        {
-          "source": "kalshi",
-          "source_kind": "prediction market (CFTC-regulated)",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26SEP210900GALSLY",
-          "event_title": "Galions vs. Solary",
-          "league": null,
-          "prob_a": 0.5,
-          "prob_b": 0.5,
-          "decimal_a": null,
-          "decimal_b": null,
-          "overround": 1.0,
-          "best_of": null,
+          "quote_start": "2026-10-22T16:00:00Z",
           "match_score": 1.0
         }
       ],
-      "flags": [
-        "consensus of several external lines differs from the primary line by >=2 points"
-      ],
+      "flags": [],
       "unresolved": false
     },
     {
@@ -3514,7 +3417,7 @@
         "prob": 0.607,
         "rating": 1521.63,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Ascent_Gaming",
         "wiki_name": "Ascent Gaming"
       },
       "team_b": {
@@ -3522,7 +3425,7 @@
         "prob": 0.393,
         "rating": 1446.08,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/NTNUI_Kometkameratene",
         "wiki_name": "NTNUI Kometkameratene"
       },
       "pick": "Ascent Gaming",
@@ -3559,7 +3462,7 @@
         "prob": 0.5441,
         "rating": 1487.28,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Solid_Gaming",
         "wiki_name": "Solid Gaming"
       },
       "team_b": {
@@ -3567,7 +3470,7 @@
         "prob": 0.4559,
         "rating": 1456.55,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DMG_Esports_Norway",
         "wiki_name": "DMG Esports Norway"
       },
       "pick": "Solid Gaming",
@@ -3604,7 +3507,7 @@
         "prob": 0.5583,
         "rating": 1520.29,
         "games": 16,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Volda_E-Sport",
         "wiki_name": "Volda E-Sport"
       },
       "team_b": {
@@ -3612,7 +3515,7 @@
         "prob": 0.4417,
         "rating": 1479.58,
         "games": 13,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/CNG_Royal",
         "wiki_name": "CNG Royal"
       },
       "pick": "Volda E-Sport",
@@ -3649,7 +3552,7 @@
         "prob": 0.5549,
         "rating": 1488.83,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Your_Saviours",
         "wiki_name": "Your Saviours"
       },
       "team_b": {
@@ -3657,7 +3560,7 @@
         "prob": 0.4451,
         "rating": 1450.56,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim",
         "wiki_name": "Mixlag fra Trondheim"
       },
       "pick": "Your Saviours",
@@ -3694,7 +3597,7 @@
         "prob": 0.5498,
         "rating": 1517.13,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Turbo_Gaming",
         "wiki_name": "Turbo Gaming"
       },
       "team_b": {
@@ -3702,7 +3605,7 @@
         "prob": 0.4502,
         "rating": 1482.38,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Fritt_Fall",
         "wiki_name": "Fritt Fall"
       },
       "pick": "Turbo Gaming",
@@ -3739,7 +3642,7 @@
         "prob": 0.5015,
         "rating": 1506.11,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BlackDivision",
         "wiki_name": "BlackDivision"
       },
       "team_b": {
@@ -3747,7 +3650,7 @@
         "prob": 0.4985,
         "rating": 1505.06,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming_Academy",
         "wiki_name": "Babos Gaming Academy"
       },
       "pick": "BlackDivision",
@@ -3784,7 +3687,7 @@
         "prob": 0.6215,
         "rating": 1581.13,
         "games": 23,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Absolved",
         "wiki_name": "Absolved"
       },
       "team_b": {
@@ -3792,7 +3695,7 @@
         "prob": 0.3785,
         "rating": 1495.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_UK",
         "wiki_name": "The Bandits UK"
       },
       "pick": "Absolved",
@@ -3829,7 +3732,7 @@
         "prob": 0.4958,
         "rating": 1501.54,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Brod_n_Friends",
         "wiki_name": "Brod n Friends"
       },
       "team_b": {
@@ -3837,7 +3740,7 @@
         "prob": 0.5042,
         "rating": 1504.47,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Crownless",
         "wiki_name": "Crownless"
       },
       "pick": "Crownless",
@@ -3874,7 +3777,7 @@
         "prob": 0.4667,
         "rating": 1489.8,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Good_Chi",
         "wiki_name": "Good Chi"
       },
       "team_b": {
@@ -3882,7 +3785,7 @@
         "prob": 0.5333,
         "rating": 1512.99,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Inari_Esports_%28British_Team%29",
         "wiki_name": "Inari Esports (British Team)"
       },
       "pick": "Inari Esports",
@@ -3900,7 +3803,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Inari Esports (British Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3920,7 +3822,7 @@
         "prob": 0.439,
         "rating": 1494.39,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/HL_Tauri_Esports",
         "wiki_name": "HL Tauri Esports"
       },
       "team_b": {
@@ -3928,7 +3830,7 @@
         "prob": 0.561,
         "rating": 1536.96,
         "games": 33,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Bulldog_Esports",
         "wiki_name": "Bulldog Esports"
       },
       "pick": "Bulldog Esports",
@@ -3965,7 +3867,7 @@
         "prob": 0.504,
         "rating": 1505.03,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang_UK",
         "wiki_name": "Rich Gang UK"
       },
       "team_b": {
@@ -3973,7 +3875,7 @@
         "prob": 0.496,
         "rating": 1502.24,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Abyssal_Randoms",
         "wiki_name": "Abyssal Randoms"
       },
       "pick": "Rich Gang UK",
@@ -4010,7 +3912,7 @@
         "prob": 0.447,
         "rating": 1488.02,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Vertex",
         "wiki_name": "Team Vertex"
       },
       "team_b": {
@@ -4018,7 +3920,7 @@
         "prob": 0.553,
         "rating": 1524.96,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glorp_Cat",
         "wiki_name": "Glorp Cat"
       },
       "pick": "Glorp Cat",
@@ -4055,7 +3957,7 @@
         "prob": 0.6199,
         "rating": 1473.71,
         "games": 30,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VDS",
         "wiki_name": "Team VDS"
       },
       "team_b": {
@@ -4063,7 +3965,7 @@
         "prob": 0.3801,
         "rating": 1388.73,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Pegasus_Esports",
         "wiki_name": "Pegasus Esports"
       },
       "pick": "Team VDS",
@@ -4100,7 +4002,7 @@
         "prob": 0.5958,
         "rating": 1530.04,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Playwell_R%C3%B8d_Q",
         "wiki_name": "Playwell Rød Q"
       },
       "team_b": {
@@ -4108,7 +4010,7 @@
         "prob": 0.4042,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "pick": "Playwell Rød Q",
@@ -4145,7 +4047,7 @@
         "prob": 0.5179,
         "rating": 1502.24,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Abyssal_Randoms",
         "wiki_name": "Abyssal Randoms"
       },
       "team_b": {
@@ -4153,7 +4055,7 @@
         "prob": 0.4821,
         "rating": 1489.8,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Good_Chi",
         "wiki_name": "Good Chi"
       },
       "pick": "Abyssal Randoms",
@@ -4190,7 +4092,7 @@
         "prob": 0.52,
         "rating": 1536.96,
         "games": 33,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Bulldog_Esports",
         "wiki_name": "Bulldog Esports"
       },
       "team_b": {
@@ -4198,7 +4100,7 @@
         "prob": 0.48,
         "rating": 1523.05,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Ruddy_Ultras",
         "wiki_name": "Ruddy Ultras"
       },
       "pick": "Bulldog Esports",
@@ -4235,7 +4137,7 @@
         "prob": 0.5237,
         "rating": 1504.47,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Crownless",
         "wiki_name": "Crownless"
       },
       "team_b": {
@@ -4243,7 +4145,7 @@
         "prob": 0.4763,
         "rating": 1488.02,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Vertex",
         "wiki_name": "Team Vertex"
       },
       "pick": "Crownless",
@@ -4280,7 +4182,7 @@
         "prob": 0.5337,
         "rating": 1524.96,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glorp_Cat",
         "wiki_name": "Glorp Cat"
       },
       "team_b": {
@@ -4288,7 +4190,7 @@
         "prob": 0.4663,
         "rating": 1501.54,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Brod_n_Friends",
         "wiki_name": "Brod n Friends"
       },
       "pick": "Glorp Cat",
@@ -4325,7 +4227,7 @@
         "prob": 0.5115,
         "rating": 1512.99,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Inari_Esports_%28British_Team%29",
         "wiki_name": "Inari Esports (British Team)"
       },
       "team_b": {
@@ -4333,7 +4235,7 @@
         "prob": 0.4885,
         "rating": 1505.03,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang_UK",
         "wiki_name": "Rich Gang UK"
       },
       "pick": "Inari Esports",
@@ -4351,7 +4253,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Inari Esports (British Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -4371,7 +4272,7 @@
         "prob": 0.4574,
         "rating": 1495.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_UK",
         "wiki_name": "The Bandits UK"
       },
       "team_b": {
@@ -4379,7 +4280,7 @@
         "prob": 0.5426,
         "rating": 1524.66,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/PNS",
         "wiki_name": "PNS"
       },
       "pick": "PNS",
@@ -4416,7 +4317,7 @@
         "prob": 0.4845,
         "rating": 1502.24,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Abyssal_Randoms",
         "wiki_name": "Abyssal Randoms"
       },
       "team_b": {
@@ -4424,7 +4325,7 @@
         "prob": 0.5155,
         "rating": 1512.99,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Inari_Esports_%28British_Team%29",
         "wiki_name": "Inari Esports (British Team)"
       },
       "pick": "Inari Esports",
@@ -4442,7 +4343,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Inari Esports (British Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -4462,7 +4362,7 @@
         "prob": 0.5295,
         "rating": 1524.96,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glorp_Cat",
         "wiki_name": "Glorp Cat"
       },
       "team_b": {
@@ -4470,7 +4370,7 @@
         "prob": 0.4705,
         "rating": 1504.47,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Crownless",
         "wiki_name": "Crownless"
       },
       "pick": "Glorp Cat",
@@ -4507,7 +4407,7 @@
         "prob": 0.4781,
         "rating": 1489.8,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Good_Chi",
         "wiki_name": "Good Chi"
       },
       "team_b": {
@@ -4515,7 +4415,7 @@
         "prob": 0.5219,
         "rating": 1505.03,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang_UK",
         "wiki_name": "Rich Gang UK"
       },
       "pick": "Rich Gang UK",
@@ -4552,7 +4452,7 @@
         "prob": 0.4194,
         "rating": 1524.66,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/PNS",
         "wiki_name": "PNS"
       },
       "team_b": {
@@ -4560,7 +4460,7 @@
         "prob": 0.5806,
         "rating": 1581.13,
         "games": 23,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Absolved",
         "wiki_name": "Absolved"
       },
       "pick": "Absolved",
@@ -4597,7 +4497,7 @@
         "prob": 0.5412,
         "rating": 1523.05,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Ruddy_Ultras",
         "wiki_name": "Ruddy Ultras"
       },
       "team_b": {
@@ -4605,7 +4505,7 @@
         "prob": 0.4588,
         "rating": 1494.39,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/HL_Tauri_Esports",
         "wiki_name": "HL Tauri Esports"
       },
       "pick": "Ruddy Ultras",
@@ -4642,7 +4542,7 @@
         "prob": 0.4806,
         "rating": 1488.02,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Vertex",
         "wiki_name": "Team Vertex"
       },
       "team_b": {
@@ -4650,7 +4550,7 @@
         "prob": 0.5194,
         "rating": 1501.54,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Brod_n_Friends",
         "wiki_name": "Brod n Friends"
       },
       "pick": "Brod n Friends",
@@ -4687,7 +4587,7 @@
         "prob": 0.4576,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "team_b": {
@@ -4695,7 +4595,7 @@
         "prob": 0.5424,
         "rating": 1492.16,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phenti",
         "wiki_name": "Phenti"
       },
       "pick": "Phenti",
@@ -4732,7 +4632,7 @@
         "prob": 0.5698,
         "rating": 1526.05,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Reveal_Multigaming",
         "wiki_name": "Reveal Multigaming"
       },
       "team_b": {
@@ -4740,7 +4640,7 @@
         "prob": 0.4302,
         "rating": 1477.23,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V.",
         "wiki_name": "Hannover Esports e.V."
       },
       "pick": "Reveal Multigaming",
@@ -4825,7 +4725,7 @@
         "prob": 0.4733,
         "rating": 1483.56,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Locked_In_%28Dutch_Team%29",
         "wiki_name": "Locked In (Dutch Team)"
       },
       "team_b": {
@@ -4833,7 +4733,7 @@
         "prob": 0.5267,
         "rating": 1502.14,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Prime",
         "wiki_name": "The Bandits Prime"
       },
       "pick": "The Bandits Prime",
@@ -4851,7 +4751,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Locked In (Dutch Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -4871,7 +4770,7 @@
         "prob": 0.7747,
         "rating": 1567.85,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Gen.G",
         "wiki_name": "Gen.G"
       },
       "team_b": {
@@ -4879,7 +4778,7 @@
         "prob": 0.2253,
         "rating": 1540.79,
         "games": 22,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Invictus_Gaming",
         "wiki_name": "Invictus Gaming"
       },
       "pick": "Gen.G",
@@ -4908,6 +4807,7 @@
         "decimal_b": 4.23,
         "overround": 1.049491,
         "best_of": null,
+        "quote_start": "2026-10-23T17:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -4925,6 +4825,7 @@
           "decimal_b": 4.23,
           "overround": 1.049491,
           "best_of": null,
+          "quote_start": "2026-10-23T17:00:00Z",
           "match_score": 1.0
         },
         {
@@ -4941,6 +4842,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 17:00:00+00",
           "match_score": 1.0
         },
         {
@@ -4957,6 +4859,7 @@
           "decimal_b": 4.23,
           "overround": 1.049141,
           "best_of": null,
+          "quote_start": "2026-10-23T17:00:00Z",
           "match_score": 1.0
         },
         {
@@ -4973,6 +4876,7 @@
           "decimal_b": 4.5,
           "overround": 1.068376,
           "best_of": null,
+          "quote_start": "2026-10-23T17:00:00Z",
           "match_score": 1.0
         },
         {
@@ -4989,6 +4893,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-23T21:00:00Z",
           "match_score": 1.0
         }
       ],
@@ -5010,7 +4915,7 @@
         "prob": 0.5927,
         "rating": 1453.89,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/NextGeneration_Esports",
         "wiki_name": "NextGeneration Esports"
       },
       "team_b": {
@@ -5018,7 +4923,7 @@
         "prob": 0.4073,
         "rating": 1388.73,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Pegasus_Esports",
         "wiki_name": "Pegasus Esports"
       },
       "pick": "NextGeneration Esports",
@@ -5055,7 +4960,7 @@
         "prob": 0.7907,
         "rating": 1540.64,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hanwha_Life_Esports",
         "wiki_name": "Hanwha Life Esports"
       },
       "team_b": {
@@ -5063,7 +4968,7 @@
         "prob": 0.2093,
         "rating": 1530.01,
         "games": 40,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Top_Esports",
         "wiki_name": "Top Esports"
       },
       "pick": "Hanwha Life Esports",
@@ -5092,6 +4997,7 @@
         "decimal_b": 4.55,
         "overround": 1.050288,
         "best_of": null,
+        "quote_start": "2026-10-23T21:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -5109,6 +5015,7 @@
           "decimal_b": 4.55,
           "overround": 1.050288,
           "best_of": null,
+          "quote_start": "2026-10-23T21:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5125,6 +5032,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 21:00:00+00",
           "match_score": 1.0
         },
         {
@@ -5141,6 +5049,7 @@
           "decimal_b": 4.55,
           "overround": 1.050288,
           "best_of": null,
+          "quote_start": "2026-10-23T21:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5157,6 +5066,7 @@
           "decimal_b": 4.25,
           "overround": 1.068627,
           "best_of": null,
+          "quote_start": "2026-10-23T18:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5173,6 +5083,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-24T01:00:00Z",
           "match_score": 1.0
         }
       ],
@@ -5194,7 +5105,7 @@
         "prob": 0.4698,
         "rating": 1473.71,
         "games": 30,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VDS",
         "wiki_name": "Team VDS"
       },
       "team_b": {
@@ -5202,7 +5113,7 @@
         "prob": 0.5302,
         "rating": 1494.72,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Reds",
         "wiki_name": "Team Reds"
       },
       "pick": "Team Reds",
@@ -5239,7 +5150,7 @@
         "prob": 0.492,
         "rating": 1494.59,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/ReGOLD_eSport",
         "wiki_name": "ReGOLD eSport"
       },
       "team_b": {
@@ -5247,7 +5158,7 @@
         "prob": 0.508,
         "rating": 1500.18,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300",
         "wiki_name": "Team 300"
       },
       "pick": "Team 300",
@@ -5265,7 +5176,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: ReGOLD eSport)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -5285,7 +5195,7 @@
         "prob": 0.3246,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "team_b": {
@@ -5293,7 +5203,7 @@
         "prob": 0.6754,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "pick": "Babos Gaming",
@@ -5327,22 +5237,22 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Bilibili Gaming",
-        "prob": 0.5769140625,
+        "prob": 0.7966,
         "rating": 1612.26,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Bilibili_Gaming",
         "wiki_name": "Bilibili Gaming"
       },
       "team_b": {
         "name": "Movistar KOI",
-        "prob": 0.4231,
+        "prob": 0.2034,
         "rating": 1529.15,
         "games": 45,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Movistar_KOI",
         "wiki_name": "Movistar KOI"
       },
       "pick": "Bilibili Gaming",
-      "pick_prob": 0.5769140625,
+      "pick_prob": 0.7966,
       "confidence": "market",
       "basis": "external series line",
       "model": {
@@ -5367,6 +5277,7 @@
         "decimal_b": 4.68,
         "overround": 1.050277,
         "best_of": null,
+        "quote_start": "2026-10-24T00:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -5384,6 +5295,7 @@
           "decimal_b": 4.68,
           "overround": 1.050277,
           "best_of": null,
+          "quote_start": "2026-10-24T00:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5400,6 +5312,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-24 00:00:00+00",
           "match_score": 1.0
         },
         {
@@ -5416,6 +5329,7 @@
           "decimal_b": 4.68,
           "overround": 1.050277,
           "best_of": null,
+          "quote_start": "2026-10-24T00:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5432,6 +5346,7 @@
           "decimal_b": 5.0,
           "overround": 1.066667,
           "best_of": null,
+          "quote_start": "2026-10-24T00:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5448,44 +5363,11 @@
           "decimal_b": null,
           "overround": 0.99,
           "best_of": null,
+          "quote_start": "2026-10-24T04:00:00Z",
           "match_score": 1.0
-        },
-        {
-          "source": "kalshi",
-          "source_kind": "prediction market (CFTC-regulated)",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26SEP240800BLGJKOIA",
-          "event_title": "Bilibili Gaming Junior vs. Movistar KOI Fénix",
-          "league": null,
-          "prob_a": 0.5,
-          "prob_b": 0.5,
-          "decimal_a": null,
-          "decimal_b": null,
-          "overround": 1.0,
-          "best_of": null,
-          "match_score": 0.81
-        },
-        {
-          "source": "kalshi",
-          "source_kind": "prediction market (CFTC-regulated)",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26SEP220200BLGJKOIA",
-          "event_title": "Bilibili Gaming Junior vs. Movistar KOI Fénix",
-          "league": null,
-          "prob_a": 0.5,
-          "prob_b": 0.5,
-          "decimal_a": null,
-          "decimal_b": null,
-          "overround": 1.0,
-          "best_of": null,
-          "match_score": 0.81
         }
       ],
-      "flags": [
-        "consensus of several external lines differs from the primary line by >=2 points"
-      ],
+      "flags": [],
       "unresolved": false
     },
     {
@@ -5503,7 +5385,7 @@
         "prob": 0.6403,
         "rating": 1575.1,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Anyone%27s_Legend",
         "wiki_name": "Anyone's Legend"
       },
       "team_b": {
@@ -5511,7 +5393,7 @@
         "prob": 0.3597,
         "rating": 1615.43,
         "games": 23,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karmine_Corp",
         "wiki_name": "Karmine Corp"
       },
       "pick": "Anyone's Legend",
@@ -5540,6 +5422,7 @@
         "decimal_b": 2.67,
         "overround": 1.041199,
         "best_of": null,
+        "quote_start": "2026-10-23T19:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -5557,6 +5440,7 @@
           "decimal_b": 2.67,
           "overround": 1.041199,
           "best_of": null,
+          "quote_start": "2026-10-23T19:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5573,6 +5457,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 19:00:00+00",
           "match_score": 1.0
         },
         {
@@ -5589,6 +5474,7 @@
           "decimal_b": 2.67,
           "overround": 1.041199,
           "best_of": null,
+          "quote_start": "2026-10-23T19:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5605,6 +5491,7 @@
           "decimal_b": 2.85,
           "overround": 1.065163,
           "best_of": null,
+          "quote_start": "2026-10-23T20:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5621,6 +5508,7 @@
           "decimal_b": null,
           "overround": 0.99,
           "best_of": null,
+          "quote_start": "2026-10-23T23:00:00Z",
           "match_score": 1.0
         }
       ],
@@ -5642,7 +5530,7 @@
         "prob": 0.4258,
         "rating": 1545.19,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/G2_Esports",
         "wiki_name": "G2 Esports"
       },
       "team_b": {
@@ -5650,7 +5538,7 @@
         "prob": 0.5742,
         "rating": 1573.15,
         "games": 67,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Dplus_Kia",
         "wiki_name": "Dplus Kia"
       },
       "pick": "Dplus KIA",
@@ -5679,6 +5567,7 @@
         "decimal_b": 1.675676,
         "overround": 1.039252,
         "best_of": null,
+        "quote_start": "2026-10-23T20:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -5696,6 +5585,7 @@
           "decimal_b": 1.675676,
           "overround": 1.039252,
           "best_of": null,
+          "quote_start": "2026-10-23T20:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5712,6 +5602,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 20:00:00+00",
           "match_score": 1.0
         },
         {
@@ -5728,6 +5619,7 @@
           "decimal_b": 1.675676,
           "overround": 1.039252,
           "best_of": null,
+          "quote_start": "2026-10-23T20:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5744,6 +5636,7 @@
           "decimal_b": 1.645161,
           "overround": 1.062389,
           "best_of": null,
+          "quote_start": "2026-10-23T21:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5760,12 +5653,11 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": null,
+          "quote_start": "2026-10-24T00:00:00Z",
           "match_score": 1.0
         }
       ],
-      "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Dplus Kia)"
-      ],
+      "flags": [],
       "unresolved": false
     },
     {
@@ -5783,7 +5675,7 @@
         "prob": 0.7083,
         "rating": 1608.84,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Liquid",
         "wiki_name": "Team Liquid"
       },
       "team_b": {
@@ -5791,7 +5683,7 @@
         "prob": 0.2917,
         "rating": 1518.83,
         "games": 18,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/CTBC_Flying_Oyster",
         "wiki_name": "CTBC Flying Oyster"
       },
       "pick": "Team Liquid",
@@ -5820,6 +5712,7 @@
         "decimal_b": 3.28,
         "overround": 1.045138,
         "best_of": null,
+        "quote_start": "2026-10-23T18:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -5837,6 +5730,7 @@
           "decimal_b": 3.28,
           "overround": 1.045138,
           "best_of": null,
+          "quote_start": "2026-10-23T18:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5853,6 +5747,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 18:00:00+00",
           "match_score": 1.0
         },
         {
@@ -5869,6 +5764,7 @@
           "decimal_b": 3.28,
           "overround": 1.045138,
           "best_of": null,
+          "quote_start": "2026-10-23T18:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5885,6 +5781,7 @@
           "decimal_b": 3.1,
           "overround": 1.06284,
           "best_of": null,
+          "quote_start": "2026-10-23T18:00:00Z",
           "match_score": 1.0
         },
         {
@@ -5901,6 +5798,7 @@
           "decimal_b": null,
           "overround": 0.995,
           "best_of": null,
+          "quote_start": "2026-10-23T22:00:00Z",
           "match_score": 1.0
         }
       ],
@@ -5922,7 +5820,7 @@
         "prob": 0.7021,
         "rating": 1648.46,
         "games": 60,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/L%C3%98S",
         "wiki_name": "LØS"
       },
       "team_b": {
@@ -5930,7 +5828,7 @@
         "prob": 0.2979,
         "rating": 1499.56,
         "games": 30,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/T1",
         "wiki_name": "T1"
       },
       "pick": "LØS",
@@ -5967,7 +5865,7 @@
         "prob": 0.4311,
         "rating": 1588.88,
         "games": 17,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Secret_Whales",
         "wiki_name": "Team Secret Whales"
       },
       "team_b": {
@@ -5975,7 +5873,7 @@
         "prob": 0.5689,
         "rating": 1519.57,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LYON_%282024_American_Team%29",
         "wiki_name": "LYON (2024 American Team)"
       },
       "pick": "LYON",
@@ -6004,6 +5902,7 @@
         "decimal_b": 1.689655,
         "overround": 1.040267,
         "best_of": null,
+        "quote_start": "2026-10-23T23:00:00Z",
         "match_score": 1.0
       },
       "market_sources": [
@@ -6021,6 +5920,7 @@
           "decimal_b": 1.689655,
           "overround": 1.040267,
           "best_of": null,
+          "quote_start": "2026-10-23T23:00:00Z",
           "match_score": 1.0
         },
         {
@@ -6037,6 +5937,7 @@
           "decimal_b": null,
           "overround": 1.0,
           "best_of": 1,
+          "quote_start": "2026-10-23 23:00:00+00",
           "match_score": 1.0
         },
         {
@@ -6053,6 +5954,7 @@
           "decimal_b": 1.689655,
           "overround": 1.040267,
           "best_of": null,
+          "quote_start": "2026-10-23T23:00:00Z",
           "match_score": 1.0
         },
         {
@@ -6069,6 +5971,7 @@
           "decimal_b": 1.571429,
           "overround": 1.061895,
           "best_of": null,
+          "quote_start": "2026-10-24T00:00:00Z",
           "match_score": 0.9
         },
         {
@@ -6085,12 +5988,11 @@
           "decimal_b": null,
           "overround": 0.98,
           "best_of": null,
+          "quote_start": "2026-10-24T03:00:00Z",
           "match_score": 1.0
         }
       ],
-      "flags": [
-        "team name is ambiguous on Leaguepedia (closest: LYON (2024 American Team))"
-      ],
+      "flags": [],
       "unresolved": false
     },
     {
@@ -6108,7 +6010,7 @@
         "prob": 0.5336,
         "rating": 1499.66,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Berlin_5",
         "wiki_name": "Berlin 5"
       },
       "team_b": {
@@ -6116,7 +6018,7 @@
         "prob": 0.4664,
         "rating": 1476.26,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming_Hearts",
         "wiki_name": "AceGaming Hearts"
       },
       "pick": "Berlin 5",
@@ -6153,7 +6055,7 @@
         "prob": 0.4853,
         "rating": 1502.52,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BaronX",
         "wiki_name": "BaronX"
       },
       "team_b": {
@@ -6161,7 +6063,7 @@
         "prob": 0.5147,
         "rating": 1512.77,
         "games": 8,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Marere_Academy",
         "wiki_name": "Marere Academy"
       },
       "pick": "Marere Academy",
@@ -6198,7 +6100,7 @@
         "prob": 0.4285,
         "rating": 1480.42,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Final_Level_eSports_Academy",
         "wiki_name": "Final Level eSports Academy"
       },
       "team_b": {
@@ -6206,7 +6108,7 @@
         "prob": 0.5715,
         "rating": 1530.47,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Infinity_Gaming_%28Brazilian_Team%29",
         "wiki_name": "Infinity Gaming (Brazilian Team)"
       },
       "pick": "Infinity Gaming",
@@ -6224,7 +6126,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Infinity Gaming (Brazilian Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -6244,7 +6145,7 @@
         "prob": 0.513,
         "rating": 1489.36,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Jendouba_Esports",
         "wiki_name": "Jendouba Esports"
       },
       "team_b": {
@@ -6252,7 +6153,7 @@
         "prob": 0.487,
         "rating": 1480.31,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Enfida_Esports",
         "wiki_name": "Enfida Esports"
       },
       "pick": "Jendouba Esports",
@@ -6289,7 +6190,7 @@
         "prob": 0.588,
         "rating": 1558.08,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Esports",
         "wiki_name": "JSK Esports"
       },
       "team_b": {
@@ -6297,7 +6198,7 @@
         "prob": 0.412,
         "rating": 1496.26,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/El_Menzah_Esports",
         "wiki_name": "El Menzah Esports"
       },
       "pick": "JSK Esports",
@@ -6334,7 +6235,7 @@
         "prob": 0.5215,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla",
         "wiki_name": "Olympique Mnihla"
       },
       "team_b": {
@@ -6342,7 +6243,7 @@
         "prob": 0.4785,
         "rating": 1495.7,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Supreme_Leaders",
         "wiki_name": "Supreme Leaders"
       },
       "pick": "Olympique Mnihla",
@@ -6379,7 +6280,7 @@
         "prob": 0.5014,
         "rating": 1519.5,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Simplicity_Gaming",
         "wiki_name": "Simplicity Gaming"
       },
       "team_b": {
@@ -6387,7 +6288,7 @@
         "prob": 0.4986,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "pick": "Simplicity Gaming",
@@ -6424,7 +6325,7 @@
         "prob": 0.4726,
         "rating": 1481.7,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Zahrouni_Esports",
         "wiki_name": "Zahrouni Esports"
       },
       "team_b": {
@@ -6432,7 +6333,7 @@
         "prob": 0.5274,
         "rating": 1500.75,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla_Academy",
         "wiki_name": "Olympique Mnihla Academy"
       },
       "pick": "Olympique Mnihla Academy",
@@ -6469,7 +6370,7 @@
         "prob": 0.4938,
         "rating": 1506.37,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/2_Massive",
         "wiki_name": "2 Massive"
       },
       "team_b": {
@@ -6477,7 +6378,7 @@
         "prob": 0.5062,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization_OGs",
         "wiki_name": "Lund Esports Organization OGs"
       },
       "pick": "Lund Esports Organization OGs",
@@ -6514,7 +6415,7 @@
         "prob": 0.5415,
         "rating": 1607.52,
         "games": 29,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/FlameHard",
         "wiki_name": "FlameHard"
       },
       "team_b": {
@@ -6522,7 +6423,7 @@
         "prob": 0.4585,
         "rating": 1578.63,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/B2U",
         "wiki_name": "B2U"
       },
       "pick": "FlameHard",
@@ -6559,7 +6460,7 @@
         "prob": 0.3683,
         "rating": 1423.44,
         "games": 49,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna",
         "wiki_name": "Karolinerna"
       },
       "team_b": {
@@ -6567,7 +6468,7 @@
         "prob": 0.6317,
         "rating": 1517.13,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Turbo_Gaming",
         "wiki_name": "Turbo Gaming"
       },
       "pick": "Turbo Gaming",
@@ -6604,7 +6505,7 @@
         "prob": 0.4484,
         "rating": 1449.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/OnlyWinByFF",
         "wiki_name": "OnlyWinByFF"
       },
       "team_b": {
@@ -6612,7 +6513,7 @@
         "prob": 0.5516,
         "rating": 1485.64,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang_Sweden",
         "wiki_name": "Rich Gang Sweden"
       },
       "pick": "Rich Gang Sweden",
@@ -6649,7 +6550,7 @@
         "prob": 0.4941,
         "rating": 1504.08,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_CD",
         "wiki_name": "Team CD"
       },
       "team_b": {
@@ -6657,7 +6558,7 @@
         "prob": 0.5059,
         "rating": 1508.18,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Tung_Sahur_Mid",
         "wiki_name": "Tung Sahur Mid"
       },
       "pick": "Tung Sahur Mid",
@@ -6675,7 +6576,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team CD)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -6695,7 +6595,7 @@
         "prob": 0.4477,
         "rating": 1445.9,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports",
         "wiki_name": "Team Lucidity Esports"
       },
       "team_b": {
@@ -6703,7 +6603,7 @@
         "prob": 0.5523,
         "rating": 1482.38,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Fritt_Fall",
         "wiki_name": "Fritt Fall"
       },
       "pick": "Fritt Fall",
@@ -6740,7 +6640,7 @@
         "prob": 0.4916,
         "rating": 1506.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks",
         "wiki_name": "Whalepower Humpbacks"
       },
       "team_b": {
@@ -6748,7 +6648,7 @@
         "prob": 0.5084,
         "rating": 1511.86,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V.",
         "wiki_name": "1. Esport Club Frankfurt e.V."
       },
       "pick": "1. Esport Club Frankfurt e.V.",
@@ -6785,7 +6685,7 @@
         "prob": 0.3624,
         "rating": 1480.52,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mazepa",
         "wiki_name": "Mazepa"
       },
       "team_b": {
@@ -6793,7 +6693,7 @@
         "prob": 0.6376,
         "rating": 1578.63,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/B2U",
         "wiki_name": "B2U"
       },
       "pick": "B2U",
@@ -6830,7 +6730,7 @@
         "prob": 0.5438,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "team_b": {
@@ -6838,7 +6738,7 @@
         "prob": 0.4562,
         "rating": 1488.06,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/New_Era_Team",
         "wiki_name": "New Era Team"
       },
       "pick": "JSK Academy",
@@ -6875,7 +6775,7 @@
         "prob": 0.5321,
         "rating": 1525.2,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Void_Walkers",
         "wiki_name": "Void Walkers"
       },
       "team_b": {
@@ -6883,7 +6783,7 @@
         "prob": 0.4679,
         "rating": 1502.84,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Slam_Dunk",
         "wiki_name": "Slam Dunk"
       },
       "pick": "Void Walkers",
@@ -6920,7 +6820,7 @@
         "prob": 0.5283,
         "rating": 1543.73,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Docta_Esports_Club",
         "wiki_name": "Docta Esports Club"
       },
       "team_b": {
@@ -6928,7 +6828,7 @@
         "prob": 0.4717,
         "rating": 1524.01,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Cl%C3%A3_NKZ_Revengers",
         "wiki_name": "Clã NKZ Revengers"
       },
       "pick": "Docta Esports Club",
@@ -6965,7 +6865,7 @@
         "prob": 0.4989,
         "rating": 1537.15,
         "games": 6,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Maze_GG",
         "wiki_name": "Maze GG"
       },
       "team_b": {
@@ -6973,7 +6873,7 @@
         "prob": 0.5011,
         "rating": 1537.89,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Viktus",
         "wiki_name": "Viktus"
       },
       "pick": "Viktus",
@@ -7010,7 +6910,7 @@
         "prob": 0.4659,
         "rating": 1476.26,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming_Hearts",
         "wiki_name": "AceGaming Hearts"
       },
       "team_b": {
@@ -7018,7 +6918,7 @@
         "prob": 0.5341,
         "rating": 1500.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Emperors_Bremen",
         "wiki_name": "Emperors Bremen"
       },
       "pick": "Emperors Bremen",
@@ -7055,7 +6955,7 @@
         "prob": 0.5211,
         "rating": 1502.33,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AIX_eSports",
         "wiki_name": "AIX eSports"
       },
       "team_b": {
@@ -7063,7 +6963,7 @@
         "prob": 0.4789,
         "rating": 1487.63,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Vision",
         "wiki_name": "MT1 Vision"
       },
       "pick": "AIX eSports",
@@ -7100,7 +7000,7 @@
         "prob": 0.5141,
         "rating": 1505.06,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming_Academy",
         "wiki_name": "Babos Gaming Academy"
       },
       "team_b": {
@@ -7108,7 +7008,7 @@
         "prob": 0.4859,
         "rating": 1495.25,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_x_Engines_Stuttgart",
         "wiki_name": "VfB x Engines Stuttgart"
       },
       "pick": "Babos Gaming Academy",
@@ -7145,7 +7045,7 @@
         "prob": 0.5025,
         "rating": 1501.86,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Defiance_eSports",
         "wiki_name": "Defiance eSports"
       },
       "team_b": {
@@ -7153,7 +7053,7 @@
         "prob": 0.4975,
         "rating": 1500.15,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/REH_Gaming",
         "wiki_name": "REH Gaming"
       },
       "pick": "Defiance eSports",
@@ -7190,7 +7090,7 @@
         "prob": 0.4912,
         "rating": 1487.31,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Duplex_Silva_Pigeons_Edition",
         "wiki_name": "Duplex Silva Pigeons Edition"
       },
       "team_b": {
@@ -7198,7 +7098,7 @@
         "prob": 0.5088,
         "rating": 1493.4,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Sissi_State_Punks",
         "wiki_name": "Sissi State Punks"
       },
       "pick": "Sissi State Punks",
@@ -7235,7 +7135,7 @@
         "prob": 0.5024,
         "rating": 1488.77,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei",
         "wiki_name": "Eintracht Spandau Zwei"
       },
       "team_b": {
@@ -7243,7 +7143,7 @@
         "prob": 0.4976,
         "rating": 1487.08,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300_White",
         "wiki_name": "Team 300 White"
       },
       "pick": "Eintracht Spandau Zwei",
@@ -7280,7 +7180,7 @@
         "prob": 0.521,
         "rating": 1511.97,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens",
         "wiki_name": "Neko Elite Kittens"
       },
       "team_b": {
@@ -7288,7 +7188,7 @@
         "prob": 0.479,
         "rating": 1497.4,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Spongecord_prime",
         "wiki_name": "Spongecord prime"
       },
       "pick": "Neko Elite Kittens",
@@ -7306,7 +7206,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Spongecord prime)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -7326,7 +7225,7 @@
         "prob": 0.4313,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "team_b": {
@@ -7334,7 +7233,7 @@
         "prob": 0.5687,
         "rating": 1510.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LOOKSMAXXER",
         "wiki_name": "LOOKSMAXXER"
       },
       "pick": "LOOKSMAXXER",
@@ -7371,7 +7270,7 @@
         "prob": 0.5254,
         "rating": 1506.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks",
         "wiki_name": "Whalepower Humpbacks"
       },
       "team_b": {
@@ -7379,7 +7278,7 @@
         "prob": 0.4746,
         "rating": 1488.34,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Socken_und_Sandalen",
         "wiki_name": "Socken und Sandalen"
       },
       "pick": "Whalepower Humpbacks",
@@ -7416,7 +7315,7 @@
         "prob": 0.5839,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "team_b": {
@@ -7424,7 +7323,7 @@
         "prob": 0.4161,
         "rating": 1477.23,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V.",
         "wiki_name": "Hannover Esports e.V."
       },
       "pick": "Babos Gaming",
@@ -7461,7 +7360,7 @@
         "prob": 0.6626,
         "rating": 1526.05,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Reveal_Multigaming",
         "wiki_name": "Reveal Multigaming"
       },
       "team_b": {
@@ -7469,7 +7368,7 @@
         "prob": 0.3374,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "pick": "Reveal Multigaming",
@@ -7506,7 +7405,7 @@
         "prob": 0.3115,
         "rating": 1358.65,
         "games": 46,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Black_Lion",
         "wiki_name": "Black Lion"
       },
       "team_b": {
@@ -7514,7 +7413,7 @@
         "prob": 0.6885,
         "rating": 1496.42,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glacial_Guardians",
         "wiki_name": "Glacial Guardians"
       },
       "pick": "Glacial Guardians",
@@ -7551,7 +7450,7 @@
         "prob": 0.5062,
         "rating": 1503.96,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival",
         "wiki_name": "Second Time Alive Revival"
       },
       "team_b": {
@@ -7559,7 +7458,7 @@
         "prob": 0.4938,
         "rating": 1499.66,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Berlin_5",
         "wiki_name": "Berlin 5"
       },
       "pick": "Second Time Alive Revival",
@@ -7596,7 +7495,7 @@
         "prob": 0.6101,
         "rating": 1558.08,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Esports",
         "wiki_name": "JSK Esports"
       },
       "team_b": {
@@ -7604,7 +7503,7 @@
         "prob": 0.3899,
         "rating": 1480.31,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Enfida_Esports",
         "wiki_name": "Enfida Esports"
       },
       "pick": "JSK Esports",
@@ -7641,7 +7540,7 @@
         "prob": 0.5306,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla",
         "wiki_name": "Olympique Mnihla"
       },
       "team_b": {
@@ -7649,7 +7548,7 @@
         "prob": 0.4694,
         "rating": 1489.36,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Jendouba_Esports",
         "wiki_name": "Jendouba Esports"
       },
       "pick": "Olympique Mnihla",
@@ -7686,7 +7585,7 @@
         "prob": 0.5065,
         "rating": 1500.75,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla_Academy",
         "wiki_name": "Olympique Mnihla Academy"
       },
       "team_b": {
@@ -7694,7 +7593,7 @@
         "prob": 0.4935,
         "rating": 1496.26,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/El_Menzah_Esports",
         "wiki_name": "El Menzah Esports"
       },
       "pick": "Olympique Mnihla Academy",
@@ -7731,7 +7630,7 @@
         "prob": 0.5342,
         "rating": 1519.5,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Simplicity_Gaming",
         "wiki_name": "Simplicity Gaming"
       },
       "team_b": {
@@ -7739,7 +7638,7 @@
         "prob": 0.4658,
         "rating": 1495.7,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Supreme_Leaders",
         "wiki_name": "Supreme Leaders"
       },
       "pick": "Simplicity Gaming",
@@ -7776,7 +7675,7 @@
         "prob": 0.4472,
         "rating": 1481.7,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Zahrouni_Esports",
         "wiki_name": "Zahrouni Esports"
       },
       "team_b": {
@@ -7784,7 +7683,7 @@
         "prob": 0.5528,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "pick": "JSK Academy",
@@ -7821,7 +7720,7 @@
         "prob": 0.4974,
         "rating": 1506.37,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/2_Massive",
         "wiki_name": "2 Massive"
       },
       "team_b": {
@@ -7829,7 +7728,7 @@
         "prob": 0.5026,
         "rating": 1508.18,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Tung_Sahur_Mid",
         "wiki_name": "Tung Sahur Mid"
       },
       "pick": "Tung Sahur Mid",
@@ -7866,7 +7765,7 @@
         "prob": 0.4557,
         "rating": 1449.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/OnlyWinByFF",
         "wiki_name": "OnlyWinByFF"
       },
       "team_b": {
@@ -7874,7 +7773,7 @@
         "prob": 0.5443,
         "rating": 1480.52,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mazepa",
         "wiki_name": "Mazepa"
       },
       "pick": "Mazepa",
@@ -7911,7 +7810,7 @@
         "prob": 0.5164,
         "rating": 1497.05,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports",
         "wiki_name": "Northern Wolves Esports"
       },
       "team_b": {
@@ -7919,7 +7818,7 @@
         "prob": 0.4836,
         "rating": 1485.64,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang_Sweden",
         "wiki_name": "Rich Gang Sweden"
       },
       "pick": "Northern Wolves Esports",
@@ -7956,7 +7855,7 @@
         "prob": 0.417,
         "rating": 1445.9,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports",
         "wiki_name": "Team Lucidity Esports"
       },
       "team_b": {
@@ -7964,7 +7863,7 @@
         "prob": 0.583,
         "rating": 1504.08,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_CD",
         "wiki_name": "Team CD"
       },
       "pick": "Team cd",
@@ -7982,7 +7881,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team CD)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -8002,7 +7900,7 @@
         "prob": 0.4935,
         "rating": 1506.11,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BlackDivision",
         "wiki_name": "BlackDivision"
       },
       "team_b": {
@@ -8010,7 +7908,7 @@
         "prob": 0.5065,
         "rating": 1510.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_KIN",
         "wiki_name": "Kanji Esports KIN"
       },
       "pick": "Kanji Esports KIN",
@@ -8047,7 +7945,7 @@
         "prob": 0.3771,
         "rating": 1423.44,
         "games": 49,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Karolinerna",
         "wiki_name": "Karolinerna"
       },
       "team_b": {
@@ -8055,7 +7953,7 @@
         "prob": 0.6229,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization_OGs",
         "wiki_name": "Lund Esports Organization OGs"
       },
       "pick": "Lund Esports Organization OGs",
@@ -8092,7 +7990,7 @@
         "prob": 0.4145,
         "rating": 1518.65,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lundqvist_Darkside",
         "wiki_name": "Lundqvist Darkside"
       },
       "team_b": {
@@ -8100,7 +7998,7 @@
         "prob": 0.5855,
         "rating": 1578.63,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/B2U",
         "wiki_name": "B2U"
       },
       "pick": "B2U",
@@ -8137,7 +8035,7 @@
         "prob": 0.744,
         "rating": 1586.12,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/404_Multigaming_e.V.",
         "wiki_name": "404 Multigaming e.V."
       },
       "team_b": {
@@ -8145,7 +8043,7 @@
         "prob": 0.256,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "pick": "404 Multigaming e.V.",
@@ -8182,7 +8080,7 @@
         "prob": 0.4107,
         "rating": 1483.56,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Locked_In_%28Dutch_Team%29",
         "wiki_name": "Locked In (Dutch Team)"
       },
       "team_b": {
@@ -8190,7 +8088,7 @@
         "prob": 0.5893,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "pick": "DKB XPERION NXT",
@@ -8208,7 +8106,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Locked In (Dutch Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -8228,7 +8125,7 @@
         "prob": 0.5036,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lund_Esports_Organization_OGs",
         "wiki_name": "Lund Esports Organization OGs"
       },
       "team_b": {
@@ -8236,7 +8133,7 @@
         "prob": 0.4964,
         "rating": 1508.18,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Tung_Sahur_Mid",
         "wiki_name": "Tung Sahur Mid"
       },
       "pick": "Lund Esports Organization OGs",
@@ -8273,7 +8170,7 @@
         "prob": 0.5151,
         "rating": 1495.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Packmiko_E-Sports_DACH",
         "wiki_name": "Packmiko E-Sports DACH"
       },
       "team_b": {
@@ -8281,7 +8178,7 @@
         "prob": 0.4849,
         "rating": 1485.17,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Atruvia_M%C3%BCnster_Esports",
         "wiki_name": "Atruvia Münster Esports"
       },
       "pick": "Packmiko E-Sports DACH",
@@ -8315,24 +8212,24 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Mental Rush",
-        "prob": 0.5,
+        "prob": 0.5661,
         "rating": 1537.42,
         "games": 10,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mental_Rush",
         "wiki_name": "Mental Rush"
       },
       "team_b": {
         "name": "Vitality Rising Bees",
-        "prob": 0.5,
+        "prob": 0.4339,
         "rating": 1491.21,
         "games": 35,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Vitality_Rising_Bees",
         "wiki_name": "Vitality Rising Bees"
       },
       "pick": "Mental Rush",
-      "pick_prob": 0.5,
-      "confidence": "market-map",
-      "basis": "external map (single game) line",
+      "pick_prob": 0.5661,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
         "prob_a": 0.5661,
         "reason": "elo",
@@ -8341,43 +8238,10 @@
         "wiki_name_a": "Mental Rush",
         "wiki_name_b": "Vitality Rising Bees"
       },
-      "market": {
-        "source": "kalshi",
-        "source_kind": "prediction market (CFTC-regulated)",
-        "scope": "game",
-        "market_period": null,
-        "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26AUG290900RBMR",
-        "event_title": "Rising Bees vs. Mental Rush",
-        "league": null,
-        "prob_a": 0.5,
-        "prob_b": 0.5,
-        "decimal_a": null,
-        "decimal_b": null,
-        "overround": 1.0,
-        "best_of": null,
-        "match_score": 0.9
-      },
-      "market_sources": [
-        {
-          "source": "kalshi",
-          "source_kind": "prediction market (CFTC-regulated)",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26AUG290900RBMR",
-          "event_title": "Rising Bees vs. Mental Rush",
-          "league": null,
-          "prob_a": 0.5,
-          "prob_b": 0.5,
-          "decimal_a": null,
-          "decimal_b": null,
-          "overround": 1.0,
-          "best_of": null,
-          "match_score": 0.9
-        }
-      ],
+      "market": null,
+      "market_sources": [],
       "flags": [
-        "only a single-map price is published for this fixture",
-        "series format unverified - map price shown as-is"
+        "no external betting line published for this fixture"
       ],
       "unresolved": true
     },
@@ -8396,7 +8260,7 @@
         "prob": 0.5461,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "team_b": {
@@ -8404,7 +8268,7 @@
         "prob": 0.4539,
         "rating": 1514.16,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo",
         "wiki_name": "Phong Vũ Buffalo"
       },
       "pick": "DKB XPERION NXT",
@@ -8441,7 +8305,7 @@
         "prob": 0.508,
         "rating": 1414.33,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/No_Need_Orga",
         "wiki_name": "No Need Orga"
       },
       "team_b": {
@@ -8449,7 +8313,7 @@
         "prob": 0.492,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "pick": "No Need Orga",
@@ -8486,7 +8350,7 @@
         "prob": 0.5895,
         "rating": 1477.23,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V.",
         "wiki_name": "Hannover Esports e.V."
       },
       "team_b": {
@@ -8494,7 +8358,7 @@
         "prob": 0.4105,
         "rating": 1414.33,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/No_Need_Orga",
         "wiki_name": "No Need Orga"
       },
       "pick": "Hannover Esports e.V.",
@@ -8531,7 +8395,7 @@
         "prob": 0.3275,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "team_b": {
@@ -8539,7 +8403,7 @@
         "prob": 0.6725,
         "rating": 1525.78,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Regnum4games",
         "wiki_name": "Regnum4games"
       },
       "pick": "regnum4games",
@@ -8557,7 +8421,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Regnum4games)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -8577,7 +8440,7 @@
         "prob": 0.5115,
         "rating": 1505.02,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DMG_Esports_Sweden",
         "wiki_name": "DMG Esports Sweden"
       },
       "team_b": {
@@ -8585,7 +8448,7 @@
         "prob": 0.4885,
         "rating": 1497.05,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports",
         "wiki_name": "Northern Wolves Esports"
       },
       "pick": "DMG Esports Sweden",
@@ -8622,7 +8485,7 @@
         "prob": 0.5547,
         "rating": 1518.65,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Lundqvist_Darkside",
         "wiki_name": "Lundqvist Darkside"
       },
       "team_b": {
@@ -8630,7 +8493,7 @@
         "prob": 0.4453,
         "rating": 1480.52,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Mazepa",
         "wiki_name": "Mazepa"
       },
       "pick": "Lundqvist Darkside",
@@ -8667,7 +8530,7 @@
         "prob": 0.476,
         "rating": 1485.17,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Atruvia_M%C3%BCnster_Esports",
         "wiki_name": "Atruvia Münster Esports"
       },
       "team_b": {
@@ -8675,7 +8538,7 @@
         "prob": 0.524,
         "rating": 1501.86,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Defiance_eSports",
         "wiki_name": "Defiance eSports"
       },
       "pick": "Defiance eSports",
@@ -8712,7 +8575,7 @@
         "prob": 0.5213,
         "rating": 1502.84,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Slam_Dunk",
         "wiki_name": "Slam Dunk"
       },
       "team_b": {
@@ -8720,7 +8583,7 @@
         "prob": 0.4787,
         "rating": 1488.06,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/New_Era_Team",
         "wiki_name": "New Era Team"
       },
       "pick": "Slam Dunk",
@@ -8757,7 +8620,7 @@
         "prob": 0.5,
         "rating": 1493.26,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Purple_Emperor_Lizards_-_Atomic",
         "wiki_name": "Purple Emperor Lizards - Atomic"
       },
       "team_b": {
@@ -8765,7 +8628,7 @@
         "prob": 0.5,
         "rating": 1493.24,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Cloud_eSport",
         "wiki_name": "Cloud eSport"
       },
       "pick": "Purple Emperor Lizards - Atomic",
@@ -8802,7 +8665,7 @@
         "prob": 0.3214,
         "rating": 1388.73,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Pegasus_Esports",
         "wiki_name": "Pegasus Esports"
       },
       "team_b": {
@@ -8810,7 +8673,7 @@
         "prob": 0.6786,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "pick": "JSK Academy",
@@ -8847,7 +8710,7 @@
         "prob": 0.379,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "team_b": {
@@ -8855,7 +8718,7 @@
         "prob": 0.621,
         "rating": 1494.59,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/ReGOLD_eSport",
         "wiki_name": "ReGOLD eSport"
       },
       "pick": "reGOLD eSport",
@@ -8873,7 +8736,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: ReGOLD eSport)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -8893,7 +8755,7 @@
         "prob": 0.5372,
         "rating": 1526.05,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Reveal_Multigaming",
         "wiki_name": "Reveal Multigaming"
       },
       "team_b": {
@@ -8901,7 +8763,7 @@
         "prob": 0.4628,
         "rating": 1500.18,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300",
         "wiki_name": "Team 300"
       },
       "pick": "Reveal Multigaming",
@@ -8938,7 +8800,7 @@
         "prob": 0.5585,
         "rating": 1494.72,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_Reds",
         "wiki_name": "Team Reds"
       },
       "team_b": {
@@ -8946,7 +8808,7 @@
         "prob": 0.4415,
         "rating": 1453.89,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/NextGeneration_Esports",
         "wiki_name": "NextGeneration Esports"
       },
       "pick": "Team Reds",
@@ -8983,7 +8845,7 @@
         "prob": 0.5295,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "team_b": {
@@ -8991,7 +8853,7 @@
         "prob": 0.4705,
         "rating": 1525.78,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Regnum4games",
         "wiki_name": "Regnum4games"
       },
       "pick": "DKB XPERION NXT",
@@ -9009,7 +8871,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Regnum4games)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -9029,7 +8890,7 @@
         "prob": 0.3423,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "team_b": {
@@ -9037,7 +8898,7 @@
         "prob": 0.6577,
         "rating": 1514.16,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo",
         "wiki_name": "Phong Vũ Buffalo"
       },
       "pick": "Phong Vũ Buffalo",
@@ -9074,7 +8935,7 @@
         "prob": 0.5328,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "team_b": {
@@ -9082,7 +8943,7 @@
         "prob": 0.4672,
         "rating": 1495.7,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Supreme_Leaders",
         "wiki_name": "Supreme Leaders"
       },
       "pick": "JSK Academy",
@@ -9119,7 +8980,7 @@
         "prob": 0.5678,
         "rating": 1558.08,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Esports",
         "wiki_name": "JSK Esports"
       },
       "team_b": {
@@ -9127,7 +8988,7 @@
         "prob": 0.4322,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla",
         "wiki_name": "Olympique Mnihla"
       },
       "pick": "JSK Esports",
@@ -9164,7 +9025,7 @@
         "prob": 0.5294,
         "rating": 1500.75,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla_Academy",
         "wiki_name": "Olympique Mnihla Academy"
       },
       "team_b": {
@@ -9172,7 +9033,7 @@
         "prob": 0.4706,
         "rating": 1480.31,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Enfida_Esports",
         "wiki_name": "Enfida Esports"
       },
       "pick": "Olympique Mnihla Academy",
@@ -9209,7 +9070,7 @@
         "prob": 0.5433,
         "rating": 1519.5,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Simplicity_Gaming",
         "wiki_name": "Simplicity Gaming"
       },
       "team_b": {
@@ -9217,7 +9078,7 @@
         "prob": 0.4567,
         "rating": 1489.36,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Jendouba_Esports",
         "wiki_name": "Jendouba Esports"
       },
       "pick": "Simplicity Gaming",
@@ -9254,7 +9115,7 @@
         "prob": 0.4791,
         "rating": 1481.7,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Zahrouni_Esports",
         "wiki_name": "Zahrouni Esports"
       },
       "team_b": {
@@ -9262,7 +9123,7 @@
         "prob": 0.5209,
         "rating": 1496.26,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/El_Menzah_Esports",
         "wiki_name": "El Menzah Esports"
       },
       "pick": "El Menzah Esports",
@@ -9299,7 +9160,7 @@
         "prob": 0.5736,
         "rating": 1525.2,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Void_Walkers",
         "wiki_name": "Void Walkers"
       },
       "team_b": {
@@ -9307,7 +9168,7 @@
         "prob": 0.4264,
         "rating": 1473.71,
         "games": 30,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_VDS",
         "wiki_name": "Team VDS"
       },
       "pick": "Void Walkers",
@@ -9344,7 +9205,7 @@
         "prob": 0.533,
         "rating": 1500.18,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300",
         "wiki_name": "Team 300"
       },
       "team_b": {
@@ -9352,7 +9213,7 @@
         "prob": 0.467,
         "rating": 1477.23,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V.",
         "wiki_name": "Hannover Esports e.V."
       },
       "pick": "Team 300",
@@ -9389,7 +9250,7 @@
         "prob": 0.5703,
         "rating": 1511.86,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V.",
         "wiki_name": "1. Esport Club Frankfurt e.V."
       },
       "team_b": {
@@ -9397,7 +9258,7 @@
         "prob": 0.4297,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "pick": "1. Esport Club Frankfurt e.V.",
@@ -9434,7 +9295,7 @@
         "prob": 0.509,
         "rating": 1499.66,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Berlin_5",
         "wiki_name": "Berlin 5"
       },
       "team_b": {
@@ -9442,7 +9303,7 @@
         "prob": 0.491,
         "rating": 1493.4,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Sissi_State_Punks",
         "wiki_name": "Sissi State Punks"
       },
       "pick": "Berlin 5",
@@ -9479,7 +9340,7 @@
         "prob": 0.2997,
         "rating": 1358.65,
         "games": 46,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Black_Lion",
         "wiki_name": "Black Lion"
       },
       "team_b": {
@@ -9487,7 +9348,7 @@
         "prob": 0.7003,
         "rating": 1506.11,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BlackDivision",
         "wiki_name": "BlackDivision"
       },
       "pick": "BlackDivision",
@@ -9524,7 +9385,7 @@
         "prob": 0.4876,
         "rating": 1493.24,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Cloud_eSport",
         "wiki_name": "Cloud eSport"
       },
       "team_b": {
@@ -9532,7 +9393,7 @@
         "prob": 0.5124,
         "rating": 1501.86,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Defiance_eSports",
         "wiki_name": "Defiance eSports"
       },
       "pick": "Defiance eSports",
@@ -9569,7 +9430,7 @@
         "prob": 0.536,
         "rating": 1488.77,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei",
         "wiki_name": "Eintracht Spandau Zwei"
       },
       "team_b": {
@@ -9577,7 +9438,7 @@
         "prob": 0.464,
         "rating": 1463.7,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy",
         "wiki_name": "TeamOrangeGaming Academy"
       },
       "pick": "Eintracht Spandau Zwei",
@@ -9614,7 +9475,7 @@
         "prob": 0.4828,
         "rating": 1500.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Emperors_Bremen",
         "wiki_name": "Emperors Bremen"
       },
       "team_b": {
@@ -9622,7 +9483,7 @@
         "prob": 0.5172,
         "rating": 1511.97,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens",
         "wiki_name": "Neko Elite Kittens"
       },
       "pick": "Neko Elite Kittens",
@@ -9659,7 +9520,7 @@
         "prob": 0.5126,
         "rating": 1496.42,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glacial_Guardians",
         "wiki_name": "Glacial Guardians"
       },
       "team_b": {
@@ -9667,7 +9528,7 @@
         "prob": 0.4874,
         "rating": 1487.63,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Vision",
         "wiki_name": "MT1 Vision"
       },
       "pick": "Glacial Guardians",
@@ -9704,7 +9565,7 @@
         "prob": 0.4912,
         "rating": 1500.15,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/REH_Gaming",
         "wiki_name": "REH Gaming"
       },
       "team_b": {
@@ -9712,7 +9573,7 @@
         "prob": 0.5088,
         "rating": 1506.25,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_AKA",
         "wiki_name": "Kanji Esports AKA"
       },
       "pick": "Kanji Esports AKA",
@@ -9749,7 +9610,7 @@
         "prob": 0.508,
         "rating": 1510.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_KIN",
         "wiki_name": "Kanji Esports KIN"
       },
       "team_b": {
@@ -9757,7 +9618,7 @@
         "prob": 0.492,
         "rating": 1505.06,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming_Academy",
         "wiki_name": "Babos Gaming Academy"
       },
       "pick": "Kanji Esports KIN",
@@ -9794,7 +9655,7 @@
         "prob": 0.5067,
         "rating": 1510.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LOOKSMAXXER",
         "wiki_name": "LOOKSMAXXER"
       },
       "team_b": {
@@ -9802,7 +9663,7 @@
         "prob": 0.4933,
         "rating": 1506.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks",
         "wiki_name": "Whalepower Humpbacks"
       },
       "pick": "LOOKSMAXXER",
@@ -9839,7 +9700,7 @@
         "prob": 0.4966,
         "rating": 1493.26,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Purple_Emperor_Lizards_-_Atomic",
         "wiki_name": "Purple Emperor Lizards - Atomic"
       },
       "team_b": {
@@ -9847,7 +9708,7 @@
         "prob": 0.5034,
         "rating": 1495.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Packmiko_E-Sports_DACH",
         "wiki_name": "Packmiko E-Sports DACH"
       },
       "pick": "Packmiko E-Sports DACH",
@@ -9884,7 +9745,7 @@
         "prob": 0.5398,
         "rating": 1503.96,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival",
         "wiki_name": "Second Time Alive Revival"
       },
       "team_b": {
@@ -9892,7 +9753,7 @@
         "prob": 0.4602,
         "rating": 1476.26,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming_Hearts",
         "wiki_name": "AceGaming Hearts"
       },
       "pick": "Second Time Alive Revival",
@@ -9929,7 +9790,7 @@
         "prob": 0.5145,
         "rating": 1497.4,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Spongecord_prime",
         "wiki_name": "Spongecord prime"
       },
       "team_b": {
@@ -9937,7 +9798,7 @@
         "prob": 0.4855,
         "rating": 1487.31,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Duplex_Silva_Pigeons_Edition",
         "wiki_name": "Duplex Silva Pigeons Edition"
       },
       "pick": "spongecord prime",
@@ -9955,7 +9816,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Spongecord prime)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -9975,7 +9835,7 @@
         "prob": 0.4982,
         "rating": 1487.08,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300_White",
         "wiki_name": "Team 300 White"
       },
       "team_b": {
@@ -9983,7 +9843,7 @@
         "prob": 0.5018,
         "rating": 1488.34,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Socken_und_Sandalen",
         "wiki_name": "Socken und Sandalen"
       },
       "pick": "Socken und Sandalen",
@@ -10020,7 +9880,7 @@
         "prob": 0.4898,
         "rating": 1495.25,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_x_Engines_Stuttgart",
         "wiki_name": "VfB x Engines Stuttgart"
       },
       "team_b": {
@@ -10028,7 +9888,7 @@
         "prob": 0.5102,
         "rating": 1502.33,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AIX_eSports",
         "wiki_name": "AIX eSports"
       },
       "pick": "AIX eSports",
@@ -10065,7 +9925,7 @@
         "prob": 0.6684,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "team_b": {
@@ -10073,7 +9933,7 @@
         "prob": 0.3316,
         "rating": 1414.33,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/No_Need_Orga",
         "wiki_name": "No Need Orga"
       },
       "pick": "Babos Gaming",
@@ -10110,7 +9970,7 @@
         "prob": 0.5229,
         "rating": 1496.26,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/El_Menzah_Esports",
         "wiki_name": "El Menzah Esports"
       },
       "team_b": {
@@ -10118,7 +9978,7 @@
         "prob": 0.4771,
         "rating": 1480.31,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Enfida_Esports",
         "wiki_name": "Enfida Esports"
       },
       "pick": "El Menzah Esports",
@@ -10155,7 +10015,7 @@
         "prob": 0.5419,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "team_b": {
@@ -10163,7 +10023,7 @@
         "prob": 0.4581,
         "rating": 1489.36,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Jendouba_Esports",
         "wiki_name": "Jendouba Esports"
       },
       "pick": "JSK Academy",
@@ -10200,7 +10060,7 @@
         "prob": 0.4857,
         "rating": 1500.75,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla_Academy",
         "wiki_name": "Olympique Mnihla Academy"
       },
       "team_b": {
@@ -10208,7 +10068,7 @@
         "prob": 0.5143,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla",
         "wiki_name": "Olympique Mnihla"
       },
       "pick": "Olympique Mnihla",
@@ -10245,7 +10105,7 @@
         "prob": 0.4447,
         "rating": 1519.5,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Simplicity_Gaming",
         "wiki_name": "Simplicity Gaming"
       },
       "team_b": {
@@ -10253,7 +10113,7 @@
         "prob": 0.5553,
         "rating": 1558.08,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Esports",
         "wiki_name": "JSK Esports"
       },
       "pick": "JSK Esports",
@@ -10290,7 +10150,7 @@
         "prob": 0.4799,
         "rating": 1481.7,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Zahrouni_Esports",
         "wiki_name": "Zahrouni Esports"
       },
       "team_b": {
@@ -10298,7 +10158,7 @@
         "prob": 0.5201,
         "rating": 1495.7,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Supreme_Leaders",
         "wiki_name": "Supreme Leaders"
       },
       "pick": "Supreme Leaders",
@@ -10335,7 +10195,7 @@
         "prob": 0.3566,
         "rating": 1505.02,
         "games": 5,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DMG_Esports_Sweden",
         "wiki_name": "DMG Esports Sweden"
       },
       "team_b": {
@@ -10343,7 +10203,7 @@
         "prob": 0.6434,
         "rating": 1607.52,
         "games": 29,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/FlameHard",
         "wiki_name": "FlameHard"
       },
       "pick": "FlameHard",
@@ -10380,7 +10240,7 @@
         "prob": 0.5435,
         "rating": 1513.84,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Esports",
         "wiki_name": "MT1 Esports"
       },
       "team_b": {
@@ -10388,7 +10248,7 @@
         "prob": 0.4565,
         "rating": 1483.56,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Locked_In_%28Dutch_Team%29",
         "wiki_name": "Locked In (Dutch Team)"
       },
       "pick": "MT1 Esports",
@@ -10406,7 +10266,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Locked In (Dutch Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -10426,7 +10285,7 @@
         "prob": 0.3814,
         "rating": 1502.14,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Prime",
         "wiki_name": "The Bandits Prime"
       },
       "team_b": {
@@ -10434,7 +10293,7 @@
         "prob": 0.6186,
         "rating": 1586.12,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/404_Multigaming_e.V.",
         "wiki_name": "404 Multigaming e.V."
       },
       "pick": "404 Multigaming e.V.",
@@ -10471,7 +10330,7 @@
         "prob": 0.6034,
         "rating": 1487.22,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BvP",
         "wiki_name": "BvP"
       },
       "team_b": {
@@ -10479,7 +10338,7 @@
         "prob": 0.3966,
         "rating": 1414.33,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/No_Need_Orga",
         "wiki_name": "No Need Orga"
       },
       "pick": "BvP",
@@ -10516,7 +10375,7 @@
         "prob": 0.3979,
         "rating": 1514.16,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo",
         "wiki_name": "Phong Vũ Buffalo"
       },
       "team_b": {
@@ -10524,7 +10383,7 @@
         "prob": 0.6021,
         "rating": 1586.12,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/404_Multigaming_e.V.",
         "wiki_name": "404 Multigaming e.V."
       },
       "pick": "404 Multigaming e.V.",
@@ -10561,7 +10420,7 @@
         "prob": 0.4535,
         "rating": 1513.84,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Esports",
         "wiki_name": "MT1 Esports"
       },
       "team_b": {
@@ -10569,7 +10428,7 @@
         "prob": 0.5465,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "pick": "DKB XPERION NXT",
@@ -10606,7 +10465,7 @@
         "prob": 0.534,
         "rating": 1525.78,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Regnum4games",
         "wiki_name": "Regnum4games"
       },
       "team_b": {
@@ -10614,7 +10473,7 @@
         "prob": 0.466,
         "rating": 1502.14,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Prime",
         "wiki_name": "The Bandits Prime"
       },
       "pick": "regnum4games",
@@ -10632,7 +10491,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Regnum4games)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -10652,7 +10510,7 @@
         "prob": 0.5571,
         "rating": 1586.12,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/404_Multigaming_e.V.",
         "wiki_name": "404 Multigaming e.V."
       },
       "team_b": {
@@ -10660,7 +10518,7 @@
         "prob": 0.4429,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "pick": "404 Multigaming e.V.",
@@ -10697,7 +10555,7 @@
         "prob": 0.617,
         "rating": 1483.56,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Locked_In_%28Dutch_Team%29",
         "wiki_name": "Locked In (Dutch Team)"
       },
       "team_b": {
@@ -10705,7 +10563,7 @@
         "prob": 0.383,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "pick": "Locked IN",
@@ -10723,7 +10581,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Locked In (Dutch Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -10743,7 +10600,7 @@
         "prob": 0.4301,
         "rating": 1487.22,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BvP",
         "wiki_name": "BvP"
       },
       "team_b": {
@@ -10751,7 +10608,7 @@
         "prob": 0.5699,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "pick": "Babos Gaming",
@@ -10788,7 +10645,7 @@
         "prob": 0.6286,
         "rating": 1500.18,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300",
         "wiki_name": "Team 300"
       },
       "team_b": {
@@ -10796,7 +10653,7 @@
         "prob": 0.3714,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "pick": "Team 300",
@@ -10833,7 +10690,7 @@
         "prob": 0.4793,
         "rating": 1496.26,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/El_Menzah_Esports",
         "wiki_name": "El Menzah Esports"
       },
       "team_b": {
@@ -10841,7 +10698,7 @@
         "prob": 0.5207,
         "rating": 1510.66,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla",
         "wiki_name": "Olympique Mnihla"
       },
       "pick": "Olympique Mnihla",
@@ -10878,7 +10735,7 @@
         "prob": 0.4433,
         "rating": 1518.54,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Academy",
         "wiki_name": "JSK Academy"
       },
       "team_b": {
@@ -10886,7 +10743,7 @@
         "prob": 0.5567,
         "rating": 1558.08,
         "games": 27,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/JSK_Esports",
         "wiki_name": "JSK Esports"
       },
       "pick": "JSK Esports",
@@ -10923,7 +10780,7 @@
         "prob": 0.473,
         "rating": 1500.75,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Olympique_Mnihla_Academy",
         "wiki_name": "Olympique Mnihla Academy"
       },
       "team_b": {
@@ -10931,7 +10788,7 @@
         "prob": 0.527,
         "rating": 1519.5,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Simplicity_Gaming",
         "wiki_name": "Simplicity Gaming"
       },
       "pick": "Simplicity Gaming",
@@ -10968,7 +10825,7 @@
         "prob": 0.5091,
         "rating": 1495.7,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Supreme_Leaders",
         "wiki_name": "Supreme Leaders"
       },
       "team_b": {
@@ -10976,7 +10833,7 @@
         "prob": 0.4909,
         "rating": 1489.36,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Jendouba_Esports",
         "wiki_name": "Jendouba Esports"
       },
       "pick": "Supreme Leaders",
@@ -11013,7 +10870,7 @@
         "prob": 0.502,
         "rating": 1481.7,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Zahrouni_Esports",
         "wiki_name": "Zahrouni Esports"
       },
       "team_b": {
@@ -11021,7 +10878,7 @@
         "prob": 0.498,
         "rating": 1480.31,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Enfida_Esports",
         "wiki_name": "Enfida Esports"
       },
       "pick": "Zahrouni Esports",
@@ -11058,7 +10915,7 @@
         "prob": 0.389,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "team_b": {
@@ -11066,7 +10923,7 @@
         "prob": 0.611,
         "rating": 1487.22,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BvP",
         "wiki_name": "BvP"
       },
       "pick": "BvP",
@@ -11103,7 +10960,7 @@
         "prob": 0.4405,
         "rating": 1494.59,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/ReGOLD_eSport",
         "wiki_name": "ReGOLD eSport"
       },
       "team_b": {
@@ -11111,7 +10968,7 @@
         "prob": 0.5595,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "pick": "Babos Gaming",
@@ -11129,7 +10986,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: ReGOLD eSport)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -11149,7 +11005,7 @@
         "prob": 0.4946,
         "rating": 1502.33,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AIX_eSports",
         "wiki_name": "AIX eSports"
       },
       "team_b": {
@@ -11157,7 +11013,7 @@
         "prob": 0.5054,
         "rating": 1506.11,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BlackDivision",
         "wiki_name": "BlackDivision"
       },
       "pick": "BlackDivision",
@@ -11194,7 +11050,7 @@
         "prob": 0.5124,
         "rating": 1505.06,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming_Academy",
         "wiki_name": "Babos Gaming Academy"
       },
       "team_b": {
@@ -11202,7 +11058,7 @@
         "prob": 0.4876,
         "rating": 1496.42,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glacial_Guardians",
         "wiki_name": "Glacial Guardians"
       },
       "pick": "Babos Gaming Academy",
@@ -11239,7 +11095,7 @@
         "prob": 0.4937,
         "rating": 1501.86,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Defiance_eSports",
         "wiki_name": "Defiance eSports"
       },
       "team_b": {
@@ -11247,7 +11103,7 @@
         "prob": 0.5063,
         "rating": 1506.25,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_AKA",
         "wiki_name": "Kanji Esports AKA"
       },
       "pick": "Kanji Esports AKA",
@@ -11284,7 +11140,7 @@
         "prob": 0.5159,
         "rating": 1487.31,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Duplex_Silva_Pigeons_Edition",
         "wiki_name": "Duplex Silva Pigeons Edition"
       },
       "team_b": {
@@ -11292,7 +11148,7 @@
         "prob": 0.4841,
         "rating": 1476.26,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming_Hearts",
         "wiki_name": "AceGaming Hearts"
       },
       "pick": "Duplex Silva Pigeons Edition",
@@ -11329,7 +11185,7 @@
         "prob": 0.4983,
         "rating": 1510.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LOOKSMAXXER",
         "wiki_name": "LOOKSMAXXER"
       },
       "team_b": {
@@ -11337,7 +11193,7 @@
         "prob": 0.5017,
         "rating": 1511.86,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V.",
         "wiki_name": "1. Esport Club Frankfurt e.V."
       },
       "pick": "1. Esport Club Frankfurt e.V.",
@@ -11374,7 +11230,7 @@
         "prob": 0.6775,
         "rating": 1487.63,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Vision",
         "wiki_name": "MT1 Vision"
       },
       "team_b": {
@@ -11382,7 +11238,7 @@
         "prob": 0.3225,
         "rating": 1358.65,
         "games": 46,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Black_Lion",
         "wiki_name": "Black Lion"
       },
       "pick": "MT1 Vision",
@@ -11419,7 +11275,7 @@
         "prob": 0.5177,
         "rating": 1511.97,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens",
         "wiki_name": "Neko Elite Kittens"
       },
       "team_b": {
@@ -11427,7 +11283,7 @@
         "prob": 0.4823,
         "rating": 1499.66,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Berlin_5",
         "wiki_name": "Berlin 5"
       },
       "pick": "Neko Elite Kittens",
@@ -11464,7 +11320,7 @@
         "prob": 0.5035,
         "rating": 1495.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Packmiko_E-Sports_DACH",
         "wiki_name": "Packmiko E-Sports DACH"
       },
       "team_b": {
@@ -11472,7 +11328,7 @@
         "prob": 0.4965,
         "rating": 1493.24,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Cloud_eSport",
         "wiki_name": "Cloud eSport"
       },
       "pick": "Packmiko E-Sports DACH",
@@ -11509,7 +11365,7 @@
         "prob": 0.5215,
         "rating": 1500.15,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/REH_Gaming",
         "wiki_name": "REH Gaming"
       },
       "team_b": {
@@ -11517,7 +11373,7 @@
         "prob": 0.4785,
         "rating": 1485.17,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Atruvia_M%C3%BCnster_Esports",
         "wiki_name": "Atruvia Münster Esports"
       },
       "pick": "REH Gaming",
@@ -11554,7 +11410,7 @@
         "prob": 0.4649,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "team_b": {
@@ -11562,7 +11418,7 @@
         "prob": 0.5351,
         "rating": 1487.08,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300_White",
         "wiki_name": "Team 300 White"
       },
       "pick": "Team 300 White",
@@ -11599,7 +11455,7 @@
         "prob": 0.4848,
         "rating": 1493.4,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Sissi_State_Punks",
         "wiki_name": "Sissi State Punks"
       },
       "team_b": {
@@ -11607,7 +11463,7 @@
         "prob": 0.5152,
         "rating": 1503.96,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival",
         "wiki_name": "Second Time Alive Revival"
       },
       "pick": "Second Time Alive Revival",
@@ -11644,7 +11500,7 @@
         "prob": 0.4994,
         "rating": 1488.34,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Socken_und_Sandalen",
         "wiki_name": "Socken und Sandalen"
       },
       "team_b": {
@@ -11652,7 +11508,7 @@
         "prob": 0.5006,
         "rating": 1488.77,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei",
         "wiki_name": "Eintracht Spandau Zwei"
       },
       "pick": "Eintracht Spandau Zwei",
@@ -11689,7 +11545,7 @@
         "prob": 0.4963,
         "rating": 1497.4,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Spongecord_prime",
         "wiki_name": "Spongecord prime"
       },
       "team_b": {
@@ -11697,7 +11553,7 @@
         "prob": 0.5037,
         "rating": 1500.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Emperors_Bremen",
         "wiki_name": "Emperors Bremen"
       },
       "pick": "Emperors Bremen",
@@ -11715,7 +11571,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Spongecord prime)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -11735,7 +11590,7 @@
         "prob": 0.4779,
         "rating": 1495.25,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_x_Engines_Stuttgart",
         "wiki_name": "VfB x Engines Stuttgart"
       },
       "team_b": {
@@ -11743,7 +11598,7 @@
         "prob": 0.5221,
         "rating": 1510.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_KIN",
         "wiki_name": "Kanji Esports KIN"
       },
       "pick": "Kanji Esports KIN",
@@ -11780,7 +11635,7 @@
         "prob": 0.5606,
         "rating": 1506.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks",
         "wiki_name": "Whalepower Humpbacks"
       },
       "team_b": {
@@ -11788,7 +11643,7 @@
         "prob": 0.4394,
         "rating": 1463.7,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy",
         "wiki_name": "TeamOrangeGaming Academy"
       },
       "pick": "Whalepower Humpbacks",
@@ -11825,7 +11680,7 @@
         "prob": 0.5005,
         "rating": 1514.16,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo",
         "wiki_name": "Phong Vũ Buffalo"
       },
       "team_b": {
@@ -11833,7 +11688,7 @@
         "prob": 0.4995,
         "rating": 1513.84,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Esports",
         "wiki_name": "MT1 Esports"
       },
       "pick": "Phong Vũ Buffalo",
@@ -11870,7 +11725,7 @@
         "prob": 0.6419,
         "rating": 1502.14,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Prime",
         "wiki_name": "The Bandits Prime"
       },
       "team_b": {
@@ -11878,7 +11733,7 @@
         "prob": 0.3581,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "pick": "The Bandits Prime",
@@ -11915,7 +11770,7 @@
         "prob": 0.3585,
         "rating": 1436.13,
         "games": 18,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Ground_Zero_Gaming",
         "wiki_name": "Ground Zero Gaming"
       },
       "team_b": {
@@ -11923,7 +11778,7 @@
         "prob": 0.6415,
         "rating": 1537.23,
         "games": 15,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Frank_Esports",
         "wiki_name": "Frank Esports"
       },
       "pick": "Frank Esports",
@@ -11960,7 +11815,7 @@
         "prob": 0.3565,
         "rating": 1483.56,
         "games": 7,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Locked_In_%28Dutch_Team%29",
         "wiki_name": "Locked In (Dutch Team)"
       },
       "team_b": {
@@ -11968,7 +11823,7 @@
         "prob": 0.6435,
         "rating": 1586.12,
         "games": 41,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/404_Multigaming_e.V.",
         "wiki_name": "404 Multigaming e.V."
       },
       "pick": "404 Multigaming e.V.",
@@ -11986,7 +11841,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Locked In (Dutch Team))",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -12006,7 +11860,7 @@
         "prob": 0.5168,
         "rating": 1513.84,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Esports",
         "wiki_name": "MT1 Esports"
       },
       "team_b": {
@@ -12014,7 +11868,7 @@
         "prob": 0.4832,
         "rating": 1502.14,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/The_Bandits_Prime",
         "wiki_name": "The Bandits Prime"
       },
       "pick": "MT1 Esports",
@@ -12051,7 +11905,7 @@
         "prob": 0.4833,
         "rating": 1514.16,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo",
         "wiki_name": "Phong Vũ Buffalo"
       },
       "team_b": {
@@ -12059,7 +11913,7 @@
         "prob": 0.5167,
         "rating": 1525.78,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Regnum4games",
         "wiki_name": "Regnum4games"
       },
       "pick": "regnum4games",
@@ -12077,7 +11931,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Regnum4games)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -12097,7 +11950,7 @@
         "prob": 0.302,
         "rating": 1400.75,
         "games": 34,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_eSports",
         "wiki_name": "VfB eSports"
       },
       "team_b": {
@@ -12105,7 +11958,7 @@
         "prob": 0.698,
         "rating": 1546.27,
         "games": 58,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT",
         "wiki_name": "DKB XPERION NXT"
       },
       "pick": "DKB XPERION NXT",
@@ -12142,7 +11995,7 @@
         "prob": 0.4754,
         "rating": 1476.26,
         "games": 4,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming_Hearts",
         "wiki_name": "AceGaming Hearts"
       },
       "team_b": {
@@ -12150,7 +12003,7 @@
         "prob": 0.5246,
         "rating": 1493.4,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Sissi_State_Punks",
         "wiki_name": "Sissi State Punks"
       },
       "pick": "Sissi State Punks",
@@ -12187,7 +12040,7 @@
         "prob": 0.4697,
         "rating": 1485.17,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Atruvia_M%C3%BCnster_Esports",
         "wiki_name": "Atruvia Münster Esports"
       },
       "team_b": {
@@ -12195,7 +12048,7 @@
         "prob": 0.5303,
         "rating": 1506.25,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_AKA",
         "wiki_name": "Kanji Esports AKA"
       },
       "pick": "Kanji Esports AKA",
@@ -12232,7 +12085,7 @@
         "prob": 0.5039,
         "rating": 1505.06,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming_Academy",
         "wiki_name": "Babos Gaming Academy"
       },
       "team_b": {
@@ -12240,7 +12093,7 @@
         "prob": 0.4961,
         "rating": 1502.33,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AIX_eSports",
         "wiki_name": "AIX eSports"
       },
       "pick": "Babos Gaming Academy",
@@ -12277,7 +12130,7 @@
         "prob": 0.4995,
         "rating": 1499.66,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Berlin_5",
         "wiki_name": "Berlin 5"
       },
       "team_b": {
@@ -12285,7 +12138,7 @@
         "prob": 0.5005,
         "rating": 1500.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Emperors_Bremen",
         "wiki_name": "Emperors Bremen"
       },
       "pick": "Emperors Bremen",
@@ -12322,7 +12175,7 @@
         "prob": 0.313,
         "rating": 1358.65,
         "games": 46,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Black_Lion",
         "wiki_name": "Black Lion"
       },
       "team_b": {
@@ -12330,7 +12183,7 @@
         "prob": 0.687,
         "rating": 1495.25,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/VfB_x_Engines_Stuttgart",
         "wiki_name": "VfB x Engines Stuttgart"
       },
       "pick": "VfB x Engines Stuttgart",
@@ -12367,7 +12220,7 @@
         "prob": 0.5266,
         "rating": 1506.11,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BlackDivision",
         "wiki_name": "BlackDivision"
       },
       "team_b": {
@@ -12375,7 +12228,7 @@
         "prob": 0.4734,
         "rating": 1487.63,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/MT1_Vision",
         "wiki_name": "MT1 Vision"
       },
       "pick": "BlackDivision",
@@ -12412,7 +12265,7 @@
         "prob": 0.5124,
         "rating": 1501.86,
         "games": 1,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Defiance_eSports",
         "wiki_name": "Defiance eSports"
       },
       "team_b": {
@@ -12420,7 +12273,7 @@
         "prob": 0.4876,
         "rating": 1493.26,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Purple_Emperor_Lizards_-_Atomic",
         "wiki_name": "Purple Emperor Lizards - Atomic"
       },
       "pick": "Defiance eSports",
@@ -12457,7 +12310,7 @@
         "prob": 0.4685,
         "rating": 1488.77,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei",
         "wiki_name": "Eintracht Spandau Zwei"
       },
       "team_b": {
@@ -12465,7 +12318,7 @@
         "prob": 0.5315,
         "rating": 1510.68,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/LOOKSMAXXER",
         "wiki_name": "LOOKSMAXXER"
       },
       "pick": "LOOKSMAXXER",
@@ -12502,7 +12355,7 @@
         "prob": 0.4795,
         "rating": 1496.42,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Glacial_Guardians",
         "wiki_name": "Glacial Guardians"
       },
       "team_b": {
@@ -12510,7 +12363,7 @@
         "prob": 0.5205,
         "rating": 1510.65,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Kanji_Esports_KIN",
         "wiki_name": "Kanji Esports KIN"
       },
       "pick": "Kanji Esports KIN",
@@ -12547,7 +12400,7 @@
         "prob": 0.4646,
         "rating": 1487.31,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Duplex_Silva_Pigeons_Edition",
         "wiki_name": "Duplex Silva Pigeons Edition"
       },
       "team_b": {
@@ -12555,7 +12408,7 @@
         "prob": 0.5354,
         "rating": 1511.97,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens",
         "wiki_name": "Neko Elite Kittens"
       },
       "pick": "Neko Elite Kittens",
@@ -12592,7 +12445,7 @@
         "prob": 0.5099,
         "rating": 1500.15,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/REH_Gaming",
         "wiki_name": "REH Gaming"
       },
       "team_b": {
@@ -12600,7 +12453,7 @@
         "prob": 0.4901,
         "rating": 1493.24,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Cloud_eSport",
         "wiki_name": "Cloud eSport"
       },
       "pick": "REH Gaming",
@@ -12637,7 +12490,7 @@
         "prob": 0.4379,
         "rating": 1462.65,
         "games": 9,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Rich_Gang",
         "wiki_name": "Rich Gang"
       },
       "team_b": {
@@ -12645,7 +12498,7 @@
         "prob": 0.5621,
         "rating": 1506.0,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks",
         "wiki_name": "Whalepower Humpbacks"
       },
       "pick": "Whalepower Humpbacks",
@@ -12682,7 +12535,7 @@
         "prob": 0.5094,
         "rating": 1503.96,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival",
         "wiki_name": "Second Time Alive Revival"
       },
       "team_b": {
@@ -12690,7 +12543,7 @@
         "prob": 0.4906,
         "rating": 1497.4,
         "games": 25,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Spongecord_prime",
         "wiki_name": "Spongecord prime"
       },
       "pick": "Second Time Alive Revival",
@@ -12708,7 +12561,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Spongecord prime)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -12728,7 +12580,7 @@
         "prob": 0.4644,
         "rating": 1487.08,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300_White",
         "wiki_name": "Team 300 White"
       },
       "team_b": {
@@ -12736,7 +12588,7 @@
         "prob": 0.5356,
         "rating": 1511.86,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V.",
         "wiki_name": "1. Esport Club Frankfurt e.V."
       },
       "pick": "1. Esport Club Frankfurt e.V.",
@@ -12773,7 +12625,7 @@
         "prob": 0.4646,
         "rating": 1463.7,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy",
         "wiki_name": "TeamOrangeGaming Academy"
       },
       "team_b": {
@@ -12781,7 +12633,7 @@
         "prob": 0.5354,
         "rating": 1488.34,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Socken_und_Sandalen",
         "wiki_name": "Socken und Sandalen"
       },
       "pick": "Socken und Sandalen",
@@ -12818,7 +12670,7 @@
         "prob": 0.4028,
         "rating": 1408.79,
         "games": 20,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/AceGaming",
         "wiki_name": "AceGaming"
       },
       "team_b": {
@@ -12826,7 +12678,7 @@
         "prob": 0.5972,
         "rating": 1477.23,
         "games": 26,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V.",
         "wiki_name": "Hannover Esports e.V."
       },
       "pick": "Hannover Esports e.V.",
@@ -12863,7 +12715,7 @@
         "prob": 0.5145,
         "rating": 1536.11,
         "games": 19,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Babos_Gaming",
         "wiki_name": "Babos Gaming"
       },
       "team_b": {
@@ -12871,7 +12723,7 @@
         "prob": 0.4855,
         "rating": 1526.05,
         "games": 24,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Reveal_Multigaming",
         "wiki_name": "Reveal Multigaming"
       },
       "pick": "Babos Gaming",
@@ -12908,7 +12760,7 @@
         "prob": 0.6211,
         "rating": 1500.18,
         "games": 2,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/Team_300",
         "wiki_name": "Team 300"
       },
       "team_b": {
@@ -12916,7 +12768,7 @@
         "prob": 0.3789,
         "rating": 1414.33,
         "games": 21,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/No_Need_Orga",
         "wiki_name": "No Need Orga"
       },
       "pick": "Team 300",
@@ -12953,7 +12805,7 @@
         "prob": 0.4894,
         "rating": 1487.22,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/BvP",
         "wiki_name": "BvP"
       },
       "team_b": {
@@ -12961,7 +12813,7 @@
         "prob": 0.5106,
         "rating": 1494.59,
         "games": 3,
-        "source_url": null,
+        "source_url": "https://lol.fandom.com/wiki/ReGOLD_eSport",
         "wiki_name": "ReGOLD eSport"
       },
       "pick": "reGOLD eSport",
@@ -12979,7 +12831,6 @@
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: ReGOLD eSport)",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
