@@ -1,0 +1,24 @@
+[
+  ["lp_cargo_tiny_botua", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0 (https://github.com/karagemop466-tech/LOLHOTSPAWN5; contact via GitHub issues)"}],
+  ["lp_cargo_tiny_browserua", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_cargo_tiny_noorigin", "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json", {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}],
+  ["lp_search_api", "https://lol.fandom.com/api.php?action=query&list=search&srsearch=Solid%20Gaming&srlimit=10&format=json", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0 (https://github.com/karagemop466-tech/LOLHOTSPAWN5)"}],
+  ["lp_rest_summary", "https://lol.fandom.com/rest.php/v1/page/Karmine_Corp/summary", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0 (https://github.com/karagemop466-tech/LOLHOTSPAWN5)"}],
+  ["lp_special_export", "https://lol.fandom.com/wiki/Special:Export/Solid_Gaming", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0 (https://github.com/karagemop466-tech/LOLHOTSPAWN5)"}],
+  ["lp_fandom_dump_head", "https://s3.amazonaws.com/wikia_xml_dumps/l/lol/lol_pages_current.xml.7z", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0", "Range": "bytes=0-200000"}],
+
+  ["sofascore_www_tournaments", "https://www.sofascore.com/api/v1/sport/league-of-legends/tournaments", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", "Referer": "https://www.sofascore.com/", "Accept": "application/json, text/plain, */*", "Origin": "https://www.sofascore.com"}],
+  ["sofascore_api_referer", "https://api.sofascore.com/api/v1/sport/league-of-legends/seasons", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", "Referer": "https://www.sofascore.com/", "Accept": "application/json, text/plain, */*"}],
+  ["bo3_finished", "https://bo3.gg/ll/matches/finished", {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"}],
+
+  ["oe_bucket_2025", "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+  ["oe_bucket_2026", "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2026_LoL_esports_match_data_from_OraclesElixir.csv", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+  ["oe_bucket_listing", "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=100", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0"}],
+
+  ["golgg_team_stats_sample", "https://gol.gg/teams/team-stats/3108/split-ALL/tournament-ALL/", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["golgg_team_matchlist_sample", "https://gol.gg/teams/team-matchlist/S16-Summer/3108/", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["liquipedia_teams", "https://liquipedia.net/leagueoflegends/Portal:Teams", {"User-Agent": "LOLHOTSPAWN5-picks-bot/1.0 (https://github.com/karagemop466-tech/LOLHOTSPAWN5)"}],
+
+  ["hs_teams_v2", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/teams?sport_alias=lol&tenantId=1&limit=500", {}],
+  ["hs_week_widget_v2", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget?sport_alias=lol&week_id=274", {}]
+]

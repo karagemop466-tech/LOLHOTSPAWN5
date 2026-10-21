@@ -33,6 +33,8 @@ jobs:
         run: python scripts/probe.py --targets scripts/probe_targets_2.json --out evidence/raw2
       - name: Probe round 3 (reference data deep dive)
         run: python scripts/probe.py --targets scripts/probe_targets_3.json --out evidence/raw3
+      - name: Probe round 4 (reference data fallback ladder)
+        run: python scripts/probe.py --targets scripts/probe_targets_4.json --out evidence/raw4
       - name: Commit evidence
         run: |
           git config user.name 'github-actions[bot]'
