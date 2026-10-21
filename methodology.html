@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:45:07Z">2026-10-21 20:45:07 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T20:49:24Z">2026-10-21 20:49:24 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink active" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
@@ -80,12 +80,14 @@ R_effective = 1500 + (R - 1500) · n / (n + 8)</pre>
         <tr><td data-l="Tier">Low</td><td data-l="Rule">Both teams ≥ 3</td>
             <td data-l="Meaning">Thin sample; treat as indicative only.</td></tr>
         <tr><td data-l="Tier">Insufficient data</td><td data-l="Rule">A team has &lt; 3</td>
-            <td data-l="Meaning">A probability is still shown so every fixture is covered, but it
-            is essentially a prior regressed to 1500 Elo. Treated as
-            indicative only, and called out on the card.</td></tr>
-        <tr><td data-l="Tier">No pick</td><td data-l="Rule">Neither team has any rated result</td>
-            <td data-l="Meaning">No probability is published at all. Listed on the
-            <a href="unresolved.html">Unresolved page</a>.</td></tr>
+            <td data-l="Meaning"><strong>No probability is published.</strong> At that sample size
+            the rating is mostly a prior regressed to 1500 Elo, and a
+            prior is not evidence about these rosters. The row is listed on the
+            <a href="unresolved.html">Unresolved page</a> with the shortfall named.</td></tr>
+        <tr><td data-l="Tier">No pick</td><td data-l="Rule">Kickoff already passed, or &lt; 3 rated
+            results for either team</td>
+            <td data-l="Meaning">Probability and pick fields are left blank and the fixture is listed
+            on the <a href="unresolved.html">Unresolved page</a> with what would resolve it.</td></tr>
       </tbody>
     </table>
   </div>

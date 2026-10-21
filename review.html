@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:45:07Z">2026-10-21 20:45:07 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T20:49:24Z">2026-10-21 20:49:24 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink active" href="review.html">Flagged</a></nav>
@@ -66,13 +66,13 @@
         <td data-l="Source"><a href="https://polymarket.com/markets/esports/lol" rel="noopener">source</a></td>
       </tr>
       <tr>
-        <td data-l="Finding">Kalshi only lists a tournament outright</td>
-        <td data-l="Detail">KXLOL exposed a single open event, <em>Worlds 2026 Champion</em>. That is a futures market and cannot price an individual match, so it is not used.</td>
-        <td data-l="Source"><a href="https://kalshi.com/markets/kxlol" rel="noopener">source</a></td>
+        <td data-l="Finding">Kalshi per-match markets exist but are not ingested here</td>
+        <td data-l="Detail">The KXLOLGAME series does list per-match Worlds moneylines (a verified snapshot showed 9 open fixtures), so these are not futures. This pipeline does not yet read them: those fixtures are priced by Pinnacle where a line exists, otherwise by the model. Wiring Kalshi in would move some model-priced Worlds rows onto a real exchange price — an open improvement, stated here rather than implied.</td>
+        <td data-l="Source"><a href="https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&amp;status=open" rel="noopener">source</a></td>
       </tr>
       <tr>
         <td data-l="Finding">Unverified values are left blank</td>
-        <td data-l="Detail">57 fixtures have no probability at all because a team has fewer than 3 rated results. A further 106 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
+        <td data-l="Detail">110 fixtures carry no probability at all — 69 stale rows and 41 with fewer than 3 rated results for a team. A further 78 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>

@@ -123,3 +123,88 @@ implementation using the **same** root page filenames (`index.html`, `picks.html
 4. 57 fixtures priced on fewer than 3 rated results for one side.
 5. Bovada (HTTP 400), Polymarket (stale markets) and Kalshi (outright only) contributed no per-match
    price; each is documented rather than substituted.
+
+---
+
+## Correction pass — `6cee5599` (2026-10-21, after PR #6)
+
+**Claim:** `scripts/build_model.py`, `scripts/build_site.py`, `scripts/check_invariants.py`,
+`.github/workflows/update.yml`, `data/picks.json`, `data/invariants.json`, generated `*.html`, this
+section. No other files touched; the collecting scripts are unchanged.
+
+### Defect found in the published board
+
+The site asserted *"Nothing is filled in with a guess"* while `build_model.py` blanked a row only when
+**both** teams had zero rated results. Every other thin row was published:
+
+- **57 fixtures** were priced with `confidence: "insufficient"` — fewer than 3 rated results for at
+  least one team, i.e. below the pipeline's own `MIN_MATCHES_RELIABLE = 3` bar. Each carried a
+  `data_note` saying the number was *"mostly a prior … not evidence"* — and then printed a pick and a
+  percentage anyway. Example: `1053095`, where the away side had **0** rated results and still got a
+  51%/49% split and a pick.
+- **68 fixtures whose kickoff had already passed** still carried a pick. Because the Elo pass runs over
+  every result up to *now*, those numbers silently contained results from after the kickoff — hindsight
+  presented as a forecast.
+- The homepage's "1 unresolved" and the unresolved page's "Insufficient data … a probability is still
+  shown so every fixture is covered" both contradicted the project's blank-and-flag rule.
+
+This is the one rule the project cannot bend: a missing number must stay missing. Coverage was bought
+with invented precision.
+
+### What changed
+
+1. `build_model.py` now publishes a probability only when a matched external market exists, or when
+   **both** teams clear `MIN_MATCHES_RELIABLE` (3) rated results. Two new unresolved kinds, each with a
+   machine-checkable `unresolved_kind`, a specific `unresolved_reason` and an
+   `unresolved_remedy`: `stale_fixture` (kickoff passed) and `insufficient_history` (thin sample).
+2. Market rows carry `market_api_url` — the exact Pinnacle matchup endpoint the price came from —
+   alongside the human market page. Model rows carry `model_url` / `model_url_away`: the
+   Leaguepedia `CargoExport` query listing the rated results for each team, so every published
+   percentage has a row-level link to its evidence on an official/authoritative source.
+3. `build_site.py`: executive summary now reports real coverage (154/195 = 79.0%), names both
+   unresolved causes with counts, and the unresolved page lists **all 110** blank rows with
+   limitation + remedy + source (previously truncated and merged into one table). Cards for blank rows
+   print the limitation inline instead of a bare "None". Methodology's confidence table now says a
+   sub-3-sample row is **not published**.
+4. **New gate** `scripts/check_invariants.py`, wired into `update.yml` after the model step: fails the
+   job (so nothing publishes) if a published row lacks a probability, an evidence link, a
+   pick/probability consistency check, a market within ±8 h of kickoff, or if any past-kickoff row or
+   `insufficient` row carries a pick, or if totals disagree with the rows. It also watches for
+   Hotspawn crowd shares leaking into the probability column. Result of `data/invariants.json`.
+5. Corrected a false statement on `review.html`: Kalshi's `KXLOLGAME` series **does** list per-match
+   moneylines (9 open fixtures at last check); it was described as an outright-only futures market.
+   The honest statement is that this pipeline does not ingest it yet — logged below as an open item.
+
+### Numbers after the pass (local rebuild, same collected data)
+
+| Metric | Before (PR #6) | After |
+|---|---|---|
+| Published picks | 263 / 264 | **154 / 264** |
+| — market-priced (Pinnacle, de-vigged) | 9 | 9 |
+| — model-priced, both teams ≥ 3 results | 254 (57 below the bar) | **145** |
+| Unresolved, blank | 1 | **110** (69 stale + 41 thin history) |
+| Rows carrying a probability *and* `insufficient` | 57 | **0** |
+| Picks on fixtures whose kickoff had passed | 68 | **0** |
+| Upcoming coverage | 100% | **79.0%** |
+
+Verification: `python3 scripts/build_model.py` → `python3 scripts/build_site.py` →
+`python3 scripts/check_links.py` (`link check OK`, 6 pages, 264 cards, 318 external citations) →
+`python3 scripts/check_invariants.py` → `0 errors, 0 warnings`. The gate was regression-tested
+against the previous `picks.json`, where it reports **438 errors**, so it is not a rubber stamp.
+
+### Deliberate trade-off
+
+Coverage fell from 263 to 154 published picks. That is the intended direction: the 41 dropped fixtures
+had no market and no meaningful sample, and the 69 stale rows cannot be acted on. A board that says
+"154 priced, 110 blank with reasons" is worth more than one that prices everything by priors.
+
+### Open items (unchanged or new)
+
+1. Kalshi `KXLOLGAME` per-match markets are not ingested yet — would move some model-priced Worlds
+   rows onto an exchange price. Documented on `review.html`, not substituted.
+2. `collect_results.py` pulls 365 days and caps at 8,000 rows (7,579 present, so the cap is close).
+   Widening the window would legitimately lift some of the 41 `insufficient_history` rows above the
+   three-result bar; not attempted here because it cannot be verified from the sandbox — the next
+   scheduled run must be observed after changing it.
+3. `best_of` is still `null` for every Hotspawn row (upstream gap).
+4. 69 stale Hotspawn rows remain upstream; they are blanked, not hidden.

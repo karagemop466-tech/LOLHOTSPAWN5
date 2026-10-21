@@ -133,10 +133,18 @@ def source_links(r):
         out.append(f'<a href="{esc(r["hotspawn_url"])}" rel="noopener">Hotspawn match</a>')
     else:
         out.append('<span class="unver">no Hotspawn page</span>')
-    if r.get("method") == "market" and r.get("market_url"):
-        out.append(f'<a href="{esc(r["market_url"])}" rel="noopener">Pinnacle</a>')
-    if r.get("method") == "model" and r.get("model_url"):
-        out.append(f'<a href="{esc(r["model_url"])}" rel="noopener">Leaguepedia</a>')
+    if r.get("method") == "market":
+        if r.get("market_api_url"):
+            out.append(f'<a href="{esc(r["market_api_url"])}" rel="noopener">Pinnacle API price</a>')
+        if r.get("market_url"):
+            out.append(f'<a href="{esc(r["market_url"])}" rel="noopener">Pinnacle market</a>')
+    if r.get("method") == "model":
+        if r.get("model_url"):
+            out.append(f'<a href="{esc(r["model_url"])}" rel="noopener">'
+                       f'Leaguepedia: {esc(r.get("home"))}</a>')
+        if r.get("model_url_away"):
+            out.append(f'<a href="{esc(r["model_url_away"])}" rel="noopener">'
+                       f'Leaguepedia: {esc(r.get("away"))}</a>')
     return " · ".join(out)
 
 
@@ -171,8 +179,10 @@ def pick_card(r):
     elif method == "model" and r.get("no_market_reason"):
         market_note = (f'<div class="meta-line muted">No bookmaker market: '
                        f'{esc(r["no_market_reason"])}</div>')
-    if r.get("data_note"):
-        market_note += f'<div class="meta-line warn-text">{esc(r["data_note"])}</div>'
+    if method == "unresolved" and r.get("unresolved_reason"):
+        market_note += (f'<div class="meta-line warn-text">{esc(r["unresolved_reason"])}</div>'
+                        f'<div class="meta-line"><a href="unresolved.html">'
+                        f'Why this row is blank →</a></div>')
 
     return f"""
     <article class="card" data-method="{esc(method)}" data-conf="{esc(r.get('confidence') or '')}"
@@ -209,6 +219,12 @@ def build_index(doc):
     unres = [r for r in picks if r.get("method") == "unresolved"]
     stale = [r for r in picks if r.get("is_past_start")]
 
+    n_stale = sum(1 for r in unres if r.get("unresolved_kind") == "stale_fixture")
+    n_thin = sum(1 for r in unres if r.get("unresolved_kind") == "insufficient_history")
+    n_tours = len({r.get("competition") for r in picks})
+    upcoming_picked = sum(1 for r in live if r.get("pick"))
+    coverage = round(100.0 * upcoming_picked / len(live), 1) if live else 0.0
+
     featured = sorted(priced, key=lambda r: r.get("start_utc") or "")[:6]
     featured_cards = "".join(pick_card(r) for r in featured) or \
         '<p class="muted">No market-priced fixtures in this snapshot.</p>'
@@ -218,17 +234,19 @@ def build_index(doc):
 
     body = f"""
 <section class="hero">
-  <h1>Every League of Legends match on Hotspawn, with a pick.</h1>
+  <h1>Every League of Legends match on Hotspawn — priced where we can defend it.</h1>
   <p class="lede">
     We mirror the full <strong>Hotspawn Play</strong> League of Legends pick'em board
-    ({t['matches']} fixtures) and attach an <em>independently originated</em> win probability to each
-    one. Where a sharp external sportsbook prices the match we use that market, de-vigged.
-    Where no bookmaker prices it — the low-tier circuits Hotspawn lists but the sportsbooks ignore —
-    we publish our own Elo model number. Nothing here comes from Hotspawn's crowd pick share.
+    ({t['matches']} fixtures) and attach an <em>independently originated</em> win probability to every
+    fixture we can evidence. Where a sharp external sportsbook prices the match we use that market,
+    de-vigged. Where no bookmaker prices it — the low-tier circuits the sportsbooks ignore — we use
+    our own Elo model only when both teams have at least three rated results. Everything else is
+    published <strong>blank, with the reason</strong>. Nothing here comes from Hotspawn's crowd
+    pick share.
   </p>
   <div class="cta">
-    <a class="btn primary" href="picks.html">See all {t['matches']} picks →</a>
-    <a class="btn" href="unresolved.html">What we can't price</a>
+    <a class="btn primary" href="picks.html">See all {t['matches']} fixtures →</a>
+    <a class="btn" href="unresolved.html">{len(unres)} without a number — and why</a>
   </div>
 </section>
 
@@ -244,13 +262,12 @@ def build_index(doc):
   <h2>Executive summary</h2>
   <div class="prose">
     <p><strong>Coverage.</strong> Hotspawn's LoL lobby returned <strong>{t['matches']} fixtures</strong>
-    across 27 tournaments. {len(live)} have a future start time and
-    {len(stale)} are stale rows (start time already passed, yet Hotspawn still lists them as
-    <em>scheduled</em>, and none of those has a Hotspawn match page).
+    across {n_tours} tournaments. {len(live)} have a future kickoff and {len(stale)} are stale rows
+    (kickoff already passed, yet Hotspawn still lists them as <em>scheduled</em>).
     Every one of the {t['matches']} appears on this site.</p>
 
-    <p><strong>Picks.</strong> <strong>{t['with_a_pick']} of {t['matches']}</strong> fixtures carry a pick
-    with a probability. Two independent methods produce them:</p>
+    <p><strong>Picks.</strong> <strong>{upcoming_picked} of {len(live)} upcoming fixtures</strong>
+    carry a pick with a probability — {coverage}% coverage. Two independent methods produce them:</p>
     <ul>
       <li><strong>{len(priced)} market-priced</strong> — a real Pinnacle moneyline exists and was
       de-vigged. This covers the Worlds 2026 Swiss stage and EMEA Masters, the tournaments the
@@ -260,10 +277,13 @@ def build_index(doc):
       ({doc.get('teams_rated', 0)} teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
     </ul>
 
-    <p><strong>Unresolved.</strong> <strong>{len(unres)} fixture{'' if len(unres) == 1 else 's'}</strong> have no defensible number:
-    no sportsbook market, and no usable match history for one or both teams. They are listed in full,
-    with the specific limitation for each, on the
-    <a href="unresolved.html">Unresolved &amp; Limitations page →</a>. Nothing is filled in with a guess.</p>
+    <p><strong>Unresolved.</strong> <strong>{len(unres)} of {t['matches']} fixtures</strong> have no
+    published number, for one of two stated reasons: <strong>{n_stale}</strong> are stale rows whose
+    kickoff has passed with no result published anywhere, and <strong>{n_thin}</strong> have no
+    bookmaker market plus fewer than three rated results for at least one team — below that bar a
+    model output is mostly the 1500-Elo prior. Each row is listed with its exact limitation and what
+    would resolve it on the <a href="unresolved.html">Unresolved &amp; Limitations page →</a>.
+    Nothing is filled in with a guess.</p>
 
     <p><strong>Sourcing rule.</strong> Sportsbooks and prediction markets only. Hotspawn supplies the
     <em>fixture list</em> and nothing else — its "picked %" is a popularity poll and is deliberately
@@ -355,97 +375,95 @@ def build_picks(doc):
 
 # ---------------------------------------------------------------- unresolved
 def build_unresolved(doc):
+    t = doc["totals"]
     unres = [r for r in doc["picks"] if r.get("method") == "unresolved"]
-    stale = [r for r in doc["picks"] if r.get("is_past_start")]
-    nomarket = [r for r in doc["picks"] if r.get("method") == "model"]
+    stale = [r for r in unres if r.get("unresolved_kind") == "stale_fixture"]
+    thin = [r for r in unres if r.get("unresolved_kind") == "insufficient_history"]
+    other = [r for r in unres if r not in stale and r not in thin]
+    model = [r for r in doc["picks"] if r.get("method") == "model"]
+    low = [r for r in model if r.get("confidence") == "low"]
 
-    def simple_rows(rows, reason_key=None):
+    def rows(items):
         out = []
-        for r in rows:
-            reason = r.get("unresolved_reason") or r.get("no_market_reason") or ""
+        for r in sorted(items, key=lambda x: x.get("start_utc") or ""):
             out.append(f"""
             <tr>
               <td data-l="Tournament">{esc(r.get('competition'))}</td>
               <td data-l="Kickoff">{esc(fmt_time(r.get('start_utc')))}</td>
               <td data-l="Match">{esc(r.get('home'))} vs {esc(r.get('away'))}</td>
-              <td data-l="Limitation">{esc(reason)}</td>
+              <td data-l="Limitation">{esc(r.get('unresolved_reason'))}</td>
+              <td data-l="What would resolve it">{esc(r.get('unresolved_remedy'))}</td>
               <td data-l="Source">{source_links(r)}</td>
             </tr>""")
-        return "".join(out)
-
-    recent = sorted(unres, key=lambda r: r.get("start_utc") or "")[:60]
+        return "".join(out) or '<tr><td colspan="6">None in this snapshot.</td></tr>'
 
     body = f"""
 <section class="panel pad">
   <h1>Unresolved picks &amp; limitations</h1>
   <p class="lede small">
-    This page exists so that a missing pick is never quietly filled with a guess. It lists exactly
-    which fixtures have no defensible probability, and the specific limitation behind each one.
+    This page exists so that a missing pick is never quietly filled with a guess. Every fixture
+    without a published probability is listed here in full, with the specific limitation behind it
+    and the evidence that would resolve it. Rows in the tables below carry
+    <strong>no number at all</strong> — the probability fields are blank, not estimated.
   </p>
 
-  <h2>Why a match can be unresolved</h2>
+  <section class="kpis" aria-label="Unresolved counts">
+    {kpi(len(unres), 'unresolved fixtures', None, 'warn')}
+    {kpi(len(stale), 'stale: kickoff passed', None, 'warn')}
+    {kpi(len(thin), 'too little history', None, 'warn')}
+    {kpi(len(model), 'model-priced (published)', 'picks.html?method=model')}
+  </section>
+
+  <h2>The two reasons a row is blank</h2>
   <ul class="reasons">
-    <li><strong>No sportsbook market.</strong> Pinnacle prices the Worlds 2026 Swiss stage and EMEA
-      Masters. It does not price regional third divisions, national leagues or academy circuits.</li>
-    <li><strong>No match history.</strong> Our Elo model needs results. Teams brand-new to the
-      Leaguepedia record have no rating, so no probability can be justified.</li>
-    <li><strong>Stale fixtures.</strong> Some rows have a start time in the past while Hotspawn still
-      lists them as scheduled, and carry no Hotspawn match page. Any number for those is unactionable.</li>
-    <li><strong>Prediction markets are not per-match here.</strong> Polymarket's League of Legends
-      markets in this snapshot are historical (LCK Challengers from August–September 2026) and Kalshi
-      only lists a Worlds outright winner market — neither can price an individual fixture.</li>
+    <li><strong>Stale fixture.</strong> Hotspawn still lists the match as <em>scheduled</em> although
+      its kickoff has passed, and neither Hotspawn nor Leaguepedia publishes a result. A pick for it
+      could not be acted on, and our ratings already contain results from after that kickoff, so any
+      number would be hindsight.</li>
+    <li><strong>Too little rated history.</strong> No bookmaker or exchange prices the match, and
+      Leaguepedia holds fewer than <strong>3</strong> rated results for at least one of the two teams.
+      Under that bar the Elo rating is mostly a 1500-point prior — a guess with a decimal point — so
+      the row stays blank instead of being dressed up as a probability.</li>
   </ul>
 
-  <h2>Fixtures with no pick ({len(unres)})</h2>
-  <p class="sub">Every row has a source link. Where the source cannot confirm a value it is left blank.</p>
+  <h2>Stale fixtures — kickoff passed, no result ({len(stale)})</h2>
+  <p class="sub">Blank probability. Every row links to the fixture source; none of these has a
+     Hotspawn match page.</p>
   <div class="tablewrap">
     <table class="data">
-      <thead><tr><th>Tournament</th><th>Kickoff</th><th>Match</th><th>Limitation</th><th>Source</th></tr></thead>
-      <tbody>{simple_rows(recent) or '<tr><td colspan="5">None in this snapshot.</td></tr>'}</tbody>
+      <thead><tr><th>Tournament</th><th>Kickoff</th><th>Match</th><th>Limitation</th>
+        <th>What would resolve it</th><th>Source</th></tr></thead>
+      <tbody>{rows(stale)}</tbody>
     </table>
   </div>
-  {f'<p class="sub">Showing the {len(recent)} earliest of {len(unres)}. The complete set is on the '
-   f'<a href="picks.html?method=unresolved">All picks page</a>.</p>' if len(unres) > len(recent) else ''}
 
-  <h2>Model-priced, but with no bookmaker to check against ({len(nomarket)})</h2>
+  <h2>Too little rated history ({len(thin)})</h2>
+  <p class="sub">No external market, and fewer than three rated Leaguepedia results for at least one
+     team. Blank probability; each row names the shortfall.</p>
+  <div class="tablewrap">
+    <table class="data">
+      <thead><tr><th>Tournament</th><th>Kickoff</th><th>Match</th><th>Limitation</th>
+        <th>What would resolve it</th><th>Source</th></tr></thead>
+      <tbody>{rows(thin + other)}</tbody>
+    </table>
+  </div>
+
+  <h2>Model-priced with no bookmaker to check against ({len(model)})</h2>
   <p class="lede small">
-    These have a probability, but only from our own model. There is no external price to validate it,
-    so treat the confidence badge as part of the number: <em>Low</em> and <em>Insufficient data</em>
-    rows are weakly supported by thin match histories.
+    These have a probability, but only from our own model: no external price exists for that league,
+    so there is nothing to validate the number against. Read the confidence badge as part of the
+    number. <strong>{len(low)}</strong> are <em>Low</em> (both teams have 3–7 rated results); the rest
+    are Medium or High. Every row links to the Leaguepedia query holding the results behind it.
   </p>
-  <div class="tablewrap">
-    <table class="data">
-      <thead><tr><th>Tournament</th><th>Kickoff</th><th>Match</th><th>Model pick</th><th>Confidence</th><th>Source</th></tr></thead>
-      <tbody>
-      {''.join(f'''<tr>
-        <td data-l="Tournament">{esc(r.get('competition'))}</td>
-        <td data-l="Kickoff">{esc(fmt_time(r.get('start_utc')))}</td>
-        <td data-l="Match">{esc(r.get('home'))} vs {esc(r.get('away'))}</td>
-        <td data-l="Pick">{esc(r.get('pick'))} · {pct(r.get('pick_prob'))}</td>
-        <td data-l="Confidence">{esc(CONF_LABEL.get(r.get('confidence'), r.get('confidence')))}</td>
-        <td data-l="Source">{source_links(r)}</td>
-      </tr>''' for r in sorted(nomarket, key=lambda r: r.get('start_utc') or '')[:80])}
-      </tbody>
-    </table>
-  </div>
-  {f'<p class="sub">Showing {min(80, len(nomarket))} of {len(nomarket)}.</p>' if len(nomarket) > 80 else ''}
+  <p><a class="btn" href="picks.html?method=model">See the {len(model)} model-priced picks →</a></p>
 
-  <h2>Stale rows ({len(stale)})</h2>
-  <p class="sub">Start time already passed, still listed as <em>scheduled</em>, and no Hotspawn match page.</p>
-  <div class="tablewrap">
-    <table class="data">
-      <thead><tr><th>Tournament</th><th>Listed start</th><th>Match</th><th>Status</th></tr></thead>
-      <tbody>
-      {''.join(f'''<tr>
-        <td data-l="Tournament">{esc(r.get('competition'))}</td>
-        <td data-l="Start">{esc(fmt_time(r.get('start_utc')))}</td>
-        <td data-l="Match">{esc(r.get('home'))} vs {esc(r.get('away'))}</td>
-        <td data-l="Status">scheduled, no match page</td>
-      </tr>''' for r in sorted(stale, key=lambda r: r.get('start_utc') or '')[:60])}
-      </tbody>
-    </table>
-  </div>
-  {f'<p class="sub">Showing {min(60, len(stale))} of {len(stale)}.</p>' if len(stale) > 60 else ''}
+  <h2>What we do not do</h2>
+  <ul class="reasons">
+    <li>We never use Hotspawn's crowd "picked %" as a probability. It is a popularity poll.</li>
+    <li>We never publish a number for a fixture with no defensible evidence; it goes on this page.</li>
+    <li>We never fill a blank with a league average, a prior, or another match's price.</li>
+    <li>We never treat a futures/outright market (e.g. "Worlds winner") as a per-match probability.</li>
+  </ul>
 </section>
 """
     return page("unresolved.html", "Unresolved", body, doc, "unresolved.html")
@@ -513,12 +531,14 @@ R_effective = {int(m.get('elo_start', 1500))} + (R - {int(m.get('elo_start', 150
         <tr><td data-l="Tier">Low</td><td data-l="Rule">Both teams ≥ 3</td>
             <td data-l="Meaning">Thin sample; treat as indicative only.</td></tr>
         <tr><td data-l="Tier">Insufficient data</td><td data-l="Rule">A team has &lt; 3</td>
-            <td data-l="Meaning">A probability is still shown so every fixture is covered, but it
-            is essentially a prior regressed to {int(m.get('elo_start', 1500))} Elo. Treated as
-            indicative only, and called out on the card.</td></tr>
-        <tr><td data-l="Tier">No pick</td><td data-l="Rule">Neither team has any rated result</td>
-            <td data-l="Meaning">No probability is published at all. Listed on the
-            <a href="unresolved.html">Unresolved page</a>.</td></tr>
+            <td data-l="Meaning"><strong>No probability is published.</strong> At that sample size
+            the rating is mostly a prior regressed to {int(m.get('elo_start', 1500))} Elo, and a
+            prior is not evidence about these rosters. The row is listed on the
+            <a href="unresolved.html">Unresolved page</a> with the shortfall named.</td></tr>
+        <tr><td data-l="Tier">No pick</td><td data-l="Rule">Kickoff already passed, or &lt; 3 rated
+            results for either team</td>
+            <td data-l="Meaning">Probability and pick fields are left blank and the fixture is listed
+            on the <a href="unresolved.html">Unresolved page</a> with what would resolve it.</td></tr>
       </tbody>
     </table>
   </div>
@@ -635,13 +655,15 @@ def build_review(doc):
          "timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match "
          "is played) and are flagged here rather than silently used.",
          "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule"),
-        ("Hotspawn returns 264 rows but only 195 carry a match page",
+        (f"Hotspawn returns {doc['totals']['matches']} rows but only "
+         f"{doc['totals']['matches'] - len(no_page)} carry a match page",
          f"{len(no_page)} rows have no Hotspawn match page, and those are exactly the "
          f"{len(stale)} rows whose start time is already in the past while status still reads "
          "<code>scheduled</code>. We treat them as stale. They are still listed, but no pick from "
          "them should be acted on.",
          "https://play.hotspawn.com/lol-pickems"),
-        ("189 of 264 fixtures have tier and stage listed as 'waiting for information'",
+        (f"{len(wait)} of {doc['totals']['matches']} fixtures have tier and stage listed as "
+         "'waiting for information'",
          f"{len(wait)} fixtures carry <code>tier: waiting for information</code> and "
          f"{len(no_bestof)} also have <code>stage: waiting for information</code>. Series format "
          "(BestOf) is <code>null</code> for every row, so the site cannot show match length. This is "
@@ -662,15 +684,19 @@ def build_review(doc):
          "2026 plus a power-ranking market — none matched a fixture on the current board, so Polymarket "
          "contributes no probability.",
          "https://polymarket.com/markets/esports/lol"),
-        ("Kalshi only lists a tournament outright",
-         "KXLOL exposed a single open event, <em>Worlds 2026 Champion</em>. That is a futures market and "
-         "cannot price an individual match, so it is not used.",
-         "https://kalshi.com/markets/kxlol"),
+        ("Kalshi per-match markets exist but are not ingested here",
+         "The KXLOLGAME series does list per-match Worlds moneylines (a verified snapshot showed 9 open "
+         "fixtures), so these are not futures. This pipeline does not yet read them: those fixtures are "
+         "priced by Pinnacle where a line exists, otherwise by the model. Wiring Kalshi in would move "
+         "some model-priced Worlds rows onto a real exchange price — an open improvement, stated here "
+         "rather than implied.",
+         "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&status=open"),
         ("Unverified values are left blank",
-         f"{len(insuff)} fixtures have no probability at all because a team has fewer than 3 rated "
-         f"results. A further {len(low)} are model-priced on thin samples and are labelled "
-         "<em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not "
-         "provide it.",
+         f"{len(insuff)} fixtures carry no probability at all — {len([r for r in insuff if r.get('unresolved_kind') == 'stale_fixture'])} "
+         f"stale rows and {len([r for r in insuff if r.get('unresolved_kind') == 'insufficient_history'])} "
+         f"with fewer than 3 rated results for a team. A further {len(low)} are model-priced on thin "
+         "samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures "
+         "because Hotspawn does not provide it.",
          "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule"),
         ("Sandbox egress is restricted; collection runs on GitHub Actions",
          "This repository's development sandbox cannot reach any esports host (TLS resets after "

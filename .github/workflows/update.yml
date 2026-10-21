@@ -41,6 +41,12 @@ jobs:
       - name: Build picks and probabilities
         run: bash scripts/run_stage.sh model python3 scripts/build_model.py
 
+      # Publication gate: fails the job (so nothing is published) if any row carries a probability
+      # without evidence, a pick on a fixture whose kickoff has passed, or a blank row without a
+      # stated limitation. See scripts/check_invariants.py.
+      - name: Enforce publication invariants
+        run: python3 scripts/check_invariants.py
+
       - name: Build static site
         run: bash scripts/run_stage.sh site python3 scripts/build_site.py
 
