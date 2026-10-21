@@ -2,7 +2,7 @@
       1501 LoL fixtures total, 264 with status=scheduled
       195 match permalinks harvested from lobby HTML
 [2/6] Pinnacle esportsbook …
-      12 League of Legends matchups on the board, 9 priced
+      13 League of Legends matchups on the board, 9 priced
 [3/6] Unibet / Kambi esports …
       9 League of Legends events priced
 [4/6] Polymarket …
@@ -11,13 +11,13 @@
       pass 0: 61 teams served from cache (1472 games)
       pass 1: 27 competitions in 4 batched queries …
         2/4 batches, 1536 games total
-        4/4 batches, 1536 games total
-        +64 games from competition pass
-      pass 2: 128 teams in 13 chunk queries …
-        5/13 chunks, 1605 games total
-        10/13 chunks, 1660 games total
-      1660 games, 228 teams rated
+        4/4 batches, 1597 games total
+        +125 games from competition pass
+      pass 2: 127 teams in 13 chunk queries …
+        5/13 chunks, 1597 games total
+        10/13 chunks, 1674 games total
+      1734 games, 225 teams rated
 [6/6] Resolving picks …
 
-Done. 264 fixtures — {'MODEL': 112, 'UNRESOLVED': 143, 'MARKET': 9}
-      resolved 121 / unresolved 143
+Done. 264 fixtures — {'MODEL': 113, 'UNRESOLVED': 142, 'MARKET': 9}
+      resolved 122 / unresolved 142
