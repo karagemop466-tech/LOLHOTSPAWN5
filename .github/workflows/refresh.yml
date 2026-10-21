@@ -1,0 +1,59 @@
+name: refresh-picks
+
+# The HotSpawn pick'em board changes every few hours, so the inventory, the
+# external betting lines and the published picks are refreshed on a 4-hour cycle
+# (inside the 4-8 hour window the project asks for).
+
+on:
+  schedule:
+    - cron: '17 */4 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - arena/3552c64a-lolhotspawn5
+    paths:
+      - 'scripts/**'
+      - 'data/lp_tournament_map.json'
+      - '.github/workflows/refresh.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-picks
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect HotSpawn inventory
+        run: python scripts/collect_hotspawn.py
+      - name: Collect external betting lines
+        run: python scripts/collect_odds.py
+      - name: Collect reference results (Leaguepedia)
+        run: python scripts/collect_reference.py
+      - name: Build picks
+        run: python scripts/build_picks.py
+      - name: Build site
+        run: python scripts/build_site.py
+      - name: Check internal links
+        run: python scripts/check_links.py
+      - name: Commit refreshed data and site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data index.html picks.html unresolved.html review.html sources.html methodology.html evidence
+          if git diff --cached --quiet; then
+            echo 'no changes to publish'
+          else
+            git commit -m 'chore(refresh): update inventory, lines and picks'
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

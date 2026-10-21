@@ -53,6 +53,27 @@ def quote_orientation(q: dict, team_a: str, team_b: str) -> bool:
             team_match_score(team_a, q.get("team_b", "")))
 
 
+def resolve_team(name: str, canonical: dict[str, dict]) -> tuple[str | None, dict | None, str | None]:
+    """Map a HotSpawn team name onto a canonical (wiki) team name.
+
+    Returns (canonical_name, rating_info, note). Exact normalised matches win;
+    otherwise the best fuzzy match is used and an ambiguity note is returned when
+    a second candidate is almost as good.
+    """
+    if name in canonical:
+        return name, canonical[name], None
+    if not canonical:
+        return None, None, None
+    scored = sorted(((team_match_score(name, cand), cand) for cand in canonical), reverse=True)
+    best_score, best = scored[0]
+    if best_score < 0.75:
+        return None, None, "no wiki team page for this team"
+    note = None
+    if len(scored) > 1 and (scored[1][0] - best_score) < 0.05:
+        note = f"team name is ambiguous on Leaguepedia (closest: {best})"
+    return best, canonical[best], note
+
+
 def main() -> int:
     inventory = load("data/hotspawn_matches.json", {"matches": []})
     odds = load("data/odds.json", {"quotes": []})
@@ -65,10 +86,7 @@ def main() -> int:
     fixtures = [m for m in inventory.get("matches", []) if m.get("status") == "scheduled"]
     if reference.get("games"):
         rebuilt = build_ratings(reference["games"])
-        if rebuilt:
-            teams_strength = {**teams_strength.get("_from_games", {}), **rebuilt}
-        else:
-            teams_strength = {**teams_strength, **rebuilt}
+        teams_strength = {**teams_strength, **rebuilt}
 
     picks = []
     for fixture in fixtures:
@@ -123,6 +141,13 @@ def main() -> int:
 
         rating_a = teams_strength.get(team_a, {}).get("rating")
         rating_b = teams_strength.get(team_b, {}).get("rating")
+        canon_a, info_a, note_a = resolve_team(team_a, teams_strength)
+        canon_b, info_b, note_b = resolve_team(team_b, teams_strength)
+        for note in (note_a, note_b):
+            if note:
+                flags.append(note)
+        rating_a = (info_a or {}).get("rating")
+        rating_b = (info_b or {}).get("rating")
         model_prob, model_reason = predict(rating_a, rating_b)
         if model_prob is None:
             model_prob, model_reason = 0.5, "no verified match history for at least one team"
@@ -168,16 +193,10 @@ def main() -> int:
         pick = team_a if prob_a >= prob_b else team_b
         pick_prob = max(prob_a, prob_b)
 
-        strength_a = teams_strength.get(team_a, {})
-        strength_b = teams_strength.get(team_b, {})
-        if strength_a.get("source_url"):
-            source_a = strength_a["source_url"]
-        else:
-            source_a = None
-        if strength_b.get("source_url"):
-            source_b = strength_b["source_url"]
-        else:
-            source_b = None
+        strength_a = info_a or {}
+        strength_b = info_b or {}
+        source_a = strength_a.get("source_url")
+        source_b = strength_b.get("source_url")
 
         lock_time = fixture.get("lock_time")
         picks.append({
@@ -191,15 +210,18 @@ def main() -> int:
             "hotspawn_url": fixture.get("permalinks"),
             "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
             "team_a": {"name": team_a, "prob": prob_a, "rating": strength_a.get("rating"),
-                       "games": strength_a.get("games"), "source_url": source_a},
+                       "games": strength_a.get("games"), "source_url": source_a,
+                       "wiki_name": canon_a},
             "team_b": {"name": team_b, "prob": prob_b, "rating": strength_b.get("rating"),
-                       "games": strength_b.get("games"), "source_url": source_b},
+                       "games": strength_b.get("games"), "source_url": source_b,
+                       "wiki_name": canon_b},
             "pick": pick,
             "pick_prob": pick_prob,
             "confidence": confidence,
             "basis": basis,
             "model": {"prob_a": model_prob, "reason": model_reason,
-                      "rating_a": rating_a, "rating_b": rating_b},
+                      "rating_a": rating_a, "rating_b": rating_b,
+                      "wiki_name_a": canon_a, "wiki_name_b": canon_b},
             "market": primary,
             "market_sources": market_rows,
             "flags": flags,

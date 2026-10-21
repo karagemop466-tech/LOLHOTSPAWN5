@@ -1,0 +1,16 @@
+{
+  "_comment": "HotSpawn tournament name -> Leaguepedia page title. Every entry was verified through the Leaguepedia search API (action=query&list=search); unlisted tournaments are auto-resolved at runtime and logged in data/reference_resolution.json.",
+  "PRM 3rd Division 26-27 Fall": "Prime League 3rd Division/2027 Season/Fall Split",
+  "RIVALS LEAGUE Season 2": "RIVALS LEAGUE/2026 Season/Season 2",
+  "Tunisian Super League 2026": "Tunisian Super League/2026 Season",
+  "4 Nations 2026 Halloween Heist": "4 Nations/2026 Season/Halloween Heist",
+  "Komplettligaen 2026 Autumn": "Komplettligaen/2026 Season/Autumn Split",
+  "Arabian League 2nd Division 2026 Summer": "Arabian League 2nd Division/2026 Season/Summer Split",
+  "Worlds 2026 Main Event": "2026 Season World Championship/Main Event",
+  "FPL 2026 Summer Playoffs": "Finnish Pro League/2026 Season/Summer Playoffs",
+  "LCP 2027 Promotion": "LCP/2027 Season/Promotion",
+  "Benelux Ascend Series Rising 2026 Summer Playoffs": "Benelux Ascend Series Rising/2026 Season/Summer Playoffs",
+  "Superstrike League 2026": "Superstrike League 2026",
+  "Benelux Ascend Series 2026 Summer Split": "Benelux Ascend Series/2026 Season/Summer Split",
+  "Benelux Ascend Series 2026 Summer Playoffs": "Benelux Ascend Series/2026 Season/Summer Playoffs"
+}

@@ -1,0 +1,175 @@
+/* HotSpawn LoL picks - mobile first dashboard
+   Palette kept high-contrast and readable on a phone in daylight. */
+:root {
+  --bg: #0f1420;
+  --panel: #171e2e;
+  --panel-2: #1e2739;
+  --line: #2b364c;
+  --text: #e8edf7;
+  --muted: #9fb0c9;
+  --accent: #4dd4a8;
+  --accent-2: #59a9ff;
+  --warn: #ffb648;
+  --bad: #ff6b6b;
+  --chip: #243049;
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, .35);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+a { color: var(--accent-2); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 14px; }
+
+/* ---------- header ---------- */
+header.site {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(15, 20, 32, .96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.site-head { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+.brand { font-weight: 800; font-size: 17px; letter-spacing: .2px; color: var(--text); }
+.brand span { color: var(--accent); }
+.brand small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); letter-spacing: .3px; }
+.stamp { margin-left: auto; text-align: right; font-size: 11px; color: var(--muted); line-height: 1.35; }
+.stamp b { color: var(--accent); font-weight: 700; }
+
+nav.site-nav { display: flex; gap: 6px; overflow-x: auto; padding: 0 0 9px; scrollbar-width: none; }
+nav.site-nav::-webkit-scrollbar { display: none; }
+nav.site-nav a {
+  flex: 0 0 auto; padding: 7px 12px; border-radius: 999px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  color: var(--text); font-size: 13px; font-weight: 600; white-space: nowrap;
+}
+nav.site-nav a.active, nav.site-nav a:hover { background: var(--accent); color: #08251c; border-color: var(--accent); text-decoration: none; }
+
+/* ---------- hero / summary ---------- */
+.hero { padding: 22px 0 6px; }
+h1 { font-size: 24px; line-height: 1.2; margin: 0 0 6px; }
+h2 { font-size: 19px; margin: 26px 0 10px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+.lede { color: var(--muted); margin: 0 0 16px; font-size: 15px; }
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 14px 0 6px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 13px; }
+.card .n { font-size: 26px; font-weight: 800; line-height: 1.1; }
+.card .l { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+.card.ok .n { color: var(--accent); }
+.card.warn .n { color: var(--warn); }
+.card.info .n { color: var(--accent-2); }
+
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin: 14px 0; }
+.panel.tight { padding: 12px; }
+
+.cta { display: grid; gap: 9px; margin: 14px 0; }
+.cta a {
+  display: block; padding: 13px 14px; border-radius: var(--radius);
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+}
+.cta a strong { display: block; font-size: 15px; }
+.cta a span { font-size: 13px; color: var(--muted); }
+.cta a.primary { background: linear-gradient(135deg, #1c6b52, #1e3f6b); border-color: #2f8f6d; }
+.cta a:hover { text-decoration: none; border-color: var(--accent); }
+
+/* ---------- filters ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.filters input, .filters select {
+  background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
+  border-radius: 10px; padding: 10px 11px; font-size: 15px; min-height: 42px; font-family: inherit;
+}
+.filters input { flex: 1 1 190px; }
+.filters select { flex: 0 1 160px; }
+.filters .count { align-self: center; color: var(--muted); font-size: 13px; }
+
+/* ---------- tables ---------- */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: var(--radius); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--panel-2); font-size: 12px; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); position: sticky; top: 0; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: #1b2436; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.nowrap { white-space: nowrap; }
+
+.muted { color: var(--muted); }
+.small { font-size: 12.5px; }
+.tiny { font-size: 11.5px; }
+
+/* ---------- pick rows (cards on phones) ---------- */
+.picks { display: grid; gap: 10px; }
+.pick {
+  background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--chip);
+  border-radius: var(--radius); padding: 12px 13px;
+}
+.pick.market { border-left-color: var(--accent); }
+.pick.market-map { border-left-color: var(--accent-2); }
+.pick.model { border-left-color: var(--warn); }
+.pick.default { border-left-color: var(--bad); }
+.pick .top { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.pick .tour { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+.pick .when { margin-left: auto; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pick .teams { margin: 7px 0 4px; }
+.pick .team { display: flex; align-items: center; gap: 9px; padding: 3px 0; }
+.pick .team .nm { font-weight: 600; font-size: 15px; }
+.pick .team .pc { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; font-size: 15px; }
+.pick .team.win .pc { color: var(--accent); }
+.pick .team.lose .pc { color: var(--muted); }
+.pick .bar { height: 6px; background: var(--panel-2); border-radius: 4px; overflow: hidden; flex: 0 0 92px; }
+.pick .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+.pick .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+
+.chip {
+  display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11.5px;
+  font-weight: 700; letter-spacing: .2px; background: var(--chip); color: var(--muted);
+  border: 1px solid var(--line);
+}
+.chip.market { background: #123b2e; color: #7ef0c4; border-color: #1d6b51; }
+.chip.market-map { background: #142c47; color: #9ccbff; border-color: #26527f; }
+.chip.model { background: #40320f; color: #ffd08a; border-color: #7a5f1d; }
+.chip.default { background: #43191d; color: #ffb1b1; border-color: #7d2c33; }
+.chip.pick { background: #123b2e; color: #7ef0c4; border-color: #1d6b51; }
+.chip.flag { background: #3a2a45; color: #dcc0ff; border-color: #5d4177; }
+
+.srcs { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.srcs a {
+  font-size: 11.5px; padding: 4px 8px; border-radius: 8px;
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--accent-2);
+}
+
+/* ---------- misc ---------- */
+.note { border-left: 3px solid var(--warn); background: #201a10; padding: 10px 12px; border-radius: 0 10px 10px 0; margin: 12px 0; font-size: 14px; }
+.note.bad { border-left-color: var(--bad); background: #241417; }
+.note.ok { border-left-color: var(--accent); background: #0f241d; }
+ul.tight { margin: 6px 0; padding-left: 20px; }
+ul.tight li { margin: 4px 0; }
+.kv { display: grid; grid-template-columns: 150px 1fr; gap: 4px 10px; font-size: 14px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; }
+footer.site { border-top: 1px solid var(--line); margin-top: 30px; padding: 18px 0 30px; color: var(--muted); font-size: 13px; }
+code { background: var(--panel-2); padding: 1px 5px; border-radius: 6px; font-size: 13px; }
+.hidden { display: none !important; }
+
+@media (min-width: 720px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+  .cta { grid-template-columns: repeat(2, 1fr); }
+  h1 { font-size: 30px; }
+  .pick .teams { display: grid; gap: 4px; }
+  .kv { grid-template-columns: 190px 1fr; }
+}
+
+@media (min-width: 1000px) {
+  .picks { grid-template-columns: repeat(2, 1fr); }
+}
