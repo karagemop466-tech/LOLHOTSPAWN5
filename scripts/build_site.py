@@ -931,6 +931,25 @@ def main():
             f.write(content)
         print(f"wrote {name} ({len(content) // 1024} KB)")
 
+    # sitemap + 404 for the published site
+    base = "https://karagemop466-tech.github.io/LOLHOTSPAWN5/"
+    today = (doc.get("generated_utc") or "")[:10]
+    urls = "".join(
+        f"  <url><loc>{base}{p}</loc><lastmod>{today}</lastmod>"
+        f"<changefreq>{'hourly' if p in ('index.html', 'picks.html') else 'weekly'}</changefreq></url>\n"
+        for p in pages)
+    with open("sitemap.xml", "w") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                + urls + "</urlset>\n")
+    notfound = page("404.html", "Page not found",
+                    '<section class="panel pad"><h1>Page not found</h1>'
+                    '<p class="lede">That page does not exist. Start from the summary.</p>'
+                    '<p><a class="btn primary" href="index.html">Go to the summary →</a></p></section>',
+                    doc, "")
+    with open("404.html", "w") as f:
+        f.write(notfound)
+
     meta = {
         "generated_utc": doc.get("generated_utc"),
         "totals": doc.get("totals"),

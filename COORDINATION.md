@@ -67,3 +67,33 @@ superseded; no work was discarded — their probe findings were read and credite
 - Final integration run by `074eaec9`: combined data re-verified line by line, build green,
   link check green, PR merged to `main`, Pages deploy confirmed.
 - PR: see the pull request linked from the latest commit on `main`.
+
+## Merge-conflict resolution (2026-10-21)
+
+While PR #4 was open, another session merged PR #2 into `main`, which added a second, competing
+implementation using the **same** root page filenames (`index.html`, `picks.html`, …) plus a
+6-hourly workflow. A conflict was unavoidable: two pipelines cannot own the same output files.
+
+**Resolution taken** (no work deleted):
+
+1. Merged `origin/main` into this branch with `-X ours`, so the site files resolve to this
+   implementation.
+2. The competing implementation was moved — not removed — to `archive/legacy-site/`, together with
+   its scripts, data and pages, and its workflow as `workflows/refresh-6h.yml.disabled`.
+3. `archive/legacy-site/README.md` records why: its `data/markets.json` held **0** quotes and its
+   `picks.html` rendered **0** percentages, so it could not meet the requirement that every match
+   show a win probability. It also used 1,102 historical results vs 7,579, and left 93 of 264
+   fixtures unresolved vs 1.
+4. Its workflow is disabled rather than deleted: two crons (6 h and 4 h) writing the same files would
+   fight and publish whichever ran last.
+
+**Authoritative pipeline from this merge:** `scripts/collect_hotspawn.py` → `collect_lines.py` →
+`collect_results.py` → `build_model.py` → `build_site.py` → `check_links.py`, driven by
+`.github/workflows/update.yml` every 4 hours.
+
+### Final verification before merge
+
+- `python3 scripts/check_links.py` → `link check OK` (6 pages, 2 assets, 264 cards, all internal
+  refs and anchors resolve, 203 external citations).
+- `sitemap.xml` parses as valid XML and lists all 6 pages; `404.html` generated.
+- Only one workflow remains in `.github/workflows/` (`update.yml`), so there is a single publisher.
