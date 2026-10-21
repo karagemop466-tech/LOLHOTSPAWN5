@@ -1,18 +1,18 @@
-name: probe-hotspawn-api
+name: hs-probe
 
 # Discovery helper. Runs on push to this branch because the agent sandbox has no
 # outbound network access (only github.com / npmjs / pypi are reachable from it).
 #
 # It dumps the raw HTML of the Hotspawn Play LoL lobby, lists every <script src> and
 # API-looking URL it finds, probes candidate API hosts/paths, and writes the report
-# to research/probe-results.md so the agent can read it via `git pull`.
+# to research/probe-results.txt so the agent can read it via `git pull`.
 
 on:
   push:
     branches:
       - 'arena/b041f9d1-lolhotspawn5'
     paths:
-      - '.github/workflows/probe.yml'
+      - '.github/workflows/hs-probe.yml'
       - 'scraper/probe.sh'
   workflow_dispatch:
 
@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: probe-${{ github.ref }}
+  group: hs-probe-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -31,21 +31,32 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Probe
-        run: bash scraper/probe.sh 2>&1 | tee research/probe-results.txt
+        run: |
+          mkdir -p research probe
+          bash scraper/probe.sh > research/probe-results.txt 2>&1
+          echo "probe exit: $?"
+          cat research/probe-results.txt
 
       - name: Commit report
+        if: always()
         run: |
+          mkdir -p research
           git config user.name  "hotspawn-bot"
           git config user.email "hotspawn-bot@users.noreply.github.com"
+          {
+            echo "--- (generated $(date -u +%Y-%m-%dT%H:%M:%SZ) by hs-probe) ---"
+          } >> research/probe-run.log
           git add research/
           if git diff --cached --quiet; then
-            echo "no changes"
+            echo "no changes to commit"
           else
             git commit -m "probe: hotspawn api discovery results"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
 
       - name: Upload raw probe output
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: probe-output
