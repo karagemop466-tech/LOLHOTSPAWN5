@@ -35,6 +35,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore Leaguepedia history cache
+        uses: actions/cache@v4
+        with:
+          path: data/leaguepedia_cache.json
+          key: leaguepedia-cache-v1
+          restore-keys: |
+            leaguepedia-cache-
+
       - name: Run pick generation pipeline
         id: pipeline
         env:

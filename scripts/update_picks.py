@@ -81,10 +81,12 @@ LEAGUEPEDIA_HELP = "https://lol.fandom.com/api.php?action=help&modules=cargoquer
 HISTORY_DAYS = 420          # how far back to pull Leaguepedia match history
 ELO_START = 1500.0
 ELO_K = 28.0
-WIKI_SLEEP = 1.5            # seconds between Leaguepedia calls (be polite)
+WIKI_SLEEP = 1.2            # seconds between Leaguepedia calls (be polite)
 MAX_WIKI_PAGES = 2          # 500 rows each, per team chunk
 WIKI_CHUNK = 16             # teams per Cargo query
-WIKI_BUDGET_SEC = 720       # hard wall-clock budget for Leaguepedia collection
+WIKI_BUDGET_SEC = 1500      # hard wall-clock budget for Leaguepedia collection
+CACHE_TTL_DAYS = 7          # how long a team's cached Leaguepedia history stays fresh
+CACHE_PATH = os.path.join(OUT_DIR, "leaguepedia_cache.json")
 
 OUT_DIR = "data"
 
@@ -236,6 +238,15 @@ def build_permalink(fx, permalinks, debug):
             debug["permalink_rule_hits"] = debug.get("permalink_rule_hits", 0) + 1
             return guess, True
         debug["permalink_rule_misses"] = debug.get("permalink_rule_misses", 0) + 1
+        if len(debug.setdefault("permalink_miss_examples", [])) < 15:
+            debug["permalink_miss_examples"].append({
+                "id": fid,
+                "guess": guess,
+                "actual": sorted(known)[0],
+                "team1": fx.get("participants0_name"),
+                "team2": fx.get("participants1_name"),
+                "competition": fx.get("competition_name"),
+            })
         return sorted(known)[0], True
     debug["permalink_constructed"] = debug.get("permalink_constructed", 0) + 1
     return guess, False
@@ -349,7 +360,11 @@ def load_unibet(debug):
             continue
         for bo in (e.get("betOffers") or []):
             crit = (bo.get("criterion") or {}).get("label", "")
-            if "Match Odds" not in crit and (bo.get("betOfferType") or {}).get("name") != "Match":
+            btype = (bo.get("betOfferType") or {}).get("name", "")
+            # Only the outright match winner market - not maps/kills/totals.
+            if "Match Odds" not in crit:
+                continue
+            if "Map" in crit and "Match Odds" in crit and btype != "Match":
                 continue
             outs = bo.get("outcomes") or []
             if len(outs) != 2:
@@ -361,6 +376,11 @@ def load_unibet(debug):
                 dh = float(by_part[home]) / 100.0
                 da = float(by_part[away]) / 100.0
             except Exception:                          # noqa: BLE001
+                continue
+            # Sanity check: the two outcomes must be complementary, so the
+            # implied probabilities must sum to roughly 1 plus a normal overround.
+            overround = (1.0 / dh) + (1.0 / da)
+            if not (0.95 <= overround <= 1.35):
                 continue
             probs = devig([dh, da])
             if not probs:
@@ -520,29 +540,85 @@ def _rows_to_games(rows, seen, games):
         if key in seen:
             continue
         seen.add(key)
-        games.append((a, b, w, d, tour))
+        games.append([a, b, w, d, tour])
+    return games
+
+
+def load_cache(debug):
+    """Per-team Leaguepedia history cache so repeat runs only query what is new."""
+    if not os.path.exists(CACHE_PATH):
+        return {}
+    try:
+        with open(CACHE_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:                                  # noqa: BLE001
+        return {}
+    teams = data.get("teams") or {}
+    debug["cache_teams"] = len(teams)
+    return teams
+
+
+def save_cache(teams_cache, games_by_team, fetched_at):
+    for key, games in games_by_team.items():
+        prev = teams_cache.get(key) or {}
+        merged = {}
+        for g in list(games) + list(prev.get("games") or []):
+            merged[tuple(g[:5])] = g
+        teams_cache[key] = {
+            "fetched_at": fetched_at,
+            "games": [list(g) for g in merged.values()][-300:],
+        }
+    try:
+        with open(CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump({"version": 1, "updated_at": fetched_at, "teams": teams_cache}, f)
+    except Exception as exc:                           # noqa: BLE001
+        print(f"  ! could not write Leaguepedia cache: {exc}", file=sys.stderr)
 
 
 def leaguepedia_games(teams, competitions, debug):
-    """Pull completed games from Leaguepedia Cargo.
+    """Pull completed games from Leaguepedia Cargo, backed by a per-team cache.
 
-    Pass 1 (fast): one OR-equality query per batch of the board's own competitions.
-    Pass 2 (fill-in): team-based queries for any team still with zero games.
+    Pass 0: reuse cached history for teams refreshed within CACHE_TTL_DAYS.
+    Pass 1: one OR-equality query over the board's own competitions (broad top-up).
+    Pass 2: team-based queries for any team with no usable history.
     """
     since = (NOW - timedelta(days=HISTORY_DAYS)).strftime("%Y-%m-%d %H:%M:%S")
     fields = ("ScoreboardGames.Team1,ScoreboardGames.Team2,ScoreboardGames.WinTeam,"
               "ScoreboardGames.DateTime_UTC,ScoreboardGames.Tournament")
+
+    cache = load_cache(debug)
+    fresh_cut = (NOW - timedelta(days=CACHE_TTL_DAYS)).isoformat()
+
     games, seen = [], set()
+    games_by_team = {}
+
+    def absorb(new_games):
+        _rows_to_games(new_games, seen, games)
+
+    # ---- pass 0: cached history ------------------------------------------ #
+    cached_teams = 0
+    for t in teams:
+        entry = cache.get(norm(t))
+        if entry and (entry.get("fetched_at") or "") >= fresh_cut:
+            cached_teams += 1
+            absorb([{"title": {"Team1": g[0], "Team2": g[1], "WinTeam": g[2],
+                               "DateTime UTC": g[3], "Tournament": g[4]}}
+                    for g in (entry.get("games") or [])])
+            games_by_team.setdefault(norm(t), []).extend(entry.get("games") or [])
+    debug["leaguepedia_teams_from_cache"] = cached_teams
+    print(f"      pass 0: {cached_teams} teams served from cache ({len(games)} games)")
+
     deadline = time.time() + WIKI_BUDGET_SEC
 
     # ---- pass 1: by competition ------------------------------------------ #
     comps = sorted({c for c in competitions if c})
     debug["leaguepedia_competitions"] = len(comps)
-    if comps:
+    if comps and time.time() < deadline:
         conds = [f'ScoreboardGames.Tournament="{esc(c)}"' for c in comps]
         where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
         print(f"      pass 1: {len(comps)} competitions …")
-        for page in range(MAX_WIKI_PAGES * 3):
+        before = len(games)
+        for page in range(MAX_WIKI_PAGES * 4):
             if time.time() > deadline:
                 debug["leaguepedia_budget_exceeded"] = True
                 break
@@ -551,11 +627,11 @@ def leaguepedia_games(teams, competitions, debug):
             debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
             if not rows:
                 break
-            _rows_to_games(rows, seen, games)
+            absorb(rows)
             time.sleep(WIKI_SLEEP)
             if len(rows) < 500:
                 break
-        print(f"        {len(games)} games from competition pass")
+        print(f"        +{len(games) - before} games from competition pass")
 
     # ---- pass 2: teams with no games yet --------------------------------- #
     covered = set()
@@ -587,7 +663,7 @@ def leaguepedia_games(teams, competitions, debug):
                 debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
                 if not rows:
                     break
-                _rows_to_games(rows, seen, games)
+                absorb(rows)
                 if len(rows) < 500:
                     break
                 time.sleep(WIKI_SLEEP)
@@ -595,6 +671,16 @@ def leaguepedia_games(teams, competitions, debug):
             if (ci + 1) % 5 == 0:
                 print(f"        {ci+1}/{len(chunks)} chunks, {len(games)} games total")
 
+    # index the final game set per team for the cache
+    for a, b, w, d, tour in games:
+        row = [a, b, w, d, tour]
+        for side in (a, b):
+            key = norm(side)
+            bucket = games_by_team.setdefault(key, [])
+            if len(bucket) < 300:
+                bucket.append(row)
+
+    save_cache(cache, games_by_team, NOW.isoformat())
     debug["leaguepedia_games"] = len(games)
     return games
 
@@ -855,9 +941,15 @@ def main():
                 "Medium-High — single external market price, de-vigged"
             )
             detail = {"books": info["books"]}
-            sources = [{"label": lbl, "url": url} for lbl, url in zip(info["labels"], info["urls"])]
-            if poly_hit:
-                sources.append({"label": "Polymarket market", "url": poly_hit[1]})
+            seen_src = set()
+            sources = []
+            for lbl, url in zip(info["labels"], info["urls"]):
+                if url in seen_src:
+                    continue
+                seen_src.add(url)
+                sources.append({"label": lbl, "url": url})
+            if poly_hit and poly_hit[1] not in seen_src:
+                sources.append({"label": f"Polymarket: {poly_hit[2]}", "url": poly_hit[1]})
         else:
             mp, info = model_prob(ratings, played, recent_fn, t1, t2)
             if mp is not None:

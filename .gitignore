@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Large, regenerable intermediate cache (persisted via the Actions cache)
+data/leaguepedia_cache.json
