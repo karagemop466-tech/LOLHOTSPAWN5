@@ -32,7 +32,15 @@ UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
 FILLER = {
     "esports", "e", "sport", "gaming", "team", "club", "gg", "academy", "ac",
     "the", "of", "gaming", "org", "squad", "lineup", "roster", "play", "vs",
+    "v", "g", "x", "z",
 }
+
+# Letters that carry no ASCII equivalent but do appear in org names (LØS, Æ, ß...).
+CHAR_FOLD = str.maketrans({
+    "Ø": "O", "ø": "o", "Æ": "AE", "æ": "ae", "Œ": "OE", "œ": "oe",
+    "ß": "ss", "Ł": "L", "ł": "l", "Đ": "D", "đ": "d", "Ð": "D", "ð": "d",
+    "Þ": "TH", "þ": "th", "ı": "i", "İ": "I", "’": "", "'": "",
+})
 
 
 class Http:
@@ -132,6 +140,7 @@ def slugify(value: str) -> str:
 
 
 def strip_accents(value: str) -> str:
+    value = value.translate(CHAR_FOLD)
     return "".join(c for c in unicodedata.normalize("NFKD", value)
                    if not unicodedata.combining(c))
 

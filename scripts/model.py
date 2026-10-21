@@ -14,6 +14,8 @@ No HotSpawn crowd percentage is used anywhere in this module.
 """
 from __future__ import annotations
 
+import math
+
 START_RATING = 1500.0
 K_FACTOR = 32.0
 SHRINK_PRIOR = 8.0
@@ -107,3 +109,63 @@ def series_from_map(p_map: float, best_of: int) -> float:
     if best_of == 2:
         return p_map ** 2 + 2 * p_map * (1 - p_map)
     return p_map
+
+
+def backtest(games: list[dict], min_games: int = 5) -> dict:
+    """Walk-forward test of the model on the same results it was fitted on.
+
+    For every result (oldest first) the probability is computed from the ratings
+    the model had *before* that result, so the numbers are honest out-of-sample
+    predictions for every game after the first few.
+
+    Returns accuracy, Brier score and a log-loss summary.
+    """
+    ratings: dict[str, float] = {}
+    counts: dict[str, int] = {}
+    ordered = sorted(games, key=lambda g: (str(g.get("date") or ""), str(g.get("team_a") or "")))
+    hits = total = 0
+    brier = 0.0
+    log_loss = 0.0
+    scored = 0
+    for game in ordered:
+        team_a, team_b = game.get("team_a"), game.get("team_b")
+        winner = game.get("winner")
+        if not team_a or not team_b or winner not in (team_a, team_b):
+            continue
+        for team in (team_a, team_b):
+            ratings.setdefault(team, START_RATING)
+            counts.setdefault(team, 0)
+        if counts[team_a] >= min_games and counts[team_b] >= min_games:
+            ra = shrunk_rating(ratings[team_a], counts[team_a])
+            rb = shrunk_rating(ratings[team_b], counts[team_b])
+            prob = expected(ra, rb)
+            actual = 1.0 if winner == team_a else 0.0
+            hits += 1 if (prob >= 0.5) == (actual == 1.0) else 0
+            total += 1
+            brier += (prob - actual) ** 2
+            prob_clipped = min(max(prob, 1e-6), 1 - 1e-6)
+            log_loss += -(actual * math.log(prob_clipped) + (1 - actual) * math.log(1 - prob_clipped))
+            scored += 1
+        ra = ratings[team_a]
+        rb = ratings[team_b]
+        exp_a = expected(ra, rb)
+        score_a = 1.0 if winner == team_a else 0.0
+        delta = K_FACTOR * (score_a - exp_a)
+        ratings[team_a] = ra + delta
+        ratings[team_b] = rb - delta
+        counts[team_a] += 1
+        counts[team_b] += 1
+    if not total:
+        return {"games": 0, "accuracy": None, "brier": None, "log_loss": None}
+    return {
+        "games": total,
+        "accuracy": round(hits / total, 4),
+        "brier": round(brier / total, 4),
+        "log_loss": round(log_loss / total, 4),
+        "min_games": min_games,
+        "note": "walk-forward test: every prediction uses only the results that came before it",
+    }
+
+
+def shrunk_rating(rating: float, games: int) -> float:
+    return (rating * games + START_RATING * SHRINK_PRIOR) / (games + SHRINK_PRIOR)

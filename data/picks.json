@@ -1,14 +1,25 @@
 {
-  "generated_at": "2026-10-21T21:22:14Z",
+  "generated_at": "2026-10-21T21:25:46Z",
   "note": "HotSpawn supplies the fixture list only. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line built on verified match results. HotSpawn crowd percentages are never used.",
   "summary": {
     "fixtures": 264,
-    "with_series_market": 8,
+    "with_series_market": 9,
     "with_map_market_only": 0,
-    "own_line": 255,
+    "own_line": 254,
     "default_50_50": 1,
-    "unresolved": 256,
-    "coverage_pct": 3.0
+    "unresolved": 255,
+    "lock_passed": 69,
+    "coverage_pct": 3.4
+  },
+  "analysis": {
+    "games": 399,
+    "accuracy": 0.589,
+    "brier": 0.2374,
+    "log_loss": 0.6675,
+    "min_games": 5,
+    "note": "walk-forward test: every prediction uses only the results that came before it",
+    "reference_games": 1814,
+    "rated_teams": 619
   },
   "picks": [
     {
@@ -18,6 +29,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-08-26T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-08-26T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -52,6 +64,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -63,6 +76,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-08-26T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-08-26T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -97,6 +111,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -108,6 +123,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-08-27T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-08-27T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -142,6 +158,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -153,6 +170,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-05T10:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-05T11:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -187,6 +205,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -198,6 +217,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-07T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-07T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -232,6 +252,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -243,6 +264,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-12T10:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-12T11:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -277,6 +299,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no wiki team page for this team",
         "no verified match history for at least one team",
         "no external betting line published for this fixture"
@@ -290,6 +313,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-13T10:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-13T11:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -324,6 +348,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -335,6 +360,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-13T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-13T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -369,6 +395,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -380,6 +407,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-17T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-17T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -414,6 +442,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -425,6 +454,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-17T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-17T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -459,6 +489,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -470,6 +501,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-17T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-17T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -504,6 +536,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -515,6 +548,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-18T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-18T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -549,6 +583,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -560,6 +595,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-19T10:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-19T11:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -594,6 +630,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -605,6 +642,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-19T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-19T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -639,6 +677,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -650,6 +689,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-19T20:40:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-19T20:45:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -684,6 +724,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -695,6 +736,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-19T21:54:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-19T21:59:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -729,6 +771,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -740,6 +783,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-20T10:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-20T11:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -774,6 +818,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -785,6 +830,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-20T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-20T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -819,6 +865,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -830,6 +877,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-20T21:54:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-20T21:59:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -864,6 +912,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -875,6 +924,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-25T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-25T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -909,6 +959,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -920,6 +971,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-09-27T17:10:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-27T17:15:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -954,6 +1006,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -965,6 +1018,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-09-28T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-09-28T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -999,6 +1053,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1010,6 +1065,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-01T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-01T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1044,6 +1100,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1055,6 +1112,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-01T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-01T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1089,6 +1147,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1100,6 +1159,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-01T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-01T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1134,6 +1194,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1145,6 +1206,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-02T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-02T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1179,6 +1241,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1190,6 +1253,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-02T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-02T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1224,6 +1288,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1235,6 +1300,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-04T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-04T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1269,6 +1335,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1280,6 +1347,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-05T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-05T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1314,6 +1382,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1325,6 +1394,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-05T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-05T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1359,6 +1429,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1370,6 +1441,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-05T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-05T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1404,6 +1476,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1415,6 +1488,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-05T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-05T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1449,6 +1523,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1460,6 +1535,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-07T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-07T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1494,6 +1570,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1505,6 +1582,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-08T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-08T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1539,6 +1617,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1550,6 +1629,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-08T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-08T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1584,6 +1664,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1595,6 +1676,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-08T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-08T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1629,6 +1711,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1640,6 +1723,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-09T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-09T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1674,6 +1758,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1685,6 +1770,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-10T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-10T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1719,6 +1805,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1730,6 +1817,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-10T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-10T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1764,6 +1852,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1775,6 +1864,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-10T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-10T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1809,6 +1899,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1820,6 +1911,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1854,6 +1946,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1865,6 +1958,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T16:25:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T16:30:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1899,6 +1993,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1910,6 +2005,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T16:25:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T16:30:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1944,6 +2040,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1955,6 +2052,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T16:25:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T16:30:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -1989,6 +2087,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2000,6 +2099,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2034,6 +2134,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2045,6 +2146,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T17:25:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T17:30:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2079,6 +2181,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2090,6 +2193,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2124,6 +2228,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2135,6 +2240,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2169,6 +2275,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2180,6 +2287,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-11T18:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-11T19:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2214,6 +2322,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2225,6 +2334,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-13T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-13T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2259,6 +2369,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2270,6 +2381,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-14T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-14T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2304,6 +2416,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2315,6 +2428,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-14T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-14T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2349,6 +2463,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2360,6 +2475,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-15T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-15T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2394,6 +2510,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2405,6 +2522,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-15T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-15T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2439,6 +2557,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2450,6 +2569,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-15T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-15T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2484,6 +2604,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2495,6 +2616,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-15T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-15T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2529,6 +2651,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2540,6 +2663,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2574,6 +2698,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2585,6 +2710,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2619,6 +2745,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2630,6 +2757,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2664,6 +2792,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2675,6 +2804,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2709,6 +2839,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2720,6 +2851,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2754,6 +2886,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2765,6 +2898,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-16T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-16T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2799,6 +2933,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2810,6 +2945,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-10-17T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-17T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2844,6 +2980,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2855,6 +2992,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-17T15:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-17T16:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2889,6 +3027,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2900,6 +3039,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-21T14:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-21T15:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2934,6 +3074,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2945,6 +3086,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-21T16:25:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-21T16:30:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -2979,6 +3121,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2990,6 +3133,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-21T16:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-21T17:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3024,6 +3168,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3035,6 +3180,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-21T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-21T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3069,6 +3215,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3080,6 +3227,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-21T17:55:00Z",
+      "lock_passed": true,
       "start_time": "2026-10-21T18:00:00Z",
       "hotspawn_url": null,
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3114,6 +3262,7 @@
       "market": null,
       "market_sources": [],
       "flags": [
+        "lock time has passed - HotSpawn still lists this fixture as scheduled",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3125,6 +3274,7 @@
       "stage": "waiting for information",
       "offered_points": 20,
       "lock_time": "2026-10-22T11:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T12:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3287,6 +3437,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/ascent-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071214",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3332,6 +3483,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/solid-gaming-vs-dmg-esports-norway-komplettligaen-2026-autumn-1071216",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3377,6 +3529,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3422,6 +3575,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/your-saviours-vs-mixlag-fra-trondheim-komplettligaen-2026-autumn-1071219",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3467,6 +3621,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3512,6 +3667,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/blackdivision-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075736",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3557,6 +3713,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/absolved-vs-the-bandits-uk-4-nations-2026-halloween-heist-1081651",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3602,6 +3759,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/brod-n-friends-vs-crownless-4-nations-2026-halloween-heist-1081652",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3647,6 +3805,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/good-chi-vs-inari-esports-4-nations-2026-halloween-heist-1081653",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3692,6 +3851,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/hl-tauri-esports-vs-bulldog-esports-4-nations-2026-halloween-heist-1081654",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3737,6 +3897,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-uk-vs-abyssal-randoms-4-nations-2026-halloween-heist-1081655",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3782,6 +3943,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-vertex-vs-glorp-cat-4-nations-2026-halloween-heist-1081656",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3827,6 +3989,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-vds-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1082105",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3872,6 +4035,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/playwell-rod-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3917,6 +4081,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/abyssal-randoms-vs-good-chi-4-nations-2026-halloween-heist-1081659",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -3962,6 +4127,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/bulldog-esports-vs-ruddy-ultras-4-nations-2026-halloween-heist-1081660",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4007,6 +4173,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/crownless-vs-team-vertex-4-nations-2026-halloween-heist-1081661",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4052,6 +4219,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/glorp-cat-vs-brod-n-friends-4-nations-2026-halloween-heist-1081662",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4097,6 +4265,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/inari-esports-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081663",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4142,6 +4311,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/the-bandits-uk-vs-pns-4-nations-2026-halloween-heist-1081664",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4187,6 +4357,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/abyssal-randoms-vs-inari-esports-4-nations-2026-halloween-heist-1081667",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4232,6 +4403,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/glorp-cat-vs-crownless-4-nations-2026-halloween-heist-1081668",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4277,6 +4449,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/good-chi-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081669",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4322,6 +4495,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/pns-vs-absolved-4-nations-2026-halloween-heist-1081670",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4367,6 +4541,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/ruddy-ultras-vs-hl-tauri-esports-4-nations-2026-halloween-heist-1081671",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4412,6 +4587,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-22T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-22T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-vertex-vs-brod-n-friends-4-nations-2026-halloween-heist-1081672",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4457,6 +4633,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-phenti-komplettligaen-2026-autumn-1071212",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4502,6 +4679,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1082745",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4547,6 +4725,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/levelers-vs-mtn-esports-team-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082839",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4592,6 +4771,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/locked-in-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079023",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4637,6 +4817,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/gen-g-vs-invictus-gaming-worlds-2026-main-event-1067878",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4782,6 +4963,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/nextgeneration-esports-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079139",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4827,6 +5009,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/hanwha-life-esports-vs-top-esports-worlds-2026-main-event-1067677",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -4972,6 +5155,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-vds-vs-team-reds-arabian-league-2nd-division-2026-summer-1082106",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5017,6 +5201,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/regold-esport-vs-team-300-prm-2nd-division-26-27-fall-1079849",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5062,6 +5247,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-23T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-babos-gaming-prm-2nd-division-26-27-fall-1079025",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5107,6 +5293,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/bilibili-gaming-vs-movistar-koi-worlds-2026-main-event-1067680",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5252,6 +5439,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T19:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T20:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/anyones-legend-vs-karmine-corp-worlds-2026-main-event-1067675",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5397,6 +5585,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T20:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T21:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5542,6 +5731,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T21:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T22:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-liquid-vs-ctbc-flying-oyster-worlds-2026-main-event-1067879",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5687,12 +5877,13 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T22:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-23T23:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/los-vs-t1-worlds-2026-main-event-1067678",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "LØS",
-        "prob": 0.7021,
+        "prob": 0.1544,
         "rating": 1648.46,
         "games": 60,
         "source_url": "https://lol.fandom.com/wiki/L%C3%98S",
@@ -5700,16 +5891,16 @@
       },
       "team_b": {
         "name": "T1",
-        "prob": 0.2979,
+        "prob": 0.8456,
         "rating": 1499.56,
         "games": 30,
         "source_url": "https://lol.fandom.com/wiki/T1",
         "wiki_name": "T1"
       },
-      "pick": "LØS",
-      "pick_prob": 0.7021,
-      "confidence": "model",
-      "basis": "our own line (Elo over verified results)",
+      "pick": "T1",
+      "pick_prob": 0.8456,
+      "confidence": "market",
+      "basis": "external series line",
       "model": {
         "prob_a": 0.7021,
         "reason": "elo",
@@ -5718,12 +5909,112 @@
         "wiki_name_a": "LØS",
         "wiki_name_b": "T1"
       },
-      "market": null,
-      "market_sources": [],
-      "flags": [
-        "no external betting line published for this fixture"
+      "market": {
+        "source": "pinnacle",
+        "source_kind": "licensed bookmaker",
+        "scope": "series",
+        "market_period": null,
+        "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
+        "event_title": null,
+        "league": "League of Legends - World Championship",
+        "prob_a": 0.1544,
+        "prob_b": 0.8456,
+        "decimal_a": 6.16,
+        "decimal_b": 1.125,
+        "overround": 1.051227,
+        "best_of": null,
+        "quote_start": "2026-10-23T22:00:00Z",
+        "match_score": 1.0
+      },
+      "market_sources": [
+        {
+          "source": "pinnacle",
+          "source_kind": "licensed bookmaker",
+          "scope": "series",
+          "market_period": null,
+          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
+          "event_title": null,
+          "league": "League of Legends - World Championship",
+          "prob_a": 0.1544,
+          "prob_b": 0.8456,
+          "decimal_a": 6.16,
+          "decimal_b": 1.125,
+          "overround": 1.051227,
+          "best_of": null,
+          "quote_start": "2026-10-23T22:00:00Z",
+          "match_score": 1.0
+        },
+        {
+          "source": "polymarket",
+          "source_kind": "prediction market",
+          "scope": "series",
+          "market_period": null,
+          "source_url": "https://polymarket.com/event/lol-los-t1-2026-10-23/lol-los-t1-2026-10-23",
+          "event_title": "LOS vs T1 (BO1) - Worlds Group Stage",
+          "league": null,
+          "prob_a": 0.125,
+          "prob_b": 0.875,
+          "decimal_a": null,
+          "decimal_b": null,
+          "overround": 1.0,
+          "best_of": 1,
+          "quote_start": "2026-10-23 22:00:00+00",
+          "match_score": 1.0
+        },
+        {
+          "source": "pinnacle",
+          "source_kind": "licensed bookmaker",
+          "scope": "game",
+          "market_period": null,
+          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
+          "event_title": null,
+          "league": "League of Legends - World Championship",
+          "prob_a": 0.1544,
+          "prob_b": 0.8456,
+          "decimal_a": 6.16,
+          "decimal_b": 1.125,
+          "overround": 1.051227,
+          "best_of": null,
+          "quote_start": "2026-10-23T22:00:00Z",
+          "match_score": 1.0
+        },
+        {
+          "source": "bovada",
+          "source_kind": "licensed bookmaker",
+          "scope": "game",
+          "market_period": "Game",
+          "source_url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/los-grandes-t1-202610231900",
+          "event_title": null,
+          "league": null,
+          "prob_a": 0.1262,
+          "prob_b": 0.8738,
+          "decimal_a": 7.5,
+          "decimal_b": 1.083333,
+          "overround": 1.056411,
+          "best_of": null,
+          "quote_start": "2026-10-23T23:00:00Z",
+          "match_score": 1.0
+        },
+        {
+          "source": "kalshi",
+          "source_kind": "prediction market (CFTC-regulated)",
+          "scope": "game",
+          "market_period": null,
+          "source_url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231800T1LOS",
+          "event_title": "T1 vs. LOS",
+          "league": null,
+          "prob_a": 0.1263,
+          "prob_b": 0.8737,
+          "decimal_a": null,
+          "decimal_b": null,
+          "overround": 0.99,
+          "best_of": null,
+          "quote_start": "2026-10-24T02:00:00Z",
+          "match_score": 1.0
+        }
       ],
-      "unresolved": true
+      "flags": [],
+      "unresolved": false
     },
     {
       "fixture_id": "1067679",
@@ -5732,6 +6023,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-10-23T23:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T00:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-secret-whales-vs-lyon-worlds-2026-main-event-1067679",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5877,6 +6169,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T13:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T14:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/berlin-5-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075719",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5922,6 +6215,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-10-24T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/baronx-vs-marere-academy-ligagg-celol-b-2026-split-2-playoffs-1081085",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -5967,6 +6261,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-10-24T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/final-level-esports-academy-vs-infinity-gaming-ligagg-celol-b-2026-split-2-playoffs-1081086",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6012,6 +6307,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jendouba-esports-vs-enfida-esports-tunisian-super-league-2026-1080923",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6057,6 +6353,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080924",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6102,6 +6399,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-vs-supreme-leaders-tunisian-super-league-2026-1080925",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6147,6 +6445,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jsk-academy-tunisian-super-league-2026-1080926",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6192,6 +6491,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-olympique-mnihla-academy-tunisian-super-league-2026-1080927",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6237,6 +6537,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/2-massive-vs-lund-esports-organization-ogs-rivals-league-season-2-1074652",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6282,6 +6583,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/flamehard-vs-b2u-rivals-league-season-2-1074654",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6327,6 +6629,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/karolinerna-vs-turbo-gaming-rivals-league-season-2-1074655",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6372,6 +6675,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/onlywinbyff-vs-rich-gang-sweden-rivals-league-season-2-1074657",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6417,6 +6721,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-cd-vs-tung-sahur-mid-rivals-league-season-2-1074658",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6462,6 +6767,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-fritt-fall-rivals-league-season-2-1074659",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6507,6 +6813,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075731",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6552,6 +6859,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mazepa-vs-b2u-rivals-league-season-2-1082258",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6597,6 +6905,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-new-era-team-arabian-league-2nd-division-2026-summer-1079141",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6642,6 +6951,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-24T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-24T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/void-walkers-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079142",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6687,6 +6997,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-10-25T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/docta-esports-club-vs-cla-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6732,6 +7043,7 @@
       "stage": "playoffs",
       "offered_points": 10,
       "lock_time": "2026-10-25T14:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T15:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/maze-gg-vs-viktus-ligagg-celol-b-2026-split-2-playoffs-1081084",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6777,6 +7089,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-hearts-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075747",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6822,6 +7135,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/aix-esports-vs-mt1-vision-prm-3rd-division-26-27-fall-1075748",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6867,6 +7181,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-vfb-x-engines-stuttgart-prm-3rd-division-26-27-fall-1075749",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6912,6 +7227,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/defiance-esports-vs-reh-gaming-prm-3rd-division-26-27-fall-1075752",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -6957,6 +7273,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075753",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7002,6 +7319,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-team-300-white-prm-3rd-division-26-27-fall-1075754",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7047,6 +7365,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075755",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7092,6 +7411,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075758",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7137,6 +7457,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075761",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7182,6 +7503,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1079027",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7227,6 +7549,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-acegaming-prm-2nd-division-26-27-fall-1079028",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7272,6 +7595,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/black-lion-vs-glacial-guardians-prm-3rd-division-26-27-fall-1075750",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7317,6 +7641,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-berlin-5-prm-3rd-division-26-27-fall-1075759",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7362,6 +7687,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-enfida-esports-tunisian-super-league-2026-1080928",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7407,6 +7733,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-vs-jendouba-esports-tunisian-super-league-2026-1080929",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7452,6 +7779,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-el-menzah-esports-tunisian-super-league-2026-1080930",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7497,6 +7825,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-supreme-leaders-tunisian-super-league-2026-1080931",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7542,6 +7871,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-jsk-academy-tunisian-super-league-2026-1080932",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7587,6 +7917,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/2-massive-vs-tung-sahur-mid-rivals-league-season-2-1074660",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7632,6 +7963,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/onlywinbyff-vs-mazepa-rivals-league-season-2-1074664",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7677,6 +8009,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-sweden-vs-northern-wolves-esports-rivals-league-season-2-1074665",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7722,6 +8055,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-team-cd-rivals-league-season-2-1074666",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7767,6 +8101,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/blackdivision-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075751",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7812,6 +8147,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/karolinerna-vs-lund-esports-organization-ogs-rivals-league-season-2-1074662",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7857,6 +8193,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-b2u-rivals-league-season-2-1074663",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7902,6 +8239,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-vfb-esports-prm-2nd-division-26-27-fall-1079029",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7947,6 +8285,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-25T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-25T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/locked-in-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079030",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -7992,6 +8331,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-26T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-26T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-tung-sahur-mid-rivals-league-season-2-1081831",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8037,6 +8377,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-27T16:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T16:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075756",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8082,6 +8423,7 @@
       "stage": "playoffs",
       "offered_points": 20,
       "lock_time": "2026-10-27T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mental-rush-vs-vitality-rising-bees-lgc-rising-2026-playoffs-1079080",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8127,6 +8469,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-27T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079031",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8172,6 +8515,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-27T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/no-need-orga-vs-acegaming-prm-2nd-division-26-27-fall-1079032",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8217,6 +8561,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-27T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/hannover-esports-e-v-vs-no-need-orga-prm-2nd-division-26-27-fall-1079033",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8262,6 +8607,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-27T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-27T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/vfb-esports-vs-regnum4games-prm-2nd-division-26-27-fall-1079034",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8307,6 +8653,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-28T17:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-28T17:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-northern-wolves-esports-rivals-league-season-2-1082615",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8352,6 +8699,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-28T17:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-28T18:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-mazepa-rivals-league-season-2-1082616",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8397,6 +8745,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-28T18:10:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-28T18:15:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8442,6 +8791,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-28T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-28T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/slam-dunk-vs-new-era-team-arabian-league-2nd-division-2026-summer-1079144",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8487,6 +8837,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-29T18:10:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-29T18:15:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-cloud-esport-prm-3rd-division-26-27-fall-1075737",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8532,6 +8883,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-29T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-29T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079145",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8577,6 +8929,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-30T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-30T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-regold-esport-prm-2nd-division-26-27-fall-1079851",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8622,6 +8975,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-30T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-30T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-team-300-prm-2nd-division-26-27-fall-1079036",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8667,6 +9021,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-30T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-30T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-reds-vs-nextgeneration-esports-arabian-league-2nd-division-2026-summer-1079147",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8712,6 +9067,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-30T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-30T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-regnum4games-prm-2nd-division-26-27-fall-1079037",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8757,6 +9113,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-30T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-30T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079038",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8802,6 +9159,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-supreme-leaders-tunisian-super-league-2026-1080933",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8847,6 +9205,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080934",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8892,6 +9251,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-enfida-esports-tunisian-super-league-2026-1080935",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8937,6 +9297,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jendouba-esports-tunisian-super-league-2026-1080936",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -8982,6 +9343,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080937",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9027,6 +9389,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-10-31T18:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-10-31T19:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/void-walkers-vs-team-vds-arabian-league-2nd-division-2026-summer-1082107",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9072,6 +9435,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-300-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1079040",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9117,6 +9481,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/1-esport-club-frankfurt-e-v-vs-rich-gang-prm-3rd-division-26-27-fall-1075762",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9162,6 +9527,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/berlin-5-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075763",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9207,6 +9573,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/black-lion-vs-blackdivision-prm-3rd-division-26-27-fall-1075764",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9252,6 +9619,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/cloud-esport-vs-defiance-esports-prm-3rd-division-26-27-fall-1075765",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9297,6 +9665,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075766",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9342,6 +9711,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/emperors-bremen-vs-neko-elite-kittens-prm-3rd-division-26-27-fall-1075767",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9387,6 +9757,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/glacial-guardians-vs-mt1-vision-prm-3rd-division-26-27-fall-1075768",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9432,6 +9803,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075769",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9477,6 +9849,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/kanji-esports-kin-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075770",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9522,6 +9895,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/looksmaxxer-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075771",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9567,6 +9941,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-packmiko-e-sports-dach-prm-3rd-division-26-27-fall-1075772",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9612,6 +9987,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075773",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9657,6 +10033,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/spongecord-prime-vs-duplex-silva-pigeons-edition-prm-3rd-division-26-27-fall-1075774",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9702,6 +10079,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-300-white-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075775",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9747,6 +10125,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-aix-esports-prm-3rd-division-26-27-fall-1075776",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9792,6 +10171,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-vs-no-need-orga-prm-2nd-division-26-27-fall-1079039",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9837,6 +10217,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/el-menzah-esports-vs-enfida-esports-tunisian-super-league-2026-1080938",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9882,6 +10263,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-jendouba-esports-tunisian-super-league-2026-1080939",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9927,6 +10309,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-olympique-mnihla-tunisian-super-league-2026-1080940",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -9972,6 +10355,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jsk-esports-tunisian-super-league-2026-1080941",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10017,6 +10401,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-supreme-leaders-tunisian-super-league-2026-1080942",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10062,6 +10447,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-flamehard-rivals-league-season-2-1082748",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10107,6 +10493,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-locked-in-prm-2nd-division-26-27-fall-1079041",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10152,6 +10539,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-01T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-01T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079042",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10197,6 +10585,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-03T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-03T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/bvp-vs-no-need-orga-prm-2nd-division-26-27-fall-1079043",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10242,6 +10631,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-03T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-03T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10287,6 +10677,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-03T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-03T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079045",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10332,6 +10723,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-03T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-03T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/regnum4games-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079046",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10377,6 +10769,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-06T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-06T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079047",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10422,6 +10815,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-06T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-06T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/locked-in-vs-vfb-esports-prm-2nd-division-26-27-fall-1079048",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10467,6 +10861,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-06T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-06T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/bvp-vs-babos-gaming-prm-2nd-division-26-27-fall-1079049",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10512,6 +10907,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-06T19:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-06T19:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-300-vs-acegaming-prm-2nd-division-26-27-fall-1079050",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10557,6 +10953,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-07T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-07T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/el-menzah-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080943",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10602,6 +10999,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-07T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-07T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-jsk-esports-tunisian-super-league-2026-1080944",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10647,6 +11045,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-07T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-07T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-simplicity-gaming-tunisian-super-league-2026-1080945",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10692,6 +11091,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-07T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-07T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/supreme-leaders-vs-jendouba-esports-tunisian-super-league-2026-1080946",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10737,6 +11137,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-07T16:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-07T17:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-enfida-esports-tunisian-super-league-2026-1080947",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10782,6 +11183,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-bvp-prm-2nd-division-26-27-fall-1079051",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10827,6 +11229,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/regold-esport-vs-babos-gaming-prm-2nd-division-26-27-fall-1079852",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10872,6 +11275,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/aix-esports-vs-blackdivision-prm-3rd-division-26-27-fall-1075777",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10917,6 +11321,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-glacial-guardians-prm-3rd-division-26-27-fall-1075778",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -10962,6 +11367,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/defiance-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075779",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11007,6 +11413,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075780",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11052,6 +11459,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/looksmaxxer-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075781",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11097,6 +11505,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mt1-vision-vs-black-lion-prm-3rd-division-26-27-fall-1075782",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11142,6 +11551,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-berlin-5-prm-3rd-division-26-27-fall-1075783",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11187,6 +11597,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-cloud-esport-prm-3rd-division-26-27-fall-1075784",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11232,6 +11643,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075785",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11277,6 +11689,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-team-300-white-prm-3rd-division-26-27-fall-1075786",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11322,6 +11735,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/sissi-state-punks-vs-second-time-alive-revival-prm-3rd-division-26-27-fall-1075787",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11367,6 +11781,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/socken-und-sandalen-vs-eintracht-spandau-zwei-prm-3rd-division-26-27-fall-1075788",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11412,6 +11827,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/spongecord-prime-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075789",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11457,6 +11873,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075790",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11502,6 +11919,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075791",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11547,6 +11965,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11592,6 +12011,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-08T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-08T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-vfb-esports-prm-2nd-division-26-27-fall-1079054",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11637,6 +12057,7 @@
       "stage": "waiting for information",
       "offered_points": 30,
       "lock_time": "2026-11-11T08:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-11T09:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/ground-zero-gaming-vs-frank-esports-lcp-2027-promotion-1081423",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11682,6 +12103,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-13T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-13T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/locked-in-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079055",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11727,6 +12149,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-13T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-13T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079056",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11772,6 +12195,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-13T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-13T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/regnum4games-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079057",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11817,6 +12241,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-13T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-13T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/vfb-esports-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079058",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11862,6 +12287,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-hearts-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075792",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11907,6 +12333,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11952,6 +12379,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-aix-esports-prm-3rd-division-26-27-fall-1075794",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -11997,6 +12425,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/berlin-5-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075795",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12042,6 +12471,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/black-lion-vs-vfb-x-engines-stuttgart-prm-3rd-division-26-27-fall-1075796",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12087,6 +12517,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/blackdivision-vs-mt1-vision-prm-3rd-division-26-27-fall-1075797",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12132,6 +12563,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/defiance-esports-vs-purple-emperor-lizards-atomic-prm-3rd-division-26-27-fall-1075798",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12177,6 +12609,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075799",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12222,6 +12655,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/glacial-guardians-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075800",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12267,6 +12701,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-neko-elite-kittens-prm-3rd-division-26-27-fall-1075801",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12312,6 +12747,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-cloud-esport-prm-3rd-division-26-27-fall-1075802",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12357,6 +12793,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075803",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12402,6 +12839,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075804",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12447,6 +12885,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-300-white-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075805",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12492,6 +12931,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T15:55:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T16:00:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/teamorangegaming-academy-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075806",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12537,6 +12977,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1079059",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12582,6 +13023,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-vs-reveal-multigaming-prm-2nd-division-26-27-fall-1079060",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12627,6 +13069,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/team-300-vs-no-need-orga-prm-2nd-division-26-27-fall-1079062",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -12672,6 +13115,7 @@
       "stage": "waiting for information",
       "offered_points": 10,
       "lock_time": "2026-11-15T18:25:00Z",
+      "lock_passed": false,
       "start_time": "2026-11-15T18:30:00Z",
       "hotspawn_url": "https://www.hotspawn.com/matches/bvp-vs-regold-esport-prm-2nd-division-26-27-fall-1079853",
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",

@@ -27,7 +27,7 @@ import urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from common import DATA_DIR, REPO_ROOT, norm_name, team_match_score, utcnow, write_json  # noqa: E402
-from model import build_ratings, predict, series_from_map  # noqa: E402
+from model import backtest, build_ratings, predict, series_from_map  # noqa: E402
 
 MATCH_THRESHOLD = 0.8
 SOURCE_RANK = {"pinnacle": 0, "bovada": 1, "polymarket": 2, "kalshi": 3}
@@ -147,6 +147,11 @@ def main() -> int:
         team_a = fixture["teams"][0]["name"]
         team_b = fixture["teams"][1]["name"]
         flags = []
+        lock_passed = False
+        lock_dt = parse_when(fixture.get("lock_time"))
+        if lock_dt and lock_dt < datetime.datetime.now(datetime.timezone.utc):
+            lock_passed = True
+            flags.append("lock time has passed - HotSpawn still lists this fixture as scheduled")
 
         matched = []
         for quote in quotes:
@@ -274,6 +279,7 @@ def main() -> int:
             "stage": fixture.get("stage"),
             "offered_points": fixture.get("offered_points"),
             "lock_time": lock_time,
+            "lock_passed": lock_passed,
             "start_time": fixture.get("start_time"),
             "hotspawn_url": fixture.get("permalinks"),
             "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
@@ -296,6 +302,12 @@ def main() -> int:
             "unresolved": confidence in ("model", "default", "market-map"),
         })
 
+    analysis = {}
+    if reference.get("games"):
+        analysis = backtest(reference["games"])
+        analysis["reference_games"] = len(reference["games"])
+        analysis["rated_teams"] = len(teams_strength)
+
     summary = {
         "fixtures": len(picks),
         "with_series_market": sum(1 for p in picks if p["confidence"] == "market"),
@@ -303,6 +315,7 @@ def main() -> int:
         "own_line": sum(1 for p in picks if p["confidence"] == "model"),
         "default_50_50": sum(1 for p in picks if p["confidence"] == "default"),
         "unresolved": sum(1 for p in picks if p["unresolved"]),
+        "lock_passed": sum(1 for p in picks if p.get("lock_passed")),
         "coverage_pct": round(100.0 * sum(1 for p in picks if p["confidence"] in ("market", "market-map"))
                               / max(1, len(picks)), 1),
     }
@@ -312,6 +325,7 @@ def main() -> int:
                 "betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line "
                 "built on verified match results. HotSpawn crowd percentages are never used.",
         "summary": summary,
+        "analysis": analysis,
         "picks": picks,
     }
     path = write_json("data/picks.json", payload)

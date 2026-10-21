@@ -155,6 +155,8 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .note.ok { border-left-color: var(--accent); background: #0f241d; }
 ul.tight { margin: 6px 0; padding-left: 20px; }
 ul.tight li { margin: 4px 0; }
+ul.bullets { margin: 8px 0 4px; padding-left: 20px; }
+ul.bullets li { margin: 8px 0; line-height: 1.45; }
 .kv { display: grid; grid-template-columns: 150px 1fr; gap: 4px 10px; font-size: 14px; }
 .kv dt { color: var(--muted); }
 .kv dd { margin: 0; }

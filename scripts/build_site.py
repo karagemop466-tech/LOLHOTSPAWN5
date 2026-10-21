@@ -187,7 +187,7 @@ def pick_card(pick: dict) -> str:
     return f"""<article class="pick {conf}" data-pick="{e(search_blob)}" data-conf="{e(pick.get('confidence'))}" data-tour="{e(pick.get('tournament'))}">
   <div class="top">
     <span class="tour">{e(pick.get('tournament'))}</span>
-    <span class="when">locks {e(fmt_time(pick.get('lock_time')))}</span>
+    <span class="when">{'lock passed ' if pick.get('lock_passed') else 'locks '}{e(fmt_time(pick.get('lock_time')))}</span>
   </div>
   <div class="teams">
     {team_block(team_a, team_b)}
@@ -228,6 +228,23 @@ def page_index(ctx: dict) -> str:
         f"<td class='num'>{row['default']}</td></tr>" for row in coverage)
 
     unresolved = summary.get("unresolved", 0)
+    analysis = ctx.get("analysis") or {}
+    acc = analysis.get("accuracy")
+    acc_text = f"{acc * 100:.1f}%" if isinstance(acc, (int, float)) else "not available"
+    backtest_games = analysis.get("games")
+    backtest_text = (f"{e(backtest_games)} of the {e(analysis.get('reference_games'))} collected results"
+                     if backtest_games else "not enough history yet")
+    top = [p for p in picks if p.get("confidence") in ("market", "model")
+           and (p.get("pick_prob") or 0) >= 0.6]
+    top.sort(key=lambda p: -(p.get("pick_prob") or 0))
+    top_rows = "".join(
+        f"<tr><td>{e(p.get('tournament'))}</td>"
+        f"<td>{e(p['team_a']['name'])} <b>{pct(p['team_a']['prob'])}</b> vs "
+        f"{e(p['team_b']['name'])} <b>{pct(p['team_b']['prob'])}</b></td>"
+        f"<td class='nowrap'>{e(p.get('pick'))}</td>"
+        f"<td><span class='chip {CONFIDENCE_LABEL.get(p.get('confidence'), ('', ''))[0]}'>"
+        f"{e(CONFIDENCE_LABEL.get(p.get('confidence'), ('', ''))[1])}</span></td>"
+        f"<td class='nowrap small'>{e(fmt_time(p.get('lock_time')))}</td></tr>" for p in top[:10])
     body = f"""
 <section class="hero">
   <h1>League of Legends pick'em picks for every HotSpawn match</h1>
@@ -239,9 +256,38 @@ def page_index(ctx: dict) -> str:
 <div class="cards">
   <div class="card"><div class="n">{e(summary.get('fixtures', 0))}</div><div class="l">matches on the board</div></div>
   <div class="card ok"><div class="n">{e(summary.get('with_series_market', 0))}</div><div class="l">external series line</div></div>
-  <div class="card info"><div class="n">{e(summary.get('with_map_market_only', 0))}</div><div class="l">external map price only</div></div>
-  <div class="card warn"><div class="n">{e(unresolved)}</div><div class="l">need our own line</div></div>
+  <div class="card info"><div class="n">{e(summary.get('own_line', 0))}</div><div class="l">our own line</div></div>
+  <div class="card warn"><div class="n">{e(summary.get('default_50_50', 0))}</div><div class="l">flat 50%, flagged</div></div>
 </div>
+
+<div class="note">
+<b>Stale listings.</b> {e(summary.get('lock_passed', 0))} of these {e(summary.get('fixtures', 0))} fixtures have a lock
+time in the past - HotSpawn still lists them as scheduled. They keep their pick and are listed last on the
+<a href="picks.html">picks page</a>, and they are flagged on the <a href="review.html">Flagged for review</a> page.
+</div>
+
+<h2>Executive summary</h2>
+<ul class="bullets">
+  <li><b>{e(summary.get('fixtures', 0))} matches</b> are on the HotSpawn League of Legends board right now and
+      <b>every one of them has a pick and a probability for both teams</b> on the
+      <a href="picks.html">picks page</a>.</li>
+  <li><b>{e(summary.get('with_series_market', 0))} matches</b> are priced by an external series line
+      (Kalshi, Polymarket, Pinnacle, Bovada - de-vigged).
+      <b>{e(summary.get('own_line', 0))} matches</b> are priced by our own Elo line fitted on Leaguepedia results.
+      <b>{e(summary.get('default_50_50', 0))} match{'' if summary.get('default_50_50', 0) == 1 else 'es'}</b>
+      {('has' if summary.get('default_50_50', 0) == 1 else 'have')} no verifiable history for at least one team and
+      {('is' if summary.get('default_50_50', 0) == 1 else 'are')} published as a flat 50% and flagged as unverified.</li>
+  <li><b>HotSpawn's crowd percentages are never used</b> as a probability signal. HotSpawn is the fixture list only.</li>
+  <li>Walk-forward test of our own line on {backtest_text}: <b>{acc_text}</b> of the predicted winners were right.
+      Treat small gaps as noise.</li>
+  <li><b>Limitations:</b> the books only price the big circuits, so most of the board is covered by our own line;
+      low-tier leagues are thinly covered on Leaguepedia, which caps the accuracy of our line there;
+      a team we cannot match to a wiki page gets a flat 50% rather than an invented number. All of these are listed
+      on the <a href="unresolved.html">unresolved page</a> and the
+      <a href="review.html">flagged for review page</a>.</li>
+</ul>
+
+{'<h2>Highest conviction picks</h2><div class="table-wrap"><table><thead><tr><th>Tournament</th><th>Match and probabilities</th><th>Pick</th><th>Basis</th><th>Locks</th></tr></thead><tbody>' + top_rows + '</tbody></table></div>' if top_rows else ''}
 
 <h2>Where to find the picks</h2>
 <div class="cta">
@@ -292,7 +338,8 @@ the picks and this site are all rebuilt and committed automatically.
 
 
 def page_picks(ctx: dict) -> str:
-    picks = ctx["picks"]
+    picks = sorted(ctx["picks"], key=lambda p: (bool(p.get("lock_passed")),
+                                               p.get("lock_time") or "9999"))
     summary = ctx["summary"]
     tournaments = sorted({p.get("tournament") for p in picks if p.get("tournament")})
     options = "".join(f'<option value="{e(t)}">{e(t)}</option>' for t in tournaments)
@@ -444,6 +491,12 @@ def page_review(ctx: dict) -> str:
     unresolved_tournaments = resolution.get("unresolved_tournaments") or []
     unresolved_tournament_list = "".join(f"<li>{e(t)}</li>" for t in unresolved_tournaments) or "<li>none</li>"
 
+    stale = [p for p in picks if p.get("lock_passed")]
+    stale_rows = rows(stale, lambda p: [
+        e(p.get("tournament")), e(p["team_a"]["name"]), e(p["team_b"]["name"]),
+        e(fmt_time(p.get("lock_time"))),
+        f'<a href="{e(p.get("hotspawn_url") or p.get("hotspawn_lobby"))}" target="_blank" rel="noopener">HotSpawn</a>'])
+
     body = f"""
 <section class="hero">
   <h1>Flagged for review</h1>
@@ -496,6 +549,16 @@ so they can be checked against Leaguepedia.</p>
 collected for them.</p>
 <ul class="tight">{unresolved_tournament_list}</ul>
 
+<h2>Fixtures HotSpawn still lists as scheduled after their lock time</h2>
+<p class="small muted">The lock time is in the past, so these fixtures can no longer be picked. They are kept because
+HotSpawn lists them, they are sorted last on the picks page, and their picks are shown for reference only.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Team A</th><th>Team B</th><th>Lock time</th><th>Source</th></tr></thead>
+<tbody>{stale_rows or '<tr><td colspan="5">none</td></tr>'}</tbody>
+</table>
+</div>
+
 <div class="note">
 <b>How to review this page.</b> Every row above carries the exact source link that produced it. Open the link, check
 the number, and if it does not match, open an issue on the repository - the collector re-reads the source on the next
@@ -545,6 +608,13 @@ def page_sources(ctx: dict) -> str:
 
 def page_methodology(ctx: dict) -> str:
     stamp = ctx["stamp"]
+    analysis = ctx.get("analysis") or {}
+    bt_games = analysis.get("games")
+    bt_ref_games = analysis.get("reference_games")
+    acc = analysis.get("accuracy")
+    bt_acc = f"{acc * 100:.1f}%" if isinstance(acc, (int, float)) else "n/a"
+    bt_brier = analysis.get("brier") if analysis.get("brier") is not None else "n/a"
+    bt_loss = analysis.get("log_loss") if analysis.get("log_loss") is not None else "n/a"
     body = f"""
 <section class="hero">
   <h1>Methodology</h1>
@@ -599,7 +669,19 @@ be re-derived by hand.</p>
 <a href="unresolved.html">Unresolved</a> and <a href="review.html">Flagged for review</a> pages. No number is invented
 to fill the gap.</p>
 
-<h2>7. Refresh cycle</h2>
+<h2>7. How good is our own line?</h2>
+<p>The model is tested the way it is used: every collected result is predicted <i>before</i> it is fitted in, so a
+prediction only ever uses the results that had already happened.</p>
+<ul class="tight">
+  <li>results predicted out of sample: <b>{e(bt_games)}</b> of {e(bt_ref_games)} collected results</li>
+  <li>winners predicted correctly: <b>{e(bt_acc)}</b></li>
+  <li>Brier score: {e(bt_brier)} (lower is better; a coin flip scores 0.25)</li>
+  <li>log loss: {e(bt_loss)} (a coin flip scores 0.693)</li>
+</ul>
+<p>Read the accuracy as a ceiling, not a promise: the low-tier leagues the books ignore are exactly the ones where
+Leaguepedia's record is thinnest, so the model is weakest where it is used most.</p>
+
+<h2>8. Refresh cycle</h2>
 <p>A scheduled GitHub Actions job runs every four hours
 (<code>.github/workflows/refresh.yml</code>) and rebuilds the inventory, the lines, the reference data, the picks and
 this site. Last build: {e(fmt_utc(stamp.get("built_at")))}.</p>
@@ -657,6 +739,7 @@ def build_context() -> dict:
     return {
         "picks": picks,
         "summary": summary,
+        "analysis": picks_doc.get("analysis") or {},
         "inventory": inventory,
         "odds": odds,
         "register": register,
