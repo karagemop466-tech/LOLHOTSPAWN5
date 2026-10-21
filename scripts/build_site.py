@@ -477,7 +477,7 @@ def build_methodology(doc):
   odds to implied probability:</p>
   <pre>p = 100 / (price + 100)        if price &gt; 0
 p = -price / (-price + 100)    if price &lt; 0</pre>
-  <p>K rises with series length, so longer series move ratings further. Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
+  <p>Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
   de-vigged proportionally:</p>
   <pre>p_no_vig(a) = p(a) / (p(a) + p(b))</pre>
   <p>A Hotspawn fixture only takes a market price when <strong>both</strong> team names match the
@@ -487,7 +487,8 @@ p = -price / (-price + 100)    if price &lt; 0</pre>
   <h2>3. Our own Elo model</h2>
   <p>For fixtures no bookmaker prices, we rate teams ourselves from
   <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule">Leaguepedia's
-  MatchSchedule</a> results, walking matches in chronological order:</p>
+  MatchSchedule</a> results, walking matches in chronological order. K rises with series length,
+  so a BestOf 5 moves ratings further than a BestOf 1:</p>
   <pre>E(a)        = 1 / (1 + 10^((Rb - Ra) / {int(m.get('elo_scale', 400))}))
 Ra'         = Ra + K · (S(a) - E(a))
 K           = {k_text}
