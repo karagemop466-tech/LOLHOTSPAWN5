@@ -8,16 +8,16 @@
 [4/6] Polymarket …
       1996 two-way markets indexed
 [5/6] Leaguepedia history — 189 teams / 27 competitions …
-      pass 0: 61 teams served from cache (1472 games)
+      pass 0: 0 teams served from cache (0 games)
       pass 1: 27 competitions in 4 batched queries …
-        2/4 batches, 1536 games total
-        4/4 batches, 1597 games total
-        +125 games from competition pass
-      pass 2: 127 teams in 13 chunk queries …
-        5/13 chunks, 1597 games total
-        10/13 chunks, 1674 games total
-      1734 games, 225 teams rated
+        2/4 batches, 125 games total
+        4/4 batches, 215 games total
+        +215 games from competition pass
+      pass 2: 162 teams in 17 chunk queries …
+        5/17 chunks, 215 games total
+        10/17 chunks, 215 games total
+      225 games, 49 teams rated
 [6/6] Resolving picks …
 
-Done. 264 fixtures — {'MODEL': 113, 'UNRESOLVED': 142, 'MARKET': 9}
-      resolved 122 / unresolved 142
+Done. 264 fixtures — {'MODEL': 75, 'UNRESOLVED': 180, 'MARKET': 9}
+      resolved 84 / unresolved 180
