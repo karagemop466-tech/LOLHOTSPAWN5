@@ -591,7 +591,11 @@ def load_cache(debug):
     return teams
 
 
-def save_cache(teams_cache, games_by_team, fetched_at):
+def save_cache(teams_cache, games_by_team, fetched_at, all_teams=()):
+    # Teams with no recorded history must still be cached, otherwise they are
+    # re-queried on every single run.
+    for t in all_teams:
+        games_by_team.setdefault(norm(t), [])
     for key, games in games_by_team.items():
         prev = teams_cache.get(key) or {}
         merged = {}
@@ -724,7 +728,7 @@ def leaguepedia_games(teams, competitions, debug):
             if len(bucket) < 300:
                 bucket.append(row)
 
-    save_cache(cache, games_by_team, NOW.isoformat())
+    save_cache(cache, games_by_team, NOW.isoformat(), teams)
     debug["leaguepedia_games"] = len(games)
     return games
 

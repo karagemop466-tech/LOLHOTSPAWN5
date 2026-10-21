@@ -68,12 +68,18 @@ a:hover, a:focus { text-decoration: underline; }
 }
 .brand-text { min-width: 0; }
 .brand-title { font-size: 15px; font-weight: 700; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.brand-sub { font-size: 11px; color: var(--muted); line-height: 1.2; }
+.brand-sub { font-size: 11px; color: var(--muted); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .stamp {
   margin-left: auto; text-align: right; font-size: 11px; color: var(--muted); line-height: 1.25; flex: 0 0 auto;
 }
 .stamp b { color: var(--text); font-weight: 600; }
+@media (max-width: 430px) {
+  .header-inner { gap: 6px; padding: 10px; }
+  .stamp { font-size: 10px; }
+  .brand-title { font-size: 14px; }
+  .brand-sub { display: none; }
+}
 
 /* The nav is always visible - on phones it is a horizontally scrollable strip
    so the picks pages are never hidden behind a menu. */
