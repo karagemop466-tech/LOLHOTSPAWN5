@@ -18,6 +18,7 @@ on:
       - 'scraper/probe_collect.sh'
       - 'scraper/probe_odds.sh'
       - 'scraper/probe_deep.sh'
+      - 'scraper/probe_final.sh'
   workflow_dispatch:
 
 permissions:
@@ -30,16 +31,16 @@ concurrency:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
       - name: Probe
         run: |
           mkdir -p research probe
-          bash scraper/probe_deep.sh > research/probe-deep.txt 2>&1
-          echo "deep probe exit: $?"
-          cat research/probe-deep.txt
+          bash scraper/probe_final.sh > research/probe-final.txt 2>&1
+          echo "final probe exit: $?"
+          cat research/probe-final.txt
 
       - name: Commit report
         if: always()
