@@ -128,4 +128,5 @@ read-only inputs.
 - Follow-up fixes after the live check (this PR): tier label rendered as a bare letter; next-run time was
   computed from the generated timestamp instead of the cron slots (00/06/12/18:17 UTC); Kalshi source links
   now point at the exact public API query (the human page URL could not be verified — HTTP 429 from CI).
+- Follow-up PR: **#3** — https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/3
 - Remaining flagged items do not block publication; they are on `/review/`.
