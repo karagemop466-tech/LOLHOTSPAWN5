@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="League of Legends pick&#x27;em picks and win probabilities for every HotSpawn match.">
+<meta name="theme-color" content="#0f1420">
+<title>Flagged - HotSpawn LoL picks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127918;</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">HotSpawn <span>LoL</span> picks<small>league of legends pick'em - win probabilities</small></div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Overview</a><a href="picks.html">All picks</a><a href="unresolved.html">Unresolved</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Flagged for review</h1>
+  <p class="lede">Everything this project could not confirm against a source, left blank or explicitly flagged.
+  Nothing on this page is presented as verified. Last refresh: 2026-10-21 20:52 UTC.</p>
+</section>
+
+<h2>Rows with no verifiable probability</h2>
+<p class="small muted">No external line and no verified match history for at least one team. The published probability
+for these rows is a flat 50%, which is a default and not a forecast.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Team A</th><th>Team B</th><th>Pick probability</th><th>Pick</th><th>Source</th></tr></thead>
+<tbody><tr><td colspan="6">none</td></tr></tbody>
+</table>
+</div>
+<p class="small muted">Teams in the rows above with no verified history:
+none.</p>
+
+<h2>Rows priced from a single map only</h2>
+<p class="small muted">The only published price is for one game of the match, so the number is a map price. The series
+format is only converted when a source states it.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Team A</th><th>Team B</th><th>Source</th><th>Link</th></tr></thead>
+<tbody><tr><td colspan="5">none</td></tr></tbody>
+</table>
+</div>
+
+<h2>Rows priced by our own model</h2>
+<p class="small muted">These have no external line. The rating and the number of rated games behind each side are shown
+so they can be checked against Leaguepedia.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Team A</th><th>Team B</th><th>Model P(A)</th><th>Rating A</th><th>Games A</th><th>Rating B</th><th>Games B</th></tr></thead>
+<tbody><tr><td colspan="8">none</td></tr></tbody>
+</table>
+</div>
+
+<h2>Sources that did not answer</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Source</th><th>Status</th><th>Link</th><th>Role</th></tr></thead>
+<tbody><tr><td>Leaguepedia Cargo API (action=cargoquery)</td><td>rate-limited</td><td><a href="https://lol.fandom.com/api.php?action=cargoquery&amp;tables=ScoreboardGames" target="_blank" rel="noopener">link</a></td><td>Would have been the fastest structured results source; it is rate limited for anonymous callers, so the rendered pages are used instead.</td></tr><tr><td>Sofascore API</td><td>blocked (403)</td><td><a href="https://api.sofascore.com/api/v1/sport/league-of-legends/tournaments" target="_blank" rel="noopener">link</a></td><td>Evaluated as an additional results source for the low-tier leagues; the API refuses requests from our runner (HTTP 403).</td></tr><tr><td>Liquipedia - League of Legends</td><td>blocked (403)</td><td><a href="https://liquipedia.net/leagueoflegends/Portal:Teams" target="_blank" rel="noopener">link</a></td><td>Evaluated as a cross-check source; refuses requests from our runner (HTTP 403).</td></tr><tr><td>Oracle&#x27;s Elixir downloadable match data</td><td>unavailable (404)</td><td><a href="https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/" target="_blank" rel="noopener">link</a></td><td>Evaluated as a source of game-level results for the top leagues; the bucket returned HTTP 404 for the 2025 and 2026 files.</td></tr><tr><td>Games of Legends</td><td>live but partial coverage</td><td><a href="https://gol.gg/teams/list/season-S16/split-ALL/tournament-ALL/" target="_blank" rel="noopener">link</a></td><td>Evaluated as a results source; its database covers the major leagues only (53 of the 189 teams on the HotSpawn board).</td></tr></tbody>
+</table>
+</div>
+
+<h2>Tournaments with no wiki page</h2>
+<p class="small muted">These HotSpawn tournaments could not be mapped to a Leaguepedia page, so no team history was
+collected for them.</p>
+<ul class="tight"><li>none</li></ul>
+
+<div class="note">
+<b>How to review this page.</b> Every row above carries the exact source link that produced it. Open the link, check
+the number, and if it does not match, open an issue on the repository - the collector re-reads the source on the next
+scheduled run, so a corrected source fixes the row without a code change.
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><b>How to read this site.</b> Every match listed on HotSpawn's League of Legends pick'em board gets a pick and a
+    win probability for both teams. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada)
+    or, where no book prices the match, from our own line fitted on Leaguepedia results.
+    HotSpawn's own "X% picked" figures are never used as a probability signal.</p>
+    <p class="small">Last refreshed: 2026-10-21 20:52 UTC &middot; inventory 0 matches
+    &middot; external lines 626 quotes
+    &middot; site built 2026-10-21 20:52 UTC</p>
+    <p class="small">Sources are listed on the <a href="sources.html">Sources</a> page, the method on
+    <a href="methodology.html">Methodology</a>. Nothing here is betting advice.</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

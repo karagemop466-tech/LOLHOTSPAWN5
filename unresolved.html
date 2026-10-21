@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="League of Legends pick&#x27;em picks and win probabilities for every HotSpawn match.">
+<meta name="theme-color" content="#0f1420">
+<title>Unresolved - HotSpawn LoL picks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127918;</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">HotSpawn <span>LoL</span> picks<small>league of legends pick'em - win probabilities</small></div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Overview</a><a href="picks.html">All picks</a><a href="unresolved.html">Unresolved</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Unresolved picks and their limitations</h1>
+  <p class="lede">0 of 0 matches on the HotSpawn League of Legends board are not covered
+  by a published series price from the sources we can read. They are listed here in full, with the line we generated
+  ourselves and the reason each one stays limited.</p>
+</section>
+
+<div class="note">
+<b>Why this section exists.</b> Most of these matches are low-tier regional leagues. No sportsbook prices them,
+prediction markets do not list them, and the match history needed to model them is thin or missing. Rather than
+leaving them out - or publishing a number we cannot defend - we give every one of them a pick, label the basis
+honestly, and record the limitation here.
+</div>
+
+<h2>Where the unresolved matches are</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Matches</th><th>Limitation</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<h2>The limitations, in full</h2>
+<ul class="tight">
+  <li><b>No market price exists.</b> The match is in a league no bookmaker prices, so there is no external
+      line to de-vig. Our line is a model, not a market, and is labelled
+      <span class="chip model">our own line</span>.</li>
+  <li><b>Only a single-map price exists.</b> Kalshi publishes a price for one game of the match, not the series.
+      We show the map price and flag it; the series format (best-of-N) is only converted when it is verified
+      from a source, never guessed.</li>
+  <li><b>No verified match history.</b> Leaguepedia does not publish results for at least one of the two teams,
+      so our model has nothing to fit. Those rows carry a flat 50% and are flagged as unverified on the
+      <a href="review.html">Flagged for review</a> page.</li>
+  <li><b>Team-name ambiguity.</b> A few orgs have several entries on Leaguepedia (for example regional
+      sister teams). Where the mapping is ambiguous we flag the row instead of silently choosing one.</li>
+</ul>
+
+<h2>Every unresolved match</h2>
+<div class="filters">
+  <input id="q" type="search" placeholder="Search team or tournament" aria-label="Search team or tournament">
+  <select id="conf" aria-label="Filter by basis">
+    <option value="">All bases</option>
+    <option value="market-map">External map price only</option>
+    <option value="model">Our own line</option>
+    <option value="default">Default 50% (unverified)</option>
+  </select>
+  <span class="count" id="count"></span>
+</div>
+<div class="picks"></div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><b>How to read this site.</b> Every match listed on HotSpawn's League of Legends pick'em board gets a pick and a
+    win probability for both teams. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada)
+    or, where no book prices the match, from our own line fitted on Leaguepedia results.
+    HotSpawn's own "X% picked" figures are never used as a probability signal.</p>
+    <p class="small">Last refreshed: 2026-10-21 20:52 UTC &middot; inventory 0 matches
+    &middot; external lines 626 quotes
+    &middot; site built 2026-10-21 20:52 UTC</p>
+    <p class="small">Sources are listed on the <a href="sources.html">Sources</a> page, the method on
+    <a href="methodology.html">Methodology</a>. Nothing here is betting advice.</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

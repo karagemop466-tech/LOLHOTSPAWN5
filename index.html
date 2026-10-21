@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="League of Legends pick&#x27;em picks and win probabilities for every HotSpawn match.">
+<meta name="theme-color" content="#0f1420">
+<title>Overview - HotSpawn LoL picks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127918;</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">HotSpawn <span>LoL</span> picks<small>league of legends pick'em - win probabilities</small></div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Overview</a><a href="picks.html">All picks</a><a href="unresolved.html">Unresolved</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>League of Legends pick'em picks for every HotSpawn match</h1>
+  <p class="lede">A pick and a win probability for both teams on <b>every</b> League of Legends match on
+  HotSpawn's pick'em board - with the source behind each number, and an explicit section for the matches
+  that no bookmaker prices.</p>
+</section>
+
+<div class="cards">
+  <div class="card"><div class="n">0</div><div class="l">matches on the board</div></div>
+  <div class="card ok"><div class="n">0</div><div class="l">external series line</div></div>
+  <div class="card info"><div class="n">0</div><div class="l">external map price only</div></div>
+  <div class="card warn"><div class="n">0</div><div class="l">need our own line</div></div>
+</div>
+
+<h2>Where to find the picks</h2>
+<div class="cta">
+  <a class="primary" href="picks.html"><strong>All picks &rarr;</strong>
+    <span>Every match with both win probabilities, the pick, the source link and any flag. Searchable and filterable, built for a phone.</span></a>
+  <a href="unresolved.html"><strong>Unresolved picks &amp; limitations &rarr;</strong>
+    <span>The 0 matches that no bookmaker prices: what we did about them and exactly why they stay limited.</span></a>
+  <a href="review.html"><strong>Flagged for review &rarr;</strong>
+    <span>Everything we could not confirm against an official source, with links for manual checking.</span></a>
+  <a href="sources.html"><strong>Sources &rarr;</strong>
+    <span>Every source used, what it is allowed to supply and whether it answered on the last refresh.</span></a>
+  <a href="methodology.html"><strong>Methodology &rarr;</strong>
+    <span>How a probability is derived, de-vigged, converted and labelled.</span></a>
+</div>
+
+<h2>Next matches to lock</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Match and probabilities</th><th>Pick</th><th>Basis</th><th>Locks</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<h2>Coverage by tournament</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tournament</th><th>Matches</th><th>External line</th><th>Our line</th><th>Unverified 50%</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<div class="note">
+<b>Read this before you use a number.</b> A percentage here means one of four things, and the badge says which:
+a <span class="chip market">external series line</span> is a de-vigged price from a licensed book or prediction market;
+a <span class="chip market-map">external map price only</span> is a price for a single game, not the series;
+a <span class="chip model">our own line</span> is our Elo model fitted on Leaguepedia results;
+a <span class="chip default">unverified</span> means we found no price and no result history for at least one team,
+so the probability is a flat 50% and is flagged as unverified on the <a href="review.html">Flagged for review</a> page.
+</div>
+
+<div class="note ok">
+<b>Automation.</b> The board is re-collected every 4 hours by a scheduled GitHub Actions run
+(<code>.github/workflows/refresh.yml</code>): the HotSpawn inventory, the external lines, the reference results,
+the picks and this site are all rebuilt and committed automatically.
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><b>How to read this site.</b> Every match listed on HotSpawn's League of Legends pick'em board gets a pick and a
+    win probability for both teams. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada)
+    or, where no book prices the match, from our own line fitted on Leaguepedia results.
+    HotSpawn's own "X% picked" figures are never used as a probability signal.</p>
+    <p class="small">Last refreshed: 2026-10-21 20:52 UTC &middot; inventory 0 matches
+    &middot; external lines 626 quotes
+    &middot; site built 2026-10-21 20:52 UTC</p>
+    <p class="small">Sources are listed on the <a href="sources.html">Sources</a> page, the method on
+    <a href="methodology.html">Methodology</a>. Nothing here is betting advice.</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

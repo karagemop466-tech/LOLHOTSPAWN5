@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="League of Legends pick&#x27;em picks and win probabilities for every HotSpawn match.">
+<meta name="theme-color" content="#0f1420">
+<title>Methodology - HotSpawn LoL picks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127918;</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">HotSpawn <span>LoL</span> picks<small>league of legends pick'em - win probabilities</small></div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Overview</a><a href="picks.html">All picks</a><a href="unresolved.html">Unresolved</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Methodology</h1>
+  <p class="lede">How every probability on this site is produced, in the order the steps run.</p>
+</section>
+
+<h2>1. The match list</h2>
+<p>HotSpawn's League of Legends pick'em board is read from its own public surfaces: the pick'em lobby page and the
+fixtures API it calls. That gives the full inventory - match id, tournament, tier, points, lock time and the
+per-match permalink HotSpawn publishes. HotSpawn's "X% picked" figures are not collected.</p>
+
+<h2>2. The external lines</h2>
+<p>Four independent external sources are read for every refresh:</p>
+<ul class="tight">
+  <li><b>Kalshi</b> - the <code>KXLOLGAME</code> series, a price for a single game of a match.</li>
+  <li><b>Polymarket</b> - match-winner markets, which price the series and name the best-of format in the title.</li>
+  <li><b>Pinnacle</b> - the public E Sports guest board: period 0 is the series moneyline, period 1 the map moneyline.</li>
+  <li><b>Bovada</b> - the esports events feed, moneyline per market period.</li>
+</ul>
+<p>A quote is matched to a fixture only when both team names match (normalised, with the filler words
+"esports", "gaming", "team", "academy" removed) with a score of 0.8 or better, and the pairing has to be
+consistent in both directions. Every matched quote keeps its own URL.</p>
+
+<h2>3. De-vigging</h2>
+<p>Book prices contain a margin. Two-sided prices are turned back into a probability with
+<code>p = (1/decimal) / ((1/decimalA) + (1/decimalB))</code>. The size of the margin (the overround) is stored and shown
+on the row, so the size of the adjustment is auditable.</p>
+
+<h2>4. Series versus map</h2>
+<p>A price for one game is not a price for the series. When only a map price exists, it is labelled
+<span class="chip market-map">external map price only</span> and flagged. It is converted to a series probability only
+when the best-of format is verified from a source (Polymarket market titles state it), using
+<code>P(BO3) = p&sup3; + 3p&sup2;(1-p)</code> and the equivalent for other lengths. Nothing is converted on a guess.</p>
+
+<h2>5. Our own line</h2>
+<p>Matches no book prices are modelled from verified results taken from Leaguepedia - the tournament match lists and
+the team "Match History" pages, both read through the wiki's public API. Each result is a series with a date and a
+winner. Ratings are fitted with a standard Elo scheme:</p>
+<ul class="tight">
+  <li>every team starts at 1500;</li>
+  <li>results are processed oldest to newest with K = 32 and no home advantage;</li>
+  <li>a rating is shrunk toward 1500 when a team has few games:
+      <code>r' = (r&middot;n + 1500&middot;8) / (n + 8)</code>;</li>
+  <li>the win probability is <code>p(A) = 1 / (1 + 10^(-(rA - rB)/400))</code>.</li>
+</ul>
+<p>The rating, the number of rated games and the wiki page behind every team are stored on the row so the number can
+be re-derived by hand.</p>
+
+<h2>6. When there is nothing to fit</h2>
+<p>If neither an external line nor a verified result history exists for a match, the probability is left at a flat
+50%, the row is labelled <span class="chip default">unverified</span> and it is listed on the
+<a href="unresolved.html">Unresolved</a> and <a href="review.html">Flagged for review</a> pages. No number is invented
+to fill the gap.</p>
+
+<h2>7. Refresh cycle</h2>
+<p>A scheduled GitHub Actions job runs every four hours
+(<code>.github/workflows/refresh.yml</code>) and rebuilds the inventory, the lines, the reference data, the picks and
+this site. Last build: 2026-10-21 20:52 UTC.</p>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><b>How to read this site.</b> Every match listed on HotSpawn's League of Legends pick'em board gets a pick and a
+    win probability for both teams. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada)
+    or, where no book prices the match, from our own line fitted on Leaguepedia results.
+    HotSpawn's own "X% picked" figures are never used as a probability signal.</p>
+    <p class="small">Last refreshed: 2026-10-21 20:52 UTC &middot; inventory 0 matches
+    &middot; external lines 626 quotes
+    &middot; site built 2026-10-21 20:52 UTC</p>
+    <p class="small">Sources are listed on the <a href="sources.html">Sources</a> page, the method on
+    <a href="methodology.html">Methodology</a>. Nothing here is betting advice.</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

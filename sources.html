@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="League of Legends pick&#x27;em picks and win probabilities for every HotSpawn match.">
+<meta name="theme-color" content="#0f1420">
+<title>Sources - HotSpawn LoL picks</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127918;</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-head">
+    <div class="brand">HotSpawn <span>LoL</span> picks<small>league of legends pick'em - win probabilities</small></div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Overview</a><a href="picks.html">All picks</a><a href="unresolved.html">Unresolved</a><a href="review.html">Flagged</a><a href="sources.html">Sources</a><a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Sources</h1>
+  <p class="lede">Every source this project reads, what it is allowed to supply and whether it answered on the last
+  refresh. All of them are external to HotSpawn, except the two HotSpawn pages that are used for the fixture list only.</p>
+</section>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Source</th><th>What it supplies here</th><th>Status</th><th>Link</th></tr></thead>
+<tbody><tr><td>HotSpawn - League of Legends Pick&#x27;em lobby<br><span class='tiny muted'>fixture inventory (HotSpawn, official product page)</span></td><td>Which matches exist, lock times, tier, points and the permalink HotSpawn publishes. Never used as a probability signal.</td><td><span class='chip market'>live</span><br><span class='tiny muted'>2/2 requests answered</span></td><td><a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener">open</a></td></tr><tr><td>HotSpawn public fixtures API (LoL)<br><span class='tiny muted'>fixture inventory (HotSpawn public API used by its own lobby)</span></td><td>Complete machine-readable fixture list. Never used as a probability signal.</td><td><span class='chip market'>live</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&amp;tenantId=1" target="_blank" rel="noopener">open</a></td></tr><tr><td>Kalshi - League of Legends game markets (series KXLOLGAME)<br><span class='tiny muted'>prediction market regulated by the US CFTC</span></td><td>External price for a single game. De-vigged and labelled as a map price when no series price exists.</td><td><span class='chip market'>live</span><br><span class='tiny muted'>28/28 requests answered</span></td><td><a href="https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&amp;limit=1000" target="_blank" rel="noopener">open</a></td></tr><tr><td>Polymarket - League of Legends markets<br><span class='tiny muted'>prediction market</span></td><td>External match-winner price for a series (the best-of format is part of the market title).</td><td><span class='chip market'>live</span><br><span class='tiny muted'>28/28 requests answered</span></td><td><a href="https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&amp;closed=false&amp;limit=100" target="_blank" rel="noopener">open</a></td></tr><tr><td>Pinnacle - E Sports board (public guest API)<br><span class='tiny muted'>licensed bookmaker</span></td><td>External moneyline for series (period 0) and single maps (period 1).</td><td><span class='chip market'>live</span><br><span class='tiny muted'>28/28 requests answered</span></td><td><a href="https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues" target="_blank" rel="noopener">open</a></td></tr><tr><td>Bovada - esports events feed<br><span class='tiny muted'>licensed bookmaker</span></td><td>External moneyline per market period (game or series).</td><td><span class='chip market'>live</span><br><span class='tiny muted'>28/28 requests answered</span></td><td><a href="https://www.bovada.lv/services/sports/event/v2/events/A/description/esports" target="_blank" rel="noopener">open</a></td></tr><tr><td>Leaguepedia - League of Legends esports wiki<br><span class='tiny muted'>community wiki (the de-facto LoL esports results database)</span></td><td>Verified match results used to fit our own line. Every row that uses it links to the exact wiki page.</td><td><span class='chip market'>live</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://lol.fandom.com/wiki/Main_Page" target="_blank" rel="noopener">open</a></td></tr><tr><td>Leaguepedia Cargo API (action=cargoquery)<br><span class='tiny muted'>community wiki (structured table API)</span></td><td>Would have been the fastest structured results source; it is rate limited for anonymous callers, so the rendered pages are used instead.</td><td><span class='chip flag'>rate-limited</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://lol.fandom.com/api.php?action=cargoquery&amp;tables=ScoreboardGames" target="_blank" rel="noopener">open</a></td></tr><tr><td>Sofascore API<br><span class='tiny muted'>esports results/data provider</span></td><td>Evaluated as an additional results source for the low-tier leagues; the API refuses requests from our runner (HTTP 403).</td><td><span class='chip flag'>blocked (403)</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://api.sofascore.com/api/v1/sport/league-of-legends/tournaments" target="_blank" rel="noopener">open</a></td></tr><tr><td>Liquipedia - League of Legends<br><span class='tiny muted'>community wiki</span></td><td>Evaluated as a cross-check source; refuses requests from our runner (HTTP 403).</td><td><span class='chip flag'>blocked (403)</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://liquipedia.net/leagueoflegends/Portal:Teams" target="_blank" rel="noopener">open</a></td></tr><tr><td>Oracle&#x27;s Elixir downloadable match data<br><span class='tiny muted'>esports data provider (game-level data)</span></td><td>Evaluated as a source of game-level results for the top leagues; the bucket returned HTTP 404 for the 2025 and 2026 files.</td><td><span class='chip flag'>unavailable (404)</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/" target="_blank" rel="noopener">open</a></td></tr><tr><td>Games of Legends<br><span class='tiny muted'>community statistics site</span></td><td>Evaluated as a results source; its database covers the major leagues only (53 of the 189 teams on the HotSpawn board).</td><td><span class='chip flag'>live but partial coverage</span><br><span class='tiny muted'>answered on the last refresh</span></td><td><a href="https://gol.gg/teams/list/season-S16/split-ALL/tournament-ALL/" target="_blank" rel="noopener">open</a></td></tr></tbody>
+</table>
+</div>
+
+<h2>What is deliberately not used</h2>
+<ul class="tight">
+  <li><b>HotSpawn crowd percentages.</b> The "X% picked" figures on the HotSpawn board are ownership data, not a
+      forecast. They are not collected and never enter the probability model.</li>
+  <li><b>HotSpawn results.</b> For the same reason the historical results on HotSpawn are not used to fit the model.</li>
+  <li><b>Unconfirmed values.</b> Where a source does not publish a number, the cell is left blank and the row is flagged
+      rather than filled in with an estimate.</li>
+</ul>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><b>How to read this site.</b> Every match listed on HotSpawn's League of Legends pick'em board gets a pick and a
+    win probability for both teams. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada)
+    or, where no book prices the match, from our own line fitted on Leaguepedia results.
+    HotSpawn's own "X% picked" figures are never used as a probability signal.</p>
+    <p class="small">Last refreshed: 2026-10-21 20:52 UTC &middot; inventory 0 matches
+    &middot; external lines 626 quotes
+    &middot; site built 2026-10-21 20:52 UTC</p>
+    <p class="small">Sources are listed on the <a href="sources.html">Sources</a> page, the method on
+    <a href="methodology.html">Methodology</a>. Nothing here is betting advice.</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
