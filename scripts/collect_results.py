@@ -57,10 +57,14 @@ def get(rec, *names):
 
 def main():
     os.makedirs(DATA, exist_ok=True)
-    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=365)).strftime("%Y-%m-%d")
+    # Three-year window: low-tier ERL rosters (PRM 2nd/3rd Division and similar) change
+    # slowly at the org level, and earlier seasons are what lift thin teams over the
+    # MIN_MATCHES_RELIABLE bar with *verified* results rather than a prior. The Elo pass
+    # already applies a 365-day half-life, so old rows decay instead of dominating.
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1095)).strftime("%Y-%m-%d")
 
     rows, offset, page = [], 0, 500
-    while len(rows) < 8000:
+    while len(rows) < 24000:
         params = {
             "tables": "MatchSchedule",
             "fields": ",".join(FIELDS),

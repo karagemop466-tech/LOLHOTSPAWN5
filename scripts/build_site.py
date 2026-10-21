@@ -12,7 +12,7 @@ OUT = "."
 TITLE = "Hotspawn LoL Pick Desk"
 
 METHOD_LABEL = {
-    "market": ("Market line", "m-market", "Priced by an external sportsbook (Pinnacle)."),
+    "market": ("Market line", "m-market", "Priced by an external market (Pinnacle / Kalshi / Bovada)."),
     "model": ("Own model", "m-model", "No bookmaker price; probability from our Elo model."),
     "unresolved": ("No pick", "m-none", "Neither a market nor the model can justify a number."),
 }
@@ -134,10 +134,11 @@ def source_links(r):
     else:
         out.append('<span class="unver">no Hotspawn page</span>')
     if r.get("method") == "market":
+        src = r.get("market_source") or "External book"
         if r.get("market_api_url"):
-            out.append(f'<a href="{esc(r["market_api_url"])}" rel="noopener">Pinnacle API price</a>')
+            out.append(f'<a href="{esc(r["market_api_url"])}" rel="noopener">{esc(src)} API price</a>')
         if r.get("market_url"):
-            out.append(f'<a href="{esc(r["market_url"])}" rel="noopener">Pinnacle market</a>')
+            out.append(f'<a href="{esc(r["market_url"])}" rel="noopener">{esc(src)} market</a>')
     if r.get("method") == "model":
         if r.get("model_url"):
             out.append(f'<a href="{esc(r["model_url"])}" rel="noopener">'
@@ -174,8 +175,11 @@ def pick_card(r):
         for p in r["market_american"]:
             if p.get("american") is not None:
                 parts.append(f'{esc(p.get("team"))} {p.get("american"):+d}')
+            elif p.get("yes_bid_dollars") is not None:
+                parts.append(f'{esc(p.get("team"))} bid {p.get("yes_bid_dollars")} / ask {p.get("yes_ask_dollars")}')
         if parts:
-            market_note = f'<div class="meta-line">Pinnacle moneyline: {esc(", ".join(parts))}</div>'
+            src = r.get("market_source") or "External book"
+            market_note = f'<div class="meta-line">{esc(src)} line: {esc(", ".join(parts))}</div>'
     elif method == "model" and r.get("no_market_reason"):
         market_note = (f'<div class="meta-line muted">No bookmaker market: '
                        f'{esc(r["no_market_reason"])}</div>')
@@ -269,26 +273,43 @@ def build_index(doc):
     <p><strong>Picks.</strong> <strong>{upcoming_picked} of {len(live)} upcoming fixtures</strong>
     carry a pick with a probability — {coverage}% coverage. Two independent methods produce them:</p>
     <ul>
-      <li><strong>{len(priced)} market-priced</strong> — a real Pinnacle moneyline exists and was
-      de-vigged. This covers the Worlds 2026 Swiss stage and EMEA Masters, the tournaments the
-      sportsbooks actually price. <a href="picks.html?method=market">Browse market-priced picks →</a></li>
+      <li><strong>{len(priced)} market-priced</strong> — a real external moneyline exists
+      (Pinnacle bookmaker, Kalshi exchange, Bovada when it answers) and was de-vigged. This covers the
+      tournaments the books and exchanges actually price. <a href="picks.html?method=market">Browse market-priced picks →</a></li>
       <li><strong>{len(model)} model-priced</strong> — no bookmaker quotes the match, so the number comes
       from our Elo rating built on {doc.get('results_rows', 0)} historical results
       ({doc.get('teams_rated', 0)} teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
     </ul>
 
-    <p><strong>Unresolved.</strong> <strong>{len(unres)} of {t['matches']} fixtures</strong> have no
-    published number, for one of two stated reasons: <strong>{n_stale}</strong> are stale rows whose
-    kickoff has passed with no result published anywhere, and <strong>{n_thin}</strong> have no
-    bookmaker market plus fewer than three rated results for at least one team — below that bar a
-    model output is mostly the 1500-Elo prior. Each row is listed with its exact limitation and what
-    would resolve it on the <a href="unresolved.html">Unresolved &amp; Limitations page →</a>.
-    Nothing is filled in with a guess.</p>
-
-    <p><strong>Sourcing rule.</strong> Sportsbooks and prediction markets only. Hotspawn supplies the
+    <p><strong>Sourcing rule.</strong> Sportsbooks, exchanges and prediction markets only. Hotspawn supplies the
     <em>fixture list</em> and nothing else — its "picked %" is a popularity poll and is deliberately
     excluded from the probability calculation.
     <a href="sources.html">Source register →</a></p>
+  </div>
+</section>
+
+<section class="panel" id="unresolved-limits">
+  <h2>Unresolved picks &amp; limitations</h2>
+  <p class="sub">Matches we cannot give a defensible pick for — and exactly what is missing.</p>
+  <div class="prose">
+    <p><strong>{len(unres)} of {t['matches']} fixtures</strong> are published <strong>blank</strong>,
+    with the limitation and the remedy on the row. Nothing is filled in with a guess. The limitations
+    fall into two categories:</p>
+    <ul>
+      <li><strong>{n_stale} stale fixtures</strong> — the kickoff has already passed but Hotspawn still
+      lists the row as <em>scheduled</em> and no source publishes a result. A pick could not be acted on,
+      and any figure would be hindsight.</li>
+      <li><strong>{n_thin} insufficient-history fixtures</strong> — no bookmaker, exchange or
+      prediction-market line covers the match, and at least one team has fewer than three verified
+      completed results on Leaguepedia. Below that bar our Elo output is mostly a 1500 prior, i.e. a
+      guess wearing a percentage. We tried the established esportsbooks (GG.BET, BC.GAME, N1 Bet,
+      Melbet, Thunderpick, Rivalry, 1xBet, EGamersWorld) — see the <a href="sources.html">source
+      register</a> for what each returned.</li>
+    </ul>
+    <p>Per-match detail (team, tournament, exact limitation, what would resolve it):
+    <a class="btn" href="unresolved.html">Open Unresolved picks &amp; limitations →</a></p>
+    <p class="muted">A row moves off this list automatically on a later refresh when either an
+    external moneyline appears or the team reaches three rated results.</p>
   </div>
 </section>
 
@@ -490,17 +511,24 @@ def build_methodology(doc):
   their Hotspawn pick share, and the link to the Hotspawn match page.</p>
 
   <h2>2. External market lines</h2>
-  <p>We query Pinnacle's guest API for every league whose name contains
-  <em>League of Legends</em>, take the period-0 <code>moneyline</code> market, and convert American
-  odds to implied probability:</p>
+  <p>We query three external price sources, in priority order — <strong>Pinnacle</strong> (sharp
+  bookmaker guest API), <strong>Kalshi</strong> (exchange, series <code>KXLOLGAME</code>, per-match
+  binary moneylines) and <strong>Bovada</strong> (best-effort). For Pinnacle we take the period-0
+  <code>moneyline</code> market and convert American odds to implied probability:</p>
   <pre>p = 100 / (price + 100)        if price &gt; 0
 p = -price / (-price + 100)    if price &lt; 0</pre>
-  <p>Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
+  <p>For Kalshi we take the midpoint of each side's yes bid/ask in dollars. Prices include a margin
+  (vig or spread), so the two implied probabilities sum to more than 1. They are
   de-vigged proportionally:</p>
   <pre>p_no_vig(a) = p(a) / (p(a) + p(b))</pre>
   <p>A Hotspawn fixture only takes a market price when <strong>both</strong> team names match the
-  Pinnacle matchup and the two start times agree within {m.get('market_tolerance_hours'):g} hours.
-  Any partial match is discarded — a wrong join is worse than no join.</p>
+  external matchup and the two start times agree within {m.get('market_tolerance_hours'):g} hours.
+  When more than one source matches, the highest-priority source wins and the row's source links show
+  which price was used. Any partial match is discarded — a wrong join is worse than no join.
+  Established esportsbooks (GG.BET, BC.GAME, N1 Bet, Melbet, Thunderpick, Rivalry, 1xBet,
+  EGamersWorld) are probed every refresh for low-tier lines; their availability is recorded in the
+  <a href="sources.html">source register</a>, and no price is ever taken from a probe that did not
+  actually return parseable prices.</p>
 
   <h2>3. Our own Elo model</h2>
   <p>For fixtures no bookmaker prices, we rate teams ourselves from
@@ -522,7 +550,8 @@ R_effective = {int(m.get('elo_start', 1500))} + (R - {int(m.get('elo_start', 150
     <table class="data">
       <thead><tr><th>Tier</th><th>Rule</th><th>Meaning</th></tr></thead>
       <tbody>
-        <tr><td data-l="Tier">Market-priced</td><td data-l="Rule">A matched Pinnacle moneyline</td>
+        <tr><td data-l="Tier">Market-priced</td><td data-l="Rule">A matched external moneyline
+            (Pinnacle / Kalshi / Bovada)</td>
             <td data-l="Meaning">External price; strongest evidence on the site.</td></tr>
         <tr><td data-l="Tier">High</td><td data-l="Rule">Both teams ≥ 20 rated results</td>
             <td data-l="Meaning">Model has a solid sample.</td></tr>
@@ -551,9 +580,11 @@ R_effective = {int(m.get('elo_start', 1500))} + (R - {int(m.get('elo_start', 150
       a model, not dressed up as a market.</li>
     <li><strong>We never backfill a missing value.</strong> Blank stays blank and is published on the
       <a href="review.html">Flagged for review</a> page.</li>
-    <li><strong>We do not use Polymarket or Kalshi per-match prices</strong> in this snapshot, because
-      neither had a live market for the fixtures in the board (see the
-      <a href="unresolved.html">Unresolved page</a>).</li>
+    <li><strong>We only use Polymarket or Kalshi when a live per-match market matches a board
+      fixture.</strong> Kalshi <code>KXLOLGAME</code> per-match exchange prices are ingested and used
+      like a bookmaker price (de-vigged). Polymarket's open LoL markets have been outright/historical
+      rather than per-match; when that changes they will be used the same way. Outright futures are
+      never converted into a per-match probability.</li>
   </ul>
 
   <h2>6. Refresh cadence</h2>
@@ -591,24 +622,53 @@ def build_sources(doc):
         ("Polymarket — League of Legends",
          "https://polymarket.com/markets/esports/lol",
          "Prediction-market prices (candidate source)",
-         "Live markets in this snapshot were historical, not for board fixtures",
-         "Not used for any pick. Recorded as unavailable for these matches."),
-        ("Kalshi — KXLOL",
-         "https://kalshi.com/markets/kxlol",
-         "Prediction-market prices (candidate source)",
-         "Only a Worlds 2026 outright winner market was open",
-         "Outright only — cannot price an individual fixture."),
+         "Open LoL markets are outrights/historical rather than per-board-fixture",
+         "Not used for any pick unless a live per-match market matches a board fixture. "
+         "Outrights are never converted into a per-match probability."),
+        ("Kalshi — KXLOLGAME (per-match)",
+         "https://kalshi.com/markets/kxlolgame-26oct220800slygal",
+         "Per-match exchange moneylines (bid/ask midpoints, de-vigged)",
+         "Ingested every refresh; each priced row cites its event ticker and API URL",
+         "Covers the tournaments Kalshi lists (Worlds 2026, EMEA Masters at last check). "
+         "Spread removal is proportional de-vig, same as a bookmaker."),
         ("Bovada — League of Legends",
          "https://www.bovada.lv/sports/esports/league-of-legends",
          "Secondary bookmaker (candidate source)",
-         "Public JSON endpoint returned HTTP 400 on collection",
-         "Not used. No prices were obtained, so none are shown."),
+         "Public JSON endpoint recorded best-effort each refresh",
+         "Used only if it answers with parseable prices; otherwise none are shown."),
         ("OddsPortal — League of Legends",
          "https://www.oddsportal.com/esports/league-of-legends/",
          "Bookmaker odds aggregator (candidate source)",
          "Page reachable (HTTP 200) but prices are loaded client-side",
          "Not used. No prices were scraped from it."),
     ]
+    # Established esportsbooks / odds sites probed every refresh for low-tier lines.
+    # Statuses are read from the live capture, never summarised from memory.
+    try:
+        with open("data/market_lines.json", encoding="utf-8") as fh:
+            ml = json.load(fh)
+        for b in ml.get("book_probes") or []:
+            status = b.get("status")
+            ok = status == 200
+            rows.append((
+                b.get("name") or "esportsbook probe",
+                b.get("url"),
+                "Esportsbook probe for low-tier LoL moneylines (tried per refresh)",
+                f"Latest probe: HTTP {status}" + (f", {b.get('body_bytes')} bytes" if ok else ""),
+                b.get("note") or ("Reachable; no stable per-match price feed parsed, so no price "
+                                  "is used from it."),
+            ))
+        kn = len((ml.get("kalshi") or {}).get("matchups") or [])
+        pn = len((ml.get("pinnacle") or {}).get("matchups") or [])
+        rows.append((
+            "Capture summary (this snapshot)",
+            "data/market_lines.json",
+            "Raw verbatim prices behind every market-priced row",
+            f"{pn} Pinnacle matchups priced, {kn} Kalshi matchups priced",
+            "American prices / dollar bid-ask stored verbatim; de-vig shown on each row.",
+        ))
+    except FileNotFoundError:
+        pass
     trs = "".join(f"""
       <tr>
         <td data-l="Source"><a href="{esc(u)}" rel="noopener">{esc(n)}</a></td>
@@ -649,6 +709,15 @@ def build_review(doc):
 
     dq = doc.get("data_quality", {})
     items = [
+        ("Team-name join rules were tightened (documented change)",
+         "Two matching rules changed in the results join and are flagged here for review. "
+         "(1) Leaguepedia disambiguator suffixes such as \"(Norwegian Team)\" are stripped before "
+         "matching, because they are wiki metadata rather than team names. "
+         "(2) The token \"academy\" is no longer dropped during normalisation: dropping it conflated "
+         "academy rosters with parent orgs (e.g. Babos Gaming Academy vs Babos Gaming), which are "
+         "different squads. A missed join leaves a row unresolved; a wrong join would fabricate "
+         "evidence, so the safer direction was chosen.",
+         "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule"),
         ("One Leaguepedia row is dated in the future yet already carries a winner",
          f"Of {dq.get('leaguepedia_rows', 0)} completed rows pulled from Leaguepedia, "
          f"{dq.get('leaguepedia_future_dated_rows', 0)} has a kickoff time after the collection "

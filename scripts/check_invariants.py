@@ -86,7 +86,7 @@ def main():
             if method == "market":
                 if not (r.get("market_api_url") or r.get("market_url")):
                     errors.append(f"{tag}: market row has no source URL")
-                if r.get("market_source") != "Pinnacle":
+                if r.get("market_source") not in ("Pinnacle", "Kalshi", "Bovada"):
                     warnings.append(f"{tag}: unexpected market_source {r.get('market_source')!r}")
                 mstart = iso(r.get("market_start_utc"))
                 hstart = iso(r.get("start_utc"))
