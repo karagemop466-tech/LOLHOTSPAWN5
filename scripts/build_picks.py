@@ -213,6 +213,7 @@ def main() -> int:
         rating_a = (info_a or {}).get("rating")
         rating_b = (info_b or {}).get("rating")
         model_prob, model_reason = predict(rating_a, rating_b)
+        model_has_data = model_prob is not None
         if model_prob is None:
             model_prob, model_reason = 0.5, "no verified match history for at least one team"
             flags.append("no verified match history for at least one team")
@@ -247,8 +248,12 @@ def main() -> int:
             flags.append("only a single-map price is published for this fixture")
         else:
             headline = model_prob
-            confidence = "model"
-            basis = "our own line (Elo over verified results)"
+            if model_has_data:
+                confidence = "model"
+                basis = "our own line (Elo over verified results)"
+            else:
+                confidence = "default"
+                basis = "no verified line or history - flat 50% default"
             flags.append("no external betting line published for this fixture")
 
         prob_a = headline

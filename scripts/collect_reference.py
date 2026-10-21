@@ -177,11 +177,28 @@ def search_titles(http: Http, query: str, limit: int = 8) -> list[str]:
     return [s.get("title") for s in (data.get("query") or {}).get("search", []) if s.get("title")]
 
 
+SUBPAGE_SUFFIXES = ("/picks and bans", "/scoreboards", "/player statistics", "/match history",
+                     "/team rosters", "/champion statistics", "/statistics", "/schedule history",
+                     "/overview", "/results", "/match day")
+
+
 def pick_best_title(query: str, candidates: list[str]) -> tuple[str | None, float]:
+    """Pick the wiki page that best matches a HotSpawn name.
+
+    Sub-pages (statistics, picks and bans, ...) are penalised: the tournament
+    page itself is the one that carries the match list.
+    """
     best, best_score = None, 0.0
+    query_years = {token for token in norm_name(query).split() if token.isdigit() and len(token) == 4}
     for candidate in candidates:
         score = team_match_score(query, candidate)
-        # prefer pages whose year matches the query
+        lowered = candidate.lower()
+        if any(lowered.endswith(suffix) for suffix in SUBPAGE_SUFFIXES):
+            score -= 0.35
+        candidate_years = {token for token in norm_name(candidate).split()
+                           if token.isdigit() and len(token) == 4}
+        if query_years and candidate_years & query_years:
+            score += 0.05
         if score > best_score:
             best, best_score = candidate, score
     return best, best_score

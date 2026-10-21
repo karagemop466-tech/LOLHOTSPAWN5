@@ -60,7 +60,7 @@ def check_picks() -> list[str]:
         label = f"{pick.get('tournament')} / {pick.get('fixture_id')}"
         sources = [row.get("source_url") for row in pick.get("market_sources") or []
                    if row.get("source_url")]
-        sources += [pick.get("hotspawn_url")]
+        sources += [pick.get("hotspawn_url"), pick.get("hotspawn_lobby")]
         sources += [pick["team_a"].get("source_url"), pick["team_b"].get("source_url")]
         sources = [s for s in sources if s]
         if not sources:

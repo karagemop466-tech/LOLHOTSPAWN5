@@ -159,10 +159,17 @@ def pick_card(pick: dict) -> str:
     for row in pick.get("market_sources") or []:
         label = f'{row.get("source")} ({row.get("scope")})'
         sources.append(f'<a href="{e(row.get("source_url"))}" target="_blank" rel="noopener">{e(label)}</a>')
+    for side in ("team_a", "team_b"):
+        team = pick.get(side) or {}
+        if team.get("source_url"):
+            sources.append(f'<a href="{e(team.get("source_url"))}" target="_blank" rel="noopener">'
+                           f'Leaguepedia: {e(team.get("name"))}</a>')
     if pick.get("hotspawn_url"):
         sources.append(f'<a href="{e(pick.get("hotspawn_url"))}" target="_blank" rel="noopener">HotSpawn match page</a>')
-    if not sources:
-        sources.append('<span class="chip flag">no external source for this fixture</span>')
+    else:
+        sources.append(f'<a href="{e(pick.get("hotspawn_lobby"))}" target="_blank" rel="noopener">HotSpawn board</a>')
+    if not pick.get("market_sources"):
+        sources.append('<span class="chip flag">no external line for this fixture</span>')
 
     chips = [f'<span class="chip {conf}">{e(conf_label)}</span>',
              f'<span class="chip pick">Pick: {e(winner)} ({pct(pick.get("pick_prob"))})</span>']
