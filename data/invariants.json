@@ -1,0 +1,14 @@
+{
+ "checked_utc": "2026-10-21T20:50:57Z",
+ "rows": 264,
+ "by_method": {
+  "market": 9,
+  "model": 145,
+  "unresolved": 110
+ },
+ "with_a_pick": 154,
+ "errors": [],
+ "warnings": [],
+ "notes": [],
+ "status": "pass"
+}
