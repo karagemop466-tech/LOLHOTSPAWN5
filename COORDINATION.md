@@ -119,4 +119,13 @@ read-only inputs.
 - Verification performed before the PR: `scripts/verify.py` → 0 errors, 0 warnings over 264 rows and 6 pages;
   results cross-check 948/951 agree; every market-backed row recomputes to its published probability.
 - PR: **#2** — https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/2
-- Merge result: recorded in the follow-up documentation commit after the deploy check.
+- **Merge result: squash-merged** at 2026-10-21T20:38:16Z, merge commit `396c562`.
+- **Pages deploy: success** (`pages build and deployment`, 2026-10-21T20:38:19Z). Live check of
+  https://karagemop466-tech.github.io/LOLHOTSPAWN5/ returned the new executive summary with 264 fixtures,
+  171 picks, 9 market-backed and 93 unresolved.
+- **Automation proof on main:** the merge triggered `refresh-picks`, which completed successfully at
+  20:39:36Z and committed `e1b4c23` (data + regenerated pages) with `data/verification.json` passing.
+- Follow-up fixes after the live check (this PR): tier label rendered as a bare letter; next-run time was
+  computed from the generated timestamp instead of the cron slots (00/06/12/18:17 UTC); Kalshi source links
+  now point at the exact public API query (the human page URL could not be verified — HTTP 429 from CI).
+- Remaining flagged items do not block publication; they are on `/review/`.

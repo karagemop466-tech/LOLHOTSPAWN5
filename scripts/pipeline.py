@@ -327,7 +327,9 @@ def collect_kalshi() -> dict:
                 "start_utc": e["start"].isoformat().replace("+00:00", "Z"),
                 "teams": [e["rows"][0]["team"], e["rows"][1]["team"]],
                 "probs": [p / total for p in prices],
-                "url": f"https://kalshi.com/markets/{ev.lower()}",
+                "url": (f"{KALSHI}/markets?series_ticker={KALSHI_GAME_SERIES}"
+                        f"&status=open&event_ticker={ev}"),
+                "page_url": "https://kalshi.com/markets/kxlolgame",
                 "retrieved_utc": NOW.isoformat().replace("+00:00", "Z"),
             }
         )
