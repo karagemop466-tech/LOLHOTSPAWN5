@@ -286,3 +286,5 @@ Claimed rows are done. Result of the lift (pipeline run 39678069533, published 2
   9 market / 145 model / 110 unresolved, `0` rows with a pick and `confidence=insufficient`,
   `0` picks on past-kickoff rows, `0` model rows missing evidence links,
   `data/invariants.json` → `pass`, 0 errors.
+
+**Merge record (coverage lift):** PR #11 merged into `main` as merge commit `612f1ff3dd4eb15966cd624f8f588efee1a78477` (2026-10-21). Deploy verified below.
