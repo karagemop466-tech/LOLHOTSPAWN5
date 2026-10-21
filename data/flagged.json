@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-21T22:57:36.957688+00:00",
- "count": 349,
+ "generated_at": "2026-10-21T23:26:09.032445+00:00",
+ "count": 377,
  "by_kind": {
   "single-book": 1,
-  "stale-listing": 66,
-  "thin-history": 71,
-  "unresolved-pick": 142,
+  "stale-listing": 67,
+  "thin-history": 60,
+  "unresolved-pick": 180,
   "unverified-link": 69
  },
  "items": [
@@ -574,6 +574,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1081652",
+   "match": "Brod n Friends vs Crownless",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T18:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/brod-n-friends-vs-crownless-4-nations-2026-halloween-heist-1081652"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1081660",
    "match": "Bulldog Esports vs Ruddy Ultras",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -934,6 +954,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075799",
+   "match": "Eintracht Spandau Zwei vs LOOKSMAXXER",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-15T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075799"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1075754",
    "match": "Eintracht Spandau Zwei vs Team 300 White",
    "tournament": "PRM 3rd Division 26-27 Fall",
@@ -946,6 +986,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-team-300-white-prm-3rd-division-26-27-fall-1075754"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075766",
+   "match": "Eintracht Spandau Zwei vs TeamOrangeGaming Academy",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-01T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075766"
     }
    ]
   },
@@ -1034,6 +1094,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1066214",
+   "match": "Epic Avalanche vs Finnish Red Mafia",
+   "tournament": "FPL 2026 Summer Playoffs",
+   "start_utc": "2026-08-27T15:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/epic-avalanche-vs-finnish-red-mafia-fpl-2026-summer-playoffs-1066214"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1081086",
    "match": "Final Level eSports Academy vs Infinity Gaming",
    "tournament": "LigaGG CELOL B 2026 Split 2 Playoffs",
@@ -1046,6 +1126,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/final-level-esports-academy-vs-infinity-gaming-ligagg-celol-b-2026-split-2-playoffs-1081086"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1074654",
+   "match": "FlameHard vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-24T16:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/flamehard-vs-b2u-rivals-league-season-2-1074654"
     }
    ]
   },
@@ -1134,6 +1234,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1081662",
+   "match": "Glorp Cat vs Brod n Friends",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T19:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/glorp-cat-vs-brod-n-friends-4-nations-2026-halloween-heist-1081662"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1081668",
    "match": "Glorp Cat vs Crownless",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -1214,6 +1334,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1081423",
+   "match": "Ground Zero Gaming vs Frank Esports",
+   "tournament": "LCP 2027 Promotion",
+   "start_utc": "2026-11-11T09:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/ground-zero-gaming-vs-frank-esports-lcp-2027-promotion-1081423"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1081654",
    "match": "HL Tauri Esports vs Bulldog Esports",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -1274,6 +1414,66 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1080924",
+   "match": "JSK Esports vs El Menzah Esports",
+   "tournament": "Tunisian Super League 2026",
+   "start_utc": "2026-10-24T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/jsk-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080924"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1080928",
+   "match": "JSK Esports vs Enfida Esports",
+   "tournament": "Tunisian Super League 2026",
+   "start_utc": "2026-10-25T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/jsk-esports-vs-enfida-esports-tunisian-super-league-2026-1080928"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1080934",
+   "match": "JSK Esports vs Olympique Mnihla",
+   "tournament": "Tunisian Super League 2026",
+   "start_utc": "2026-10-31T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/jsk-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080934"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1080923",
    "match": "Jendouba Esports vs Enfida Esports",
    "tournament": "Tunisian Super League 2026",
@@ -1306,6 +1506,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/kanji-esports-kin-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075770"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1073177",
+   "match": "Karolinerna Black vs Lundqvist Lightside",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-09-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
     }
    ]
   },
@@ -1366,6 +1586,66 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-turbo-gaming-rivals-league-season-2-1074655"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1053536",
+   "match": "LANdits vs Frites Esports Club",
+   "tournament": "POP Esports Masters Season 7",
+   "start_utc": "2026-09-19T21:59:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075781",
+   "match": "LOOKSMAXXER vs 1. Esport Club Frankfurt e.V.",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-08T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/looksmaxxer-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075781"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075771",
+   "match": "LOOKSMAXXER vs Whalepower Humpbacks",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-01T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/looksmaxxer-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075771"
     }
    ]
   },
@@ -1466,6 +1746,46 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-turbo-gaming-rivals-league-season-2-1074639"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1073172",
+   "match": "Lund Esports Organization vs Karolinerna Black",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-09-20T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1074663",
+   "match": "Lundqvist Darkside vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-25T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-b2u-rivals-league-season-2-1074663"
     }
    ]
   },
@@ -1594,6 +1914,46 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1082258",
+   "match": "Mazepa vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-24T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/mazepa-vs-b2u-rivals-league-season-2-1082258"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1079080",
+   "match": "Mental Rush vs Vitality Rising Bees",
+   "tournament": "LGC Rising 2026 Playoffs",
+   "start_utc": "2026-10-27T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/mental-rush-vs-vitality-rising-bees-lgc-rising-2026-playoffs-1079080"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1071168",
    "match": "Mixlag fra Trondheim vs CNG Royal",
    "tournament": "Komplettligaen 2026 Autumn",
@@ -1634,6 +1994,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1076571",
+   "match": "Nameless vs Triforce Esport",
+   "tournament": "Benelux Ascend Series 2027 Winter Promotion",
+   "start_utc": "2026-10-14T18:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1075783",
    "match": "Neko Elite Kittens vs Berlin 5",
    "tournament": "PRM 3rd Division 26-27 Fall",
@@ -1646,6 +2026,46 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-berlin-5-prm-3rd-division-26-27-fall-1075783"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075755",
+   "match": "Neko Elite Kittens vs spongecord prime",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-10-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075755"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1074642",
+   "match": "Northern Wolves Esports vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-11T16:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
     }
    ]
   },
@@ -1814,6 +2234,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1073186",
+   "match": "OnlyWinByFF vs B2U",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-10-10T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1074664",
    "match": "OnlyWinByFF vs Mazepa",
    "tournament": "RIVALS LEAGUE Season 2",
@@ -1926,6 +2366,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-cloud-esport-prm-3rd-division-26-27-fall-1075784"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1071217",
+   "match": "Phenti vs VES Japan",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-10-21T15:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
     }
    ]
   },
@@ -2094,6 +2554,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075758",
+   "match": "Rich Gang vs LOOKSMAXXER",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-10-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/rich-gang-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075758"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1071212",
    "match": "Rich Gang vs Phenti",
    "tournament": "Komplettligaen 2026 Autumn",
@@ -2226,6 +2706,46 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-berlin-5-prm-3rd-division-26-27-fall-1075759"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075804",
+   "match": "Second Time Alive Revival vs spongecord prime",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-15T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075804"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1080941",
+   "match": "Simplicity Gaming vs JSK Esports",
+   "tournament": "Tunisian Super League 2026",
+   "start_utc": "2026-11-01T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jsk-esports-tunisian-super-league-2026-1080941"
     }
    ]
   },
@@ -2374,6 +2894,26 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1071170",
+   "match": "Solid Gaming vs VES Japan",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-09-17T15:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1080946",
    "match": "Supreme Leaders vs Jendouba Esports",
    "tournament": "Tunisian Super League 2026",
@@ -2474,6 +3014,46 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1073183",
+   "match": "Team Lucidity Esports vs Lund Esports Organization",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-10-05T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1079556",
+   "match": "Team Lucidity Esports vs Lund Esports Organization",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-10-09T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1074666",
    "match": "Team Lucidity Esports vs Team cd",
    "tournament": "RIVALS LEAGUE Season 2",
@@ -2526,6 +3106,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-les-ravages-benelux-ascend-series-rising-2026-summer-playoffs-1069680"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1081672",
+   "match": "Team Vertex vs Brod n Friends",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T20:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-vertex-vs-brod-n-friends-4-nations-2026-halloween-heist-1081672"
     }
    ]
   },
@@ -2614,6 +3214,46 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075806",
+   "match": "TeamOrangeGaming Academy vs Socken und Sandalen",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-15T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/teamorangegaming-academy-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075806"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1069681",
+   "match": "The Bandits Academy vs Triforce Esport",
+   "tournament": "Benelux Ascend Series Rising 2026 Summer Playoffs",
+   "start_utc": "2026-09-20T11:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1081664",
    "match": "The Bandits UK vs PNS",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -2626,6 +3266,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/the-bandits-uk-vs-pns-4-nations-2026-halloween-heist-1081664"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1070209",
+   "match": "Triforce Esport vs Venus",
+   "tournament": "Benelux Ascend Series Rising 2026 Summer Playoffs",
+   "start_utc": "2026-09-12T11:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
     }
    ]
   },
@@ -2694,6 +3354,46 @@
    "severity": "high",
    "title": "No resolvable probability — nominal 50/50 pick",
    "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1071218",
+   "match": "Volda E-Sport vs CNG Royal",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-10-22T15:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1071206",
+   "match": "Volda E-Sport vs Solid Gaming",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-10-11T15:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
    "fixture_id": "1075731",
    "match": "Whalepower Humpbacks vs 1. Esport Club Frankfurt e.V.",
    "tournament": "PRM 3rd Division 26-27 Fall",
@@ -2726,6 +3426,26 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075761"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075791",
+   "match": "Whalepower Humpbacks vs TeamOrangeGaming Academy",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-08T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075791"
     }
    ]
   },
@@ -2850,22 +3570,42 @@
    ]
   },
   {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 2 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1081652",
-   "match": "Brod n Friends vs Crownless",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T18:00:00+00:00",
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075774",
+   "match": "spongecord prime vs Duplex Silva Pigeons Edition",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-01T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Brod n Friends",
-     "url": "https://lol.fandom.com/wiki/Brod_n_Friends"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/spongecord-prime-vs-duplex-silva-pigeons-edition-prm-3rd-division-26-27-fall-1075774"
+    }
+   ]
+  },
+  {
+   "kind": "unresolved-pick",
+   "severity": "high",
+   "title": "No resolvable probability — nominal 50/50 pick",
+   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
+   "fixture_id": "1075789",
+   "match": "spongecord prime vs Emperors Bremen",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-11-08T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/spongecord-prime-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075789"
     }
    ]
   },
@@ -2873,7 +3613,207 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 5 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079047",
+   "match": "404 Multigaming e.V. vs DKB XPERION NXT",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-06T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: 404 Multigaming e.V.",
+     "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 5 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079029",
+   "match": "404 Multigaming e.V. vs VfB eSports",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-25T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: 404 Multigaming e.V.",
+     "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079025",
+   "match": "AceGaming vs Babos Gaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-23T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: AceGaming",
+     "url": "https://lol.fandom.com/wiki/AceGaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079051",
+   "match": "AceGaming vs BvP",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-08T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: AceGaming",
+     "url": "https://lol.fandom.com/wiki/AceGaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079059",
+   "match": "AceGaming vs Hannover Esports e.V.",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-15T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: AceGaming",
+     "url": "https://lol.fandom.com/wiki/AceGaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079851",
+   "match": "AceGaming vs reGOLD eSport",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-30T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: AceGaming",
+     "url": "https://lol.fandom.com/wiki/AceGaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 2 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079027",
+   "match": "Babos Gaming vs Hannover Esports e.V.",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Babos Gaming",
+     "url": "https://lol.fandom.com/wiki/Babos_Gaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 2 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079039",
+   "match": "Babos Gaming vs No Need Orga",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-01T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Babos Gaming",
+     "url": "https://lol.fandom.com/wiki/Babos_Gaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 2 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079060",
+   "match": "Babos Gaming vs Reveal Multigaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-15T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Babos Gaming",
+     "url": "https://lol.fandom.com/wiki/Babos_Gaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 6 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079049",
+   "match": "BvP vs Babos Gaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-06T19:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: BvP",
+     "url": "https://lol.fandom.com/wiki/BvP"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 2 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077729",
    "match": "Chuds vs Cool Beans Team",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -2893,7 +3833,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 2 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077722",
    "match": "Chuds vs Smá Nibu",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -2913,7 +3853,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 22 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 3 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079031",
    "match": "DKB XPERION NXT vs Phong Vũ Buffalo",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -2933,19 +3873,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075799",
-   "match": "Eintracht Spandau Zwei vs LOOKSMAXXER",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-15T16:00:00+00:00",
+   "detail": "Only 3 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079037",
+   "match": "DKB XPERION NXT vs regnum4games",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-30T19:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Eintracht Spandau Zwei",
-     "url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei"
+     "label": "Leaguepedia: DKB XPERION NXT",
+     "url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT"
     }
    ]
   },
@@ -2953,27 +3893,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 81 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075766",
-   "match": "Eintracht Spandau Zwei vs TeamOrangeGaming Academy",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-01T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Eintracht Spandau Zwei",
-     "url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077726",
    "match": "Fenrir vs Cool Beans Team",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -2993,7 +3913,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077723",
    "match": "Fenrir vs Grísirnir",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3013,27 +3933,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1074654",
-   "match": "FlameHard vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-24T16:30:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: FlameHard",
-     "url": "https://lol.fandom.com/wiki/FlameHard"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 39 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 29 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1061779",
    "match": "Frost Tails vs LAST DANCE",
    "tournament": "Benelux Ascend Series 2026 Summer Playoffs",
@@ -3053,19 +3953,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1081662",
-   "match": "Glorp Cat vs Brod n Friends",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T19:00:00+00:00",
+   "detail": "Only 4 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079033",
+   "match": "Hannover Esports e.V. vs No Need Orga",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-27T19:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Glorp Cat",
-     "url": "https://lol.fandom.com/wiki/Glorp_Cat"
+     "label": "Leaguepedia: Hannover Esports e.V.",
+     "url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V."
     }
    ]
   },
@@ -3073,19 +3973,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 2 / 35 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1081423",
-   "match": "Ground Zero Gaming vs Frank Esports",
-   "tournament": "LCP 2027 Promotion",
-   "start_utc": "2026-11-11T09:00:00+00:00",
+   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1080944",
+   "match": "JSK Academy vs JSK Esports",
+   "tournament": "Tunisian Super League 2026",
+   "start_utc": "2026-11-07T17:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Ground Zero Gaming",
-     "url": "https://lol.fandom.com/wiki/Ground_Zero_Gaming"
+     "label": "Leaguepedia: JSK Academy",
+     "url": "https://lol.fandom.com/wiki/JSK_Academy"
     }
    ]
   },
@@ -3093,7 +3993,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080939",
    "match": "JSK Academy vs Jendouba Esports",
    "tournament": "Tunisian Super League 2026",
@@ -3113,7 +4013,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080933",
    "match": "JSK Academy vs Supreme Leaders",
    "tournament": "Tunisian Super League 2026",
@@ -3126,146 +4026,6 @@
     {
      "label": "Leaguepedia: JSK Academy",
      "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 77 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1080924",
-   "match": "JSK Esports vs El Menzah Esports",
-   "tournament": "Tunisian Super League 2026",
-   "start_utc": "2026-10-24T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 77 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1080928",
-   "match": "JSK Esports vs Enfida Esports",
-   "tournament": "Tunisian Super League 2026",
-   "start_utc": "2026-10-25T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 77 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1080934",
-   "match": "JSK Esports vs Olympique Mnihla",
-   "tournament": "Tunisian Super League 2026",
-   "start_utc": "2026-10-31T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1073177",
-   "match": "Karolinerna Black vs Lundqvist Lightside",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-09-25T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 73 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1053536",
-   "match": "LANdits vs Frites Esports Club",
-   "tournament": "POP Esports Masters Season 7",
-   "start_utc": "2026-09-19T21:59:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: LANdits",
-     "url": "https://lol.fandom.com/wiki/LANdits"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 5 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075781",
-   "match": "LOOKSMAXXER vs 1. Esport Club Frankfurt e.V.",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-08T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: LOOKSMAXXER",
-     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 5 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075771",
-   "match": "LOOKSMAXXER vs Whalepower Humpbacks",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-01T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: LOOKSMAXXER",
-     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
     }
    ]
   },
@@ -3293,7 +4053,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 22 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079030",
    "match": "Locked IN vs DKB XPERION NXT",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3333,7 +4093,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 112 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079048",
    "match": "Locked IN vs VfB eSports",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3353,51 +4113,11 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 5 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1073172",
-   "match": "Lund Esports Organization vs Karolinerna Black",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-09-20T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1074663",
-   "match": "Lundqvist Darkside vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-25T18:30:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Lundqvist Darkside",
-     "url": "https://lol.fandom.com/wiki/Lundqvist_Darkside"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 31 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079041",
-   "match": "MT1 Esports vs Locked IN",
+   "detail": "Only 9 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079045",
+   "match": "MT1 Esports vs DKB XPERION NXT",
    "tournament": "PRM 2nd Division 26-27 Fall",
-   "start_utc": "2026-11-01T18:30:00+00:00",
+   "start_utc": "2026-11-03T19:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
@@ -3413,19 +4133,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1082258",
-   "match": "Mazepa vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-24T17:00:00+00:00",
+   "detail": "Only 9 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079041",
+   "match": "MT1 Esports vs Locked IN",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-01T18:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Mazepa",
-     "url": "https://lol.fandom.com/wiki/Mazepa"
+     "label": "Leaguepedia: MT1 Esports",
+     "url": "https://lol.fandom.com/wiki/MT1_Esports"
     }
    ]
   },
@@ -3453,7 +4173,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 30 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 25 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1053095",
    "match": "Mind Blue eSports vs LAST DANCE",
    "tournament": "Benelux Ascend Series 2026 Summer Split",
@@ -3473,19 +4193,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1076571",
-   "match": "Nameless vs Triforce Esport",
-   "tournament": "Benelux Ascend Series 2027 Winter Promotion",
-   "start_utc": "2026-10-14T18:00:00+00:00",
+   "detail": "Only 4 / 10 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079139",
+   "match": "NextGeneration Esports vs Pegasus Esports",
+   "tournament": "Arabian League 2nd Division 2026 Summer",
+   "start_utc": "2026-10-23T18:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Nameless",
-     "url": "https://lol.fandom.com/wiki/Nameless"
+     "label": "Leaguepedia: NextGeneration Esports",
+     "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
     }
    ]
   },
@@ -3493,19 +4213,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075755",
-   "match": "Neko Elite Kittens vs spongecord prime",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-10-25T16:00:00+00:00",
+   "detail": "Only 4 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079321",
+   "match": "NextGeneration Esports vs Slam Dunk",
+   "tournament": "Arabian League 2nd Division 2026 Summer",
+   "start_utc": "2026-10-10T18:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Neko Elite Kittens",
-     "url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens"
+     "label": "Leaguepedia: NextGeneration Esports",
+     "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
     }
    ]
   },
@@ -3513,59 +4233,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1074642",
-   "match": "Northern Wolves Esports vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-11T16:30:00+00:00",
+   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079032",
+   "match": "No Need Orga vs AceGaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-27T17:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Northern Wolves Esports",
-     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1073186",
-   "match": "OnlyWinByFF vs B2U",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-10-10T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: OnlyWinByFF",
-     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1071217",
-   "match": "Phenti vs VES Japan",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-10-21T15:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Phenti",
-     "url": "https://lol.fandom.com/wiki/Phenti"
+     "label": "Leaguepedia: No Need Orga",
+     "url": "https://lol.fandom.com/wiki/No_Need_Orga"
     }
    ]
   },
@@ -3593,7 +4273,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 31 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 9 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079053",
    "match": "Phong Vũ Buffalo vs MT1 Esports",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3613,7 +4293,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 19 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079057",
    "match": "Phong Vũ Buffalo vs regnum4games",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3633,7 +4313,47 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 95 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 7 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079028",
+   "match": "Reveal Multigaming vs AceGaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Reveal Multigaming",
+     "url": "https://lol.fandom.com/wiki/Reveal_Multigaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 7 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1082745",
+   "match": "Reveal Multigaming vs Hannover Esports e.V.",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-23T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Reveal Multigaming",
+     "url": "https://lol.fandom.com/wiki/Reveal_Multigaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 7 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079036",
    "match": "Reveal Multigaming vs Team 300",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3653,27 +4373,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075758",
-   "match": "Rich Gang vs LOOKSMAXXER",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-10-25T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Rich Gang",
-     "url": "https://lol.fandom.com/wiki/Rich_Gang"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 10 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 10 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077744",
    "match": "Rift Runners vs Cool Beans Team",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3713,7 +4413,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 10 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 10 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077727",
    "match": "Rift Runners vs Grísirnir",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3733,7 +4433,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 10 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 10 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077724",
    "match": "Rift Runners vs Whisky",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3753,27 +4453,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075804",
-   "match": "Second Time Alive Revival vs spongecord prime",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-15T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Second Time Alive Revival",
-     "url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080926",
    "match": "Simplicity Gaming vs JSK Academy",
    "tournament": "Tunisian Super League 2026",
@@ -3793,27 +4473,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 77 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1080941",
-   "match": "Simplicity Gaming vs JSK Esports",
-   "tournament": "Tunisian Super League 2026",
-   "start_utc": "2026-11-01T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Simplicity Gaming",
-     "url": "https://lol.fandom.com/wiki/Simplicity_Gaming"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 2 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077745",
    "match": "Smá Nibu vs Fenrir",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3833,7 +4493,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 12 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 2 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077731",
    "match": "Smá Nibu vs Grísirnir",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -3853,27 +4513,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1071170",
-   "match": "Solid Gaming vs VES Japan",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-09-17T15:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Solid Gaming",
-     "url": "https://lol.fandom.com/wiki/Solid_Gaming"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 4 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079050",
    "match": "Team 300 vs AceGaming",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3893,7 +4533,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 11 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 4 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079040",
    "match": "Team 300 vs Hannover Esports e.V.",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3913,7 +4553,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 4 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079062",
    "match": "Team 300 vs No Need Orga",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -3933,39 +4573,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1073183",
-   "match": "Team Lucidity Esports vs Lund Esports Organization",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-10-05T16:00:00+00:00",
+   "detail": "Only 9 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079147",
+   "match": "Team Reds vs NextGeneration Esports",
+   "tournament": "Arabian League 2nd Division 2026 Summer",
+   "start_utc": "2026-10-30T19:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079556",
-   "match": "Team Lucidity Esports vs Lund Esports Organization",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-10-09T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
+     "label": "Leaguepedia: Team Reds",
+     "url": "https://lol.fandom.com/wiki/Team_Reds"
     }
    ]
   },
@@ -3993,19 +4613,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1081672",
-   "match": "Team Vertex vs Brod n Friends",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T20:00:00+00:00",
+   "detail": "Only 5 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079054",
+   "match": "The Bandits Prime vs VfB eSports",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-08T18:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Vertex",
-     "url": "https://lol.fandom.com/wiki/Team_Vertex"
+     "label": "Leaguepedia: The Bandits Prime",
+     "url": "https://lol.fandom.com/wiki/The_Bandits_Prime"
     }
    ]
   },
@@ -4013,51 +4633,11 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 81 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075806",
-   "match": "TeamOrangeGaming Academy vs Socken und Sandalen",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-15T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: TeamOrangeGaming Academy",
-     "url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1069681",
-   "match": "The Bandits Academy vs Triforce Esport",
-   "tournament": "Benelux Ascend Series Rising 2026 Summer Playoffs",
-   "start_utc": "2026-09-20T11:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1070209",
-   "match": "Triforce Esport vs Venus",
-   "tournament": "Benelux Ascend Series Rising 2026 Summer Playoffs",
-   "start_utc": "2026-09-12T11:00:00+00:00",
+   "detail": "Only 0 / 15 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1076564",
+   "match": "Triforce Esport vs RED OUAT",
+   "tournament": "Benelux Ascend Series 2027 Winter Promotion",
+   "start_utc": "2026-10-02T17:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
@@ -4073,7 +4653,27 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 112 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 3 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079058",
+   "match": "VfB eSports vs DKB XPERION NXT",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-13T18:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: VfB eSports",
+     "url": "https://lol.fandom.com/wiki/VfB_eSports"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 3 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079038",
    "match": "VfB eSports vs Phong Vũ Buffalo",
    "tournament": "PRM 2nd Division 26-27 Fall",
@@ -4093,19 +4693,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 17 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1071218",
-   "match": "Volda E-Sport vs CNG Royal",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-10-22T15:00:00+00:00",
+   "detail": "Only 3 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079034",
+   "match": "VfB eSports vs regnum4games",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-10-27T19:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
+     "label": "Leaguepedia: VfB eSports",
+     "url": "https://lol.fandom.com/wiki/VfB_eSports"
     }
    ]
   },
@@ -4113,47 +4713,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 17 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1071206",
-   "match": "Volda E-Sport vs Solid Gaming",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-10-11T15:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 81 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075791",
-   "match": "Whalepower Humpbacks vs TeamOrangeGaming Academy",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-08T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Whalepower Humpbacks",
-     "url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 2 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077746",
    "match": "Whisky vs Chuds",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -4173,7 +4733,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 4 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 2 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1077728",
    "match": "Whisky vs Smá Nibu",
    "tournament": "Icelandic Esports League 2026 Autumn",
@@ -4193,7 +4753,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080932",
    "match": "Zahrouni Esports vs JSK Academy",
    "tournament": "Tunisian Super League 2026",
@@ -4206,6 +4766,26 @@
     {
      "label": "Leaguepedia: Zahrouni Esports",
      "url": "https://lol.fandom.com/wiki/Zahrouni_Esports"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 7 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1079852",
+   "match": "reGOLD eSport vs Babos Gaming",
+   "tournament": "PRM 2nd Division 26-27 Fall",
+   "start_utc": "2026-11-08T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: reGOLD eSport",
+     "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
     }
    ]
   },
@@ -4226,46 +4806,6 @@
     {
      "label": "Leaguepedia: reGOLD eSport",
      "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 8 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075774",
-   "match": "spongecord prime vs Duplex Silva Pigeons Edition",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-01T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: spongecord prime",
-     "url": "https://lol.fandom.com/wiki/spongecord_prime"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 8 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1075789",
-   "match": "spongecord prime vs Emperors Bremen",
-   "tournament": "PRM 3rd Division 26-27 Fall",
-   "start_utc": "2026-11-08T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: spongecord prime",
-     "url": "https://lol.fandom.com/wiki/spongecord_prime"
     }
    ]
   },
@@ -4500,12 +5040,12 @@
    "start_utc": "2026-08-27T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Epic Avalanche",
-     "url": "https://lol.fandom.com/wiki/Epic_Avalanche"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/epic-avalanche-vs-finnish-red-mafia-fpl-2026-summer-playoffs-1066214"
     }
    ]
   },
@@ -4680,12 +5220,12 @@
    "start_utc": "2026-09-25T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
     }
    ]
   },
@@ -4720,12 +5260,12 @@
    "start_utc": "2026-09-19T21:59:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: LANdits",
-     "url": "https://lol.fandom.com/wiki/LANdits"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
     }
    ]
   },
@@ -4800,12 +5340,12 @@
    "start_utc": "2026-09-20T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
     }
    ]
   },
@@ -4960,12 +5500,12 @@
    "start_utc": "2026-10-14T18:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Nameless",
-     "url": "https://lol.fandom.com/wiki/Nameless"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
     }
    ]
   },
@@ -5000,12 +5540,12 @@
    "start_utc": "2026-10-11T16:30:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Northern Wolves Esports",
-     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
     }
    ]
   },
@@ -5040,12 +5580,12 @@
    "start_utc": "2026-10-10T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: OnlyWinByFF",
-     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
     }
    ]
   },
@@ -5080,12 +5620,12 @@
    "start_utc": "2026-10-21T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Phenti",
-     "url": "https://lol.fandom.com/wiki/Phenti"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
     }
    ]
   },
@@ -5320,12 +5860,12 @@
    "start_utc": "2026-09-17T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Solid Gaming",
-     "url": "https://lol.fandom.com/wiki/Solid_Gaming"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
     }
    ]
   },
@@ -5360,12 +5900,12 @@
    "start_utc": "2026-10-05T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
     }
    ]
   },
@@ -5380,12 +5920,12 @@
    "start_utc": "2026-10-09T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
     }
    ]
   },
@@ -5500,12 +6040,12 @@
    "start_utc": "2026-09-20T11:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
     }
    ]
   },
@@ -5540,12 +6080,12 @@
    "start_utc": "2026-09-12T11:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
     }
    ]
   },
@@ -5580,12 +6120,12 @@
    "start_utc": "2026-10-11T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
     }
    ]
   },
@@ -5874,18 +6414,38 @@
    "severity": "low",
    "title": "Fixture still listed as scheduled after its start time",
    "detail": "Hotspawn's API still reports status='scheduled' more than 6 hours after the scheduled start time. The fixture is retained for completeness but the pick window has closed.",
+   "fixture_id": "1075739",
+   "match": "Emperors Bremen vs Sissi State Punks",
+   "tournament": "PRM 3rd Division 26-27 Fall",
+   "start_utc": "2026-10-21T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia (no record found)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/emperors-bremen-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075739"
+    }
+   ]
+  },
+  {
+   "kind": "stale-listing",
+   "severity": "low",
+   "title": "Fixture still listed as scheduled after its start time",
+   "detail": "Hotspawn's API still reports status='scheduled' more than 6 hours after the scheduled start time. The fixture is retained for completeness but the pick window has closed.",
    "fixture_id": "1066214",
    "match": "Epic Avalanche vs Finnish Red Mafia",
    "tournament": "FPL 2026 Summer Playoffs",
    "start_utc": "2026-08-27T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Epic Avalanche",
-     "url": "https://lol.fandom.com/wiki/Epic_Avalanche"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/epic-avalanche-vs-finnish-red-mafia-fpl-2026-summer-playoffs-1066214"
     }
    ]
   },
@@ -6060,12 +6620,12 @@
    "start_utc": "2026-09-25T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
     }
    ]
   },
@@ -6100,12 +6660,12 @@
    "start_utc": "2026-09-19T21:59:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: LANdits",
-     "url": "https://lol.fandom.com/wiki/LANdits"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
     }
    ]
   },
@@ -6180,12 +6740,12 @@
    "start_utc": "2026-09-20T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
     }
    ]
   },
@@ -6340,12 +6900,12 @@
    "start_utc": "2026-10-14T18:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Nameless",
-     "url": "https://lol.fandom.com/wiki/Nameless"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
     }
    ]
   },
@@ -6380,12 +6940,12 @@
    "start_utc": "2026-10-11T16:30:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Northern Wolves Esports",
-     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
     }
    ]
   },
@@ -6420,12 +6980,12 @@
    "start_utc": "2026-10-10T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: OnlyWinByFF",
-     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
     }
    ]
   },
@@ -6460,12 +7020,12 @@
    "start_utc": "2026-10-21T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Phenti",
-     "url": "https://lol.fandom.com/wiki/Phenti"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
     }
    ]
   },
@@ -6660,12 +7220,12 @@
    "start_utc": "2026-09-17T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Solid Gaming",
-     "url": "https://lol.fandom.com/wiki/Solid_Gaming"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
     }
    ]
   },
@@ -6700,12 +7260,12 @@
    "start_utc": "2026-10-05T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
     }
    ]
   },
@@ -6720,12 +7280,12 @@
    "start_utc": "2026-10-09T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
     }
    ]
   },
@@ -6840,12 +7400,12 @@
    "start_utc": "2026-09-20T11:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
     }
    ]
   },
@@ -6880,12 +7440,12 @@
    "start_utc": "2026-09-12T11:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
     }
    ]
   },
@@ -6920,12 +7480,12 @@
    "start_utc": "2026-10-11T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
+     "label": "Hotspawn match page",
+     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
     }
    ]
   },
