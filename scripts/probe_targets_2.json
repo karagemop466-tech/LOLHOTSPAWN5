@@ -1,0 +1,47 @@
+[
+  ["hs_permalinks_sport", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks?sport_alias=lol&tenantId=1", {}],
+  ["hs_permalinks_tenant", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks?tenantId=1", {}],
+  ["hs_permalinks_bare", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks", {}],
+  ["hs_tenant_slug", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/tenants/slug/hotspawn", {}],
+  ["hs_week_widget", "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget?sport_alias=lol", {}],
+  ["hs_match_page_worlds", "https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676", {}],
+
+  ["pinn_matchup_markets", "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1637769687/markets", {}],
+  ["pinn_league_markets", "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/markets", {}],
+  ["pinn_league_matchups", "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/matchups", {}],
+  ["pinn_sport_league_matchups", "https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues/9587/matchups", {}],
+  ["pinn_matchup_related", "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1637769687/related", {}],
+  ["pinn_league_markets_emea", "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/markets", {}],
+  ["pinn_league_matchups_emea", "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/matchups", {}],
+
+  ["kalshi_events_kxlolgame", "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100", {}],
+  ["kalshi_markets_kxlolgame_big", "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&limit=1000", {}],
+  ["kalshi_events_esports", "https://api.elections.kalshi.com/trade-api/v2/events?category=esports&limit=100", {}],
+  ["kalshi_series_list", "https://api.elections.kalshi.com/trade-api/v2/series?category=Esports&limit=200", {}],
+
+  ["poly_tags", "https://gamma-api.polymarket.com/tags?limit=1000", {}],
+  ["poly_events_500", "https://gamma-api.polymarket.com/events?limit=500&closed=false&order=startDate&ascending=false", {}],
+  ["poly_search_worlds", "https://gamma-api.polymarket.com/public-search?q=League%20of%20Legends%20Worlds&limit_per_type=50&events_status=active", {}],
+  ["poly_search_lol_active", "https://gamma-api.polymarket.com/public-search?q=LoL&limit_per_type=50&events_status=active", {}],
+
+  ["golgg_teams_list", "https://gol.gg/teams/list/season-S16/split-ALL/tournament-ALL/", {}],
+  ["golgg_tournament_list_s16", "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/", {}],
+  ["golgg_worlds_matchlist", "https://gol.gg/tournament/tournamentmatchlist/Worlds 2026/", {}],
+  ["golgg_lck_matchlist", "https://gol.gg/tournament/tournamentmatchlist/LCK 2026 Season/", {}],
+  ["golgg_players_list", "https://gol.gg/players/list/season-S16/split-ALL/tournament-ALL/", {}],
+
+  ["lp_wiki_api", "https://wiki.leaguepedia.com/api.php?action=query&meta=siteinfo&format=json", {}],
+  ["lol_fandom_api", "https://lol.fandom.com/api.php?action=query&meta=siteinfo&format=json", {}],
+  ["lolwiki_api", "https://lolwiki.com/api.php?action=query&meta=siteinfo&format=json", {}],
+  ["riot_schedule_api", "https://esports-api.lolesports.com/persisted/gw/getSchedule?hl=en-US", {}],
+  ["riot_leagues_api", "https://esports-api.lolesports.com/persisted/gw/getLeagues?hl=en-US", {}],
+  ["oe_2025_csv", "https://oracleselixir.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv", {}],
+  ["oe_s3_listing", "https://oracleselixir.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=200", {}],
+  ["oe_github_2026_repo", "https://api.github.com/repos/OraclesElixirTools/2026_LoL_esports_match_data_from_OraclesElixir", {}],
+  ["oe_github_2025_repo", "https://api.github.com/repos/OraclesElixirTools/2025_LoL_esports_match_data_from_OraclesElixir", {}],
+  ["liquipedia_lol_main", "https://liquipedia.net/leagueoflegends/Main_Page", {}],
+
+  ["melbet_linefeed", "https://melbet.com/linefeed", {}],
+  ["betway_events", "https://www.betway.com/api/Events/ESPT", {}],
+  ["bovada_lol_worlds", "https://www.bovada.lv/services/sports/event/v2/events/A/description/esports", {}]
+]

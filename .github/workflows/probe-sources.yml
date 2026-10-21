@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - arena/3552c64a-lolhotspawn5
+    paths:
+      - 'scripts/probe.py'
+      - 'scripts/probe_targets*.json'
+      - '.github/workflows/probe-sources.yml'
 
 permissions:
   contents: write
@@ -23,8 +27,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Probe candidate sources
-        run: python scripts/probe.py
+      - name: Probe round 1 (baseline sources)
+        run: python scripts/probe.py --targets scripts/probe_targets.json --out evidence/raw
+      - name: Probe round 2 (routes + reference data)
+        run: python scripts/probe.py --targets scripts/probe_targets_2.json --out evidence/raw2
       - name: Commit evidence
         run: |
           git config user.name 'github-actions[bot]'
