@@ -1,0 +1,125 @@
+
+==================== A. tenant ====================
+--- tenant
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/tenants/slug/hotspawn  -> 200 (301B)
+    preview: {"tenant":{"id":"1","slug":"Hotspawn","name":"Hotspawn","is_active":true,"created_at":"2026-01-16T15:10:46.000Z","updated_at":null},"features":{"pickemEnabled":true,"minigamesEnabled":true,"tournamentsEnabled":true},"games":{"enabled":["CS2","LOL"],"defaultGame":"CS2"},"pageContexts":{},"theme":null}
+
+==================== B. fixtures (bare) ====================
+--- fixtures_bare
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures  -> 200 (9622791B)
+    preview: [{"id":"1","competition_id":"1","competition_name":"test tournament","sport_alias":"cs2","sport_name":"","status":"ended","scheduled_start_time":"1704106860000","lock_time":"1704106500000","lock_offset_sec":360,"offered_points":7,"base_points":2,"best_of":null,"series_format":null,"tier":"s","stage":"tbd","points_breakdown":{"game_multiplier":1.25,"tier_multiplier":3,"series_multiplier":1,"stage_multiplier":1,"tournament_multiplier":1},"start_time":"1704107040000","end_time":"1704077040000","total_picks":0,"participants0_id":"1","participants0_name":"Team one","participants0_picked_percent":0,
+
+==================== C. fixtures (pagination variants) ====================
+--- f_page1
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?page=1  -> 400 (85B)
+--- f_per_page
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?per_page=5  -> 400 (89B)
+--- f_limit
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?limit=5  -> 400 (86B)
+--- f_limit500
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?limit=500  -> 400 (86B)
+
+==================== D. fixtures (filters) ====================
+--- f_game_lol
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?game=lol  -> 400 (85B)
+--- f_game_lol2
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?game=League%20of%20Legends  -> 400 (85B)
+--- f_gameid2
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?game_id=2  -> 400 (88B)
+--- f_gameid1
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?game_id=1  -> 400 (88B)
+--- f_upcoming
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?status=upcoming  -> 200 (2B)
+--- f_open
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?status=open  -> 200 (2B)
+--- f_live
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?status=live  -> 200 (2B)
+
+==================== E. week prizes + permalinks (shape hints) ====================
+--- weekprizes
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget  -> 200 (1938B)
+    preview: {"weekId":273,"sportAlias":"cs2","status":"OPEN","weekStartUtc":"2026-10-19T00:00:00.000Z","weekEndUtc":"2026-10-25T23:59:59.999Z","cutoffUtc":"2026-10-25T23:59:59.999Z","countdownTargetUtc":"2026-10-25T23:59:59.999Z","title":"Top prizes this week","prizes":[{"id":141,"title":"$400 Steam Voucher","description":null,"imageUrl":"https://phpstack-1372681-6459848.cloudwaysapps.com/uploads/week-prizes/week_261_1790054271991_7a050b1b-dda5-4011-a8dd-a353dcd5f55c.png","ruleType":"RANK","rank":{"value":1,"label":"1st","title":"1st Place"},"minRank":1,"maxRank":1,"minPoints":null,"quantityTotal":1,"quan
+--- permalinks
+    GET https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks  -> 200 (17B)
+
+==================== F. structural analysis of the best fixtures response ====================
+analysing probe/fixtures_bare_.json
+top-level type: list
+record count: 12016
+record keys: ['base_points', 'best_of', 'competition_id', 'competition_name', 'end_time', 'id', 'lock_offset_sec', 'lock_time', 'offered_points', 'participants0_id', 'participants0_name', 'participants0_picked_percent', 'participants0_score', 'participants1_id', 'participants1_name', 'participants1_picked_percent', 'participants1_score', 'points_breakdown', 'scheduled_start_time', 'series_format', 'sport_alias', 'sport_name', 'stage', 'start_time', 'status', 'tier', 'total_picks']
+
+FIRST RECORD (pretty):
+{
+  "id": "1",
+  "competition_id": "1",
+  "competition_name": "test tournament",
+  "sport_alias": "cs2",
+  "sport_name": "",
+  "status": "ended",
+  "scheduled_start_time": "1704106860000",
+  "lock_time": "1704106500000",
+  "lock_offset_sec": 360,
+  "offered_points": 7,
+  "base_points": 2,
+  "best_of": null,
+  "series_format": null,
+  "tier": "s",
+  "stage": "tbd",
+  "points_breakdown": {
+    "game_multiplier": 1.25,
+    "tier_multiplier": 3,
+    "series_multiplier": 1,
+    "stage_multiplier": 1,
+    "tournament_multiplier": 1
+  },
+  "start_time": "1704107040000",
+  "end_time": "1704077040000",
+  "total_picks": 0,
+  "participants0_id": "1",
+  "participants0_name": "Team one",
+  "participants0_picked_percent": 0,
+  "participants0_score": 0,
+  "participants1_id": "2",
+  "participants1_name": "Team two",
+  "participants1_picked_percent": 0,
+  "participants1_score": 0
+}
+
+SECOND RECORD (pretty):
+{
+  "id": "3",
+  "competition_id": "1",
+  "competition_name": "test tournament",
+  "sport_alias": "cs2",
+  "sport_name": "",
+  "status": "ended",
+  "scheduled_start_time": "1709290560000",
+  "lock_time": "1709290200000",
+  "lock_offset_sec": 360,
+  "offered_points": 7,
+  "base_points": 2,
+  "best_of": null,
+  "series_format": null,
+  "tier": "s",
+  "stage": "tbd",
+  "points_breakdown": {
+    "game_multiplier": 1.25,
+    "tier_multiplier": 3,
+    "series_multiplier": 1,
+    "stage_multiplier": 1,
+    "tournament_multiplier": 1
+  },
+  "start_time": "1709290620000",
+  "end_time": "1709254620000",
+  "total_picks": 0,
+  "participants0_id": "2",
+  "participants0_name": "Team two",
+  "participants0_picked_percent": 0,
+  "participants0_score": 1,
+  "participants1_id": "3",
+  "participants1_name": "Team Three",
+  "participants1_picked_percent": 0,
+  "participants1_score": 0
+}
+
+==================== DONE ====================
