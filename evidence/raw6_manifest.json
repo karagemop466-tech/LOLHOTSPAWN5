@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T20:40:36Z",
+  "generated_at": "2026-10-21T20:44:19Z",
   "targets": [
     {
       "name": "lp_render_team_mb",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports&prop=text&format=json",
-      "fetched_at": "2026-10-21T20:40:20Z",
+      "fetched_at": "2026-10-21T20:44:09Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 437507,
@@ -12,12 +12,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_render_team_mb.json",
       "sample": "{\"parse\":{\"title\":\"Mind Blue eSports\",\"pageid\":837146,\"text\":{\"*\":\"<div class=\\\"mw-content-ltr mw-parser-output\\\" lang=\\\"en\\\" dir=\\\"ltr\\\"><table class=\\\"navbox\\\" cellspacing=\\\"0\\\" style=\\\";\\\"><tbody><tr><td style=\\\"padding:2px;\\\"><table cellspacing=\\\"0\\\" class=\\\"nowraplinks mw-collapsible mw-collaps",
-      "elapsed_s": 3.54
+      "elapsed_s": 0.4
     },
     {
       "name": "lp_sub_matchhistory",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports/Match%20History&prop=text&format=json",
-      "fetched_at": "2026-10-21T20:40:24Z",
+      "fetched_at": "2026-10-21T20:44:11Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 272901,
@@ -25,12 +25,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_sub_matchhistory.json",
       "sample": "{\"parse\":{\"title\":\"Mind Blue eSports/Match History\",\"pageid\":837151,\"text\":{\"*\":\"<div class=\\\"mw-content-ltr mw-parser-output\\\" lang=\\\"en\\\" dir=\\\"ltr\\\"><table class=\\\"navbox\\\" cellspacing=\\\"0\\\" style=\\\";\\\"><tbody><tr><td style=\\\"padding:2px;\\\"><table cellspacing=\\\"0\\\" class=\\\"nowraplinks mw-collapsi",
-      "elapsed_s": 0.24
+      "elapsed_s": 0.28
     },
     {
       "name": "lp_sub_tournamentresults",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports/Tournament%20Results&prop=text&format=json",
-      "fetched_at": "2026-10-21T20:40:25Z",
+      "fetched_at": "2026-10-21T20:44:12Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 156587,
@@ -38,12 +38,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_sub_tournamentresults.json",
       "sample": "{\"parse\":{\"title\":\"Mind Blue eSports/Tournament Results\",\"pageid\":837147,\"text\":{\"*\":\"<div class=\\\"mw-content-ltr mw-parser-output\\\" lang=\\\"en\\\" dir=\\\"ltr\\\"><table class=\\\"navbox\\\" cellspacing=\\\"0\\\" style=\\\";\\\"><tbody><tr><td style=\\\"padding:2px;\\\"><table cellspacing=\\\"0\\\" class=\\\"nowraplinks mw-col",
-      "elapsed_s": 1.06
+      "elapsed_s": 0.37
     },
     {
       "name": "lp_render_team_kc",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Karmine%20Corp&prop=text&format=json",
-      "fetched_at": "2026-10-21T20:40:27Z",
+      "fetched_at": "2026-10-21T20:44:13Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 718639,
@@ -51,12 +51,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_render_team_kc.json",
       "sample": "{\"parse\":{\"title\":\"Karmine Corp\",\"pageid\":432449,\"text\":{\"*\":\"<div class=\\\"mw-content-ltr mw-parser-output\\\" lang=\\\"en\\\" dir=\\\"ltr\\\"><table class=\\\"navbox current-league-navbox\\\" cellspacing=\\\"0\\\" style=\\\";\\\" data-expiration=\\\"1792785600\\\"><tbody><tr><td style=\\\"padding:2px;\\\"><table cellspacing=\\\"0",
-      "elapsed_s": 2.89
+      "elapsed_s": 0.45
     },
     {
       "name": "lp_render_tournament_komplett",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Komplettligaen/2026%20Autumn&prop=text&format=json",
-      "fetched_at": "2026-10-21T20:40:31Z",
+      "fetched_at": "2026-10-21T20:44:14Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 341,
@@ -64,12 +64,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_render_tournament_komplett.json",
       "sample": "{\"error\":{\"code\":\"missingtitle\",\"info\":\"The page you specified doesn't exist.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of ",
-      "elapsed_s": 0.21
+      "elapsed_s": 0.19
     },
     {
       "name": "lp_search_solid",
       "url": "https://lol.fandom.com/api.php?action=query&list=search&srsearch=%22Solid%20Gaming%22%20esports&srlimit=5&format=json",
-      "fetched_at": "2026-10-21T20:40:32Z",
+      "fetched_at": "2026-10-21T20:44:15Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 746,
@@ -77,12 +77,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_search_solid.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"search\":[{\"ns\":0,\"title\":\"Komplettligaen/2026 Season/Autumn Split\",\"pageid\":1065163,\"size\":7469,\"wordcount\":1062,\"snippet\":\"\",\"timestamp\":\"2026-10-21T04:39:19Z\"},{\"ns\":0,\"title\":\"Team Solid (Brazilian Team)\",\"pageid\":1020985,\"size\":1874,\"wordcount\":212,\"snippet\":\"\",\"tim",
-      "elapsed_s": 0.37
+      "elapsed_s": 0.35
     },
     {
       "name": "lp_search_lastdance",
       "url": "https://lol.fandom.com/api.php?action=query&list=search&srsearch=%22LAST%20DANCE%22&srlimit=5&format=json",
-      "fetched_at": "2026-10-21T20:40:33Z",
+      "fetched_at": "2026-10-21T20:44:16Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 731,
@@ -95,7 +95,7 @@
     {
       "name": "lp_category_teams",
       "url": "https://lol.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:LoL%20Teams&cmlimit=20&format=json",
-      "fetched_at": "2026-10-21T20:40:34Z",
+      "fetched_at": "2026-10-21T20:44:17Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 51,
@@ -103,12 +103,12 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_category_teams.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[]}}",
-      "elapsed_s": 0.21
+      "elapsed_s": 0.17
     },
     {
       "name": "lp_query_titles_batch",
       "url": "https://lol.fandom.com/api.php?action=query&titles=Mind%20Blue%20eSports|Solid%20Gaming|LAST%20DANCE|AceGaming|Volda%20E-Sport&redirects=1&format=json",
-      "fetched_at": "2026-10-21T20:40:35Z",
+      "fetched_at": "2026-10-21T20:44:18Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 316,
@@ -116,7 +116,7 @@
       "x_cache": "",
       "file": "evidence/raw6/lp_query_titles_batch.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"pages\":{\"-1\":{\"ns\":0,\"title\":\"Solid Gaming\",\"missing\":\"\"},\"-2\":{\"ns\":0,\"title\":\"LAST DANCE\",\"missing\":\"\"},\"1033823\":{\"pageid\":1033823,\"ns\":0,\"title\":\"AceGaming\"},\"837146\":{\"pageid\":837146,\"ns\":0,\"title\":\"Mind Blue eSports\"},\"1054269\":{\"pageid\":1054269,\"ns\":0,\"title\":\"Vo",
-      "elapsed_s": 0.25
+      "elapsed_s": 0.38
     }
   ]
 }

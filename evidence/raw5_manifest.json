@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T20:40:20Z",
+  "generated_at": "2026-10-21T20:44:09Z",
   "targets": [
     {
       "name": "lp_cargo_nowhere",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:40:03Z",
+      "fetched_at": "2026-10-21T20:43:52Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -12,12 +12,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_cargo_nowhere.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.29
+      "elapsed_s": 0.18
     },
     {
       "name": "lp_cargo_where_str",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=Tournament%3D%22LCK%202026%20Season%20Play-In%22&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:40:04Z",
+      "fetched_at": "2026-10-21T20:43:53Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -25,12 +25,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_cargo_where_str.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.29
+      "elapsed_s": 0.68
     },
     {
       "name": "lp_cargo_holds",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%20HOLDS%20%222026-10%22&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:40:05Z",
+      "fetched_at": "2026-10-21T20:43:54Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -38,12 +38,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_cargo_holds.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.29
+      "elapsed_s": 0.25
     },
     {
       "name": "lp_cargo_teams_table",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=Teams&fields=Name,Region&limit=5&format=json",
-      "fetched_at": "2026-10-21T20:40:06Z",
+      "fetched_at": "2026-10-21T20:43:55Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -51,12 +51,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_cargo_teams_table.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.21
+      "elapsed_s": 0.18
     },
     {
       "name": "lp_revisions_team",
       "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&titles=Solid%20Gaming&rvprop=content&rvslots=main&format=json",
-      "fetched_at": "2026-10-21T20:40:06Z",
+      "fetched_at": "2026-10-21T20:43:56Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 90,
@@ -64,12 +64,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_revisions_team.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"pages\":{\"-1\":{\"ns\":0,\"title\":\"Solid Gaming\",\"missing\":\"\"}}}}",
-      "elapsed_s": 0.43
+      "elapsed_s": 0.2
     },
     {
       "name": "lp_parse_team",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Solid%20Gaming&prop=wikitext&format=json",
-      "fetched_at": "2026-10-21T20:40:08Z",
+      "fetched_at": "2026-10-21T20:43:57Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 341,
@@ -77,12 +77,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_parse_team.json",
       "sample": "{\"error\":{\"code\":\"missingtitle\",\"info\":\"The page you specified doesn't exist.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of ",
-      "elapsed_s": 0.15
+      "elapsed_s": 0.2
     },
     {
       "name": "lp_parse_tournament",
       "url": "https://lol.fandom.com/api.php?action=parse&page=Komplettligaen/2026%20Autumn&prop=wikitext&format=json",
-      "fetched_at": "2026-10-21T20:40:09Z",
+      "fetched_at": "2026-10-21T20:43:58Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 341,
@@ -90,12 +90,12 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_parse_tournament.json",
       "sample": "{\"error\":{\"code\":\"missingtitle\",\"info\":\"The page you specified doesn't exist.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of ",
-      "elapsed_s": 0.27
+      "elapsed_s": 0.21
     },
     {
       "name": "lp_query_team_titles",
       "url": "https://lol.fandom.com/api.php?action=query&titles=Solid%20Gaming|Mind%20Blue%20eSports|LAST%20DANCE&redirects=1&format=json",
-      "fetched_at": "2026-10-21T20:40:10Z",
+      "fetched_at": "2026-10-21T20:43:59Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 200,
@@ -103,21 +103,21 @@
       "x_cache": "",
       "file": "evidence/raw5/lp_query_team_titles.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"pages\":{\"-1\":{\"ns\":0,\"title\":\"Solid Gaming\",\"missing\":\"\"},\"-2\":{\"ns\":0,\"title\":\"LAST DANCE\",\"missing\":\"\"},\"837146\":{\"pageid\":837146,\"ns\":0,\"title\":\"Mind Blue eSports\"}}}}",
-      "elapsed_s": 0.19
+      "elapsed_s": 0.16
     },
     {
       "name": "bo3_api_events",
       "url": "https://api.bo3.gg/api/v1/ll/matches/finished",
-      "fetched_at": "2026-10-21T20:40:10Z",
+      "fetched_at": "2026-10-21T20:44:00Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "",
-      "elapsed_s": 0.37
+      "elapsed_s": 0.31
     },
     {
       "name": "bo3_api_alt",
       "url": "https://bo3.gg/api/ll/matches/finished",
-      "fetched_at": "2026-10-21T20:40:11Z",
+      "fetched_at": "2026-10-21T20:44:01Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 28,
@@ -125,12 +125,12 @@
       "x_cache": "",
       "file": "evidence/raw5/bo3_api_alt.json",
       "sample": "{\"error\":\"Invalid API path\"}",
-      "elapsed_s": 0.21
+      "elapsed_s": 0.14
     },
     {
       "name": "bo3_page_data",
       "url": "https://bo3.gg/ll/matches/finished",
-      "fetched_at": "2026-10-21T20:40:12Z",
+      "fetched_at": "2026-10-21T20:44:02Z",
       "status": 200,
       "content_type": "text/html;charset=utf-8",
       "bytes": 12750,
@@ -138,48 +138,48 @@
       "x_cache": "",
       "file": "evidence/raw5/bo3_page_data.html",
       "sample": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preconnect\" href=\"https://image-proxy.bo3.gg\"><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><script src=\"https://accounts.google.com/gsi/client\" async></script",
-      "elapsed_s": 0.35
+      "elapsed_s": 0.34
     },
     {
       "name": "oe_bucket_a",
       "url": "https://oracleselixir-tools.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv",
-      "fetched_at": "2026-10-21T20:40:13Z",
+      "fetched_at": "2026-10-21T20:44:03Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-tools</BucketName><RequestId>QYJFDDT5FV3T0NJ7</RequestId><HostId>5o9fKiwjh9oMmZBKnGnUNObzy9gWSq3u74oBvHWaTfpx4ky0ZZtpmOno53/Z4jj/yXg7qUyL880=</HostId",
-      "elapsed_s": 0.08
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-tools</BucketName><RequestId>00HMG3TFZS6XCKR6</RequestId><HostId>yjSldKC70bbg2ZrlXvEFuP3Ulf+hqK9j806WF5cx7OMF1k3yAnacK/zvBVVAsdX2csMZ1jXWPm1XpUWwcbXG",
+      "elapsed_s": 0.21
     },
     {
       "name": "oe_bucket_b",
       "url": "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir_20250715.csv",
-      "fetched_at": "2026-10-21T20:40:14Z",
+      "fetched_at": "2026-10-21T20:44:04Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>QYJ5W4W5YX63M325</RequestId><HostId>j/mhE6FCdgHcEP0xlutJK5GPj5/CL6wQn61Jyx7DzUzcBY/w9XJCqRpj1B0LAp4IlC",
-      "elapsed_s": 0.09
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>8GZHDZPBVZY4S0YD</RequestId><HostId>7euSaLDS3QonygpF/m24v+YrHetdEIz+Zyny8AORZE5KysbkYGTLVS5/MEIP1k/zxu",
+      "elapsed_s": 0.2
     },
     {
       "name": "oe_bucket_c",
       "url": "https://oracleselixir.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=50",
-      "fetched_at": "2026-10-21T20:40:15Z",
+      "fetched_at": "2026-10-21T20:44:04Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>CF06N5MJVE86W4F0</RequestId><HostId>8qL0c5pXfm8GOo4ROXHoK8CYk0A4Jk2TqbdDjBN0No3Ukdm2FiMuUawIGDiiC/wJ8ksoY25Fx5EdVK6udbwReEOEML",
-      "elapsed_s": 0.08
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>N2V0XD3XN34B83HV</RequestId><HostId>oZ62zwhzXNbJycUwHAzSMCXHKhQF26r/yEt0BaZMdIaH7JIEFo1T/SYClQZtj7LUiVjBMBTsA42WD4Fh1QQ5luFrUz",
+      "elapsed_s": 0.2
     },
     {
       "name": "oe_site",
       "url": "https://oracleselixir.com/tools/downloads",
-      "fetched_at": "2026-10-21T20:40:16Z",
+      "fetched_at": "2026-10-21T20:44:05Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal",
-      "elapsed_s": 0.08
+      "elapsed_s": 0.5
     },
     {
       "name": "golgg_team_matchlist",
       "url": "https://gol.gg/teams/team-matchlist/3108/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:40:17Z",
+      "fetched_at": "2026-10-21T20:44:07Z",
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "bytes": 567511,
@@ -187,16 +187,16 @@
       "x_cache": "",
       "file": "evidence/raw5/golgg_team_matchlist.html",
       "sample": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n                                    \r\n\r\n<title>2 Massive match list in S16 - Games of Legends</title>\r\n<base href=\"https://gol.gg/teams/\" >\r\n  <meta name=\"description\" content=\"All matches played by 2 Massive in S16:  with results, picks and bans, patches a",
-      "elapsed_s": 1.18
+      "elapsed_s": 1.04
     },
     {
       "name": "golgg_tournament_list_json",
       "url": "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:40:19Z",
+      "fetched_at": "2026-10-21T20:44:08Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "  <!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>League of Legends esport statistics - Games of legends</title>\r\n<base href=\"https://gol.gg/esports/\" >\r\n  <meta name=\"description\" content=\"Games of legends provides statistics on league of legends esport matches. Winrate, picks and bans, kda an",
-      "elapsed_s": 0.66
+      "elapsed_s": 0.34
     }
   ]
 }
