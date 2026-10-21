@@ -247,3 +247,20 @@ discarded SHAs remain referenced here so nothing is lost to history. No work fro
    "we do not use Kalshi" bullet was removed because it became false), sources page lists every
    esportsbook probe with its live status.
 5. `check_invariants.py`: market_source may now be Pinnacle / Kalshi / Bovada (was Pinnacle-only).
+
+## Coverage lift (session arena/1e8f1e2e) - COMPLETE
+
+Claimed rows are done. Result of the lift (pipeline run 39678069533, published 2026-10-21T21:22Z):
+
+- Upcoming matches carrying a pick: **182 / 195 (93.3%)** (was 154/195, 79.0%).
+  - 9 market-priced (Pinnacle; 8 of them now corroborated by Kalshi KXLOLGAME with per-row event ticker + API URL).
+  - 173 model-priced (was 145): wider results window (23,268 rated rows since 2023-10-22, 4,184 teams) + name-join integrity fixes + one verified alias.
+  - 82 rows stay blank: 69 stale fixtures (pre-existing) + 13 insufficient history. The 13 are blocked by exactly three orgs (BlackDivision, REH Gaming, Emperors Bremen - 2 Leaguepedia results each); the MIN_MATCHES_RELIABLE=3 gate and the "missing stays missing" rule are unchanged.
+
+### Changes
+1. `collect_lines.py`: Kalshi KXLOLGAME ingest (midpoint + proportional de-vig; Pinnacle remains primary where both exist) and 8-book probe record (`book_probes`, verbatim HTTP statuses; no price taken from probes).
+2. `collect_results.py`: window 365d -> 1095d (cap 24,000); numeric Leaguepedia team IDs tolerated/skipped (the wider pull exposed mixed-type rows that crashed sorting).
+3. `build_model.py`: multi-source market join (priority Pinnacle > Kalshi > Bovada), corroborating quotes recorded per row, NFKD diacritic fold, parenthetical disambiguator stripping, verified alias "Phong Vu Buffalo" = "PvB (Swiss Team)" (schedule-slot identity, sources on review.html).
+4. `check_invariants.py`: market_source whitelist + stale-results-snapshot warning.
+5. `build_site.py`: exec-summary "Unresolved picks & limitations" panel (`#unresolved-limits`), generic market labels + per-row source links (incl. Kalshi corroboration), dynamic sources table with probe statuses, review-page honesty items (join rules, PvB alias, Kalshi ingest).
+6. `.github/workflows/update.yml`: push trigger also on this integration branch (scoped to this session's branch so parallel sessions' pushes cannot trigger duplicate runs).
