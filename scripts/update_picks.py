@@ -83,7 +83,7 @@ ELO_START = 1500.0
 ELO_K = 28.0
 WIKI_SLEEP = 1.5            # seconds between Leaguepedia calls (be polite)
 MAX_WIKI_PAGES = 2          # 500 rows each, per team chunk
-WIKI_CHUNK = 10             # teams per Cargo query
+WIKI_CHUNK = 16             # teams per Cargo query
 WIKI_BUDGET_SEC = 720       # hard wall-clock budget for Leaguepedia collection
 
 OUT_DIR = "data"
@@ -246,45 +246,53 @@ def build_permalink(fx, permalinks, debug):
 # --------------------------------------------------------------------------- #
 
 def load_pinnacle(debug):
-    """Pinnacle esportsbook, keyless guest API. Returns {(n1,n2): (p_team1, url, label)}."""
+    """Pinnacle esportsbook, keyless guest API. Returns {(n1,n2): (p_team1, url, label, start, group)}."""
     print("[2/6] Pinnacle esportsbook …")
     matchups = fetch_json(PINNACLE_MATCHUPS, timeout=90)
-    markets = fetch_json(PINNACLE_MARKETS, timeout=90)
-    out, seen = {}, {}
+    markets = None
+    for u in (PINNACLE_MARKETS, PINNACLE_MARKETS + "?brandId=0"):
+        markets = fetch_json(u, timeout=90)
+        if markets:
+            break
+    out = {}
     if not matchups or not markets:
         debug["pinnacle_ok"] = False
         return out
     debug["pinnacle_matchups"] = len(matchups)
     debug["pinnacle_markets"] = len(markets)
 
+    # moneyline, full-match (period 0), two prices
     price_by_matchup = {}
     for m in markets:
         if (m.get("type") or "") != "moneyline":
             continue
-        # period 0 == full match; s;0;m key
         if str(m.get("period")) != "0":
             continue
         prices = m.get("prices") or []
-        if len(prices) != 2:
+        if len(prices) < 2:
             continue
         price_by_matchup[str(m.get("matchupId"))] = [
             (str(p.get("participantId")), p.get("price")) for p in prices
         ]
+    debug["pinnacle_moneyline_match_markets"] = len(price_by_matchup)
 
+    type_counts, lol_found, lol_priced = {}, 0, 0
     for mu in matchups:
         lg = (mu.get("league") or {})
         name = (lg.get("name") or "")
         if "league of legends" not in name.lower():
             continue
-        if (mu.get("type") or "matchup") != "matchup":
+        lol_found += 1
+        mtype = (mu.get("type") or "") or "(none)"
+        type_counts[mtype] = type_counts.get(mtype, 0) + 1
+        if mtype == "special":
             continue
         parts = mu.get("participants") or []
-        if len(parts) != 2:
+        if len(parts) < 2:
             continue
         prices = price_by_matchup.get(str(mu.get("id")))
         if not prices:
             continue
-        # participants order: home, away
         home = next((p for p in parts if p.get("alignment") == "home"), parts[0])
         away = next((p for p in parts if p.get("alignment") == "away"), parts[1])
         price_home = price_away = None
@@ -294,23 +302,29 @@ def load_pinnacle(debug):
             elif pid == str(away.get("id")):
                 price_away = price
         if price_home is None or price_away is None:
-            continue
+            # fall back to positional order
+            if len(prices) >= 2:
+                price_home, price_away = prices[0][1], prices[1][1]
+            else:
+                continue
         probs = devig([american_to_decimal(price_home), american_to_decimal(price_away)])
         if not probs:
             continue
+        lol_priced += 1
         key = (norm(home.get("name")), norm(away.get("name")))
-        seen[key] = True
         out[key] = (
             probs[0],
             "https://www.pinnacle.com/en/esports/league-of-legends/",
             f"Pinnacle moneyline {home.get('name')} ({price_home}) vs {away.get('name')} ({price_away})"
-            f" — de-vigged {probs[0]*100:.1f}% / {probs[1]*100:.1f}%",
+            f" \u2014 de-vigged {probs[0]*100:.1f}% / {probs[1]*100:.1f}%",
             (mu.get("startTime") or ""),
             lg.get("name"),
         )
+    debug["pinnacle_lol_matchups"] = lol_found
+    debug["pinnacle_lol_matchup_types"] = type_counts
     debug["pinnacle_lol_priced"] = len(out)
     debug["pinnacle_ok"] = True
-    print(f"      {len(out)} League of Legends matchups priced")
+    print(f"      {lol_found} League of Legends matchups on the board, {len(out)} priced")
     return out
 
 
@@ -407,22 +421,50 @@ def load_polymarket(debug):
     return markets
 
 
+def _outcome_match(a, b):
+    """True if normalised team name a corresponds to normalised outcome b."""
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if len(a) >= 6 and len(b) >= 6 and (a in b or b in a):
+        return True
+    return False
+
+
 def lookup_polymarket(markets, t1, t2):
+    """Return (p_team1, url, question) or None.
+
+    Only accepts two-outcome markets whose outcome names map to the two teams.
+    A fuzzy (substring) outcome match is additionally required to be corroborated
+    by both team names appearing in the market question, to avoid false positives
+    on short team names.
+    """
     n1, n2 = norm(t1), norm(t2)
     if not n1 or not n2:
         return None
+    q1 = re.sub(r"[^a-z0-9]+", " ", (t1 or "").lower()).strip()
+    q2 = re.sub(r"[^a-z0-9]+", " ", (t2 or "").lower()).strip()
     for mk in markets:
         o = [norm(x) for x in mk["outs"]]
-        if o[0] and o[1]:
-            # direct team-name markets (order sensitive)
-            if (n1 == o[0] or (len(o[0]) >= 6 and o[0] in n1) or (len(n1) >= 6 and n1 in o[0])) and \
-               (n2 == o[1] or (len(o[1]) >= 6 and o[1] in n2) or (len(n2) >= 6 and n2 in o[1])):
-                s = sum(mk["prices"])
-                return mk["prices"][0] / s, mk["url"], mk["question"]
-            if (n2 == o[0] or (len(o[0]) >= 6 and o[0] in n2) or (len(n2) >= 6 and n2 in o[0])) and \
-               (n1 == o[1] or (len(o[1]) >= 6 and o[1] in n1) or (len(n1) >= 6 and n1 in o[1])):
-                s = sum(mk["prices"])
-                return mk["prices"][1] / s, mk["url"], mk["question"]
+        if not (o[0] and o[1]):
+            continue
+        q = re.sub(r"[^a-z0-9]+", " ", (mk.get("question") or "").lower())
+        exact = (n1 == o[0] and n2 == o[1]) or (n2 == o[0] and n1 == o[1])
+        if not exact:
+            fuzzy = ((_outcome_match(n1, o[0]) and _outcome_match(n2, o[1])) or
+                     (_outcome_match(n2, o[0]) and _outcome_match(n1, o[1])))
+            if not fuzzy:
+                continue
+            # fuzzy matches must be corroborated by the question text
+            if not (len(q1) >= 4 and q1 in q and len(q2) >= 4 and q2 in q):
+                continue
+        s = sum(mk["prices"])
+        if s <= 0:
+            continue
+        if _outcome_match(n1, o[0]):
+            return mk["prices"][0] / s, mk["url"], mk["question"]
+        return mk["prices"][1] / s, mk["url"], mk["question"]
     return None
 
 
@@ -788,7 +830,8 @@ def main():
 
         entries = []
         for mk, weight in ((pinnacle, 2.0), (unibet, 1.0)):
-            for p, url, label, st, group in find_market(mk, t1, t2, start_iso):
+            for hit in find_market(mk, t1, t2, start_iso):
+                p, url, label = hit[0], hit[3], hit[2]
                 entries.append((p, weight, label, url))
         poly_hit = lookup_polymarket(poly, t1, t2)
         if poly_hit:
