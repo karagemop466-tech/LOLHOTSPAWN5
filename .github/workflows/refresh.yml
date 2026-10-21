@@ -34,10 +34,13 @@ jobs:
         with:
           python-version: '3.11'
       - name: Collect HotSpawn inventory
+        continue-on-error: true
         run: python scripts/collect_hotspawn.py
       - name: Collect external betting lines
+        continue-on-error: true
         run: python scripts/collect_odds.py
       - name: Collect reference results (Leaguepedia)
+        continue-on-error: true
         run: python scripts/collect_reference.py
       - name: Build picks
         run: python scripts/build_picks.py
@@ -46,10 +49,11 @@ jobs:
       - name: Check internal links
         run: python scripts/check_links.py
       - name: Commit refreshed data and site
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A data index.html picks.html unresolved.html review.html sources.html methodology.html evidence
+          git add -A data index.html picks.html unresolved.html review.html sources.html methodology.html assets evidence || true
           if git diff --cached --quiet; then
             echo 'no changes to publish'
           else

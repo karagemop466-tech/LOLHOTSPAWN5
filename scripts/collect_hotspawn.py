@@ -47,8 +47,19 @@ def main() -> int:
 
     fixtures, fx_meta = http.get_json(FIXTURES_API)
     if fixtures is None:
-        print("FATAL: could not read the HotSpawn fixtures API", file=sys.stderr)
+        previous = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                "data", "hotspawn_matches.json")
+        print("WARNING: could not read the HotSpawn fixtures API:", file=sys.stderr)
         print(json.dumps(fx_meta, indent=2), file=sys.stderr)
+        if os.path.exists(previous):
+            print("keeping the previous inventory (it will be published again)", file=sys.stderr)
+            with open(previous, encoding="utf-8") as fh:
+                old = json.load(fh)
+            old.setdefault("sources", {})["fixtures_api"]["last_error"] = fx_meta
+            old["stale"] = True
+            write_json("data/hotspawn_matches.json", old)
+            return 0
+        print("FATAL: no previous inventory to fall back on", file=sys.stderr)
         return 2
 
     # The lobby HTML is CDN cached; a cache-buster query string forces a fresh render.
