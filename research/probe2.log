@@ -1,0 +1,29 @@
+=== HOTSPAWN FIXTURES API ===
+  200  https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&tenantId=1
+  400  https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sportAlias=lol&tenantId=1
+=== PINNACLE ARCADIA ===
+  sport=12 200 bytes=764691
+  sport=16 200 bytes=3
+  sport=17 200 bytes=300977
+  sports-list 200 bytes=14407
+=== LEAGUEPEDIA CARGO ===
+  200 bytes=372
+{"error":{"code":"ratelimited","info":"You've exceeded your rate limit. Please wait some time and try again.","*":"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."}}
+=== POLYMARKET LOL ===
+  200 bytes=1381286  https://gamma-api.polymarket.com/events?limit=20&closed=false&tag_slug=league-of-legends
+  200 bytes=109860  https://gamma-api.polymarket.com/markets?limit=20&closed=false&tag_slug=league-of-legends
+=== KALSHI LOL ===
+  200 bytes=57528
+=== BOVADA LOL ===
+  200 bytes=2497943
+=== ODDS PORTAL LOL ===
+  200 bytes=336151
+total 204
+drwxr-xr-x 2 runner runner   4096 Oct 21 20:19 .
+drwxr-xr-x 3 runner runner   4096 Oct 21 20:19 ..
+-rw-r--r-- 1 runner runner     91 Oct 21 20:19 fixtures_afd2ea.json
+-rw-r--r-- 1 runner runner  57528 Oct 21 20:19 kalshi_lol.json
+-rw-r--r-- 1 runner runner    372 Oct 21 20:19 lp_test.json
+-rw-r--r-- 1 runner runner      3 Oct 21 20:19 pin_sport16.json
+-rw-r--r-- 1 runner runner  14407 Oct 21 20:19 pin_sports.json
+-rw-r--r-- 1 runner runner 109860 Oct 21 20:19 pm_3705d6.json
