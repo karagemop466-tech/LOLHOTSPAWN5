@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — Hotspawn LoL Pick Board</title>
+<meta name="description" content="De-vigging, Elo, shrinkage, confidence tiers and limitations.">
+<meta name="theme-color" content="#12121c">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:title" content="Methodology — Hotspawn LoL Pick Board">
+<meta property="og:description" content="De-vigging, Elo, shrinkage, confidence tiers and limitations.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">HS</span>
+      <span class="brand-text"><b>LoL Pick Board</b><small>Hotspawn coverage · independent lines</small></span>
+    </a>
+    <div class="head-tools">
+      <button id="tz" class="tzbtn" type="button" aria-pressed="false">Times: UTC</button>
+    </div>
+    <nav aria-label="Sections"><div class="navscroll"><a class="navlink" href="../">Summary</a><a class="navlink" href="../picks/">All picks</a><a class="navlink" href="../unresolved/">Unresolved</a><a class="navlink is-active" href="../methodology/">Method</a><a class="navlink" href="../sources/">Sources</a><a class="navlink" href="../review/">Review</a></div></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+
+<div class="pagehead">
+  <h1>Methodology</h1>
+  <p class="lede">How a fixture becomes a probability. Every step is deterministic and reproducible from
+  the committed scripts and the public sources listed on the <a href="../sources/">source register</a>.</p>
+</div>
+
+<section class="card">
+  <h2>1. Fixture inventory</h2>
+  <p>We read the same public fixtures feed that powers
+  <a href="https://play.hotspawn.com/lol-pickems" rel="noopener">play.hotspawn.com/lol-pickems</a>:
+  <code>GET /api/v1/fixtures?sport_alias=lol&amp;tenantId=1</code>. The current snapshot contains
+  <b>264</b> fixtures with status <code>scheduled</code> and
+  <b>1102</b> completed fixtures used as the results reference.
+  Team names, competition, tier, start time and fixture id are taken verbatim; nothing is renamed.
+  Where the server-rendered lobby exposes a match permalink we attach it, otherwise the row links the lobby.</p>
+</section>
+
+<section class="card">
+  <h2>2. Market prices (primary signal)</h2>
+  <p>For each fixture we look for an external, timestamped price:</p>
+  <ul>
+    <li><b>Kalshi</b> — CFTC-regulated event exchange, series <code>KXLOLGAME</code>. We take the
+      mid-point of the yes bid/ask for both outcomes and normalise the pair to 100%.</li>
+    <li><b>Pinnacle</b> — licensed bookmaker, esports moneyline. American prices are converted to decimal,
+      implied probabilities are computed as <code>1/decimal</code>, then normalised
+      (proportional de-vig): <code>p_i = (1/o_i) / Σ(1/o_j)</code>.</li>
+    <li><b>Polymarket</b> — prediction market, “Match Winner” market only; outcome prices are normalised.</li>
+  </ul>
+  <p>A quote is attached only when <b>both</b> team names match after normalisation and the quote starts
+  within 36 hours of the Hotspawn fixture. No fuzzy matching, no manual overrides.</p>
+  <p class="formula">When several venues quote the same match we blend them:
+  <code>p_market = Σ(w·p) / Σw</code> with w = 0.5 Pinnacle, 0.4 Kalshi, 0.3 Polymarket.</p>
+</section>
+
+<section class="card">
+  <h2>3. Results model (fallback for unpriced leagues)</h2>
+  <p>A standard Elo run over completed fixtures, ordered by date:</p>
+  <pre class="code">expected = 1 / (1 + 10^((R_b - R_a)/400))
+R' = R + K · recency · (score - expected)
+K = 32 (S) · 28 (A) · 24 (B) · 20 (C) · 16 (D / unknown)
+recency = 0.5 ^ (age_in_days / 180)</pre>
+  <p>Ratings start at 1500. Because a team with two matches must not look as certain as a team with
+  twenty, ratings are shrunk toward the mean before conversion:
+  <code>R_shrunk = 1500 + (R - 1500) · n/(n+8)</code>.</p>
+  <p>Series length: if Hotspawn publishes <code>best_of</code>, the single-game probability is expanded to a
+  series probability; otherwise the fixture is treated as a single game.</p>
+  <p><b>Which ratings are used.</b> Two independent Elo pools are maintained: one from the Leaguepedia
+  CargoExport match archive (preferred, independent of Hotspawn) and one from completed Hotspawn fixtures
+  (fallback for competitions Leaguepedia does not carry). A match uses the Leaguepedia pool when both teams
+  have at least three completed matches there, otherwise the Hotspawn pool, otherwise it is unresolved.
+  The pool used is shown on every pick row.</p>
+  <p><b>Minimum evidence.</b> A model pick is only published when <b>both</b> teams have at least
+  3 completed fixtures in the reference set. Otherwise the match is unresolved.</p>
+</section>
+
+<section class="card">
+  <h2>4. Final probability and confidence</h2>
+  <table class="grid">
+    <thead><tr><th>Situation</th><th>Probability</th><th>Confidence label</th></tr></thead>
+    <tbody>
+      <tr><td data-l="Situation">Market + model agree</td><td data-l="Probability"><code>0.75·p_market + 0.25·p_model</code></td><td data-l="Confidence">High</td></tr>
+      <tr><td data-l="Situation">Market only</td><td data-l="Probability"><code>p_market</code></td><td data-l="Confidence">High</td></tr>
+      <tr><td data-l="Situation">Model, both teams ≥ 8 fixtures</td><td data-l="Probability"><code>p_model</code></td><td data-l="Confidence">Medium</td></tr>
+      <tr><td data-l="Situation">Model, 3–7 fixtures</td><td data-l="Probability"><code>p_model</code></td><td data-l="Confidence">Low</td></tr>
+      <tr><td data-l="Situation">Anything less</td><td data-l="Probability">not published</td><td data-l="Confidence">Unresolved</td></tr>
+    </tbody>
+  </table>
+  <p>Probabilities are floored at 2% and capped at 98%. Fair odds are <code>1/p</code>; they are our line,
+  not a quote copied from a book.</p>
+</section>
+
+<section class="card" id="limits">
+  <h2>5. Known limitations (also on the review page)</h2>
+  <ul>
+    <li>Bookmaker coverage of national third divisions, regional cups and promotion brackets is effectively
+      zero; those rows cannot have a market-derived line.</li>
+    <li>Elo is only as good as the results reference. If a team changed roster, the rating lags reality.</li>
+    <li>Cross-league comparisons are weak by construction: a Tunisian and a German third-division team never
+      share opponents. Ratings are interpretable inside a competition, which is where they are used.</li>
+    <li>Some Hotspawn fixtures stay <code>scheduled</code> long after their start time. They are excluded and
+      flagged rather than priced.</li>
+    <li>Markets move. Every quote carries its retrieval time; a row is only as fresh as the last pipeline run
+      (every 6 hours).</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>6. What we deliberately do not do</h2>
+  <ul>
+    <li>We do not use Hotspawn&rsquo;s crowd “% picked”, tiers or points as a probability input.</li>
+    <li>We do not infer a missing result, roster or price.</li>
+    <li>We do not carry a value forward from a previous run without a timestamp.</li>
+  </ul>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><b>Independent line generation.</b> Fixture list from Hotspawn Play.
+    Market prices from public, citable exchange/bookmaker APIs. Hotspawn's crowd “% picked” is never used
+    to set a probability.</p>
+    <p class="tiny">Data 2026-10-21T20:38:42.034346Z ·
+    <a href="../methodology/">methodology</a> ·
+    <a href="../sources/">source register</a> ·
+    <a href="../review/">flagged for review</a> ·
+    <a href="https://github.com/karagemop466-tech/LOLHOTSPAWN5">repository</a></p>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

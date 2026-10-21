@@ -1,0 +1,85 @@
+{
+ "generated_utc": "2026-10-21T20:38:42.034346Z",
+ "hotspawn": {
+  "ok": true,
+  "error": null,
+  "lobby": "https://play.hotspawn.com/lol-pickems",
+  "api": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&tenantId=1",
+  "scheduled": 264,
+  "ended_in_reference": 1102
+ },
+ "sources": {
+  "kalshi": {
+   "ok": true,
+   "error": null,
+   "quotes": 9
+  },
+  "pinnacle": {
+   "ok": true,
+   "error": null,
+   "quotes": 0,
+   "leagues": [
+    "League of Legends - EMEA Masters",
+    "League of Legends - World Championship"
+   ]
+  },
+  "polymarket": {
+   "ok": true,
+   "error": null,
+   "quotes": 0
+  }
+ },
+ "counts": {
+  "scheduled": 264,
+  "stale": 64,
+  "upcoming": 200,
+  "picked": 171,
+  "unresolved": 93,
+  "unresolved_upcoming": 29,
+  "coverage_upcoming_pct": 85.5,
+  "market_backed": 9,
+  "model_only": 162
+ },
+ "model": {
+  "history_matches": 1102,
+  "teams_rated": 464,
+  "leaguepedia": {
+   "ok": true,
+   "error": null,
+   "rows": 20000,
+   "matches": 19343,
+   "teams_rated": 3608
+  }
+ },
+ "hotspawn_links": {
+  "ok": true,
+  "error": null,
+  "verified_links": 195
+ },
+ "unmatched_markets": 0,
+ "verification": {
+  "checked": 951,
+  "agree": 948,
+  "skipped_ambiguous": 1,
+  "disagreements": [
+   {
+    "fixture": "Team Reds vs New Era Team",
+    "start_utc": "2026-10-03T18:00:00Z",
+    "hotspawn_winner": "Team Reds",
+    "leaguepedia_winner": "New Era Team"
+   },
+   {
+    "fixture": "Berlin 5 vs Duplex Silva Pigeons Edition",
+    "start_utc": "2026-10-04T17:00:00Z",
+    "hotspawn_winner": "Duplex Silva Pigeons Edition",
+    "leaguepedia_winner": "Berlin 5"
+   },
+   {
+    "fixture": "Your Saviours vs DMG Esports Norway",
+    "start_utc": "2026-10-18T16:00:00Z",
+    "hotspawn_winner": "DMG Esports Norway",
+    "leaguepedia_winner": "Your Saviours"
+   }
+  ]
+ }
+}

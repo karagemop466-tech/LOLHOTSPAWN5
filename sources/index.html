@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source register — Hotspawn LoL Pick Board</title>
+<meta name="description" content="Public endpoints behind every number on the board.">
+<meta name="theme-color" content="#12121c">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:title" content="Source register — Hotspawn LoL Pick Board">
+<meta property="og:description" content="Public endpoints behind every number on the board.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">HS</span>
+      <span class="brand-text"><b>LoL Pick Board</b><small>Hotspawn coverage · independent lines</small></span>
+    </a>
+    <div class="head-tools">
+      <button id="tz" class="tzbtn" type="button" aria-pressed="false">Times: UTC</button>
+    </div>
+    <nav aria-label="Sections"><div class="navscroll"><a class="navlink" href="../">Summary</a><a class="navlink" href="../picks/">All picks</a><a class="navlink" href="../unresolved/">Unresolved</a><a class="navlink" href="../methodology/">Method</a><a class="navlink is-active" href="../sources/">Sources</a><a class="navlink" href="../review/">Review</a></div></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+
+<div class="pagehead">
+  <h1>Source register</h1>
+  <p class="lede">Every input used by the pipeline, with the public endpoint it is read from. Status is
+  written by the most recent run, not by hand.</p>
+</div>
+<section class="card">
+  <div class="tablewrap"><table class="grid">
+    <thead><tr><th>Source</th><th>Type</th><th>What it is used for</th><th>Last run</th><th>Link</th></tr></thead>
+    <tbody><tr><td data-l='Source'><b>Hotspawn Play — LoL pick&rsquo;em lobby</b></td><td data-l='Type'>Fixture inventory (official)</td><td data-l='Use'>https://play.hotspawn.com/lol-pickems</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>264 scheduled fixtures</span></td><td data-l='Link'><a class='src-link' href='https://play.hotspawn.com/lol-pickems' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Hotspawn fixtures API</b></td><td data-l='Type'>Fixture inventory (public JSON API)</td><td data-l='Use'>https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&amp;tenantId=1</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>same ids as the lobby</span></td><td data-l='Link'><a class='src-link' href='https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&amp;tenantId=1' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Hotspawn match pages</b></td><td data-l='Type'>Permalinks (SSR lobby)</td><td data-l='Use'>https://www.hotspawn.com/matches/</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>195 verified links</span></td><td data-l='Link'><a class='src-link' href='https://www.hotspawn.com/matches/' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Kalshi — KXLOLGAME series</b></td><td data-l='Type'>Exchange prices (market signal)</td><td data-l='Use'>https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&amp;status=open</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>9 two-way quotes this run</span></td><td data-l='Link'><a class='src-link' href='https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&amp;status=open' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Pinnacle — esports moneyline</b></td><td data-l='Type'>Bookmaker prices (market signal)</td><td data-l='Use'>https://guest.api.arcadia.pinnacle.com/0.1/sports/12/matchups</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>0 quotes; leagues: League of Legends - EMEA Masters, League of Legends - World Championship</span></td><td data-l='Link'><a class='src-link' href='https://guest.api.arcadia.pinnacle.com/0.1/sports/12/matchups' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Polymarket — LoL events</b></td><td data-l='Type'>Prediction-market prices (market signal)</td><td data-l='Use'>https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&amp;closed=false</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>0 future match markets</span></td><td data-l='Link'><a class='src-link' href='https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&amp;closed=false' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Leaguepedia — CargoExport</b></td><td data-l='Type'>Independent results reference (Elo)</td><td data-l='Use'>https://lol.fandom.com/wiki/Special:CargoExport</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>19343 completed matches, 3608 teams</span></td><td data-l='Link'><a class='src-link' href='https://lol.fandom.com/wiki/Special:CargoExport' rel='noopener'>official</a></td></tr><tr><td data-l='Source'><b>Hotspawn completed fixtures</b></td><td data-l='Type'>Fallback results reference for the Elo model</td><td data-l='Use'>https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&amp;tenantId=1</td><td data-l='Status'><span class="pill c-high">live</span><br><span class='muted small'>1102 completed fixtures, 464 teams</span></td><td data-l='Link'><a class='src-link' href='https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&amp;tenantId=1' rel='noopener'>official</a></td></tr></tbody>
+  </table></div>
+</section>
+<section class="card">
+  <h2>Venues checked during source research</h2>
+  <p class="muted small">Reproducible with <code>scripts/probe*.sh</code> from GitHub Actions on
+  2026-10-21 (UTC). A venue is only used if it returns machine-readable prices without authentication.</p>
+  <div class="tablewrap"><table class="grid">
+    <thead><tr><th>Venue</th><th>What was tested</th><th>Result</th><th>Used?</th></tr></thead>
+    <tbody>
+      <tr><td data-l="Venue">Pinnacle</td><td data-l="Tested">Guest esports API, LoL moneylines</td><td data-l="Result">200, 2 LoL leagues priced</td><td data-l="Used">Yes</td></tr>
+      <tr><td data-l="Venue">Kalshi</td><td data-l="Tested">KXLOLGAME series, per-game markets</td><td data-l="Result">200, two-way bid/ask</td><td data-l="Used">Yes</td></tr>
+      <tr><td data-l="Venue">Polymarket</td><td data-l="Tested">Gamma events, Match Winner markets</td><td data-l="Result">200, no open future LoL match market</td><td data-l="Used">Collector on, 0 quotes</td></tr>
+      <tr><td data-l="Venue">OddsPortal</td><td data-l="Tested">LoL odds hub</td><td data-l="Result">200 HTML, no public data API; only 2 league links rendered</td><td data-l="Used">No (no stable public feed)</td></tr>
+      <tr><td data-l="Venue">BetExplorer</td><td data-l="Tested">/esports/league-of-legends/</td><td data-l="Result">404</td><td data-l="Used">No</td></tr>
+      <tr><td data-l="Venue">EGamersWorld</td><td data-l="Tested">LoL matches</td><td data-l="Result">403</td><td data-l="Used">No (blocked)</td></tr>
+      <tr><td data-l="Venue">Thunderpick / GG.BET / BetOnline / EsportsBets / Fanatics</td><td data-l="Tested">LoL esports lobbies</td><td data-l="Result">403</td><td data-l="Used">No (bot-protected)</td></tr>
+      <tr><td data-l="Venue">DraftKings</td><td data-l="Tested">LoL esports</td><td data-l="Result">404 on the LoL path</td><td data-l="Used">No</td></tr>
+      <tr><td data-l="Venue">Bovada / Midnite / Unikrn</td><td data-l="Tested">LoL pages</td><td data-l="Result">200 HTML shell, no stable public JSON</td><td data-l="Used">No</td></tr>
+      <tr><td data-l="Venue">bo3.gg</td><td data-l="Tested">API filters for LoL</td><td data-l="Result">200 but filters ignored (CS2 returned)</td><td data-l="Used">No</td></tr>
+      <tr><td data-l="Venue">Leaguepedia</td><td data-l="Tested">api.php + Special:CargoExport</td><td data-l="Result">api.php rate-limited; CargoExport 200</td><td data-l="Used">CargoExport (results)</td></tr>
+      <tr><td data-l="Venue">Liquipedia</td><td data-l="Tested">API + article HTML</td><td data-l="Result">406 / 403</td><td data-l="Used">No (blocked)</td></tr>
+      <tr><td data-l="Venue">gol.gg</td><td data-l="Tested">Tournament list</td><td data-l="Result">200, tier-1 tournaments only</td><td data-l="Used">No</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card">
+  <h2>Access notes</h2>
+  <ul>
+    <li>All endpoints above are public and unauthenticated; the pipeline sends an identifying user agent and
+      rate-limits itself.</li>
+    <li><b>Not used:</b> Hotspawn crowd pick percentages, Hotspawn tiers/points, any third-party prediction
+      article, or any screen-scraped bookmaker page that forbids automated access.</li>
+    <li>Leaguepedia/Fandom was evaluated for results history but returned
+      <code>ratelimited</code> from CI, and Liquipedia returned HTTP 403/406 for automated access, so neither
+      is used as a live input. This is recorded on the <a href="../review/">review page</a>.</li>
+  </ul>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p><b>Independent line generation.</b> Fixture list from Hotspawn Play.
+    Market prices from public, citable exchange/bookmaker APIs. Hotspawn's crowd “% picked” is never used
+    to set a probability.</p>
+    <p class="tiny">Data 2026-10-21T20:38:42.034346Z ·
+    <a href="../methodology/">methodology</a> ·
+    <a href="../sources/">source register</a> ·
+    <a href="../review/">flagged for review</a> ·
+    <a href="https://github.com/karagemop466-tech/LOLHOTSPAWN5">repository</a></p>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
