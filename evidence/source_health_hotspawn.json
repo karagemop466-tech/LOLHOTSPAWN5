@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-21T20:51:50Z",
+  "generated_at": "2026-10-21T20:53:54Z",
   "requests": [
     {
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures?sport_alias=lol&tenantId=1",
       "status": 200,
       "bytes": 1209085,
       "sha256": "9023bb22931c36b659bdad713e61221fddc9da1606445c12a86b5c3667c7d834",
-      "retrieved_at": "2026-10-21T20:51:47Z",
+      "retrieved_at": "2026-10-21T20:53:51Z",
       "content_type": "application/json; charset=utf-8",
       "age": "",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 1.68
+      "elapsed_s": 1.92
     },
     {
-      "url": "https://play.hotspawn.com/lol-pickems?cb=1792615907",
+      "url": "https://play.hotspawn.com/lol-pickems?cb=1792616032",
       "status": 200,
       "bytes": 1985566,
-      "sha256": "3a1e25f9a6127ba4f6e90356b7b91a3ece1d19e321d4199f848cf659a7822cd1",
-      "retrieved_at": "2026-10-21T20:51:50Z",
+      "sha256": "a9b6b8d52e89fb832a65b7694b6f23813bb2e6ae45e019fd20cd93144d560270",
+      "retrieved_at": "2026-10-21T20:53:54Z",
       "content_type": "text/html;charset=UTF-8",
       "age": "0",
       "x_cache": "MISS",
       "attempt": 1,
-      "elapsed_s": 2.26
+      "elapsed_s": 2.64
     }
   ]
 }
