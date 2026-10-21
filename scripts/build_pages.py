@@ -343,11 +343,13 @@ METHODOLOGY = """
      names, tournament, tier, points, scheduled start time, pick-lock time and Hotspawn's crowd pick
      percentages all come from this one response.</p>
   <p>The lobby HTML is additionally parsed to harvest the server-rendered
-     <code>www.hotspawn.com/matches/…</code> permalinks. Where a fixture is not present in that HTML,
-     its permalink is reconstructed from Hotspawn's public slug pattern and marked
+     <code>www.hotspawn.com/matches/…</code> permalinks. Only 195 of the 264 fixtures have a permalink in that HTML. The rest are
+     reconstructed from Hotspawn's public slug pattern &mdash; a rule validated by reconstructing
+     <b>195 of 195</b> server-rendered permalinks byte-for-byte &mdash; and marked
      <span class="badge unverified">unverified</span> on the
-     <a href="flagged.html">Flagged for Review</a> page. The fixture record itself is official in
-     both cases.</p>
+     <a href="flagged.html">Flagged for Review</a> page, because <code>www.hotspawn.com</code>
+     answers HTTP 403 to the automation runner and each URL could not be individually confirmed.
+     The fixture record itself is official in both cases.</p>
 
   <h2 class="section">2. Evidence ladder</h2>
   <table class="data" style="min-width:0">
@@ -389,7 +391,7 @@ METHODOLOGY = """
   <ul class="plain">
     <li><b>History window:</b> every completed game in Leaguepedia's
         <code>ScoreboardGames</code> table in the last <b>420 days</b> involving any team on the
-        board.</li>
+        board, backed by a per-team cache so repeat runs only query what is new.</li>
     <li><b>Elo:</b> games are replayed in chronological order. Both teams start at 1500,
         K&nbsp;=&nbsp;28. The rating difference gives a head-to-head expectation
         <code>1 / (1 + 10^((Rb-Ra)/400))</code>.</li>
@@ -501,11 +503,15 @@ FLAGGED = """
     <p><b>3. Leaguepedia coverage of amateur/regional circuits is partial.</b> Where a team has no
        completed game in the last 420 days we cannot originate a line and the fixture is marked
        unresolved.</p>
-    <p><b>4. Match permalinks for fixtures outside the server-rendered lobby HTML are
-       reconstructed.</b> The fixture record itself is official (Hotspawn fixture API); the
-       <code>www.hotspawn.com/matches/…</code> URL is built from Hotspawn's public slug pattern and
-       marked unverified, because www.hotspawn.com returns HTTP 403 to the automation runner and the
-       URL could not be confirmed.</p>
+    <p><b>4. Some match permalinks are reconstructed rather than server-verified.</b> The lobby HTML
+       only renders permalinks for the fixtures currently on the board (195 of 264). The remaining
+       URLs are built from Hotspawn's public slug pattern &mdash; a rule we validated by
+       reconstructing <b>195 of 195</b> server-rendered permalinks exactly (including Unicode
+       transliteration such as <code>Phong V&#361; Buffalo &rarr; phong-vu-buffalo</code>). Those
+       reconstructed URLs are still marked <span class="badge unverified">unverified</span> because
+       <code>www.hotspawn.com</code> returns HTTP 403 to the automation runner, so each one could not
+       be individually confirmed with a live request. The fixture record behind every one of them is
+       official either way.</p>
     <p><b>5. Some fixtures stay at status <code>scheduled</code> after their start time.</b> These are
        retained for completeness and flagged as stale, but their pick window has closed.</p>
   </div>

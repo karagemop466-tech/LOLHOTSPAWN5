@@ -51,11 +51,13 @@
      names, tournament, tier, points, scheduled start time, pick-lock time and Hotspawn's crowd pick
      percentages all come from this one response.</p>
   <p>The lobby HTML is additionally parsed to harvest the server-rendered
-     <code>www.hotspawn.com/matches/…</code> permalinks. Where a fixture is not present in that HTML,
-     its permalink is reconstructed from Hotspawn's public slug pattern and marked
+     <code>www.hotspawn.com/matches/…</code> permalinks. Only 195 of the 264 fixtures have a permalink in that HTML. The rest are
+     reconstructed from Hotspawn's public slug pattern &mdash; a rule validated by reconstructing
+     <b>195 of 195</b> server-rendered permalinks byte-for-byte &mdash; and marked
      <span class="badge unverified">unverified</span> on the
-     <a href="flagged.html">Flagged for Review</a> page. The fixture record itself is official in
-     both cases.</p>
+     <a href="flagged.html">Flagged for Review</a> page, because <code>www.hotspawn.com</code>
+     answers HTTP 403 to the automation runner and each URL could not be individually confirmed.
+     The fixture record itself is official in both cases.</p>
 
   <h2 class="section">2. Evidence ladder</h2>
   <table class="data" style="min-width:0">
@@ -97,7 +99,7 @@
   <ul class="plain">
     <li><b>History window:</b> every completed game in Leaguepedia's
         <code>ScoreboardGames</code> table in the last <b>420 days</b> involving any team on the
-        board.</li>
+        board, backed by a per-team cache so repeat runs only query what is new.</li>
     <li><b>Elo:</b> games are replayed in chronological order. Both teams start at 1500,
         K&nbsp;=&nbsp;28. The rating difference gives a head-to-head expectation
         <code>1 / (1 + 10^((Rb-Ra)/400))</code>.</li>

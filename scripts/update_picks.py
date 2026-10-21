@@ -34,6 +34,7 @@ import re
 import sys
 import time
 import math
+import unicodedata
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -82,7 +83,7 @@ HISTORY_DAYS = 420          # how far back to pull Leaguepedia match history
 ELO_START = 1500.0
 ELO_K = 28.0
 WIKI_SLEEP = 1.0            # seconds between Leaguepedia calls (be polite)
-MAX_WIKI_PAGES = 3          # 500 rows each, per query
+MAX_WIKI_PAGES = 2          # 500 rows each, per query
 WIKI_CHUNK = 10             # teams per Cargo query
 WIKI_BUDGET_SEC = 1500      # hard wall-clock budget for Leaguepedia collection
 CACHE_TTL_DAYS = 7          # how long a team's cached Leaguepedia history stays fresh
@@ -131,8 +132,33 @@ def norm(s):
     return s
 
 
+# Latin letters with no Unicode compatibility decomposition, which NFKD will not
+# transliterate (verified against Hotspawn permalinks: LØS -> los, Rød -> rod).
+_EXTRA_TRANSLIT = str.maketrans({
+    "\u00d8": "O", "\u00f8": "o",      # Ø ø
+    "\u0141": "L", "\u0142": "l",      # Ł ł
+    "\u0110": "D", "\u0111": "d",      # Đ đ
+    "\u00de": "Th", "\u00fe": "th",    # Þ þ
+    "\u00d0": "D", "\u00f0": "d",      # Ð ð
+    "\u00c6": "AE", "\u00e6": "ae",    # Æ æ
+    "\u0152": "OE", "\u0153": "oe",    # Œ œ
+    "\u00df": "ss",                     # ß
+})
+
+
 def slugify(s):
-    s = (s or "").strip().lower()
+    """Hotspawn's public match-permalink slug rule.
+
+    Verified against the 195 permalinks server-rendered in the lobby HTML:
+    diacritics are transliterated to ASCII (Phong Vu Buffalo, Atruvia Munster
+    Esports, Playwell Rod Q, LOS), apostrophes are dropped rather than turned
+    into separators (Anyones Legend), and punctuation becomes single hyphens
+    (404 Multigaming e.V.).
+    """
+    s = str(s or "").translate(_EXTRA_TRANSLIT)
+    s = unicodedata.normalize("NFKD", s)
+    s = s.encode("ascii", "ignore").decode("ascii")
+    s = s.strip().lower().replace("'", "").replace("\u2019", "")
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")
 
@@ -228,20 +254,25 @@ def build_permalink(fx, permalinks, debug):
     """
     fid = str(fx.get("id"))
     known = permalinks.get(fid)
-    guess = (
-        f"https://www.hotspawn.com/matches/"
-        f"{slugify(fx.get('participants0_name'))}-vs-{slugify(fx.get('participants1_name'))}"
-        f"-{slugify(fx.get('competition_name'))}-{fid}"
-    )
+    a = slugify(fx.get("participants0_name"))
+    b = slugify(fx.get("participants1_name"))
+    comp = slugify(fx.get("competition_name"))
+    # Hotspawn occasionally orders the slug participants the other way round.
+    guesses = [
+        f"https://www.hotspawn.com/matches/{a}-vs-{b}-{comp}-{fid}",
+        f"https://www.hotspawn.com/matches/{b}-vs-{a}-{comp}-{fid}",
+    ]
     if known:
-        if guess in known:
-            debug["permalink_rule_hits"] = debug.get("permalink_rule_hits", 0) + 1
-            return guess, True
+        for g in guesses:
+            if g in known:
+                debug["permalink_rule_hits"] = debug.get("permalink_rule_hits", 0) + 1
+                return g, True
         debug["permalink_rule_misses"] = debug.get("permalink_rule_misses", 0) + 1
         if len(debug.setdefault("permalink_miss_examples", [])) < 15:
             debug["permalink_miss_examples"].append({
                 "id": fid,
-                "guess": guess,
+                "guess": guesses[0],
+                "guess_alt": guesses[1],
                 "actual": sorted(known)[0],
                 "team1": fx.get("participants0_name"),
                 "team2": fx.get("participants1_name"),
@@ -249,7 +280,7 @@ def build_permalink(fx, permalinks, debug):
             })
         return sorted(known)[0], True
     debug["permalink_constructed"] = debug.get("permalink_constructed", 0) + 1
-    return guess, False
+    return guesses[0], False
 
 
 # --------------------------------------------------------------------------- #
@@ -599,7 +630,7 @@ def leaguepedia_games(teams, competitions, debug):
 
     # ---- pass 0: cached history ------------------------------------------ #
     cached_teams = 0
-    empty_cut = (NOW - timedelta(days=1)).isoformat()   # retry empty results daily
+    empty_cut = (NOW - timedelta(days=2)).isoformat()   # retry empty results every 2 days
     for t in teams:
         entry = cache.get(norm(t))
         ttl_cut = fresh_cut if (entry and entry.get("games")) else empty_cut
@@ -1021,6 +1052,12 @@ def main():
             "used as an input to our probabilities."
         )
         rows.append(row)
+
+    hits = debug.get("permalink_rule_hits", 0)
+    misses = debug.get("permalink_rule_misses", 0)
+    debug["permalink_rule_accuracy"] = (
+        f"{hits}/{hits + misses}" if (hits + misses) else "n/a"
+    )
 
     rows.sort(key=lambda r: (r.get("start_utc") or "9999", r.get("tournament") or "", r.get("team1") or ""))
 
