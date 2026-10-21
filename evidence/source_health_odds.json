@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-10-21T21:26:13Z",
+  "generated_at": "2026-10-21T21:33:42Z",
   "requests": [
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&limit=1000",
       "status": 200,
-      "bytes": 2683403,
-      "sha256": "eaf5669c966b1fe1c69254063e46f4c36cf69fd96608d463d31567ce4b8d2f57",
-      "retrieved_at": "2026-10-21T21:26:02Z",
+      "bytes": 2683404,
+      "sha256": "f8cf4fc8494d9bedf32cb26eef6416a03ce9bf65ef0775e6d009516707e033a0",
+      "retrieved_at": "2026-10-21T21:33:31Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.3
+      "elapsed_s": 0.24
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&limit=1000&cursor=CgwIkou31AYQ2La55AISIUtYTE9MR0FNRS0yNkFVRzI3MDkwMEdTTUNWTFItR1NNQw",
       "status": 200,
       "bytes": 1139407,
       "sha256": "cfb9dec5121dfa311da34213760f4d1e15273b038ab153760a04023ffc1629e7",
-      "retrieved_at": "2026-10-21T21:26:03Z",
+      "retrieved_at": "2026-10-21T21:33:32Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.16
+      "elapsed_s": 0.28
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100",
       "status": 200,
       "bytes": 62367,
       "sha256": "8017aa48d523b527b380bad76543334328feb30325ffeb27a0c53a743c8c815c",
-      "retrieved_at": "2026-10-21T21:26:03Z",
+      "retrieved_at": "2026-10-21T21:33:32Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
@@ -42,19 +42,19 @@
       "status": 200,
       "bytes": 63044,
       "sha256": "7d5bb2ddb59ecddb4d1368fa7cf6a610fcd88f6d459873fc8a78fdd0d1359e2b",
-      "retrieved_at": "2026-10-21T21:26:03Z",
+      "retrieved_at": "2026-10-21T21:33:33Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.09
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIgLnh1QYSHEtYTE9MR0FNRS0yNlNFUDI2MTQwMEVTQkhSVFM",
       "status": 200,
       "bytes": 63211,
       "sha256": "74408e5757a729b5ddb0af0776a5fda02017882a235e20ea3c5a467500cc3127",
-      "retrieved_at": "2026-10-21T21:26:04Z",
+      "retrieved_at": "2026-10-21T21:33:33Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
@@ -66,55 +66,55 @@
       "status": 200,
       "bytes": 62890,
       "sha256": "47ecc1fdd7a445579e0dfe195b970d0fd4f10d5ee7c7abdb18a1de056603bc0f",
-      "retrieved_at": "2026-10-21T21:26:04Z",
+      "retrieved_at": "2026-10-21T21:33:33Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.18
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYI4OP11AYSGUtYTE9MR0FNRS0yNlNFUDA2MDQwMERLVDE",
       "status": 200,
       "bytes": 62476,
       "sha256": "7d3ca235ffe43598638b7b6c5193be8a8f4f71037fb8e904d74dc70281e92d67",
-      "retrieved_at": "2026-10-21T21:26:04Z",
+      "retrieved_at": "2026-10-21T21:33:34Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.16
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIwPDF1AYSG0tYTE9MR0FNRS0yNkFVRzI4MDIwME5JUEVERw",
       "status": 200,
       "bytes": 62656,
       "sha256": "06907841cc49a40aefffc74f658060553eff1a69629b578499fe0e7f0cda6271",
-      "retrieved_at": "2026-10-21T21:26:05Z",
+      "retrieved_at": "2026-10-21T21:33:34Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.16
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIiLie1AYSG0tYTE9MR0FNRS0yNkFVRzIwMTQwME9URlNQSw",
       "status": 200,
       "bytes": 62924,
       "sha256": "c49a50597c21ad5c3f39750e3357394ea4587c9277caa1ae698802f4f039619d",
-      "retrieved_at": "2026-10-21T21:26:05Z",
+      "retrieved_at": "2026-10-21T21:33:35Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.2
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYI2OmC1AYSHEtYTE9MR0FNRS0yNkFVRzE1MDkwMEtDQlNDTEE",
       "status": 200,
       "bytes": 57858,
       "sha256": "484f87e4dd3af116644381f43a926315cdfe0964df73f28ff2c32847f8b1220d",
-      "retrieved_at": "2026-10-21T21:26:05Z",
+      "retrieved_at": "2026-10-21T21:33:35Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
@@ -126,141 +126,153 @@
       "status": 200,
       "bytes": 56863,
       "sha256": "f19e826e638cf817718d5ab82c53e7236a4f8558169e84ec2c6619309e84c7a6",
-      "retrieved_at": "2026-10-21T21:26:06Z",
+      "retrieved_at": "2026-10-21T21:33:35Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.14
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIkLnP0wYSG0tYTE9MR0FNRS0yNkFVRzA1MTUwMElKQ1pZQg",
       "status": 200,
       "bytes": 56945,
       "sha256": "4b16f5e9bf802484944905d5847dd39e58b514203cf07cb22180525f6e920279",
-      "retrieved_at": "2026-10-21T21:26:06Z",
+      "retrieved_at": "2026-10-21T21:33:36Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.07
+      "elapsed_s": 0.1
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIhJi60wYSG0tYTE9MR0FNRS0yNkFVRzAxMTMxNU5BVklLQw",
       "status": 200,
       "bytes": 56903,
       "sha256": "2fc802ac9c238ee34417a3e8660bd9d44f702343e448a52199169ec4bc10cd42",
-      "retrieved_at": "2026-10-21T21:26:06Z",
+      "retrieved_at": "2026-10-21T21:33:36Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.17
     },
     {
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100&cursor=CgYIuJOo0wYSG0tYTE9MR0FNRS0yNkpVTDI5MDQwMEFSQkxHVQ",
       "status": 200,
       "bytes": 56843,
       "sha256": "9139b65f316ec745508b7af39be0600dba49308a4d6aab2ec30fb11986fbfd3c",
-      "retrieved_at": "2026-10-21T21:26:07Z",
+      "retrieved_at": "2026-10-21T21:33:37Z",
       "content_type": "application/json",
       "age": "",
       "x_cache": "Miss from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.13
     },
     {
       "url": "https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&closed=false&limit=100&offset=0",
       "status": 200,
-      "bytes": 4326541,
-      "sha256": "ad3ff52b5ef8cd3460ac5ee82732f4e11ab7caa1af3774744cf580bc3a1af9d6",
-      "retrieved_at": "2026-10-21T21:26:07Z",
+      "bytes": 4325435,
+      "sha256": "5f3a8200f697465cd0ca12b054060daabe107262dd227abbcf03572fe52c122a",
+      "retrieved_at": "2026-10-21T21:33:37Z",
       "content_type": "application/json",
-      "age": "99",
+      "age": "249",
       "x_cache": "Hit from cloudfront",
       "attempt": 1,
-      "elapsed_s": 0.13
+      "elapsed_s": 0.2
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues",
       "status": 200,
       "bytes": 6182,
       "sha256": "9be45082dca32fa7b3239e2f5a2cd61607bde505cfad866b85c83a6ffb5ac023",
-      "retrieved_at": "2026-10-21T21:26:07Z",
+      "retrieved_at": "2026-10-21T21:33:38Z",
       "content_type": "application/json",
-      "age": "330",
+      "age": "780",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.17
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/matchups",
       "status": 200,
       "bytes": 26519,
-      "sha256": "57261ba146cca10a60db0a02382fc5b55fdff8100d1a0f2f02fd0cebfb40da77",
-      "retrieved_at": "2026-10-21T21:26:08Z",
+      "sha256": "207b76725b9fadfb55f632aea23d10332d5de16d3d90ee6c117adc27b7e76ec3",
+      "retrieved_at": "2026-10-21T21:33:38Z",
       "content_type": "application/json",
-      "age": "700",
+      "age": "246",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.11
-    },
-    {
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
-      "status": 200,
-      "bytes": 951,
-      "sha256": "cc7e9d27515c372dfa5c90a621af62572562aa71ff9ceeb158f7e287697d8dad",
-      "retrieved_at": "2026-10-21T21:26:08Z",
-      "content_type": "application/json",
-      "age": "555",
-      "x_cache": "",
-      "attempt": 1,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.18
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638754606/markets/related/straight",
       "status": 200,
       "bytes": 951,
       "sha256": "801d825a88e694b36c03de3cba716eca8bcc6317ccc60c564e9b6a8ce9fb6d46",
-      "retrieved_at": "2026-10-21T21:26:08Z",
+      "retrieved_at": "2026-10-21T21:33:38Z",
       "content_type": "application/json",
-      "age": "578",
+      "age": "122",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.15
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638755459/markets/related/straight",
       "status": 200,
       "bytes": 951,
       "sha256": "8048eab8d4aada13c71dbc20f0c5fd71b11b1c444256189848a166ba6a853ff6",
-      "retrieved_at": "2026-10-21T21:26:09Z",
+      "retrieved_at": "2026-10-21T21:33:39Z",
       "content_type": "application/json",
-      "age": "571",
+      "age": "117",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.09
+      "elapsed_s": 0.1
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748200/markets/related/straight",
+      "status": 200,
+      "bytes": 951,
+      "sha256": "0a525469bc5b82793c80e0debf9da17041d87545007e2e82f211b6afbc4871f0",
+      "retrieved_at": "2026-10-21T21:33:39Z",
+      "content_type": "application/json",
+      "age": "234",
+      "x_cache": "",
+      "attempt": 1,
+      "elapsed_s": 0.15
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
+      "status": 200,
+      "bytes": 951,
+      "sha256": "cc7e9d27515c372dfa5c90a621af62572562aa71ff9ceeb158f7e287697d8dad",
+      "retrieved_at": "2026-10-21T21:33:39Z",
+      "content_type": "application/json",
+      "age": "98",
+      "x_cache": "",
+      "attempt": 1,
+      "elapsed_s": 0.16
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750902/markets/related/straight",
       "status": 200,
       "bytes": 951,
       "sha256": "b8d03a8cf3540bdfd26229f5affbe7215f0c962bcb6fe787e94ecedc0b01839b",
-      "retrieved_at": "2026-10-21T21:26:09Z",
+      "retrieved_at": "2026-10-21T21:33:40Z",
       "content_type": "application/json",
-      "age": "616",
+      "age": "160",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.1
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748203/markets/related/straight",
       "status": 200,
       "bytes": 951,
       "sha256": "ceb47c748af5fd68427095afa2b8e58b875561618073ca01b03a6f4ba18f6b9d",
-      "retrieved_at": "2026-10-21T21:26:10Z",
+      "retrieved_at": "2026-10-21T21:33:40Z",
       "content_type": "application/json",
-      "age": "601",
+      "age": "145",
       "x_cache": "",
       "attempt": 1,
       "elapsed_s": 0.1
@@ -270,72 +282,44 @@
       "status": 200,
       "bytes": 951,
       "sha256": "13144d5963f31fe339573c47f84e73bc0beec70b09f62a62bc07f3eba4883296",
-      "retrieved_at": "2026-10-21T21:26:10Z",
+      "retrieved_at": "2026-10-21T21:33:41Z",
       "content_type": "application/json",
-      "age": "600",
+      "age": "146",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.08
+      "elapsed_s": 0.11
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750814/markets/related/straight",
       "status": 200,
       "bytes": 951,
       "sha256": "8f0024b8635aa82f2e271d806641872e6a21fed44ea51bc22c37441086b0e765",
-      "retrieved_at": "2026-10-21T21:26:10Z",
+      "retrieved_at": "2026-10-21T21:33:41Z",
       "content_type": "application/json",
-      "age": "678",
+      "age": "223",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 0.09
-    },
-    {
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748200/markets/related/straight",
-      "status": 200,
-      "bytes": 951,
-      "sha256": "0a525469bc5b82793c80e0debf9da17041d87545007e2e82f211b6afbc4871f0",
-      "retrieved_at": "2026-10-21T21:26:11Z",
-      "content_type": "application/json",
-      "age": "690",
-      "x_cache": "",
-      "attempt": 1,
-      "elapsed_s": 0.11
+      "elapsed_s": 0.13
     },
     {
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/matchups",
-      "status": 200,
-      "bytes": 7264,
-      "sha256": "db15b7b8878362c97df260e1f30f5a45af1bceabc23605807b7a23ccfa02a9a5",
-      "retrieved_at": "2026-10-21T21:26:11Z",
-      "content_type": "application/json",
-      "age": "464",
-      "x_cache": "",
+      "status": 401,
+      "error": "HTTP 401: {\n  \"detail\": \"No authorization token provided\",\n  \"status\": 401,\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\"\n}\n",
+      "retrieved_at": "2026-10-21T21:33:41Z",
       "attempt": 1,
-      "elapsed_s": 0.04
-    },
-    {
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-      "status": 200,
-      "bytes": 5758,
-      "sha256": "5d167fe4dc40ba8238f3049ca4d62e31bc4611784b04b2becbc59061c3a93595",
-      "retrieved_at": "2026-10-21T21:26:11Z",
-      "content_type": "application/json",
-      "age": "758",
-      "x_cache": "",
-      "attempt": 1,
-      "elapsed_s": 0.1
+      "elapsed_s": 0.29
     },
     {
       "url": "https://www.bovada.lv/services/sports/event/v2/events/A/description/esports",
       "status": 200,
-      "bytes": 522001,
-      "sha256": "c0d5f5fae6d2a245b30a48e949d6a4eaea4eab16ad630a87dc899d08fcb3a0fd",
-      "retrieved_at": "2026-10-21T21:26:13Z",
+      "bytes": 521356,
+      "sha256": "b98e85d13866c21e6420ac68fc15c2e2f6467d1f989f03cc7e6604048b421234",
+      "retrieved_at": "2026-10-21T21:33:42Z",
       "content_type": "application/json",
-      "age": "582",
+      "age": "349",
       "x_cache": "",
       "attempt": 1,
-      "elapsed_s": 1.45
+      "elapsed_s": 0.48
     }
   ]
 }

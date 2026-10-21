@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-10-21T21:40:22Z",
+  "problems": [
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/emea-masters-summer/galions-solary-202610220800 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/gen-g-invictus-gaming-202610231300 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/hanwha-life-esports-top-esports-202610231400 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/bilibili-gaming-movistar-koi-202610232000 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/anyone-s-legend-karmine-corp-202610231600 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/g2-esports-dplus-kia-202610231700 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/team-liquid-ctbc-flying-oyster-202610231400 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/los-grandes-t1-202610231900 -> 404 ",
+    "external link failed: https://www.bovada.lv/esports/league-of-legends/world-championship-26/team-secret-lyon-gaming-202610232000 -> 404 ",
+    "external link failed: https://kalshi.com/markets/kxlolgame -> 429 ",
+    "external link failed: https://www.bovada.lv/esports -> 404 "
+  ],
+  "results": [
+    {
+      "url": "https://polymarket.com/event/lol-gal-sly-2026-10-22/lol-gal-sly-2026-10-22",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/emea-masters-summer/galions-solary-202610220800",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT220800SLYGAL",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748200/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-gen-ig1-2026-10-23/lol-gen-ig1-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/gen-g-invictus-gaming-202610231300",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231300IGGEN",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748203/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-hle1-tes-2026-10-23/lol-hle1-tes-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/hanwha-life-esports-top-esports-202610231400",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231700TESHLE",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638755459/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-blg-mkoi-2026-10-23/lol-blg-mkoi-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/bilibili-gaming-movistar-koi-202610232000",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT232000MKOIBLG",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750902/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-al-kc-2026-10-23/lol-al-kc-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/anyone-s-legend-karmine-corp-202610231600",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231500KCAL",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750815/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-g2-dk-2026-10-23/lol-g2-dk-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/g2-esports-dplus-kia-202610231700",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231600DKG2",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750814/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-tl2-cfo-2026-10-23/lol-tl2-cfo-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/team-liquid-ctbc-flying-oyster-202610231400",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231400CFOTL",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748205/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-los-t1-2026-10-23/lol-los-t1-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/los-grandes-t1-202610231900",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231800T1LOS",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638754606/markets/related/straight",
+      "status": 200
+    },
+    {
+      "url": "https://polymarket.com/event/lol-tsw-ly-2026-10-23/lol-tsw-ly-2026-10-23",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports/league-of-legends/world-championship-26/team-secret-lyon-gaming-202610232000",
+      "status": 404
+    },
+    {
+      "url": "https://api.elections.kalshi.com/trade-api/v2/events/KXLOLGAME-26OCT231900LYTSW",
+      "status": 200
+    },
+    {
+      "url": "https://play.hotspawn.com/lol-pickems",
+      "status": 200
+    },
+    {
+      "url": "https://kalshi.com/markets/kxlolgame",
+      "status": 429
+    },
+    {
+      "url": "https://polymarket.com",
+      "status": 200
+    },
+    {
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues",
+      "status": 200
+    },
+    {
+      "url": "https://www.bovada.lv/esports",
+      "status": 404
+    }
+  ]
+}

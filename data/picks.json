@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:32:12Z",
+  "generated_at": "2026-10-21T21:40:10Z",
   "note": "HotSpawn supplies the fixture list only. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line built on verified match results. HotSpawn crowd percentages are never used.",
   "summary": {
     "fixtures": 264,
@@ -3280,7 +3280,7 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Galions",
-        "prob": 0.5342,
+        "prob": 0.555,
         "rating": 1616.55,
         "games": 27,
         "source_url": "https://lol.fandom.com/wiki/Galions",
@@ -3288,14 +3288,14 @@
       },
       "team_b": {
         "name": "Solary",
-        "prob": 0.4658,
+        "prob": 0.445,
         "rating": 1608.42,
         "games": 25,
         "source_url": "https://lol.fandom.com/wiki/Solary",
         "wiki_name": "Solary"
       },
       "pick": "Galions",
-      "pick_prob": 0.5342,
+      "pick_prob": 0.555,
       "confidence": "market",
       "basis": "external series line",
       "model": {
@@ -3307,40 +3307,23 @@
         "wiki_name_b": "Solary"
       },
       "market": {
-        "source": "pinnacle",
-        "source_kind": "licensed bookmaker",
+        "source": "polymarket",
+        "source_kind": "prediction market",
         "scope": "series",
         "market_period": null,
-        "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-        "event_title": null,
-        "league": "League of Legends - EMEA Masters",
-        "prob_a": 0.5342,
-        "prob_b": 0.4658,
-        "decimal_a": 2.05,
-        "decimal_b": 1.787402,
-        "overround": 1.047276,
-        "best_of": null,
-        "quote_start": "2026-10-22T16:00:00Z",
+        "source_url": "https://polymarket.com/event/lol-gal-sly-2026-10-22/lol-gal-sly-2026-10-22",
+        "event_title": "Galions vs Solary (BO5) - EMEA Masters Playoffs",
+        "league": null,
+        "prob_a": 0.555,
+        "prob_b": 0.445,
+        "decimal_a": null,
+        "decimal_b": null,
+        "overround": 1.0,
+        "best_of": 5,
+        "quote_start": "2026-10-22 12:00:00+00",
         "match_score": 1.0
       },
       "market_sources": [
-        {
-          "source": "pinnacle",
-          "source_kind": "licensed bookmaker",
-          "scope": "series",
-          "market_period": null,
-          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-          "event_title": null,
-          "league": "League of Legends - EMEA Masters",
-          "prob_a": 0.5342,
-          "prob_b": 0.4658,
-          "decimal_a": 2.05,
-          "decimal_b": 1.787402,
-          "overround": 1.047276,
-          "best_of": null,
-          "quote_start": "2026-10-22T16:00:00Z",
-          "match_score": 1.0
-        },
         {
           "source": "polymarket",
           "source_kind": "prediction market",
@@ -3356,23 +3339,6 @@
           "overround": 1.0,
           "best_of": 5,
           "quote_start": "2026-10-22 12:00:00+00",
-          "match_score": 1.0
-        },
-        {
-          "source": "pinnacle",
-          "source_kind": "licensed bookmaker",
-          "scope": "game",
-          "market_period": null,
-          "source_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight",
-          "event_title": null,
-          "league": "League of Legends - EMEA Masters",
-          "prob_a": 0.5152,
-          "prob_b": 0.4848,
-          "decimal_a": 1.970874,
-          "decimal_b": 1.854701,
-          "overround": 1.04656,
-          "best_of": null,
-          "quote_start": "2026-10-22T16:00:00Z",
           "match_score": 1.0
         },
         {
