@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Lines — Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Hotspawn LoL Pick'ems priced by Pinnacle, Unibet and Polymarket.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HS</span>
+      <span class="brand-text">
+        <span class="brand-title">Hotspawn LoL Pick Desk</span>
+        <span class="brand-sub">League of Legends Pick'em lines</span>
+      </span>
+    </a>
+    <span class="stamp">Data updated<br><b id="updated">&mdash;</b></span>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+  </div>
+  <nav class="site-nav" id="mainnav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Summary</a></li>
+      <li><a href="picks.html">All Picks</a></li>
+      <li><a href="markets.html" aria-current="page">Market Lines</a></li>
+      <li><a href="model.html">Originated Lines</a></li>
+      <li><a href="unresolved.html">Unresolved</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="sources.html">Sources</a></li>
+      <li><a href="flagged.html">Flagged</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" class="wrap">
+
+  <h1 class="page-title">Market lines</h1>
+  <p class="lede">Fixtures priced by an outside esportsbook or prediction market. These are the strongest lines on the site: Pinnacle and Unibet moneylines are de-vigged into probabilities, and Polymarket prediction prices are normalised. Where more than one source prices the same match the de-vigged probabilities are averaged, with Pinnacle weighted double as the sharp book.</p>
+
+  <div class="note good">
+    <p><b>Why this tier is small.</b> Commercial books only price top-tier League of Legends. On the
+       current board that is essentially the World Championship and EMEA Masters. Everything else on
+       the Hotspawn board has no market at all &mdash; see
+       <a href="model.html">Originated lines</a> and <a href="unresolved.html">Unresolved</a>.</p>
+    <p><b>Hotspawn crowd percentages are not used.</b> Nothing on this page is derived from the
+       Hotspawn lobby's pick split.</p>
+  </div>
+
+
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search team, tournament, evidence…" aria-label="Search picks">
+    <select id="tournament-filter" aria-label="Filter by tournament">
+      <option value="">All tournaments</option>
+    </select>
+    <div class="viewtoggle" role="group" aria-label="View mode">
+      <button type="button" data-view="cards" aria-pressed="true">Cards</button>
+      <button type="button" data-view="table" aria-pressed="false">Table</button>
+    </div>
+  </div>
+  <p class="small muted" id="result-count">&nbsp;</p>
+
+  <div id="list" data-method="MARKET"><p class="loading">Loading…</p></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Hotspawn LoL Pick Desk</b> &mdash; independent research dashboard.
+       Not affiliated with, endorsed by, or operated by Hotspawn.</p>
+    <p>Match board: <a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener noreferrer">play.hotspawn.com/lol-pickems</a>.
+       Data is regenerated automatically every 6 hours by GitHub Actions.
+       Nothing on this site is gambling advice.</p>
+    <p>Every table row on this site links to the official source it was derived from.
+       Values that could not be confirmed from an official source are left blank and
+       flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources & Verification — Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Official sources behind every Hotspawn LoL Pick'em probability, and what was rejected.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HS</span>
+      <span class="brand-text">
+        <span class="brand-title">Hotspawn LoL Pick Desk</span>
+        <span class="brand-sub">League of Legends Pick'em lines</span>
+      </span>
+    </a>
+    <span class="stamp">Data updated<br><b id="updated">&mdash;</b></span>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+  </div>
+  <nav class="site-nav" id="mainnav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Summary</a></li>
+      <li><a href="picks.html">All Picks</a></li>
+      <li><a href="markets.html">Market Lines</a></li>
+      <li><a href="model.html">Originated Lines</a></li>
+      <li><a href="unresolved.html">Unresolved</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="sources.html" aria-current="page">Sources</a></li>
+      <li><a href="flagged.html">Flagged</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" class="wrap">
+
+  <h1 class="page-title">Sources &amp; verification</h1>
+  <p class="lede">Every external source this site uses, what it contributes, and the verification
+     performed against it at the last collection run.</p>
+
+  <div id="sources-list"><p class="loading">Loading source registry…</p></div>
+
+  <h2 class="section">Sources we tested and rejected</h2>
+  <table class="data" style="min-width:0">
+    <thead><tr><th>Source</th><th>Result</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>OddsPapi (<code>api.oddspapi.io</code>)</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Requires a free-tier API key; no credentials available for an unattended pipeline.</td></tr>
+      <tr><td>PandaScore (<code>api.pandascore.co</code>)</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Returns <code>403 Token is missing</code>.</td></tr>
+      <tr><td>Abios (<code>api.abiosgaming.com</code>)</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Returns <code>403 Token is missing</code>.</td></tr>
+      <tr><td>DraftKings / FanDuel sportsbook APIs</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Blocked from the runner (403 / geo-restricted).</td></tr>
+      <tr><td>1xBet, GG.Bet, Thunderpick, Stake, Luckbox</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Cloudflare challenge or connection failure from the runner; no keyless odds feed.</td></tr>
+      <tr><td>Kalshi</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Public API reachable but carries no League of Legends match markets.</td></tr>
+      <tr><td>OddsPortal / BetExplorer</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>HTML-only, aggressive anti-bot, and not an official source. Rejected on
+              verification grounds.</td></tr>
+      <tr><td>Liquipedia</td>
+          <td><span class="badge unresolved">Not used</span></td>
+          <td>Rate-limited (429) from the runner; Leaguepedia provides the same role with a working
+              Cargo API.</td></tr>
+      <tr><td>www.hotspawn.com match pages</td>
+          <td><span class="badge unverified">Context only</span></td>
+          <td>Cloudflare returns 403 to the runner, so permalinks harvested from the lobby HTML are
+              used as the official match link. Constructed permalinks are flagged.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section">Hotspawn is a source of fixtures, never of probability</h2>
+  <div class="note warn">
+    <p>Hotspawn is used <b>only</b> to enumerate which matches exist, together with their tournament,
+       tier, points, start/lock times and the crowd's pick split. The crowd's pick split is shown for
+       context and is <b>never</b> an input to a probability on this site.</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Hotspawn LoL Pick Desk</b> &mdash; independent research dashboard.
+       Not affiliated with, endorsed by, or operated by Hotspawn.</p>
+    <p>Match board: <a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener noreferrer">play.hotspawn.com/lol-pickems</a>.
+       Data is regenerated automatically every 6 hours by GitHub Actions.
+       Nothing on this site is gambling advice.</p>
+    <p>Every table row on this site links to the official source it was derived from.
+       Values that could not be confirmed from an official source are left blank and
+       flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

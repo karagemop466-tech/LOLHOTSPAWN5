@@ -1,176 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flagged for Review — Hotspawn LoL</title>
-  <meta name="description" content="Audit list of matches with unverified fields, waiting information, or low-tier placeholders for manual review.">
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review — Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Unverified and irregular Hotspawn LoL Pick'em data, with source links.">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
-<header>
-  <div class="header-container">
-    <div class="brand-title">
-      <h1>🎮 Hotspawn LoL Pick'em Desk</h1>
-      <span class="badge-live">Live</span>
-    </div>
-    <div class="header-meta" id="header-meta">Loading flagged items…</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HS</span>
+      <span class="brand-text">
+        <span class="brand-title">Hotspawn LoL Pick Desk</span>
+        <span class="brand-sub">League of Legends Pick'em lines</span>
+      </span>
+    </a>
+    <span class="stamp">Data updated<br><b id="updated">&mdash;</b></span>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
   </div>
+  <nav class="site-nav" id="mainnav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Summary</a></li>
+      <li><a href="picks.html">All Picks</a></li>
+      <li><a href="markets.html">Market Lines</a></li>
+      <li><a href="model.html">Originated Lines</a></li>
+      <li><a href="unresolved.html">Unresolved</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="sources.html">Sources</a></li>
+      <li><a href="flagged.html" aria-current="page">Flagged</a></li>
+    </ul>
+  </nav>
 </header>
 
-<nav>
-  <div class="nav-container">
-    <a href="index.html">🏠 Executive Summary</a>
-    <a href="picks.html">🎯 All Picks</a>
-    <a href="unresolved.html">⚠️ Unresolved &amp; Limitations</a>
-    <a href="flagged.html" class="active">🚩 Flagged for Review</a>
-    <a href="methodology.html">📖 Methodology &amp; Sources</a>
+<main id="content" class="wrap">
+
+  <h1 class="page-title">Flagged for review</h1>
+  <p class="lede">Items that could not be fully verified from an official source. Nothing here is
+     filled in or inferred &mdash; each entry states exactly what is missing and links to the
+     official record behind it.</p>
+
+  <h2 class="section">Standing irregularities</h2>
+  <div class="note warn">
+    <p><b>1. Tier is reported as "WAITING FOR INFORMATION" for most fixtures.</b> This is Hotspawn's
+       own value, copied verbatim from their API. It is not a gap in our data &mdash; Hotspawn has
+       not assigned a tier to those competitions. Affected rows show
+       <span class="badge tier">TIER TBC</span>.</p>
+    <p><b>2. No betting market exists for most of the board.</b> Pinnacle and Unibet together price
+       roughly a dozen League of Legends fixtures a day, all World Championship / EMEA Masters. The
+       remainder of the board is unpriced anywhere. This is a property of the market, not of the
+       pipeline.</p>
+    <p><b>3. Leaguepedia coverage of amateur/regional circuits is partial.</b> Where a team has no
+       completed game in the last 420 days we cannot originate a line and the fixture is marked
+       unresolved.</p>
+    <p><b>4. Match permalinks for fixtures outside the server-rendered lobby HTML are
+       reconstructed.</b> The fixture record itself is official (Hotspawn fixture API); the
+       <code>www.hotspawn.com/matches/…</code> URL is built from Hotspawn's public slug pattern and
+       marked unverified, because www.hotspawn.com returns HTTP 403 to the automation runner and the
+       URL could not be confirmed.</p>
+    <p><b>5. Some fixtures stay at status <code>scheduled</code> after their start time.</b> These are
+       retained for completeness and flagged as stale, but their pick window has closed.</p>
   </div>
-</nav>
 
-<main>
-
-  <div style="margin-bottom: 20px;">
-    <h2 style="font-size: 22px; font-weight: 800; color: #fff;">🚩 Flagged for Review</h2>
-    <p style="font-size: 14px; color: var(--text-muted); margin-top: 4px;">
-      Line-by-line verification audit. The items below could not be confirmed with 100% certainty from official sources or are awaiting updates from Hotspawn.
-    </p>
-  </div>
-
-  <!-- Standing System Flags -->
-  <section class="content-card">
-    <h3>📌 Standing Environmental &amp; Source Flags</h3>
-    <div style="display: grid; grid-template-columns: 1fr; gap: 12px;">
-      <div style="background: #111728; border-left: 4px solid var(--accent-gold); padding: 14px; border-radius: 8px;">
-        <b style="color: #ffffff;">1. Hotspawn Tier: "WAITING FOR INFORMATION"</b>
-        <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 4px;">
-          Hotspawn has not yet designated the tier or point multiplier for several dozen matches. These are displayed with tier unconfirmed and flagged below.
-        </p>
-      </div>
-      <div style="background: #111728; border-left: 4px solid var(--accent-blue); padding: 14px; border-radius: 8px;">
-        <b style="color: #ffffff;">2. OddsPapi Secret Configuration</b>
-        <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 4px;">
-          Direct bookmaker lines (Pinnacle/bet365 via OddsPapi) require a repository secret <code>ODDSPAPI_KEY</code>. When omitted, the pipeline automatically falls back to Polymarket and our Leaguepedia Elo model without failure.
-        </p>
-      </div>
-      <div style="background: #111728; border-left: 4px solid var(--accent-red); padding: 14px; border-radius: 8px;">
-        <b style="color: #ffffff;">3. Unresolved 50/50 Placeholders</b>
-        <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 4px;">
-          All fixtures marked <code>UNRESOLVED</code> have 0 historical games in Leaguepedia and no active market. Their probability is set to 50/50 by policy, rather than inferring or hallucinating an edge.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Table of Flagged Matches -->
-  <section class="content-card">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-      <h3 id="flagged-count-heading">📋 Flagged Matches Table</h3>
-      <input type="search" id="flagged-search" class="search-input" style="max-width: 300px;" placeholder="🔍 Filter flagged fixtures…" aria-label="Search flagged fixtures">
-    </div>
-
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Schedule</th>
-            <th>Tournament</th>
-            <th>Matchup</th>
-            <th>Flagged Issue</th>
-            <th>Current Status</th>
-            <th>Official Link for Review</th>
-          </tr>
-        </thead>
-        <tbody id="flagged-table-body">
-          <tr><td colspan="6" style="text-align: center; padding: 25px;">Loading flagged entries…</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <h2 class="section">Currently flagged items</h2>
+  <div id="flagged-list"><p class="loading">Loading flagged items…</p></div>
 
 </main>
 
-<footer>
-  <p>
-    Hotspawn LoL Pick'em Desk · Audit Trail · <a href="index.html">Back to Home</a>
-  </p>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Hotspawn LoL Pick Desk</b> &mdash; independent research dashboard.
+       Not affiliated with, endorsed by, or operated by Hotspawn.</p>
+    <p>Match board: <a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener noreferrer">play.hotspawn.com/lol-pickems</a>.
+       Data is regenerated automatically every 6 hours by GitHub Actions.
+       Nothing on this site is gambling advice.</p>
+    <p>Every table row on this site links to the official source it was derived from.
+       Values that could not be confirmed from an official source are left blank and
+       flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
+  </div>
 </footer>
 
 <script src="assets/app.js"></script>
-<script>
-  let flaggedItems = [];
-  const searchInput = document.getElementById('flagged-search');
-  const tableBody = document.getElementById('flagged-table-body');
-  const heading = document.getElementById('flagged-count-heading');
-
-  function renderTable() {
-    const q = searchInput.value.trim().toLowerCase();
-    const filtered = flaggedItems.filter(m => {
-      return !q || (
-        (m.team1 || '').toLowerCase().includes(q) ||
-        (m.team2 || '').toLowerCase().includes(q) ||
-        (m.tournament || '').toLowerCase().includes(q) ||
-        (m.flagReason || '').toLowerCase().includes(q)
-      );
-    });
-
-    heading.textContent = `📋 Flagged Matches Table (${filtered.length} items)`;
-
-    if (filtered.length === 0) {
-      tableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 25px; color: var(--text-muted);">No flagged fixtures match your search query.</td></tr>`;
-      return;
-    }
-
-    tableBody.innerHTML = filtered.map(item => `
-      <tr class="row-unres">
-        <td>${formatDate(item.start_utc, item.start_raw)}</td>
-        <td><b>${escapeHtml(item.tournament)}</b></td>
-        <td>${escapeHtml(item.team1)} vs ${escapeHtml(item.team2)}</td>
-        <td><span style="color: #fca5a5; font-weight: 600;">${escapeHtml(item.flagReason)}</span></td>
-        <td>${escapeHtml(item.status)}</td>
-        <td>
-          ${item.hotspawn_url ? `<a href="${escapeHtml(item.hotspawn_url)}" target="_blank" rel="noopener">Hotspawn Fixture ↗</a>` : '<a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener">Hotspawn Lobby ↗</a>'}
-        </td>
-      </tr>
-    `).join('');
-  }
-
-  searchInput.addEventListener('input', renderTable);
-
-  fetchPicksData().then(data => {
-    const genDate = new Date(data.generated_at);
-    document.getElementById('header-meta').textContent = 
-      `Updated ${genDate.toLocaleDateString()} ${genDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
-
-    flaggedItems = [];
-    for (const m of (data.matches || [])) {
-      if (m.tier === 'WAITING FOR INFORMATION' || !m.tier) {
-        flaggedItems.push({
-          ...m,
-          flagReason: 'Hotspawn Tier unassigned ("WAITING FOR INFORMATION")',
-          status: 'Tier unconfirmed by Hotspawn'
-        });
-      } else if (m.method === 'UNRESOLVED') {
-        flaggedItems.push({
-          ...m,
-          flagReason: 'No bookmaker lines or Leaguepedia history',
-          status: '50/50 baseline assigned'
-        });
-      } else if (!m.start_utc) {
-        flaggedItems.push({
-          ...m,
-          flagReason: 'Start timestamp format unconfirmed',
-          status: 'Displaying raw string'
-        });
-      }
-    }
-
-    renderTable();
-  }).catch(err => {
-    tableBody.innerHTML = `<tr><td colspan="6" style="text-align: center; color: var(--accent-red);">Error: ${err.message}</td></tr>`;
-  });
-</script>
-
 </body>
 </html>

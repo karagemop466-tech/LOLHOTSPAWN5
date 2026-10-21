@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Originated Lines — Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Hotspawn LoL Pick'ems priced by our own Leaguepedia Elo model where no betting market exists.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HS</span>
+      <span class="brand-text">
+        <span class="brand-title">Hotspawn LoL Pick Desk</span>
+        <span class="brand-sub">League of Legends Pick'em lines</span>
+      </span>
+    </a>
+    <span class="stamp">Data updated<br><b id="updated">&mdash;</b></span>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+  </div>
+  <nav class="site-nav" id="mainnav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Summary</a></li>
+      <li><a href="picks.html">All Picks</a></li>
+      <li><a href="markets.html">Market Lines</a></li>
+      <li><a href="model.html" aria-current="page">Originated Lines</a></li>
+      <li><a href="unresolved.html">Unresolved</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="sources.html">Sources</a></li>
+      <li><a href="flagged.html">Flagged</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" class="wrap">
+
+  <h1 class="page-title">Originated lines</h1>
+  <p class="lede">Fixtures with no betting market, where we originate our own line. A proprietary Elo rating with recent-form blending is computed from completed matches recorded in Leaguepedia (the official League of Legends esports wiki), then shrunk toward 50% in proportion to how thin the underlying match history is.</p>
+
+  <div class="note">
+    <p><b>How the model works, in short.</b> Every completed game involving a board team in the last
+       420 days is pulled from Leaguepedia's <code>ScoreboardGames</code> Cargo table. Games are
+       replayed in chronological order to produce an Elo rating (start 1500, K&nbsp;=&nbsp;28). The
+       head-to-head Elo expectation is blended 70/30 with a 90-day win-rate differential, then shrunk
+       toward 50% as <code>n/(n+12)</code> where <code>n</code> is the smaller team's game count.</p>
+    <p><b>Known weakness.</b> Amateur rosters change between splits and Leaguepedia coverage of
+       regional circuits is patchy, so ratings for thinly-documented teams are deliberately pulled
+       close to even. Rows built on fewer than 5 games are additionally flagged.</p>
+    <p>Full detail on the <a href="methodology.html">Methodology</a> page.</p>
+  </div>
+
+
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search team, tournament, evidence…" aria-label="Search picks">
+    <select id="tournament-filter" aria-label="Filter by tournament">
+      <option value="">All tournaments</option>
+    </select>
+    <div class="viewtoggle" role="group" aria-label="View mode">
+      <button type="button" data-view="cards" aria-pressed="true">Cards</button>
+      <button type="button" data-view="table" aria-pressed="false">Table</button>
+    </div>
+  </div>
+  <p class="small muted" id="result-count">&nbsp;</p>
+
+  <div id="list" data-method="MODEL"><p class="loading">Loading…</p></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Hotspawn LoL Pick Desk</b> &mdash; independent research dashboard.
+       Not affiliated with, endorsed by, or operated by Hotspawn.</p>
+    <p>Match board: <a href="https://play.hotspawn.com/lol-pickems" target="_blank" rel="noopener noreferrer">play.hotspawn.com/lol-pickems</a>.
+       Data is regenerated automatically every 6 hours by GitHub Actions.
+       Nothing on this site is gambling advice.</p>
+    <p>Every table row on this site links to the official source it was derived from.
+       Values that could not be confirmed from an official source are left blank and
+       flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

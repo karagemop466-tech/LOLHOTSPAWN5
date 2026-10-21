@@ -37,6 +37,7 @@ import math
 import urllib.request
 import urllib.parse
 import urllib.error
+import traceback
 from datetime import datetime, timezone, timedelta
 
 # --------------------------------------------------------------------------- #
@@ -80,9 +81,10 @@ LEAGUEPEDIA_HELP = "https://lol.fandom.com/api.php?action=help&modules=cargoquer
 HISTORY_DAYS = 420          # how far back to pull Leaguepedia match history
 ELO_START = 1500.0
 ELO_K = 28.0
-WIKI_SLEEP = 2.5            # seconds between Leaguepedia calls (be polite)
-MAX_WIKI_PAGES = 4          # 500 rows each, per team chunk
+WIKI_SLEEP = 1.5            # seconds between Leaguepedia calls (be polite)
+MAX_WIKI_PAGES = 2          # 500 rows each, per team chunk
 WIKI_CHUNK = 10             # teams per Cargo query
+WIKI_BUDGET_SEC = 720       # hard wall-clock budget for Leaguepedia collection
 
 OUT_DIR = "data"
 
@@ -462,49 +464,95 @@ def esc(s):
     return (s or "").replace('"', '\\"')
 
 
-def leaguepedia_games(teams, debug):
-    """Pull completed games for the given team names from Leaguepedia Cargo."""
+def _rows_to_games(rows, seen, games):
+    for r in rows:
+        t = r.get("title", {})
+        a = t.get("Team1") or ""
+        b = t.get("Team2") or ""
+        w = t.get("WinTeam") or ""
+        d = t.get("DateTime UTC") or ""
+        tour = t.get("Tournament") or ""
+        if not a or not b or not d:
+            continue
+        key = (a, b, d, tour)
+        if key in seen:
+            continue
+        seen.add(key)
+        games.append((a, b, w, d, tour))
+
+
+def leaguepedia_games(teams, competitions, debug):
+    """Pull completed games from Leaguepedia Cargo.
+
+    Pass 1 (fast): one OR-equality query per batch of the board's own competitions.
+    Pass 2 (fill-in): team-based queries for any team still with zero games.
+    """
     since = (NOW - timedelta(days=HISTORY_DAYS)).strftime("%Y-%m-%d %H:%M:%S")
     fields = ("ScoreboardGames.Team1,ScoreboardGames.Team2,ScoreboardGames.WinTeam,"
               "ScoreboardGames.DateTime_UTC,ScoreboardGames.Tournament")
-    games = []
-    seen = set()
-    chunks = [teams[i:i + WIKI_CHUNK] for i in range(0, len(teams), WIKI_CHUNK)]
-    debug["leaguepedia_team_chunks"] = len(chunks)
-    print(f"      {len(teams)} teams in {len(chunks)} Cargo queries …")
-    for ci, chunk in enumerate(chunks):
-        conds = []
-        for t in chunk:
-            e = esc(t)
-            conds.append(f'ScoreboardGames.Team1="{e}"')
-            conds.append(f'ScoreboardGames.Team2="{e}"')
+    games, seen = [], set()
+    deadline = time.time() + WIKI_BUDGET_SEC
+
+    # ---- pass 1: by competition ------------------------------------------ #
+    comps = sorted({c for c in competitions if c})
+    debug["leaguepedia_competitions"] = len(comps)
+    if comps:
+        conds = [f'ScoreboardGames.Tournament="{esc(c)}"' for c in comps]
         where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
-        for page in range(MAX_WIKI_PAGES):
+        print(f"      pass 1: {len(comps)} competitions …")
+        for page in range(MAX_WIKI_PAGES * 3):
+            if time.time() > deadline:
+                debug["leaguepedia_budget_exceeded"] = True
+                break
             rows = cargo(where, fields, order_by="ScoreboardGames.DateTime_UTC DESC",
                          limit=500, offset=page * 500)
+            debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
             if not rows:
                 break
-            for r in rows:
-                t = r.get("title", {})
-                a = t.get("Team1") or ""
-                b = t.get("Team2") or ""
-                w = t.get("WinTeam") or ""
-                d = t.get("DateTime UTC") or ""
-                tour = t.get("Tournament") or ""
-                if not a or not b or not d:
-                    continue
-                key = (a, b, d, tour)
-                if key in seen:
-                    continue
-                seen.add(key)
-                games.append((a, b, w, d, tour))
-            debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
+            _rows_to_games(rows, seen, games)
+            time.sleep(WIKI_SLEEP)
             if len(rows) < 500:
                 break
+        print(f"        {len(games)} games from competition pass")
+
+    # ---- pass 2: teams with no games yet --------------------------------- #
+    covered = set()
+    for a, b, _w, _d, _t in games:
+        covered.add(norm(a))
+        covered.add(norm(b))
+    missing = [t for t in teams if norm(t) not in covered]
+    debug["leaguepedia_teams_missing_after_pass1"] = len(missing)
+    if missing:
+        chunks = [missing[i:i + WIKI_CHUNK] for i in range(0, len(missing), WIKI_CHUNK)]
+        print(f"      pass 2: {len(missing)} teams in {len(chunks)} chunk queries …")
+        for ci, chunk in enumerate(chunks):
+            if time.time() > deadline:
+                debug["leaguepedia_budget_exceeded"] = True
+                debug["leaguepedia_teams_skipped"] = len(missing) - ci * WIKI_CHUNK
+                break
+            conds = []
+            for t in chunk:
+                e = esc(t)
+                conds.append(f'ScoreboardGames.Team1="{e}"')
+                conds.append(f'ScoreboardGames.Team2="{e}"')
+            where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
+            for page in range(MAX_WIKI_PAGES):
+                if time.time() > deadline:
+                    debug["leaguepedia_budget_exceeded"] = True
+                    break
+                rows = cargo(where, fields, order_by="ScoreboardGames.DateTime_UTC DESC",
+                             limit=500, offset=page * 500)
+                debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
+                if not rows:
+                    break
+                _rows_to_games(rows, seen, games)
+                if len(rows) < 500:
+                    break
+                time.sleep(WIKI_SLEEP)
             time.sleep(WIKI_SLEEP)
-        time.sleep(WIKI_SLEEP)
-        if (ci + 1) % 5 == 0:
-            print(f"        {ci+1}/{len(chunks)} chunks, {len(games)} games")
+            if (ci + 1) % 5 == 0:
+                print(f"        {ci+1}/{len(chunks)} chunks, {len(games)} games total")
+
     debug["leaguepedia_games"] = len(games)
     return games
 
@@ -661,14 +709,22 @@ def main():
         print("! No fixtures retrieved; preserving existing snapshot.", file=sys.stderr)
         return 0
 
-    pinnacle = load_pinnacle(debug)
-    unibet = load_unibet(debug)
-    poly = load_polymarket(debug)
+    def safe(fn, *a):
+        try:
+            return fn(*a)
+        except Exception:                              # noqa: BLE001
+            print(f"  ! {fn.__name__} failed:\n{traceback.format_exc()}", file=sys.stderr)
+            return None
+
+    pinnacle = safe(load_pinnacle, debug) or {}
+    unibet = safe(load_unibet, debug) or {}
+    poly = safe(load_polymarket, debug) or []
 
     team_names = sorted({f.get("participants0_name") or "" for f in fixtures} |
                         {f.get("participants1_name") or "" for f in fixtures} - {""})
-    print(f"[5/6] Leaguepedia history for {len(team_names)} teams …")
-    games = leaguepedia_games(team_names, debug)
+    competitions = sorted({f.get("competition_name") or "" for f in fixtures} - {""})
+    print(f"[5/6] Leaguepedia history — {len(team_names)} teams / {len(competitions)} competitions …")
+    games = safe(leaguepedia_games, team_names, competitions, debug) or []
     ratings, played, recent_fn = build_model(games)
     debug["elo_teams_rated"] = len(ratings)
     print(f"      {len(games)} games, {len(ratings)} teams rated")
@@ -845,10 +901,138 @@ def main():
     with open(os.path.join(OUT_DIR, "debug.json"), "w", encoding="utf-8") as f:
         json.dump(debug, f, indent=1, ensure_ascii=False)
 
+    # ---- flagged items ---------------------------------------------------- #
+    flagged = []
+
+    def flag(kind, severity, title, detail, row):
+        flagged.append({
+            "kind": kind,
+            "severity": severity,
+            "title": title,
+            "detail": detail,
+            "fixture_id": row.get("fixture_id"),
+            "match": f"{row.get('team1')} vs {row.get('team2')}",
+            "tournament": row.get("tournament"),
+            "start_utc": row.get("start_utc"),
+            "sources": row.get("sources") or [],
+        })
+
+    for r in rows:
+        if not r["hotspawn_match_url_verified"]:
+            flag("unverified-link", "medium",
+                 "Match permalink constructed, not server-verified",
+                 "This fixture was not present in the server-rendered Hotspawn lobby HTML at "
+                 "collection time, so its www.hotspawn.com match page URL was reconstructed from "
+                 "Hotspawn's public slug pattern. The fixture itself comes from the official "
+                 "Hotspawn fixture API; only the permalink is unverified.", r)
+        if r.get("stale_listing"):
+            flag("stale-listing", "low",
+                 "Fixture still listed as scheduled after its start time",
+                 "Hotspawn's API still reports status='scheduled' more than 6 hours after the "
+                 "scheduled start time. The fixture is retained for completeness but the pick "
+                 "window has closed.", r)
+        if r["method"] == "UNRESOLVED":
+            flag("unresolved-pick", "high",
+                 "No resolvable probability — nominal 50/50 pick",
+                 "No external betting market prices this fixture and neither team has a completed "
+                 "match recorded in Leaguepedia inside the look-back window. The pick shown is a "
+                 "nominal 50/50 with no statistical edge.", r)
+        elif r["method"] == "MODEL":
+            g = (r.get("detail") or {}).get("games") or [0, 0]
+            if min(g) < 5:
+                flag("thin-history", "medium",
+                     "Originated line built on thin match history",
+                     f"Only {g[0]} / {g[1]} completed games were found for these teams in Leaguepedia "
+                     f"over the last {HISTORY_DAYS} days, so the Elo estimate is heavily shrunk "
+                     "toward 50%.", r)
+        elif r["method"] == "MARKET":
+            if (r.get("detail") or {}).get("books", 0) < 2:
+                flag("single-book", "low",
+                     "Only one external bookmaker prices this fixture",
+                     "The market line rests on a single bookmaker/prediction-market price rather "
+                     "than a multi-book consensus.", r)
+
+    order = {"high": 0, "medium": 1, "low": 2}
+    flagged.sort(key=lambda x: (order.get(x["severity"], 3), x["kind"], x["match"]))
+    flagged_payload = {
+        "generated_at": NOW.isoformat(),
+        "count": len(flagged),
+        "by_kind": {k: sum(1 for f in flagged if f["kind"] == k)
+                    for k in sorted({f["kind"] for f in flagged})},
+        "items": flagged,
+    }
+    with open(os.path.join(OUT_DIR, "flagged.json"), "w", encoding="utf-8") as f:
+        json.dump(flagged_payload, f, indent=1, ensure_ascii=False)
+
+    # ---- source registry --------------------------------------------------- #
+    sources_payload = {
+        "generated_at": NOW.isoformat(),
+        "sources": [
+            {
+                "name": "Hotspawn Pick'em fixture API",
+                "url": HOTSPAWn_FIXTURES_API,
+                "role": "Official board — every scheduled LoL Pick'em fixture, teams, tier, "
+                        "points, start/lock times, crowd pick percentages (context only).",
+                "verified": True,
+                "verification": f"Returned HTTP 200 with {debug.get('hotspawn_total_fixtures', 0)} "
+                                f"fixtures; {debug.get('hotspawn_lol_scheduled', 0)} are scheduled "
+                                f"League of Legends fixtures.",
+            },
+            {
+                "name": "Hotspawn LoL Pick'em lobby",
+                "url": HOTSPAWN_LOBBY,
+                "role": "Official board UI. Harvested for server-rendered match permalinks.",
+                "verified": debug.get("lobby_html_bytes", 0) > 0,
+                "verification": f"{debug.get('lobby_permalinks_found', 0)} match permalinks extracted "
+                                f"from {debug.get('lobby_html_bytes', 0)} bytes of lobby HTML.",
+            },
+            {
+                "name": "Pinnacle — E Sports odds (guest API)",
+                "url": "https://www.pinnacle.com/en/esports/",
+                "role": "Sharp esportsbook moneyline prices, de-vigged into probabilities.",
+                "verified": bool(debug.get("pinnacle_ok")),
+                "verification": f"{debug.get('pinnacle_lol_priced', 0)} League of Legends matchups "
+                                f"priced from {debug.get('pinnacle_matchups', 0)} esports matchups.",
+            },
+            {
+                "name": "Unibet (Kambi offering feed) — Esports",
+                "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports",
+                "role": "Second independent esportsbook moneyline prices.",
+                "verified": bool(debug.get("unibet_ok")),
+                "verification": f"{debug.get('unibet_lol_priced', 0)} League of Legends events priced "
+                                f"from {debug.get('unibet_esports_events', 0)} esports events.",
+            },
+            {
+                "name": "Polymarket Gamma API — League of Legends",
+                "url": "https://polymarket.com/",
+                "role": "Prediction-market prices for top-tier LoL matches.",
+                "verified": bool(debug.get("polymarket_2way_markets")),
+                "verification": f"{debug.get('polymarket_2way_markets', 0)} two-way markets indexed "
+                                f"from {debug.get('polymarket_events', 0)} events.",
+            },
+            {
+                "name": "Leaguepedia Cargo API (ScoreboardGames)",
+                "url": LEAGUEPEDIA_HELP,
+                "role": "Official LoL esports match-history database. Input to the proprietary "
+                        "Elo/form model used to originate lines with no market coverage.",
+                "verified": bool(debug.get("leaguepedia_games")),
+                "verification": f"{debug.get('leaguepedia_games', 0)} completed games pulled across "
+                                f"{debug.get('leaguepedia_cargo_calls', 0)} Cargo calls; "
+                                f"{debug.get('elo_teams_rated', 0)} teams rated.",
+            },
+        ],
+    }
+    with open(os.path.join(OUT_DIR, "sources.json"), "w", encoding="utf-8") as f:
+        json.dump(sources_payload, f, indent=1, ensure_ascii=False)
+
     print(f"\nDone. {len(rows)} fixtures — {counts}")
     print(f"      resolved {payload['coverage']['resolved']} / unresolved {payload['coverage']['unresolved']}")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except Exception:                                  # noqa: BLE001
+        traceback.print_exc()
+        sys.exit(1)
