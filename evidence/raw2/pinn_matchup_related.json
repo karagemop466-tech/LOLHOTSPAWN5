@@ -1,0 +1,110 @@
+[
+  {
+    "ageLimit": 0,
+    "altTeaser": false,
+    "featureOrder": -1,
+    "hasAltSpread": false,
+    "hasAltTotal": false,
+    "hasBetshare": false,
+    "hasLive": false,
+    "hasMarkets": true,
+    "id": 1637769687,
+    "isBetshareEnabled": false,
+    "isFeatured": false,
+    "isHighlighted": false,
+    "isLive": false,
+    "isPromoted": false,
+    "league": {
+      "ageLimit": 0,
+      "featureOrder": 0,
+      "group": "World",
+      "id": 9587,
+      "isFeatured": true,
+      "isHidden": false,
+      "isPromoted": false,
+      "isSticky": false,
+      "matchupCount": 10,
+      "matchupCountSE": 10,
+      "name": "League of Legends - World Championship",
+      "sequence": 301,
+      "sport": {
+        "featureOrder": 1,
+        "id": 12,
+        "isFeatured": true,
+        "isHidden": false,
+        "isSticky": false,
+        "matchupCount": 43,
+        "matchupCountSE": 39,
+        "name": "E Sports",
+        "primaryMarketType": "moneyline"
+      }
+    },
+    "liveMode": null,
+    "parent": null,
+    "parentId": null,
+    "parlayRestriction": null,
+    "participants": [
+      {
+        "alignment": "neutral",
+        "id": 1637769688,
+        "name": "LCK",
+        "order": 0,
+        "rotation": 2362
+      },
+      {
+        "alignment": "neutral",
+        "id": 1637769689,
+        "name": "LPL",
+        "order": 0,
+        "rotation": 2363
+      },
+      {
+        "alignment": "neutral",
+        "id": 1637769690,
+        "name": "LEC",
+        "order": 0,
+        "rotation": 2364
+      },
+      {
+        "alignment": "neutral",
+        "id": 1637769691,
+        "name": "LCS",
+        "order": 0,
+        "rotation": 2365
+      },
+      {
+        "alignment": "neutral",
+        "id": 1637769692,
+        "name": "CBLOL",
+        "order": 0,
+        "rotation": 2366
+      },
+      {
+        "alignment": "neutral",
+        "id": 1637769693,
+        "name": "LCP",
+        "order": 0,
+        "rotation": 2367
+      }
+    ],
+    "periods": [
+      {
+        "cutoffAt": "2026-10-22T18:00:00Z",
+        "period": 0,
+        "status": "open"
+      }
+    ],
+    "rotation": 2362,
+    "special": {
+      "category": "Futures",
+      "description": "Region of Winner"
+    },
+    "startTime": "2026-10-18T18:00:00Z",
+    "state": {},
+    "status": "started",
+    "totalMarketCount": 1,
+    "type": "special",
+    "units": "Regular",
+    "version": 654780750
+  }
+]
