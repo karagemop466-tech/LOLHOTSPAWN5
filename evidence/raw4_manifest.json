@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T20:32:47Z",
+  "generated_at": "2026-10-21T20:35:43Z",
   "targets": [
     {
       "name": "lp_cargo_tiny_botua",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:32:30Z",
+      "fetched_at": "2026-10-21T20:35:21Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -12,25 +12,25 @@
       "x_cache": "",
       "file": "evidence/raw4/lp_cargo_tiny_botua.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.16
+      "elapsed_s": 0.18
     },
     {
       "name": "lp_cargo_tiny_browserua",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:32:31Z",
+      "fetched_at": "2026-10-21T20:35:21Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "bytes": 159,
+      "bytes": 372,
       "age": "",
       "x_cache": "",
       "file": "evidence/raw4/lp_cargo_tiny_browserua.json",
-      "sample": "{\"error\":{\"code\":\"internal_api_error_MWException\",\"info\":\"[31a669e080f3b6cc2376c98e6ceff318] Caught exception of type MWException\",\"errorclass\":\"MWException\"}}",
-      "elapsed_s": 0.17
+      "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
+      "elapsed_s": 0.07
     },
     {
       "name": "lp_cargo_tiny_noorigin",
       "url": "https://lol.fandom.com/api.php?action=cargoquery&tables=ScoreboardGames&fields=DateTime_UTC,Team1,Team2,Team1Win&where=DateTime_UTC%3E=%222026-10-01%22&limit=10&format=json",
-      "fetched_at": "2026-10-21T20:32:31Z",
+      "fetched_at": "2026-10-21T20:35:22Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 372,
@@ -38,12 +38,12 @@
       "x_cache": "",
       "file": "evidence/raw4/lp_cargo_tiny_noorigin.json",
       "sample": "{\"error\":{\"code\":\"ratelimited\",\"info\":\"You've exceeded your rate limit. Please wait some time and try again.\",\"*\":\"See https://lol.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wi",
-      "elapsed_s": 0.1
+      "elapsed_s": 0.09
     },
     {
       "name": "lp_search_api",
       "url": "https://lol.fandom.com/api.php?action=query&list=search&srsearch=Solid%20Gaming&srlimit=10&format=json",
-      "fetched_at": "2026-10-21T20:32:32Z",
+      "fetched_at": "2026-10-21T20:35:23Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 1468,
@@ -51,48 +51,48 @@
       "x_cache": "",
       "file": "evidence/raw4/lp_search_api.json",
       "sample": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":10,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"CEVO Champions Challenge\",\"pageid\":193486,\"size\":14212,\"wordcount\":2326,\"snippet\":\"\",\"timestamp\":\"2020-03-22T13:42:23Z\"},{\"ns\":0,\"title\":\"TteSports Challenge Summer Open/Group 1\",\"pageid\":202019,\"size",
-      "elapsed_s": 0.74
+      "elapsed_s": 0.56
     },
     {
       "name": "lp_rest_summary",
       "url": "https://lol.fandom.com/rest.php/v1/page/Karmine_Corp/summary",
-      "fetched_at": "2026-10-21T20:32:34Z",
+      "fetched_at": "2026-10-21T20:35:24Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "{\"errorKey\":\"rest-no-match\",\"messageTranslations\":{\"en\":\"The requested relative path (/v1/page/Karmine_Corp/summary) did not match any known handler\"},\"httpCode\":404,\"httpReason\":\"Not Found\"}",
-      "elapsed_s": 0.2
+      "elapsed_s": 0.17
     },
     {
       "name": "lp_special_export",
       "url": "https://lol.fandom.com/wiki/Special:Export/Solid_Gaming",
-      "fetched_at": "2026-10-21T20:32:35Z",
+      "fetched_at": "2026-10-21T20:35:25Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal",
-      "elapsed_s": 0.03
+      "elapsed_s": 0.02
     },
     {
       "name": "lp_fandom_dump_head",
       "url": "https://s3.amazonaws.com/wikia_xml_dumps/l/lol/lol_pages_current.xml.7z",
-      "fetched_at": "2026-10-21T20:32:35Z",
+      "fetched_at": "2026-10-21T20:35:26Z",
       "status": 403,
       "error": "HTTPError 403",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>1TJV1C6E0GVYFKET</RequestId><HostId>o+Y3mEsokPHE2J2lER+/WU7NlRd+LFR01KJajx3x9KwyyQtXzyLOl2SzjolF0tV0WitSBsOlENs=</HostId></Error>",
-      "elapsed_s": 0.09
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>BMNFXZ3SZ46CHHXF</RequestId><HostId>kgOIy0NTxvvrEmr2rKmXqdJxMDG48LKtzAJ0XVVXPdpLpZr4NWUythus+j8YaXIpmnCdqgT2ps8=</HostId></Error>",
+      "elapsed_s": 0.04
     },
     {
       "name": "sofascore_www_tournaments",
       "url": "https://www.sofascore.com/api/v1/sport/league-of-legends/tournaments",
-      "fetched_at": "2026-10-21T20:32:36Z",
+      "fetched_at": "2026-10-21T20:35:27Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
-      "elapsed_s": 0.02
+      "elapsed_s": 0.07
     },
     {
       "name": "sofascore_api_referer",
       "url": "https://api.sofascore.com/api/v1/sport/league-of-legends/seasons",
-      "fetched_at": "2026-10-21T20:32:37Z",
+      "fetched_at": "2026-10-21T20:35:27Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"error\": {\"code\": 403, \"reason\": \"Forbidden\" }}",
@@ -101,7 +101,7 @@
     {
       "name": "bo3_finished",
       "url": "https://bo3.gg/ll/matches/finished",
-      "fetched_at": "2026-10-21T20:32:38Z",
+      "fetched_at": "2026-10-21T20:35:28Z",
       "status": 200,
       "content_type": "text/html;charset=utf-8",
       "bytes": 12750,
@@ -109,39 +109,39 @@
       "x_cache": "",
       "file": "evidence/raw4/bo3_finished.html",
       "sample": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preconnect\" href=\"https://image-proxy.bo3.gg\"><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><script src=\"https://accounts.google.com/gsi/client\" async></script",
-      "elapsed_s": 0.26
+      "elapsed_s": 0.66
     },
     {
       "name": "oe_bucket_2025",
       "url": "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv",
-      "fetched_at": "2026-10-21T20:32:39Z",
+      "fetched_at": "2026-10-21T20:35:30Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>SPZ36ZPJRF7WRBR5</RequestId><HostId>liLKs8TSma+rtVbeP/3XaBuRd7hcNuCd8vxFIzNcoJMTjIu3THLHapDeATnMOTQTZN",
-      "elapsed_s": 0.26
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>AW5J850NVKXXGMNB</RequestId><HostId>CnpwnKLDvT24uieKUCGyFFvesLTR0uJyD4NIOjqpDVLW+z+ERaFQ6cVYgA8vLwLiT9",
+      "elapsed_s": 0.31
     },
     {
       "name": "oe_bucket_2026",
       "url": "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/2026_LoL_esports_match_data_from_OraclesElixir.csv",
-      "fetched_at": "2026-10-21T20:32:40Z",
+      "fetched_at": "2026-10-21T20:35:31Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>S7TS23QX602KM4XM</RequestId><HostId>lINGAasyF4NMB1cOz9b2MobFn28YOpymbrGG3H4bzn5m8xNrpssduFYVJLpuEgaZtH",
-      "elapsed_s": 0.21
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>6ZZK6BZ4A2FY7TA9</RequestId><HostId>C562BI4TpQzl9uBeYDEc9mjFdfbYkVehgocWsccHHy4ptqunOftUmogmIY+bPK3Mos",
+      "elapsed_s": 0.24
     },
     {
       "name": "oe_bucket_listing",
       "url": "https://oracleselixir-downloadable-match-data.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=100",
-      "fetched_at": "2026-10-21T20:32:40Z",
+      "fetched_at": "2026-10-21T20:35:32Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>CWMWRQND0HV86P6M</RequestId><HostId>i5DgpAlh1Oq0B8Ng+v5hmOFYNR+DZwjlL9fvS4ez6i4zdmT2QUf9jBuGDedDWUhu6r",
-      "elapsed_s": 0.2
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir-downloadable-match-data</BucketName><RequestId>PJQB4HZ5KESDCSWQ</RequestId><HostId>XKzybi+oRAXzw8TLEBksEQjvBhSbD3P9w0E9V8O5xQK0UETG+tCLSsPuoSh5w9Bk8F",
+      "elapsed_s": 0.25
     },
     {
       "name": "golgg_team_stats_sample",
       "url": "https://gol.gg/teams/team-stats/3108/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:32:41Z",
+      "fetched_at": "2026-10-21T20:35:33Z",
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "bytes": 594125,
@@ -149,43 +149,43 @@
       "x_cache": "",
       "file": "evidence/raw4/golgg_team_stats_sample.html",
       "sample": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n                                    \r\n\r\n<title>2 Massive stats in S16 - Games of Legends</title>\r\n<base href=\"https://gol.gg/teams/\" >\r\n  <meta name=\"description\" content=\"Learn more about 2 Massive in S16: objective control, vision, early game stats, best ",
-      "elapsed_s": 1.23
+      "elapsed_s": 0.85
     },
     {
       "name": "golgg_team_matchlist_sample",
       "url": "https://gol.gg/teams/team-matchlist/S16-Summer/3108/",
-      "fetched_at": "2026-10-21T20:32:43Z",
+      "fetched_at": "2026-10-21T20:35:34Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "  <!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>League of Legends esport statistics - Games of legends</title>\r\n<base href=\"https://gol.gg/esports/\" >\r\n  <meta name=\"description\" content=\"Games of legends provides statistics on league of legends esport matches. Winrate, picks and bans, kda an",
-      "elapsed_s": 0.32
+      "elapsed_s": 0.29
     },
     {
       "name": "liquipedia_teams",
       "url": "https://liquipedia.net/leagueoflegends/Portal:Teams",
-      "fetched_at": "2026-10-21T20:32:44Z",
-      "status": 403,
-      "error": "HTTPError 403",
-      "sample": "<!doctype html><html lang=en><meta name=viewport content=\"width=device-width,initial-scale=1\"><meta charset=utf-8><meta name=robots content=\"noindex\"><title>Liquipedia</title>\n<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit\" defer></script><style>*,*::before,*::aft",
-      "elapsed_s": 0.31
+      "fetched_at": "2026-10-21T20:35:35Z",
+      "status": 429,
+      "error": "HTTPError 429",
+      "sample": "<!DOCTYPE HTML><title>Rate Limited - Liquipedia</title><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><style type=text/css>body{margin:40px auto;max-width:700px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1{line-height:1.2}.reason{display:none}</st",
+      "elapsed_s": 5.26
     },
     {
       "name": "hs_teams_v2",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/teams?sport_alias=lol&tenantId=1&limit=500",
-      "fetched_at": "2026-10-21T20:32:45Z",
+      "fetched_at": "2026-10-21T20:35:41Z",
       "status": 400,
       "error": "HTTPError 400",
       "sample": "{\"message\":[\"property sport_alias should not exist\",\"property tenantId should not exist\",\"property limit should not exist\"],\"error\":\"Bad Request\",\"statusCode\":400}",
-      "elapsed_s": 0.33
+      "elapsed_s": 0.3
     },
     {
       "name": "hs_week_widget_v2",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget?sport_alias=lol&week_id=274",
-      "fetched_at": "2026-10-21T20:32:46Z",
+      "fetched_at": "2026-10-21T20:35:42Z",
       "status": 400,
       "error": "HTTPError 400",
       "sample": "{\"message\":[\"property sport_alias should not exist\",\"property week_id should not exist\"],\"error\":\"Bad Request\",\"statusCode\":400}",
-      "elapsed_s": 0.33
+      "elapsed_s": 0.27
     }
   ]
 }

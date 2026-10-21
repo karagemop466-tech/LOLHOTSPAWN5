@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-21T20:32:16Z",
+  "generated_at": "2026-10-21T20:35:06Z",
   "targets": [
     {
       "name": "hs_permalinks_sport",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks?sport_alias=lol&tenantId=1",
-      "fetched_at": "2026-10-21T20:31:31Z",
+      "fetched_at": "2026-10-21T20:34:19Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 17,
@@ -12,12 +12,12 @@
       "x_cache": "",
       "file": "evidence/raw2/hs_permalinks_sport.json",
       "sample": "{\"permalinks\":{}}",
-      "elapsed_s": 0.38
+      "elapsed_s": 0.27
     },
     {
       "name": "hs_permalinks_tenant",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks?tenantId=1",
-      "fetched_at": "2026-10-21T20:31:33Z",
+      "fetched_at": "2026-10-21T20:34:20Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 17,
@@ -25,12 +25,12 @@
       "x_cache": "",
       "file": "evidence/raw2/hs_permalinks_tenant.json",
       "sample": "{\"permalinks\":{}}",
-      "elapsed_s": 0.33
+      "elapsed_s": 0.31
     },
     {
       "name": "hs_permalinks_bare",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/admin/gamification/fixtures/permalinks",
-      "fetched_at": "2026-10-21T20:31:34Z",
+      "fetched_at": "2026-10-21T20:34:21Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 17,
@@ -38,12 +38,12 @@
       "x_cache": "",
       "file": "evidence/raw2/hs_permalinks_bare.json",
       "sample": "{\"permalinks\":{}}",
-      "elapsed_s": 0.34
+      "elapsed_s": 0.29
     },
     {
       "name": "hs_tenant_slug",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/tenants/slug/hotspawn",
-      "fetched_at": "2026-10-21T20:31:35Z",
+      "fetched_at": "2026-10-21T20:34:22Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 301,
@@ -51,105 +51,105 @@
       "x_cache": "",
       "file": "evidence/raw2/hs_tenant_slug.json",
       "sample": "{\"tenant\":{\"id\":\"1\",\"slug\":\"Hotspawn\",\"name\":\"Hotspawn\",\"is_active\":true,\"created_at\":\"2026-01-16T15:10:46.000Z\",\"updated_at\":null},\"features\":{\"pickemEnabled\":true,\"minigamesEnabled\":true,\"tournamentsEnabled\":true},\"games\":{\"enabled\":[\"CS2\",\"LOL\"],\"defaultGame\":\"CS2\"},\"pageContexts\":{},\"theme\":null",
-      "elapsed_s": 0.32
+      "elapsed_s": 0.34
     },
     {
       "name": "hs_week_widget",
       "url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget?sport_alias=lol",
-      "fetched_at": "2026-10-21T20:31:36Z",
+      "fetched_at": "2026-10-21T20:34:23Z",
       "status": 400,
       "error": "HTTPError 400",
       "sample": "{\"message\":[\"property sport_alias should not exist\"],\"error\":\"Bad Request\",\"statusCode\":400}",
-      "elapsed_s": 3.24
+      "elapsed_s": 0.28
     },
     {
       "name": "hs_match_page_worlds",
       "url": "https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676",
-      "fetched_at": "2026-10-21T20:31:40Z",
+      "fetched_at": "2026-10-21T20:34:24Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal",
-      "elapsed_s": 0.22
+      "elapsed_s": 0.25
     },
     {
       "name": "pinn_matchup_markets",
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1637769687/markets",
-      "fetched_at": "2026-10-21T20:31:41Z",
-      "status": 404,
-      "error": "HTTPError 404",
-      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
-      "elapsed_s": 0.17
-    },
-    {
-      "name": "pinn_league_markets",
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/markets",
-      "fetched_at": "2026-10-21T20:31:41Z",
-      "status": 404,
-      "error": "HTTPError 404",
-      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
-      "elapsed_s": 0.19
-    },
-    {
-      "name": "pinn_league_matchups",
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/matchups",
-      "fetched_at": "2026-10-21T20:31:42Z",
-      "status": 200,
-      "content_type": "application/json",
-      "bytes": 26519,
-      "age": "160",
-      "x_cache": "",
-      "file": "evidence/raw2/pinn_league_matchups.json",
-      "sample": "[\n  {\n    \"ageLimit\": 0,\n    \"altTeaser\": false,\n    \"bestOfX\": 1,\n    \"featureOrder\": 2,\n    \"hasAltSpread\": false,\n    \"hasAltTotal\": false,\n    \"hasBetshare\": false,\n    \"hasLive\": true,\n    \"hasMarkets\": true,\n    \"id\": 1638750814,\n    \"isBetshareEnabled\": false,\n    \"isFeatured\": true,\n    \"isH",
-      "elapsed_s": 0.08
-    },
-    {
-      "name": "pinn_sport_league_matchups",
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues/9587/matchups",
-      "fetched_at": "2026-10-21T20:31:43Z",
-      "status": 404,
-      "error": "HTTPError 404",
-      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
-      "elapsed_s": 0.27
-    },
-    {
-      "name": "pinn_matchup_related",
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1637769687/related",
-      "fetched_at": "2026-10-21T20:31:44Z",
-      "status": 200,
-      "content_type": "application/json",
-      "bytes": 2393,
-      "age": "302",
-      "x_cache": "",
-      "file": "evidence/raw2/pinn_matchup_related.json",
-      "sample": "[\n  {\n    \"ageLimit\": 0,\n    \"altTeaser\": false,\n    \"featureOrder\": -1,\n    \"hasAltSpread\": false,\n    \"hasAltTotal\": false,\n    \"hasBetshare\": false,\n    \"hasLive\": false,\n    \"hasMarkets\": true,\n    \"id\": 1637769687,\n    \"isBetshareEnabled\": false,\n    \"isFeatured\": false,\n    \"isHighlighted\": fa",
-      "elapsed_s": 0.04
-    },
-    {
-      "name": "pinn_league_markets_emea",
-      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/markets",
-      "fetched_at": "2026-10-21T20:31:45Z",
+      "fetched_at": "2026-10-21T20:34:25Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
       "elapsed_s": 0.16
     },
     {
+      "name": "pinn_league_markets",
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/markets",
+      "fetched_at": "2026-10-21T20:34:26Z",
+      "status": 404,
+      "error": "HTTPError 404",
+      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
+      "elapsed_s": 0.17
+    },
+    {
+      "name": "pinn_league_matchups",
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/9587/matchups",
+      "fetched_at": "2026-10-21T20:34:27Z",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 26519,
+      "age": "325",
+      "x_cache": "",
+      "file": "evidence/raw2/pinn_league_matchups.json",
+      "sample": "[\n  {\n    \"ageLimit\": 0,\n    \"altTeaser\": false,\n    \"bestOfX\": 1,\n    \"featureOrder\": 2,\n    \"hasAltSpread\": false,\n    \"hasAltTotal\": false,\n    \"hasBetshare\": false,\n    \"hasLive\": true,\n    \"hasMarkets\": true,\n    \"id\": 1638750814,\n    \"isBetshareEnabled\": false,\n    \"isFeatured\": true,\n    \"isH",
+      "elapsed_s": 0.04
+    },
+    {
+      "name": "pinn_sport_league_matchups",
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/sports/12/leagues/9587/matchups",
+      "fetched_at": "2026-10-21T20:34:28Z",
+      "status": 404,
+      "error": "HTTPError 404",
+      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
+      "elapsed_s": 0.18
+    },
+    {
+      "name": "pinn_matchup_related",
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1637769687/related",
+      "fetched_at": "2026-10-21T20:34:29Z",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2393,
+      "age": "467",
+      "x_cache": "",
+      "file": "evidence/raw2/pinn_matchup_related.json",
+      "sample": "[\n  {\n    \"ageLimit\": 0,\n    \"altTeaser\": false,\n    \"featureOrder\": -1,\n    \"hasAltSpread\": false,\n    \"hasAltTotal\": false,\n    \"hasBetshare\": false,\n    \"hasLive\": false,\n    \"hasMarkets\": true,\n    \"id\": 1637769687,\n    \"isBetshareEnabled\": false,\n    \"isFeatured\": false,\n    \"isHighlighted\": fa",
+      "elapsed_s": 0.06
+    },
+    {
+      "name": "pinn_league_markets_emea",
+      "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/markets",
+      "fetched_at": "2026-10-21T20:34:29Z",
+      "status": 404,
+      "error": "HTTPError 404",
+      "sample": "{\n  \"detail\": \"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\",\n  \"status\": 404,\n  \"title\": \"Not Found\",\n  \"type\": \"about:blank\"\n}\n",
+      "elapsed_s": 0.12
+    },
+    {
       "name": "pinn_league_matchups_emea",
       "url": "https://guest.api.arcadia.pinnacle.com/0.1/leagues/225201/matchups",
-      "fetched_at": "2026-10-21T20:31:46Z",
+      "fetched_at": "2026-10-21T20:34:30Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 7265,
-      "age": "833",
+      "age": "88",
       "x_cache": "",
       "file": "evidence/raw2/pinn_league_matchups_emea.json",
       "sample": "[\n  {\n    \"ageLimit\": 0,\n    \"altTeaser\": false,\n    \"featureOrder\": -1,\n    \"hasAltSpread\": false,\n    \"hasAltTotal\": false,\n    \"hasBetshare\": false,\n    \"hasLive\": false,\n    \"hasMarkets\": true,\n    \"id\": 1638717698,\n    \"isBetshareEnabled\": false,\n    \"isFeatured\": false,\n    \"isHighlighted\": fa",
-      "elapsed_s": 0.05
+      "elapsed_s": 0.07
     },
     {
       "name": "kalshi_events_kxlolgame",
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&limit=100",
-      "fetched_at": "2026-10-21T20:31:47Z",
+      "fetched_at": "2026-10-21T20:34:31Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 62367,
@@ -157,12 +157,12 @@
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/kalshi_events_kxlolgame.json",
       "sample": "{\"cursor\":\"CgYI0JP71QYSG0tYTE9MR0FNRS0yNk9DVDAxMTEwMFRPU01HWg\",\"events\":[{\"category\":\"Sports\",\"collateral_return_type\":\"MECNET\",\"event_ticker\":\"KXLOLGAME-26OCT232000MKOIBLG\",\"exchange_index\":0,\"last_updated_ts\":\"2026-10-20T16:02:39.4813Z\",\"mutually_exclusive\":true,\"product_metadata\":{\"competition\":\"",
-      "elapsed_s": 0.1
+      "elapsed_s": 0.03
     },
     {
       "name": "kalshi_markets_kxlolgame_big",
       "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&limit=1000",
-      "fetched_at": "2026-10-21T20:31:47Z",
+      "fetched_at": "2026-10-21T20:34:32Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 2683403,
@@ -170,12 +170,12 @@
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/kalshi_markets_kxlolgame_big.json",
       "sample": "{\"cursor\":\"CgwIkou31AYQ2La55AISIUtYTE9MR0FNRS0yNkFVRzI3MDkwMEdTTUNWTFItR1NNQw\",\"markets\":[{\"can_close_early\":true,\"close_time\":\"2026-10-26T00:00:00Z\",\"created_time\":\"2026-10-19T22:30:44.285222Z\",\"custom_strike\":{\"esports_competitor\":\"e37b5a80-ee93-4468-b264-1a11c49156b4\"},\"early_close_condition\":\"Th",
-      "elapsed_s": 0.09
+      "elapsed_s": 0.11
     },
     {
       "name": "kalshi_events_esports",
       "url": "https://api.elections.kalshi.com/trade-api/v2/events?category=esports&limit=100",
-      "fetched_at": "2026-10-21T20:31:48Z",
+      "fetched_at": "2026-10-21T20:34:33Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 74017,
@@ -183,12 +183,12 @@
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/kalshi_events_esports.json",
       "sample": "{\"cursor\":\"CgYI2IfLpQcSFEtYTEZQUkFURUVPWS0zMkpBTjA5\",\"events\":[{\"category\":\"Science and Technology\",\"collateral_return_type\":\"\",\"event_ticker\":\"KXELONMARS-99\",\"exchange_index\":0,\"last_updated_ts\":\"2026-10-16T03:24:48.885736Z\",\"mutually_exclusive\":false,\"series_ticker\":\"KXELONMARS\",\"settlement_source",
-      "elapsed_s": 0.05
+      "elapsed_s": 0.04
     },
     {
       "name": "kalshi_series_list",
       "url": "https://api.elections.kalshi.com/trade-api/v2/series?category=Esports&limit=200",
-      "fetched_at": "2026-10-21T20:31:49Z",
+      "fetched_at": "2026-10-21T20:34:33Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 16,
@@ -201,59 +201,59 @@
     {
       "name": "poly_tags",
       "url": "https://gamma-api.polymarket.com/tags?limit=1000",
-      "fetched_at": "2026-10-21T20:31:50Z",
+      "fetched_at": "2026-10-21T20:34:34Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 15625,
-      "age": "215",
+      "age": "1199",
       "x_cache": "Hit from cloudfront",
       "file": "evidence/raw2/poly_tags.json",
       "sample": "[{\"id\":\"101867\",\"label\":\"product marekt fit\",\"slug\":\"product-marekt-fit\",\"createdAt\":\"2025-02-18T16:58:25.464578Z\",\"updatedAt\":\"2026-04-17T17:23:11.67487Z\"},{\"id\":\"1512\",\"label\":\"caitlin clark\",\"slug\":\"caitlin-clark\",\"publishedAt\":\"2024-02-28 22:13:06.246+00\",\"createdAt\":\"2024-02-28T22:13:09.166Z\",\"",
-      "elapsed_s": 0.02
+      "elapsed_s": 0.03
     },
     {
       "name": "poly_events_500",
       "url": "https://gamma-api.polymarket.com/events?limit=500&closed=false&order=startDate&ascending=false",
-      "fetched_at": "2026-10-21T20:31:50Z",
+      "fetched_at": "2026-10-21T20:34:35Z",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 994391,
-      "age": "214",
-      "x_cache": "Hit from cloudfront",
+      "bytes": 1038920,
+      "age": "",
+      "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/poly_events_500.json",
-      "sample": "[{\"id\":\"1231679\",\"ticker\":\"eth-updown-5m-1792700100\",\"slug\":\"eth-updown-5m-1792700100\",\"title\":\"Ethereum Up or Down - October 22, 4:15PM-4:20PM ET\",\"description\":\"This market will resolve to \\\"Up\\\" if the time-weighted average price (TWAP) of Ethereum, generated by Chainlink, of the time range speci",
-      "elapsed_s": 0.07
+      "sample": "[{\"id\":\"1231691\",\"ticker\":\"eth-updown-5m-1792700400\",\"slug\":\"eth-updown-5m-1792700400\",\"title\":\"Ethereum Up or Down - October 22, 4:20PM-4:25PM ET\",\"description\":\"This market will resolve to \\\"Up\\\" if the time-weighted average price (TWAP) of Ethereum, generated by Chainlink, of the time range speci",
+      "elapsed_s": 0.18
     },
     {
       "name": "poly_search_worlds",
       "url": "https://gamma-api.polymarket.com/public-search?q=League%20of%20Legends%20Worlds&limit_per_type=50&events_status=active",
-      "fetched_at": "2026-10-21T20:31:51Z",
+      "fetched_at": "2026-10-21T20:34:36Z",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 2569178,
+      "bytes": 2569544,
       "age": "",
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/poly_search_worlds.json",
       "sample": "{\"events\":[{\"id\":\"775290\",\"ticker\":\"league-of-legends-global-power-rankings-post-worlds-rank-1-20260729165154424\",\"slug\":\"league-of-legends-global-power-rankings-post-worlds-rank-1-20260729165154424\",\"title\":\"League of Legends Global Power Rankings Post Worlds: Rank 1\",\"description\":\"This market wil",
-      "elapsed_s": 0.38
+      "elapsed_s": 0.34
     },
     {
       "name": "poly_search_lol_active",
       "url": "https://gamma-api.polymarket.com/public-search?q=LoL&limit_per_type=50&events_status=active",
-      "fetched_at": "2026-10-21T20:31:52Z",
+      "fetched_at": "2026-10-21T20:34:37Z",
       "status": 200,
       "content_type": "application/json",
-      "bytes": 3619420,
+      "bytes": 3619916,
       "age": "",
       "x_cache": "Miss from cloudfront",
       "file": "evidence/raw2/poly_search_lol_active.json",
       "sample": "{\"events\":[{\"id\":\"1069543\",\"ticker\":\"will-dardo-be-named-fnatic-lol-general-manager-by\",\"slug\":\"will-dardo-be-named-fnatic-lol-general-manager-by\",\"title\":\"Will Dardo be named Fnatic LoL General Manager by...?\",\"description\":\"This market will resolve to \\\"Yes\\\" if Javier \\\"Dardo\\\" Zafra is officiall",
-      "elapsed_s": 0.6
+      "elapsed_s": 2.1
     },
     {
       "name": "golgg_teams_list",
       "url": "https://gol.gg/teams/list/season-S16/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:31:54Z",
+      "fetched_at": "2026-10-21T20:34:40Z",
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "bytes": 969776,
@@ -261,21 +261,21 @@
       "x_cache": "",
       "file": "evidence/raw2/golgg_teams_list.html",
       "sample": "<!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n                                  <title>Team list from S16 - win rate, KDA, match history and more</title>\r\n<base href=\"https://gol.gg/teams/\" >\r\n  <meta name=\"description\" content=\"In-depth stats on teams playing in S16: win rate, KDA, match history an",
-      "elapsed_s": 2.1
+      "elapsed_s": 2.27
     },
     {
       "name": "golgg_tournament_list_s16",
       "url": "https://gol.gg/tournament/list/season-S16/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:31:56Z",
+      "fetched_at": "2026-10-21T20:34:43Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "  <!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>League of Legends esport statistics - Games of legends</title>\r\n<base href=\"https://gol.gg/esports/\" >\r\n  <meta name=\"description\" content=\"Games of legends provides statistics on league of legends esport matches. Winrate, picks and bans, kda an",
-      "elapsed_s": 0.38
+      "elapsed_s": 0.28
     },
     {
       "name": "golgg_worlds_matchlist",
       "url": "https://gol.gg/tournament/tournamentmatchlist/Worlds 2026/",
-      "fetched_at": "2026-10-21T20:31:58Z",
+      "fetched_at": "2026-10-21T20:34:44Z",
       "status": null,
       "error": "InvalidURL: URL can't contain control characters. '/tournament/tournamentmatchlist/Worlds 2026/' (found at least ' ')",
       "elapsed_s": 0.0
@@ -283,7 +283,7 @@
     {
       "name": "golgg_lck_matchlist",
       "url": "https://gol.gg/tournament/tournamentmatchlist/LCK 2026 Season/",
-      "fetched_at": "2026-10-21T20:31:58Z",
+      "fetched_at": "2026-10-21T20:34:44Z",
       "status": null,
       "error": "InvalidURL: URL can't contain control characters. '/tournament/tournamentmatchlist/LCK 2026 Season/' (found at least ' ')",
       "elapsed_s": 0.0
@@ -291,7 +291,7 @@
     {
       "name": "golgg_players_list",
       "url": "https://gol.gg/players/list/season-S16/split-ALL/tournament-ALL/",
-      "fetched_at": "2026-10-21T20:31:59Z",
+      "fetched_at": "2026-10-21T20:34:45Z",
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "bytes": 2827375,
@@ -299,20 +299,20 @@
       "x_cache": "",
       "file": "evidence/raw2/golgg_players_list.html",
       "sample": "<!DOCTYPE html>\r\n   <html lang=\"en\">\r\n<head>\r\n<title>Player list from S16 - win rate, KDA, match history and more</title>\r\n<base href=\"https://gol.gg/players/\" >\r\n  <meta name=\"description\" content=\"In-depth stats on players from S16: win rate, KDA, match history and more...\"/>\r\n  <meta name=\"keywor",
-      "elapsed_s": 3.31
+      "elapsed_s": 2.84
     },
     {
       "name": "lp_wiki_api",
       "url": "https://wiki.leaguepedia.com/api.php?action=query&meta=siteinfo&format=json",
-      "fetched_at": "2026-10-21T20:32:03Z",
+      "fetched_at": "2026-10-21T20:34:49Z",
       "status": null,
       "error": "URLError: <urlopen error [Errno -2] Name or service not known>",
-      "elapsed_s": 0.11
+      "elapsed_s": 0.05
     },
     {
       "name": "lol_fandom_api",
       "url": "https://lol.fandom.com/api.php?action=query&meta=siteinfo&format=json",
-      "fetched_at": "2026-10-21T20:32:04Z",
+      "fetched_at": "2026-10-21T20:34:49Z",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
       "bytes": 2804,
@@ -320,12 +320,12 @@
       "x_cache": "",
       "file": "evidence/raw2/lol_fandom_api.json",
       "sample": "{\"batchcomplete\":\"\",\"query\":{\"general\":{\"mainpage\":\"League of Legends Esports Wiki\",\"base\":\"https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki\",\"sitename\":\"Leaguepedia | League of Legends Esports Wiki\",\"logo\":\"https://images.wikia.com/lolesports_gamepedia_en/images/b/bc/Wiki.png\",\"generator\"",
-      "elapsed_s": 0.11
+      "elapsed_s": 0.15
     },
     {
       "name": "lolwiki_api",
       "url": "https://lolwiki.com/api.php?action=query&meta=siteinfo&format=json",
-      "fetched_at": "2026-10-21T20:32:05Z",
+      "fetched_at": "2026-10-21T20:34:50Z",
       "status": 200,
       "content_type": "text/html",
       "bytes": 153,
@@ -333,75 +333,75 @@
       "x_cache": "",
       "file": "evidence/raw2/lolwiki_api.html",
       "sample": "<!DOCTYPE html><html><head><script>window.onload=function(){window.location.href=\"/lander?action=query&format=json&meta=siteinfo\"}</script></head></html>",
-      "elapsed_s": 0.23
+      "elapsed_s": 0.06
     },
     {
       "name": "riot_schedule_api",
       "url": "https://esports-api.lolesports.com/persisted/gw/getSchedule?hl=en-US",
-      "fetched_at": "2026-10-21T20:32:06Z",
+      "fetched_at": "2026-10-21T20:34:51Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"message\":\"Forbidden\"}",
-      "elapsed_s": 0.27
+      "elapsed_s": 0.43
     },
     {
       "name": "riot_leagues_api",
       "url": "https://esports-api.lolesports.com/persisted/gw/getLeagues?hl=en-US",
-      "fetched_at": "2026-10-21T20:32:07Z",
+      "fetched_at": "2026-10-21T20:34:52Z",
       "status": 403,
       "error": "HTTPError 403",
       "sample": "{\"message\":\"Forbidden\"}",
-      "elapsed_s": 0.18
+      "elapsed_s": 0.11
     },
     {
       "name": "oe_2025_csv",
       "url": "https://oracleselixir.s3-us-west-2.amazonaws.com/2025_LoL_esports_match_data_from_OraclesElixir.csv",
-      "fetched_at": "2026-10-21T20:32:07Z",
+      "fetched_at": "2026-10-21T20:34:53Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>927XMJ9FDBT1TV5F</RequestId><HostId>nGCdyC0M/ZW6ELIBGKcV/8w1hXXZiWsKdOFKqkEQ1hG7ZW30RbqQFs/WUDEkmvqTe0wQ843nyQ66BLIrTY12QuDvrc",
-      "elapsed_s": 0.23
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>846FJBAVZCM5RTJH</RequestId><HostId>awUJpABkAqFu1VdVyq7xxV5Mt6EifhjZwyWVrDv+pkJEhotgqcUPQTDURQro3ZmdJrefuctWEsvaffte9vNPqoGui+",
+      "elapsed_s": 0.3
     },
     {
       "name": "oe_s3_listing",
       "url": "https://oracleselixir.s3-us-west-2.amazonaws.com/?list-type=2&max-keys=200",
-      "fetched_at": "2026-10-21T20:32:08Z",
+      "fetched_at": "2026-10-21T20:34:54Z",
       "status": 404,
       "error": "HTTPError 404",
-      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>KWMQSZSA4391SF3G</RequestId><HostId>KzqZwEPZ3ErcKV+XMgw9C1L6LauKRl8fH88QrvU39lNPas4IoOhFHb4HN733er+zSKRcK8G3Kxs=</HostId></Err",
-      "elapsed_s": 0.19
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>oracleselixir</BucketName><RequestId>6KWAZX14TVCHG3PN</RequestId><HostId>fikHFS8gAzYD+9pfwOsOawp8PK/aDTKJ4O/xfOCj+JTK9cra0AtDvfuGGVG+KZA7oXDnLUfidavLx1WZ630Uj/OdtM",
+      "elapsed_s": 0.24
     },
     {
       "name": "oe_github_2026_repo",
       "url": "https://api.github.com/repos/OraclesElixirTools/2026_LoL_esports_match_data_from_OraclesElixir",
-      "fetched_at": "2026-10-21T20:32:09Z",
+      "fetched_at": "2026-10-21T20:34:55Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
-      "elapsed_s": 0.15
+      "elapsed_s": 0.1
     },
     {
       "name": "oe_github_2025_repo",
       "url": "https://api.github.com/repos/OraclesElixirTools/2025_LoL_esports_match_data_from_OraclesElixir",
-      "fetched_at": "2026-10-21T20:32:10Z",
+      "fetched_at": "2026-10-21T20:34:56Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/repos#get-a-repository\",\n  \"status\": \"404\"\n}\n",
-      "elapsed_s": 0.12
+      "elapsed_s": 0.08
     },
     {
       "name": "liquipedia_lol_main",
       "url": "https://liquipedia.net/leagueoflegends/Main_Page",
-      "fetched_at": "2026-10-21T20:32:11Z",
-      "status": 403,
-      "error": "HTTPError 403",
-      "sample": "<!doctype html><html lang=en><meta name=viewport content=\"width=device-width,initial-scale=1\"><meta charset=utf-8><meta name=robots content=\"noindex\"><title>Liquipedia</title>\n<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit\" defer></script><style>*,*::before,*::aft",
-      "elapsed_s": 0.34
+      "fetched_at": "2026-10-21T20:34:57Z",
+      "status": 429,
+      "error": "HTTPError 429",
+      "sample": "<!DOCTYPE HTML><title>Rate Limited - Liquipedia</title><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><style type=text/css>body{margin:40px auto;max-width:700px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1{line-height:1.2}.reason{display:none}</st",
+      "elapsed_s": 5.3
     },
     {
       "name": "melbet_linefeed",
       "url": "https://melbet.com/linefeed",
-      "fetched_at": "2026-10-21T20:32:12Z",
+      "fetched_at": "2026-10-21T20:35:03Z",
       "status": 203,
       "content_type": "text/html;charset=utf-8",
       "bytes": 2852,
@@ -409,25 +409,25 @@
       "x_cache": "",
       "file": "evidence/raw2/melbet_linefeed.html",
       "sample": "<!DOCTYPE html><html  data-capo=\"\"><head><script>window.cdn={cdnURL:\"https://v3.traincdn.com\",scripts:[{\"type\":\"module\",\"src\":\"/sys-static/sys-technical-pages-app-static/Desktop/Melbet/entry-82675bc7b8.js\",\"crossorigin\":true}]};(()=>{var f;const c=document,s=(f=window.cdn)!=null?f:window.cdn={},{cdn",
-      "elapsed_s": 0.96
+      "elapsed_s": 0.84
     },
     {
       "name": "betway_events",
       "url": "https://www.betway.com/api/Events/ESPT",
-      "fetched_at": "2026-10-21T20:32:14Z",
+      "fetched_at": "2026-10-21T20:35:04Z",
       "status": 404,
       "error": "HTTPError 404",
       "sample": "Not found",
-      "elapsed_s": 0.35
+      "elapsed_s": 0.34
     },
     {
       "name": "bovada_lol_worlds",
       "url": "https://www.bovada.lv/services/sports/event/v2/events/A/description/esports",
-      "fetched_at": "2026-10-21T20:32:15Z",
+      "fetched_at": "2026-10-21T20:35:05Z",
       "status": 200,
       "content_type": "application/json",
       "bytes": 524066,
-      "age": "263",
+      "age": "433",
       "x_cache": "",
       "file": "evidence/raw2/bovada_lol_worlds.json",
       "sample": "[{\"path\":[{\"id\":\"9417391\",\"link\":\"/esports/league-of-legends/world-championship-26\",\"description\":\"World Championship '26\",\"type\":\"LEAGUE\",\"sportCode\":\"ESPT\",\"order\":9223372036854775807,\"leaf\":true,\"current\":false},{\"id\":\"117310\",\"link\":\"/esports/league-of-legends\",\"description\":\"League Of Legends\",",
