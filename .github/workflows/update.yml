@@ -1,0 +1,62 @@
+name: update-picks
+
+# Refreshes the whole board from Hotspawn every 4 hours (inside the required 4-8 hour band),
+# re-derives every probability, rebuilds the site, link-checks it, and publishes.
+on:
+  schedule:
+    - cron: '17 */4 * * *'   # 00:17, 04:17, 08:17, 12:17, 16:17, 20:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/update.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-picks
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Collect Hotspawn inventory
+        run: bash scripts/run_stage.sh hotspawn python3 scripts/collect_hotspawn.py
+
+      - name: Collect external market lines
+        run: bash scripts/run_stage.sh lines python3 scripts/collect_lines.py
+
+      - name: Collect historical results (Leaguepedia)
+        run: bash scripts/run_stage.sh results python3 scripts/collect_results.py
+
+      - name: Build picks and probabilities
+        run: bash scripts/run_stage.sh model python3 scripts/build_model.py
+
+      - name: Build static site
+        run: bash scripts/run_stage.sh site python3 scripts/build_site.py
+
+      - name: Verify links before publishing
+        run: python3 scripts/check_links.py
+
+      - name: Publish
+        if: success()
+        run: |
+          git config user.name "arena-collector"
+          git config user.email "collector@users.noreply.github.com"
+          git add -A data '*.html' assets .nojekyll || true
+          if git diff --cached --quiet; then
+            echo "no changes to publish"
+            exit 0
+          fi
+          git commit -m "data: scheduled refresh $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          git pull --rebase --autostash origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"

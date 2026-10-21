@@ -171,6 +171,8 @@ def pick_card(r):
     elif method == "model" and r.get("no_market_reason"):
         market_note = (f'<div class="meta-line muted">No bookmaker market: '
                        f'{esc(r["no_market_reason"])}</div>')
+    if r.get("data_note"):
+        market_note += f'<div class="meta-line warn-text">{esc(r["data_note"])}</div>'
 
     return f"""
     <article class="card" data-method="{esc(method)}" data-conf="{esc(r.get('confidence') or '')}"
@@ -226,12 +228,12 @@ def build_index(doc):
   </p>
   <div class="cta">
     <a class="btn primary" href="picks.html">See all {t['matches']} picks →</a>
-    <a class="btn" href="#unresolved">What we can't price</a>
+    <a class="btn" href="unresolved.html">What we can't price</a>
   </div>
 </section>
 
 <section class="kpis" aria-label="Snapshot">
-  {kpi(t['matches'], 'fixtures mirrored', '#all-picks')}
+  {kpi(t['matches'], 'fixtures mirrored', 'picks.html')}
   {kpi(len(live), 'upcoming', 'picks.html')}
   {kpi(len(priced), 'market-priced', 'picks.html?method=market')}
   {kpi(len(model), 'model-priced', 'picks.html?method=model')}
@@ -258,7 +260,7 @@ def build_index(doc):
       ({doc.get('teams_rated', 0)} teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
     </ul>
 
-    <p><strong>Unresolved.</strong> <strong>{len(unres)} fixtures</strong> have no defensible number:
+    <p><strong>Unresolved.</strong> <strong>{len(unres)} fixture{'' if len(unres) == 1 else 's'}</strong> have no defensible number:
     no sportsbook market, and no usable match history for one or both teams. They are listed in full,
     with the specific limitation for each, on the
     <a href="unresolved.html">Unresolved &amp; Limitations page →</a>. Nothing is filled in with a guess.</p>
@@ -275,11 +277,11 @@ def build_index(doc):
   <div class="linkgrid">
     <a class="linkcard" href="picks.html">
       <span class="lc-t">All picks</span>
-      <span class="lc-d">{t['matches']} fixtures, newest first. Search, filter by method or tournament.</span>
+      <span class="lc-d">{t['matches']} fixtures, earliest first. Search, filter by method or tournament.</span>
     </a>
     <a class="linkcard" href="unresolved.html">
       <span class="lc-t">Unresolved &amp; limitations</span>
-      <span class="lc-d">{len(unres)} fixtures we cannot price, and why.</span>
+      <span class="lc-d">{len(unres)} fixture{'' if len(unres) == 1 else 's'} we cannot price, and why.</span>
     </a>
     <a class="linkcard" href="methodology.html">
       <span class="lc-t">Methodology</span>
@@ -507,7 +509,12 @@ R_effective = {int(m.get('elo_start', 1500))} + (R - {int(m.get('elo_start', 150
         <tr><td data-l="Tier">Low</td><td data-l="Rule">Both teams ≥ 3</td>
             <td data-l="Meaning">Thin sample; treat as indicative only.</td></tr>
         <tr><td data-l="Tier">Insufficient data</td><td data-l="Rule">A team has &lt; 3</td>
-            <td data-l="Meaning">No pick is published unless a market exists.</td></tr>
+            <td data-l="Meaning">A probability is still shown so every fixture is covered, but it
+            is essentially a prior regressed to {int(m.get('elo_start', 1500))} Elo. Treated as
+            indicative only, and called out on the card.</td></tr>
+        <tr><td data-l="Tier">No pick</td><td data-l="Rule">Neither team has any rated result</td>
+            <td data-l="Meaning">No probability is published at all. Listed on the
+            <a href="unresolved.html">Unresolved page</a>.</td></tr>
       </tbody>
     </table>
   </div>
@@ -616,7 +623,14 @@ def build_review(doc):
     low = [r for r in picks if r.get("confidence") == "low"]
     unver = [r for r in picks if not r.get("hotspawn_url")]
 
+    dq = doc.get("data_quality", {})
     items = [
+        ("One Leaguepedia row is dated in the future yet already carries a winner",
+         f"Of {dq.get('leaguepedia_rows', 0)} completed rows pulled from Leaguepedia, "
+         f"{dq.get('leaguepedia_future_dated_rows', 0)} has a kickoff time after the collection "
+         "timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match "
+         "is played) and are flagged here rather than silently used.",
+         "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule"),
         ("Hotspawn returns 264 rows but only 195 carry a match page",
          f"{len(no_page)} rows have no Hotspawn match page, and those are exactly the "
          f"{len(stale)} rows whose start time is already in the past while status still reads "

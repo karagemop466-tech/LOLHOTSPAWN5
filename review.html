@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:36:05Z">2026-10-21 20:36:05 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T20:42:45Z">2026-10-21 20:42:45 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink active" href="review.html">Flagged</a></nav>
@@ -35,6 +35,11 @@
     <table class="data">
       <thead><tr><th>Finding</th><th>Detail</th><th>Source</th></tr></thead>
       <tbody>
+      <tr>
+        <td data-l="Finding">One Leaguepedia row is dated in the future yet already carries a winner</td>
+        <td data-l="Detail">Of 7579 completed rows pulled from Leaguepedia, 1 has a kickoff time after the collection timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match is played) and are flagged here rather than silently used.</td>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
+      </tr>
       <tr>
         <td data-l="Finding">Hotspawn returns 264 rows but only 195 carry a match page</td>
         <td data-l="Detail">69 rows have no Hotspawn match page, and those are exactly the 69 rows whose start time is already in the past while status still reads <code>scheduled</code>. We treat them as stale. They are still listed, but no pick from them should be acted on.</td>
@@ -67,7 +72,7 @@
       </tr>
       <tr>
         <td data-l="Finding">Unverified values are left blank</td>
-        <td data-l="Detail">255 fixtures have no probability at all because a team has fewer than 3 rated results. A further 0 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
+        <td data-l="Detail">57 fixtures have no probability at all because a team has fewer than 3 rated results. A further 106 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>
@@ -332,7 +337,7 @@
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-21 20:24:40 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-21 20:41:16 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>

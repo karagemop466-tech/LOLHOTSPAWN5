@@ -113,9 +113,11 @@ def build_ratings(results):
         w = r.get("w")
         if not (d and t1 and t2):
             continue
-        if w == "1" or w == t1:
+        # Leaguepedia's MatchSchedule.Winner is 1/2 (int) meaning Team1/Team2. Some views
+        # return the team name instead, so both forms are accepted and nothing is guessed.
+        if w in (1, "1") or w == t1:
             s1 = 1.0
-        elif w == "2" or w == t2:
+        elif w in (2, "2") or w == t2:
             s1 = 0.0
         else:
             continue  # no recorded winner -> cannot be used for ratings
@@ -126,6 +128,8 @@ def build_ratings(results):
             bo = 2
         games.append((d, t1, t2, s1, bo))
 
+    now = dt.datetime.now(dt.timezone.utc)
+    games = [g for g in games if g[0] <= now]  # a result cannot exist in the future
     games.sort(key=lambda g: g[0])
     rating, count, last = {}, {}, {}
 
@@ -333,11 +337,30 @@ def main():
                 "No Pinnacle moneyline matched this fixture at collection time "
                 f"(teams matched: {na} home / {nb} away historical results)."),
         })
+        if conf == "insufficient":
+            thin = []
+            if na < MIN_MATCHES_RELIABLE:
+                thin.append(f"{home} ({na} rated result{'s' if na != 1 else ''})")
+            if nb < MIN_MATCHES_RELIABLE:
+                thin.append(f"{away} ({nb} rated result{'s' if nb != 1 else ''})")
+            rec["data_note"] = (
+                "Insufficient data: " + " and ".join(thin) +
+                " in the Leaguepedia record, so this number is mostly a prior "
+                "(regressed to 1500 Elo), not evidence about this roster.")
         if is_past:
             rec["unresolved_reason"] = (
                 "Fixture start time is already in the past but Hotspawn still lists it as "
                 "scheduled; treated as a stale row.")
         picks.append(rec)
+
+    # data-quality counters surfaced on the Flagged page
+    raw_results = res.get("results", [])
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    future_rows = 0
+    for rr in raw_results:
+        d = parse_lp_date(rr.get("d"))
+        if d and d > now_utc:
+            future_rows += 1
 
     picks.sort(key=lambda r: (r.get("start_utc") or "9999", r["id"]))
     live = [r for r in picks if not r["is_past_start"]]
@@ -362,6 +385,15 @@ def main():
             "model_priced": counts["model"],
             "unresolved": counts["unresolved"],
             "with_a_pick": sum(1 for r in picks if r.get("pick")),
+        },
+        "data_quality": {
+            "leaguepedia_rows": len(raw_results),
+            "leaguepedia_future_dated_rows": future_rows,
+            "hotspawn_rows_without_match_page": sum(
+                1 for r in picks if not r.get("has_hotspawn_page")),
+            "hotspawn_stale_rows": sum(1 for r in picks if r.get("is_past_start")),
+            "insufficient_data_matches": sum(
+                1 for r in picks if r.get("confidence") == "insufficient"),
         },
         "methodology": {
             "elo_start": ELO_START, "elo_scale": ELO_SCALE,

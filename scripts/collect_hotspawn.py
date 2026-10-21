@@ -16,7 +16,7 @@ URL = "https://play.hotspawn.com/lol-pickems"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 DATA = "data"
-RAW = "data/raw"
+RAW = ".cache/raw"   # scratch snapshots, never committed (hash is recorded instead)
 
 
 def fetch(url):

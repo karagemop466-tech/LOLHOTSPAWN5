@@ -1,0 +1,7 @@
+# scratch / regenerable
+.cache/
+probe/
+data/raw/
+__pycache__/
+*.pyc
+research/samples/
