@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:13:01Z",
+  "generated_at": "2026-10-21T21:22:06Z",
   "note": "Elo ratings fitted on the Leaguepedia results in data/reference_games.json.",
   "teams": {
     "Rich Gang": {
@@ -1599,8 +1599,8 @@
       "source_url": "https://lol.fandom.com/wiki/Fnatic_TQ"
     },
     "Vitality Rising Bees": {
-      "raw_rating": 1489.2,
-      "rating": 1491.21,
+      "raw_rating": 1490.03,
+      "rating": 1491.89,
       "games": 35,
       "wins": 14,
       "win_rate": 0.4,
@@ -1647,12 +1647,12 @@
       "source_url": "https://lol.fandom.com/wiki/Lionscreed"
     },
     "G2 Hel": {
-      "raw_rating": 1421.86,
-      "rating": 1460.93,
-      "games": 8,
-      "wins": 2,
-      "win_rate": 0.25,
-      "last10_win_rate": 0.25,
+      "raw_rating": 1439.27,
+      "rating": 1467.85,
+      "games": 9,
+      "wins": 3,
+      "win_rate": 0.3333,
+      "last10_win_rate": 0.3333,
       "last_match": "2026-10-20",
       "sample": "low",
       "source": "leaguepedia",
@@ -3327,12 +3327,12 @@
       "source_url": "https://lol.fandom.com/wiki/Crusaders"
     },
     "SK Gaming Avarosa": {
-      "raw_rating": 1479.9,
-      "rating": 1494.52,
-      "games": 3,
-      "wins": 1,
-      "win_rate": 0.3333,
-      "last10_win_rate": 0.3333,
+      "raw_rating": 1494.55,
+      "rating": 1498.18,
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5,
+      "last10_win_rate": 0.5,
       "last_match": "2026-10-19",
       "sample": "low",
       "source": "leaguepedia",
@@ -4503,8 +4503,8 @@
       "source_url": "https://lol.fandom.com/wiki/Mosel%26%2339%3BLAN_Project"
     },
     "Mental Rush": {
-      "raw_rating": 1567.36,
-      "rating": 1537.42,
+      "raw_rating": 1568.05,
+      "rating": 1537.81,
       "games": 10,
       "wins": 8,
       "win_rate": 0.8,
@@ -4527,13 +4527,13 @@
       "source_url": "https://lol.fandom.com/wiki/Solary_Eclipse"
     },
     "Blue Otter Europe": {
-      "raw_rating": 1478.72,
-      "rating": 1497.64,
-      "games": 1,
+      "raw_rating": 1463.38,
+      "rating": 1492.68,
+      "games": 2,
       "wins": 0,
       "win_rate": 0.0,
       "last10_win_rate": 0.0,
-      "last_match": "2026-07-09",
+      "last_match": "2026-10-12",
       "sample": "low",
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/Blue_Otter_Europe"
@@ -4779,13 +4779,13 @@
       "source_url": "https://lol.fandom.com/wiki/Karmine_Corp_Blue"
     },
     "AZ Rising Eterna": {
-      "raw_rating": 1485.13,
-      "rating": 1498.35,
-      "games": 1,
+      "raw_rating": 1466.88,
+      "rating": 1493.38,
+      "games": 2,
       "wins": 0,
       "win_rate": 0.0,
       "last10_win_rate": 0.0,
-      "last_match": "2026-07-28",
+      "last_match": "2026-10-12",
       "sample": "low",
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/AZ_Rising_Eterna"
@@ -6014,6 +6014,54 @@
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/Saigon_Warriors"
     },
+    "Grísirnir": {
+      "raw_rating": 1445.16,
+      "rating": 1476.5,
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667,
+      "last10_win_rate": 0.1667,
+      "last_match": "2026-10-08",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
+    },
+    "Chuds": {
+      "raw_rating": 1499.27,
+      "rating": 1499.69,
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5,
+      "last10_win_rate": 0.5,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Chuds"
+    },
+    "Smá Nibu": {
+      "raw_rating": 1555.63,
+      "rating": 1523.84,
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333,
+      "last10_win_rate": 0.8333,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
+    },
+    "Rift Runners": {
+      "raw_rating": 1424.21,
+      "rating": 1470.85,
+      "games": 5,
+      "wins": 0,
+      "win_rate": 0.0,
+      "last10_win_rate": 0.0,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Rift_Runners"
+    },
     "ZSK (Chinese Team)": {
       "raw_rating": 1453.62,
       "rating": 1484.54,
@@ -6026,6 +6074,30 @@
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/ZSK_%28Chinese_Team%29"
     },
+    "Whisky": {
+      "raw_rating": 1556.54,
+      "rating": 1524.23,
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333,
+      "last10_win_rate": 0.8333,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Whisky"
+    },
+    "Cool Beans Team": {
+      "raw_rating": 1471.37,
+      "rating": 1487.73,
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333,
+      "last10_win_rate": 0.3333,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
+    },
     "Karolinerna Black": {
       "raw_rating": 1467.55,
       "rating": 1493.51,
@@ -6037,6 +6109,18 @@
       "sample": "low",
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/Karolinerna_Black"
+    },
+    "Fenrir (Icelandic Team)": {
+      "raw_rating": 1547.82,
+      "rating": 1518.39,
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8,
+      "last10_win_rate": 0.8,
+      "last_match": "2026-10-12",
+      "sample": "low",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Fenrir_%28Icelandic_Team%29"
     },
     "DMG Esports Sweden": {
       "raw_rating": 1513.05,

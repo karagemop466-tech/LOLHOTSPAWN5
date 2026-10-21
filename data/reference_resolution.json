@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:13:01Z",
+  "generated_at": "2026-10-21T21:22:06Z",
   "tournament_map": {
     "4 Nations 2026 Halloween Heist": "4 Nations/2026 Season/Halloween Heist",
     "Arabian League 2nd Division 2026 Summer": "Arabian League 2nd Division/2026 Season/Summer Split",
@@ -12,9 +12,10 @@
     "EM 2026 Summer Main Event": "EMEA Masters/2026 Season/Summer Main Event/Scoreboards/Round 2",
     "FPL 2026 Summer Playoffs": "Finnish Pro League/2026 Season/Summer Playoffs",
     "Hitpoint 2nd Div Challengers 2026 Summer Playoffs": "Hitpoint 2nd Division Challengers/2026 Season/Summer Playoffs",
-    "Icelandic Esports League 2026 Autumn": "Icelandic Esports League/2026 Season/Autumn Split/Picks and Bans",
+    "Icelandic Esports League 2026 Autumn": "Icelandic Esports League/2026 Season/Autumn Split",
     "Komplettligaen 2026 Autumn": "Komplettligaen/2026 Season/Autumn Split",
     "LCP 2027 Promotion": "LCP/2027 Season/Promotion",
+    "LGC Rising 2026 Playoffs": "LoL Game Changers/2026 Season/Playoffs",
     "LIT 2027 Winter Promotion": "LIT/2027 Season/Winter Promotion",
     "Legends Academy powered by Żabka Season 3 Playoffs": "Legends Academy/2026/Season 3 Playoffs",
     "LigaGG CELOL A 2026 Split 2": "LigaGG/CELOL Série A/2026 Season/Split 2",
@@ -29,21 +30,18 @@
     "Worlds 2026 Main Event": "2026 Season World Championship/Main Event"
   },
   "tournament_notes": {
-    "Benelux Ascend Series 2027 Winter Promotion": "auto-resolved (score 0.90) from 1 search hits",
-    "EM 2026 Summer Main Event": "auto-resolved (score 0.72) from 8 search hits",
-    "Hitpoint 2nd Div Challengers 2026 Summer Playoffs": "auto-resolved (score 0.77) from 8 search hits",
-    "Icelandic Esports League 2026 Autumn": "auto-resolved (score 0.90) from 8 search hits",
-    "LGC Rising 2026 Playoffs": "no Leaguepedia page found",
-    "LIT 2027 Winter Promotion": "auto-resolved (score 0.90) from 8 search hits",
+    "Benelux Ascend Series 2027 Winter Promotion": "auto-resolved (score 0.95) from 1 search hits",
+    "EM 2026 Summer Main Event": "auto-resolved (score 0.77) from 8 search hits",
+    "Hitpoint 2nd Div Challengers 2026 Summer Playoffs": "auto-resolved (score 0.82) from 8 search hits",
+    "LGC Rising 2026 Playoffs": "auto-resolved (score 0.50) from 8 search hits",
+    "LIT 2027 Winter Promotion": "auto-resolved (score 0.95) from 8 search hits",
     "Legends Academy powered by Żabka Season 3 Playoffs": "auto-resolved (score 0.72) from 8 search hits",
-    "LigaGG CELOL A 2026 Split 2": "auto-resolved (score 0.90) from 8 search hits",
-    "LigaGG CELOL B 2026 Split 2": "auto-resolved (score 0.90) from 8 search hits",
-    "LigaGG CELOL B 2026 Split 2 Playoffs": "auto-resolved (score 0.90) from 8 search hits",
+    "LigaGG CELOL A 2026 Split 2": "auto-resolved (score 0.95) from 8 search hits",
+    "LigaGG CELOL B 2026 Split 2": "auto-resolved (score 0.95) from 8 search hits",
+    "LigaGG CELOL B 2026 Split 2 Playoffs": "auto-resolved (score 0.95) from 8 search hits",
     "POP Esports Masters Season 7": "auto-resolved (score 1.00) from 8 search hits"
   },
-  "unresolved_tournaments": [
-    "LGC Rising 2026 Playoffs"
-  ],
+  "unresolved_tournaments": [],
   "team_map": {
     "2 Massive": "2 Massive",
     "404 Multigaming e.V.": "404 Multigaming e.V.",
@@ -325,9 +323,9 @@
     "التريس": "no Leaguepedia team page"
   },
   "counts": {
-    "games": 1792,
-    "teams_rated": 612,
-    "tournaments_mapped": 26,
-    "tournaments_unresolved": 1
+    "games": 1814,
+    "teams_rated": 619,
+    "tournaments_mapped": 27,
+    "tournaments_unresolved": 0
   }
 }

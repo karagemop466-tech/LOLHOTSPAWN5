@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:13:01Z",
+  "generated_at": "2026-10-21T21:22:06Z",
   "note": "Leaguepedia series results used only for our own line. No HotSpawn data is used here.",
   "tournament_pages": [
     {
@@ -70,9 +70,9 @@
     },
     {
       "tournament": "Icelandic Esports League 2026 Autumn",
-      "title": "Icelandic Esports League/2026 Season/Autumn Split/Picks and Bans",
+      "title": "Icelandic Esports League/2026 Season/Autumn Split",
       "status": "ok",
-      "series": 0
+      "series": 20
     },
     {
       "tournament": "Komplettligaen 2026 Autumn",
@@ -85,6 +85,12 @@
       "title": "LCP/2027 Season/Promotion",
       "status": "ok",
       "series": 0
+    },
+    {
+      "tournament": "LGC Rising 2026 Playoffs",
+      "title": "LoL Game Changers/2026 Season/Playoffs",
+      "status": "ok",
+      "series": 6
     },
     {
       "tournament": "LIT 2027 Winter Promotion",
@@ -159,9 +165,7 @@
       "series": 0
     }
   ],
-  "unresolved_tournaments": [
-    "LGC Rising 2026 Playoffs"
-  ],
+  "unresolved_tournaments": [],
   "team_resolution": {
     "resolved": 87,
     "total": 189
@@ -2339,6 +2343,266 @@
       "source_url": "https://lol.fandom.com/wiki/Hitpoint_2nd_Division_Challengers/2026_Season/Summer_Playoffs"
     },
     {
+      "date": "2026-09-21",
+      "team_a": "Whisky",
+      "team_b": "Cool Beans Team",
+      "winner": "Whisky",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-21",
+      "team_a": "Smá Nibu",
+      "team_b": "Rift Runners",
+      "winner": "Smá Nibu",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-21",
+      "team_a": "Grísirnir",
+      "team_b": "Chuds",
+      "winner": "Chuds",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-24",
+      "team_a": "Smá Nibu",
+      "team_b": "Cool Beans Team",
+      "winner": "Smá Nibu",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-24",
+      "team_a": "Grísirnir",
+      "team_b": "Whisky",
+      "winner": "Whisky",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-24",
+      "team_a": "Fenrir (Icelandic Team)",
+      "team_b": "Chuds",
+      "winner": "Fenrir (Icelandic Team)",
+      "score_a": 2,
+      "score_b": 1,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-28",
+      "team_a": "Grísirnir",
+      "team_b": "Cool Beans Team",
+      "winner": "Cool Beans Team",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-28",
+      "team_a": "Fenrir (Icelandic Team)",
+      "team_b": "Whisky",
+      "winner": "Whisky",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-09-28",
+      "team_a": "Chuds",
+      "team_b": "Rift Runners",
+      "winner": "Chuds",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-01",
+      "team_a": "Fenrir (Icelandic Team)",
+      "team_b": "Grísirnir",
+      "winner": "Fenrir (Icelandic Team)",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-01",
+      "team_a": "Chuds",
+      "team_b": "Smá Nibu",
+      "winner": "Smá Nibu",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-01",
+      "team_a": "Rift Runners",
+      "team_b": "Whisky",
+      "winner": "Whisky",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-05",
+      "team_a": "Fenrir (Icelandic Team)",
+      "team_b": "Cool Beans Team",
+      "winner": "Fenrir (Icelandic Team)",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-05",
+      "team_a": "Rift Runners",
+      "team_b": "Grísirnir",
+      "winner": "Grísirnir",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-05",
+      "team_a": "Whisky",
+      "team_b": "Smá Nibu",
+      "winner": "Smá Nibu",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-08",
+      "team_a": "Chuds",
+      "team_b": "Cool Beans Team",
+      "winner": "Chuds",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-08",
+      "team_a": "Smá Nibu",
+      "team_b": "Grísirnir",
+      "winner": "Smá Nibu",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-12",
+      "team_a": "Rift Runners",
+      "team_b": "Cool Beans Team",
+      "winner": "Cool Beans Team",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-12",
+      "team_a": "Whisky",
+      "team_b": "Chuds",
+      "winner": "Whisky",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-12",
+      "team_a": "Smá Nibu",
+      "team_b": "Fenrir (Icelandic Team)",
+      "winner": "Fenrir (Icelandic Team)",
+      "score_a": 0,
+      "score_b": 2,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "Icelandic Esports League 2026 Autumn",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/Icelandic_Esports_League/2026_Season/Autumn_Split"
+    },
+    {
       "date": "2026-09-06",
       "team_a": "Volda E-Sport",
       "team_b": "Playwell Rød Q",
@@ -3000,6 +3264,84 @@
       "tournament": "Komplettligaen 2026 Autumn",
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/Komplettligaen/2026_Season/Autumn_Split"
+    },
+    {
+      "date": "2026-10-11",
+      "team_a": "Mental Rush",
+      "team_b": "Barcząca Esports Babylon",
+      "winner": "Mental Rush",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
+    },
+    {
+      "date": "2026-10-11",
+      "team_a": "Vitality Rising Bees",
+      "team_b": "Good Chi Sakura",
+      "winner": "Vitality Rising Bees",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
+    },
+    {
+      "date": "2026-10-12",
+      "team_a": "SK Gaming Avarosa",
+      "team_b": "Blue Otter Europe",
+      "winner": "SK Gaming Avarosa",
+      "score_a": 2,
+      "score_b": 0,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
+    },
+    {
+      "date": "2026-10-12",
+      "team_a": "G2 Hel",
+      "team_b": "AZ Rising Eterna",
+      "winner": "G2 Hel",
+      "score_a": 2,
+      "score_b": 1,
+      "best_of": 3,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
+    },
+    {
+      "date": "2026-10-19",
+      "team_a": "Mental Rush",
+      "team_b": "SK Gaming Avarosa",
+      "winner": "Mental Rush",
+      "score_a": 3,
+      "score_b": 2,
+      "best_of": 4,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
+    },
+    {
+      "date": "2026-10-20",
+      "team_a": "Vitality Rising Bees",
+      "team_b": "G2 Hel",
+      "winner": "Vitality Rising Bees",
+      "score_a": 3,
+      "score_b": 0,
+      "best_of": 4,
+      "kind": "series",
+      "tournament": "LGC Rising 2026 Playoffs",
+      "source": "leaguepedia",
+      "source_url": "https://lol.fandom.com/wiki/LoL_Game_Changers/2026_Season/Playoffs"
     },
     {
       "date": "2026-08-28",
@@ -17796,32 +18138,6 @@
       "source_url": "https://lol.fandom.com/wiki/Marere_e-Sports/Match_History"
     },
     {
-      "date": "2026-10-19",
-      "team_a": "Mental Rush",
-      "team_b": "SK Gaming Avarosa",
-      "winner": "Mental Rush",
-      "score_a": 3,
-      "score_b": 2,
-      "best_of": 5,
-      "kind": "series",
-      "tournament": "LGC Rising 2026 Playoffs",
-      "source": "leaguepedia",
-      "source_url": "https://lol.fandom.com/wiki/Mental_Rush/Match_History"
-    },
-    {
-      "date": "2026-10-11",
-      "team_a": "Mental Rush",
-      "team_b": "Barcząca Esports Babylon",
-      "winner": "Mental Rush",
-      "score_a": 2,
-      "score_b": 0,
-      "best_of": 2,
-      "kind": "series",
-      "tournament": "LGC Rising 2026 Playoffs",
-      "source": "leaguepedia",
-      "source_url": "https://lol.fandom.com/wiki/Mental_Rush/Match_History"
-    },
-    {
       "date": "2026-08-29",
       "team_a": "Mental Rush",
       "team_b": "Vitality Rising Bees",
@@ -22682,32 +22998,6 @@
       "tournament": "PRM 2nd Division 25-26 Winter Playoffs",
       "source": "leaguepedia",
       "source_url": "https://lol.fandom.com/wiki/VfB_eSports/Match_History"
-    },
-    {
-      "date": "2026-10-20",
-      "team_a": "Vitality Rising Bees",
-      "team_b": "G2 Hel",
-      "winner": "Vitality Rising Bees",
-      "score_a": 3,
-      "score_b": 0,
-      "best_of": 3,
-      "kind": "series",
-      "tournament": "LGC Rising 2026 Playoffs",
-      "source": "leaguepedia",
-      "source_url": "https://lol.fandom.com/wiki/Vitality_Rising_Bees/Match_History"
-    },
-    {
-      "date": "2026-10-11",
-      "team_a": "Vitality Rising Bees",
-      "team_b": "Good Chi Sakura",
-      "winner": "Vitality Rising Bees",
-      "score_a": 2,
-      "score_b": 0,
-      "best_of": 2,
-      "kind": "series",
-      "tournament": "LGC Rising 2026 Playoffs",
-      "source": "leaguepedia",
-      "source_url": "https://lol.fandom.com/wiki/Vitality_Rising_Bees/Match_History"
     },
     {
       "date": "2026-08-16",

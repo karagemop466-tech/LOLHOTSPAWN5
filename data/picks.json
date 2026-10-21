@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T21:15:35Z",
+  "generated_at": "2026-10-21T21:22:14Z",
   "note": "HotSpawn supplies the fixture list only. Probabilities come from external betting lines (Kalshi, Polymarket, Pinnacle, Bovada) or from our own Elo line built on verified match results. HotSpawn crowd percentages are never used.",
   "summary": {
     "fixtures": 264,
     "with_series_market": 8,
     "with_map_market_only": 0,
-    "own_line": 243,
-    "default_50_50": 13,
+    "own_line": 255,
+    "default_50_50": 1,
     "unresolved": 256,
     "coverage_pct": 3.0
   },
@@ -1015,38 +1015,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Chuds",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4653,
+        "rating": 1499.69,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Chuds",
+        "wiki_name": "Chuds"
       },
       "team_b": {
         "name": "Smá Nibu",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5347,
+        "rating": 1523.84,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu",
+        "wiki_name": "Smá Nibu"
       },
-      "pick": "Chuds",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick": "Smá Nibu",
+      "pick_prob": 0.5347,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.4653,
+        "reason": "elo",
+        "rating_a": 1499.69,
+        "rating_b": 1523.84,
+        "wiki_name_a": "Chuds",
+        "wiki_name_b": "Smá Nibu"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1063,38 +1060,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Fenrir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.56,
+        "rating": 1518.39,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Fenrir_%28Icelandic_Team%29",
+        "wiki_name": "Fenrir (Icelandic Team)"
       },
       "team_b": {
         "name": "Grísirnir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.44,
+        "rating": 1476.5,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir",
+        "wiki_name": "Grísirnir"
       },
       "pick": "Fenrir",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.56,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.56,
+        "reason": "elo",
+        "rating_a": 1518.39,
+        "rating_b": 1476.5,
+        "wiki_name_a": "Fenrir (Icelandic Team)",
+        "wiki_name_b": "Grísirnir"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1111,38 +1105,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Rift Runners",
-        "prob": 0.5,
-        "rating": 1465.47,
-        "games": 7,
-        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
-        "wiki_name": "Team Rift"
+        "prob": 0.4238,
+        "rating": 1470.85,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Rift_Runners",
+        "wiki_name": "Rift Runners"
       },
       "team_b": {
         "name": "Whisky",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5762,
+        "rating": 1524.23,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Whisky",
+        "wiki_name": "Whisky"
       },
-      "pick": "Rift Runners",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick": "Whisky",
+      "pick_prob": 0.5762,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": 1465.47,
-        "rating_b": null,
-        "wiki_name_a": "Team Rift",
-        "wiki_name_b": null
+        "prob_a": 0.4238,
+        "reason": "elo",
+        "rating_a": 1470.85,
+        "rating_b": 1524.23,
+        "wiki_name_a": "Rift Runners",
+        "wiki_name_b": "Whisky"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team Rift)",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1339,38 +1330,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Fenrir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.544,
+        "rating": 1518.39,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Fenrir_%28Icelandic_Team%29",
+        "wiki_name": "Fenrir (Icelandic Team)"
       },
       "team_b": {
         "name": "Cool Beans Team",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.456,
+        "rating": 1487.73,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Cool_Beans_Team",
+        "wiki_name": "Cool Beans Team"
       },
       "pick": "Fenrir",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.544,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.544,
+        "reason": "elo",
+        "rating_a": 1518.39,
+        "rating_b": 1487.73,
+        "wiki_name_a": "Fenrir (Icelandic Team)",
+        "wiki_name_b": "Cool Beans Team"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1387,38 +1375,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Rift Runners",
-        "prob": 0.5,
-        "rating": 1465.47,
-        "games": 7,
-        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
-        "wiki_name": "Team Rift"
+        "prob": 0.4919,
+        "rating": 1470.85,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Rift_Runners",
+        "wiki_name": "Rift Runners"
       },
       "team_b": {
         "name": "Grísirnir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5081,
+        "rating": 1476.5,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir",
+        "wiki_name": "Grísirnir"
       },
-      "pick": "Rift Runners",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick": "Grísirnir",
+      "pick_prob": 0.5081,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": 1465.47,
-        "rating_b": null,
-        "wiki_name_a": "Team Rift",
-        "wiki_name_b": null
+        "prob_a": 0.4919,
+        "reason": "elo",
+        "rating_a": 1470.85,
+        "rating_b": 1476.5,
+        "wiki_name_a": "Rift Runners",
+        "wiki_name_b": "Grísirnir"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team Rift)",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1435,38 +1420,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Whisky",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5006,
+        "rating": 1524.23,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Whisky",
+        "wiki_name": "Whisky"
       },
       "team_b": {
         "name": "Smá Nibu",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4994,
+        "rating": 1523.84,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu",
+        "wiki_name": "Smá Nibu"
       },
       "pick": "Whisky",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.5006,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.5006,
+        "reason": "elo",
+        "rating_a": 1524.23,
+        "rating_b": 1523.84,
+        "wiki_name_a": "Whisky",
+        "wiki_name_b": "Smá Nibu"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1528,38 +1510,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Chuds",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5172,
+        "rating": 1499.69,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Chuds",
+        "wiki_name": "Chuds"
       },
       "team_b": {
         "name": "Cool Beans Team",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4828,
+        "rating": 1487.73,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Cool_Beans_Team",
+        "wiki_name": "Cool Beans Team"
       },
       "pick": "Chuds",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.5172,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.5172,
+        "reason": "elo",
+        "rating_a": 1499.69,
+        "rating_b": 1487.73,
+        "wiki_name_a": "Chuds",
+        "wiki_name_b": "Cool Beans Team"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1576,38 +1555,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Rift Runners",
-        "prob": 0.5,
-        "rating": 1465.47,
-        "games": 7,
-        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
-        "wiki_name": "Team Rift"
+        "prob": 0.432,
+        "rating": 1470.85,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Rift_Runners",
+        "wiki_name": "Rift Runners"
       },
       "team_b": {
         "name": "Fenrir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.568,
+        "rating": 1518.39,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Fenrir_%28Icelandic_Team%29",
+        "wiki_name": "Fenrir (Icelandic Team)"
       },
-      "pick": "Rift Runners",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick": "Fenrir",
+      "pick_prob": 0.568,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": 1465.47,
-        "rating_b": null,
-        "wiki_name_a": "Team Rift",
-        "wiki_name_b": null
+        "prob_a": 0.432,
+        "reason": "elo",
+        "rating_a": 1470.85,
+        "rating_b": 1518.39,
+        "wiki_name_a": "Rift Runners",
+        "wiki_name_b": "Fenrir (Icelandic Team)"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team Rift)",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -1624,38 +1600,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Smá Nibu",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5677,
+        "rating": 1523.84,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu",
+        "wiki_name": "Smá Nibu"
       },
       "team_b": {
         "name": "Grísirnir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4323,
+        "rating": 1476.5,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir",
+        "wiki_name": "Grísirnir"
       },
       "pick": "Smá Nibu",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.5677,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.5677,
+        "reason": "elo",
+        "rating_a": 1523.84,
+        "rating_b": 1476.5,
+        "wiki_name_a": "Smá Nibu",
+        "wiki_name_b": "Grísirnir"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2122,38 +2095,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Rift Runners",
-        "prob": 0.5,
-        "rating": 1465.47,
-        "games": 7,
-        "source_url": "https://lol.fandom.com/wiki/Team_Rift",
-        "wiki_name": "Team Rift"
+        "prob": 0.4757,
+        "rating": 1470.85,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Rift_Runners",
+        "wiki_name": "Rift Runners"
       },
       "team_b": {
         "name": "Cool Beans Team",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5243,
+        "rating": 1487.73,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Cool_Beans_Team",
+        "wiki_name": "Cool Beans Team"
       },
-      "pick": "Rift Runners",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick": "Cool Beans Team",
+      "pick_prob": 0.5243,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": 1465.47,
-        "rating_b": null,
-        "wiki_name_a": "Team Rift",
-        "wiki_name_b": null
+        "prob_a": 0.4757,
+        "reason": "elo",
+        "rating_a": 1470.85,
+        "rating_b": 1487.73,
+        "wiki_name_a": "Rift Runners",
+        "wiki_name_b": "Cool Beans Team"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "team name is ambiguous on Leaguepedia (closest: Team Rift)",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2170,38 +2140,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Smá Nibu",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5078,
+        "rating": 1523.84,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu",
+        "wiki_name": "Smá Nibu"
       },
       "team_b": {
         "name": "Fenrir",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4922,
+        "rating": 1518.39,
+        "games": 5,
+        "source_url": "https://lol.fandom.com/wiki/Fenrir_%28Icelandic_Team%29",
+        "wiki_name": "Fenrir (Icelandic Team)"
       },
       "pick": "Smá Nibu",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.5078,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.5078,
+        "reason": "elo",
+        "rating_a": 1523.84,
+        "rating_b": 1518.39,
+        "wiki_name_a": "Smá Nibu",
+        "wiki_name_b": "Fenrir (Icelandic Team)"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -2218,38 +2185,35 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Whisky",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.5353,
+        "rating": 1524.23,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Whisky",
+        "wiki_name": "Whisky"
       },
       "team_b": {
         "name": "Chuds",
-        "prob": 0.5,
-        "rating": null,
-        "games": null,
-        "source_url": null,
-        "wiki_name": null
+        "prob": 0.4647,
+        "rating": 1499.69,
+        "games": 6,
+        "source_url": "https://lol.fandom.com/wiki/Chuds",
+        "wiki_name": "Chuds"
       },
       "pick": "Whisky",
-      "pick_prob": 0.5,
-      "confidence": "default",
-      "basis": "no verified line or history - flat 50% default",
+      "pick_prob": 0.5353,
+      "confidence": "model",
+      "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5,
-        "reason": "no verified match history for at least one team",
-        "rating_a": null,
-        "rating_b": null,
-        "wiki_name_a": null,
-        "wiki_name_b": null
+        "prob_a": 0.5353,
+        "reason": "elo",
+        "rating_a": 1524.23,
+        "rating_b": 1499.69,
+        "wiki_name_a": "Whisky",
+        "wiki_name_b": "Chuds"
       },
       "market": null,
       "market_sources": [],
       "flags": [
-        "no wiki team page for this team",
-        "no wiki team page for this team",
-        "no verified match history for at least one team",
         "no external betting line published for this fixture"
       ],
       "unresolved": true
@@ -3235,8 +3199,8 @@
           "source_url": "https://polymarket.com/event/lol-gal-sly-2026-10-22/lol-gal-sly-2026-10-22",
           "event_title": "Galions vs Solary (BO5) - EMEA Masters Playoffs",
           "league": null,
-          "prob_a": 0.515,
-          "prob_b": 0.485,
+          "prob_a": 0.555,
+          "prob_b": 0.445,
           "decimal_a": null,
           "decimal_b": null,
           "overround": 1.0,
@@ -8123,29 +8087,29 @@
       "hotspawn_lobby": "https://play.hotspawn.com/lol-pickems",
       "team_a": {
         "name": "Mental Rush",
-        "prob": 0.5661,
-        "rating": 1537.42,
+        "prob": 0.5657,
+        "rating": 1537.81,
         "games": 10,
         "source_url": "https://lol.fandom.com/wiki/Mental_Rush",
         "wiki_name": "Mental Rush"
       },
       "team_b": {
         "name": "Vitality Rising Bees",
-        "prob": 0.4339,
-        "rating": 1491.21,
+        "prob": 0.4343,
+        "rating": 1491.89,
         "games": 35,
         "source_url": "https://lol.fandom.com/wiki/Vitality_Rising_Bees",
         "wiki_name": "Vitality Rising Bees"
       },
       "pick": "Mental Rush",
-      "pick_prob": 0.5661,
+      "pick_prob": 0.5657,
       "confidence": "model",
       "basis": "our own line (Elo over verified results)",
       "model": {
-        "prob_a": 0.5661,
+        "prob_a": 0.5657,
         "reason": "elo",
-        "rating_a": 1537.42,
-        "rating_b": 1491.21,
+        "rating_a": 1537.81,
+        "rating_b": 1491.89,
         "wiki_name_a": "Mental Rush",
         "wiki_name_b": "Vitality Rising Bees"
       },
