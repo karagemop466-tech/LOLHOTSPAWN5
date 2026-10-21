@@ -92,6 +92,7 @@ def page(title: str, desc: str, body: str, active: str = "", depth: int = 0) -> 
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="theme-color" content="#12121c">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{prefix}assets/site.css">
 <meta property="og:title" content="{esc(title)}">
@@ -193,7 +194,7 @@ def match_card(r: dict, depth: int = 0) -> str:
     </div>
   </div>
   <div class="m-meta"><b>Pick: {esc(pick)}</b> <span class="sep">·</span> fair odds {dec(r.get('fair_decimal_a') if pick == a else r.get('fair_decimal_b'))}
-    <span class="sep">·</span> {esc(basis)} <span class="sep">·</span> {esc(r.get('tier','')) if r.get('tier') not in ('waiting for information', None) else 'tier n/a'}</div>
+    <span class="sep">·</span> {esc(basis)} <span class="sep">·</span> {(('Tier ' + r['tier'].upper()) if r.get('tier') not in ('waiting for information', None, '') else 'tier n/a')}</div>
   <div class="m-src">{src_links(r, depth)}</div>
 </article>"""
 
@@ -220,12 +221,24 @@ def build_index(rows, meta):
     stat = lambda v, l, cls="": f'<div class="stat {cls}"><b>{v}</b><span>{l}</span></div>'
     try:
         gen = datetime.fromisoformat(meta["generated_utc"].replace("Z", "+00:00"))
-        nxt = gen.replace(minute=17, second=0, microsecond=0)
-        while nxt <= NOW:
-            nxt += timedelta(hours=6)
-        next_run = nxt.strftime("%Y-%m-%d %H:%M")
+        probe = NOW.replace(minute=17, second=0, microsecond=0)
+        while probe <= NOW:
+            probe += timedelta(hours=1)
+        while probe.hour % 6 != 0:
+            probe += timedelta(hours=1)
+        next_run = probe.strftime("%Y-%m-%d %H:%M")
     except Exception:  # noqa: BLE001
         next_run = "—"
+    try:
+        age_h = (NOW - datetime.fromisoformat(meta["generated_utc"].replace("Z", "+00:00"))).total_seconds() / 3600
+    except Exception:  # noqa: BLE001
+        age_h = 0
+    stale_banner = (
+        f'<div class="callout" role="status"><b>Data is {age_h:.1f} hours old.</b> The automatic refresh '
+        'normally runs every 6 hours; if this stays stale, check the '
+        '<a href="https://github.com/karagemop466-tech/LOLHOTSPAWN5/actions/workflows/refresh.yml">refresh workflow</a>.'
+        '</div>' if age_h > 8 else ""
+    )
     v = meta.get("verification") or {}
     if v.get("checked"):
         verif_text = (f"{v.get('agree')} of {v.get('checked')} completed matches that appear in both the "
@@ -236,6 +249,7 @@ def build_index(rows, meta):
         verif_text = ('no unambiguous overlapping completed matches in the current window to compare; '
                       'the cross-check runs on every refresh.')
     body = f"""
+{stale_banner}
 <section class="hero">
   <div class="hero-copy">
     <p class="eyebrow">Executive summary · updated {esc(meta['generated_utc'][:16].replace('T',' '))} UTC</p>
