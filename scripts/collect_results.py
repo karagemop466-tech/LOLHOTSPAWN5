@@ -24,9 +24,9 @@ FIELD_SETS = [
 ]
 
 
-def api(params, tries=6):
+def api(params, tries=4):
     url = API + "?" + urllib.parse.urlencode(params)
-    delay = 4
+    delay = 3
     for attempt in range(tries):
         try:
             req = urllib.request.Request(url, headers={
@@ -39,24 +39,24 @@ def api(params, tries=6):
                 if code == "ratelimited":
                     print(f"  ratelimited, sleeping {delay}s", file=sys.stderr)
                     time.sleep(delay)
-                    delay = min(delay * 2, 60)
+                    delay = min(delay * 2, 20)
                     continue
                 raise RuntimeError(f"api error: {doc['error']}")
             return doc
         except urllib.error.HTTPError as e:
             if e.code in (429, 503):
                 time.sleep(delay)
-                delay = min(delay * 2, 60)
+                delay = min(delay * 2, 20)
                 continue
             raise
         except urllib.error.URLError as e:
             print(f"  url error {e}, retry", file=sys.stderr)
             time.sleep(delay)
-            delay = min(delay * 2, 60)
+            delay = min(delay * 2, 20)
     return None
 
 
-def collect(days_back=400, max_rows=6000, page=500):
+def collect(days_back=120, max_rows=2500, page=500):
     since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days_back))
     since_s = since.strftime("%Y-%m-%d 00:00:00")
 
@@ -70,7 +70,7 @@ def collect(days_back=400, max_rows=6000, page=500):
             fields = fs
             print(f"using field set: {fs}", file=sys.stderr)
             break
-        time.sleep(3)
+        time.sleep(6)
     if fields is None:
         raise SystemExit("could not establish a working MatchSchedule field set")
 
@@ -92,7 +92,7 @@ def collect(days_back=400, max_rows=6000, page=500):
         offset += page
         if len(batch) < page:
             break
-        time.sleep(3)
+        time.sleep(10)
 
     clean = []
     for r in rows:
