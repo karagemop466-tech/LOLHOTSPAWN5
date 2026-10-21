@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:52:14Z">2026-10-21 20:52:14 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T21:22:22Z">2026-10-21 21:22:22 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink active" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
@@ -39,17 +39,24 @@
   their Hotspawn pick share, and the link to the Hotspawn match page.</p>
 
   <h2>2. External market lines</h2>
-  <p>We query Pinnacle's guest API for every league whose name contains
-  <em>League of Legends</em>, take the period-0 <code>moneyline</code> market, and convert American
-  odds to implied probability:</p>
+  <p>We query three external price sources, in priority order — <strong>Pinnacle</strong> (sharp
+  bookmaker guest API), <strong>Kalshi</strong> (exchange, series <code>KXLOLGAME</code>, per-match
+  binary moneylines) and <strong>Bovada</strong> (best-effort). For Pinnacle we take the period-0
+  <code>moneyline</code> market and convert American odds to implied probability:</p>
   <pre>p = 100 / (price + 100)        if price &gt; 0
 p = -price / (-price + 100)    if price &lt; 0</pre>
-  <p>Bookmaker prices include a margin, so the two implied probabilities sum to more than 1. They are
+  <p>For Kalshi we take the midpoint of each side's yes bid/ask in dollars. Prices include a margin
+  (vig or spread), so the two implied probabilities sum to more than 1. They are
   de-vigged proportionally:</p>
   <pre>p_no_vig(a) = p(a) / (p(a) + p(b))</pre>
   <p>A Hotspawn fixture only takes a market price when <strong>both</strong> team names match the
-  Pinnacle matchup and the two start times agree within 8 hours.
-  Any partial match is discarded — a wrong join is worse than no join.</p>
+  external matchup and the two start times agree within 8 hours.
+  When more than one source matches, the highest-priority source wins and the row's source links show
+  which price was used. Any partial match is discarded — a wrong join is worse than no join.
+  Established esportsbooks (GG.BET, BC.GAME, N1 Bet, Melbet, Thunderpick, Rivalry, 1xBet,
+  EGamersWorld) are probed every refresh for low-tier lines; their availability is recorded in the
+  <a href="sources.html">source register</a>, and no price is ever taken from a probe that did not
+  actually return parseable prices.</p>
 
   <h2>3. Our own Elo model</h2>
   <p>For fixtures no bookmaker prices, we rate teams ourselves from
@@ -71,7 +78,8 @@ R_effective = 1500 + (R - 1500) · n / (n + 8)</pre>
     <table class="data">
       <thead><tr><th>Tier</th><th>Rule</th><th>Meaning</th></tr></thead>
       <tbody>
-        <tr><td data-l="Tier">Market-priced</td><td data-l="Rule">A matched Pinnacle moneyline</td>
+        <tr><td data-l="Tier">Market-priced</td><td data-l="Rule">A matched external moneyline
+            (Pinnacle / Kalshi / Bovada)</td>
             <td data-l="Meaning">External price; strongest evidence on the site.</td></tr>
         <tr><td data-l="Tier">High</td><td data-l="Rule">Both teams ≥ 20 rated results</td>
             <td data-l="Meaning">Model has a solid sample.</td></tr>
@@ -100,9 +108,11 @@ R_effective = 1500 + (R - 1500) · n / (n + 8)</pre>
       a model, not dressed up as a market.</li>
     <li><strong>We never backfill a missing value.</strong> Blank stays blank and is published on the
       <a href="review.html">Flagged for review</a> page.</li>
-    <li><strong>We do not use Polymarket or Kalshi per-match prices</strong> in this snapshot, because
-      neither had a live market for the fixtures in the board (see the
-      <a href="unresolved.html">Unresolved page</a>).</li>
+    <li><strong>We only use Polymarket or Kalshi when a live per-match market matches a board
+      fixture.</strong> Kalshi <code>KXLOLGAME</code> per-match exchange prices are ingested and used
+      like a bookmaker price (de-vigged). Polymarket's open LoL markets have been outright/historical
+      rather than per-match; when that changes they will be used the same way. Outright futures are
+      never converted into a per-match probability.</li>
   </ul>
 
   <h2>6. Refresh cadence</h2>
@@ -114,7 +124,7 @@ R_effective = 1500 + (R - 1500) · n / (n + 8)</pre>
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-21 20:51:49 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-21 21:21:15 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>

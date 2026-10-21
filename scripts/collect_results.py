@@ -57,10 +57,14 @@ def get(rec, *names):
 
 def main():
     os.makedirs(DATA, exist_ok=True)
-    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=365)).strftime("%Y-%m-%d")
+    # Three-year window: low-tier ERL rosters (PRM 2nd/3rd Division and similar) change
+    # slowly at the org level, and earlier seasons are what lift thin teams over the
+    # MIN_MATCHES_RELIABLE bar with *verified* results rather than a prior. The Elo pass
+    # already applies a 365-day half-life, so old rows decay instead of dominating.
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1095)).strftime("%Y-%m-%d")
 
     rows, offset, page = [], 0, 500
-    while len(rows) < 8000:
+    while len(rows) < 24000:
         params = {
             "tables": "MatchSchedule",
             "fields": ",".join(FIELDS),
@@ -89,11 +93,25 @@ def main():
         t2 = get(r, "Team2")
         w = get(r, "Winner")
         d = get(r, "DateTime UTC", "DateTime_UTC")
+        # Older rows can carry numeric team IDs instead of names; those cannot be
+        # attributed to a team, so they are skipped rather than mixed into ratings.
+        if t1 is not None and not isinstance(t1, str):
+            t1 = str(t1)
+        if t2 is not None and not isinstance(t2, str):
+            t2 = str(t2)
+        if t1:
+            t1 = t1.strip()
+        if t2:
+            t2 = t2.strip()
         if not (t1 and t2 and d):
+            continue
+        if t1.isdigit() or t2.isdigit() or t1 == t2:
             continue
         if not w or t1 == "TBD" or t2 == "TBD":
             continue  # not played yet - cannot inform a rating
         mid = get(r, "MatchId") or f"{t1}|{t2}|{d}"
+        if isinstance(mid, (int, float)):
+            mid = str(mid)
         if mid in seen:
             continue
         seen.add(mid)

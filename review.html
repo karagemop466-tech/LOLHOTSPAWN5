@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:52:14Z">2026-10-21 20:52:14 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T21:22:22Z">2026-10-21 21:22:22 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink active" href="review.html">Flagged</a></nav>
@@ -36,8 +36,13 @@
       <thead><tr><th>Finding</th><th>Detail</th><th>Source</th></tr></thead>
       <tbody>
       <tr>
+        <td data-l="Finding">Team-name join rules were tightened (documented change)</td>
+        <td data-l="Detail">Two matching rules changed in the results join and are flagged here for review. (1) Leaguepedia disambiguator suffixes such as "(Norwegian Team)" are stripped before matching, because they are wiki metadata rather than team names. (2) The token "academy" is no longer dropped during normalisation: dropping it conflated academy rosters with parent orgs (e.g. Babos Gaming Academy vs Babos Gaming), which are different squads. A missed join leaves a row unresolved; a wrong join would fabricate evidence, so the safer direction was chosen.</td>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
+      </tr>
+      <tr>
         <td data-l="Finding">One Leaguepedia row is dated in the future yet already carries a winner</td>
-        <td data-l="Detail">Of 7579 completed rows pulled from Leaguepedia, 1 has a kickoff time after the collection timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match is played) and are flagged here rather than silently used.</td>
+        <td data-l="Detail">Of 23268 completed rows pulled from Leaguepedia, 1 has a kickoff time after the collection timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match is played) and are flagged here rather than silently used.</td>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>
@@ -66,13 +71,18 @@
         <td data-l="Source"><a href="https://polymarket.com/markets/esports/lol" rel="noopener">source</a></td>
       </tr>
       <tr>
-        <td data-l="Finding">Kalshi per-match markets exist but are not ingested here</td>
-        <td data-l="Detail">The KXLOLGAME series does list per-match Worlds moneylines (a verified snapshot showed 9 open fixtures), so these are not futures. This pipeline does not yet read them: those fixtures are priced by Pinnacle where a line exists, otherwise by the model. Wiring Kalshi in would move some model-priced Worlds rows onto a real exchange price — an open improvement, stated here rather than implied.</td>
-        <td data-l="Source"><a href="https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLOLGAME&amp;status=open" rel="noopener">source</a></td>
+        <td data-l="Finding">Verified alias: Hotspawn &quot;Phong Vu Buffalo&quot; = Leaguepedia &quot;PvB (Swiss Team)&quot;</td>
+        <td data-l="Detail">These five fixtures are joined to Leaguepedia team "PvB (Swiss Team)" via a documented alias rather than guesswork: same league (PRM 2nd Division 26-27 Fall) and the identical next five opponents in order (DKB XPERION NXT, VfB eSports, 404 Multigaming, MT1 Esports, regnum4games). Org handles are "PvBnation"/"pvb-nation". If that schedule slot ever diverges from Hotspawn's, the alias must be reverted.</td>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/PvB_(Swiss_Team)" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Kalshi per-match markets are now ingested as a secondary source</td>
+        <td data-l="Detail">The KXLOLGAME series lists per-match moneylines (9 open fixtures at collection). Probabilities are quoted at Pinnacle where both books cover a fixture (Pinnacle odds remain primary), and the Kalshi bid/ask is recorded as a corroborating line with its event ticker and API URL. Every ingested price is an exchange quote; none is inferred.</td>
+        <td data-l="Source"><a href="https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&amp;status=open&amp;with_nested_markets=true" rel="noopener">source</a></td>
       </tr>
       <tr>
         <td data-l="Finding">Unverified values are left blank</td>
-        <td data-l="Detail">110 fixtures carry no probability at all — 69 stale rows and 41 with fewer than 3 rated results for a team. A further 78 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
+        <td data-l="Detail">82 fixtures carry no probability at all — 69 stale rows and 13 with fewer than 3 rated results for a team. A further 65 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>
@@ -337,7 +347,7 @@
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-21 20:51:49 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-21 21:21:15 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>

@@ -6,9 +6,10 @@ Two independent, documented methods are combined:
   1. MARKET  - Pinnacle moneyline, de-vigged proportionally. Used ONLY when both teams of a
                Hotspawn fixture are matched to a Pinnacle matchup (name match + start time
                within TOLERANCE). This is the sharpest available external price.
-  2. MODEL   - Our own Elo rating built from Leaguepedia historical results (last ~400 days),
-               with inactivity decay and small-sample shrinkage. This is what lets us publish a
-               real probability for low-tier fixtures that no sportsbook prices.
+  2. MODEL   - Our own Elo rating built from Leaguepedia historical results (up to three years,
+               with a 365-day recency half-life), with inactivity decay and small-sample shrinkage.
+               This is what lets us publish a real probability for low-tier fixtures that no
+               sportsbook prices.
 
 Hotspawn's own "picked %" is a crowd popularity share. It is carried through for transparency
 and is NEVER used to set a probability.
@@ -23,7 +24,7 @@ recorded verbatim in the output so it can be published on the "Flagged for Revie
 
 A probability is never published for a row we cannot defend. Blank beats plausible.
 """
-import json, math, os, re, sys, datetime as dt, urllib.parse
+import json, math, os, re, sys, unicodedata, datetime as dt, urllib.parse
 
 DATA = "data"
 TOLERANCE_HOURS = 8.0
@@ -79,18 +80,36 @@ ALIASES = {
     "gen g": "geng",
     "solary": "solary",
     "galions": "galions",
+    # Verified alias (sources recorded on review.html): Hotspawn "Phong Vu Buffalo"
+    # is Leaguepedia "PvB (Swiss Team)" - same league (PRM 2nd Div 26-27 Fall) and
+    # the identical next five opponents in order (DKB XPERION NXT, VfB eSports,
+    # 404 Multigaming, MT1 Esports, regnum4games) per lol.fandom.com/wiki/PvB_(Swiss_Team).
+    "phong vu buffalo": "pvb",
 }
 
 DROPPED_TOKENS = {
-    "esports", "esport", "e", "sports", "gaming", "gg", "team", "academy", "club",
+    "esports", "esport", "e", "sports", "gaming", "gg", "team", "club",
     "the", "of", "and", "org", "organization", "official",
 }
+# NOTE: "academy" is deliberately NOT dropped. Dropping it conflates academy rosters
+# with their parent orgs (e.g. "Babos Gaming Academy" vs "Babos Gaming"), which are
+# different squads on Hotspawn and on Leaguepedia. A missed join is safe; a wrong
+# join is not.
 
 
 def norm(name):
     if not name:
         return ""
     s = name.strip().lower()
+    # Leaguepedia disambiguator suffixes ("Rich Gang (Norwegian Team)") are metadata,
+    # not part of the name; strip them before matching. Verified rule: Leaguepedia's
+    # own pages list these teams under the parenthetical-free name in standings tables.
+    s = re.sub(r"\([^)]*\)", " ", s)
+    # Fold diacritics (NFKD) so "Phong Vu"/"Phong Vũ" join; then keep only
+    # alphanumerics. The small fallback list covers characters that survive
+    # NFKD differently across Python builds.
+    s = "".join(c for c in unicodedata.normalize("NFKD", s)
+                if not unicodedata.combining(c))
     s = (s.replace("ø", "o").replace("æ", "ae").replace("å", "a")
           .replace("ü", "u").replace("é", "e").replace("ñ", "n"))
     s = re.sub(r"[^a-z0-9]+", " ", s).strip()
@@ -209,9 +228,10 @@ def confidence(na, nb):
 
 
 # ------------------------------------------------------------------ market join
-def join_market(hs_matches, pinnacle):
+def _quote_entries(source, matchups, league_default):
+    """Normalise one collector's matchup list into join-ready quote entries."""
     index = []
-    for m in pinnacle.get("matchups", []):
+    for m in matchups or []:
         parts = m.get("participants") or []
         if len(parts) != 2:
             continue
@@ -229,7 +249,57 @@ def join_market(hs_matches, pinnacle):
             "start": start,
             "probs": p,
             "raw": m,
+            "source": m.get("source") or source,
+            "url": m.get("url"),
+            "api_url": m.get("api_url"),
+            "league": m.get("league") or league_default,
         })
+    return index
+
+
+def join_market(hs_matches, lines):
+    """Attach the strongest available external quote to each fixture.
+
+    Source priority: Pinnacle (sharpest book) > Kalshi (exchange) > Bovada. The join
+    requires both team names to match after normalisation AND the kickoff times to be
+    within TOLERANCE_HOURS. Every accepted quote keeps its own API/page URL as evidence.
+    """
+    index = []
+    index += _quote_entries("Pinnacle", (lines.get("pinnacle") or {}).get("matchups"),
+                            "League of Legends")
+    index += _quote_entries("Kalshi", (lines.get("kalshi") or {}).get("matchups"), "KXLOLGAME")
+    # Bovada events use a different shape (decimal prices); map them when present.
+    for ev in (lines.get("bovada") or {}).get("events") or []:
+        comps = ev.get("competitors") or []
+        prices = ev.get("prices") or []
+        if len(comps) != 2 or len(prices) < 2:
+            continue
+        try:
+            dec = {p.get("label"): float(p.get("price")) for p in prices if p.get("price")}
+        except (TypeError, ValueError):
+            continue
+        probs = {}
+        for label, d in dec.items():
+            if d and d > 1:
+                for c in comps:
+                    if norm(c) == norm(label):
+                        probs[norm(c)] = 1.0 / d
+        if len(probs) != 2:
+            continue
+        devs = devig_pair(probs)
+        index.append({
+            "names": [norm(comps[0]), norm(comps[1])],
+            "start": parse_iso(ev.get("start")),
+            "probs": devs,
+            "raw": ev,
+            "source": "Bovada",
+            "url": "https://www.bovada.lv/sports/esports/league-of-legends",
+            "api_url": None,
+            "league": "Bovada esports",
+        })
+
+    prio = {"Pinnacle": 0, "Kalshi": 1, "Bovada": 2}
+    index.sort(key=lambda e: prio.get(e["source"], 9))
 
     matched, used = {}, set()
     for hm in hs_matches:
@@ -244,13 +314,37 @@ def join_market(hs_matches, pinnacle):
             same_teams = set(e["names"]) == {h, a}
             if not same_teams:
                 continue
+            if not e["start"]:
+                continue
             dt_h = abs((e["start"] - t).total_seconds()) / 3600.0
             if dt_h > TOLERANCE_HOURS:
                 continue
-            matched[hm["id"]] = {"entry": e, "hours_apart": round(dt_h, 2)}
+            # Secondary quotes (other sources matching the same fixture) are recorded
+            # as corroborating evidence; the priority source supplies the probability.
+            also = []
+            for j, e2 in enumerate(index):
+                if j == i or j in used:
+                    continue
+                if set(e2["names"]) != {h, a} or not e2["start"]:
+                    continue
+                dt_h2 = abs((e2["start"] - t).total_seconds()) / 3600.0
+                if dt_h2 > TOLERANCE_HOURS:
+                    continue
+                also.append({"source": e2["source"], "url": e2["url"],
+                             "api_url": e2["api_url"], "league": e2["league"],
+                             "probs": e2["probs"], "hours_apart": round(dt_h2, 2)})
+                used.add(j)
+            matched[hm["id"]] = {"entry": e, "hours_apart": round(dt_h, 2), "also": also}
             used.add(i)
             break
     return matched
+
+
+def devig_pair(probs):
+    tot = sum(probs.values())
+    if not tot:
+        return {}
+    return {k: v / tot for k, v in probs.items()}
 
 
 def main():
@@ -265,7 +359,7 @@ def main():
         lines = {"pinnacle": {"matchups": []}}
 
     rating, count, last = build_ratings(res.get("results", []))
-    market = join_market(hs["matches"], lines.get("pinnacle", {}))
+    market = join_market(hs["matches"], lines)
 
     now = dt.datetime.now(dt.timezone.utc)
     picks, unresolved = [], []
@@ -311,6 +405,20 @@ def main():
                 ph = probs.get(a)
                 ph = None if ph is None else 1 - ph
             if ph is not None:
+                src = mk["entry"].get("source") or "Pinnacle"
+                raw_prices = mk["entry"]["raw"].get("prices") or []
+                price_rows = []
+                for p in raw_prices:
+                    if not isinstance(p, dict):
+                        continue
+                    price_rows.append({
+                        "team": p.get("team"),
+                        "american": p.get("american"),
+                        "implied_raw": p.get("implied_raw"),
+                        "yes_bid_dollars": p.get("yes_bid_dollars"),
+                        "yes_ask_dollars": p.get("yes_ask_dollars"),
+                        "ticker": p.get("ticker"),
+                    })
                 rec.update({
                     "method": "market",
                     "prob_home": round(ph, 4),
@@ -318,19 +426,18 @@ def main():
                     "pick": home if ph >= 0.5 else away,
                     "pick_prob": round(max(ph, 1 - ph), 4),
                     "confidence": "market-priced",
-                    "market_source": "Pinnacle",
-                    "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-                    "market_api_url": (
-                        "https://guest.api.arcadia.pinnacle.com/0.1/matchups/"
-                        f"{mk['entry']['raw']['matchup_id']}/markets/related/straight"
-                        if mk["entry"]["raw"].get("matchup_id") else None),
-                    "market_league": mk["entry"]["raw"].get("league"),
+                    "market_source": src,
+                    "market_url": mk["entry"].get("url"),
+                    "market_api_url": mk["entry"].get("api_url"),
+                    "market_league": mk["entry"].get("league"),
                     "market_start_utc": mk["entry"]["raw"].get("start_utc"),
                     "market_hours_apart": mk["hours_apart"],
-                    "market_american": [
-                        {"team": p.get("team"), "american": p.get("american"),
-                         "implied_raw": p.get("implied_raw")}
-                        for p in mk["entry"]["raw"].get("prices", [])
+                    "market_american": price_rows,
+                    "market_quotes": [
+                        {"source": q.get("source"), "url": q.get("url"),
+                         "api_url": q.get("api_url"), "league": q.get("league"),
+                         "probs": q.get("probs"), "hours_apart": q.get("hours_apart")}
+                        for q in (mk.get("also") or [])
                     ],
                     "model_prob_home": round(p_home_model, 4),
                     "model_vs_market_diff": round(p_home_model - ph, 4),
@@ -410,8 +517,8 @@ def main():
                 "away_team": away, "away_rated_results": nb, "away_url": evidence_url(away),
             },
             "no_market_reason": (
-                "No Pinnacle moneyline matched this fixture at collection time "
-                f"(rated results on file: {na} for {home}, {nb} for {away})."),
+                "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at "
+                f"collection time (rated results on file: {na} for {home}, {nb} for {away})."),
         })
         picks.append(rec)
 

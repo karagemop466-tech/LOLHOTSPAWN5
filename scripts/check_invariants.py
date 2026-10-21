@@ -86,7 +86,7 @@ def main():
             if method == "market":
                 if not (r.get("market_api_url") or r.get("market_url")):
                     errors.append(f"{tag}: market row has no source URL")
-                if r.get("market_source") != "Pinnacle":
+                if r.get("market_source") not in ("Pinnacle", "Kalshi", "Bovada"):
                     warnings.append(f"{tag}: unexpected market_source {r.get('market_source')!r}")
                 mstart = iso(r.get("market_start_utc"))
                 hstart = iso(r.get("start_utc"))
@@ -151,6 +151,21 @@ def main():
         "notes": notes,
         "status": "pass" if not errors else "fail",
     }
+    # Freshness of the results snapshot: a silent carry-over of an old match_results.json
+    # would make the board claim fresh model numbers on stale evidence.
+    try:
+        with open(f"{DATA}/match_results.json", encoding="utf-8") as fh:
+            mr = json.load(fh)
+        got = iso(mr.get("collected_utc"))
+        if got:
+            age_h = (dt.datetime.now(dt.timezone.utc) - got).total_seconds() / 3600.0
+            summary["results_snapshot_age_hours"] = round(age_h, 1)
+            if age_h > 24:
+                warnings.append(f"match_results.json is {age_h:.0f}h old (stale evidence window)")
+            notes.append(f"match_results.json collected {mr.get('collected_utc')} "
+                         f"({mr.get('row_count')} rows)")
+    except FileNotFoundError:
+        warnings.append("match_results.json missing")
     os.makedirs(DATA, exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(summary, f, indent=1)

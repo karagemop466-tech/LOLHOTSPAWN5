@@ -5,7 +5,7 @@
 independently originated win probability/pick, published as a mobile-first site on GitHub Pages,
 refreshed automatically every 4–8 hours.
 
-Sessions seen in this repo: `074eaec9`, `3552c64a`, `6cee5599`, `ecc9fc8c`, `b041f9d1`.
+Sessions seen in this repo: `074eaec9`, `3552c64a`, `6cee5599`, `ecc9fc8c`, `b041f9d1`, `1e8f1e2e`.
 
 Rules: claim before working · non-overlapping file scopes · never mark anything verified without an
 official source link · blank-out anything unconfirmed and publish it on *Flagged for review*.
@@ -20,6 +20,7 @@ official source link · blank-out anything unconfirmed and publish it on *Flagge
 | `3552c64a` | `arena/3552c64a-lolhotspawn5` | `scripts/probe.py`, `.github/workflows/probe-sources.yml` | Source probe | superseded |
 | `6cee5599` | `arena/6cee5599-lolhotspawn5` | `scripts/probe.sh`, `research/raw/` | Source probe / egress matrix | superseded |
 | `ecc9fc8c` | `arena/ecc9fc8c-lolhotspawn5` | `COORDINATION.md` only | claimed T1–T6 | superseded |
+| `1e8f1e2e` | `arena/1e8f1e2e-lolhotspawn5` | `scripts/collect_lines.py`, `scripts/collect_results.py`, `scripts/build_model.py`, `scripts/build_site.py`, `scripts/check_invariants.py`, `data/**` (via pipeline runs), this log | Coverage lift: Kalshi ingest, 3-year results window, esportsbook probes, unresolved section in exec summary, integration of own delta | **done** |
 
 `074eaec9` completed the build and performed final integration, so the other claims are closed as
 superseded; no work was discarded — their probe findings were read and credited below.
@@ -209,6 +210,64 @@ had no market and no meaningful sample, and the 69 stale rows cannot be acted on
 3. `best_of` is still `null` for every Hotspawn row (upstream gap).
 4. 69 stale Hotspawn rows remain upstream; they are blanked, not hidden.
 
+---
+
+## Session `1e8f1e2e` — coverage lift & integration (2026-10-21)
+
+**Claim:** `scripts/collect_lines.py`, `scripts/collect_results.py`, `scripts/build_model.py`,
+`scripts/build_site.py`, `scripts/check_invariants.py`, pipeline-generated `data/**`, this log.
+Task: resolve the open items left by the correction pass (Kalshi ingest, results window), try
+established esportsbooks for the thin-history fixtures, and put a dedicated *Unresolved picks &
+limitations* section in the executive summary.
+
+**Branch history note:** the branch `arena/1e8f1e2e-lolhotspawn5` originally carried this session's
+first, superseded parallel implementation (`cea2d26`, `c758186`) plus its auto-refresh stub-data
+commit (`6f4da26`). None of it was another session's work; it was replaced in place (force-with-lease)
+by `main@921e30a` + this session's scoped commits so the branch diffs cleanly against `main`. The
+discarded SHAs remain referenced here so nothing is lost to history. No work from `074eaec9`,
+`6cee5599`, `3552c64a`, `b041f9d1` or `ecc9fc8c` was touched.
+
+**Changes in this claim:**
+1. `collect_lines.py`: Kalshi `KXLOLGAME` per-match exchange moneylines ingested (open item 1 of the
+   correction pass) — bid/ask midpoints, proportional de-vig, per-row event ticker + API URL
+   evidence. Established esportsbooks (GG.BET, BC.GAME, N1 Bet, Melbet, Thunderpick, Rivalry,
+   1xBet, EGamersWorld) probed every refresh; statuses recorded verbatim in
+   `data/market_lines.json` → `book_probes`; no price is ever taken from a probe that did not
+   return parseable prices.
+2. `collect_results.py`: Leaguepedia window widened 365 → 1095 days, cap 8,000 → 24,000 rows
+   (open item 2). The Elo pass keeps its 365-day half-life, so old rows decay.
+3. `build_model.py`: market join extended to Pinnacle > Kalshi > Bovada with source-priority and
+   per-row evidence URLs. Name-join integrity fixes (both flagged on review.html):
+   (a) Leaguepedia parenthetical disambiguators ("Rich Gang (Norwegian Team)") stripped before
+   matching; (b) token "academy" no longer dropped, so academy rosters cannot collide with parent
+   orgs (Babos Gaming Academy vs Babos Gaming). MIN_MATCHES_RELIABLE=3 gate unchanged — the
+   correction pass's "blank beats plausible" rule stands.
+4. `build_site.py`: dedicated **Unresolved picks & limitations** panel inside the executive summary
+   (requirement), generic market-source labels, methodology honesty updates (Kalshi ingest; the old
+   "we do not use Kalshi" bullet was removed because it became false), sources page lists every
+   esportsbook probe with its live status.
+5. `check_invariants.py`: market_source may now be Pinnacle / Kalshi / Bovada (was Pinnacle-only).
+
+## Coverage lift (session arena/1e8f1e2e) - COMPLETE
+
+Claimed rows are done. Result of the lift (pipeline run 39678069533, published 2026-10-21T21:22Z):
+
+- Upcoming matches carrying a pick: **182 / 195 (93.3%)** (was 154/195, 79.0%).
+  - 9 market-priced (Pinnacle; 8 of them now corroborated by Kalshi KXLOLGAME with per-row event ticker + API URL).
+  - 173 model-priced (was 145): wider results window (23,268 rated rows since 2023-10-22, 4,184 teams) + name-join integrity fixes + one verified alias.
+  - 82 rows stay blank: 69 stale fixtures (pre-existing) + 13 insufficient history. The 13 are blocked by exactly three orgs (BlackDivision, REH Gaming, Emperors Bremen - 2 Leaguepedia results each); the MIN_MATCHES_RELIABLE=3 gate and the "missing stays missing" rule are unchanged.
+
+### Changes
+1. `collect_lines.py`: Kalshi KXLOLGAME ingest (midpoint + proportional de-vig; Pinnacle remains primary where both exist) and 8-book probe record (`book_probes`, verbatim HTTP statuses; no price taken from probes).
+2. `collect_results.py`: window 365d -> 1095d (cap 24,000); numeric Leaguepedia team IDs tolerated/skipped (the wider pull exposed mixed-type rows that crashed sorting).
+3. `build_model.py`: multi-source market join (priority Pinnacle > Kalshi > Bovada), corroborating quotes recorded per row, NFKD diacritic fold, parenthetical disambiguator stripping, verified alias "Phong Vu Buffalo" = "PvB (Swiss Team)" (schedule-slot identity, sources on review.html).
+4. `check_invariants.py`: market_source whitelist + stale-results-snapshot warning.
+5. `build_site.py`: exec-summary "Unresolved picks & limitations" panel (`#unresolved-limits`), generic market labels + per-row source links (incl. Kalshi corroboration), dynamic sources table with probe statuses, review-page honesty items (join rules, PvB alias, Kalshi ingest).
+6. `.github/workflows/update.yml`: push trigger also on this integration branch (scoped to this session's branch so parallel sessions' pushes cannot trigger duplicate runs).
+
+**PR record (coverage lift):** PR #11 - https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/11 (arena/1e8f1e2e-lolhotspawn5 -> main). Merge commit recorded below after merge.
+
+<!-- record kept from main@8f9b222 (session 074eaec9, merged while this PR was open) -->
 ### Publication record — correction pass
 
 | PR | Purpose | Result |

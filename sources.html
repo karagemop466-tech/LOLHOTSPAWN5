@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:52:14Z">2026-10-21 20:52:14 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T21:22:22Z">2026-10-21 21:22:22 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink active" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
@@ -55,32 +55,86 @@
       <tr>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia — MatchSchedule</a></td>
         <td data-l="Provides">Historical match results backing the Elo model</td>
-        <td data-l="Status"> 7579 rows, 1394 teams rated</td>
+        <td data-l="Status"> 23268 rows, 3981 teams rated</td>
         <td data-l="Caveat">Community-maintained wiki mirroring Riot schedules; rate-limited.</td>
       </tr>
       <tr>
         <td data-l="Source"><a href="https://polymarket.com/markets/esports/lol" rel="noopener">Polymarket — League of Legends</a></td>
         <td data-l="Provides">Prediction-market prices (candidate source)</td>
-        <td data-l="Status">Live markets in this snapshot were historical, not for board fixtures</td>
-        <td data-l="Caveat">Not used for any pick. Recorded as unavailable for these matches.</td>
+        <td data-l="Status">Open LoL markets are outrights/historical rather than per-board-fixture</td>
+        <td data-l="Caveat">Not used for any pick unless a live per-match market matches a board fixture. Outrights are never converted into a per-match probability.</td>
       </tr>
       <tr>
-        <td data-l="Source"><a href="https://kalshi.com/markets/kxlol" rel="noopener">Kalshi — KXLOL</a></td>
-        <td data-l="Provides">Prediction-market prices (candidate source)</td>
-        <td data-l="Status">Only a Worlds 2026 outright winner market was open</td>
-        <td data-l="Caveat">Outright only — cannot price an individual fixture.</td>
+        <td data-l="Source"><a href="https://kalshi.com/markets/kxlolgame-26oct220800slygal" rel="noopener">Kalshi — KXLOLGAME (per-match)</a></td>
+        <td data-l="Provides">Per-match exchange moneylines (bid/ask midpoints, de-vigged)</td>
+        <td data-l="Status">Ingested every refresh; each priced row cites its event ticker and API URL</td>
+        <td data-l="Caveat">Covers the tournaments Kalshi lists (Worlds 2026, EMEA Masters at last check). Spread removal is proportional de-vig, same as a bookmaker.</td>
       </tr>
       <tr>
         <td data-l="Source"><a href="https://www.bovada.lv/sports/esports/league-of-legends" rel="noopener">Bovada — League of Legends</a></td>
         <td data-l="Provides">Secondary bookmaker (candidate source)</td>
-        <td data-l="Status">Public JSON endpoint returned HTTP 400 on collection</td>
-        <td data-l="Caveat">Not used. No prices were obtained, so none are shown.</td>
+        <td data-l="Status">Public JSON endpoint recorded best-effort each refresh</td>
+        <td data-l="Caveat">Used only if it answers with parseable prices; otherwise none are shown.</td>
       </tr>
       <tr>
         <td data-l="Source"><a href="https://www.oddsportal.com/esports/league-of-legends/" rel="noopener">OddsPortal — League of Legends</a></td>
         <td data-l="Provides">Bookmaker odds aggregator (candidate source)</td>
         <td data-l="Status">Page reachable (HTTP 200) but prices are loaded client-side</td>
         <td data-l="Caveat">Not used. No prices were scraped from it.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://gg.bet/esports/league-of-legends" rel="noopener">GG.BET LoL</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 403</td>
+        <td data-l="Caveat">HTTP 403 from CI runner - no prices used</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://bc.game/sports/esports" rel="noopener">BC.GAME esports</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 200, 10808 bytes</td>
+        <td data-l="Caveat">Reachable; no stable per-match price feed parsed, so no price is used from it.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://n1bet.com/esports" rel="noopener">N1 Bet esports</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 403</td>
+        <td data-l="Caveat">HTTP 403 from CI runner - no prices used</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://linefeed.melbet.com/line/en/" rel="noopener">Melbet LineFeed</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 0</td>
+        <td data-l="Caveat">URLError: &lt;urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)&gt; - no prices used</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://thunderpick.com/en/esports" rel="noopener">Thunderpick esports</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 403</td>
+        <td data-l="Caveat">HTTP 403 from CI runner - no prices used</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://www.rivalry.com/esports/league-of-legends-betting" rel="noopener">Rivalry LoL</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 200, 60852 bytes</td>
+        <td data-l="Caveat">Reachable; no stable per-match price feed parsed, so no price is used from it.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://1xbet.com/esports" rel="noopener">1xBet esports</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 203</td>
+        <td data-l="Caveat">Reachable; no stable per-match price feed parsed, so no price is used from it.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://egamersworld.com/lol/matches" rel="noopener">EGamersWorld LoL</a></td>
+        <td data-l="Provides">Esportsbook probe for low-tier LoL moneylines (tried per refresh)</td>
+        <td data-l="Status">Latest probe: HTTP 403</td>
+        <td data-l="Caveat">HTTP 403 from CI runner - no prices used</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="data/market_lines.json" rel="noopener">Capture summary (this snapshot)</a></td>
+        <td data-l="Provides">Raw verbatim prices behind every market-priced row</td>
+        <td data-l="Status">9 Pinnacle matchups priced, 9 Kalshi matchups priced</td>
+        <td data-l="Caveat">American prices / dollar bid-ask stored verbatim; de-vig shown on each row.</td>
       </tr></tbody>
     </table>
   </div>
@@ -92,7 +146,7 @@
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-21 20:51:49 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-21 21:21:15 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>
