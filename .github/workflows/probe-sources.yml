@@ -37,6 +37,8 @@ jobs:
         run: python scripts/probe.py --targets scripts/probe_targets_4.json --out evidence/raw4
       - name: Probe round 5 (leaguepedia access + fallback ladder)
         run: python scripts/probe.py --targets scripts/probe_targets_5.json --out evidence/raw5
+      - name: Probe round 6 (leaguepedia page structures)
+        run: python scripts/probe.py --targets scripts/probe_targets_6.json --out evidence/raw6
       - name: Commit evidence
         run: |
           git config user.name 'github-actions[bot]'

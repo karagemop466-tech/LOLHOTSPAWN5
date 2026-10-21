@@ -1,0 +1,11 @@
+[
+  ["lp_render_team_mb", "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports&prop=text&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_sub_matchhistory", "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports/Match%20History&prop=text&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_sub_tournamentresults", "https://lol.fandom.com/api.php?action=parse&page=Mind%20Blue%20eSports/Tournament%20Results&prop=text&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_render_team_kc", "https://lol.fandom.com/api.php?action=parse&page=Karmine%20Corp&prop=text&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_render_tournament_komplett", "https://lol.fandom.com/api.php?action=parse&page=Komplettligaen/2026%20Autumn&prop=text&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_search_solid", "https://lol.fandom.com/api.php?action=query&list=search&srsearch=%22Solid%20Gaming%22%20esports&srlimit=5&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_search_lastdance", "https://lol.fandom.com/api.php?action=query&list=search&srsearch=%22LAST%20DANCE%22&srlimit=5&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_category_teams", "https://lol.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:LoL%20Teams&cmlimit=20&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}],
+  ["lp_query_titles_batch", "https://lol.fandom.com/api.php?action=query&titles=Mind%20Blue%20eSports|Solid%20Gaming|LAST%20DANCE|AceGaming|Volda%20E-Sport&redirects=1&format=json", {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}]
+]
