@@ -264,3 +264,5 @@ Claimed rows are done. Result of the lift (pipeline run 39678069533, published 2
 4. `check_invariants.py`: market_source whitelist + stale-results-snapshot warning.
 5. `build_site.py`: exec-summary "Unresolved picks & limitations" panel (`#unresolved-limits`), generic market labels + per-row source links (incl. Kalshi corroboration), dynamic sources table with probe statuses, review-page honesty items (join rules, PvB alias, Kalshi ingest).
 6. `.github/workflows/update.yml`: push trigger also on this integration branch (scoped to this session's branch so parallel sessions' pushes cannot trigger duplicate runs).
+
+**PR record (coverage lift):** PR #11 - https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/11 (arena/1e8f1e2e-lolhotspawn5 -> main). Merge commit recorded below after merge.
