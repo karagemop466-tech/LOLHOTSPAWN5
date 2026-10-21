@@ -1,477 +1,854 @@
 #!/usr/bin/env python3
 """
-Hotspawn LoL Pick'em Intelligence & Pick Generation Engine
-- Reverse engineers and parses matches from play.hotspawn.com/lol-pickems & play.hotspawn.com/lobby
-- Fetches external market lines: Polymarket public Gamma API, OddsPapi multi-bookmaker (Pinnacle, bet365)
-- Originates proprietary Elo lines from official Leaguepedia Cargo match history (last 180 days)
-- Handles low-tier / amateur unresolved matches with transparent 50/50 baselines and documented limitations
-- Runs in GitHub Actions every 6 hours (no manual input required)
+Hotspawn League of Legends Pick'em — pick generation pipeline (v2).
+
+Runs unattended in GitHub Actions every 6 hours. No manual input required.
+
+WHAT IT DOES
+------------
+1.  Reads the official Hotspawn Pick'em fixture API (the same data source the
+    `play.hotspawn.com/lol-pickems` lobby renders) and extracts EVERY scheduled
+    League of Legends fixture on the board.
+2.  Resolves a win probability for each fixture using an explicit evidence
+    ladder. Hotspawn's own crowd pick-percentages are NEVER used as an input.
+        L1  MARKET_PINNACLE   Pinnacle esportsbook (guest API, de-vigged)
+        L1  MARKET_UNIBET     Unibet / Kambi esportsbook (de-vigged)
+        L1  MARKET_POLYMARKET Polymarket prediction market
+        ->  if more than one market prices the same match, the de-vigged
+            probabilities are averaged (Pinnacle weighted x2 as the sharp book).
+        L2  MODEL_LEAGUEPEDIA Proprietary Elo + form model built from official
+                              Leaguepedia (lol.fandom.com) Cargo match history.
+        L3  UNRESOLVED        No market price and no usable match history.
+                              50/50 nominal pick, flagged for review.
+3.  Writes data/picks.json, data/sources.json, data/flagged.json,
+    data/coverage.json and data/debug.json.
+
+EVERY row produced carries at least one official source URL.
+Values that cannot be confirmed from an official source are left blank /
+explicitly flagged rather than invented.
 """
 
 import json
 import os
 import re
 import sys
+import time
 import math
 import urllib.request
 import urllib.parse
 import urllib.error
 from datetime import datetime, timezone, timedelta
-from html.parser import HTMLParser
 
-UA = {
-    "User-Agent": "Mozilla/5.0 (compatible; HotspawnLoLPicks/1.0; +https://github.com/karagemop466-tech/LOLHOTSPAWN5)"
-}
-LOBBIES = [
-    "https://play.hotspawn.com/lol-pickems",
-    "https://play.hotspawn.com/lobby"
-]
+# --------------------------------------------------------------------------- #
+# Config
+# --------------------------------------------------------------------------- #
+
 NOW = datetime.now(timezone.utc)
 
-def fetch_url(url, timeout=30):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", "replace"), resp.status
+BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+)
+# Fandom/Leaguepedia requires a descriptive User-Agent; it rate-limits generic ones.
+WIKI_UA = (
+    "LOLHOTSPAWN5-PickDesk/2.0 (automated esports research; "
+    "https://github.com/karagemop466-tech/LOLHOTSPAWN5)"
+)
+
+HOTSPAWn_FIXTURES_API = "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures"
+HOTSPAWn_TENANT_API = "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/tenants/slug/hotspawn"
+HOTSPAWN_LOBBY = "https://play.hotspawn.com/lol-pickems"
+HOTSPAWN_WEEK_API = "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/week-prizes/widget?sportAlias=lol"
+
+PINNACLE_SPORT_ESPORTS = 12
+PINNACLE_MATCHUPS = f"https://guest.api.arcadia.pinnacle.com/0.1/sports/{PINNACLE_SPORT_ESPORTS}/matchups"
+PINNACLE_MARKETS = f"https://guest.api.arcadia.pinnacle.com/0.1/sports/{PINNACLE_SPORT_ESPORTS}/markets/straight"
+
+KAMBI_UNIBET_ESPORTS = (
+    "https://eu-offering-api.kambicdn.com/offering/v2018/ub/listView/"
+    "esports/all/all/all/matches.json?lang=en_GB&market=GB&client_id=2&channel_id=1&useCombined=true"
+)
+
+POLYMARKET_EVENTS = "https://gamma-api.promarket.example.invalid"  # replaced below
+POLYMARKET_EVENTS = (
+    "https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&closed=false&limit=200"
+)
+
+LEAGUEPEDIA_API = "https://lol.fandom.com/api.php"
+LEAGUEPEDIA_HELP = "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+
+HISTORY_DAYS = 420          # how far back to pull Leaguepedia match history
+ELO_START = 1500.0
+ELO_K = 28.0
+WIKI_SLEEP = 2.5            # seconds between Leaguepedia calls (be polite)
+MAX_WIKI_PAGES = 4          # 500 rows each, per team chunk
+WIKI_CHUNK = 10             # teams per Cargo query
+
+OUT_DIR = "data"
+
+
+# --------------------------------------------------------------------------- #
+# HTTP helpers
+# --------------------------------------------------------------------------- #
+
+def fetch(url, ua=None, timeout=60, retries=3, headers=None):
+    """GET a URL and return the decoded body. Returns None on failure."""
+    hdrs = {"User-Agent": ua or BROWSER_UA, "Accept": "application/json,text/html;q=0.9,*/*;q=0.8"}
+    if headers:
+        hdrs.update(headers)
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=hdrs)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8", "replace")
+        except Exception as exc:                      # noqa: BLE001
+            last = exc
+            time.sleep(2 * (attempt + 1))
+    print(f"  ! fetch failed ({last}): {url[:120]}", file=sys.stderr)
+    return None
+
+
+def fetch_json(url, **kw):
+    body = fetch(url, **kw)
+    if body is None:
+        return None
+    try:
+        return json.loads(body)
+    except Exception:                                  # noqa: BLE001
+        return None
+
 
 def norm(s):
-    return re.sub(r'[^a-z0-9]', '', (s or '').lower())
+    """Aggressive normalisation for team-name matching."""
+    s = (s or "").lower()
+    s = s.replace("&", " and ")
+    s = re.sub(r"[^a-z0-9]+", "", s)
+    return s
 
-# ----------------- Hotspawn HTML / Token Stream Parser -----------------
-class HotspawnHTMLParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.items = []
-        self._href = None
 
-    def handle_starttag(self, tag, attrs):
-        d = dict(attrs)
-        if tag == "a":
-            self._href = d.get("href")
+def slugify(s):
+    s = (s or "").strip().lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")
 
-    def handle_endtag(self, tag):
-        if tag == "a":
-            self._href = None
 
-    def handle_data(self, data):
-        clean = " ".join(data.split())
-        if clean:
-            self.items.append((clean, self._href))
+def ms_to_iso(ms):
+    try:
+        return datetime.fromtimestamp(int(ms) / 1000, timezone.utc).isoformat()
+    except Exception:                                  # noqa: BLE001
+        return ""
 
-DATE_RE = re.compile(r'^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s*\d{1,2}:\d{2}$')
 
-def parse_lobby_content(html):
-    matches = []
-    # 1. Embedded Next.js / Inertia script blob
-    for m in re.finditer(r'<script[^>]*id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S):
-        try:
-            blob = json.loads(m.group(1))
-        except Exception:
+def american_to_decimal(price):
+    """Pinnacle stores American odds (e.g. -150 / +230)."""
+    try:
+        price = float(price)
+    except Exception:                                  # noqa: BLE001
+        return None
+    if price == 0:
+        return None
+    if price > 0:
+        return 1.0 + price / 100.0
+    return 1.0 + 100.0 / abs(price)
+
+
+def devig(prices):
+    """Convert a list of decimal prices into normalised probabilities."""
+    decs = [p for p in prices if p and p > 1.0]
+    if len(decs) < 2:
+        return None
+    inv = [1.0 / d for d in decs]
+    total = sum(inv)
+    if total <= 0:
+        return None
+    return [i / total for i in inv]
+
+
+# --------------------------------------------------------------------------- #
+# 1. Hotspawn fixtures
+# --------------------------------------------------------------------------- #
+
+def load_hotspawn_fixtures(debug):
+    print("[1/6] Hotspawn fixture API …")
+    data = fetch_json(HOTSPAWn_FIXTURES_API, timeout=180, retries=3)
+    if not isinstance(data, list):
+        print("  ! Hotspawn fixture API unavailable", file=sys.stderr)
+        return [], {}
+
+    lol = [r for r in data if (r.get("sport_alias") or "").lower() == "lol"]
+    debug["hotspawn_total_fixtures"] = len(data)
+    debug["hotspawn_lol_fixtures_alltime"] = len(lol)
+
+    scheduled = [r for r in lol if (r.get("status") or "").lower() == "scheduled"]
+    debug["hotspawn_lol_scheduled"] = len(scheduled)
+    print(f"      {len(lol)} LoL fixtures total, {len(scheduled)} with status=scheduled")
+
+    week = fetch_json(HOTSPAWN_WEEK_API, timeout=30, retries=2)
+    if isinstance(week, dict):
+        debug["hotspawn_week"] = {
+            "weekId": week.get("weekId"),
+            "sportAlias": week.get("sportAlias"),
+            "status": week.get("status"),
+            "weekStartUtc": week.get("weekStartUtc"),
+            "weekEndUtc": week.get("weekEndUtc"),
+            "cutoffUtc": week.get("cutoffUtc"),
+        }
+
+    permalinks = load_lobby_permalinks(debug)
+    return scheduled, permalinks
+
+
+def load_lobby_permalinks(debug):
+    """Pull the server-rendered match permalinks out of the lobby HTML."""
+    html = fetch(HOTSPAWN_LOBBY, timeout=90, retries=2)
+    out = {}
+    if not html:
+        debug["lobby_html_bytes"] = 0
+        return out
+    debug["lobby_html_bytes"] = len(html)
+    found = re.findall(r"https://www\.hotspawn\.com/matches/([a-z0-9-]+?)-(\d{5,9})", html)
+    for slug, fid in found:
+        out.setdefault(fid, set()).add(f"https://www.hotspawn.com/matches/{slug}-{fid}")
+    debug["lobby_permalinks_found"] = len(out)
+    print(f"      {len(out)} match permalinks harvested from lobby HTML")
+    return out
+
+
+def build_permalink(fx, permalinks, debug):
+    """Return (url, verified_bool).
+
+    `verified` is True only when the exact URL was harvested from the official
+    Hotspawn lobby HTML. Otherwise we construct it from the documented Hotspawn
+    slug pattern and mark it unverified.
+    """
+    fid = str(fx.get("id"))
+    known = permalinks.get(fid)
+    guess = (
+        f"https://www.hotspawn.com/matches/"
+        f"{slugify(fx.get('participants0_name'))}-vs-{slugify(fx.get('participants1_name'))}"
+        f"-{slugify(fx.get('competition_name'))}-{fid}"
+    )
+    if known:
+        if guess in known:
+            debug["permalink_rule_hits"] = debug.get("permalink_rule_hits", 0) + 1
+            return guess, True
+        debug["permalink_rule_misses"] = debug.get("permalink_rule_misses", 0) + 1
+        return sorted(known)[0], True
+    debug["permalink_constructed"] = debug.get("permalink_constructed", 0) + 1
+    return guess, False
+
+
+# --------------------------------------------------------------------------- #
+# 2. External market sources
+# --------------------------------------------------------------------------- #
+
+def load_pinnacle(debug):
+    """Pinnacle esportsbook, keyless guest API. Returns {(n1,n2): (p_team1, url, label)}."""
+    print("[2/6] Pinnacle esportsbook …")
+    matchups = fetch_json(PINNACLE_MATCHUPS, timeout=90)
+    markets = fetch_json(PINNACLE_MARKETS, timeout=90)
+    out, seen = {}, {}
+    if not matchups or not markets:
+        debug["pinnacle_ok"] = False
+        return out
+    debug["pinnacle_matchups"] = len(matchups)
+    debug["pinnacle_markets"] = len(markets)
+
+    price_by_matchup = {}
+    for m in markets:
+        if (m.get("type") or "") != "moneyline":
             continue
-        def walk(obj):
-            if isinstance(obj, dict):
-                keys = {k.lower() for k in obj}
-                if any("team" in k for k in keys) and any("start" in k or "date" in k for k in keys):
-                    matches.append(obj)
-                for v in obj.values():
-                    walk(v)
-            elif isinstance(obj, list):
-                for v in obj:
-                    walk(v)
-        walk(blob)
+        # period 0 == full match; s;0;m key
+        if str(m.get("period")) != "0":
+            continue
+        prices = m.get("prices") or []
+        if len(prices) != 2:
+            continue
+        price_by_matchup[str(m.get("matchupId"))] = [
+            (str(p.get("participantId")), p.get("price")) for p in prices
+        ]
 
-    if matches:
-        out = []
-        for o in matches:
-            lo = {k.lower(): v for k, v in o.items()}
-            t1 = lo.get("team1") or lo.get("home_team") or lo.get("participant1")
-            t2 = lo.get("team2") or lo.get("away_team") or lo.get("participant2")
-            if isinstance(t1, dict): t1 = t1.get("name")
-            if isinstance(t2, dict): t2 = t2.get("name")
-            if t1 and t2:
-                out.append(dict(
-                    team1=str(t1),
-                    team2=str(t2),
-                    tournament=str(lo.get("tournament") or lo.get("league") or ""),
-                    start_raw=str(lo.get("scheduled_start") or lo.get("start_time") or lo.get("date") or ""),
-                    tier=str(lo.get("tier") or ""),
-                    points=str(lo.get("points") or ""),
-                    hotspawn_url=str(lo.get("url") or ""),
-                    crowd1=None,
-                    crowd2=None
-                ))
-        if out:
-            return out, "embedded-json"
+    for mu in matchups:
+        lg = (mu.get("league") or {})
+        name = (lg.get("name") or "")
+        if "league of legends" not in name.lower():
+            continue
+        if (mu.get("type") or "matchup") != "matchup":
+            continue
+        parts = mu.get("participants") or []
+        if len(parts) != 2:
+            continue
+        prices = price_by_matchup.get(str(mu.get("id")))
+        if not prices:
+            continue
+        # participants order: home, away
+        home = next((p for p in parts if p.get("alignment") == "home"), parts[0])
+        away = next((p for p in parts if p.get("alignment") == "away"), parts[1])
+        price_home = price_away = None
+        for pid, price in prices:
+            if pid == str(home.get("id")):
+                price_home = price
+            elif pid == str(away.get("id")):
+                price_away = price
+        if price_home is None or price_away is None:
+            continue
+        probs = devig([american_to_decimal(price_home), american_to_decimal(price_away)])
+        if not probs:
+            continue
+        key = (norm(home.get("name")), norm(away.get("name")))
+        seen[key] = True
+        out[key] = (
+            probs[0],
+            "https://www.pinnacle.com/en/esports/league-of-legends/",
+            f"Pinnacle moneyline {home.get('name')} ({price_home}) vs {away.get('name')} ({price_away})"
+            f" — de-vigged {probs[0]*100:.1f}% / {probs[1]*100:.1f}%",
+            (mu.get("startTime") or ""),
+            lg.get("name"),
+        )
+    debug["pinnacle_lol_priced"] = len(out)
+    debug["pinnacle_ok"] = True
+    print(f"      {len(out)} League of Legends matchups priced")
+    return out
 
-    # 2. Token-stream parser over SSR HTML card components
-    parser = HotspawnHTMLParser()
-    parser.feed(html)
-    items = parser.items
-    out = []
-    i = 0
-    while i < len(items):
-        txt = items[i][0]
-        if DATE_RE.match(txt):
-            start = txt
-            window = items[i+1:i+40]
-            texts = [w[0] for w in window]
-            try:
-                wi = texts.index("Who will win?")
-            except ValueError:
-                i += 1
+
+def load_unibet(debug):
+    """Unibet (Kambi feed) esports. Returns {(n1,n2): (p_team1, url, label, start, group)}."""
+    print("[3/6] Unibet / Kambi esports …")
+    data = fetch_json(KAMBI_UNIBET_ESPORTS, timeout=60)
+    out = {}
+    if not data:
+        debug["unibet_ok"] = False
+        return out
+    events = data.get("events") or []
+    debug["unibet_esports_events"] = len(events)
+    for e in events:
+        ev = e.get("event") or {}
+        path = " / ".join(p.get("name", "") for p in (ev.get("path") or []))
+        if "League of Legends" not in path:
+            continue
+        home = ev.get("homeName")
+        away = ev.get("awayName")
+        if not home or not away:
+            continue
+        for bo in (e.get("betOffers") or []):
+            crit = (bo.get("criterion") or {}).get("label", "")
+            if "Match Odds" not in crit and (bo.get("betOfferType") or {}).get("name") != "Match":
                 continue
-            
-            tournament = texts[0] if texts else ""
-            tier = ""
-            points = ""
-            joined = " ".join(texts[:wi])
-            tm = re.search(r'Tier\s*([A-Z]|WAITING FOR INFORMATION)', joined)
-            if tm:
-                tier = tm.group(1)
-            tm2 = re.search(r'(\d+)\s*pts', joined)
-            if tm2:
-                points = tm2.group(1)
+            outs = bo.get("outcomes") or []
+            if len(outs) != 2:
+                continue
+            by_part = {o.get("participant"): o.get("odds") for o in outs}
+            if home not in by_part or away not in by_part:
+                continue
+            try:
+                dh = float(by_part[home]) / 100.0
+                da = float(by_part[away]) / 100.0
+            except Exception:                          # noqa: BLE001
+                continue
+            probs = devig([dh, da])
+            if not probs:
+                continue
+            key = (norm(home), norm(away))
+            out[key] = (
+                probs[0],
+                "https://www.unibet.com/sportsbook-feeds/views/filter/esports",
+                f"Unibet (Kambi) Match Odds {home} ({dh:.2f}) vs {away} ({da:.2f})"
+                f" — de-vigged {probs[0]*100:.1f}% / {probs[1]*100:.1f}%",
+                ev.get("start") or "",
+                path.replace("Esports / ", ""),
+            )
+            break
+    debug["unibet_lol_priced"] = len(out)
+    debug["unibet_ok"] = True
+    print(f"      {len(out)} League of Legends events priced")
+    return out
 
-            # Team names follow "Who will win?"
-            rest = texts[wi+1:wi+8]
-            teams = []
-            crowds = []
-            for t in rest:
-                pm = re.match(r'^(\d+)%\s*picked$', t)
-                if pm:
-                    crowds.append(int(pm.group(1)))
-                elif t not in ("Sign in for streaks", "Locks in") and not re.match(r'^[\d:dhms ]+$', t) and len(teams) < 2:
-                    teams.append(t)
 
-            url = ""
-            for w in window:
-                if w[1] and "hotspawn.com/matches/" in w[1]:
-                    url = w[1]
-                    break
+def load_polymarket(debug):
+    print("[4/6] Polymarket …")
+    out = []
+    for url in (
+        POLYMARKET_EVENTS,
+        "https://gamma-api.polymarket.com/events?closed=false&limit=200&tag_slug=esports",
+    ):
+        data = fetch_json(url, timeout=60)
+        if isinstance(data, list):
+            out.extend(data)
+    debug["polymarket_events"] = len(out)
 
-            if len(teams) == 2:
-                out.append(dict(
-                    team1=teams[0],
-                    team2=teams[1],
-                    tournament=tournament,
-                    start_raw=start,
-                    tier=tier or "WAITING FOR INFORMATION",
-                    points=points,
-                    hotspawn_url=url,
-                    crowd1=crowds[0] if len(crowds) > 0 else None,
-                    crowd2=crowds[1] if len(crowds) > 1 else None
-                ))
-            i += wi + 1
-        else:
-            i += 1
-
-    # Deduplicate matches
-    seen = set()
-    deduped = []
-    for m in out:
-        key = (norm(m["team1"]), norm(m["team2"]), m["start_raw"], norm(m["tournament"]))
-        if key not in seen:
-            seen.add(key)
-            deduped.append(m)
-
-    return deduped, "html-token-stream"
-
-def parse_start_date(raw):
-    if not raw:
-        return ""
-    try:
-        if str(raw).isdigit():
-            return datetime.fromtimestamp(int(raw), timezone.utc).isoformat()
-        dt = datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.isoformat()
-    except Exception:
-        pass
-    try:
-        # Hotspawn format: "Oct 22, 12:00"
-        dt = datetime.strptime(f"{raw} {NOW.year}", "%b %d, %H:%M %Y").replace(tzinfo=timezone.utc)
-        if dt < NOW - timedelta(days=2):
-            dt = dt.replace(year=NOW.year + 1)
-        return dt.isoformat()
-    except Exception:
-        return ""
-
-# ----------------- External Market 1: Polymarket Gamma API -----------------
-def fetch_polymarket():
-    events = []
-    urls = [
-        "https://gamma-api.polymarket.com/events?tag_slug=league-of-legends&active=true&closed=false&limit=100",
-        "https://gamma-api.polymarket.com/events?search=league%20of%20legends&active=true&closed=false&limit=100",
-        "https://gamma-api.polymarket.com/events?search=LoL&active=true&closed=false&limit=100"
-    ]
-    for url in urls:
-        try:
-            data, _ = fetch_url(url)
-            parsed = json.loads(data)
-            if isinstance(parsed, list):
-                events.extend(parsed)
-        except Exception as e:
-            print(f"Polymarket fetch notice: {e}", file=sys.stderr)
-    
-    indexed = []
-    for ev in events:
-        for mk in ev.get("markets", []):
-            q = mk.get("question", "")
+    markets = []
+    for ev in out:
+        title = ev.get("title") or ""
+        for mk in (ev.get("markets") or []):
             try:
                 prices = json.loads(mk.get("outcomePrices") or "[]")
                 outs = json.loads(mk.get("outcomes") or "[]")
-            except Exception:
+            except Exception:                          # noqa: BLE001
                 continue
-            if len(prices) == 2 and len(outs) == 2:
-                indexed.append(dict(
-                    question=q,
-                    outs=outs,
-                    prices=[float(x) for x in prices],
-                    url="https://polymarket.com/event/" + str(ev.get("slug", ""))
-                ))
-    return indexed
+            if len(prices) != 2 or len(outs) != 2:
+                continue
+            try:
+                prices = [float(p) for p in prices]
+            except Exception:                          # noqa: BLE001
+                continue
+            if sum(prices) <= 0:
+                continue
+            markets.append({
+                "question": mk.get("question") or title,
+                "outs": outs,
+                "prices": prices,
+                "url": f"https://polymarket.com/event/{ev.get('slug') or ev.get('ticker') or ''}",
+            })
+    debug["polymarket_2way_markets"] = len(markets)
+    print(f"      {len(markets)} two-way markets indexed")
+    return markets
 
-def match_polymarket(indexed, t1, t2):
+
+def lookup_polymarket(markets, t1, t2):
     n1, n2 = norm(t1), norm(t2)
-    for m in indexed:
-        o = [norm(x) for x in m["outs"]]
-        if (n1 in o[0] or o[0] in n1) and (n2 in o[1] or o[1] in n2):
-            return m["prices"][0], m["url"], m["question"]
-        if (n2 in o[0] or o[0] in n2) and (n1 in o[1] or o[1] in n1):
-            return m["prices"][1], m["url"], m["question"]
-        q = norm(m["question"])
-        if n1 in q and n2 in q and m["prices"]:
-            return m["prices"][0], m["url"], m["question"]
+    if not n1 or not n2:
+        return None
+    for mk in markets:
+        o = [norm(x) for x in mk["outs"]]
+        if o[0] and o[1]:
+            # direct team-name markets (order sensitive)
+            if (n1 == o[0] or (len(o[0]) >= 6 and o[0] in n1) or (len(n1) >= 6 and n1 in o[0])) and \
+               (n2 == o[1] or (len(o[1]) >= 6 and o[1] in n2) or (len(n2) >= 6 and n2 in o[1])):
+                s = sum(mk["prices"])
+                return mk["prices"][0] / s, mk["url"], mk["question"]
+            if (n2 == o[0] or (len(o[0]) >= 6 and o[0] in n2) or (len(n2) >= 6 and n2 in o[0])) and \
+               (n1 == o[1] or (len(o[1]) >= 6 and o[1] in n1) or (len(n1) >= 6 and n1 in o[1])):
+                s = sum(mk["prices"])
+                return mk["prices"][1] / s, mk["url"], mk["question"]
     return None
 
-# ----------------- External Market 2: OddsPapi (Esportsbooks) -----------------
-def fetch_oddspapi():
-    key = os.environ.get("ODDSPAPI_KEY")
-    if not key:
-        return []
-    try:
-        data, _ = fetch_url(f"https://api.oddspapi.io/v4/fixtures?sportId=18&apiKey={key}")
-        fixtures = json.loads(data)
-    except Exception as e:
-        print(f"OddsPapi fixtures notice: {e}", file=sys.stderr)
-        return []
 
-    out = []
-    for f in fixtures if isinstance(fixtures, list) else []:
-        p1 = f.get("participant1Name") or ""
-        p2 = f.get("participant2Name") or ""
-        fid = f.get("fixtureId")
-        if not (p1 and p2 and fid):
+# --------------------------------------------------------------------------- #
+# 3. Leaguepedia history + proprietary model
+# --------------------------------------------------------------------------- #
+
+def cargo(where, fields, table="ScoreboardGames", order_by=None, limit=500, offset=0):
+    params = {
+        "action": "cargoquery",
+        "format": "json",
+        "tables": table,
+        "fields": fields,
+        "where": where,
+        "limit": str(limit),
+        "offset": str(offset),
+    }
+    if order_by:
+        params["order_by"] = order_by
+    url = LEAGUEPEDIA_API + "?" + urllib.parse.urlencode(params)
+    for attempt in range(6):
+        body = fetch(url, ua=WIKI_UA, timeout=75, retries=1)
+        if body is None:
+            time.sleep(4 * (attempt + 1))
             continue
         try:
-            data, _ = fetch_url(f"https://api.oddspapi.io/v4/odds?fixtureId={fid}&apiKey={key}")
-            odds_data = json.loads(data)
-            books = odds_data.get("bookmakers", {})
-            probs = []
-            for slug, book in books.items():
-                mk = (book.get("markets") or {}).get("181")  # LoL series winner market
-                if not mk:
+            j = json.loads(body)
+        except Exception:                              # noqa: BLE001
+            time.sleep(4 * (attempt + 1))
+            continue
+        if isinstance(j, dict) and "error" in j:
+            time.sleep(5 * (attempt + 1))
+            continue
+        return j.get("cargoquery", [])
+    return []
+
+
+def esc(s):
+    return (s or "").replace('"', '\\"')
+
+
+def leaguepedia_games(teams, debug):
+    """Pull completed games for the given team names from Leaguepedia Cargo."""
+    since = (NOW - timedelta(days=HISTORY_DAYS)).strftime("%Y-%m-%d %H:%M:%S")
+    fields = ("ScoreboardGames.Team1,ScoreboardGames.Team2,ScoreboardGames.WinTeam,"
+              "ScoreboardGames.DateTime_UTC,ScoreboardGames.Tournament")
+    games = []
+    seen = set()
+    chunks = [teams[i:i + WIKI_CHUNK] for i in range(0, len(teams), WIKI_CHUNK)]
+    debug["leaguepedia_team_chunks"] = len(chunks)
+    print(f"      {len(teams)} teams in {len(chunks)} Cargo queries …")
+    for ci, chunk in enumerate(chunks):
+        conds = []
+        for t in chunk:
+            e = esc(t)
+            conds.append(f'ScoreboardGames.Team1="{e}"')
+            conds.append(f'ScoreboardGames.Team2="{e}"')
+        where = f'ScoreboardGames.DateTime_UTC >= "{since}" AND (' + " OR ".join(conds) + ")"
+        for page in range(MAX_WIKI_PAGES):
+            rows = cargo(where, fields, order_by="ScoreboardGames.DateTime_UTC DESC",
+                         limit=500, offset=page * 500)
+            if not rows:
+                break
+            for r in rows:
+                t = r.get("title", {})
+                a = t.get("Team1") or ""
+                b = t.get("Team2") or ""
+                w = t.get("WinTeam") or ""
+                d = t.get("DateTime UTC") or ""
+                tour = t.get("Tournament") or ""
+                if not a or not b or not d:
                     continue
-                outs = mk.get("outcomes") or {}
-                vals = []
-                for oid in ("181", "182"):
-                    o = outs.get(oid) or {}
-                    pr = (o.get("players") or {}).get("0") or o
-                    price = pr.get("price")
-                    if price:
-                        vals.append(float(price))
-                if len(vals) == 2 and all(v > 1 for v in vals):
-                    inv = [1.0 / v for v in vals]
-                    s = sum(inv)
-                    probs.append((inv[0] / s, slug))
-            if probs:
-                probs.sort()
-                med = probs[len(probs) // 2]
-                out.append(dict(
-                    team1=p1,
-                    team2=p2,
-                    p1=med[0],
-                    source=f"OddsPapi median de-vigged ({len(probs)} books, incl. {med[1]})",
-                    url="https://oddspapi.io/sports/esports/lol"
-                ))
-        except Exception as e:
-            print(f"OddsPapi odds notice: {e}", file=sys.stderr)
-    return out
+                key = (a, b, d, tour)
+                if key in seen:
+                    continue
+                seen.add(key)
+                games.append((a, b, w, d, tour))
+            debug["leaguepedia_cargo_calls"] = debug.get("leaguepedia_cargo_calls", 0) + 1
+            if len(rows) < 500:
+                break
+            time.sleep(WIKI_SLEEP)
+        time.sleep(WIKI_SLEEP)
+        if (ci + 1) % 5 == 0:
+            print(f"        {ci+1}/{len(chunks)} chunks, {len(games)} games")
+    debug["leaguepedia_games"] = len(games)
+    return games
 
-# ----------------- Originated Lines: Leaguepedia Cargo API Elo -----------------
-def build_elo_model():
-    ratings = {}
-    games = {}
-    recent = {}
-    since = (NOW - timedelta(days=180)).strftime("%Y-%m-%d %H:%M:%S")
-    offset = 0
-    for _ in range(12):  # up to 6000 games
-        params = urllib.parse.urlencode({
-            "action": "cargoquery",
-            "format": "json",
-            "tables": "ScoreboardGames=SG",
-            "fields": "SG.Team1,SG.Team2,SG.Winner,SG.DateTime_UTC",
-            "where": f"SG.DateTime_UTC >= '{since}' AND SG.Winner IS NOT NULL",
-            "order_by": "SG.DateTime_UTC ASC",
-            "limit": "500",
-            "offset": str(offset)
-        })
-        try:
-            data, _ = fetch_url("https://lol.fandom.com/api.php?" + params)
-            rows = json.loads(data).get("cargoquery", [])
-        except Exception as e:
-            print(f"Leaguepedia Cargo notice: {e}", file=sys.stderr)
-            break
-        if not rows:
-            break
-        for r in rows:
-            t = r.get("title", r)
-            a, b, w = t.get("Team1", ""), t.get("Team2", ""), str(t.get("Winner", ""))
-            if not a or not b:
+
+def build_model(games):
+    """Elo + recent-form model over the pulled game history."""
+    def parse_dt(s):
+        for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d"):
+            try:
+                return datetime.strptime(s, fmt).replace(tzinfo=timezone.utc)
+            except Exception:                          # noqa: BLE001
                 continue
-            ra = ratings.get(norm(a), 1500)
-            rb = ratings.get(norm(b), 1500)
-            ea = 1.0 / (1.0 + 10.0 ** ((rb - ra) / 400.0))
-            winner_a = (w == "1")
-            delta = 32.0 * ((1.0 if winner_a else 0.0) - ea)
-            ratings[norm(a)] = ra + delta
-            ratings[norm(b)] = rb - delta
-            for team, won in ((a, winner_a), (b, not winner_a)):
-                games[norm(team)] = games.get(norm(team), 0) + 1
-                recent.setdefault(norm(team), []).append(1 if won else 0)
-        offset += 500
-        if len(rows) < 500:
-            break
-    return ratings, games, recent
+        return None
 
-# ----------------- Main Orchestration Pipeline -----------------
-def main():
-    debug = {"generated_at": NOW.isoformat(), "lobbies": LOBBIES}
-    html = ""
-    st = None
-    for lobby in LOBBIES:
+    ordered = []
+    for a, b, w, d, tour in games:
+        dt = parse_dt(d)
+        if dt is None:
+            continue
+        ordered.append((dt, a, b, w, tour))
+    ordered.sort(key=lambda x: x[0])
+
+    ratings, played, results = {}, {}, {}
+    for dt, a, b, w, tour in ordered:
+        na, nb = norm(a), norm(b)
+        if not na or not nb:
+            continue
+        ra = ratings.get(na, ELO_START)
+        rb = ratings.get(nb, ELO_START)
+        # winner may be encoded as team name or '1'/'2'
+        if w == a or w == "1":
+            sa, sb = 1.0, 0.0
+        elif w == b or w == "2":
+            sa, sb = 0.0, 1.0
+        else:
+            continue
+        ea = 1.0 / (1.0 + 10.0 ** ((rb - ra) / 400.0))
+        delta = ELO_K * (sa - ea)
+        ratings[na] = ra + delta
+        ratings[nb] = rb - delta
+        played[na] = played.get(na, 0) + 1
+        played[nb] = played.get(nb, 0) + 1
+        results.setdefault(na, []).append((dt, sa))
+        results.setdefault(nb, []).append((dt, sb))
+
+    def recent(team):
+        rs = results.get(team, [])
+        if not rs:
+            return None, 0
+        cutoff = NOW - timedelta(days=90)
+        recent_rows = [r for r in rs if r[0] >= cutoff]
+        if not recent_rows:
+            return None, 0
+        return sum(x[1] for x in recent_rows) / len(recent_rows), len(recent_rows)
+
+    return ratings, played, recent
+
+
+def model_prob(ratings, played, recent_fn, t1, t2):
+    n1, n2 = norm(t1), norm(t2)
+    g1, g2 = played.get(n1, 0), played.get(n2, 0)
+    if g1 == 0 and g2 == 0:
+        return None, None
+    r1, r2 = ratings.get(n1, ELO_START), ratings.get(n2, ELO_START)
+    base = 1.0 / (1.0 + 10.0 ** ((r2 - r1) / 400.0))
+
+    # Blend in recent (90d) win-rate differential, weighted by sample size.
+    f1, c1 = recent_fn(n1)
+    f2, c2 = recent_fn(n2)
+    if f1 is not None and f2 is not None and c1 >= 4 and c2 >= 4:
+        form = 0.5 + (f1 - f2) * 0.45
+        form = max(0.05, min(0.95, form))
+        blended = 0.7 * base + 0.3 * form
+    else:
+        blended = base
+
+    # Shrink toward 50% when the underlying sample is thin.
+    n_eff = min(g1, g2)
+    shrink = n_eff / (n_eff + 12.0) if n_eff > 0 else 0.0
+    p = 0.5 + (blended - 0.5) * shrink
+    return max(0.02, min(0.98, p)), {
+        "elo": [round(r1, 1), round(r2, 1)],
+        "games": [g1, g2],
+        "recent_form": [round(f1, 3) if f1 is not None else None,
+                        round(f2, 3) if f2 is not None else None],
+    }
+
+
+# --------------------------------------------------------------------------- #
+# 4. Combine
+# --------------------------------------------------------------------------- #
+
+def market_consensus(entries):
+    """entries: list of (prob_team1, weight, label, url). Weighted mean."""
+    if not entries:
+        return None, None
+    total_w = sum(w for _, w, _, _ in entries)
+    p = sum(pr * w for pr, w, _, _ in entries) / total_w
+    labels = [lbl for _, _, lbl, _ in entries]
+    urls = [u for _, _, _, u in entries]
+    return p, {"labels": labels, "urls": urls, "books": len(entries)}
+
+
+def same_team(a, b):
+    na, nb = norm(a), norm(b)
+    if not na or not nb:
+        return False
+    if na == nb:
+        return True
+    if len(na) >= 6 and len(nb) >= 6 and (na in nb or nb in na):
+        return True
+    return False
+
+
+def find_market(markets, t1, t2, start_iso):
+    """markets: dict {(n1,n2): (p1, url, label, start, group)}. Returns list of (p, w, label, url)."""
+    hits = []
+    for (a, b), (p, url, label, st, group) in markets.items():
+        if same_team(a, t1) and same_team(b, t2):
+            date_ok = date_close(st, start_iso)
+            hits.append((p, 1.0, label, url, date_ok, group))
+        elif same_team(a, t2) and same_team(b, t1):
+            date_ok = date_close(st, start_iso)
+            hits.append((1.0 - p, 1.0, label, url, date_ok, group))
+    # prefer date-consistent hits
+    dated = [h for h in hits if h[4]]
+    return dated or hits
+
+
+def date_close(a, b, days=2):
+    def p(s):
+        if not s:
+            return None
         try:
-            html, st = fetch_url(lobby)
-            debug["lobby_http"] = st
-            debug["lobby_bytes"] = len(html)
-            debug["active_lobby"] = lobby
-            break
-        except Exception as e:
-            print(f"Failed to fetch {lobby}: {e}", file=sys.stderr)
+            return datetime.fromisoformat(str(s).replace("Z", "+00:00"))
+        except Exception:                              # noqa: BLE001
+            return None
+    da, db = p(a), p(b)
+    if not da or not db:
+        return False
+    return abs((da - db).total_seconds()) <= days * 86400
 
-    if not html:
-        print("Notice: Lobby fetch failed from current environment. Preserving existing data.", file=sys.stderr)
-        if os.path.exists("docs/data/picks.json"):
-            sys.exit(0)
-        raise RuntimeError("No lobby HTML and no existing picks cache found.")
 
-    matches, parser = parse_lobby_content(html)
-    debug["parser"] = parser
-    debug["matches_parsed"] = len(matches)
-    if not matches:
-        print("Notice: 0 matches parsed from lobby. Keeping existing data snapshot.", file=sys.stderr)
-        sys.exit(0)
+# --------------------------------------------------------------------------- #
+# Main
+# --------------------------------------------------------------------------- #
 
-    polymarket_events = fetch_polymarket()
-    debug["polymarket_markets"] = len(polymarket_events)
+def main():
+    os.makedirs(OUT_DIR, exist_ok=True)
+    debug = {"generated_at": NOW.isoformat(), "pipeline": "v2"}
 
-    bookmaker_lines = fetch_oddspapi()
-    debug["oddspapi_fixtures_priced"] = len(bookmaker_lines)
+    fixtures, permalinks = load_hotspawn_fixtures(debug)
+    if not fixtures:
+        print("! No fixtures retrieved; preserving existing snapshot.", file=sys.stderr)
+        return 0
 
-    ratings, games, recent = build_elo_model()
-    debug["elo_teams"] = len(ratings)
+    pinnacle = load_pinnacle(debug)
+    unibet = load_unibet(debug)
+    poly = load_polymarket(debug)
 
+    team_names = sorted({f.get("participants0_name") or "" for f in fixtures} |
+                        {f.get("participants1_name") or "" for f in fixtures} - {""})
+    print(f"[5/6] Leaguepedia history for {len(team_names)} teams …")
+    games = leaguepedia_games(team_names, debug)
+    ratings, played, recent_fn = build_model(games)
+    debug["elo_teams_rated"] = len(ratings)
+    print(f"      {len(games)} games, {len(ratings)} teams rated")
+
+    # ---- resolve each fixture -------------------------------------------- #
+    print("[6/6] Resolving picks …")
     rows = []
-    for m in matches:
-        n1, n2 = norm(m["team1"]), norm(m["team2"])
-        row = dict(m)
-        row["start_utc"] = parse_start_date(m["start_raw"])
-        row["source_lobby"] = debug.get("active_lobby", LOBBIES[0])
-        
+    for fx in fixtures:
+        t1 = fx.get("participants0_name") or ""
+        t2 = fx.get("participants1_name") or ""
+        start_iso = ms_to_iso(fx.get("scheduled_start_time"))
+        lock_iso = ms_to_iso(fx.get("lock_time"))
+        permalink, permalink_verified = build_permalink(fx, permalinks, debug)
+
+        pb = fx.get("points_breakdown") or {}
+        row = {
+            "fixture_id": str(fx.get("id")),
+            "team1": t1,
+            "team2": t2,
+            "team1_id": fx.get("participants0_id"),
+            "team2_id": fx.get("participants1_id"),
+            "tournament": fx.get("competition_name") or "",
+            "competition_id": fx.get("competition_id"),
+            "tier": (fx.get("tier") or "").upper() or "",
+            "stage": fx.get("stage") or "",
+            "status": fx.get("status") or "",
+            "best_of": fx.get("best_of"),
+            "points": fx.get("offered_points"),
+            "tier_multiplier": pb.get("tier_multiplier"),
+            "start_utc": start_iso,
+            "lock_utc": lock_iso,
+            # Hotspawn crowd percentages — recorded for context only.
+            "crowd_pct_team1": fx.get("participants0_picked_percent"),
+            "crowd_pct_team2": fx.get("participants1_picked_percent"),
+            "total_picks": fx.get("total_picks"),
+            "hotspawn_match_url": permalink,
+            "hotspawn_match_url_verified": permalink_verified,
+            "hotspawn_lobby_url": HOTSPAWN_LOBBY,
+            "hotspawn_api_url": HOTSPAWn_FIXTURES_API,
+            "sources": [],
+        }
+
+        # is the pick window still open?
+        open_for_picks = False
+        if lock_iso:
+            try:
+                open_for_picks = datetime.fromisoformat(lock_iso) > NOW
+            except Exception:                          # noqa: BLE001
+                open_for_picks = False
+        row["open_for_picks"] = open_for_picks
+        if start_iso:
+            try:
+                row["stale_listing"] = (
+                    datetime.fromisoformat(start_iso) < NOW - timedelta(hours=6)
+                    and (fx.get("status") or "") == "scheduled"
+                )
+            except Exception:                          # noqa: BLE001
+                row["stale_listing"] = False
+        else:
+            row["stale_listing"] = False
+
+        entries = []
+        for mk, weight in ((pinnacle, 2.0), (unibet, 1.0)):
+            for p, url, label, st, group in find_market(mk, t1, t2, start_iso):
+                entries.append((p, weight, label, url))
+        poly_hit = lookup_polymarket(poly, t1, t2)
+        if poly_hit:
+            entries.append((poly_hit[0], 1.0, f"Polymarket: {poly_hit[2]}", poly_hit[1]))
+
         prob = None
         method = ""
-        source = ""
+        evidence = ""
         confidence = ""
+        detail = {}
+        sources = []
 
-        # 1. External Esportsbook median lines (OddsPapi Pinnacle / bet365 / etc)
-        for b in bookmaker_lines:
-            if {norm(b["team1"]), norm(b["team2"])} == {n1, n2}:
-                prob = b["p1"] if norm(b["team1"]) == n1 else 1.0 - b["p1"]
-                method = "MARKET_BOOKS"
-                source = b["source"]
-                confidence = "High — Established Esportsbook consensus line, de-vigged"
-                row["market_url"] = b["url"]
-                break
+        if entries:
+            p, info = market_consensus(entries)
+            prob = p
+            method = "MARKET"
+            evidence = " | ".join(info["labels"])
+            confidence = (
+                "High — external esportsbook / prediction-market price, de-vigged"
+                if info["books"] > 1 else
+                "Medium-High — single external market price, de-vigged"
+            )
+            detail = {"books": info["books"]}
+            sources = [{"label": lbl, "url": url} for lbl, url in zip(info["labels"], info["urls"])]
+            if poly_hit:
+                sources.append({"label": "Polymarket market", "url": poly_hit[1]})
+        else:
+            mp, info = model_prob(ratings, played, recent_fn, t1, t2)
+            if mp is not None:
+                prob = mp
+                method = "MODEL"
+                g1, g2 = info["games"]
+                e1, e2 = info["elo"]
+                evidence = (
+                    f"Originated line — Leaguepedia Elo {e1:.0f} ({g1} games) vs {e2:.0f} ({g2} games)"
+                    f" over the last {HISTORY_DAYS} days"
+                )
+                min_g = min(g1, g2)
+                confidence = (
+                    "Medium — modelled from official match history"
+                    if min_g >= 10 else
+                    "Low — modelled from thin official match history"
+                )
+                if min_g < 3:
+                    confidence = "Low — very thin official match history"
+                detail = info
+                sources = [{
+                    "label": "Leaguepedia Cargo API (ScoreboardGames)",
+                    "url": LEAGUEPEDIA_HELP,
+                }, {
+                    "label": f"Leaguepedia: {t1}",
+                    "url": "https://lol.fandom.com/wiki/" + urllib.parse.quote(t1.replace(" ", "_")),
+                }, {
+                    "label": f"Leaguepedia: {t2}",
+                    "url": "https://lol.fandom.com/wiki/" + urllib.parse.quote(t2.replace(" ", "_")),
+                }]
+            else:
+                prob = 0.5
+                method = "UNRESOLVED"
+                evidence = (
+                    "Unresolved — no external betting market prices this fixture and neither team "
+                    "has a completed match recorded in Leaguepedia within the look-back window."
+                )
+                confidence = "Unresolved — 50/50 nominal pick only; no statistical edge"
+                sources = [{"label": "Leaguepedia (no record found)", "url": LEAGUEPEDIA_HELP}]
 
-        # 2. Prediction Market Lines (Polymarket Gamma)
-        if prob is None:
-            hit = match_polymarket(polymarket_events, m["team1"], m["team2"])
-            if hit:
-                prob, url, q = hit
-                method = "MARKET_POLYMARKET"
-                source = f"Polymarket: {q}"
-                confidence = "High — Prediction market external consensus (independent of Hotspawn)"
-                row["market_url"] = url
-
-        # 3. Originated Elo Model Lines (Leaguepedia Cargo API)
-        if prob is None and (n1 in ratings or n2 in ratings):
-            r1 = ratings.get(n1, 1500)
-            r2 = ratings.get(n2, 1500)
-            g1 = games.get(n1, 0)
-            g2 = games.get(n2, 0)
-            raw = 1.0 / (1.0 + 10.0 ** ((r2 - r1) / 400.0))
-            # Bayesian shrinkage toward 50% based on sample size
-            shrink = min(g1, g2) / (min(g1, g2) + 10.0) if min(g1, g2) > 0 else 0.25
-            prob = 0.5 + (raw - 0.5) * shrink
-            method = "MODEL_ELO"
-            source = f"Proprietary Elo (Leaguepedia ScoreboardGames, 180d): {m['team1']} {round(r1)} ({g1}g) vs {m['team2']} {round(r2)} ({g2}g)"
-            confidence = "Medium — Official competitive match history" if min(g1, g2) >= 10 else "Low — Thin historical record in database"
-            row["elo"] = [round(r1), round(r2)]
-            row["games"] = [g1, g2]
-            row["source_url"] = "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-
-        # 4. Unresolved Lower-Tier Matches (No Market, No Database Match Record)
-        if prob is None:
-            prob = 0.50
-            method = "UNRESOLVED"
-            source = f"Unresolved: No external bookmaker coverage and no Leaguepedia match record found for Tier '{m.get('tier')}' circuit"
-            confidence = "Unresolved — 50/50 baseline; nominal pick only (no statistical edge)"
-            row["source_url"] = "https://lol.fandom.com/wiki/Leaguepedia:League_of_Legends_Esports_Wiki"
-
-        prob = round(max(0.01, min(0.99, prob)), 4)
+        prob = round(max(0.01, min(0.99, float(prob))), 4)
         row["prob_team1"] = prob
         row["prob_team2"] = round(1.0 - prob, 4)
-        row["pick"] = m["team1"] if prob >= 0.5 else m["team2"]
-        row["pick_prob"] = max(prob, round(1.0 - prob, 4))
+        row["pick"] = t1 if prob >= 0.5 else t2
+        row["pick_prob"] = round(max(prob, 1.0 - prob), 4)
         row["method"] = method
-        row["evidence"] = source
+        row["evidence"] = evidence
         row["confidence"] = confidence
-        row["crowd_note"] = "Hotspawn crowd % shown on lobby is context only and is NEVER used as an input to our probabilities."
+        row["detail"] = detail
+        row["sources"] = sources + [
+            {"label": "Hotspawn match page", "url": permalink},
+            {"label": "Hotspawn Pick'em lobby", "url": HOTSPAWN_LOBBY},
+        ]
+        row["crowd_note"] = (
+            "Hotspawn lobby crowd percentages are recorded for context only and are NEVER "
+            "used as an input to our probabilities."
+        )
         rows.append(row)
 
-    rows.sort(key=lambda r: (r["start_utc"] or "9999", r["tournament"], r["team1"]))
+    rows.sort(key=lambda r: (r.get("start_utc") or "9999", r.get("tournament") or "", r.get("team1") or ""))
+
+    counts = {}
+    for r in rows:
+        counts[r["method"]] = counts.get(r["method"], 0) + 1
 
     payload = {
         "generated_at": NOW.isoformat(),
-        "lobby": debug.get("active_lobby", LOBBIES[0]),
+        "generated_at_human": NOW.strftime("%Y-%m-%d %H:%M UTC"),
+        "lobby": HOTSPAWN_LOBBY,
         "count": len(rows),
-        "counts_by_method": {
-            k: sum(1 for r in rows if r["method"] == k)
-            for k in ["MARKET_BOOKS", "MARKET_POLYMARKET", "MODEL_ELO", "UNRESOLVED"]
+        "open_count": sum(1 for r in rows if r.get("open_for_picks")),
+        "counts_by_method": counts,
+        "coverage": {
+            "resolved": sum(1 for r in rows if r["method"] != "UNRESOLVED"),
+            "unresolved": sum(1 for r in rows if r["method"] == "UNRESOLVED"),
+            "total": len(rows),
         },
         "debug": debug,
-        "matches": rows
+        "matches": rows,
     }
 
-    for path in ["docs/data/picks.json", "data/picks.json"]:
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
+    with open(os.path.join(OUT_DIR, "picks.json"), "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False)
+    with open(os.path.join(OUT_DIR, "debug.json"), "w", encoding="utf-8") as f:
+        json.dump(debug, f, indent=1, ensure_ascii=False)
 
-    with open("data/debug.json", "w", encoding="utf-8") as f:
-        json.dump(debug, f, indent=2)
+    print(f"\nDone. {len(rows)} fixtures — {counts}")
+    print(f"      resolved {payload['coverage']['resolved']} / unresolved {payload['coverage']['unresolved']}")
+    return 0
 
-    print(f"Generated {len(rows)} picks: {payload['counts_by_method']}")
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

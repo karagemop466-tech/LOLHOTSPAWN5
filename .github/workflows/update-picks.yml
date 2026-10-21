@@ -1,20 +1,22 @@
-name: Update Hotspawn LoL Picks (Every 6h)
+name: Update Hotspawn LoL Picks
+
+# Refreshes the Hotspawn League of Legends Pick'em board every 6 hours
+# (inside the requested 4-8 hour window). No manual input required.
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # Runs every 6 hours (within requested 4-8h window)
+    - cron: "17 */6 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
+      - 'arena/b041f9d1-lolhotspawn5'
     paths:
       - "scripts/**"
       - ".github/workflows/update-picks.yml"
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: picks-update
@@ -23,6 +25,7 @@ concurrency:
 jobs:
   update-picks:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,33 +38,38 @@ jobs:
       - name: Run pick generation pipeline
         env:
           ODDSPAPI_KEY: ${{ secrets.ODDSPAPI_KEY }}
-        run: |
-          python3 scripts/update_picks.py
+        run: python3 scripts/update_picks.py
 
       - name: Verify data integrity
         run: |
           python3 - <<'EOF'
           import json, sys
-          with open("docs/data/picks.json") as f:
+          with open("data/picks.json") as f:
               data = json.load(f)
-          assert data.get("count", 0) > 0, "No matches found in picks data!"
+          n = data.get("count", 0)
+          assert n > 0, "No matches found in picks data!"
+          allowed = {"MARKET", "MODEL", "UNRESOLVED"}
           for m in data["matches"]:
-              assert m["pick"] in (m["team1"], m["team2"]), f"Invalid pick: {m}"
-              assert abs((m["prob_team1"] + m["prob_team2"]) - 1.0) < 0.001, f"Probabilities do not sum to 1: {m}"
-              assert m["method"] in ("MARKET_BOOKS", "MARKET_POLYMARKET", "MODEL_ELO", "UNRESOLVED"), f"Unknown method: {m}"
-          print(f"Data verification passed: {data['count']} total matches priced successfully.")
+              assert m["pick"] in (m["team1"], m["team2"]), f"Invalid pick: {m['fixture_id']}"
+              assert abs((m["prob_team1"] + m["prob_team2"]) - 1.0) < 0.001, f"Probs != 1: {m['fixture_id']}"
+              assert m["method"] in allowed, f"Unknown method: {m['method']}"
+              assert m["hotspawn_match_url"].startswith("https://www.hotspawn.com/matches/"), m["fixture_id"]
+              assert m["sources"], f"No sources for {m['fixture_id']}"
+          print(f"Verification passed: {n} fixtures, "
+                f"{data['coverage']['resolved']} resolved / {data['coverage']['unresolved']} unresolved")
           EOF
-
-      - name: Synchronize web assets
-        run: |
-          cp -f docs/data/picks.json data/picks.json || true
-          cp -rf docs/* . || true
 
       - name: Commit and push changes
         run: |
           git config user.name "hotspawn-picks-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data docs/data index.html picks.html unresolved.html flagged.html methodology.html assets docs
-          git diff --cached --quiet || git commit -m "picks: automated 6h refresh [skip ci]"
-          git pull --rebase origin ${{ github.ref_name }} || true
-          git push origin HEAD:${{ github.ref_name }} || true
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "picks: automated refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            for i in 1 2 3; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && break || sleep 5
+            done
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          fi
