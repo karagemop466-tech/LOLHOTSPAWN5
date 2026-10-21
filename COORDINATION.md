@@ -208,3 +208,22 @@ had no market and no meaningful sample, and the 69 stale rows cannot be acted on
    scheduled run must be observed after changing it.
 3. `best_of` is still `null` for every Hotspawn row (upstream gap).
 4. 69 stale Hotspawn rows remain upstream; they are blanked, not hidden.
+
+### Publication record — correction pass
+
+| PR | Purpose | Result |
+|---|---|---|
+| [#8](https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/8) | Blank undefendable picks, publication gate, per-row evidence links, Kalshi correction | **Merged** into `main` (`--squash`, `921e30a`) |
+
+- **Deploy:** `pages build and deployment` for `921e30a` → `success`. Live
+  `unresolved.html` was fetched back over HTTPS and shows **110 / 69 / 41 / 145** with every row's
+  limitation, remedy and source — i.e. the rebuilt site, not the pre-fix one.
+- **Automation proof with the new gate:** the merge triggered `update-picks` (run `39673902636`,
+  `success`) end to end: collect Hotspawn → collect lines → collect results → build model →
+  **Enforce publication invariants (success)** → build site → check links → publish
+  (`43b4dc8 data: scheduled refresh 2026-10-21T20:52Z`). The gate therefore runs inside the real
+  pipeline, not only locally.
+- **Post-refresh audit of the committed data** (`data/picks.json` at `43b4dc8`): 264 rows,
+  9 market / 145 model / 110 unresolved, `0` rows with a pick and `confidence=insufficient`,
+  `0` picks on past-kickoff rows, `0` model rows missing evidence links,
+  `data/invariants.json` → `pass`, 0 errors.
