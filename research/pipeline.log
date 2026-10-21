@@ -1,5 +1,21 @@
-Traceback (most recent call last):
-  File "/home/runner/work/LOLHOTSPAWN5/LOLHOTSPAWN5/scripts/update_picks.py", line 89, in <module>
-    CACHE_PATH = os.path.join(OUT_DIR, "leaguepedia_cache.json")
-                              ^^^^^^^
-NameError: name 'OUT_DIR' is not defined
+[1/6] Hotspawn fixture API …
+      1501 LoL fixtures total, 264 with status=scheduled
+      195 match permalinks harvested from lobby HTML
+[2/6] Pinnacle esportsbook …
+      12 League of Legends matchups on the board, 9 priced
+[3/6] Unibet / Kambi esports …
+      0 League of Legends events priced
+[4/6] Polymarket …
+      1996 two-way markets indexed
+[5/6] Leaguepedia history — 189 teams / 27 competitions …
+      pass 0: 0 teams served from cache (0 games)
+      pass 1: 27 competitions …
+        +0 games from competition pass
+      pass 2: 189 teams in 12 chunk queries …
+        5/12 chunks, 500 games total
+        10/12 chunks, 1101 games total
+      1472 games, 197 teams rated
+[6/6] Resolving picks …
+
+Done. 264 fixtures — {'MODEL': 99, 'UNRESOLVED': 157, 'MARKET': 8}
+      resolved 107 / unresolved 157
