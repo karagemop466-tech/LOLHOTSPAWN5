@@ -1,238 +1,491 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hotspawn LoL Pick Board — every fixture, our own line</title>
-<meta name="description" content="Executive summary, coverage and links to every Hotspawn League of Legends pick&#x27;em pick.">
-<meta name="theme-color" content="#12121c">
-<meta name="color-scheme" content="light dark">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/site.css">
-<meta property="og:title" content="Hotspawn LoL Pick Board — every fixture, our own line">
-<meta property="og:description" content="Executive summary, coverage and links to every Hotspawn League of Legends pick&#x27;em pick.">
-<meta property="og:type" content="website">
+<title>Summary · Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Independent win probabilities and picks for every League of Legends match listed on Hotspawn Play pick'ems.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
-  <div class="head-inner">
-    <a class="brand" href="">
-      <span class="brand-mark" aria-hidden="true">HS</span>
-      <span class="brand-text"><b>LoL Pick Board</b><small>Hotspawn coverage · independent lines</small></span>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LoL</span>
+      <span class="brand-text">Hotspawn LoL Pick Desk</span>
     </a>
-    <div class="head-tools">
-      <button id="tz" class="tzbtn" type="button" aria-pressed="false">Times: UTC</button>
+    <div class="fresh">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Updated <time datetime="2026-10-21T20:42:45Z">2026-10-21 20:42:45 UTC</time></span>
     </div>
-    <nav aria-label="Sections"><div class="navscroll"><a class="navlink is-active" href="">Summary</a><a class="navlink" href="picks/">All picks</a><a class="navlink" href="unresolved/">Unresolved</a><a class="navlink" href="methodology/">Method</a><a class="navlink" href="sources/">Sources</a><a class="navlink" href="review/">Review</a></div></nav>
   </div>
+  <nav class="nav" aria-label="Sections"><a class="navlink active" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
 </header>
-<main id="main" class="wrap">
-
-
+<main id="main">
 <section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">Executive summary · updated 2026-10-21 20:38 UTC</p>
-    <h1>Every Hotspawn LoL pick&rsquo;em fixture — priced, or flagged with the reason.</h1>
-    <p class="lede">We mirror the full League of Legends pick&rsquo;em list from Hotspawn Play (264
-    fixtures right now), price each match from independent bookmaker, exchange and prediction-market data
-    where it exists, and fall back to a results-only strength model where no market does. Anything we cannot
-    defend is published as <b>unresolved</b> with the limitation instead of guessed.</p>
-    <div class="cta">
-      <a class="btn primary" href="picks/">See all 264 fixtures &amp; picks</a>
-      <a class="btn" href="unresolved/">Unresolved (93)</a>
-    </div>
+  <h1>Every League of Legends match on Hotspawn, with a pick.</h1>
+  <p class="lede">
+    We mirror the full <strong>Hotspawn Play</strong> League of Legends pick'em board
+    (264 fixtures) and attach an <em>independently originated</em> win probability to each
+    one. Where a sharp external sportsbook prices the match we use that market, de-vigged.
+    Where no bookmaker prices it — the low-tier circuits Hotspawn lists but the sportsbooks ignore —
+    we publish our own Elo model number. Nothing here comes from Hotspawn's crowd pick share.
+  </p>
+  <div class="cta">
+    <a class="btn primary" href="picks.html">See all 264 picks →</a>
+    <a class="btn" href="unresolved.html">What we can't price</a>
   </div>
 </section>
 
-<section class="stats" aria-label="Coverage at a glance">
-  <div class="stat "><b>264</b><span>Hotspawn fixtures listed</span></div>
-  <div class="stat good"><b>171</b><span>Picks generated (86% of 200 upcoming)</span></div>
-  <div class="stat "><b>9</b><span>Market-backed picks</span></div>
-  <div class="stat warn"><b>93</b><span>Unresolved (64 stale entries)</span></div>
+<section class="kpis" aria-label="Snapshot">
+  <a class="kpi " href="picks.html"><div class="kpi-v">264</div><div class="kpi-l">fixtures mirrored</div></a>
+  <a class="kpi " href="picks.html"><div class="kpi-v">195</div><div class="kpi-l">upcoming</div></a>
+  <a class="kpi " href="picks.html?method=market"><div class="kpi-v">9</div><div class="kpi-l">market-priced</div></a>
+  <a class="kpi " href="picks.html?method=model"><div class="kpi-v">254</div><div class="kpi-l">model-priced</div></a>
+  <a class="kpi warn" href="unresolved.html"><div class="kpi-v">1</div><div class="kpi-l">unresolved</div></a>
 </section>
 
-<section class="card summary">
-  <h2>What this board tells you</h2>
-  <ul class="findings">
-    <li><b>171 of 200 upcoming fixtures</b> carry a pick (86%).
-      <b>9</b> use a real external line (Kalshi exchange, Pinnacle, Polymarket);
-      <b>162</b> use our results-only Elo because no bookmaker prices that league.</li>
-    <li><b>93 fixtures are unresolved</b> — 64 are stale Hotspawn entries whose start time
-      has passed but which Hotspawn still lists as scheduled, and the rest lack enough verified match history.
-      Every one is listed with its exact reason and what would fix it.
-      <a href="unresolved/">Open the unresolved list</a>.</li>
-    <li><b>Hotspawn&rsquo;s crowd percentages are never used.</b> Our probabilities come from de-vigged
-      external market prices and from completed-match results only. <a href="methodology/">How the numbers are built</a>.</li>
-    <li><b>Results cross-check:</b> 948 of 951 completed matches that appear in both the Hotspawn and Leaguepedia feeds agree on the winner (99.7%); any disagreement is listed on <a href="review/">review</a>.</li>
-    <li><b>Refresh cadence:</b> the collector runs every 6 hours via GitHub Actions
-      (<code>17 */6 * * *</code>). Last successful run 2026-10-21 20:38 UTC;
-      next scheduled run 2026-10-22 00:17 UTC. <a href="sources/">Source register &amp; status</a>.</li>
-    <li><b>Limitations:</b> licensed books price only the top leagues and international events. Low-tier
-      national leagues have no market anywhere we could verify, so those probabilities are model-derived and
-      marked <i>low</i> confidence. <a href="review/">Flagged for review</a>.</li>
-  </ul>
+<section class="panel" id="exec">
+  <h2>Executive summary</h2>
+  <div class="prose">
+    <p><strong>Coverage.</strong> Hotspawn's LoL lobby returned <strong>264 fixtures</strong>
+    across 27 tournaments. 195 have a future start time and
+    69 are stale rows (start time already passed, yet Hotspawn still lists them as
+    <em>scheduled</em>, and none of those has a Hotspawn match page).
+    Every one of the 264 appears on this site.</p>
+
+    <p><strong>Picks.</strong> <strong>263 of 264</strong> fixtures carry a pick
+    with a probability. Two independent methods produce them:</p>
+    <ul>
+      <li><strong>9 market-priced</strong> — a real Pinnacle moneyline exists and was
+      de-vigged. This covers the Worlds 2026 Swiss stage and EMEA Masters, the tournaments the
+      sportsbooks actually price. <a href="picks.html?method=market">Browse market-priced picks →</a></li>
+      <li><strong>254 model-priced</strong> — no bookmaker quotes the match, so the number comes
+      from our Elo rating built on 7579 historical results
+      (1394 teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
+    </ul>
+
+    <p><strong>Unresolved.</strong> <strong>1 fixture</strong> have no defensible number:
+    no sportsbook market, and no usable match history for one or both teams. They are listed in full,
+    with the specific limitation for each, on the
+    <a href="unresolved.html">Unresolved &amp; Limitations page →</a>. Nothing is filled in with a guess.</p>
+
+    <p><strong>Sourcing rule.</strong> Sportsbooks and prediction markets only. Hotspawn supplies the
+    <em>fixture list</em> and nothing else — its "picked %" is a popularity poll and is deliberately
+    excluded from the probability calculation.
+    <a href="sources.html">Source register →</a></p>
+  </div>
 </section>
 
-<section class="quick">
-  <h2>Find picks fast</h2>
+<section class="panel" id="where">
+  <h2>Where to find things</h2>
+  <div class="linkgrid">
+    <a class="linkcard" href="picks.html">
+      <span class="lc-t">All picks</span>
+      <span class="lc-d">264 fixtures, earliest first. Search, filter by method or tournament.</span>
+    </a>
+    <a class="linkcard" href="unresolved.html">
+      <span class="lc-t">Unresolved &amp; limitations</span>
+      <span class="lc-d">1 fixture we cannot price, and why.</span>
+    </a>
+    <a class="linkcard" href="methodology.html">
+      <span class="lc-t">Methodology</span>
+      <span class="lc-d">De-vig formula, Elo parameters, confidence tiers.</span>
+    </a>
+    <a class="linkcard" href="sources.html">
+      <span class="lc-t">Sources</span>
+      <span class="lc-d">Every source, what it provides, and its verification status.</span>
+    </a>
+    <a class="linkcard" href="review.html">
+      <span class="lc-t">Flagged for review</span>
+      <span class="lc-d">Irregularities and unverified values, with links.</span>
+    </a>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Market-priced picks</h2>
+  <p class="sub">Real external moneyline, de-vigged. Highest-confidence section of the site.</p>
   <div class="cards">
-    <a class="qcard" href="picks/"><b>All picks</b><span>Full table, filter by tournament or team, phone-first.</span></a>
-    <a class="qcard" href="picks/#worlds-2026-main-event"><b>Worlds 2026</b><span>Main-event fixtures with exchange lines.</span></a>
-    <a class="qcard" href="unresolved/"><b>Unresolved</b><span>No pick + the reason + what would resolve it.</span></a>
-    <a class="qcard" href="methodology/"><b>Method</b><span>De-vig, Elo, shrinkage, confidence tiers.</span></a>
-  </div>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="EM 2026 Summer Main Event" data-past="false"
+             data-text="EM 2026 Summer Main Event Galions Solary">
+      <div class="card-top">
+        <div class="tour">EM 2026 Summer Main Event</div>
+        <div class="kick">2026-10-22 12:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Galions</div>
+        <div class="vs">vs</div>
+        <div class="team ">Solary</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Galions 53% versus Solary 47%">
+      <div class="bar-side win" style="width:53%">
+        <span class="bar-pct">53%</span>
+      </div>
+      <div class="bar-side away " style="width:47%">
+        <span class="bar-pct">47%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Galions</span><span class="pickprob">53%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier A</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Solary +105, Galions -127</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="Worlds 2026 Main Event" data-past="false"
+             data-text="Worlds 2026 Main Event Gen.G Invictus Gaming">
+      <div class="card-top">
+        <div class="tour">Worlds 2026 Main Event</div>
+        <div class="kick">2026-10-23 17:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Gen.G</div>
+        <div class="vs">vs</div>
+        <div class="team ">Invictus Gaming</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Gen.G 77% versus Invictus Gaming 23%">
+      <div class="bar-side win" style="width:77%">
+        <span class="bar-pct">77%</span>
+      </div>
+      <div class="bar-side away " style="width:23%">
+        <span class="bar-pct">23%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Gen.G</span><span class="pickprob">77%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier S</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Gen.G -435, Invictus +323</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/gen-g-vs-invictus-gaming-worlds-2026-main-event-1067878" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="Worlds 2026 Main Event" data-past="false"
+             data-text="Worlds 2026 Main Event Hanwha Life Esports Top Esports">
+      <div class="card-top">
+        <div class="tour">Worlds 2026 Main Event</div>
+        <div class="kick">2026-10-23 18:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Hanwha Life Esports</div>
+        <div class="vs">vs</div>
+        <div class="team ">Top Esports</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Hanwha Life Esports 79% versus Top Esports 21%">
+      <div class="bar-side win" style="width:79%">
+        <span class="bar-pct">79%</span>
+      </div>
+      <div class="bar-side away " style="width:21%">
+        <span class="bar-pct">21%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Hanwha Life Esports</span><span class="pickprob">79%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier S</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Hanwha Life -490, Top Esports +355</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/hanwha-life-esports-vs-top-esports-worlds-2026-main-event-1067677" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="Worlds 2026 Main Event" data-past="false"
+             data-text="Worlds 2026 Main Event Bilibili Gaming Movistar KOI">
+      <div class="card-top">
+        <div class="tour">Worlds 2026 Main Event</div>
+        <div class="kick">2026-10-23 19:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Bilibili Gaming</div>
+        <div class="vs">vs</div>
+        <div class="team ">Movistar KOI</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Bilibili Gaming 80% versus Movistar KOI 20%">
+      <div class="bar-side win" style="width:80%">
+        <span class="bar-pct">80%</span>
+      </div>
+      <div class="bar-side away " style="width:20%">
+        <span class="bar-pct">20%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Bilibili Gaming</span><span class="pickprob">80%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier S</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Bilibili -512, Movistar KOI +368</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/bilibili-gaming-vs-movistar-koi-worlds-2026-main-event-1067680" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="Worlds 2026 Main Event" data-past="false"
+             data-text="Worlds 2026 Main Event Anyone&#x27;s Legend Karmine Corp">
+      <div class="card-top">
+        <div class="tour">Worlds 2026 Main Event</div>
+        <div class="kick">2026-10-23 20:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Anyone&#x27;s Legend</div>
+        <div class="vs">vs</div>
+        <div class="team ">Karmine Corp</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Anyone&#x27;s Legend 64% versus Karmine Corp 36%">
+      <div class="bar-side win" style="width:64%">
+        <span class="bar-pct">64%</span>
+      </div>
+      <div class="bar-side away " style="width:36%">
+        <span class="bar-pct">36%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Anyone&#x27;s Legend</span><span class="pickprob">64%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier S</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Anyone&amp;#x27;s Legend -200, Karmine Corp +167</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/anyones-legend-vs-karmine-corp-worlds-2026-main-event-1067675" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="Worlds 2026 Main Event" data-past="false"
+             data-text="Worlds 2026 Main Event G2 Esports Dplus KIA">
+      <div class="card-top">
+        <div class="tour">Worlds 2026 Main Event</div>
+        <div class="kick">2026-10-23 21:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team ">G2 Esports</div>
+        <div class="vs">vs</div>
+        <div class="team picked">Dplus KIA</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="G2 Esports 43% versus Dplus KIA 57%">
+      <div class="bar-side " style="width:43%">
+        <span class="bar-pct">43%</span>
+      </div>
+      <div class="bar-side away win" style="width:57%">
+        <span class="bar-pct">57%</span>
+      </div>
+    </div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Dplus KIA</span><span class="pickprob">57%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier S</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: G2 +126, Dplus KIA -148</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article></div>
+  <p><a class="btn" href="picks.html?method=market">All 9 market-priced picks →</a></p>
 </section>
 
-<section class="card">
-  <div class="sechead"><h2>Next up</h2><a class="more" href="picks/">All fixtures →</a></div>
-  <div class="matchlist"><article class="match" data-t="em-2026-summer-main-event" data-q="galions solary em 2026 summer main event">
-  <div class="m-top"><time datetime="2026-10-22T12:00:00+00:00" data-utc="2026-10-22T12:00:00Z">Thu 22 Oct · 12:00 UTC</time>
-    <span class="comp">EM 2026 Summer Main Event</span>
-    <span class="pill c-high">High</span></div>
-  <div class="m-teams">
-    <div class="team is-pick">
-      <span class="tname">Galions <span class="pickmark">PICK</span></span>
-      <span class="tpct">52.7%</span>
-      <span class="bar"><i style="width:52.7%"></i></span>
+<section class="panel">
+  <h2>Next up</h2>
+  <p class="sub">The next six fixtures by start time.</p>
+  <div class="cards">
+    <article class="card" data-method="market" data-conf="market-priced"
+             data-tournament="EM 2026 Summer Main Event" data-past="false"
+             data-text="EM 2026 Summer Main Event Galions Solary">
+      <div class="card-top">
+        <div class="tour">EM 2026 Summer Main Event</div>
+        <div class="kick">2026-10-22 12:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Galions</div>
+        <div class="vs">vs</div>
+        <div class="team ">Solary</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Galions 53% versus Solary 47%">
+      <div class="bar-side win" style="width:53%">
+        <span class="bar-pct">53%</span>
+      </div>
+      <div class="bar-side away " style="width:47%">
+        <span class="bar-pct">47%</span>
+      </div>
     </div>
-    <div class="team">
-      <span class="tname">Solary</span>
-      <span class="tpct">47.3%</span>
-      <span class="bar"><i style="width:47.3%"></i></span>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Galions</span><span class="pickprob">53%</span></div>
+      <div class="badges">
+        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge conf">Market-priced</span>
+        <span class="tag tag-tier">tier A</span>
+      </div>
+      <div class="meta-line">Pinnacle moneyline: Solary +105, Galions -127</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn match</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle</a></div>
+    </article>
+    <article class="card" data-method="model" data-conf="medium"
+             data-tournament="Komplettligaen 2026 Autumn" data-past="false"
+             data-text="Komplettligaen 2026 Autumn Ascent Gaming NTNUI Kometkameratene">
+      <div class="card-top">
+        <div class="tour">Komplettligaen 2026 Autumn</div>
+        <div class="kick">2026-10-22 15:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Ascent Gaming</div>
+        <div class="vs">vs</div>
+        <div class="team ">NTNUI Kometkameratene</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Ascent Gaming 65% versus NTNUI Kometkameratene 35%">
+      <div class="bar-side win" style="width:65%">
+        <span class="bar-pct">65%</span>
+      </div>
+      <div class="bar-side away " style="width:35%">
+        <span class="bar-pct">35%</span>
+      </div>
     </div>
-  </div>
-  <div class="m-meta"><b>Pick: Galions</b> <span class="sep">·</span> fair odds 1.90
-    <span class="sep">·</span> Market + model <span class="sep">·</span> Tier A</div>
-  <div class="m-src"><a class="src-link" href="https://kalshi.com/markets/kxlolgame-26oct220800slygal" rel="noopener">Kalshi line</a><a class="src-link" href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn fixture</a></div>
-</article><article class="match" data-t="komplettligaen-2026-autumn" data-q="ascent gaming ntnui kometkameratene komplettligaen 2026 autumn">
-  <div class="m-top"><time datetime="2026-10-22T15:00:00+00:00" data-utc="2026-10-22T15:00:00Z">Thu 22 Oct · 15:00 UTC</time>
-    <span class="comp">Komplettligaen 2026 Autumn</span>
-    <span class="pill c-med">Medium</span></div>
-  <div class="m-teams">
-    <div class="team is-pick">
-      <span class="tname">Ascent Gaming <span class="pickmark">PICK</span></span>
-      <span class="tpct">57.0%</span>
-      <span class="bar"><i style="width:57.0%"></i></span>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Ascent Gaming</span><span class="pickprob">65%</span></div>
+      <div class="badges">
+        <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
+        <span class="badge conf">Medium</span>
+        
+      </div>
+      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (teams matched: 21 home / 10 away historical results).</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/ascent-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071214" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia</a></div>
+    </article>
+    <article class="card" data-method="model" data-conf="medium"
+             data-tournament="Komplettligaen 2026 Autumn" data-past="false"
+             data-text="Komplettligaen 2026 Autumn Solid Gaming DMG Esports Norway">
+      <div class="card-top">
+        <div class="tour">Komplettligaen 2026 Autumn</div>
+        <div class="kick">2026-10-22 15:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team ">Solid Gaming</div>
+        <div class="vs">vs</div>
+        <div class="team picked">DMG Esports Norway</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Solid Gaming 41% versus DMG Esports Norway 59%">
+      <div class="bar-side " style="width:41%">
+        <span class="bar-pct">41%</span>
+      </div>
+      <div class="bar-side away win" style="width:59%">
+        <span class="bar-pct">59%</span>
+      </div>
     </div>
-    <div class="team">
-      <span class="tname">NTNUI Kometkameratene</span>
-      <span class="tpct">43.0%</span>
-      <span class="bar"><i style="width:43.0%"></i></span>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">DMG Esports Norway</span><span class="pickprob">59%</span></div>
+      <div class="badges">
+        <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
+        <span class="badge conf">Medium</span>
+        
+      </div>
+      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (teams matched: 10 home / 22 away historical results).</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/solid-gaming-vs-dmg-esports-norway-komplettligaen-2026-autumn-1071216" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia</a></div>
+    </article>
+    <article class="card" data-method="model" data-conf="high"
+             data-tournament="Komplettligaen 2026 Autumn" data-past="false"
+             data-text="Komplettligaen 2026 Autumn Volda E-Sport CNG Royal">
+      <div class="card-top">
+        <div class="tour">Komplettligaen 2026 Autumn</div>
+        <div class="kick">2026-10-22 15:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Volda E-Sport</div>
+        <div class="vs">vs</div>
+        <div class="team ">CNG Royal</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Volda E-Sport 54% versus CNG Royal 46%">
+      <div class="bar-side win" style="width:54%">
+        <span class="bar-pct">54%</span>
+      </div>
+      <div class="bar-side away " style="width:46%">
+        <span class="bar-pct">46%</span>
+      </div>
     </div>
-  </div>
-  <div class="m-meta"><b>Pick: Ascent Gaming</b> <span class="sep">·</span> fair odds 1.75
-    <span class="sep">·</span> Results model (Leaguepedia results) <span class="sep">·</span> Tier C</div>
-  <div class="m-src"><a class="src-link" href="https://www.hotspawn.com/matches/ascent-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071214" rel="noopener">Hotspawn fixture</a><a class="src-link" href="methodology/">model inputs</a></div>
-</article><article class="match" data-t="komplettligaen-2026-autumn" data-q="solid gaming dmg esports norway komplettligaen 2026 autumn">
-  <div class="m-top"><time datetime="2026-10-22T15:00:00+00:00" data-utc="2026-10-22T15:00:00Z">Thu 22 Oct · 15:00 UTC</time>
-    <span class="comp">Komplettligaen 2026 Autumn</span>
-    <span class="pill c-med">Medium</span></div>
-  <div class="m-teams">
-    <div class="team">
-      <span class="tname">Solid Gaming</span>
-      <span class="tpct">48.6%</span>
-      <span class="bar"><i style="width:48.6%"></i></span>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Volda E-Sport</span><span class="pickprob">54%</span></div>
+      <div class="badges">
+        <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
+        <span class="badge conf">High</span>
+        
+      </div>
+      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (teams matched: 28 home / 22 away historical results).</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia</a></div>
+    </article>
+    <article class="card" data-method="model" data-conf="high"
+             data-tournament="Komplettligaen 2026 Autumn" data-past="false"
+             data-text="Komplettligaen 2026 Autumn Your Saviours Mixlag fra Trondheim">
+      <div class="card-top">
+        <div class="tour">Komplettligaen 2026 Autumn</div>
+        <div class="kick">2026-10-22 15:00 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Your Saviours</div>
+        <div class="vs">vs</div>
+        <div class="team ">Mixlag fra Trondheim</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Your Saviours 60% versus Mixlag fra Trondheim 40%">
+      <div class="bar-side win" style="width:60%">
+        <span class="bar-pct">60%</span>
+      </div>
+      <div class="bar-side away " style="width:40%">
+        <span class="bar-pct">40%</span>
+      </div>
     </div>
-    <div class="team is-pick">
-      <span class="tname">DMG Esports Norway <span class="pickmark">PICK</span></span>
-      <span class="tpct">51.4%</span>
-      <span class="bar"><i style="width:51.4%"></i></span>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Your Saviours</span><span class="pickprob">60%</span></div>
+      <div class="badges">
+        <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
+        <span class="badge conf">High</span>
+        
+      </div>
+      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (teams matched: 23 home / 21 away historical results).</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/your-saviours-vs-mixlag-fra-trondheim-komplettligaen-2026-autumn-1071219" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia</a></div>
+    </article>
+    <article class="card" data-method="model" data-conf="low"
+             data-tournament="RIVALS LEAGUE Season 2" data-past="false"
+             data-text="RIVALS LEAGUE Season 2 Turbo Gaming Fritt Fall">
+      <div class="card-top">
+        <div class="tour">RIVALS LEAGUE Season 2</div>
+        <div class="kick">2026-10-22 16:30 UTC</div>
+      </div>
+      <div class="teams">
+        <div class="team picked">Turbo Gaming</div>
+        <div class="vs">vs</div>
+        <div class="team ">Fritt Fall</div>
+      </div>
+      
+    <div class="bars" role="img" aria-label="Turbo Gaming 55% versus Fritt Fall 45%">
+      <div class="bar-side win" style="width:55%">
+        <span class="bar-pct">55%</span>
+      </div>
+      <div class="bar-side away " style="width:45%">
+        <span class="bar-pct">45%</span>
+      </div>
     </div>
-  </div>
-  <div class="m-meta"><b>Pick: DMG Esports Norway</b> <span class="sep">·</span> fair odds 1.94
-    <span class="sep">·</span> Results model (Leaguepedia results) <span class="sep">·</span> Tier C</div>
-  <div class="m-src"><a class="src-link" href="https://www.hotspawn.com/matches/solid-gaming-vs-dmg-esports-norway-komplettligaen-2026-autumn-1071216" rel="noopener">Hotspawn fixture</a><a class="src-link" href="methodology/">model inputs</a></div>
-</article><article class="match" data-t="komplettligaen-2026-autumn" data-q="volda e-sport cng royal komplettligaen 2026 autumn">
-  <div class="m-top"><time datetime="2026-10-22T15:00:00+00:00" data-utc="2026-10-22T15:00:00Z">Thu 22 Oct · 15:00 UTC</time>
-    <span class="comp">Komplettligaen 2026 Autumn</span>
-    <span class="pill c-med">Medium</span></div>
-  <div class="m-teams">
-    <div class="team is-pick">
-      <span class="tname">Volda E-Sport <span class="pickmark">PICK</span></span>
-      <span class="tpct">51.1%</span>
-      <span class="bar"><i style="width:51.1%"></i></span>
-    </div>
-    <div class="team">
-      <span class="tname">CNG Royal</span>
-      <span class="tpct">48.9%</span>
-      <span class="bar"><i style="width:48.9%"></i></span>
-    </div>
-  </div>
-  <div class="m-meta"><b>Pick: Volda E-Sport</b> <span class="sep">·</span> fair odds 1.96
-    <span class="sep">·</span> Results model (Leaguepedia results) <span class="sep">·</span> Tier C</div>
-  <div class="m-src"><a class="src-link" href="https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218" rel="noopener">Hotspawn fixture</a><a class="src-link" href="methodology/">model inputs</a></div>
-</article><article class="match" data-t="komplettligaen-2026-autumn" data-q="your saviours mixlag fra trondheim komplettligaen 2026 autumn">
-  <div class="m-top"><time datetime="2026-10-22T15:00:00+00:00" data-utc="2026-10-22T15:00:00Z">Thu 22 Oct · 15:00 UTC</time>
-    <span class="comp">Komplettligaen 2026 Autumn</span>
-    <span class="pill c-med">Medium</span></div>
-  <div class="m-teams">
-    <div class="team is-pick">
-      <span class="tname">Your Saviours <span class="pickmark">PICK</span></span>
-      <span class="tpct">57.0%</span>
-      <span class="bar"><i style="width:57.0%"></i></span>
-    </div>
-    <div class="team">
-      <span class="tname">Mixlag fra Trondheim</span>
-      <span class="tpct">43.0%</span>
-      <span class="bar"><i style="width:43.0%"></i></span>
-    </div>
-  </div>
-  <div class="m-meta"><b>Pick: Your Saviours</b> <span class="sep">·</span> fair odds 1.76
-    <span class="sep">·</span> Results model (Leaguepedia results) <span class="sep">·</span> Tier C</div>
-  <div class="m-src"><a class="src-link" href="https://www.hotspawn.com/matches/your-saviours-vs-mixlag-fra-trondheim-komplettligaen-2026-autumn-1071219" rel="noopener">Hotspawn fixture</a><a class="src-link" href="methodology/">model inputs</a></div>
-</article><article class="match" data-t="rivals-league-season-2" data-q="turbo gaming fritt fall rivals league season 2">
-  <div class="m-top"><time datetime="2026-10-22T16:30:00+00:00" data-utc="2026-10-22T16:30:00Z">Thu 22 Oct · 16:30 UTC</time>
-    <span class="comp">RIVALS LEAGUE Season 2</span>
-    <span class="pill c-low">Low</span></div>
-  <div class="m-teams">
-    <div class="team is-pick">
-      <span class="tname">Turbo Gaming <span class="pickmark">PICK</span></span>
-      <span class="tpct">51.9%</span>
-      <span class="bar"><i style="width:51.9%"></i></span>
-    </div>
-    <div class="team">
-      <span class="tname">Fritt Fall</span>
-      <span class="tpct">48.1%</span>
-      <span class="bar"><i style="width:48.1%"></i></span>
-    </div>
-  </div>
-  <div class="m-meta"><b>Pick: Turbo Gaming</b> <span class="sep">·</span> fair odds 1.93
-    <span class="sep">·</span> Results model (Leaguepedia results) <span class="sep">·</span> tier n/a</div>
-  <div class="m-src"><a class="src-link" href="https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667" rel="noopener">Hotspawn fixture</a><a class="src-link" href="methodology/">model inputs</a></div>
-</article></div>
+      <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Turbo Gaming</span><span class="pickprob">55%</span></div>
+      <div class="badges">
+        <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
+        <span class="badge conf">Low</span>
+        
+      </div>
+      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (teams matched: 5 home / 4 away historical results).</div>
+      <div class="src"><a href="https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia</a></div>
+    </article></div>
 </section>
-
-<section class="card">
-  <h2>Browse by tournament</h2>
-  <p class="muted small">27 competitions in the current Hotspawn list. Tap a competition to jump
-  straight to its section on the picks page.</p>
-  <div class="chipwrap"><a class="chiplink" href="picks/#prm-3rd-division-26-27-fall">PRM 3rd Division 26-27 Fall <span>65</span></a><a class="chiplink" href="picks/#prm-2nd-division-26-27-fall">PRM 2nd Division 26-27 Fall <span>40</span></a><a class="chiplink" href="picks/#rivals-league-season-2">RIVALS LEAGUE Season 2 <span>26</span></a><a class="chiplink" href="picks/#tunisian-super-league-2026">Tunisian Super League 2026 <span>25</span></a><a class="chiplink" href="picks/#4-nations-2026-halloween-heist">4 Nations 2026 Halloween Heist <span>19</span></a><a class="chiplink" href="picks/#komplettligaen-2026-autumn">Komplettligaen 2026 Autumn <span>13</span></a><a class="chiplink" href="picks/#arabian-league-2nd-division-2026-summer">Arabian League 2nd Division 2026 Summer <span>12</span></a><a class="chiplink" href="picks/#icelandic-esports-league-2026-autumn">Icelandic Esports League 2026 Autumn <span>12</span></a><a class="chiplink" href="picks/#worlds-2026-main-event">Worlds 2026 Main Event <span>8</span></a><a class="chiplink" href="picks/#arabian-regional-championship-2026-lebanon-libya-syria-palestine">Arabian Regional Championship 2026: Lebanon-Libya-Syria-Palestine <span>7</span></a><a class="chiplink" href="picks/#superstrike-league-2026">Superstrike League 2026 <span>6</span></a><a class="chiplink" href="picks/#benelux-ascend-series-2027-winter-promotion">Benelux Ascend Series 2027 Winter Promotion <span>5</span></a><a class="chiplink" href="picks/#benelux-ascend-series-rising-2026-summer-playoffs">Benelux Ascend Series Rising 2026 Summer Playoffs <span>5</span></a><a class="chiplink" href="picks/#ligagg-celol-b-2026-split-2-playoffs">LigaGG CELOL B 2026 Split 2 Playoffs <span>5</span></a><a class="chiplink" href="picks/#arabian-regional-championship-2026-qatar-bahrain-kuwait">Arabian Regional Championship 2026: Qatar-Bahrain-Kuwait <span>2</span></a><a class="chiplink" href="picks/#benelux-ascend-series-2026-summer-split">Benelux Ascend Series 2026 Summer Split <span>2</span></a><a class="chiplink" href="picks/#ligagg-celol-b-2026-split-2">LigaGG CELOL B 2026 Split 2 <span>2</span></a><a class="chiplink" href="picks/#benelux-ascend-series-2026-summer-playoffs">Benelux Ascend Series 2026 Summer Playoffs <span>1</span></a><a class="chiplink" href="picks/#em-2026-summer-main-event">EM 2026 Summer Main Event <span>1</span></a><a class="chiplink" href="picks/#fpl-2026-summer-playoffs">FPL 2026 Summer Playoffs <span>1</span></a><a class="chiplink" href="picks/#hitpoint-2nd-div-challengers-2026-summer-playoffs">Hitpoint 2nd Div Challengers 2026 Summer Playoffs <span>1</span></a><a class="chiplink" href="picks/#lcp-2027-promotion">LCP 2027 Promotion <span>1</span></a><a class="chiplink" href="picks/#lgc-rising-2026-playoffs">LGC Rising 2026 Playoffs <span>1</span></a><a class="chiplink" href="picks/#lit-2027-winter-promotion">LIT 2027 Winter Promotion <span>1</span></a><a class="chiplink" href="picks/#legends-academy-powered-by-zabka-season-3-playoffs">Legends Academy powered by Żabka Season 3 Playoffs <span>1</span></a><a class="chiplink" href="picks/#ligagg-celol-a-2026-split-2">LigaGG CELOL A 2026 Split 2 <span>1</span></a><a class="chiplink" href="picks/#pop-esports-masters-season-7">POP Esports Masters Season 7 <span>1</span></a></div>
-</section>
-
-<section class="card">
-  <h2>How coverage is split</h2>
-  <div class="split">
-    <div><b>9</b><span>market-backed</span></div>
-    <div><b>162</b><span>model-only</span></div>
-    <div><b>93</b><span>unresolved</span></div>
-  </div>
-  <p class="muted small">Unresolved fixtures stay visible on the site and on the
-  <a href="review/">flagged page</a> until a source appears. Nothing is filled in by hand.</p>
-</section>
-
 </main>
-<footer class="site-foot">
-  <div class="wrap">
-    <p><b>Independent line generation.</b> Fixture list from Hotspawn Play.
-    Market prices from public, citable exchange/bookmaker APIs. Hotspawn's crowd “% picked” is never used
-    to set a probability.</p>
-    <p class="tiny">Data 2026-10-21T20:38:42.034346Z ·
-    <a href="methodology/">methodology</a> ·
-    <a href="sources/">source register</a> ·
-    <a href="review/">flagged for review</a> ·
-    <a href="https://github.com/karagemop466-tech/LOLHOTSPAWN5">repository</a></p>
-  </div>
+<footer class="footer">
+  <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
+  <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
+     (collected 2026-10-21 20:41:16 UTC). Probabilities: external sportsbook lines where available,
+     otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
+  <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>
 <script src="assets/app.js" defer></script>
 </body>

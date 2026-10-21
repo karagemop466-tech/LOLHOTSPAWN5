@@ -1,6 +1,101 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moved to sources/</title><link rel="canonical" href="https://karagemop466-tech.github.io/LOLHOTSPAWN5/sources/">
-<meta http-equiv="refresh" content="0; url=sources/">
-</head><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;padding:24px">
-<p>This page moved to <a href="sources/">sources/</a>.</p></body></html>
+<title>Sources · Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Independent win probabilities and picks for every League of Legends match listed on Hotspawn Play pick'ems.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LoL</span>
+      <span class="brand-text">Hotspawn LoL Pick Desk</span>
+    </a>
+    <div class="fresh">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Updated <time datetime="2026-10-21T20:42:45Z">2026-10-21 20:42:45 UTC</time></span>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink active" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
+</header>
+<main id="main">
+<section class="panel pad">
+  <h1>Sources</h1>
+  <p class="lede small">Every source this project touches, what it is used for, and whether it was
+  actually verified. Sources that failed are listed too — a failure is a finding.</p>
+  <div class="tablewrap">
+    <table class="data">
+      <thead><tr><th>Source</th><th>Provides</th><th>Status</th><th>Caveat</th></tr></thead>
+      <tbody>
+      <tr>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">Hotspawn Play — League of Legends pick&#x27;ems</a></td>
+        <td data-l="Provides">Fixture inventory: teams, tournament, tier, start/lock time, Hotspawn match link</td>
+        <td data-l="Status">Verified live — 264 fixtures parsed from the ng-state transfer state</td>
+        <td data-l="Caveat">Fixture list only. Its crowd pick-shares are NOT used as probabilities.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn match page</a></td>
+        <td data-l="Provides">Per-match detail and the canonical match URL</td>
+        <td data-l="Status">Reachable for 195 of 264 fixtures; 69 rows have no match page</td>
+        <td data-l="Caveat">Returns 403 to automated clients; used as a human-checkable citation link.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle — League of Legends</a></td>
+        <td data-l="Provides">Moneyline prices used for market-priced picks</td>
+        <td data-l="Status">Collected via the public guest API; 9 matchups priced</td>
+        <td data-l="Caveat">Covers Worlds 2026 Swiss and EMEA Masters only.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">Leaguepedia — MatchSchedule</a></td>
+        <td data-l="Provides">Historical match results backing the Elo model</td>
+        <td data-l="Status"> 7579 rows, 1394 teams rated</td>
+        <td data-l="Caveat">Community-maintained wiki mirroring Riot schedules; rate-limited.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://polymarket.com/markets/esports/lol" rel="noopener">Polymarket — League of Legends</a></td>
+        <td data-l="Provides">Prediction-market prices (candidate source)</td>
+        <td data-l="Status">Live markets in this snapshot were historical, not for board fixtures</td>
+        <td data-l="Caveat">Not used for any pick. Recorded as unavailable for these matches.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://kalshi.com/markets/kxlol" rel="noopener">Kalshi — KXLOL</a></td>
+        <td data-l="Provides">Prediction-market prices (candidate source)</td>
+        <td data-l="Status">Only a Worlds 2026 outright winner market was open</td>
+        <td data-l="Caveat">Outright only — cannot price an individual fixture.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://www.bovada.lv/sports/esports/league-of-legends" rel="noopener">Bovada — League of Legends</a></td>
+        <td data-l="Provides">Secondary bookmaker (candidate source)</td>
+        <td data-l="Status">Public JSON endpoint returned HTTP 400 on collection</td>
+        <td data-l="Caveat">Not used. No prices were obtained, so none are shown.</td>
+      </tr>
+      <tr>
+        <td data-l="Source"><a href="https://www.oddsportal.com/esports/league-of-legends/" rel="noopener">OddsPortal — League of Legends</a></td>
+        <td data-l="Provides">Bookmaker odds aggregator (candidate source)</td>
+        <td data-l="Status">Page reachable (HTTP 200) but prices are loaded client-side</td>
+        <td data-l="Caveat">Not used. No prices were scraped from it.</td>
+      </tr></tbody>
+    </table>
+  </div>
+  <h2>Sourcing rule</h2>
+  <p>Match probabilities may come only from external sportsbooks/prediction markets or from our own
+  documented model built on historical results. Hotspawn supplies the fixture list and nothing else.</p>
+</section>
+</main>
+<footer class="footer">
+  <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
+  <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
+     (collected 2026-10-21 20:41:16 UTC). Probabilities: external sportsbook lines where available,
+     otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
+  <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

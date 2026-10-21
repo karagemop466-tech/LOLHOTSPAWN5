@@ -1,75 +1,79 @@
-# Hotspawn LoL Pick Board
+# Hotspawn LoL Pick Desk
 
-Independent win probabilities and picks for **every League of Legends fixture listed on
-[Hotspawn Play's LoL pick'em lobby](https://play.hotspawn.com/lol-pickems)** — including the low-tier
-national leagues that no bookmaker prices.
+Full coverage of every League of Legends match listed on
+[Hotspawn Play pick'ems](https://play.hotspawn.com/lol-pickems), each with an **independently
+originated** win probability and pick — including the low-tier fixtures no sportsbook prices.
 
 **Live site:** https://karagemop466-tech.github.io/LOLHOTSPAWN5/
 
-| Page | What it is for |
+## What it does
+
+1. **Mirrors the whole Hotspawn LoL board.** `play.hotspawn.com/lol-pickems` is an Angular
+   server-rendered app; the complete fixture list lives in its `ng-state` transfer-state JSON.
+   We parse that, so we get all 264 fixtures rather than a paginated list.
+2. **Prices what the books price.** Pinnacle moneyline for every League of Legends league is
+   pulled from their guest API and de-vigged proportionally.
+3. **Prices everything else ourselves.** An Elo model built on Leaguepedia `MatchSchedule`
+   results (7.5k+ completed matches, ~1.4k teams) covers the regional and academy circuits that
+   no bookmaker quotes.
+4. **Refuses to guess.** A fixture with no market and no usable history is published as
+   unresolved, with the exact limitation, instead of being filled in.
+5. **Refreshes every 4 hours** via GitHub Actions and redeploys the site with no manual input.
+
+Hotspawn's own "picked %" is a crowd popularity share and is **never** used as a probability.
+
+## Layout
+
+```
+index.html            executive summary + snapshot + in-site navigation
+picks.html            all fixtures with probability bars, search and filters
+unresolved.html       every fixture we cannot price, plus the limitations
+methodology.html      de-vig formula, Elo parameters, confidence tiers
+sources.html          source register with verification status
+review.html           "Flagged for review" — irregularities and unverified values
+assets/               one stylesheet, one small script, no dependencies
+data/                 the committed dataset (see below)
+scripts/              collectors, model, site build, link check
+.github/workflows/    update.yml (4-hourly refresh + publish)
+```
+
+### Data files
+
+| File | Contents |
 |---|---|
-| [Executive summary](https://karagemop466-tech.github.io/LOLHOTSPAWN5/) | Coverage at a glance, links to every list, limitations |
-| [All picks](https://karagemop466-tech.github.io/LOLHOTSPAWN5/picks/) | Full fixture table, search + tournament filter, phone-first cards |
-| [Unresolved](https://karagemop466-tech.github.io/LOLHOTSPAWN5/unresolved/) | Fixtures with **no** pick, the reason, and what would resolve it |
-| [Methodology](https://karagemop466-tech.github.io/LOLHOTSPAWN5/methodology/) | De-vig, Elo, shrinkage, confidence tiers |
-| [Sources](https://karagemop466-tech.github.io/LOLHOTSPAWN5/sources/) | Every endpoint used, with live status from the last run |
-| [Flagged for review](https://karagemop466-tech.github.io/LOLHOTSPAWN5/review/) | Irregularities and access limits, with links |
+| `data/hotspawn_matches.json` | Raw Hotspawn inventory: 264 fixtures, collected verbatim |
+| `data/market_lines.json` | Pinnacle moneyline prices (raw American odds + de-vigged probabilities) |
+| `data/match_results.json` | Leaguepedia completed results used to fit the Elo model |
+| `data/picks.json` | Final per-match picks, probabilities, method, confidence, sources |
+| `data/collect_log.txt` | Per-stage outcome of the last pipeline run |
 
-Legacy URLs (`picks.html`, `unresolved.html`, `methodology.html`, `flagged.html`) redirect to the pages above.
+## Running it
 
-## How a pick is produced
+```bash
+python3 scripts/collect_hotspawn.py     # inventory  -> data/hotspawn_matches.json
+python3 scripts/collect_lines.py        # markets    -> data/market_lines.json
+python3 scripts/collect_results.py      # results    -> data/match_results.json
+python3 scripts/build_model.py          # picks      -> data/picks.json
+python3 scripts/build_site.py           # site       -> *.html
+python3 scripts/check_links.py          # gate       -> exit 1 if anything is broken
+```
 
-1. **Inventory** — the same public fixtures feed that powers the lobby
-   (`/api/v1/fixtures?sport_alias=lol&tenantId=1`) gives the full scheduled list, team names, competition,
-   start time and fixture id. The server-rendered lobby is parsed separately to attach verified match
-   permalinks.
-2. **External lines first** — Kalshi (CFTC-regulated exchange), Pinnacle (licensed bookmaker) and Polymarket
-   (prediction market). Prices are converted to implied probabilities and de-vigged
-   (`p_i = (1/o_i) / Σ(1/o_j)`); multiple venues are blended by fixed weights.
-   **Hotspawn's crowd “% picked” is never used as a probability input.**
-3. **Results model for unpriced leagues** — Elo over completed matches, recency-decayed, with Bayesian
-   shrinkage toward 1500 so a team with two matches cannot look certain. Two independent pools are
-   maintained: Leaguepedia's CargoExport archive (preferred) and Hotspawn's completed fixtures (fallback for
-   competitions Leaguepedia does not carry).
-4. **Refuse to guess** — a match is published as **unresolved** when it has no external line and either team
-   has fewer than three completed matches. No 50/50 placeholders, no inferred results.
+`collect_hotspawn.py --html <file>` replays a saved snapshot, which is how the parser was
+verified offline.
 
-Full formulas, confidence tiers and limitations: [methodology](https://karagemop466-tech.github.io/LOLHOTSPAWN5/methodology/).
+### Note on network access
+
+Upstream collection requires real internet access to `play.hotspawn.com`, Pinnacle and
+Leaguepedia. Restricted sandboxes cannot reach those hosts, so the pipeline runs on GitHub
+Actions runners. The scheduled workflow is the supported way to refresh the data.
+
+## Sourcing rule
+
+Probabilities may come only from external sportsbooks/prediction markets, or from the documented
+model fitted on historical results. Anything that cannot be confirmed from a source is left blank
+and listed on the **Flagged for review** page. This is analysis, not betting advice.
 
 ## Automation
 
-`.github/workflows/refresh.yml` runs the whole pipeline **every 6 hours** (cron `17 */6 * * *`, inside the
-required 4–8 hour band) plus on manual dispatch:
-
-```
-scripts/pipeline.py    -> data/{fixtures,markets,picks,meta}.json
-scripts/build_site.py  -> index.html, picks/, unresolved/, methodology/, sources/, review/
-```
-
-The workflow commits the refreshed data and pages back to the branch, which triggers the GitHub Pages
-build. No credentials are required: every endpoint is public and unauthenticated. On failure the traceback is
-written to `data/error.json` and committed so the failure is auditable.
-
-## Verification
-
-- Every fixture row links to its Hotspawn page (verified against the server-rendered lobby) and, when it has
-  one, to the exact market endpoint that priced it.
-- Completed results are cross-checked between Hotspawn and Leaguepedia; the agreement count and any
-  disagreement are published on the [review page](https://karagemop466-tech.github.io/LOLHOTSPAWN5/review/).
-- Anything that cannot be confirmed is **blank** and listed on the review page. Unknown values are never
-  filled in.
-
-## Repository layout
-
-```
-scripts/pipeline.py      collection, joins, Elo, pick generation
-scripts/build_site.py    static site generator (no dependencies)
-assets/                  CSS + progressive-enhancement JS
-data/                    generated JSON (fixtures, market quotes, picks, run metadata)
-research/                local raw payload cache (git-ignored)
-```
-
-## Notes
-
-This is a research dashboard, not betting advice. Probabilities are estimates; market prices move and the
-snapshot is only as fresh as the last run (see the timestamp on the site).
+`.github/workflows/update.yml` runs at `17 */4 * * *` (every 4 hours), re-collects everything,
+rebuilds the site, link-checks it, and publishes only if the check passes.

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/</loc></url>
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/picks/</loc></url>
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/unresolved/</loc></url>
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/methodology/</loc></url>
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/sources/</loc></url>
-<url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/review/</loc></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/index.html</loc><lastmod>2026-10-21</lastmod><changefreq>hourly</changefreq></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/picks.html</loc><lastmod>2026-10-21</lastmod><changefreq>hourly</changefreq></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/unresolved.html</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/methodology.html</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/sources.html</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://karagemop466-tech.github.io/LOLHOTSPAWN5/review.html</loc><lastmod>2026-10-21</lastmod><changefreq>weekly</changefreq></url>
 </urlset>

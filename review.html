@@ -1,6 +1,346 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moved to review/</title><link rel="canonical" href="https://karagemop466-tech.github.io/LOLHOTSPAWN5/review/">
-<meta http-equiv="refresh" content="0; url=review/">
-</head><body style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;padding:24px">
-<p>This page moved to <a href="review/">review/</a>.</p></body></html>
+<title>Flagged for review · Hotspawn LoL Pick Desk</title>
+<meta name="description" content="Independent win probabilities and picks for every League of Legends match listed on Hotspawn Play pick'ems.">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LoL</span>
+      <span class="brand-text">Hotspawn LoL Pick Desk</span>
+    </a>
+    <div class="fresh">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Updated <time datetime="2026-10-21T20:42:45Z">2026-10-21 20:42:45 UTC</time></span>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink active" href="review.html">Flagged</a></nav>
+</header>
+<main id="main">
+<section class="panel pad">
+  <h1>Flagged for review</h1>
+  <p class="lede small">Irregularities, gaps and unverified values. None of these block publication —
+  they are published so you can check them. Each carries a link to the source.</p>
+
+  <div class="tablewrap">
+    <table class="data">
+      <thead><tr><th>Finding</th><th>Detail</th><th>Source</th></tr></thead>
+      <tbody>
+      <tr>
+        <td data-l="Finding">One Leaguepedia row is dated in the future yet already carries a winner</td>
+        <td data-l="Detail">Of 7579 completed rows pulled from Leaguepedia, 1 has a kickoff time after the collection timestamp. Such rows are excluded from the Elo pass (a result cannot exist before a match is played) and are flagged here rather than silently used.</td>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Hotspawn returns 264 rows but only 195 carry a match page</td>
+        <td data-l="Detail">69 rows have no Hotspawn match page, and those are exactly the 69 rows whose start time is already in the past while status still reads <code>scheduled</code>. We treat them as stale. They are still listed, but no pick from them should be acted on.</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">189 of 264 fixtures have tier and stage listed as &#x27;waiting for information&#x27;</td>
+        <td data-l="Detail">189 fixtures carry <code>tier: waiting for information</code> and 249 also have <code>stage: waiting for information</code>. Series format (BestOf) is <code>null</code> for every row, so the site cannot show match length. This is a limitation of the Hotspawn payload, not an omission on our side.</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">No per-match sportsbook market for ~95% of the board</td>
+        <td data-l="Detail">Only 9 fixtures matched a Pinnacle moneyline. The remaining 255 have no external price. This is expected — books price Worlds and EMEA Masters, not the PRM 3rd Division or the Tunisian Super League — but it is the single biggest limitation on the site.</td>
+        <td data-l="Source"><a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Bovada returned HTTP 400</td>
+        <td data-l="Detail">The public Bovada JSON endpoint rejected the request, so no Bovada prices exist anywhere on this site. Nothing was substituted.</td>
+        <td data-l="Source"><a href="https://www.bovada.lv/sports/esports/league-of-legends" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Polymarket League of Legends markets were stale</td>
+        <td data-l="Detail">The markets returned for League of Legends were LCK Challengers fixtures from August–September 2026 plus a power-ranking market — none matched a fixture on the current board, so Polymarket contributes no probability.</td>
+        <td data-l="Source"><a href="https://polymarket.com/markets/esports/lol" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Kalshi only lists a tournament outright</td>
+        <td data-l="Detail">KXLOL exposed a single open event, <em>Worlds 2026 Champion</em>. That is a futures market and cannot price an individual match, so it is not used.</td>
+        <td data-l="Source"><a href="https://kalshi.com/markets/kxlol" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Unverified values are left blank</td>
+        <td data-l="Detail">57 fixtures have no probability at all because a team has fewer than 3 rated results. A further 106 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
+        <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
+      </tr>
+      <tr>
+        <td data-l="Finding">Sandbox egress is restricted; collection runs on GitHub Actions</td>
+        <td data-l="Detail">This repository's development sandbox cannot reach any esports host (TLS resets after CONNECT for every non-allowlisted domain). All upstream collection therefore runs on GitHub Actions runners, which have full internet access. The workflow and its raw outputs are committed here so every number can be traced.</td>
+        <td data-l="Source"><a href="https://github.com/karagemop466-tech/LOLHOTSPAWN5/actions" rel="noopener">source</a></td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <h2>Unverified: fixtures with no Hotspawn match page</h2>
+  <p class="sub">The match link column is left blank for these 69 fixtures rather than
+  guessed from the team names. Showing the first 40.</p>
+  <div class="tablewrap">
+    <table class="data">
+      <thead><tr><th>Match</th><th>Tournament</th><th>Missing value</th><th>Source</th></tr></thead>
+      <tbody>
+      <tr>
+        <td data-l="Match">Mind Blue eSports vs LAST DANCE</td>
+        <td data-l="Tournament">Benelux Ascend Series 2026 Summer Split</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Nameless vs BiPOLAR</td>
+        <td data-l="Tournament">Benelux Ascend Series 2026 Summer Split</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Epic Avalanche vs Finnish Red Mafia</td>
+        <td data-l="Tournament">FPL 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Team VS Esport vs GALA Esports</td>
+        <td data-l="Tournament">Benelux Ascend Series Rising 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">P11 Esports vs HANGMEN</td>
+        <td data-l="Tournament">LIT 2027 Winter Promotion</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Triforce Esport vs Venus</td>
+        <td data-l="Tournament">Benelux Ascend Series Rising 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">GALA Esports vs The Bandits Academy</td>
+        <td data-l="Tournament">Benelux Ascend Series Rising 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Docta Esports Club vs Viktus</td>
+        <td data-l="Tournament">LigaGG CELOL B 2026 Split 2</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">DMG Esports Norway vs Playwell Rød Q</td>
+        <td data-l="Tournament">Komplettligaen 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Solid Gaming vs VES Japan</td>
+        <td data-l="Tournament">Komplettligaen 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Mixlag fra Trondheim vs CNG Royal</td>
+        <td data-l="Tournament">Komplettligaen 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Frost Tails vs LAST DANCE</td>
+        <td data-l="Tournament">Benelux Ascend Series 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Team VS Esport vs Les Ravagés</td>
+        <td data-l="Tournament">Benelux Ascend Series Rising 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Marere Academy vs Torin</td>
+        <td data-l="Tournament">LigaGG CELOL B 2026 Split 2</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Invictus Team vs Smoke Tram Ascension</td>
+        <td data-l="Tournament">LigaGG CELOL A 2026 Split 2</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">LANdits vs Frites Esports Club</td>
+        <td data-l="Tournament">POP Esports Masters Season 7</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">The Bandits Academy vs Triforce Esport</td>
+        <td data-l="Tournament">Benelux Ascend Series Rising 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Lund Esports Organization vs Karolinerna Black</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Dziady cz.67 vs Adam West Corp</td>
+        <td data-l="Tournament">Legends Academy powered by Żabka Season 3 Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Karolinerna Black vs Lundqvist Lightside</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Northern Wolves Esports vs Lundqvist Darkside</td>
+        <td data-l="Tournament">RIVALS LEAGUE Season 2</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">EXILE esports Academy vs Mighty Eagles</td>
+        <td data-l="Tournament">Hitpoint 2nd Div Challengers 2026 Summer Playoffs</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Chuds vs Smá Nibu</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Fenrir vs Grísirnir</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Rift Runners vs Whisky</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Triforce Esport vs RED OUAT</td>
+        <td data-l="Tournament">Benelux Ascend Series 2027 Winter Promotion</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Les Ravagés vs Nameless</td>
+        <td data-l="Tournament">Benelux Ascend Series 2027 Winter Promotion</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Solid Gaming vs Playwell Rød Q</td>
+        <td data-l="Tournament">Komplettligaen 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Team Lucidity Esports vs Lund Esports Organization</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Fenrir vs Cool Beans Team</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Rift Runners vs Grísirnir</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Whisky vs Smá Nibu</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Team VS Esport vs Meavedron Benelux</td>
+        <td data-l="Tournament">Benelux Ascend Series 2027 Winter Promotion</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Chuds vs Cool Beans Team</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Rift Runners vs Fenrir</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Smá Nibu vs Grísirnir</td>
+        <td data-l="Tournament">Icelandic Esports League 2026 Autumn</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Team Lucidity Esports vs Lund Esports Organization</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">OnlyWinByFF vs B2U</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">Karolinerna vs Crazy Kittens E-Sport Academy</td>
+        <td data-l="Tournament">Superstrike League 2026</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr>
+      <tr>
+        <td data-l="Match">NextGeneration Esports vs Slam Dunk</td>
+        <td data-l="Tournament">Arabian League 2nd Division 2026 Summer</td>
+        <td data-l="Missing">Hotspawn match page URL</td>
+        <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">board listing</a></td>
+      </tr></tbody>
+    </table>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
+  <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
+     (collected 2026-10-21 20:41:16 UTC). Probabilities: external sportsbook lines where available,
+     otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
+  <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

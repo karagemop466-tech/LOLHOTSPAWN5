@@ -1,85 +1,46 @@
-/* Progressive enhancements: filters, search, local-time toggle. No dependencies. */
-(function () {
-  "use strict";
-
-  /* ---------- tournament filter + search (picks page) ---------- */
-  var chips = document.getElementById("chips");
-  var q = document.getElementById("q");
-  var countEl = document.getElementById("count");
-
-  function apply() {
-    var active = document.querySelector(".chip.is-on");
-    var key = active ? active.getAttribute("data-filter") : "all";
-    var term = (q && q.value || "").trim().toLowerCase();
-    var shown = 0;
-    document.querySelectorAll(".compblock").forEach(function (block) {
-      var visibleInBlock = 0;
-      block.querySelectorAll(".match").forEach(function (m) {
-        var okT = key === "all" || m.getAttribute("data-t") === key;
-        var okQ = !term || (m.getAttribute("data-q") || "").indexOf(term) !== -1;
-        var show = okT && okQ;
-        m.hidden = !show;
-        if (show) visibleInBlock++;
-      });
-      block.hidden = visibleInBlock === 0;
-      shown += visibleInBlock;
-    });
-    if (countEl) {
-      countEl.textContent = shown + (shown === 1 ? " fixture shown" : " fixtures shown");
-    }
-  }
-
-  if (chips) {
-    chips.addEventListener("click", function (e) {
-      var b = e.target.closest(".chip");
-      if (!b) return;
-      chips.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-on"); });
-      b.classList.add("is-on");
-      apply();
+// Minimal client-side filtering. No dependencies.
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('#cards .card'));
+  if(!cards.length) return;
+  var q=document.getElementById('q'), tour=document.getElementById('tour'),
+      count=document.getElementById('count'), empty=document.getElementById('empty');
+  var method='', hidePast=false;
+  var params=new URLSearchParams(location.search);
+  if(params.get('method')){
+    method=params.get('method');
+    [].forEach.call(document.querySelectorAll('[data-filter="method"]'),function(b){
+      b.classList.toggle('on', b.dataset.value===method);
     });
   }
-  if (q) {
-    var t;
-    q.addEventListener("input", function () {
-      clearTimeout(t);
-      t = setTimeout(apply, 120);
+  function sync(){
+    var term=(q.value||'').toLowerCase().trim();
+    var t=tour.value, shown=0;
+    cards.forEach(function(c){
+      var ok=true;
+      if(method && c.dataset.method!==method) ok=false;
+      if(hidePast && c.dataset.past==='true') ok=false;
+      if(t && c.dataset.tournament!==t) ok=false;
+      if(term && (c.dataset.text||'').toLowerCase().indexOf(term)===-1) ok=false;
+      c.style.display=ok?'':'none';
+      if(ok) shown++;
     });
+    if(count) count.textContent=shown+' of '+cards.length+' fixtures';
+    if(empty) empty.hidden=shown!==0;
   }
-  if (chips || q) apply();
-
-  /* ---------- local time toggle ---------- */
-  var btn = document.getElementById("tz");
-  var KEY = "lolpick.tz";
-  var mode = "utc";
-  try { mode = localStorage.getItem(KEY) || "utc"; } catch (e) {}
-
-  function render() {
-    document.querySelectorAll("time[data-utc]").forEach(function (el) {
-      var iso = el.getAttribute("data-utc");
-      if (!iso) return;
-      var d = new Date(iso);
-      if (isNaN(d.getTime())) return;
-      if (!el.getAttribute("data-utc-text")) el.setAttribute("data-utc-text", el.textContent);
-      if (mode === "local") {
-        el.textContent = d.toLocaleString(undefined, {
-          weekday: "short", day: "2-digit", month: "short",
-          hour: "2-digit", minute: "2-digit", timeZoneName: "short"
-        });
-      } else {
-        el.textContent = el.getAttribute("data-utc-text");
-      }
+  [].forEach.call(document.querySelectorAll('[data-filter="method"]'),function(b){
+    b.addEventListener('click',function(){
+      method=b.dataset.value;
+      [].forEach.call(document.querySelectorAll('[data-filter="method"]'),
+        function(x){x.classList.toggle('on',x===b);});
+      sync();
     });
-    if (btn) {
-      btn.textContent = mode === "local" ? "Times: your device" : "Times: UTC";
-      btn.setAttribute("aria-pressed", mode === "local" ? "true" : "false");
-    }
-  }
-  if (btn) {
-    btn.addEventListener("click", function () {
-      mode = mode === "local" ? "utc" : "local";
-      try { localStorage.setItem(KEY, mode); } catch (e) {}
-      render();
+  });
+  [].forEach.call(document.querySelectorAll('[data-filter="past"]'),function(b){
+    b.addEventListener('click',function(){
+      hidePast=!hidePast; b.classList.toggle('on',hidePast); sync();
     });
-  }
-  render();
+  });
+  if(q) q.addEventListener('input',sync);
+  if(tour) tour.addEventListener('change',sync);
+  sync();
 })();

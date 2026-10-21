@@ -1,0 +1,24 @@
+{
+ "generated_utc": "2026-10-21T20:42:45Z",
+ "totals": {
+  "matches": 264,
+  "live_matches": 195,
+  "by_method": {
+   "market": 9,
+   "model": 254,
+   "unresolved": 1
+  },
+  "market_priced": 9,
+  "model_priced": 254,
+  "unresolved": 1,
+  "with_a_pick": 263
+ },
+ "pages": [
+  "index.html",
+  "methodology.html",
+  "picks.html",
+  "review.html",
+  "sources.html",
+  "unresolved.html"
+ ]
+}
