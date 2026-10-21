@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-21T20:50:57Z",
+ "checked_utc": "2026-10-21T21:09:43Z",
  "rows": 264,
  "by_method": {
   "market": 9,
-  "model": 145,
-  "unresolved": 110
+  "model": 160,
+  "unresolved": 95
  },
- "with_a_pick": 154,
+ "with_a_pick": 169,
  "errors": [],
  "warnings": [],
  "notes": [],

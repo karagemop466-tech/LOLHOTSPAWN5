@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-21T20:50:57Z">2026-10-21 20:50:57 UTC</time></span>
+      <span>Updated <time datetime="2026-10-21T21:09:43Z">2026-10-21 21:09:43 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink active" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink" href="review.html">Flagged</a></nav>
@@ -39,7 +39,7 @@
   </p>
   <div class="cta">
     <a class="btn primary" href="picks.html">See all 264 fixtures →</a>
-    <a class="btn" href="unresolved.html">110 without a number — and why</a>
+    <a class="btn" href="unresolved.html">95 without a number — and why</a>
   </div>
 </section>
 
@@ -47,8 +47,8 @@
   <a class="kpi " href="picks.html"><div class="kpi-v">264</div><div class="kpi-l">fixtures mirrored</div></a>
   <a class="kpi " href="picks.html"><div class="kpi-v">195</div><div class="kpi-l">upcoming</div></a>
   <a class="kpi " href="picks.html?method=market"><div class="kpi-v">9</div><div class="kpi-l">market-priced</div></a>
-  <a class="kpi " href="picks.html?method=model"><div class="kpi-v">145</div><div class="kpi-l">model-priced</div></a>
-  <a class="kpi warn" href="unresolved.html"><div class="kpi-v">110</div><div class="kpi-l">unresolved</div></a>
+  <a class="kpi " href="picks.html?method=model"><div class="kpi-v">160</div><div class="kpi-l">model-priced</div></a>
+  <a class="kpi warn" href="unresolved.html"><div class="kpi-v">95</div><div class="kpi-l">unresolved</div></a>
 </section>
 
 <section class="panel" id="exec">
@@ -59,29 +59,46 @@
     (kickoff already passed, yet Hotspawn still lists them as <em>scheduled</em>).
     Every one of the 264 appears on this site.</p>
 
-    <p><strong>Picks.</strong> <strong>154 of 195 upcoming fixtures</strong>
-    carry a pick with a probability — 79.0% coverage. Two independent methods produce them:</p>
+    <p><strong>Picks.</strong> <strong>169 of 195 upcoming fixtures</strong>
+    carry a pick with a probability — 86.7% coverage. Two independent methods produce them:</p>
     <ul>
-      <li><strong>9 market-priced</strong> — a real Pinnacle moneyline exists and was
-      de-vigged. This covers the Worlds 2026 Swiss stage and EMEA Masters, the tournaments the
-      sportsbooks actually price. <a href="picks.html?method=market">Browse market-priced picks →</a></li>
-      <li><strong>145 model-priced</strong> — no bookmaker quotes the match, so the number comes
+      <li><strong>9 market-priced</strong> — a real external moneyline exists
+      (Pinnacle bookmaker, Kalshi exchange, Bovada when it answers) and was de-vigged. This covers the
+      tournaments the books and exchanges actually price. <a href="picks.html?method=market">Browse market-priced picks →</a></li>
+      <li><strong>160 model-priced</strong> — no bookmaker quotes the match, so the number comes
       from our Elo rating built on 7579 historical results
-      (1394 teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
+      (1416 teams rated). <a href="picks.html?method=model">Browse model-priced picks →</a></li>
     </ul>
 
-    <p><strong>Unresolved.</strong> <strong>110 of 264 fixtures</strong> have no
-    published number, for one of two stated reasons: <strong>69</strong> are stale rows whose
-    kickoff has passed with no result published anywhere, and <strong>41</strong> have no
-    bookmaker market plus fewer than three rated results for at least one team — below that bar a
-    model output is mostly the 1500-Elo prior. Each row is listed with its exact limitation and what
-    would resolve it on the <a href="unresolved.html">Unresolved &amp; Limitations page →</a>.
-    Nothing is filled in with a guess.</p>
-
-    <p><strong>Sourcing rule.</strong> Sportsbooks and prediction markets only. Hotspawn supplies the
+    <p><strong>Sourcing rule.</strong> Sportsbooks, exchanges and prediction markets only. Hotspawn supplies the
     <em>fixture list</em> and nothing else — its "picked %" is a popularity poll and is deliberately
     excluded from the probability calculation.
     <a href="sources.html">Source register →</a></p>
+  </div>
+</section>
+
+<section class="panel" id="unresolved-limits">
+  <h2>Unresolved picks &amp; limitations</h2>
+  <p class="sub">Matches we cannot give a defensible pick for — and exactly what is missing.</p>
+  <div class="prose">
+    <p><strong>95 of 264 fixtures</strong> are published <strong>blank</strong>,
+    with the limitation and the remedy on the row. Nothing is filled in with a guess. The limitations
+    fall into two categories:</p>
+    <ul>
+      <li><strong>69 stale fixtures</strong> — the kickoff has already passed but Hotspawn still
+      lists the row as <em>scheduled</em> and no source publishes a result. A pick could not be acted on,
+      and any figure would be hindsight.</li>
+      <li><strong>26 insufficient-history fixtures</strong> — no bookmaker, exchange or
+      prediction-market line covers the match, and at least one team has fewer than three verified
+      completed results on Leaguepedia. Below that bar our Elo output is mostly a 1500 prior, i.e. a
+      guess wearing a percentage. We tried the established esportsbooks (GG.BET, BC.GAME, N1 Bet,
+      Melbet, Thunderpick, Rivalry, 1xBet, EGamersWorld) — see the <a href="sources.html">source
+      register</a> for what each returned.</li>
+    </ul>
+    <p>Per-match detail (team, tournament, exact limitation, what would resolve it):
+    <a class="btn" href="unresolved.html">Open Unresolved picks &amp; limitations →</a></p>
+    <p class="muted">A row moves off this list automatically on a later refresh when either an
+    external moneyline appears or the team reaches three rated results.</p>
   </div>
 </section>
 
@@ -94,7 +111,7 @@
     </a>
     <a class="linkcard" href="unresolved.html">
       <span class="lc-t">Unresolved &amp; limitations</span>
-      <span class="lc-d">110 fixtures we cannot price, and why.</span>
+      <span class="lc-d">95 fixtures we cannot price, and why.</span>
     </a>
     <a class="linkcard" href="methodology.html">
       <span class="lc-t">Methodology</span>
@@ -138,11 +155,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Galions</span><span class="pickprob">53%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier A</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Solary +105, Galions -127</div>
+      <div class="meta-line">Pinnacle line: Solary +105, Galions -127</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="market" data-conf="market-priced"
@@ -168,11 +185,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Gen.G</span><span class="pickprob">77%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier S</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Gen.G -435, Invictus +323</div>
+      <div class="meta-line">Pinnacle line: Gen.G -435, Invictus +323</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/gen-g-vs-invictus-gaming-worlds-2026-main-event-1067878" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748200/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="market" data-conf="market-priced"
@@ -198,11 +215,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Hanwha Life Esports</span><span class="pickprob">79%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier S</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Hanwha Life -490, Top Esports +355</div>
+      <div class="meta-line">Pinnacle line: Hanwha Life -490, Top Esports +355</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/hanwha-life-esports-vs-top-esports-worlds-2026-main-event-1067677" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748203/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="market" data-conf="market-priced"
@@ -228,11 +245,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Bilibili Gaming</span><span class="pickprob">80%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier S</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Bilibili -512, Movistar KOI +368</div>
+      <div class="meta-line">Pinnacle line: Bilibili -512, Movistar KOI +368</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/bilibili-gaming-vs-movistar-koi-worlds-2026-main-event-1067680" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638755459/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="market" data-conf="market-priced"
@@ -258,11 +275,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Anyone&#x27;s Legend</span><span class="pickprob">64%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier S</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Anyone&amp;#x27;s Legend -200, Karmine Corp +167</div>
+      <div class="meta-line">Pinnacle line: Anyone&amp;#x27;s Legend -200, Karmine Corp +167</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/anyones-legend-vs-karmine-corp-worlds-2026-main-event-1067675" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750902/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="market" data-conf="market-priced"
@@ -288,11 +305,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Dplus KIA</span><span class="pickprob">57%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier S</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: G2 +126, Dplus KIA -148</div>
+      <div class="meta-line">Pinnacle line: G2 +126, Dplus KIA -148</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638750815/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article></div>
   <p><a class="btn" href="picks.html?method=market">All 9 market-priced picks →</a></p>
@@ -325,11 +342,11 @@
     </div>
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">Galions</span><span class="pickprob">53%</span></div>
       <div class="badges">
-        <span class="badge m-market" title="Priced by an external sportsbook (Pinnacle).">Market line</span>
+        <span class="badge m-market" title="Priced by an external market (Pinnacle / Kalshi / Bovada).">Market line</span>
         <span class="badge conf">Market-priced</span>
         <span class="tag tag-tier">tier A</span>
       </div>
-      <div class="meta-line">Pinnacle moneyline: Solary +105, Galions -127</div>
+      <div class="meta-line">Pinnacle line: Solary +105, Galions -127</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/galions-vs-solary-em-2026-summer-main-event-1081205" rel="noopener">Hotspawn match</a> · <a href="https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight" rel="noopener">Pinnacle API price</a> · <a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">Pinnacle market</a></div>
     </article>
     <article class="card" data-method="model" data-conf="medium"
@@ -359,10 +376,10 @@
         <span class="badge conf">Medium</span>
         
       </div>
-      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (rated results on file: 21 for Ascent Gaming, 10 for NTNUI Kometkameratene).</div>
+      <div class="meta-line muted">No bookmaker market: No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 21 for Ascent Gaming, 10 for NTNUI Kometkameratene).</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/ascent-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071214" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Ascent+Gaming%22+OR+Team2%3D%22Ascent+Gaming%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Ascent Gaming</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22NTNUI+Kometkameratene%22+OR+Team2%3D%22NTNUI+Kometkameratene%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: NTNUI Kometkameratene</a></div>
     </article>
-    <article class="card" data-method="model" data-conf="medium"
+    <article class="card" data-method="model" data-conf="high"
              data-tournament="Komplettligaen 2026 Autumn" data-past="false"
              data-text="Komplettligaen 2026 Autumn Solid Gaming DMG Esports Norway">
       <div class="card-top">
@@ -386,10 +403,10 @@
       <div class="pickline"><span class="picklabel">Pick</span><span class="pickname">DMG Esports Norway</span><span class="pickprob">59%</span></div>
       <div class="badges">
         <span class="badge m-model" title="No bookmaker price; probability from our Elo model.">Own model</span>
-        <span class="badge conf">Medium</span>
+        <span class="badge conf">High</span>
         
       </div>
-      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (rated results on file: 10 for Solid Gaming, 22 for DMG Esports Norway).</div>
+      <div class="meta-line muted">No bookmaker market: No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 28 for Solid Gaming, 22 for DMG Esports Norway).</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/solid-gaming-vs-dmg-esports-norway-komplettligaen-2026-autumn-1071216" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Solid+Gaming%22+OR+Team2%3D%22Solid+Gaming%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Solid Gaming</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22DMG+Esports+Norway%22+OR+Team2%3D%22DMG+Esports+Norway%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: DMG Esports Norway</a></div>
     </article>
     <article class="card" data-method="model" data-conf="high"
@@ -419,7 +436,7 @@
         <span class="badge conf">High</span>
         
       </div>
-      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (rated results on file: 28 for Volda E-Sport, 22 for CNG Royal).</div>
+      <div class="meta-line muted">No bookmaker market: No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 28 for Volda E-Sport, 22 for CNG Royal).</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Volda+E-Sport%22+OR+Team2%3D%22Volda+E-Sport%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Volda E-Sport</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22CNG+Royal%22+OR+Team2%3D%22CNG+Royal%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: CNG Royal</a></div>
     </article>
     <article class="card" data-method="model" data-conf="high"
@@ -449,7 +466,7 @@
         <span class="badge conf">High</span>
         
       </div>
-      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (rated results on file: 23 for Your Saviours, 21 for Mixlag fra Trondheim).</div>
+      <div class="meta-line muted">No bookmaker market: No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 23 for Your Saviours, 21 for Mixlag fra Trondheim).</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/your-saviours-vs-mixlag-fra-trondheim-komplettligaen-2026-autumn-1071219" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Your+Saviours%22+OR+Team2%3D%22Your+Saviours%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Your Saviours</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Mixlag+fra+Trondheim%22+OR+Team2%3D%22Mixlag+fra+Trondheim%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Mixlag fra Trondheim</a></div>
     </article>
     <article class="card" data-method="model" data-conf="low"
@@ -479,7 +496,7 @@
         <span class="badge conf">Low</span>
         
       </div>
-      <div class="meta-line muted">No bookmaker market: No Pinnacle moneyline matched this fixture at collection time (rated results on file: 5 for Turbo Gaming, 4 for Fritt Fall).</div>
+      <div class="meta-line muted">No bookmaker market: No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 5 for Turbo Gaming, 4 for Fritt Fall).</div>
       <div class="src"><a href="https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667" rel="noopener">Hotspawn match</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Turbo+Gaming%22+OR+Team2%3D%22Turbo+Gaming%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Turbo Gaming</a> · <a href="https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&amp;fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&amp;where=%28Team1%3D%22Fritt+Fall%22+OR+Team2%3D%22Fritt+Fall%22%29&amp;order_by=DateTime_UTC+DESC&amp;limit=50&amp;format=json" rel="noopener">Leaguepedia: Fritt Fall</a></div>
     </article></div>
 </section>
@@ -487,7 +504,7 @@
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-21 20:44:43 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-21 21:08:32 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>
