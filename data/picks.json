@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-10-21T21:35:48.440801+00:00",
- "generated_at_human": "2026-10-21 21:35 UTC",
+ "generated_at": "2026-10-21T21:59:33.077007+00:00",
+ "generated_at_human": "2026-10-21 21:59 UTC",
  "lobby": "https://play.hotspawn.com/lol-pickems",
  "count": 264,
  "open_count": 195,
  "counts_by_method": {
-  "MODEL": 114,
-  "UNRESOLVED": 141,
-  "MARKET": 9
+  "MODEL": 99,
+  "UNRESOLVED": 157,
+  "MARKET": 8
  },
  "coverage": {
-  "resolved": 123,
-  "unresolved": 141,
+  "resolved": 107,
+  "unresolved": 157,
   "total": 264
  },
  "debug": {
-  "generated_at": "2026-10-21T21:35:48.440801+00:00",
+  "generated_at": "2026-10-21T21:59:33.077007+00:00",
   "pipeline": "v2",
   "hotspawn_total_fixtures": 12016,
   "hotspawn_lol_fixtures_alltime": 1501,
@@ -30,9 +30,9 @@
   },
   "lobby_html_bytes": 1985584,
   "lobby_permalinks_found": 195,
-  "pinnacle_matchups": 226,
-  "pinnacle_markets": 1002,
-  "pinnacle_moneyline_match_markets": 72,
+  "pinnacle_matchups": 239,
+  "pinnacle_markets": 1033,
+  "pinnacle_moneyline_match_markets": 80,
   "pinnacle_lol_matchups": 12,
   "pinnacle_lol_matchup_types": {
    "special": 3,
@@ -41,20 +41,141 @@
   "pinnacle_lol_priced": 9,
   "pinnacle_ok": true,
   "unibet_esports_events": 57,
-  "unibet_lol_priced": 9,
+  "unibet_lol_priced": 0,
   "unibet_ok": true,
   "polymarket_events": 159,
   "polymarket_2way_markets": 1996,
+  "leaguepedia_teams_from_cache": 0,
   "leaguepedia_competitions": 27,
-  "leaguepedia_cargo_calls": 10,
-  "leaguepedia_teams_missing_after_pass1": 145,
-  "leaguepedia_budget_exceeded": true,
-  "leaguepedia_teams_skipped": 33,
-  "leaguepedia_games": 1599,
-  "elo_teams_rated": 188,
+  "leaguepedia_cargo_calls": 15,
+  "leaguepedia_teams_missing_after_pass1": 189,
+  "leaguepedia_games": 1472,
+  "elo_teams_rated": 197,
   "permalink_constructed": 69,
   "permalink_rule_hits": 180,
-  "permalink_rule_misses": 15
+  "permalink_rule_misses": 15,
+  "permalink_miss_examples": [
+   {
+    "id": "1071215",
+    "guess": "https://www.hotspawn.com/matches/playwell-r-d-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
+    "actual": "https://www.hotspawn.com/matches/playwell-rod-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
+    "team1": "Playwell Rød Q",
+    "team2": "Rich Gang",
+    "competition": "Komplettligaen 2026 Autumn"
+   },
+   {
+    "id": "1067675",
+    "guess": "https://www.hotspawn.com/matches/anyone-s-legend-vs-karmine-corp-worlds-2026-main-event-1067675",
+    "actual": "https://www.hotspawn.com/matches/anyones-legend-vs-karmine-corp-worlds-2026-main-event-1067675",
+    "team1": "Anyone's Legend",
+    "team2": "Karmine Corp",
+    "competition": "Worlds 2026 Main Event"
+   },
+   {
+    "id": "1067678",
+    "guess": "https://www.hotspawn.com/matches/l-s-vs-t1-worlds-2026-main-event-1067678",
+    "actual": "https://www.hotspawn.com/matches/los-vs-t1-worlds-2026-main-event-1067678",
+    "team1": "LØS",
+    "team2": "T1",
+    "competition": "Worlds 2026 Main Event"
+   },
+   {
+    "id": "1081083",
+    "guess": "https://www.hotspawn.com/matches/docta-esports-club-vs-cl-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
+    "actual": "https://www.hotspawn.com/matches/docta-esports-club-vs-cla-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
+    "team1": "Docta Esports Club",
+    "team2": "Clã NKZ Revengers",
+    "competition": "LigaGG CELOL B 2026 Split 2 Playoffs"
+   },
+   {
+    "id": "1074665",
+    "guess": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-rich-gang-sweden-rivals-league-season-2-1074665",
+    "actual": "https://www.hotspawn.com/matches/rich-gang-sweden-vs-northern-wolves-esports-rivals-league-season-2-1074665",
+    "team1": "Northern Wolves Esports",
+    "team2": "Rich Gang Sweden",
+    "competition": "RIVALS LEAGUE Season 2"
+   },
+   {
+    "id": "1075756",
+    "guess": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-m-nster-esports-prm-3rd-division-26-27-fall-1075756",
+    "actual": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075756",
+    "team1": "Packmiko E-Sports DACH",
+    "team2": "Atruvia Münster Esports",
+    "competition": "PRM 3rd Division 26-27 Fall"
+   },
+   {
+    "id": "1079031",
+    "guess": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-v-buffalo-prm-2nd-division-26-27-fall-1079031",
+    "actual": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079031",
+    "team1": "DKB XPERION NXT",
+    "team2": "Phong Vũ Buffalo",
+    "competition": "PRM 2nd Division 26-27 Fall"
+   },
+   {
+    "id": "1075734",
+    "guess": "https://www.hotspawn.com/matches/atruvia-m-nster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
+    "actual": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
+    "team1": "Atruvia Münster Esports",
+    "team2": "Defiance eSports",
+    "competition": "PRM 3rd Division 26-27 Fall"
+   },
+   {
+    "id": "1079145",
+    "guess": "https://www.hotspawn.com/matches/pegasus-esports-vs-jsk-academy-arabian-league-2nd-division-2026-summer-1079145",
+    "actual": "https://www.hotspawn.com/matches/jsk-academy-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079145",
+    "team1": "Pegasus Esports",
+    "team2": "JSK Academy",
+    "competition": "Arabian League 2nd Division 2026 Summer"
+   },
+   {
+    "id": "1079038",
+    "guess": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-v-buffalo-prm-2nd-division-26-27-fall-1079038",
+    "actual": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079038",
+    "team1": "VfB eSports",
+    "team2": "Phong Vũ Buffalo",
+    "competition": "PRM 2nd Division 26-27 Fall"
+   },
+   {
+    "id": "1082746",
+    "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
+    "actual": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
+    "team1": "Phong Vũ Buffalo",
+    "team2": "404 Multigaming e.V.",
+    "competition": "PRM 2nd Division 26-27 Fall"
+   },
+   {
+    "id": "1075785",
+    "guess": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-m-nster-esports-prm-3rd-division-26-27-fall-1075785",
+    "actual": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075785",
+    "team1": "REH Gaming",
+    "team2": "Atruvia Münster Esports",
+    "competition": "PRM 3rd Division 26-27 Fall"
+   },
+   {
+    "id": "1079053",
+    "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
+    "actual": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
+    "team1": "Phong Vũ Buffalo",
+    "team2": "MT1 Esports",
+    "competition": "PRM 2nd Division 26-27 Fall"
+   },
+   {
+    "id": "1079057",
+    "guess": "https://www.hotspawn.com/matches/phong-v-buffalo-vs-regnum4games-prm-2nd-division-26-27-fall-1079057",
+    "actual": "https://www.hotspawn.com/matches/regnum4games-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079057",
+    "team1": "Phong Vũ Buffalo",
+    "team2": "regnum4games",
+    "competition": "PRM 2nd Division 26-27 Fall"
+   },
+   {
+    "id": "1075793",
+    "guess": "https://www.hotspawn.com/matches/atruvia-m-nster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793",
+    "actual": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793",
+    "team1": "Atruvia Münster Esports",
+    "team2": "Kanji Esports AKA",
+    "competition": "PRM 3rd Division 26-27 Fall"
+   }
+  ]
  },
  "matches": [
   {
@@ -109,19 +230,19 @@
    "pick": "Mind Blue eSports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1428 (17 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1524 (14 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1428.4,
+     1523.6,
      1500.0
     ],
     "games": [
-     17,
+     14,
      0
     ],
     "recent_form": [
-     0.294,
+     0.444,
      null
     ]
    },
@@ -223,20 +344,20 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.4991,
-   "prob_team2": 0.5009,
+   "prob_team1": 0.4553,
+   "prob_team2": 0.5447,
    "pick": "Finnish Red Mafia",
-   "pick_prob": 0.5009,
+   "pick_prob": 0.5447,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1489 (3 games) vs 1492 (10 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1425 (6 games) vs 1492 (10 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1489.2,
+     1425.4,
      1492.2
     ],
     "games": [
-     3,
+     6,
      10
     ],
     "recent_form": [
@@ -320,16 +441,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: P11 Esports",
-     "url": "https://lol.fandom.com/wiki/P11_Esports"
-    },
-    {
-     "label": "Leaguepedia: HANGMEN",
-     "url": "https://lol.fandom.com/wiki/HANGMEN"
     },
     {
      "label": "Hotspawn match page",
@@ -342,27 +455,14 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5259,
-   "prob_team2": 0.4741,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "P11 Esports",
-   "pick_prob": 0.5259,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1570 (11 games) vs 1532 (13 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
-   "detail": {
-    "elo": [
-     1570.3,
-     1531.5
-    ],
-    "games": [
-     11,
-     13
-    ],
-    "recent_form": [
-     0.727,
-     0.615
-    ]
-   },
+   "pick_prob": 0.5,
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -390,8 +490,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Triforce Esport",
+     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
+    },
+    {
+     "label": "Leaguepedia: Venus",
+     "url": "https://lol.fandom.com/wiki/Venus"
     },
     {
      "label": "Hotspawn match page",
@@ -408,10 +516,23 @@
    "prob_team2": 0.5,
    "pick": "Triforce Esport",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1449 (6 games) vs 1500 (0 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1449.3,
+     1500.0
+    ],
+    "games": [
+     6,
+     0
+    ],
+    "recent_form": [
+     0.167,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -586,8 +707,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Solid Gaming",
+     "url": "https://lol.fandom.com/wiki/Solid_Gaming"
+    },
+    {
+     "label": "Leaguepedia: VES Japan",
+     "url": "https://lol.fandom.com/wiki/VES_Japan"
     },
     {
      "label": "Hotspawn match page",
@@ -604,10 +733,23 @@
    "prob_team2": 0.5,
    "pick": "Solid Gaming",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1524 (4 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1523.9
+    ],
+    "games": [
+     0,
+     4
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -635,16 +777,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Mixlag fra Trondheim",
-     "url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim"
-    },
-    {
-     "label": "Leaguepedia: CNG Royal",
-     "url": "https://lol.fandom.com/wiki/CNG_Royal"
     },
     {
      "label": "Hotspawn match page",
@@ -661,23 +795,10 @@
    "prob_team2": 0.5,
    "pick": "Mixlag fra Trondheim",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1474 (4 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1473.6
-    ],
-    "games": [
-     0,
-     4
-    ],
-    "recent_form": [
-     null,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -732,19 +853,19 @@
    "pick": "Frost Tails",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1515 (21 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1524 (39 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1514.6,
+     1523.5,
      1500.0
     ],
     "games": [
-     21,
+     39,
      0
     ],
     "recent_form": [
-     0.524,
+     0.586,
      null
     ]
    },
@@ -895,24 +1016,24 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5167,
-   "prob_team2": 0.4833,
+   "prob_team1": 0.5055,
+   "prob_team2": 0.4945,
    "pick": "Invictus Team",
-   "pick_prob": 0.5167,
+   "pick_prob": 0.5055,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1456 (10 games) vs 1433 (10 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1484 (1 games) vs 1434 (10 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1455.9,
-     1432.7
+     1483.9,
+     1433.5
     ],
     "games": [
-     10,
+     1,
      10
     ],
     "recent_form": [
-     0.3,
+     0.0,
      0.2
     ]
    },
@@ -970,20 +1091,20 @@
    "pick": "LANdits",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1503 (14 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1641 (73 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1503.3
+     1641.3
     ],
     "games": [
      0,
-     14
+     73
     ],
     "recent_form": [
      null,
-     0.5
+     0.758
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1013,8 +1134,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: The Bandits Academy",
+     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
+    },
+    {
+     "label": "Leaguepedia: Triforce Esport",
+     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
     },
     {
      "label": "Hotspawn match page",
@@ -1031,10 +1160,23 @@
    "prob_team2": 0.5,
    "pick": "The Bandits Academy",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1449 (6 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1449.3
+    ],
+    "games": [
+     0,
+     6
+    ],
+    "recent_form": [
+     null,
+     0.167
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -1089,19 +1231,19 @@
    "pick": "Lund Esports Organization",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1460 (13 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1523 (2 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1460.1,
+     1522.9,
      1500.0
     ],
     "games": [
-     13,
+     2,
      0
     ],
     "recent_form": [
-     0.0,
+     1.0,
      null
     ]
    },
@@ -1181,16 +1323,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
-    },
-    {
-     "label": "Leaguepedia: Lundqvist Lightside",
-     "url": "https://lol.fandom.com/wiki/Lundqvist_Lightside"
     },
     {
      "label": "Hotspawn match page",
@@ -1207,23 +1341,10 @@
    "prob_team2": 0.5,
    "pick": "Karolinerna Black",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1560 (4 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1559.8
-    ],
-    "games": [
-     0,
-     4
-    ],
-    "recent_form": [
-     null,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -1300,16 +1421,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: EXILE esports Academy",
-     "url": "https://lol.fandom.com/wiki/EXILE_esports_Academy"
-    },
-    {
-     "label": "Leaguepedia: Mighty Eagles",
-     "url": "https://lol.fandom.com/wiki/Mighty_Eagles"
     },
     {
      "label": "Hotspawn match page",
@@ -1322,27 +1435,14 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5013,
-   "prob_team2": 0.4987,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "EXILE esports Academy",
-   "pick_prob": 0.5013,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1496 (14 games) vs 1494 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
-   "detail": {
-    "elo": [
-     1496.4,
-     1493.9
-    ],
-    "games": [
-     14,
-     12
-    ],
-    "recent_form": [
-     0.5,
-     0.5
-    ]
-   },
+   "pick_prob": 0.5,
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -1392,24 +1492,24 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.4416,
-   "prob_team2": 0.5584,
+   "prob_team1": 0.4679,
+   "prob_team2": 0.5321,
    "pick": "Smá Nibu",
-   "pick_prob": 0.5584,
+   "pick_prob": 0.5321,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1507 (13 games) vs 1585 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (4 games) vs 1584 (12 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1507.3,
-     1585.1
+     1500.0,
+     1584.3
     ],
     "games": [
-     13,
+     4,
      12
     ],
     "recent_form": [
-     0.538,
+     0.5,
      0.833
     ]
    },
@@ -1467,20 +1567,20 @@
    "pick": "Fenrir",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1416 (12 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1500 (4 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1416.3
+     1500.2
     ],
     "games": [
      0,
-     12
+     4
     ],
     "recent_form": [
      null,
-     0.167
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1532,25 +1632,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.3628,
-   "prob_team2": 0.6372,
+   "prob_team1": 0.4546,
+   "prob_team2": 0.5454,
    "pick": "Whisky",
-   "pick_prob": 0.6372,
+   "pick_prob": 0.5454,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1378 (10 games) vs 1588 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1383 (10 games) vs 1500 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1377.6,
-     1588.0
+     1382.6,
+     1500.1
     ],
     "games": [
      10,
-     12
+     4
     ],
     "recent_form": [
      0.0,
-     0.833
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1602,25 +1702,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5,
-   "prob_team2": 0.5,
+   "prob_team1": 0.5372,
+   "prob_team2": 0.4628,
    "pick": "Triforce Esport",
-   "pick_prob": 0.5,
+   "pick_prob": 0.5372,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1422 (9 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1449 (6 games) vs 1349 (38 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1500.0,
-     1421.7
+     1449.3,
+     1349.3
     ],
     "games": [
-     0,
-     9
+     6,
+     38
     ],
     "recent_form": [
-     null,
-     0.111
+     0.167,
+     0.067
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1775,20 +1875,20 @@
    "pick": "Team Lucidity Esports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1460 (13 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1523 (2 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1460.1
+     1522.9
     ],
     "games": [
      0,
-     13
+     2
     ],
     "recent_form": [
      null,
-     0.0
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1845,20 +1945,20 @@
    "pick": "Fenrir",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1455 (12 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1497 (4 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1455.2
+     1496.7
     ],
     "games": [
      0,
-     12
+     4
     ],
     "recent_form": [
      null,
-     0.333
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1910,25 +2010,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.4721,
-   "prob_team2": 0.5279,
+   "prob_team1": 0.4546,
+   "prob_team2": 0.5454,
    "pick": "Grísirnir",
-   "pick_prob": 0.5279,
+   "pick_prob": 0.5454,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1378 (10 games) vs 1416 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1383 (10 games) vs 1500 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1377.6,
-     1416.3
+     1382.6,
+     1500.2
     ],
     "games": [
      10,
-     12
+     4
     ],
     "recent_form": [
      0.0,
-     0.167
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -1980,24 +2080,24 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5014,
-   "prob_team2": 0.4986,
-   "pick": "Whisky",
-   "pick_prob": 0.5014,
+   "prob_team1": 0.468,
+   "prob_team2": 0.532,
+   "pick": "Smá Nibu",
+   "pick_prob": 0.532,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1588 (12 games) vs 1585 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (4 games) vs 1584 (12 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1588.0,
-     1585.1
+     1500.1,
+     1584.3
     ],
     "games": [
-     12,
+     4,
      12
     ],
     "recent_form": [
-     0.833,
+     0.5,
      0.833
     ]
    },
@@ -2055,20 +2155,20 @@
    "pick": "Team VS Esport",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1533 (10 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1486 (6 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1533.3
+     1486.5
     ],
     "games": [
      0,
-     10
+     6
     ],
     "recent_form": [
      null,
-     0.7
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -2120,25 +2220,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5399,
-   "prob_team2": 0.4601,
+   "prob_team1": 0.5008,
+   "prob_team2": 0.4992,
    "pick": "Chuds",
-   "pick_prob": 0.5399,
+   "pick_prob": 0.5008,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1507 (13 games) vs 1455 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (4 games) vs 1497 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1507.3,
-     1455.2
+     1500.0,
+     1496.7
     ],
     "games": [
-     13,
-     12
+     4,
+     4
     ],
     "recent_form": [
-     0.538,
-     0.333
+     0.5,
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -2195,11 +2295,11 @@
    "pick": "Rift Runners",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1378 (10 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1383 (10 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1377.6,
+     1382.6,
      1500.0
     ],
     "games": [
@@ -2260,25 +2360,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.6239,
-   "prob_team2": 0.3761,
+   "prob_team1": 0.532,
+   "prob_team2": 0.468,
    "pick": "Smá Nibu",
-   "pick_prob": 0.6239,
+   "pick_prob": 0.532,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1585 (12 games) vs 1416 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1584 (12 games) vs 1500 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1585.1,
-     1416.3
+     1584.3,
+     1500.2
     ],
     "games": [
      12,
-     12
+     4
     ],
     "recent_form": [
      0.833,
-     0.167
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -2335,20 +2435,20 @@
    "pick": "Team Lucidity Esports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1460 (13 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1523 (2 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1460.1
+     1522.9
     ],
     "games": [
      0,
-     13
+     2
     ],
     "recent_form": [
      null,
-     0.0
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -2378,16 +2478,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: OnlyWinByFF",
-     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
-    },
-    {
-     "label": "Leaguepedia: B2U",
-     "url": "https://lol.fandom.com/wiki/B2U"
     },
     {
      "label": "Hotspawn match page",
@@ -2404,23 +2496,10 @@
    "prob_team2": 0.5,
    "pick": "OnlyWinByFF",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1548 (32 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1548.3
-    ],
-    "games": [
-     0,
-     32
-    ],
-    "recent_form": [
-     null,
-     0.583
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -2519,24 +2598,24 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.4581,
-   "prob_team2": 0.5419,
+   "prob_team1": 0.4992,
+   "prob_team2": 0.5008,
    "pick": "Slam Dunk",
-   "pick_prob": 0.5419,
+   "pick_prob": 0.5008,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1444 (4 games) vs 1529 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1525 (3 games) vs 1528 (8 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1444.5,
-     1528.7
+     1525.2,
+     1527.9
     ],
     "games": [
-     4,
+     3,
      8
     ],
     "recent_form": [
-     0.0,
+     null,
      0.625
     ]
    },
@@ -2567,16 +2646,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
-    },
-    {
-     "label": "Leaguepedia: Solid Gaming",
-     "url": "https://lol.fandom.com/wiki/Solid_Gaming"
     },
     {
      "label": "Hotspawn match page",
@@ -2593,23 +2664,10 @@
    "prob_team2": 0.5,
    "pick": "Volda E-Sport",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1496 (3 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1495.8,
-     1500.0
-    ],
-    "games": [
-     3,
-     0
-    ],
-    "recent_form": [
-     0.333,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -2637,16 +2695,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: 2 Massive",
-     "url": "https://lol.fandom.com/wiki/2_Massive"
-    },
-    {
-     "label": "Leaguepedia: Team Lucidity Esports",
-     "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
     },
     {
      "label": "Hotspawn match page",
@@ -2663,23 +2713,10 @@
    "prob_team2": 0.5,
    "pick": "2 Massive",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1445 (4 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1445.2,
-     1500.0
-    ],
-    "games": [
-     4,
-     0
-    ],
-    "recent_form": [
-     0.0,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -2707,16 +2744,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Northern Wolves Esports",
-     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
-    },
-    {
-     "label": "Leaguepedia: B2U",
-     "url": "https://lol.fandom.com/wiki/B2U"
     },
     {
      "label": "Hotspawn match page",
@@ -2733,23 +2762,10 @@
    "prob_team2": 0.5,
    "pick": "Northern Wolves Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1548 (32 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1548.3
-    ],
-    "games": [
-     0,
-     32
-    ],
-    "recent_form": [
-     null,
-     0.583
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -2946,25 +2962,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.4446,
-   "prob_team2": 0.5554,
+   "prob_team1": 0.4554,
+   "prob_team2": 0.5446,
    "pick": "Cool Beans Team",
-   "pick_prob": 0.5554,
+   "pick_prob": 0.5446,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1378 (10 games) vs 1455 (12 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1383 (10 games) vs 1497 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1377.6,
-     1455.2
+     1382.6,
+     1496.7
     ],
     "games": [
      10,
-     12
+     4
     ],
     "recent_form": [
      0.0,
-     0.333
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -3021,11 +3037,11 @@
    "pick": "Smá Nibu",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1585 (12 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1584 (12 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1585.1,
+     1584.3,
      1500.0
     ],
     "games": [
@@ -3086,25 +3102,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5598,
-   "prob_team2": 0.4402,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "Whisky",
-   "pick_prob": 0.5598,
+   "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1588 (12 games) vs 1507 (13 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (4 games) vs 1500 (4 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1588.0,
-     1507.3
+     1500.1,
+     1500.0
     ],
     "games": [
-     12,
-     13
+     4,
+     4
     ],
     "recent_form": [
-     0.833,
-     0.538
+     0.5,
+     0.5
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -3210,19 +3226,19 @@
    "pick": "Meavedron Benelux",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1533 (10 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1486 (6 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1533.3,
+     1486.5,
      1500.0
     ],
     "games": [
-     10,
+     6,
      0
     ],
     "recent_form": [
-     0.7,
+     0.5,
      null
     ]
    },
@@ -3253,8 +3269,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Nameless",
+     "url": "https://lol.fandom.com/wiki/Nameless"
+    },
+    {
+     "label": "Leaguepedia: Triforce Esport",
+     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
     },
     {
      "label": "Hotspawn match page",
@@ -3271,10 +3295,23 @@
    "prob_team2": 0.5,
    "pick": "Nameless",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1449 (6 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1449.3
+    ],
+    "games": [
+     0,
+     6
+    ],
+    "recent_form": [
+     null,
+     0.167
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -3422,25 +3459,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": true,
-   "prob_team1": 0.5838,
-   "prob_team2": 0.4162,
+   "prob_team1": 0.5209,
+   "prob_team2": 0.4791,
    "pick": "Void Walkers",
-   "pick_prob": 0.5838,
+   "pick_prob": 0.5209,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1577 (13 games) vs 1451 (10 games) over the last 420 days",
-   "confidence": "Medium — modelled from official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1441 (7 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1576.6,
-     1451.3
+     1514.7,
+     1440.9
     ],
     "games": [
-     13,
-     10
+     3,
+     7
     ],
     "recent_form": [
-     0.769,
-     0.3
+     0.667,
+     0.2
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -3911,8 +3948,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Phenti",
+     "url": "https://lol.fandom.com/wiki/Phenti"
+    },
+    {
+     "label": "Leaguepedia: VES Japan",
+     "url": "https://lol.fandom.com/wiki/VES_Japan"
     },
     {
      "label": "Hotspawn match page",
@@ -3929,10 +3974,23 @@
    "prob_team2": 0.5,
    "pick": "Phenti",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1524 (4 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1523.9
+    ],
+    "games": [
+     0,
+     4
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -4080,25 +4138,25 @@
    ],
    "open_for_picks": false,
    "stale_listing": false,
-   "prob_team1": 0.5133,
-   "prob_team2": 0.4867,
-   "pick": "Slam Dunk",
-   "pick_prob": 0.5133,
+   "prob_team1": 0.4985,
+   "prob_team2": 0.5015,
+   "pick": "JSK Academy",
+   "pick_prob": 0.5015,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1529 (8 games) vs 1506 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1528 (8 games) vs 1530 (9 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1528.7,
-     1505.8
+     1527.9,
+     1530.4
     ],
     "games": [
      8,
-     6
+     9
     ],
     "recent_form": [
      0.625,
-     0.5
+     0.667
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -4177,19 +4235,11 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Pinnacle moneyline Solary (105) vs Galions (-127) — de-vigged 46.6% / 53.4%",
+     "label": "Pinnacle moneyline Solary (116) vs Galions (-141) — de-vigged 44.2% / 55.8%",
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
-     "label": "Unibet (Kambi) Match Odds Solary (18.70) vs Galions (18.30) — de-vigged 49.5% / 50.5%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: Galions vs Solary - Game 1 Winner",
-     "url": "https://polymarket.com/event/lol-gal-sly-2026-10-22"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-gal-sly-2026-10-22"
     },
     {
@@ -4203,15 +4253,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5222,
-   "prob_team2": 0.4778,
+   "prob_team1": 0.5438,
+   "prob_team2": 0.4562,
    "pick": "Galions",
-   "pick_prob": 0.5222,
+   "pick_prob": 0.5438,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Solary (105) vs Galions (-127) — de-vigged 46.6% / 53.4% | Unibet (Kambi) Match Odds Solary (18.70) vs Galions (18.30) — de-vigged 49.5% / 50.5% | Polymarket: LoL: Galions vs Solary - Game 1 Winner",
+   "evidence": "Pinnacle moneyline Solary (116) vs Galions (-141) — de-vigged 44.2% / 55.8% | Polymarket: LoL: Galions vs Solary - Game 1 Winner",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
-    "books": 3
+    "books": 2
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -4329,8 +4379,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T15:00:00+00:00",
    "lock_utc": "2026-10-22T14:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 90,
+   "crowd_pct_team2": 10,
    "total_picks": 29,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218",
    "hotspawn_match_url_verified": true,
@@ -4338,16 +4388,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Volda E-Sport",
-     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
-    },
-    {
-     "label": "Leaguepedia: CNG Royal",
-     "url": "https://lol.fandom.com/wiki/CNG_Royal"
     },
     {
      "label": "Hotspawn match page",
@@ -4360,27 +4402,14 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5064,
-   "prob_team2": 0.4936,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "Volda E-Sport",
-   "pick_prob": 0.5064,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1496 (3 games) vs 1474 (4 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
-   "detail": {
-    "elo": [
-     1495.8,
-     1473.6
-    ],
-    "games": [
-     3,
-     4
-    ],
-    "recent_form": [
-     0.333,
-     null
-    ]
-   },
+   "pick_prob": 0.5,
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -4448,8 +4477,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T16:30:00+00:00",
    "lock_utc": "2026-10-22T16:25:00+00:00",
-   "crowd_pct_team1": 10,
-   "crowd_pct_team2": 90,
+   "crowd_pct_team1": 14,
+   "crowd_pct_team2": 86,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667",
    "hotspawn_match_url_verified": true,
@@ -4497,8 +4526,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T17:30:00+00:00",
    "lock_utc": "2026-10-22T17:25:00+00:00",
-   "crowd_pct_team1": 90,
-   "crowd_pct_team2": 10,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 30,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/blackdivision-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075736",
    "hotspawn_match_url_verified": true,
@@ -4546,8 +4575,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T18:00:00+00:00",
    "lock_utc": "2026-10-22T17:55:00+00:00",
-   "crowd_pct_team1": 20,
-   "crowd_pct_team2": 80,
+   "crowd_pct_team1": 27,
+   "crowd_pct_team2": 73,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/absolved-vs-the-bandits-uk-4-nations-2026-halloween-heist-1081651",
    "hotspawn_match_url_verified": true,
@@ -4555,16 +4584,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Absolved",
-     "url": "https://lol.fandom.com/wiki/Absolved"
-    },
-    {
-     "label": "Leaguepedia: The Bandits UK",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_UK"
     },
     {
      "label": "Hotspawn match page",
@@ -4581,23 +4602,10 @@
    "prob_team2": 0.5,
    "pick": "Absolved",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1480 (10 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1480.3,
-     1500.0
-    ],
-    "games": [
-     10,
-     0
-    ],
-    "recent_form": [
-     0.333,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -4616,8 +4624,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T18:00:00+00:00",
    "lock_utc": "2026-10-22T17:55:00+00:00",
-   "crowd_pct_team1": 14,
-   "crowd_pct_team2": 86,
+   "crowd_pct_team1": 21,
+   "crowd_pct_team2": 79,
    "total_picks": 14,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/brod-n-friends-vs-crownless-4-nations-2026-halloween-heist-1081652",
    "hotspawn_match_url_verified": true,
@@ -4652,19 +4660,19 @@
    "pick": "Brod n Friends",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1506 (22 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1525 (2 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1505.6,
+     1524.8,
      1500.0
     ],
     "games": [
-     22,
+     2,
      0
     ],
     "recent_form": [
-     0.556,
+     1.0,
      null
     ]
    },
@@ -4744,16 +4752,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: HL Tauri Esports",
-     "url": "https://lol.fandom.com/wiki/HL_Tauri_Esports"
-    },
-    {
-     "label": "Leaguepedia: Bulldog Esports",
-     "url": "https://lol.fandom.com/wiki/Bulldog_Esports"
     },
     {
      "label": "Hotspawn match page",
@@ -4770,23 +4770,10 @@
    "prob_team2": 0.5,
    "pick": "HL Tauri Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1504 (42 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1503.8
-    ],
-    "games": [
-     0,
-     42
-    ],
-    "recent_form": [
-     null,
-     0.438
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -4854,8 +4841,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T18:00:00+00:00",
    "lock_utc": "2026-10-22T17:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-vertex-vs-glorp-cat-4-nations-2026-halloween-heist-1081656",
    "hotspawn_match_url_verified": true,
@@ -4903,8 +4890,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T18:00:00+00:00",
    "lock_utc": "2026-10-22T17:55:00+00:00",
-   "crowd_pct_team1": 16,
-   "crowd_pct_team2": 84,
+   "crowd_pct_team1": 20,
+   "crowd_pct_team2": 80,
    "total_picks": 25,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-vds-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1082105",
    "hotspawn_match_url_verified": true,
@@ -4934,25 +4921,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5451,
-   "prob_team2": 0.4549,
+   "prob_team1": 0.5579,
+   "prob_team2": 0.4421,
    "pick": "Team VDS",
-   "pick_prob": 0.5451,
+   "pick_prob": 0.5579,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1521 (8 games) vs 1451 (10 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1543 (29 games) vs 1441 (7 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1520.6,
-     1451.3
+     1542.8,
+     1440.9
     ],
     "games": [
-     8,
-     10
+     29,
+     7
     ],
     "recent_form": [
      0.625,
-     0.3
+     0.2
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -4973,8 +4960,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T18:30:00+00:00",
    "lock_utc": "2026-10-22T18:25:00+00:00",
-   "crowd_pct_team1": 86,
-   "crowd_pct_team2": 14,
+   "crowd_pct_team1": 83,
+   "crowd_pct_team2": 17,
    "total_picks": 29,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/playwell-rod-q-vs-rich-gang-komplettligaen-2026-autumn-1071215",
    "hotspawn_match_url_verified": true,
@@ -5022,8 +5009,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T19:00:00+00:00",
    "lock_utc": "2026-10-22T18:55:00+00:00",
-   "crowd_pct_team1": 7,
-   "crowd_pct_team2": 93,
+   "crowd_pct_team1": 13,
+   "crowd_pct_team2": 87,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/abyssal-randoms-vs-good-chi-4-nations-2026-halloween-heist-1081659",
    "hotspawn_match_url_verified": true,
@@ -5080,16 +5067,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Bulldog Esports",
-     "url": "https://lol.fandom.com/wiki/Bulldog_Esports"
-    },
-    {
-     "label": "Leaguepedia: Ruddy Ultras",
-     "url": "https://lol.fandom.com/wiki/Ruddy_Ultras"
     },
     {
      "label": "Hotspawn match page",
@@ -5106,23 +5085,10 @@
    "prob_team2": 0.5,
    "pick": "Bulldog Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1504 (42 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1503.8,
-     1500.0
-    ],
-    "games": [
-     42,
-     0
-    ],
-    "recent_form": [
-     0.438,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -5141,8 +5107,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T19:00:00+00:00",
    "lock_utc": "2026-10-22T18:55:00+00:00",
-   "crowd_pct_team1": 60,
-   "crowd_pct_team2": 40,
+   "crowd_pct_team1": 67,
+   "crowd_pct_team2": 33,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/crownless-vs-team-vertex-4-nations-2026-halloween-heist-1081661",
    "hotspawn_match_url_verified": true,
@@ -5226,20 +5192,20 @@
    "pick": "Glorp Cat",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1506 (22 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1525 (2 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1505.6
+     1524.8
     ],
     "games": [
      0,
-     22
+     2
     ],
     "recent_form": [
      null,
-     0.556
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -5260,8 +5226,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T19:00:00+00:00",
    "lock_utc": "2026-10-22T18:55:00+00:00",
-   "crowd_pct_team1": 60,
-   "crowd_pct_team2": 40,
+   "crowd_pct_team1": 67,
+   "crowd_pct_team2": 33,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/inari-esports-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081663",
    "hotspawn_match_url_verified": true,
@@ -5309,8 +5275,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T19:00:00+00:00",
    "lock_utc": "2026-10-22T18:55:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 93,
+   "crowd_pct_team2": 7,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/the-bandits-uk-vs-pns-4-nations-2026-halloween-heist-1081664",
    "hotspawn_match_url_verified": true,
@@ -5407,8 +5373,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T20:00:00+00:00",
    "lock_utc": "2026-10-22T19:55:00+00:00",
-   "crowd_pct_team1": 53,
-   "crowd_pct_team2": 47,
+   "crowd_pct_team1": 60,
+   "crowd_pct_team2": 40,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/glorp-cat-vs-crownless-4-nations-2026-halloween-heist-1081668",
    "hotspawn_match_url_verified": true,
@@ -5456,8 +5422,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T20:00:00+00:00",
    "lock_utc": "2026-10-22T19:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/good-chi-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081669",
    "hotspawn_match_url_verified": true,
@@ -5514,16 +5480,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: PNS",
-     "url": "https://lol.fandom.com/wiki/PNS"
-    },
-    {
-     "label": "Leaguepedia: Absolved",
-     "url": "https://lol.fandom.com/wiki/Absolved"
     },
     {
      "label": "Hotspawn match page",
@@ -5540,23 +5498,10 @@
    "prob_team2": 0.5,
    "pick": "PNS",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1480 (10 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1480.3
-    ],
-    "games": [
-     0,
-     10
-    ],
-    "recent_form": [
-     null,
-     0.333
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -5575,8 +5520,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T20:00:00+00:00",
    "lock_utc": "2026-10-22T19:55:00+00:00",
-   "crowd_pct_team1": 13,
-   "crowd_pct_team2": 87,
+   "crowd_pct_team1": 20,
+   "crowd_pct_team2": 80,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/ruddy-ultras-vs-hl-tauri-esports-4-nations-2026-halloween-heist-1081671",
    "hotspawn_match_url_verified": true,
@@ -5624,8 +5569,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-22T20:00:00+00:00",
    "lock_utc": "2026-10-22T19:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-vertex-vs-brod-n-friends-4-nations-2026-halloween-heist-1081672",
    "hotspawn_match_url_verified": true,
@@ -5660,20 +5605,20 @@
    "pick": "Team Vertex",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1506 (22 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1525 (2 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1505.6
+     1524.8
     ],
     "games": [
      0,
-     22
+     2
     ],
     "recent_form": [
      null,
-     0.556
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -5694,8 +5639,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T15:00:00+00:00",
    "lock_utc": "2026-10-23T14:55:00+00:00",
-   "crowd_pct_team1": 14,
-   "crowd_pct_team2": 86,
+   "crowd_pct_team1": 18,
+   "crowd_pct_team2": 82,
    "total_picks": 28,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/rich-gang-vs-phenti-komplettligaen-2026-autumn-1071212",
    "hotspawn_match_url_verified": true,
@@ -5743,8 +5688,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T16:00:00+00:00",
    "lock_utc": "2026-10-23T15:55:00+00:00",
-   "crowd_pct_team1": 80,
-   "crowd_pct_team2": 20,
+   "crowd_pct_team1": 70,
+   "crowd_pct_team2": 30,
    "total_picks": 10,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/levelers-vs-mtn-esports-team-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082839",
    "hotspawn_match_url_verified": true,
@@ -5828,12 +5773,12 @@
    "pick": "Locked IN",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1542 (5 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1540 (5 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1541.9
+     1539.7
     ],
     "games": [
      0,
@@ -5862,8 +5807,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T16:00:00+00:00",
    "lock_utc": "2026-10-23T15:55:00+00:00",
-   "crowd_pct_team1": 13,
-   "crowd_pct_team2": 87,
+   "crowd_pct_team1": 20,
+   "crowd_pct_team2": 80,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1082745",
    "hotspawn_match_url_verified": true,
@@ -5893,25 +5838,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4535,
-   "prob_team2": 0.5465,
-   "pick": "Hannover Esports e.V.",
-   "pick_prob": 0.5465,
+   "prob_team1": 0.5405,
+   "prob_team2": 0.4595,
+   "pick": "Reveal Multigaming",
+   "pick_prob": 0.5405,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (9 games) vs 1585 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1519 (95 games) vs 1441 (7 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1526.8,
-     1585.3
+     1518.7,
+     1441.0
     ],
     "games": [
-     9,
-     8
+     95,
+     7
     ],
     "recent_form": [
-     0.571,
-     1.0
+     0.45,
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -5932,8 +5877,8 @@
    "tier_multiplier": 3,
    "start_utc": "2026-10-23T17:00:00+00:00",
    "lock_utc": "2026-10-23T16:55:00+00:00",
-   "crowd_pct_team1": 88,
-   "crowd_pct_team2": 13,
+   "crowd_pct_team1": 83,
+   "crowd_pct_team2": 17,
    "total_picks": 24,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/gen-g-vs-invictus-gaming-worlds-2026-main-event-1067878",
    "hotspawn_match_url_verified": true,
@@ -5946,10 +5891,6 @@
     },
     {
      "label": "Polymarket: LoL: Gen.G vs Invictus Gaming (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-gen-ig1-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-gen-ig1-2026-10-23"
     },
     {
@@ -6022,25 +5963,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4882,
-   "prob_team2": 0.5118,
-   "pick": "Pegasus Esports",
-   "pick_prob": 0.5118,
+   "prob_team1": 0.5238,
+   "prob_team2": 0.4762,
+   "pick": "NextGeneration Esports",
+   "pick_prob": 0.5238,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1444 (4 games) vs 1451 (10 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1525 (3 games) vs 1441 (7 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1444.5,
-     1451.3
+     1525.2,
+     1440.9
     ],
     "games": [
-     4,
-     10
+     3,
+     7
     ],
     "recent_form": [
-     0.0,
-     0.3
+     null,
+     0.2
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -6061,8 +6002,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T18:00:00+00:00",
    "lock_utc": "2026-10-23T17:55:00+00:00",
-   "crowd_pct_team1": 24,
-   "crowd_pct_team2": 76,
+   "crowd_pct_team1": 28,
+   "crowd_pct_team2": 72,
    "total_picks": 25,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-vds-vs-team-reds-arabian-league-2nd-division-2026-summer-1082106",
    "hotspawn_match_url_verified": true,
@@ -6092,20 +6033,20 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5207,
-   "prob_team2": 0.4793,
+   "prob_team1": 0.5362,
+   "prob_team2": 0.4638,
    "pick": "Team VDS",
-   "pick_prob": 0.5207,
+   "pick_prob": 0.5362,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1521 (8 games) vs 1493 (9 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1543 (29 games) vs 1482 (9 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1520.6,
-     1493.3
+     1542.8,
+     1482.5
     ],
     "games": [
-     8,
+     29,
      9
     ],
     "recent_form": [
@@ -6144,15 +6085,7 @@
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
-     "label": "Unibet (Kambi) Match Odds Hanwha Life Esports (11.90) vs TOP Esports (42.50) — de-vigged 78.1% / 21.9%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: Hanwha Life Esports vs Top Esports (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-hle1-tes-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-hle1-tes-2026-10-23"
     },
     {
@@ -6166,15 +6099,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.7869,
-   "prob_team2": 0.2131,
+   "prob_team1": 0.7855,
+   "prob_team2": 0.2145,
    "pick": "Hanwha Life Esports",
-   "pick_prob": 0.7869,
+   "pick_prob": 0.7855,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Hanwha Life (-490) vs Top Esports (355) — de-vigged 79.1% / 20.9% | Unibet (Kambi) Match Odds Hanwha Life Esports (11.90) vs TOP Esports (42.50) — de-vigged 78.1% / 21.9% | Polymarket: LoL: Hanwha Life Esports vs Top Esports (BO1) - Worlds Group Stage",
+   "evidence": "Pinnacle moneyline Hanwha Life (-490) vs Top Esports (355) — de-vigged 79.1% / 20.9% | Polymarket: LoL: Hanwha Life Esports vs Top Esports (BO1) - Worlds Group Stage",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
-    "books": 3
+    "books": 2
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6194,8 +6127,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T18:30:00+00:00",
    "lock_utc": "2026-10-23T18:25:00+00:00",
-   "crowd_pct_team1": 89,
-   "crowd_pct_team2": 11,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 27,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/acegaming-vs-babos-gaming-prm-2nd-division-26-27-fall-1079025",
    "hotspawn_match_url_verified": true,
@@ -6225,25 +6158,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4761,
-   "prob_team2": 0.5239,
+   "prob_team1": 0.4862,
+   "prob_team2": 0.5138,
    "pick": "Babos Gaming",
-   "pick_prob": 0.5239,
+   "pick_prob": 0.5138,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1406 (37 games) vs 1527 (2 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1460 (5 games) vs 1493 (16 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1405.8,
-     1526.9
+     1460.4,
+     1493.0
     ],
     "games": [
-     37,
-     2
+     5,
+     16
     ],
     "recent_form": [
      null,
-     1.0
+     0.571
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -6264,8 +6197,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-23T18:30:00+00:00",
    "lock_utc": "2026-10-23T18:25:00+00:00",
-   "crowd_pct_team1": 84,
-   "crowd_pct_team2": 16,
+   "crowd_pct_team1": 81,
+   "crowd_pct_team2": 19,
    "total_picks": 32,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/regold-esport-vs-team-300-prm-2nd-division-26-27-fall-1079849",
    "hotspawn_match_url_verified": true,
@@ -6295,24 +6228,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4971,
-   "prob_team2": 0.5029,
-   "pick": "Team 300",
-   "pick_prob": 0.5029,
+   "prob_team1": 0.5068,
+   "prob_team2": 0.4932,
+   "pick": "reGOLD eSport",
+   "pick_prob": 0.5068,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1497 (7 games) vs 1499 (4 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1531 (2 games) vs 1498 (4 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1496.8,
-     1498.7
+     1530.7,
+     1497.5
     ],
     "games": [
-     7,
+     2,
      4
     ],
     "recent_form": [
-     0.429,
+     1.0,
      0.5
     ]
    },
@@ -6347,15 +6280,7 @@
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
-     "label": "Unibet (Kambi) Match Odds Bilibili Gaming (11.50) vs Movistar KOI (48.00) — de-vigged 80.7% / 19.3%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: Bilibili Gaming vs Movistar KOI (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-blg-mkoi-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-blg-mkoi-2026-10-23"
     },
     {
@@ -6369,15 +6294,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.8062,
-   "prob_team2": 0.1938,
+   "prob_team1": 0.806,
+   "prob_team2": 0.194,
    "pick": "Bilibili Gaming",
-   "pick_prob": 0.8062,
+   "pick_prob": 0.806,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Bilibili (-512) vs Movistar KOI (368) — de-vigged 79.7% / 20.3% | Unibet (Kambi) Match Odds Bilibili Gaming (11.50) vs Movistar KOI (48.00) — de-vigged 80.7% / 19.3% | Polymarket: LoL: Bilibili Gaming vs Movistar KOI (BO1) - Worlds Group Stage",
+   "evidence": "Pinnacle moneyline Bilibili (-512) vs Movistar KOI (368) — de-vigged 79.7% / 20.3% | Polymarket: LoL: Bilibili Gaming vs Movistar KOI (BO1) - Worlds Group Stage",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
-    "books": 3
+    "books": 2
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6410,15 +6335,7 @@
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
-     "label": "Unibet (Kambi) Match Odds Anyone's Legend (14.30) vs Karmine Corp (26.50) — de-vigged 65.0% / 35.0%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: Anyone's Legend vs Karmine Corp (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-al-kc-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-al-kc-2026-10-23"
     },
     {
@@ -6432,15 +6349,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.6463,
-   "prob_team2": 0.3537,
+   "prob_team1": 0.6452,
+   "prob_team2": 0.3548,
    "pick": "Anyone's Legend",
-   "pick_prob": 0.6463,
+   "pick_prob": 0.6452,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Anyone's Legend (-200) vs Karmine Corp (167) — de-vigged 64.0% / 36.0% | Unibet (Kambi) Match Odds Anyone's Legend (14.30) vs Karmine Corp (26.50) — de-vigged 65.0% / 35.0% | Polymarket: LoL: Anyone's Legend vs Karmine Corp (BO1) - Worlds Group Stage",
+   "evidence": "Pinnacle moneyline Anyone's Legend (-200) vs Karmine Corp (167) — de-vigged 64.0% / 36.0% | Polymarket: LoL: Anyone's Legend vs Karmine Corp (BO1) - Worlds Group Stage",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
-    "books": 3
+    "books": 2
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6460,8 +6377,8 @@
    "tier_multiplier": 3,
    "start_utc": "2026-10-23T21:00:00+00:00",
    "lock_utc": "2026-10-23T20:55:00+00:00",
-   "crowd_pct_team1": 48,
-   "crowd_pct_team2": 52,
+   "crowd_pct_team1": 43,
+   "crowd_pct_team2": 57,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676",
    "hotspawn_match_url_verified": true,
@@ -6469,15 +6386,7 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Unibet (Kambi) Match Odds G2 Esports (21.20) vs Dplus KIA (16.50) — de-vigged 43.8% / 56.2%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: G2 Esports vs Dplus KIA (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-g2-dk-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-g2-dk-2026-10-23"
     },
     {
@@ -6491,15 +6400,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4163,
-   "prob_team2": 0.5837,
+   "prob_team1": 0.395,
+   "prob_team2": 0.605,
    "pick": "Dplus KIA",
-   "pick_prob": 0.5837,
+   "pick_prob": 0.605,
    "method": "MARKET",
-   "evidence": "Unibet (Kambi) Match Odds G2 Esports (21.20) vs Dplus KIA (16.50) — de-vigged 43.8% / 56.2% | Polymarket: LoL: G2 Esports vs Dplus KIA (BO1) - Worlds Group Stage",
-   "confidence": "High — external esportsbook / prediction-market price, de-vigged",
+   "evidence": "Polymarket: LoL: G2 Esports vs Dplus KIA (BO1) - Worlds Group Stage",
+   "confidence": "Medium-High — single external market price, de-vigged",
    "detail": {
-    "books": 2
+    "books": 1
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6532,15 +6441,7 @@
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
-     "label": "Unibet (Kambi) Match Odds Team Liquid (13.40) vs CTBC Flying Oyster (30.00) — de-vigged 69.1% / 30.9%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
-    },
-    {
      "label": "Polymarket: LoL: Team Liquid vs CTBC Flying Oyster (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-tl2-cfo-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-tl2-cfo-2026-10-23"
     },
     {
@@ -6554,15 +6455,15 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.7057,
-   "prob_team2": 0.2943,
+   "prob_team1": 0.7105,
+   "prob_team2": 0.2895,
    "pick": "Team Liquid",
-   "pick_prob": 0.7057,
+   "pick_prob": 0.7105,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Liquid (-285) vs CTBC Flying Oyster (228) — de-vigged 70.8% / 29.2% | Unibet (Kambi) Match Odds Team Liquid (13.40) vs CTBC Flying Oyster (30.00) — de-vigged 69.1% / 30.9% | Polymarket: LoL: Team Liquid vs CTBC Flying Oyster (BO1) - Worlds Group Stage",
+   "evidence": "Pinnacle moneyline Liquid (-285) vs CTBC Flying Oyster (228) — de-vigged 70.8% / 29.2% | Polymarket: LoL: Team Liquid vs CTBC Flying Oyster (BO1) - Worlds Group Stage",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
-    "books": 3
+    "books": 2
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6591,8 +6492,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Unibet (Kambi) Match Odds LØS (52.00) vs T1 (11.30) — de-vigged 17.9% / 82.1%",
-     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: LØS",
+     "url": "https://lol.fandom.com/wiki/L%C3%98S"
+    },
+    {
+     "label": "Leaguepedia: T1",
+     "url": "https://lol.fandom.com/wiki/T1"
     },
     {
      "label": "Hotspawn match page",
@@ -6605,15 +6514,26 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.1785,
-   "prob_team2": 0.8215,
-   "pick": "T1",
-   "pick_prob": 0.8215,
-   "method": "MARKET",
-   "evidence": "Unibet (Kambi) Match Odds LØS (52.00) vs T1 (11.30) — de-vigged 17.9% / 82.1%",
-   "confidence": "Medium-High — single external market price, de-vigged",
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
+   "pick": "LØS",
+   "pick_prob": 0.5,
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1557 (154 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
-    "books": 1
+    "elo": [
+     1500.0,
+     1557.3
+    ],
+    "games": [
+     0,
+     154
+    ],
+    "recent_form": [
+     null,
+     0.46
+    ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
@@ -6642,15 +6562,11 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Pinnacle moneyline Secret Whales (123) vs LYON (-145) — de-vigged 43.1% / 56.9%",
+     "label": "Pinnacle moneyline Secret Whales (129) vs LYON (-152) — de-vigged 42.0% / 58.0%",
      "url": "https://www.pinnacle.com/en/esports/league-of-legends/"
     },
     {
      "label": "Polymarket: LoL: Team Secret Whales vs LYON (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-tsw-ly-2026-10-23"
-    },
-    {
-     "label": "Polymarket market",
      "url": "https://polymarket.com/event/lol-tsw-ly-2026-10-23"
     },
     {
@@ -6664,12 +6580,12 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4257,
-   "prob_team2": 0.5743,
+   "prob_team1": 0.4183,
+   "prob_team2": 0.5817,
    "pick": "LYON",
-   "pick_prob": 0.5743,
+   "pick_prob": 0.5817,
    "method": "MARKET",
-   "evidence": "Pinnacle moneyline Secret Whales (123) vs LYON (-145) — de-vigged 43.1% / 56.9% | Polymarket: LoL: Team Secret Whales vs LYON (BO1) - Worlds Group Stage",
+   "evidence": "Pinnacle moneyline Secret Whales (129) vs LYON (-152) — de-vigged 42.0% / 58.0% | Polymarket: LoL: Team Secret Whales vs LYON (BO1) - Worlds Group Stage",
    "confidence": "High — external esportsbook / prediction-market price, de-vigged",
    "detail": {
     "books": 2
@@ -6741,8 +6657,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T15:00:00+00:00",
    "lock_utc": "2026-10-24T14:55:00+00:00",
-   "crowd_pct_team1": 5,
-   "crowd_pct_team2": 95,
+   "crowd_pct_team1": 10,
+   "crowd_pct_team2": 90,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/baronx-vs-marere-academy-ligagg-celol-b-2026-split-2-playoffs-1081085",
    "hotspawn_match_url_verified": true,
@@ -6848,16 +6764,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    },
-    {
-     "label": "Leaguepedia: El Menzah Esports",
-     "url": "https://lol.fandom.com/wiki/El_Menzah_Esports"
     },
     {
      "label": "Hotspawn match page",
@@ -6874,23 +6782,10 @@
    "prob_team2": 0.5,
    "pick": "JSK Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1459 (7 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1459.3,
-     1500.0
-    ],
-    "games": [
-     7,
-     0
-    ],
-    "recent_form": [
-     0.286,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -6958,8 +6853,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T16:00:00+00:00",
    "lock_utc": "2026-10-24T15:55:00+00:00",
-   "crowd_pct_team1": 12,
-   "crowd_pct_team2": 88,
+   "crowd_pct_team1": 15,
+   "crowd_pct_team2": 85,
    "total_picks": 26,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/olympique-mnihla-vs-supreme-leaders-tunisian-super-league-2026-1080925",
    "hotspawn_match_url_verified": true,
@@ -7043,20 +6938,20 @@
    "pick": "Simplicity Gaming",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1506 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1530 (9 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1505.8
+     1530.4
     ],
     "games": [
      0,
-     6
+     9
     ],
     "recent_form": [
      null,
-     0.5
+     0.667
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -7135,16 +7030,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: 2 Massive",
-     "url": "https://lol.fandom.com/wiki/2_Massive"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization OGs",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization_OGs"
     },
     {
      "label": "Hotspawn match page",
@@ -7161,23 +7048,10 @@
    "prob_team2": 0.5,
    "pick": "2 Massive",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1445 (4 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1445.2,
-     1500.0
-    ],
-    "games": [
-     4,
-     0
-    ],
-    "recent_form": [
-     0.0,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -7205,16 +7079,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: FlameHard",
-     "url": "https://lol.fandom.com/wiki/FlameHard"
-    },
-    {
-     "label": "Leaguepedia: B2U",
-     "url": "https://lol.fandom.com/wiki/B2U"
     },
     {
      "label": "Hotspawn match page",
@@ -7231,23 +7097,10 @@
    "prob_team2": 0.5,
    "pick": "FlameHard",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1548 (32 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1548.3
-    ],
-    "games": [
-     0,
-     32
-    ],
-    "recent_form": [
-     null,
-     0.583
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -7315,8 +7168,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T16:30:00+00:00",
    "lock_utc": "2026-10-24T16:25:00+00:00",
-   "crowd_pct_team1": 87,
-   "crowd_pct_team2": 13,
+   "crowd_pct_team1": 83,
+   "crowd_pct_team2": 17,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/onlywinbyff-vs-rich-gang-sweden-rivals-league-season-2-1074657",
    "hotspawn_match_url_verified": true,
@@ -7462,8 +7315,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T17:00:00+00:00",
    "lock_utc": "2026-10-24T16:55:00+00:00",
-   "crowd_pct_team1": 82,
-   "crowd_pct_team2": 18,
+   "crowd_pct_team1": 77,
+   "crowd_pct_team2": 23,
    "total_picks": 22,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075731",
    "hotspawn_match_url_verified": true,
@@ -7511,8 +7364,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T17:00:00+00:00",
    "lock_utc": "2026-10-24T16:55:00+00:00",
-   "crowd_pct_team1": 95,
-   "crowd_pct_team2": 5,
+   "crowd_pct_team1": 89,
+   "crowd_pct_team2": 11,
    "total_picks": 19,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/mazepa-vs-b2u-rivals-league-season-2-1082258",
    "hotspawn_match_url_verified": true,
@@ -7520,16 +7373,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Mazepa",
-     "url": "https://lol.fandom.com/wiki/Mazepa"
-    },
-    {
-     "label": "Leaguepedia: B2U",
-     "url": "https://lol.fandom.com/wiki/B2U"
     },
     {
      "label": "Hotspawn match page",
@@ -7546,23 +7391,10 @@
    "prob_team2": 0.5,
    "pick": "Mazepa",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1548 (32 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1548.3
-    ],
-    "games": [
-     0,
-     32
-    ],
-    "recent_form": [
-     null,
-     0.583
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -7612,25 +7444,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5134,
-   "prob_team2": 0.4866,
+   "prob_team1": 0.5114,
+   "prob_team2": 0.4886,
    "pick": "JSK Academy",
-   "pick_prob": 0.5134,
+   "pick_prob": 0.5114,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1506 (6 games) vs 1479 (10 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1530 (9 games) vs 1474 (2 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1505.8,
-     1479.1
+     1530.4,
+     1474.4
     ],
     "games": [
-     6,
-     10
+     9,
+     2
     ],
     "recent_form": [
-     0.5,
-     0.4
+     0.667,
+     0.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -7651,8 +7483,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-24T18:00:00+00:00",
    "lock_utc": "2026-10-24T17:55:00+00:00",
-   "crowd_pct_team1": 55,
-   "crowd_pct_team2": 45,
+   "crowd_pct_team1": 59,
+   "crowd_pct_team2": 41,
    "total_picks": 22,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/void-walkers-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079142",
    "hotspawn_match_url_verified": true,
@@ -7682,24 +7514,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.527,
-   "prob_team2": 0.473,
-   "pick": "Void Walkers",
-   "pick_prob": 0.527,
+   "prob_team1": 0.4962,
+   "prob_team2": 0.5038,
+   "pick": "Slam Dunk",
+   "pick_prob": 0.5038,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1577 (13 games) vs 1529 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1528 (8 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1576.6,
-     1528.7
+     1514.7,
+     1527.9
     ],
     "games": [
-     13,
+     3,
      8
     ],
     "recent_form": [
-     0.769,
+     0.667,
      0.625
     ]
    },
@@ -7721,8 +7553,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T15:00:00+00:00",
    "lock_utc": "2026-10-25T14:55:00+00:00",
-   "crowd_pct_team1": 22,
-   "crowd_pct_team2": 78,
+   "crowd_pct_team1": 28,
+   "crowd_pct_team2": 72,
    "total_picks": 18,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/docta-esports-club-vs-cla-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083",
    "hotspawn_match_url_verified": true,
@@ -7770,8 +7602,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T15:00:00+00:00",
    "lock_utc": "2026-10-25T14:55:00+00:00",
-   "crowd_pct_team1": 10,
-   "crowd_pct_team2": 90,
+   "crowd_pct_team1": 14,
+   "crowd_pct_team2": 86,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/maze-gg-vs-viktus-ligagg-celol-b-2026-split-2-playoffs-1081084",
    "hotspawn_match_url_verified": true,
@@ -7850,25 +7682,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4881,
-   "prob_team2": 0.5119,
-   "pick": "Hannover Esports e.V.",
-   "pick_prob": 0.5119,
+   "prob_team1": 0.5274,
+   "prob_team2": 0.4726,
+   "pick": "Babos Gaming",
+   "pick_prob": 0.5274,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (2 games) vs 1585 (8 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1493 (16 games) vs 1441 (7 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1526.9,
-     1585.3
+     1493.0,
+     1441.0
     ],
     "games": [
-     2,
-     8
+     16,
+     7
     ],
     "recent_form": [
-     1.0,
-     1.0
+     0.571,
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -7920,24 +7752,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5717,
-   "prob_team2": 0.4283,
+   "prob_team1": 0.5244,
+   "prob_team2": 0.4756,
    "pick": "Reveal Multigaming",
-   "pick_prob": 0.5717,
+   "pick_prob": 0.5244,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (9 games) vs 1406 (37 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1519 (95 games) vs 1460 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1526.8,
-     1405.8
+     1518.7,
+     1460.4
     ],
     "games": [
-     9,
-     37
+     95,
+     5
     ],
     "recent_form": [
-     0.571,
+     0.45,
      null
     ]
    },
@@ -8008,8 +7840,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T16:00:00+00:00",
    "lock_utc": "2026-10-25T15:55:00+00:00",
-   "crowd_pct_team1": 87,
-   "crowd_pct_team2": 13,
+   "crowd_pct_team1": 83,
+   "crowd_pct_team2": 17,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/acegaming-hearts-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075747",
    "hotspawn_match_url_verified": true,
@@ -8155,8 +7987,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T16:00:00+00:00",
    "lock_utc": "2026-10-25T15:55:00+00:00",
-   "crowd_pct_team1": 83,
-   "crowd_pct_team2": 17,
+   "crowd_pct_team1": 79,
+   "crowd_pct_team2": 21,
    "total_picks": 24,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075753",
    "hotspawn_match_url_verified": true,
@@ -8253,8 +8085,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T16:00:00+00:00",
    "lock_utc": "2026-10-25T15:55:00+00:00",
-   "crowd_pct_team1": 83,
-   "crowd_pct_team2": 17,
+   "crowd_pct_team1": 78,
+   "crowd_pct_team2": 22,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075755",
    "hotspawn_match_url_verified": true,
@@ -8289,16 +8121,16 @@
    "pick": "Neko Elite Kittens",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1512 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1483 (8 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1512.0
+     1483.3
     ],
     "games": [
      0,
-     3
+     8
     ],
     "recent_form": [
      null,
@@ -8323,8 +8155,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T16:00:00+00:00",
    "lock_utc": "2026-10-25T15:55:00+00:00",
-   "crowd_pct_team1": 22,
-   "crowd_pct_team2": 78,
+   "crowd_pct_team1": 26,
+   "crowd_pct_team2": 74,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/rich-gang-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075758",
    "hotspawn_match_url_verified": true,
@@ -8332,8 +8164,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Rich Gang",
+     "url": "https://lol.fandom.com/wiki/Rich_Gang"
+    },
+    {
+     "label": "Leaguepedia: LOOKSMAXXER",
+     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
     },
     {
      "label": "Hotspawn match page",
@@ -8350,10 +8190,23 @@
    "prob_team2": 0.5,
    "pick": "Rich Gang",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1540 (5 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1540.4
+    ],
+    "games": [
+     0,
+     5
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -8372,8 +8225,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T16:00:00+00:00",
    "lock_utc": "2026-10-25T15:55:00+00:00",
-   "crowd_pct_team1": 91,
-   "crowd_pct_team2": 9,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075761",
    "hotspawn_match_url_verified": true,
@@ -8421,8 +8274,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T17:00:00+00:00",
    "lock_utc": "2026-10-25T16:55:00+00:00",
-   "crowd_pct_team1": 13,
-   "crowd_pct_team2": 88,
+   "crowd_pct_team1": 17,
+   "crowd_pct_team2": 83,
    "total_picks": 24,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/black-lion-vs-glacial-guardians-prm-3rd-division-26-27-fall-1075750",
    "hotspawn_match_url_verified": true,
@@ -8470,8 +8323,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T17:00:00+00:00",
    "lock_utc": "2026-10-25T16:55:00+00:00",
-   "crowd_pct_team1": 78,
-   "crowd_pct_team2": 22,
+   "crowd_pct_team1": 74,
+   "crowd_pct_team2": 26,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-berlin-5-prm-3rd-division-26-27-fall-1075759",
    "hotspawn_match_url_verified": true,
@@ -8528,16 +8381,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    },
-    {
-     "label": "Leaguepedia: Enfida Esports",
-     "url": "https://lol.fandom.com/wiki/Enfida_Esports"
     },
     {
      "label": "Hotspawn match page",
@@ -8554,23 +8399,10 @@
    "prob_team2": 0.5,
    "pick": "JSK Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1459 (7 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1459.3,
-     1500.0
-    ],
-    "games": [
-     7,
-     0
-    ],
-    "recent_form": [
-     0.286,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -8638,8 +8470,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T17:00:00+00:00",
    "lock_utc": "2026-10-25T16:55:00+00:00",
-   "crowd_pct_team1": 17,
-   "crowd_pct_team2": 83,
+   "crowd_pct_team1": 22,
+   "crowd_pct_team2": 78,
    "total_picks": 23,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-el-menzah-esports-tunisian-super-league-2026-1080930",
    "hotspawn_match_url_verified": true,
@@ -8772,20 +8604,20 @@
    "pick": "Zahrouni Esports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1506 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1530 (9 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1505.8
+     1530.4
     ],
     "games": [
      0,
-     6
+     9
     ],
     "recent_form": [
      null,
-     0.5
+     0.667
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -8815,16 +8647,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: 2 Massive",
-     "url": "https://lol.fandom.com/wiki/2_Massive"
-    },
-    {
-     "label": "Leaguepedia: Tung Sahur Mid",
-     "url": "https://lol.fandom.com/wiki/Tung_Sahur_Mid"
     },
     {
      "label": "Hotspawn match page",
@@ -8841,23 +8665,10 @@
    "prob_team2": 0.5,
    "pick": "2 Massive",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1445 (4 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1445.2,
-     1500.0
-    ],
-    "games": [
-     4,
-     0
-    ],
-    "recent_form": [
-     0.0,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -8974,8 +8785,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T17:30:00+00:00",
    "lock_utc": "2026-10-25T17:25:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 95,
+   "crowd_pct_team2": 5,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-team-cd-rivals-league-season-2-1074666",
    "hotspawn_match_url_verified": true,
@@ -9023,8 +8834,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T18:00:00+00:00",
    "lock_utc": "2026-10-25T17:55:00+00:00",
-   "crowd_pct_team1": 83,
-   "crowd_pct_team2": 17,
+   "crowd_pct_team1": 79,
+   "crowd_pct_team2": 21,
    "total_picks": 24,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/blackdivision-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075751",
    "hotspawn_match_url_verified": true,
@@ -9121,8 +8932,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T18:30:00+00:00",
    "lock_utc": "2026-10-25T18:25:00+00:00",
-   "crowd_pct_team1": 19,
-   "crowd_pct_team2": 81,
+   "crowd_pct_team1": 24,
+   "crowd_pct_team2": 76,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-vfb-esports-prm-2nd-division-26-27-fall-1079029",
    "hotspawn_match_url_verified": true,
@@ -9152,25 +8963,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4927,
-   "prob_team2": 0.5073,
-   "pick": "VfB eSports",
-   "pick_prob": 0.5073,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
+   "pick": "404 Multigaming e.V.",
+   "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1489 (5 games) vs 1515 (3 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1431 (112 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1489.2,
-     1514.6
+     1500.0,
+     1430.8
     ],
     "games": [
-     5,
-     3
+     0,
+     112
     ],
     "recent_form": [
-     0.4,
-     0.667
+     null,
+     0.35
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -9191,8 +9002,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-25T18:30:00+00:00",
    "lock_utc": "2026-10-25T18:25:00+00:00",
-   "crowd_pct_team1": 71,
-   "crowd_pct_team2": 29,
+   "crowd_pct_team1": 67,
+   "crowd_pct_team2": 33,
    "total_picks": 21,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/locked-in-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079030",
    "hotspawn_match_url_verified": true,
@@ -9227,16 +9038,16 @@
    "pick": "Locked IN",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1490 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1469 (22 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1489.8
+     1469.4
     ],
     "games": [
      0,
-     6
+     22
     ],
     "recent_form": [
      null,
@@ -9270,16 +9081,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Lundqvist Darkside",
-     "url": "https://lol.fandom.com/wiki/Lundqvist_Darkside"
-    },
-    {
-     "label": "Leaguepedia: B2U",
-     "url": "https://lol.fandom.com/wiki/B2U"
     },
     {
      "label": "Hotspawn match page",
@@ -9296,23 +9099,10 @@
    "prob_team2": 0.5,
    "pick": "Lundqvist Darkside",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1548 (32 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1548.3
-    ],
-    "games": [
-     0,
-     32
-    ],
-    "recent_form": [
-     null,
-     0.583
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -9438,16 +9228,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Mental Rush",
-     "url": "https://lol.fandom.com/wiki/Mental_Rush"
-    },
-    {
-     "label": "Leaguepedia: Vitality Rising Bees",
-     "url": "https://lol.fandom.com/wiki/Vitality_Rising_Bees"
     },
     {
      "label": "Hotspawn match page",
@@ -9460,27 +9242,14 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4823,
-   "prob_team2": 0.5177,
-   "pick": "Vitality Rising Bees",
-   "pick_prob": 0.5177,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1543 (7 games) vs 1564 (5 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
-   "detail": {
-    "elo": [
-     1542.8,
-     1564.3
-    ],
-    "games": [
-     7,
-     5
-    ],
-    "recent_form": [
-     0.714,
-     1.0
-    ]
-   },
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
+   "pick": "Mental Rush",
+   "pick_prob": 0.5,
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -9535,15 +9304,15 @@
    "pick": "DKB XPERION NXT",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1490 (6 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1469 (22 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1489.8,
+     1469.4,
      1500.0
     ],
     "games": [
-     6,
+     22,
      0
     ],
     "recent_form": [
@@ -9600,24 +9369,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5474,
-   "prob_team2": 0.4526,
+   "prob_team1": 0.5035,
+   "prob_team2": 0.4965,
    "pick": "No Need Orga",
-   "pick_prob": 0.5474,
+   "pick_prob": 0.5035,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1484 (9 games) vs 1406 (37 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1469 (5 games) vs 1460 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1484.0,
-     1405.8
+     1468.6,
+     1460.4
     ],
     "games": [
-     9,
-     37
+     5,
+     5
     ],
     "recent_form": [
-     0.5,
+     0.333,
      null
     ]
    },
@@ -9639,8 +9408,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-27T19:30:00+00:00",
    "lock_utc": "2026-10-27T19:25:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 95,
+   "crowd_pct_team2": 5,
    "total_picks": 20,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/hannover-esports-e-v-vs-no-need-orga-prm-2nd-division-26-27-fall-1079033",
    "hotspawn_match_url_verified": true,
@@ -9670,25 +9439,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5667,
-   "prob_team2": 0.4333,
-   "pick": "Hannover Esports e.V.",
-   "pick_prob": 0.5667,
+   "prob_team1": 0.4883,
+   "prob_team2": 0.5117,
+   "pick": "No Need Orga",
+   "pick_prob": 0.5117,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1585 (8 games) vs 1484 (9 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1441 (7 games) vs 1469 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1585.3,
-     1484.0
+     1441.0,
+     1468.6
     ],
     "games": [
-     8,
-     9
+     7,
+     5
     ],
     "recent_form": [
-     1.0,
-     0.5
+     null,
+     0.333
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -9709,8 +9478,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-27T19:30:00+00:00",
    "lock_utc": "2026-10-27T19:25:00+00:00",
-   "crowd_pct_team1": 90,
-   "crowd_pct_team2": 10,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 20,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/vfb-esports-vs-regnum4games-prm-2nd-division-26-27-fall-1079034",
    "hotspawn_match_url_verified": true,
@@ -9740,25 +9509,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4948,
-   "prob_team2": 0.5052,
+   "prob_team1": 0.4713,
+   "prob_team2": 0.5287,
    "pick": "regnum4games",
-   "pick_prob": 0.5052,
+   "pick_prob": 0.5287,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1533 (10 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1431 (112 games) vs 1471 (12 games) over the last 420 days",
+   "confidence": "Medium — modelled from official match history",
    "detail": {
     "elo": [
-     1514.6,
-     1532.6
+     1430.8,
+     1470.8
     ],
     "games": [
-     3,
-     10
+     112,
+     12
     ],
     "recent_form": [
-     0.667,
-     0.571
+     0.35,
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -9779,8 +9548,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-28T17:30:00+00:00",
    "lock_utc": "2026-10-28T17:25:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 90,
+   "crowd_pct_team2": 10,
    "total_picks": 10,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-northern-wolves-esports-rivals-league-season-2-1082615",
    "hotspawn_match_url_verified": true,
@@ -9877,8 +9646,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-28T18:15:00+00:00",
    "lock_utc": "2026-10-28T18:10:00+00:00",
-   "crowd_pct_team1": 86,
-   "crowd_pct_team2": 14,
+   "crowd_pct_team1": 82,
+   "crowd_pct_team2": 18,
    "total_picks": 22,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734",
    "hotspawn_match_url_verified": true,
@@ -9957,25 +9726,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.532,
-   "prob_team2": 0.468,
+   "prob_team1": 0.5109,
+   "prob_team2": 0.4891,
    "pick": "Slam Dunk",
-   "pick_prob": 0.532,
+   "pick_prob": 0.5109,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1529 (8 games) vs 1479 (10 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1528 (8 games) vs 1474 (2 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1528.7,
-     1479.1
+     1527.9,
+     1474.4
     ],
     "games": [
      8,
-     10
+     2
     ],
     "recent_form": [
      0.625,
-     0.4
+     0.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -9996,8 +9765,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-29T18:15:00+00:00",
    "lock_utc": "2026-10-29T18:10:00+00:00",
-   "crowd_pct_team1": 88,
-   "crowd_pct_team2": 12,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 26,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-cloud-esport-prm-3rd-division-26-27-fall-1075737",
    "hotspawn_match_url_verified": true,
@@ -10045,8 +9814,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-29T19:00:00+00:00",
    "lock_utc": "2026-10-29T18:55:00+00:00",
-   "crowd_pct_team1": 94,
-   "crowd_pct_team2": 6,
+   "crowd_pct_team1": 89,
+   "crowd_pct_team2": 11,
    "total_picks": 18,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/jsk-academy-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079145",
    "hotspawn_match_url_verified": true,
@@ -10076,25 +9845,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4729,
-   "prob_team2": 0.5271,
+   "prob_team1": 0.4535,
+   "prob_team2": 0.5465,
    "pick": "JSK Academy",
-   "pick_prob": 0.5271,
+   "pick_prob": 0.5465,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1451 (10 games) vs 1506 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1441 (7 games) vs 1530 (9 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1451.3,
-     1505.8
+     1440.9,
+     1530.4
     ],
     "games": [
-     10,
-     6
+     7,
+     9
     ],
     "recent_form": [
-     0.3,
-     0.5
+     0.2,
+     0.667
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10146,25 +9915,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4528,
-   "prob_team2": 0.5472,
+   "prob_team1": 0.4857,
+   "prob_team2": 0.5143,
    "pick": "reGOLD eSport",
-   "pick_prob": 0.5472,
+   "pick_prob": 0.5143,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1406 (37 games) vs 1497 (7 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1460 (5 games) vs 1531 (2 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1405.8,
-     1496.8
+     1460.4,
+     1530.7
     ],
     "games": [
-     37,
-     7
+     5,
+     2
     ],
     "recent_form": [
      null,
-     0.429
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10216,24 +9985,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5095,
-   "prob_team2": 0.4905,
+   "prob_team1": 0.5036,
+   "prob_team2": 0.4964,
    "pick": "Reveal Multigaming",
-   "pick_prob": 0.5095,
+   "pick_prob": 0.5036,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (9 games) vs 1499 (4 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1519 (95 games) vs 1498 (4 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1526.8,
-     1498.7
+     1518.7,
+     1497.5
     ],
     "games": [
-     9,
+     95,
      4
     ],
     "recent_form": [
-     0.571,
+     0.45,
      0.5
     ]
    },
@@ -10286,25 +10055,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5272,
-   "prob_team2": 0.4728,
-   "pick": "Team Reds",
-   "pick_prob": 0.5272,
+   "prob_team1": 0.4878,
+   "prob_team2": 0.5122,
+   "pick": "NextGeneration Esports",
+   "pick_prob": 0.5122,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1493 (9 games) vs 1444 (4 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1482 (9 games) vs 1525 (3 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1493.3,
-     1444.5
+     1482.5,
+     1525.2
     ],
     "games": [
      9,
-     4
+     3
     ],
     "recent_form": [
      0.444,
-     0.0
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10356,25 +10125,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4796,
-   "prob_team2": 0.5204,
+   "prob_team1": 0.499,
+   "prob_team2": 0.501,
    "pick": "regnum4games",
-   "pick_prob": 0.5204,
+   "pick_prob": 0.501,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1490 (6 games) vs 1533 (10 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1469 (22 games) vs 1471 (12 games) over the last 420 days",
+   "confidence": "Medium — modelled from official match history",
    "detail": {
     "elo": [
-     1489.8,
-     1532.6
+     1469.4,
+     1470.8
     ],
     "games": [
-     6,
-     10
+     22,
+     12
     ],
     "recent_form": [
      0.333,
-     0.571
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10395,8 +10164,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-30T19:30:00+00:00",
    "lock_utc": "2026-10-30T19:25:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 94,
+   "crowd_pct_team2": 6,
    "total_picks": 18,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079038",
    "hotspawn_match_url_verified": true,
@@ -10431,19 +10200,19 @@
    "pick": "VfB eSports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1431 (112 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1514.6,
+     1430.8,
      1500.0
     ],
     "games": [
-     3,
+     112,
      0
     ],
     "recent_form": [
-     0.667,
+     0.35,
      null
     ]
    },
@@ -10465,8 +10234,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-31T17:00:00+00:00",
    "lock_utc": "2026-10-31T16:55:00+00:00",
-   "crowd_pct_team1": 17,
-   "crowd_pct_team2": 83,
+   "crowd_pct_team1": 22,
+   "crowd_pct_team2": 78,
    "total_picks": 18,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/jsk-academy-vs-supreme-leaders-tunisian-super-league-2026-1080933",
    "hotspawn_match_url_verified": true,
@@ -10501,19 +10270,19 @@
    "pick": "JSK Academy",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1506 (6 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1530 (9 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1505.8,
+     1530.4,
      1500.0
     ],
     "games": [
-     6,
+     9,
      0
     ],
     "recent_form": [
-     0.5,
+     0.667,
      null
     ]
    },
@@ -10544,16 +10313,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    },
-    {
-     "label": "Leaguepedia: Olympique Mnihla",
-     "url": "https://lol.fandom.com/wiki/Olympique_Mnihla"
     },
     {
      "label": "Hotspawn match page",
@@ -10570,23 +10331,10 @@
    "prob_team2": 0.5,
    "pick": "JSK Esports",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1459 (7 games) vs 1500 (0 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1459.3,
-     1500.0
-    ],
-    "games": [
-     7,
-     0
-    ],
-    "recent_form": [
-     0.286,
-     null
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -10605,8 +10353,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-31T17:00:00+00:00",
    "lock_utc": "2026-10-31T16:55:00+00:00",
-   "crowd_pct_team1": 6,
-   "crowd_pct_team2": 94,
+   "crowd_pct_team1": 11,
+   "crowd_pct_team2": 89,
    "total_picks": 18,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-enfida-esports-tunisian-super-league-2026-1080935",
    "hotspawn_match_url_verified": true,
@@ -10752,8 +10500,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-10-31T19:00:00+00:00",
    "lock_utc": "2026-10-31T18:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/void-walkers-vs-team-vds-arabian-league-2nd-division-2026-summer-1082107",
    "hotspawn_match_url_verified": true,
@@ -10783,24 +10531,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5302,
-   "prob_team2": 0.4698,
-   "pick": "Void Walkers",
-   "pick_prob": 0.5302,
+   "prob_team1": 0.4919,
+   "prob_team2": 0.5081,
+   "pick": "Team VDS",
+   "pick_prob": 0.5081,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1577 (13 games) vs 1521 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1543 (29 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1576.6,
-     1520.6
+     1514.7,
+     1542.8
     ],
     "games": [
-     13,
-     8
+     3,
+     29
     ],
     "recent_form": [
-     0.769,
+     0.667,
      0.625
     ]
    },
@@ -10853,25 +10601,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5088,
-   "prob_team2": 0.4912,
+   "prob_team1": 0.5103,
+   "prob_team2": 0.4897,
    "pick": "Babos Gaming",
-   "pick_prob": 0.5088,
+   "pick_prob": 0.5103,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (2 games) vs 1484 (9 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1493 (16 games) vs 1469 (5 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1526.9,
-     1484.0
+     1493.0,
+     1468.6
     ],
     "games": [
-     2,
-     9
+     16,
+     5
     ],
     "recent_form": [
-     1.0,
-     0.5
+     0.571,
+     0.333
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10923,25 +10671,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4617,
-   "prob_team2": 0.5383,
-   "pick": "Hannover Esports e.V.",
-   "pick_prob": 0.5383,
+   "prob_team1": 0.5202,
+   "prob_team2": 0.4798,
+   "pick": "Team 300",
+   "pick_prob": 0.5202,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1499 (4 games) vs 1585 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1498 (4 games) vs 1441 (7 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1498.7,
-     1585.3
+     1497.5,
+     1441.0
     ],
     "games": [
      4,
-     8
+     7
     ],
     "recent_form": [
      0.5,
-     1.0
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -10962,8 +10710,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 88,
-   "crowd_pct_team2": 12,
+   "crowd_pct_team1": 82,
+   "crowd_pct_team2": 18,
    "total_picks": 17,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/1-esport-club-frankfurt-e-v-vs-rich-gang-prm-3rd-division-26-27-fall-1075762",
    "hotspawn_match_url_verified": true,
@@ -11109,8 +10857,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 94,
-   "crowd_pct_team2": 6,
+   "crowd_pct_team1": 88,
+   "crowd_pct_team2": 12,
    "total_picks": 17,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/cloud-esport-vs-defiance-esports-prm-3rd-division-26-27-fall-1075765",
    "hotspawn_match_url_verified": true,
@@ -11194,16 +10942,16 @@
    "pick": "Eintracht Spandau Zwei",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1509 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1454 (81 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1509.2
+     1454.1
     ],
     "games": [
      0,
-     3
+     81
     ],
     "recent_form": [
      null,
@@ -11228,8 +10976,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 94,
-   "crowd_pct_team2": 6,
+   "crowd_pct_team1": 88,
+   "crowd_pct_team2": 12,
    "total_picks": 17,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/emperors-bremen-vs-neko-elite-kittens-prm-3rd-division-26-27-fall-1075767",
    "hotspawn_match_url_verified": true,
@@ -11326,8 +11074,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 6,
-   "crowd_pct_team2": 94,
+   "crowd_pct_team1": 13,
+   "crowd_pct_team2": 88,
    "total_picks": 16,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/kanji-esports-kin-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075770",
    "hotspawn_match_url_verified": true,
@@ -11375,8 +11123,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 0,
-   "crowd_pct_team2": 100,
+   "crowd_pct_team1": 6,
+   "crowd_pct_team2": 94,
    "total_picks": 17,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/looksmaxxer-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075771",
    "hotspawn_match_url_verified": true,
@@ -11384,8 +11132,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: LOOKSMAXXER",
+     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
+    },
+    {
+     "label": "Leaguepedia: Whalepower Humpbacks",
+     "url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks"
     },
     {
      "label": "Hotspawn match page",
@@ -11402,10 +11158,23 @@
    "prob_team2": 0.5,
    "pick": "LOOKSMAXXER",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1540 (5 games) vs 1500 (0 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1540.4,
+     1500.0
+    ],
+    "games": [
+     5,
+     0
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -11473,8 +11242,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 81,
-   "crowd_pct_team2": 19,
+   "crowd_pct_team1": 75,
+   "crowd_pct_team2": 25,
    "total_picks": 16,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/reh-gaming-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075769",
    "hotspawn_match_url_verified": true,
@@ -11571,8 +11340,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T16:00:00+00:00",
    "lock_utc": "2026-11-01T15:55:00+00:00",
-   "crowd_pct_team1": 88,
-   "crowd_pct_team2": 13,
+   "crowd_pct_team1": 81,
+   "crowd_pct_team2": 19,
    "total_picks": 16,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/team-300-white-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075775",
    "hotspawn_match_url_verified": true,
@@ -11705,15 +11474,15 @@
    "pick": "spongecord prime",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1512 (3 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1483 (8 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1512.0,
+     1483.3,
      1500.0
     ],
     "games": [
-     3,
+     8,
      0
     ],
     "recent_form": [
@@ -11873,19 +11642,19 @@
    "pick": "JSK Academy",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1506 (6 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1530 (9 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1505.8,
+     1530.4,
      1500.0
     ],
     "games": [
-     6,
+     9,
      0
     ],
     "recent_form": [
-     0.5,
+     0.667,
      null
     ]
    },
@@ -11965,16 +11734,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Simplicity Gaming",
-     "url": "https://lol.fandom.com/wiki/Simplicity_Gaming"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
     },
     {
      "label": "Hotspawn match page",
@@ -11991,23 +11752,10 @@
    "prob_team2": 0.5,
    "pick": "Simplicity Gaming",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1459 (7 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1459.3
-    ],
-    "games": [
-     0,
-     7
-    ],
-    "recent_form": [
-     null,
-     0.286
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -12026,8 +11774,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T17:00:00+00:00",
    "lock_utc": "2026-11-01T16:55:00+00:00",
-   "crowd_pct_team1": 94,
-   "crowd_pct_team2": 6,
+   "crowd_pct_team1": 88,
+   "crowd_pct_team2": 13,
    "total_picks": 16,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-supreme-leaders-tunisian-super-league-2026-1080942",
    "hotspawn_match_url_verified": true,
@@ -12111,19 +11859,19 @@
    "pick": "MT1 Esports",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1468 (12 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1565 (25 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1468.0,
+     1565.2,
      1500.0
     ],
     "games": [
-     12,
+     25,
      0
     ],
     "recent_form": [
-     0.333,
+     0.636,
      null
     ]
    },
@@ -12145,8 +11893,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-01T18:30:00+00:00",
    "lock_utc": "2026-11-01T18:25:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079042",
    "hotspawn_match_url_verified": true,
@@ -12176,25 +11924,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5314,
-   "prob_team2": 0.4686,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "The Bandits Prime",
-   "pick_prob": 0.5314,
+   "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1542 (5 games) vs 1489 (5 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1540 (5 games) vs 1500 (0 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1541.9,
-     1489.2
+     1539.7,
+     1500.0
     ],
     "games": [
      5,
-     5
+     0
     ],
     "recent_form": [
      0.8,
-     0.4
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -12215,8 +11963,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-03T17:00:00+00:00",
    "lock_utc": "2026-11-03T16:55:00+00:00",
-   "crowd_pct_team1": 93,
-   "crowd_pct_team2": 7,
+   "crowd_pct_team1": 87,
+   "crowd_pct_team2": 13,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/bvp-vs-no-need-orga-prm-2nd-division-26-27-fall-1079043",
    "hotspawn_match_url_verified": true,
@@ -12246,25 +11994,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4596,
-   "prob_team2": 0.5404,
+   "prob_team1": 0.4925,
+   "prob_team2": 0.5075,
    "pick": "No Need Orga",
-   "pick_prob": 0.5404,
+   "pick_prob": 0.5075,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1430 (6 games) vs 1484 (9 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1448 (4 games) vs 1469 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1430.2,
-     1484.0
+     1447.8,
+     1468.6
     ],
     "games": [
-     6,
-     9
+     4,
+     5
     ],
     "recent_form": [
      0.0,
-     0.5
+     0.333
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -12285,8 +12033,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-03T17:00:00+00:00",
    "lock_utc": "2026-11-03T16:55:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 80,
+   "crowd_pct_team2": 20,
    "total_picks": 5,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746",
    "hotspawn_match_url_verified": true,
@@ -12294,16 +12042,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Phong Vũ Buffalo",
-     "url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo"
-    },
-    {
-     "label": "Leaguepedia: 404 Multigaming e.V.",
-     "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
     },
     {
      "label": "Hotspawn match page",
@@ -12320,23 +12060,10 @@
    "prob_team2": 0.5,
    "pick": "Phong Vũ Buffalo",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1489 (5 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1489.2
-    ],
-    "games": [
-     0,
-     5
-    ],
-    "recent_form": [
-     null,
-     0.4
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -12355,8 +12082,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-03T19:30:00+00:00",
    "lock_utc": "2026-11-03T19:25:00+00:00",
-   "crowd_pct_team1": 87,
-   "crowd_pct_team2": 13,
+   "crowd_pct_team1": 80,
+   "crowd_pct_team2": 20,
    "total_picks": 15,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/mt1-esports-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079045",
    "hotspawn_match_url_verified": true,
@@ -12386,24 +12113,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4895,
-   "prob_team2": 0.5105,
-   "pick": "DKB XPERION NXT",
-   "pick_prob": 0.5105,
+   "prob_team1": 0.587,
+   "prob_team2": 0.413,
+   "pick": "MT1 Esports",
+   "pick_prob": 0.587,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1468 (12 games) vs 1490 (6 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1565 (25 games) vs 1469 (22 games) over the last 420 days",
+   "confidence": "Medium — modelled from official match history",
    "detail": {
     "elo": [
-     1468.0,
-     1489.8
+     1565.2,
+     1469.4
     ],
     "games": [
-     12,
-     6
+     25,
+     22
     ],
     "recent_form": [
-     0.333,
+     0.636,
      0.333
     ]
    },
@@ -12425,8 +12152,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-03T19:30:00+00:00",
    "lock_utc": "2026-11-03T19:25:00+00:00",
-   "crowd_pct_team1": 8,
-   "crowd_pct_team2": 92,
+   "crowd_pct_team1": 15,
+   "crowd_pct_team2": 85,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/regnum4games-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079046",
    "hotspawn_match_url_verified": true,
@@ -12456,24 +12183,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4882,
-   "prob_team2": 0.5118,
+   "prob_team1": 0.4712,
+   "prob_team2": 0.5288,
    "pick": "The Bandits Prime",
-   "pick_prob": 0.5118,
+   "pick_prob": 0.5288,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1533 (10 games) vs 1542 (5 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1471 (12 games) vs 1540 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1532.6,
-     1541.9
+     1470.8,
+     1539.7
     ],
     "games": [
-     10,
+     12,
      5
     ],
     "recent_form": [
-     0.571,
+     null,
      0.8
     ]
    },
@@ -12526,24 +12253,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4997,
-   "prob_team2": 0.5003,
-   "pick": "DKB XPERION NXT",
-   "pick_prob": 0.5003,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
+   "pick": "404 Multigaming e.V.",
+   "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1489 (5 games) vs 1490 (6 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1469 (22 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1489.2,
-     1489.8
+     1500.0,
+     1469.4
     ],
     "games": [
-     5,
-     6
+     0,
+     22
     ],
     "recent_form": [
-     0.4,
+     null,
      0.333
     ]
    },
@@ -12565,8 +12292,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-06T17:00:00+00:00",
    "lock_utc": "2026-11-06T16:55:00+00:00",
-   "crowd_pct_team1": 85,
-   "crowd_pct_team2": 15,
+   "crowd_pct_team1": 77,
+   "crowd_pct_team2": 23,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/locked-in-vs-vfb-esports-prm-2nd-division-26-27-fall-1079048",
    "hotspawn_match_url_verified": true,
@@ -12601,20 +12328,20 @@
    "pick": "Locked IN",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1515 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1431 (112 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1514.6
+     1430.8
     ],
     "games": [
      0,
-     3
+     112
     ],
     "recent_form": [
      null,
-     0.667
+     0.35
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -12635,8 +12362,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-06T19:30:00+00:00",
    "lock_utc": "2026-11-06T19:25:00+00:00",
-   "crowd_pct_team1": 92,
-   "crowd_pct_team2": 8,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/bvp-vs-babos-gaming-prm-2nd-division-26-27-fall-1079049",
    "hotspawn_match_url_verified": true,
@@ -12666,25 +12393,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4806,
-   "prob_team2": 0.5194,
+   "prob_team1": 0.4694,
+   "prob_team2": 0.5306,
    "pick": "Babos Gaming",
-   "pick_prob": 0.5194,
+   "pick_prob": 0.5306,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1430 (6 games) vs 1527 (2 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1448 (4 games) vs 1493 (16 games) over the last 420 days",
+   "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1430.2,
-     1526.9
+     1447.8,
+     1493.0
     ],
     "games": [
-     6,
-     2
+     4,
+     16
     ],
     "recent_form": [
      0.0,
-     1.0
+     0.571
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -12736,21 +12463,21 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5326,
-   "prob_team2": 0.4674,
+   "prob_team1": 0.5133,
+   "prob_team2": 0.4867,
    "pick": "Team 300",
-   "pick_prob": 0.5326,
+   "pick_prob": 0.5133,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1499 (4 games) vs 1406 (37 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1498 (4 games) vs 1460 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1498.7,
-     1405.8
+     1497.5,
+     1460.4
     ],
     "games": [
      4,
-     37
+     5
     ],
     "recent_form": [
      0.5,
@@ -12775,8 +12502,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-07T17:00:00+00:00",
    "lock_utc": "2026-11-07T16:55:00+00:00",
-   "crowd_pct_team1": 92,
-   "crowd_pct_team2": 8,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/el-menzah-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080943",
    "hotspawn_match_url_verified": true,
@@ -12855,25 +12582,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5252,
-   "prob_team2": 0.4748,
+   "prob_team1": 0.5,
+   "prob_team2": 0.5,
    "pick": "JSK Academy",
-   "pick_prob": 0.5252,
+   "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1506 (6 games) vs 1459 (7 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1530 (9 games) vs 1500 (0 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1505.8,
-     1459.3
+     1530.4,
+     1500.0
     ],
     "games": [
-     6,
-     7
+     9,
+     0
     ],
     "recent_form": [
-     0.5,
-     0.286
+     0.667,
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -12943,8 +12670,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-07T17:00:00+00:00",
    "lock_utc": "2026-11-07T16:55:00+00:00",
-   "crowd_pct_team1": 0,
-   "crowd_pct_team2": 100,
+   "crowd_pct_team1": 8,
+   "crowd_pct_team2": 92,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/supreme-leaders-vs-jendouba-esports-tunisian-super-league-2026-1080946",
    "hotspawn_match_url_verified": true,
@@ -13041,8 +12768,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 92,
-   "crowd_pct_team2": 8,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/acegaming-vs-bvp-prm-2nd-division-26-27-fall-1079051",
    "hotspawn_match_url_verified": true,
@@ -13072,21 +12799,21 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4883,
-   "prob_team2": 0.5117,
-   "pick": "BvP",
-   "pick_prob": 0.5117,
+   "prob_team1": 0.5046,
+   "prob_team2": 0.4954,
+   "pick": "AceGaming",
+   "pick_prob": 0.5046,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1406 (37 games) vs 1430 (6 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1460 (5 games) vs 1448 (4 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1405.8,
-     1430.2
+     1460.4,
+     1447.8
     ],
     "games": [
-     37,
-     6
+     5,
+     4
     ],
     "recent_form": [
      null,
@@ -13142,25 +12869,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4938,
-   "prob_team2": 0.5062,
-   "pick": "Babos Gaming",
-   "pick_prob": 0.5062,
+   "prob_team1": 0.5077,
+   "prob_team2": 0.4923,
+   "pick": "reGOLD eSport",
+   "pick_prob": 0.5077,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1497 (7 games) vs 1527 (2 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1531 (2 games) vs 1493 (16 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1496.8,
-     1526.9
+     1530.7,
+     1493.0
     ],
     "games": [
-     7,
-     2
+     2,
+     16
     ],
     "recent_form": [
-     0.429,
-     1.0
+     1.0,
+     0.571
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -13181,8 +12908,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 100,
-   "crowd_pct_team2": 0,
+   "crowd_pct_team1": 92,
+   "crowd_pct_team2": 8,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/aix-esports-vs-blackdivision-prm-3rd-division-26-27-fall-1075777",
    "hotspawn_match_url_verified": true,
@@ -13386,8 +13113,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: LOOKSMAXXER",
+     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
+    },
+    {
+     "label": "Leaguepedia: 1. Esport Club Frankfurt e.V.",
+     "url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V."
     },
     {
      "label": "Hotspawn match page",
@@ -13404,10 +13139,23 @@
    "prob_team2": 0.5,
    "pick": "LOOKSMAXXER",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1540 (5 games) vs 1500 (0 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1540.4,
+     1500.0
+    ],
+    "games": [
+     5,
+     0
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -13426,8 +13174,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 92,
-   "crowd_pct_team2": 8,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/mt1-vision-vs-black-lion-prm-3rd-division-26-27-fall-1075782",
    "hotspawn_match_url_verified": true,
@@ -13475,8 +13223,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 8,
-   "crowd_pct_team2": 92,
+   "crowd_pct_team1": 15,
+   "crowd_pct_team2": 85,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-berlin-5-prm-3rd-division-26-27-fall-1075783",
    "hotspawn_match_url_verified": true,
@@ -13720,8 +13468,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 8,
-   "crowd_pct_team2": 92,
+   "crowd_pct_team1": 15,
+   "crowd_pct_team2": 85,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/socken-und-sandalen-vs-eintracht-spandau-zwei-prm-3rd-division-26-27-fall-1075788",
    "hotspawn_match_url_verified": true,
@@ -13769,8 +13517,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 92,
-   "crowd_pct_team2": 8,
+   "crowd_pct_team1": 85,
+   "crowd_pct_team2": 15,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075790",
    "hotspawn_match_url_verified": true,
@@ -13818,8 +13566,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T16:00:00+00:00",
    "lock_utc": "2026-11-08T15:55:00+00:00",
-   "crowd_pct_team1": 0,
-   "crowd_pct_team2": 100,
+   "crowd_pct_team1": 8,
+   "crowd_pct_team2": 92,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075791",
    "hotspawn_match_url_verified": true,
@@ -13854,16 +13602,16 @@
    "pick": "Whalepower Humpbacks",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1509 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1454 (81 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1509.2
+     1454.1
     ],
     "games": [
      0,
-     3
+     81
     ],
     "recent_form": [
      null,
@@ -13924,15 +13672,15 @@
    "pick": "spongecord prime",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1512 (3 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1483 (8 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1512.0,
+     1483.3,
      1500.0
     ],
     "games": [
-     3,
+     8,
      0
     ],
     "recent_form": [
@@ -13958,8 +13706,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T18:30:00+00:00",
    "lock_utc": "2026-11-08T18:25:00+00:00",
-   "crowd_pct_team1": 0,
-   "crowd_pct_team2": 100,
+   "crowd_pct_team1": 8,
+   "crowd_pct_team2": 92,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053",
    "hotspawn_match_url_verified": true,
@@ -13994,20 +13742,20 @@
    "pick": "Phong Vũ Buffalo",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1468 (12 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1565 (25 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1468.0
+     1565.2
     ],
     "games": [
      0,
-     12
+     25
     ],
     "recent_form": [
      null,
-     0.333
+     0.636
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -14028,8 +13776,8 @@
    "tier_multiplier": 1,
    "start_utc": "2026-11-08T18:30:00+00:00",
    "lock_utc": "2026-11-08T18:25:00+00:00",
-   "crowd_pct_team1": 8,
-   "crowd_pct_team2": 92,
+   "crowd_pct_team1": 15,
+   "crowd_pct_team2": 85,
    "total_picks": 13,
    "hotspawn_match_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-vfb-esports-prm-2nd-division-26-27-fall-1079054",
    "hotspawn_match_url_verified": true,
@@ -14059,25 +13807,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5078,
-   "prob_team2": 0.4922,
+   "prob_team1": 0.5491,
+   "prob_team2": 0.4509,
    "pick": "The Bandits Prime",
-   "pick_prob": 0.5078,
+   "pick_prob": 0.5491,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1542 (5 games) vs 1515 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1540 (5 games) vs 1431 (112 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1541.9,
-     1514.6
+     1539.7,
+     1430.8
     ],
     "games": [
      5,
-     3
+     112
     ],
     "recent_form": [
      0.8,
-     0.667
+     0.35
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -14129,25 +13877,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5,
-   "prob_team2": 0.5,
-   "pick": "Ground Zero Gaming",
-   "pick_prob": 0.5,
+   "prob_team1": 0.4821,
+   "prob_team2": 0.5179,
+   "pick": "Frank Esports",
+   "pick_prob": 0.5179,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1435 (68 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1477 (2 games) vs 1566 (35 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1434.7,
-     1500.0
+     1477.1,
+     1566.3
     ],
     "games": [
-     68,
-     0
+     2,
+     35
     ],
     "recent_form": [
-     0.533,
-     null
+     null,
+     0.667
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -14177,16 +13925,8 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "label": "Leaguepedia (no record found)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Locked IN",
-     "url": "https://lol.fandom.com/wiki/Locked_IN"
-    },
-    {
-     "label": "Leaguepedia: 404 Multigaming e.V.",
-     "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
     },
     {
      "label": "Hotspawn match page",
@@ -14203,23 +13943,10 @@
    "prob_team2": 0.5,
    "pick": "Locked IN",
    "pick_prob": 0.5,
-   "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1489 (5 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
-   "detail": {
-    "elo": [
-     1500.0,
-     1489.2
-    ],
-    "games": [
-     0,
-     5
-    ],
-    "recent_form": [
-     null,
-     0.4
-    ]
-   },
+   "method": "UNRESOLVED",
+   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
+   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
+   "detail": {},
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -14269,24 +13996,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4599,
-   "prob_team2": 0.5401,
-   "pick": "The Bandits Prime",
-   "pick_prob": 0.5401,
+   "prob_team1": 0.501,
+   "prob_team2": 0.499,
+   "pick": "MT1 Esports",
+   "pick_prob": 0.501,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1468 (12 games) vs 1542 (5 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1565 (25 games) vs 1540 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1468.0,
-     1541.9
+     1565.2,
+     1539.7
     ],
     "games": [
-     12,
+     25,
      5
     ],
     "recent_form": [
-     0.333,
+     0.636,
      0.8
     ]
    },
@@ -14344,20 +14071,20 @@
    "pick": "Phong Vũ Buffalo",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1533 (10 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1471 (12 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1532.6
+     1470.8
     ],
     "games": [
      0,
-     10
+     12
     ],
     "recent_form": [
      null,
-     0.571
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -14409,24 +14136,24 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5071,
-   "prob_team2": 0.4929,
-   "pick": "VfB eSports",
-   "pick_prob": 0.5071,
+   "prob_team1": 0.4642,
+   "prob_team2": 0.5358,
+   "pick": "DKB XPERION NXT",
+   "pick_prob": 0.5358,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1515 (3 games) vs 1490 (6 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1431 (112 games) vs 1469 (22 games) over the last 420 days",
+   "confidence": "Medium — modelled from official match history",
    "detail": {
     "elo": [
-     1514.6,
-     1489.8
+     1430.8,
+     1469.4
     ],
     "games": [
-     3,
-     6
+     112,
+     22
     ],
     "recent_form": [
-     0.667,
+     0.35,
      0.333
     ]
    },
@@ -14849,8 +14576,16 @@
    "hotspawn_api_url": "https://phpstack-1372681-6459848.cloudwaysapps.com/api/v1/fixtures",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Eintracht Spandau Zwei",
+     "url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei"
+    },
+    {
+     "label": "Leaguepedia: LOOKSMAXXER",
+     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
     },
     {
      "label": "Hotspawn match page",
@@ -14867,10 +14602,23 @@
    "prob_team2": 0.5,
    "pick": "Eintracht Spandau Zwei",
    "pick_prob": 0.5,
-   "method": "UNRESOLVED",
-   "evidence": "Unresolved — no external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia within the look-back window.",
-   "confidence": "Unresolved — 50/50 nominal pick only; no statistical edge",
-   "detail": {},
+   "method": "MODEL",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1540 (5 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
+   "detail": {
+    "elo": [
+     1500.0,
+     1540.4
+    ],
+    "games": [
+     0,
+     5
+    ],
+    "recent_form": [
+     null,
+     null
+    ]
+   },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
   },
   {
@@ -15072,16 +14820,16 @@
    "pick": "Second Time Alive Revival",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1512 (3 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1500 (0 games) vs 1483 (8 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
      1500.0,
-     1512.0
+     1483.3
     ],
     "games": [
      0,
-     3
+     8
     ],
     "recent_form": [
      null,
@@ -15191,15 +14939,15 @@
    "pick": "TeamOrangeGaming Academy",
    "pick_prob": 0.5,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1509 (3 games) vs 1500 (0 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1454 (81 games) vs 1500 (0 games) over the last 420 days",
    "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1509.2,
+     1454.1,
      1500.0
     ],
     "games": [
-     3,
+     81,
      0
     ],
     "recent_form": [
@@ -15256,25 +15004,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.405,
-   "prob_team2": 0.595,
-   "pick": "Hannover Esports e.V.",
-   "pick_prob": 0.595,
+   "prob_team1": 0.5082,
+   "prob_team2": 0.4918,
+   "pick": "AceGaming",
+   "pick_prob": 0.5082,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1406 (37 games) vs 1585 (8 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1460 (5 games) vs 1441 (7 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1405.8,
-     1585.3
+     1460.4,
+     1441.0
     ],
     "games": [
-     37,
-     8
+     5,
+     7
     ],
     "recent_form": [
      null,
-     1.0
+     null
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -15326,25 +15074,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5,
-   "prob_team2": 0.5,
-   "pick": "Babos Gaming",
-   "pick_prob": 0.5,
+   "prob_team1": 0.4946,
+   "prob_team2": 0.5054,
+   "pick": "Reveal Multigaming",
+   "pick_prob": 0.5054,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1527 (2 games) vs 1527 (9 games) over the last 420 days",
-   "confidence": "Low — very thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1493 (16 games) vs 1519 (95 games) over the last 420 days",
+   "confidence": "Medium — modelled from official match history",
    "detail": {
     "elo": [
-     1526.9,
-     1526.8
+     1493.0,
+     1518.7
     ],
     "games": [
-     2,
-     9
+     16,
+     95
     ],
     "recent_form": [
-     1.0,
-     0.571
+     0.571,
+     0.45
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -15396,25 +15144,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.4586,
-   "prob_team2": 0.5414,
+   "prob_team1": 0.4833,
+   "prob_team2": 0.5167,
    "pick": "reGOLD eSport",
-   "pick_prob": 0.5414,
+   "pick_prob": 0.5167,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1430 (6 games) vs 1497 (7 games) over the last 420 days",
-   "confidence": "Low — modelled from thin official match history",
+   "evidence": "Originated line — Leaguepedia Elo 1448 (4 games) vs 1531 (2 games) over the last 420 days",
+   "confidence": "Low — very thin official match history",
    "detail": {
     "elo": [
-     1430.2,
-     1496.8
+     1447.8,
+     1530.7
     ],
     "games": [
-     6,
-     7
+     4,
+     2
     ],
     "recent_form": [
      0.0,
-     0.429
+     1.0
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
@@ -15466,25 +15214,25 @@
    ],
    "open_for_picks": true,
    "stale_listing": false,
-   "prob_team1": 0.5037,
-   "prob_team2": 0.4963,
+   "prob_team1": 0.5104,
+   "prob_team2": 0.4896,
    "pick": "Team 300",
-   "pick_prob": 0.5037,
+   "pick_prob": 0.5104,
    "method": "MODEL",
-   "evidence": "Originated line — Leaguepedia Elo 1499 (4 games) vs 1484 (9 games) over the last 420 days",
+   "evidence": "Originated line — Leaguepedia Elo 1498 (4 games) vs 1469 (5 games) over the last 420 days",
    "confidence": "Low — modelled from thin official match history",
    "detail": {
     "elo": [
-     1498.7,
-     1484.0
+     1497.5,
+     1468.6
     ],
     "games": [
      4,
-     9
+     5
     ],
     "recent_form": [
      0.5,
-     0.5
+     0.333
     ]
    },
    "crowd_note": "Hotspawn lobby crowd percentages are recorded for context only and are NEVER used as an input to our probabilities."
