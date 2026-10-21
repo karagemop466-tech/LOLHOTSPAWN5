@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-21T21:59:33.077007+00:00",
- "count": 369,
+ "generated_at": "2026-10-21T22:27:41.825040+00:00",
+ "count": 360,
  "by_kind": {
   "single-book": 1,
   "stale-listing": 65,
-  "thin-history": 77,
-  "unresolved-pick": 157,
+  "thin-history": 82,
+  "unresolved-pick": 143,
   "unverified-link": 69
  },
  "items": [
@@ -26,10 +26,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/1-esport-club-frankfurt-e-v-vs-rich-gang-prm-3rd-division-26-27-fall-1075762"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -50,10 +46,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/2-massive-vs-lund-esports-organization-ogs-rivals-league-season-2-1074652"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -74,10 +66,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/2-massive-vs-team-lucidity-esports-rivals-league-season-2-1074636"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -98,10 +86,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/2-massive-vs-tung-sahur-mid-rivals-league-season-2-1074660"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -122,10 +106,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/aix-esports-vs-blackdivision-prm-3rd-division-26-27-fall-1075777"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -146,34 +126,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/aix-esports-vs-mt1-vision-prm-3rd-division-26-27-fall-1075748"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1081651",
-   "match": "Absolved vs The Bandits UK",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T18:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/absolved-vs-the-bandits-uk-4-nations-2026-halloween-heist-1081651"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -194,10 +146,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/abyssal-randoms-vs-good-chi-4-nations-2026-halloween-heist-1081659"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -218,10 +166,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/abyssal-randoms-vs-inari-esports-4-nations-2026-halloween-heist-1081667"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -242,10 +186,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/acegaming-hearts-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075747"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -266,10 +206,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/acegaming-hearts-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075792"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -290,10 +226,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/arena-vs-teambah-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081365"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -314,10 +246,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/ascent-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071214"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -338,10 +266,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-defiance-esports-prm-3rd-division-26-27-fall-1075734"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -362,10 +286,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -386,10 +306,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-aix-esports-prm-3rd-division-26-27-fall-1075794"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -410,10 +326,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-glacial-guardians-prm-3rd-division-26-27-fall-1075778"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -434,10 +346,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-vfb-x-engines-stuttgart-prm-3rd-division-26-27-fall-1075749"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -458,10 +366,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/baronx-vs-marere-academy-ligagg-celol-b-2026-split-2-playoffs-1081085"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -482,10 +386,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/berlin-5-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075719"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -506,10 +406,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/berlin-5-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075795"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -530,10 +426,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/berlin-5-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075763"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -554,10 +446,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/black-lion-vs-blackdivision-prm-3rd-division-26-27-fall-1075764"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -578,10 +466,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/black-lion-vs-glacial-guardians-prm-3rd-division-26-27-fall-1075750"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -602,10 +486,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/black-lion-vs-vfb-x-engines-stuttgart-prm-3rd-division-26-27-fall-1075796"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -626,10 +506,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/blackdivision-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075736"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -650,10 +526,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/blackdivision-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075751"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -674,34 +546,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/blackdivision-vs-mt1-vision-prm-3rd-division-26-27-fall-1075797"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1081660",
-   "match": "Bulldog Esports vs Ruddy Ultras",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T19:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/bulldog-esports-vs-ruddy-ultras-4-nations-2026-halloween-heist-1081660"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -722,10 +566,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/cloud-esport-vs-defiance-esports-prm-3rd-division-26-27-fall-1075765"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -746,10 +586,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/crownless-vs-team-vertex-4-nations-2026-halloween-heist-1081661"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -770,10 +606,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/deleted-vs-s7raa-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082002"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -794,10 +626,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dmg-esports-norway-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071167"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -818,10 +646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-flamehard-rivals-league-season-2-1082748"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -842,10 +666,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-northern-wolves-esports-rivals-league-season-2-1082615"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -866,10 +686,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/defiance-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075779"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -890,10 +706,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/defiance-esports-vs-purple-emperor-lizards-atomic-prm-3rd-division-26-27-fall-1075798"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -914,10 +726,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/defiance-esports-vs-reh-gaming-prm-3rd-division-26-27-fall-1075752"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -938,10 +746,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-baronx-ligagg-celol-b-2026-split-2-playoffs-1081079"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -962,10 +766,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-cla-nkz-revengers-ligagg-celol-b-2026-split-2-playoffs-1081083"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -986,10 +786,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-viktus-ligagg-celol-b-2026-split-2-1069849"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1010,10 +806,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075780"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1034,10 +826,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-neko-elite-kittens-prm-3rd-division-26-27-fall-1075801"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1058,10 +846,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/duplex-silva-pigeons-edition-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075753"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1082,10 +866,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dziady-cz-67-vs-adam-west-corp-legends-academy-powered-by-abka-season-3-playoffs-1070823"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1106,10 +886,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/exile-esports-academy-vs-mighty-eagles-hitpoint-2nd-div-challengers-2026-summer-playoffs-1075850"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1130,10 +906,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-team-300-white-prm-3rd-division-26-27-fall-1075754"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1154,10 +926,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/el-menzah-esports-vs-enfida-esports-tunisian-super-league-2026-1080938"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1178,10 +946,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/el-menzah-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080943"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1202,10 +966,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/emperors-bremen-vs-neko-elite-kittens-prm-3rd-division-26-27-fall-1075767"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1226,10 +986,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/emperors-bremen-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075739"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1250,34 +1006,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/final-level-esports-academy-vs-infinity-gaming-ligagg-celol-b-2026-split-2-playoffs-1081086"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1074654",
-   "match": "FlameHard vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-24T16:30:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/flamehard-vs-b2u-rivals-league-season-2-1074654"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1298,10 +1026,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/fritt-fall-vs-tung-sahur-mid-rivals-league-season-2-1079922"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1322,10 +1046,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/gala-esports-vs-the-bandits-academy-benelux-ascend-series-rising-2026-summer-playoffs-1070210"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1346,10 +1066,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glacial-guardians-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075800"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1370,10 +1086,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glacial-guardians-vs-mt1-vision-prm-3rd-division-26-27-fall-1075768"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1394,10 +1106,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glorp-cat-vs-crownless-4-nations-2026-halloween-heist-1081668"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1418,10 +1126,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glorp-cat-vs-impel-4-nations-2026-halloween-heist-1082061"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1442,10 +1146,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/good-chi-vs-inari-esports-4-nations-2026-halloween-heist-1081653"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1466,34 +1166,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/good-chi-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081669"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1081654",
-   "match": "HL Tauri Esports vs Bulldog Esports",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T18:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/hl-tauri-esports-vs-bulldog-esports-4-nations-2026-halloween-heist-1081654"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1514,10 +1186,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/inari-esports-vs-rich-gang-uk-4-nations-2026-halloween-heist-1081663"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1538,10 +1206,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/inquisitors-vs-overpower-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081369"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1562,10 +1226,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/jsk-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080924"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1586,10 +1246,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/jsk-esports-vs-enfida-esports-tunisian-super-league-2026-1080928"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1610,10 +1266,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/jsk-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080934"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1634,10 +1286,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/jendouba-esports-vs-enfida-esports-tunisian-super-league-2026-1080923"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1658,34 +1306,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/kanji-esports-kin-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075770"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1073177",
-   "match": "Karolinerna Black vs Lundqvist Lightside",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-09-25T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1706,10 +1326,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-crazy-kittens-e-sport-academy-superstrike-league-2026-1073184"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1730,10 +1346,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-lund-esports-organization-ogs-rivals-league-season-2-1074662"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1754,10 +1366,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-turbo-gaming-rivals-league-season-2-1074655"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1778,10 +1386,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/les-ravag-s-vs-nameless-benelux-ascend-series-2027-winter-promotion-1076565"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1802,10 +1406,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/levelers-vs-mtn-esports-team-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082839"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1826,10 +1426,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/levelers-vs-team-fifty-fifty-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082003"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1850,10 +1446,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/locked-in-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079055"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1874,10 +1466,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-tung-sahur-mid-rivals-league-season-2-1081831"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1898,34 +1486,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-turbo-gaming-rivals-league-season-2-1074639"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1074663",
-   "match": "Lundqvist Darkside vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-25T18:30:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-b2u-rivals-league-season-2-1074663"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1946,10 +1506,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-dmg-esports-sweden-rivals-league-season-2-1074640"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1970,10 +1526,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-mazepa-rivals-league-season-2-1082616"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -1994,10 +1546,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/mt1-vision-vs-black-lion-prm-3rd-division-26-27-fall-1075782"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2018,10 +1566,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/mtn-esports-team-vs-ratclub-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082004"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2042,10 +1586,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/marere-academy-vs-torin-ligagg-celol-b-2026-split-2-1069857"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2066,34 +1606,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/maze-gg-vs-viktus-ligagg-celol-b-2026-split-2-playoffs-1081084"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1082258",
-   "match": "Mazepa vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-24T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mazepa-vs-b2u-rivals-league-season-2-1082258"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2114,34 +1626,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/mental-rush-vs-vitality-rising-bees-lgc-rising-2026-playoffs-1079080"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1071168",
-   "match": "Mixlag fra Trondheim vs CNG Royal",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-09-17T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mixlag-fra-trondheim-vs-cng-royal-komplettligaen-2026-autumn-1071168"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2162,10 +1646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/nameless-vs-bipolar-benelux-ascend-series-2026-summer-split-1053096"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2186,34 +1666,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-berlin-5-prm-3rd-division-26-27-fall-1075783"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1074642",
-   "match": "Northern Wolves Esports vs B2U",
-   "tournament": "RIVALS LEAGUE Season 2",
-   "start_utc": "2026-10-11T16:30:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2234,10 +1686,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-lundqvist-darkside-rivals-league-season-2-1074627"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2258,10 +1706,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/rich-gang-sweden-vs-northern-wolves-esports-rivals-league-season-2-1074665"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2282,10 +1726,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-el-menzah-esports-tunisian-super-league-2026-1080930"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2306,10 +1746,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-enfida-esports-tunisian-super-league-2026-1080935"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2330,10 +1766,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-olympique-mnihla-tunisian-super-league-2026-1080940"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2354,10 +1786,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-academy-vs-simplicity-gaming-tunisian-super-league-2026-1080945"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2378,10 +1806,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-vs-jendouba-esports-tunisian-super-league-2026-1080929"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2402,34 +1826,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/olympique-mnihla-vs-supreme-leaders-tunisian-super-league-2026-1080925"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1073186",
-   "match": "OnlyWinByFF vs B2U",
-   "tournament": "Superstrike League 2026",
-   "start_utc": "2026-10-10T16:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2450,10 +1846,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-mazepa-rivals-league-season-2-1074664"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2474,58 +1866,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-rich-gang-sweden-rivals-league-season-2-1074657"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1071584",
-   "match": "P11 Esports vs HANGMEN",
-   "tournament": "LIT 2027 Winter Promotion",
-   "start_utc": "2026-09-07T17:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/p11-esports-vs-hangmen-lit-2027-winter-promotion-1071584"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1081670",
-   "match": "PNS vs Absolved",
-   "tournament": "4 Nations 2026 Halloween Heist",
-   "start_utc": "2026-10-22T20:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/pns-vs-absolved-4-nations-2026-halloween-heist-1081670"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2546,10 +1886,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075756"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2570,10 +1906,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-cloud-esport-prm-3rd-division-26-27-fall-1075784"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2594,10 +1926,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1082746"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2618,10 +1946,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/playwell-rod-q-vs-rich-gang-komplettligaen-2026-autumn-1071215"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2642,10 +1966,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-cloud-esport-prm-3rd-division-26-27-fall-1075737"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2666,10 +1986,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075757"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2690,10 +2006,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-packmiko-e-sports-dach-prm-3rd-division-26-27-fall-1075772"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2714,10 +2026,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075785"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2738,10 +2046,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/reh-gaming-vs-cloud-esport-prm-3rd-division-26-27-fall-1075802"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2762,10 +2066,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/reh-gaming-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075769"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2786,10 +2086,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/rich-gang-uk-vs-abyssal-randoms-4-nations-2026-halloween-heist-1081655"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2810,10 +2106,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/rich-gang-vs-phenti-komplettligaen-2026-autumn-1071212"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2834,10 +2126,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/rich-gang-vs-team-300-white-prm-3rd-division-26-27-fall-1075786"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2858,10 +2146,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/rich-gang-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075803"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2882,10 +2166,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/ruddy-ultras-vs-hl-tauri-esports-4-nations-2026-halloween-heist-1081671"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2906,10 +2186,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syr-t1-vs-ravagers-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082005"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2930,10 +2206,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075773"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2954,10 +2226,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-berlin-5-prm-3rd-division-26-27-fall-1075759"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -2978,10 +2246,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jsk-esports-tunisian-super-league-2026-1080941"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3002,10 +2266,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jendouba-esports-tunisian-super-league-2026-1080936"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3026,10 +2286,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-supreme-leaders-tunisian-super-league-2026-1080931"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3050,10 +2306,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/sissi-state-punks-vs-second-time-alive-revival-prm-3rd-division-26-27-fall-1075787"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3074,10 +2326,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/socken-und-sandalen-vs-eintracht-spandau-zwei-prm-3rd-division-26-27-fall-1075788"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3098,10 +2346,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-dmg-esports-norway-komplettligaen-2026-autumn-1071216"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3122,10 +2366,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3146,10 +2386,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071200"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3170,10 +2406,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/supreme-leaders-vs-jendouba-esports-tunisian-super-league-2026-1080946"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3194,10 +2426,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syrian-rift-masters-vs-b7-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082001"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3218,10 +2446,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-300-white-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075805"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3242,10 +2466,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-300-white-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075775"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3266,10 +2486,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-fritt-fall-rivals-league-season-2-1074659"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3290,10 +2506,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-team-cd-rivals-league-season-2-1074666"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3314,10 +2526,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-gala-esports-benelux-ascend-series-rising-2026-summer-playoffs-1053111"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3338,10 +2546,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-les-ravag-s-benelux-ascend-series-rising-2026-summer-playoffs-1069680"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3362,10 +2566,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vertex-vs-glorp-cat-4-nations-2026-halloween-heist-1081656"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3386,10 +2586,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-fritt-fall-rivals-league-season-2-1082060"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3410,10 +2606,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-karolinerna-rivals-league-season-2-1074643"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3434,10 +2626,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-tung-sahur-mid-rivals-league-season-2-1074658"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3458,10 +2646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/the-bandits-uk-vs-pns-4-nations-2026-halloween-heist-1081664"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3482,10 +2666,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/turbo-gaming-vs-fritt-fall-rivals-league-season-2-1074667"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3506,10 +2686,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-aix-esports-prm-3rd-division-26-27-fall-1075776"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3530,58 +2706,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075790"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1071218",
-   "match": "Volda E-Sport vs CNG Royal",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-10-22T15:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-cng-royal-komplettligaen-2026-autumn-1071218"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "unresolved-pick",
-   "severity": "high",
-   "title": "No resolvable probability — nominal 50/50 pick",
-   "detail": "No external betting market prices this fixture and neither team has a completed match recorded in Leaguepedia inside the look-back window. The pick shown is a nominal 50/50 with no statistical edge.",
-   "fixture_id": "1071206",
-   "match": "Volda E-Sport vs Solid Gaming",
-   "tournament": "Komplettligaen 2026 Autumn",
-   "start_utc": "2026-10-11T15:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia (no record found)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3602,10 +2726,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075731"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3626,10 +2746,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075761"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3650,10 +2766,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/x-funkass-vs--arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082006"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3674,10 +2786,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/your-saviours-vs-mixlag-fra-trondheim-komplettligaen-2026-autumn-1071219"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3698,10 +2806,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080937"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3722,10 +2826,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-enfida-esports-tunisian-super-league-2026-1080947"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3746,10 +2846,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-olympique-mnihla-academy-tunisian-super-league-2026-1080927"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3770,10 +2866,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-supreme-leaders-tunisian-super-league-2026-1080942"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3794,18 +2886,6 @@
     {
      "label": "Leaguepedia: 404 Multigaming e.V.",
      "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
-    },
-    {
-     "label": "Leaguepedia: DKB XPERION NXT",
-     "url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079047"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3826,18 +2906,26 @@
     {
      "label": "Leaguepedia: 404 Multigaming e.V.",
      "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 2 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1081651",
+   "match": "Absolved vs The Bandits UK",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T18:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: VfB eSports",
-     "url": "https://lol.fandom.com/wiki/VfB_eSports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-vfb-esports-prm-2nd-division-26-27-fall-1079029"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Absolved",
+     "url": "https://lol.fandom.com/wiki/Absolved"
     }
    ]
   },
@@ -3858,18 +2946,6 @@
     {
      "label": "Leaguepedia: AceGaming",
      "url": "https://lol.fandom.com/wiki/AceGaming"
-    },
-    {
-     "label": "Leaguepedia: BvP",
-     "url": "https://lol.fandom.com/wiki/BvP"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/acegaming-vs-bvp-prm-2nd-division-26-27-fall-1079051"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3890,18 +2966,6 @@
     {
      "label": "Leaguepedia: AceGaming",
      "url": "https://lol.fandom.com/wiki/AceGaming"
-    },
-    {
-     "label": "Leaguepedia: reGOLD eSport",
-     "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/acegaming-vs-regold-esport-prm-2nd-division-26-27-fall-1079851"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3909,7 +2973,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 2 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 5 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1081652",
    "match": "Brod n Friends vs Crownless",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -3922,18 +2986,26 @@
     {
      "label": "Leaguepedia: Brod n Friends",
      "url": "https://lol.fandom.com/wiki/Brod_n_Friends"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 42 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1081660",
+   "match": "Bulldog Esports vs Ruddy Ultras",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T19:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Crownless",
-     "url": "https://lol.fandom.com/wiki/Crownless"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/brod-n-friends-vs-crownless-4-nations-2026-halloween-heist-1081652"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Bulldog Esports",
+     "url": "https://lol.fandom.com/wiki/Bulldog_Esports"
     }
    ]
   },
@@ -3954,18 +3026,6 @@
     {
      "label": "Leaguepedia: BvP",
      "url": "https://lol.fandom.com/wiki/BvP"
-    },
-    {
-     "label": "Leaguepedia: Babos Gaming",
-     "url": "https://lol.fandom.com/wiki/Babos_Gaming"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/bvp-vs-babos-gaming-prm-2nd-division-26-27-fall-1079049"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -3986,18 +3046,6 @@
     {
      "label": "Leaguepedia: BvP",
      "url": "https://lol.fandom.com/wiki/BvP"
-    },
-    {
-     "label": "Leaguepedia: No Need Orga",
-     "url": "https://lol.fandom.com/wiki/No_Need_Orga"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/bvp-vs-no-need-orga-prm-2nd-division-26-27-fall-1079043"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4018,18 +3066,6 @@
     {
      "label": "Leaguepedia: BvP",
      "url": "https://lol.fandom.com/wiki/BvP"
-    },
-    {
-     "label": "Leaguepedia: reGOLD eSport",
-     "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/bvp-vs-regold-esport-prm-2nd-division-26-27-fall-1079853"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4050,18 +3086,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077729"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4082,18 +3106,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077722"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4114,18 +3126,6 @@
     {
      "label": "Leaguepedia: DKB XPERION NXT",
      "url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT"
-    },
-    {
-     "label": "Leaguepedia: Phong Vũ Buffalo",
-     "url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079031"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4146,18 +3146,6 @@
     {
      "label": "Leaguepedia: Eintracht Spandau Zwei",
      "url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei"
-    },
-    {
-     "label": "Leaguepedia: LOOKSMAXXER",
-     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075799"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4178,18 +3166,6 @@
     {
      "label": "Leaguepedia: Eintracht Spandau Zwei",
      "url": "https://lol.fandom.com/wiki/Eintracht_Spandau_Zwei"
-    },
-    {
-     "label": "Leaguepedia: TeamOrangeGaming Academy",
-     "url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/eintracht-spandau-zwei-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075766"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4210,18 +3186,6 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077726"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4242,18 +3206,26 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 32 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1074654",
+   "match": "FlameHard vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-24T16:30:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077723"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: FlameHard",
+     "url": "https://lol.fandom.com/wiki/FlameHard"
     }
    ]
   },
@@ -4274,18 +3246,6 @@
     {
      "label": "Leaguepedia: Frost Tails",
      "url": "https://lol.fandom.com/wiki/Frost_Tails"
-    },
-    {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/frost-tails-vs-last-dance-benelux-ascend-series-2026-summer-playoffs-1061779"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4293,7 +3253,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1081662",
    "match": "Glorp Cat vs Brod n Friends",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -4306,18 +3266,6 @@
     {
      "label": "Leaguepedia: Glorp Cat",
      "url": "https://lol.fandom.com/wiki/Glorp_Cat"
-    },
-    {
-     "label": "Leaguepedia: Brod n Friends",
-     "url": "https://lol.fandom.com/wiki/Brod_n_Friends"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/glorp-cat-vs-brod-n-friends-4-nations-2026-halloween-heist-1081662"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4338,18 +3286,26 @@
     {
      "label": "Leaguepedia: Ground Zero Gaming",
      "url": "https://lol.fandom.com/wiki/Ground_Zero_Gaming"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 42 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1081654",
+   "match": "HL Tauri Esports vs Bulldog Esports",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T18:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Frank Esports",
-     "url": "https://lol.fandom.com/wiki/Frank_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/ground-zero-gaming-vs-frank-esports-lcp-2027-promotion-1081423"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: HL Tauri Esports",
+     "url": "https://lol.fandom.com/wiki/HL_Tauri_Esports"
     }
    ]
   },
@@ -4370,18 +3326,6 @@
     {
      "label": "Leaguepedia: Invictus Team",
      "url": "https://lol.fandom.com/wiki/Invictus_Team"
-    },
-    {
-     "label": "Leaguepedia: Smoke Tram Ascension",
-     "url": "https://lol.fandom.com/wiki/Smoke_Tram_Ascension"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/invictus-team-vs-smoke-tram-ascension-ligagg-celol-a-2026-split-2-1073030"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4389,7 +3333,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 9 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080944",
    "match": "JSK Academy vs JSK Esports",
    "tournament": "Tunisian Super League 2026",
@@ -4402,18 +3346,6 @@
     {
      "label": "Leaguepedia: JSK Academy",
      "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Leaguepedia: JSK Esports",
-     "url": "https://lol.fandom.com/wiki/JSK_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/jsk-academy-vs-jsk-esports-tunisian-super-league-2026-1080944"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4421,7 +3353,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 9 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080939",
    "match": "JSK Academy vs Jendouba Esports",
    "tournament": "Tunisian Super League 2026",
@@ -4434,18 +3366,6 @@
     {
      "label": "Leaguepedia: JSK Academy",
      "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Leaguepedia: Jendouba Esports",
-     "url": "https://lol.fandom.com/wiki/Jendouba_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/jsk-academy-vs-jendouba-esports-tunisian-super-league-2026-1080939"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4453,39 +3373,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 9 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079141",
-   "match": "JSK Academy vs New Era Team",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-24T18:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: JSK Academy",
-     "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Leaguepedia: New Era Team",
-     "url": "https://lol.fandom.com/wiki/New_Era_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/jsk-academy-vs-new-era-team-arabian-league-2nd-division-2026-summer-1079141"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 9 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 12 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080933",
    "match": "JSK Academy vs Supreme Leaders",
    "tournament": "Tunisian Super League 2026",
@@ -4498,18 +3386,26 @@
     {
      "label": "Leaguepedia: JSK Academy",
      "url": "https://lol.fandom.com/wiki/JSK_Academy"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 4 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1073177",
+   "match": "Karolinerna Black vs Lundqvist Lightside",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-09-25T16:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Supreme Leaders",
-     "url": "https://lol.fandom.com/wiki/Supreme_Leaders"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/jsk-academy-vs-supreme-leaders-tunisian-super-league-2026-1080933"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Karolinerna Black",
+     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
     }
    ]
   },
@@ -4530,18 +3426,6 @@
     {
      "label": "Leaguepedia: LANdits",
      "url": "https://lol.fandom.com/wiki/LANdits"
-    },
-    {
-     "label": "Leaguepedia: Frites Esports Club",
-     "url": "https://lol.fandom.com/wiki/Frites_Esports_Club"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4562,18 +3446,6 @@
     {
      "label": "Leaguepedia: LOOKSMAXXER",
      "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
-    },
-    {
-     "label": "Leaguepedia: 1. Esport Club Frankfurt e.V.",
-     "url": "https://lol.fandom.com/wiki/1._Esport_Club_Frankfurt_e.V."
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/looksmaxxer-vs-1-esport-club-frankfurt-e-v-prm-3rd-division-26-27-fall-1075781"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4594,18 +3466,6 @@
     {
      "label": "Leaguepedia: LOOKSMAXXER",
      "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
-    },
-    {
-     "label": "Leaguepedia: Whalepower Humpbacks",
-     "url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/looksmaxxer-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075771"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4626,18 +3486,6 @@
     {
      "label": "Leaguepedia: Locked IN",
      "url": "https://lol.fandom.com/wiki/Locked_IN"
-    },
-    {
-     "label": "Leaguepedia: DKB XPERION NXT",
-     "url": "https://lol.fandom.com/wiki/DKB_XPERION_NXT"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/locked-in-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079030"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4658,18 +3506,6 @@
     {
      "label": "Leaguepedia: Locked IN",
      "url": "https://lol.fandom.com/wiki/Locked_IN"
-    },
-    {
-     "label": "Leaguepedia: The Bandits Prime",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Prime"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/locked-in-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079023"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4690,18 +3526,6 @@
     {
      "label": "Leaguepedia: Locked IN",
      "url": "https://lol.fandom.com/wiki/Locked_IN"
-    },
-    {
-     "label": "Leaguepedia: VfB eSports",
-     "url": "https://lol.fandom.com/wiki/VfB_eSports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/locked-in-vs-vfb-esports-prm-2nd-division-26-27-fall-1079048"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4709,7 +3533,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 2 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 13 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1073172",
    "match": "Lund Esports Organization vs Karolinerna Black",
    "tournament": "Superstrike League 2026",
@@ -4722,18 +3546,6 @@
     {
      "label": "Leaguepedia: Lund Esports Organization",
      "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4741,31 +3553,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 154 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1067678",
-   "match": "LØS vs T1",
-   "tournament": "Worlds 2026 Main Event",
-   "start_utc": "2026-10-23T23:00:00+00:00",
+   "detail": "Only 0 / 32 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1074663",
+   "match": "Lundqvist Darkside vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-25T18:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: LØS",
-     "url": "https://lol.fandom.com/wiki/L%C3%98S"
-    },
-    {
-     "label": "Leaguepedia: T1",
-     "url": "https://lol.fandom.com/wiki/T1"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/los-vs-t1-worlds-2026-main-event-1067678"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Lundqvist Darkside",
+     "url": "https://lol.fandom.com/wiki/Lundqvist_Darkside"
     }
    ]
   },
@@ -4786,18 +3586,6 @@
     {
      "label": "Leaguepedia: MT1 Esports",
      "url": "https://lol.fandom.com/wiki/MT1_Esports"
-    },
-    {
-     "label": "Leaguepedia: Locked IN",
-     "url": "https://lol.fandom.com/wiki/Locked_IN"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mt1-esports-vs-locked-in-prm-2nd-division-26-27-fall-1079041"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4805,7 +3593,27 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 6 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 32 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1082258",
+   "match": "Mazepa vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-24T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
+    },
+    {
+     "label": "Leaguepedia: Mazepa",
+     "url": "https://lol.fandom.com/wiki/Mazepa"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 18 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1076570",
    "match": "Meavedron Benelux vs The Bandits Academy",
    "tournament": "Benelux Ascend Series 2027 Winter Promotion",
@@ -4818,18 +3626,6 @@
     {
      "label": "Leaguepedia: Meavedron Benelux",
      "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/meavedron-benelux-vs-the-bandits-academy-benelux-ascend-series-2027-winter-promotion-1076570"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4837,7 +3633,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 14 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 30 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1053095",
    "match": "Mind Blue eSports vs LAST DANCE",
    "tournament": "Benelux Ascend Series 2026 Summer Split",
@@ -4850,18 +3646,26 @@
     {
      "label": "Leaguepedia: Mind Blue eSports",
      "url": "https://lol.fandom.com/wiki/Mind_Blue_eSports"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 1 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1071168",
+   "match": "Mixlag fra Trondheim vs CNG Royal",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-09-17T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mind-blue-esports-vs-last-dance-benelux-ascend-series-2026-summer-split-1053095"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Mixlag fra Trondheim",
+     "url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim"
     }
    ]
   },
@@ -4882,18 +3686,6 @@
     {
      "label": "Leaguepedia: Nameless",
      "url": "https://lol.fandom.com/wiki/Nameless"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4914,18 +3706,6 @@
     {
      "label": "Leaguepedia: Neko Elite Kittens",
      "url": "https://lol.fandom.com/wiki/Neko_Elite_Kittens"
-    },
-    {
-     "label": "Leaguepedia: spongecord prime",
-     "url": "https://lol.fandom.com/wiki/spongecord_prime"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075755"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -4933,31 +3713,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 3 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079139",
-   "match": "NextGeneration Esports vs Pegasus Esports",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-23T18:00:00+00:00",
+   "detail": "Only 0 / 32 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1074642",
+   "match": "Northern Wolves Esports vs B2U",
+   "tournament": "RIVALS LEAGUE Season 2",
+   "start_utc": "2026-10-11T16:30:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: NextGeneration Esports",
-     "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
-    },
-    {
-     "label": "Leaguepedia: Pegasus Esports",
-     "url": "https://lol.fandom.com/wiki/Pegasus_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nextgeneration-esports-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079139"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Northern Wolves Esports",
+     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
     }
    ]
   },
@@ -4965,31 +3733,59 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 3 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079321",
-   "match": "NextGeneration Esports vs Slam Dunk",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-10T18:00:00+00:00",
+   "detail": "Only 0 / 32 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1073186",
+   "match": "OnlyWinByFF vs B2U",
+   "tournament": "Superstrike League 2026",
+   "start_utc": "2026-10-10T16:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: NextGeneration Esports",
-     "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
+     "label": "Leaguepedia: OnlyWinByFF",
+     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 55 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1071584",
+   "match": "P11 Esports vs HANGMEN",
+   "tournament": "LIT 2027 Winter Promotion",
+   "start_utc": "2026-09-07T17:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Slam Dunk",
-     "url": "https://lol.fandom.com/wiki/Slam_Dunk"
+     "label": "Leaguepedia: P11 Esports",
+     "url": "https://lol.fandom.com/wiki/P11_Esports"
+    }
+   ]
+  },
+  {
+   "kind": "thin-history",
+   "severity": "medium",
+   "title": "Originated line built on thin match history",
+   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1081670",
+   "match": "PNS vs Absolved",
+   "tournament": "4 Nations 2026 Halloween Heist",
+   "start_utc": "2026-10-22T20:00:00+00:00",
+   "sources": [
+    {
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
+     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nextgeneration-esports-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079321"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: PNS",
+     "url": "https://lol.fandom.com/wiki/PNS"
     }
    ]
   },
@@ -5010,18 +3806,6 @@
     {
      "label": "Leaguepedia: Phenti",
      "url": "https://lol.fandom.com/wiki/Phenti"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5042,18 +3826,6 @@
     {
      "label": "Leaguepedia: Phong Vũ Buffalo",
      "url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo"
-    },
-    {
-     "label": "Leaguepedia: MT1 Esports",
-     "url": "https://lol.fandom.com/wiki/MT1_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5074,18 +3846,6 @@
     {
      "label": "Leaguepedia: Phong Vũ Buffalo",
      "url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo"
-    },
-    {
-     "label": "Leaguepedia: regnum4games",
-     "url": "https://lol.fandom.com/wiki/regnum4games"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/regnum4games-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079057"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5106,18 +3866,6 @@
     {
      "label": "Leaguepedia: Reveal Multigaming",
      "url": "https://lol.fandom.com/wiki/Reveal_Multigaming"
-    },
-    {
-     "label": "Leaguepedia: Team 300",
-     "url": "https://lol.fandom.com/wiki/Team_300"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-team-300-prm-2nd-division-26-27-fall-1079036"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5138,18 +3886,6 @@
     {
      "label": "Leaguepedia: Rich Gang",
      "url": "https://lol.fandom.com/wiki/Rich_Gang"
-    },
-    {
-     "label": "Leaguepedia: LOOKSMAXXER",
-     "url": "https://lol.fandom.com/wiki/LOOKSMAXXER"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rich-gang-vs-looksmaxxer-prm-3rd-division-26-27-fall-1075758"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5170,18 +3906,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077744"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5202,18 +3926,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-fenrir-icelandic-esports-league-2026-autumn-1077730"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5234,18 +3946,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077727"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5266,18 +3966,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Whisky",
-     "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-whisky-icelandic-esports-league-2026-autumn-1077724"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5298,18 +3986,6 @@
     {
      "label": "Leaguepedia: Second Time Alive Revival",
      "url": "https://lol.fandom.com/wiki/Second_Time_Alive_Revival"
-    },
-    {
-     "label": "Leaguepedia: spongecord prime",
-     "url": "https://lol.fandom.com/wiki/spongecord_prime"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-spongecord-prime-prm-3rd-division-26-27-fall-1075804"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5317,7 +3993,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 9 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080926",
    "match": "Simplicity Gaming vs JSK Academy",
    "tournament": "Tunisian Super League 2026",
@@ -5330,50 +4006,6 @@
     {
      "label": "Leaguepedia: Simplicity Gaming",
      "url": "https://lol.fandom.com/wiki/Simplicity_Gaming"
-    },
-    {
-     "label": "Leaguepedia: JSK Academy",
-     "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/simplicity-gaming-vs-jsk-academy-tunisian-super-league-2026-1080926"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 8 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079144",
-   "match": "Slam Dunk vs New Era Team",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-28T19:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Slam Dunk",
-     "url": "https://lol.fandom.com/wiki/Slam_Dunk"
-    },
-    {
-     "label": "Leaguepedia: New Era Team",
-     "url": "https://lol.fandom.com/wiki/New_Era_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/slam-dunk-vs-new-era-team-arabian-league-2nd-division-2026-summer-1079144"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5394,18 +4026,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-fenrir-icelandic-esports-league-2026-autumn-1077745"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5426,18 +4046,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077731"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5458,18 +4066,6 @@
     {
      "label": "Leaguepedia: Solid Gaming",
      "url": "https://lol.fandom.com/wiki/Solid_Gaming"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5490,18 +4086,6 @@
     {
      "label": "Leaguepedia: Team 300",
      "url": "https://lol.fandom.com/wiki/Team_300"
-    },
-    {
-     "label": "Leaguepedia: AceGaming",
-     "url": "https://lol.fandom.com/wiki/AceGaming"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-300-vs-acegaming-prm-2nd-division-26-27-fall-1079050"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5522,18 +4106,6 @@
     {
      "label": "Leaguepedia: Team 300",
      "url": "https://lol.fandom.com/wiki/Team_300"
-    },
-    {
-     "label": "Leaguepedia: Hannover Esports e.V.",
-     "url": "https://lol.fandom.com/wiki/Hannover_Esports_e.V."
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-300-vs-hannover-esports-e-v-prm-2nd-division-26-27-fall-1079040"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5554,18 +4126,6 @@
     {
      "label": "Leaguepedia: Team 300",
      "url": "https://lol.fandom.com/wiki/Team_300"
-    },
-    {
-     "label": "Leaguepedia: No Need Orga",
-     "url": "https://lol.fandom.com/wiki/No_Need_Orga"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-300-vs-no-need-orga-prm-2nd-division-26-27-fall-1079062"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5573,7 +4133,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 13 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1073183",
    "match": "Team Lucidity Esports vs Lund Esports Organization",
    "tournament": "Superstrike League 2026",
@@ -5586,18 +4146,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5605,7 +4153,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 13 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1079556",
    "match": "Team Lucidity Esports vs Lund Esports Organization",
    "tournament": "Superstrike League 2026",
@@ -5618,18 +4166,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5637,39 +4173,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 9 / 3 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079147",
-   "match": "Team Reds vs NextGeneration Esports",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-30T19:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Team Reds",
-     "url": "https://lol.fandom.com/wiki/Team_Reds"
-    },
-    {
-     "label": "Leaguepedia: NextGeneration Esports",
-     "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-reds-vs-nextgeneration-esports-arabian-league-2nd-division-2026-summer-1079147"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 6 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 18 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1076566",
    "match": "Team VS Esport vs Meavedron Benelux",
    "tournament": "Benelux Ascend Series 2027 Winter Promotion",
@@ -5682,18 +4186,6 @@
     {
      "label": "Leaguepedia: Team VS Esport",
      "url": "https://lol.fandom.com/wiki/Team_VS_Esport"
-    },
-    {
-     "label": "Leaguepedia: Meavedron Benelux",
-     "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-meavedron-benelux-benelux-ascend-series-2027-winter-promotion-1076566"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5701,7 +4193,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 2 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 5 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1081672",
    "match": "Team Vertex vs Brod n Friends",
    "tournament": "4 Nations 2026 Halloween Heist",
@@ -5714,18 +4206,6 @@
     {
      "label": "Leaguepedia: Team Vertex",
      "url": "https://lol.fandom.com/wiki/Team_Vertex"
-    },
-    {
-     "label": "Leaguepedia: Brod n Friends",
-     "url": "https://lol.fandom.com/wiki/Brod_n_Friends"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-vertex-vs-brod-n-friends-4-nations-2026-halloween-heist-1081672"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5746,18 +4226,6 @@
     {
      "label": "Leaguepedia: TeamOrangeGaming Academy",
      "url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy"
-    },
-    {
-     "label": "Leaguepedia: Socken und Sandalen",
-     "url": "https://lol.fandom.com/wiki/Socken_und_Sandalen"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/teamorangegaming-academy-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075806"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5778,18 +4246,6 @@
     {
      "label": "Leaguepedia: The Bandits Academy",
      "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5810,18 +4266,6 @@
     {
      "label": "Leaguepedia: The Bandits Prime",
      "url": "https://lol.fandom.com/wiki/The_Bandits_Prime"
-    },
-    {
-     "label": "Leaguepedia: 404 Multigaming e.V.",
-     "url": "https://lol.fandom.com/wiki/404_Multigaming_e.V."
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079042"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5842,18 +4286,6 @@
     {
      "label": "Leaguepedia: Triforce Esport",
      "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Leaguepedia: Venus",
-     "url": "https://lol.fandom.com/wiki/Venus"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5874,18 +4306,6 @@
     {
      "label": "Leaguepedia: VfB eSports",
      "url": "https://lol.fandom.com/wiki/VfB_eSports"
-    },
-    {
-     "label": "Leaguepedia: Phong Vũ Buffalo",
-     "url": "https://lol.fandom.com/wiki/Phong_V%C5%A9_Buffalo"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/vfb-esports-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079038"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -5893,31 +4313,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 3 / 7 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079132",
-   "match": "Void Walkers vs Pegasus Esports",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-15T18:00:00+00:00",
+   "detail": "Only 3 / 1 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1071218",
+   "match": "Volda E-Sport vs CNG Royal",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-10-22T15:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Void Walkers",
-     "url": "https://lol.fandom.com/wiki/Void_Walkers"
-    },
-    {
-     "label": "Leaguepedia: Pegasus Esports",
-     "url": "https://lol.fandom.com/wiki/Pegasus_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/void-walkers-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079132"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Volda E-Sport",
+     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
     }
    ]
   },
@@ -5925,63 +4333,19 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 3 / 8 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1079142",
-   "match": "Void Walkers vs Slam Dunk",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-24T18:00:00+00:00",
+   "detail": "Only 3 / 0 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "fixture_id": "1071206",
+   "match": "Volda E-Sport vs Solid Gaming",
+   "tournament": "Komplettligaen 2026 Autumn",
+   "start_utc": "2026-10-11T15:00:00+00:00",
    "sources": [
     {
      "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Leaguepedia: Void Walkers",
-     "url": "https://lol.fandom.com/wiki/Void_Walkers"
-    },
-    {
-     "label": "Leaguepedia: Slam Dunk",
-     "url": "https://lol.fandom.com/wiki/Slam_Dunk"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/void-walkers-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079142"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
-    }
-   ]
-  },
-  {
-   "kind": "thin-history",
-   "severity": "medium",
-   "title": "Originated line built on thin match history",
-   "detail": "Only 3 / 29 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
-   "fixture_id": "1082107",
-   "match": "Void Walkers vs Team VDS",
-   "tournament": "Arabian League 2nd Division 2026 Summer",
-   "start_utc": "2026-10-31T19:00:00+00:00",
-   "sources": [
-    {
-     "label": "Leaguepedia Cargo API (ScoreboardGames)",
-     "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
-    },
-    {
-     "label": "Leaguepedia: Void Walkers",
-     "url": "https://lol.fandom.com/wiki/Void_Walkers"
-    },
-    {
-     "label": "Leaguepedia: Team VDS",
-     "url": "https://lol.fandom.com/wiki/Team_VDS"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/void-walkers-vs-team-vds-arabian-league-2nd-division-2026-summer-1082107"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Volda E-Sport",
+     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
     }
    ]
   },
@@ -6002,18 +4366,6 @@
     {
      "label": "Leaguepedia: Whalepower Humpbacks",
      "url": "https://lol.fandom.com/wiki/Whalepower_Humpbacks"
-    },
-    {
-     "label": "Leaguepedia: TeamOrangeGaming Academy",
-     "url": "https://lol.fandom.com/wiki/TeamOrangeGaming_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075791"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6034,18 +4386,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Chuds",
-     "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-chuds-icelandic-esports-league-2026-autumn-1077746"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6066,18 +4406,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077728"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6085,7 +4413,7 @@
    "kind": "thin-history",
    "severity": "medium",
    "title": "Originated line built on thin match history",
-   "detail": "Only 0 / 9 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
+   "detail": "Only 0 / 12 completed games were found for these teams in Leaguepedia over the last 420 days, so the Elo estimate is heavily shrunk toward 50%.",
    "fixture_id": "1080932",
    "match": "Zahrouni Esports vs JSK Academy",
    "tournament": "Tunisian Super League 2026",
@@ -6098,18 +4426,6 @@
     {
      "label": "Leaguepedia: Zahrouni Esports",
      "url": "https://lol.fandom.com/wiki/Zahrouni_Esports"
-    },
-    {
-     "label": "Leaguepedia: JSK Academy",
-     "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/zahrouni-esports-vs-jsk-academy-tunisian-super-league-2026-1080932"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6130,18 +4446,6 @@
     {
      "label": "Leaguepedia: reGOLD eSport",
      "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
-    },
-    {
-     "label": "Leaguepedia: Babos Gaming",
-     "url": "https://lol.fandom.com/wiki/Babos_Gaming"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/regold-esport-vs-babos-gaming-prm-2nd-division-26-27-fall-1079852"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6162,18 +4466,6 @@
     {
      "label": "Leaguepedia: reGOLD eSport",
      "url": "https://lol.fandom.com/wiki/reGOLD_eSport"
-    },
-    {
-     "label": "Leaguepedia: Team 300",
-     "url": "https://lol.fandom.com/wiki/Team_300"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/regold-esport-vs-team-300-prm-2nd-division-26-27-fall-1079849"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6194,18 +4486,6 @@
     {
      "label": "Leaguepedia: spongecord prime",
      "url": "https://lol.fandom.com/wiki/spongecord_prime"
-    },
-    {
-     "label": "Leaguepedia: Duplex Silva Pigeons Edition",
-     "url": "https://lol.fandom.com/wiki/Duplex_Silva_Pigeons_Edition"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/spongecord-prime-vs-duplex-silva-pigeons-edition-prm-3rd-division-26-27-fall-1075774"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6226,18 +4506,6 @@
     {
      "label": "Leaguepedia: spongecord prime",
      "url": "https://lol.fandom.com/wiki/spongecord_prime"
-    },
-    {
-     "label": "Leaguepedia: Emperors Bremen",
-     "url": "https://lol.fandom.com/wiki/Emperors_Bremen"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/spongecord-prime-vs-emperors-bremen-prm-3rd-division-26-27-fall-1075789"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6258,10 +4526,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/2-massive-vs-team-lucidity-esports-rivals-league-season-2-1074636"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6282,10 +4546,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/arena-vs-teambah-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081365"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6306,18 +4566,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077729"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6338,18 +4586,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077722"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6370,10 +4606,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/deleted-vs-s7raa-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082002"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6394,10 +4626,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dmg-esports-norway-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071167"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6418,10 +4646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-baronx-ligagg-celol-b-2026-split-2-playoffs-1081079"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6442,10 +4666,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-viktus-ligagg-celol-b-2026-split-2-1069849"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6466,10 +4686,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dziady-cz-67-vs-adam-west-corp-legends-academy-powered-by-abka-season-3-playoffs-1070823"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6490,10 +4706,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/exile-esports-academy-vs-mighty-eagles-hitpoint-2nd-div-challengers-2026-summer-playoffs-1075850"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6514,10 +4726,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/emperors-bremen-vs-sissi-state-punks-prm-3rd-division-26-27-fall-1075739"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6538,18 +4746,6 @@
     {
      "label": "Leaguepedia: Epic Avalanche",
      "url": "https://lol.fandom.com/wiki/Epic_Avalanche"
-    },
-    {
-     "label": "Leaguepedia: Finnish Red Mafia",
-     "url": "https://lol.fandom.com/wiki/Finnish_Red_Mafia"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/epic-avalanche-vs-finnish-red-mafia-fpl-2026-summer-playoffs-1066214"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6570,18 +4766,6 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077726"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6602,18 +4786,6 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077723"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6634,10 +4806,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/fritt-fall-vs-tung-sahur-mid-rivals-league-season-2-1079922"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6658,18 +4826,6 @@
     {
      "label": "Leaguepedia: Frost Tails",
      "url": "https://lol.fandom.com/wiki/Frost_Tails"
-    },
-    {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/frost-tails-vs-last-dance-benelux-ascend-series-2026-summer-playoffs-1061779"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6690,10 +4846,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/gala-esports-vs-the-bandits-academy-benelux-ascend-series-rising-2026-summer-playoffs-1070210"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6714,10 +4866,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glorp-cat-vs-impel-4-nations-2026-halloween-heist-1082061"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6738,10 +4886,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/inquisitors-vs-overpower-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081369"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6762,18 +4906,6 @@
     {
      "label": "Leaguepedia: Invictus Team",
      "url": "https://lol.fandom.com/wiki/Invictus_Team"
-    },
-    {
-     "label": "Leaguepedia: Smoke Tram Ascension",
-     "url": "https://lol.fandom.com/wiki/Smoke_Tram_Ascension"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/invictus-team-vs-smoke-tram-ascension-ligagg-celol-a-2026-split-2-1073030"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6788,16 +4920,12 @@
    "start_utc": "2026-09-25T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Karolinerna Black",
+     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
     }
    ]
   },
@@ -6818,10 +4946,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-crazy-kittens-e-sport-academy-superstrike-league-2026-1073184"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6842,18 +4966,6 @@
     {
      "label": "Leaguepedia: LANdits",
      "url": "https://lol.fandom.com/wiki/LANdits"
-    },
-    {
-     "label": "Leaguepedia: Frites Esports Club",
-     "url": "https://lol.fandom.com/wiki/Frites_Esports_Club"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6874,10 +4986,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/les-ravag-s-vs-nameless-benelux-ascend-series-2027-winter-promotion-1076565"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6898,10 +5006,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/levelers-vs-team-fifty-fifty-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082003"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6922,10 +5026,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-turbo-gaming-rivals-league-season-2-1074639"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6946,18 +5046,6 @@
     {
      "label": "Leaguepedia: Lund Esports Organization",
      "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -6978,10 +5066,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-dmg-esports-sweden-rivals-league-season-2-1074640"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7002,10 +5086,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/mtn-esports-team-vs-ratclub-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082004"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7026,10 +5106,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/marere-academy-vs-torin-ligagg-celol-b-2026-split-2-1069857"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7050,18 +5126,6 @@
     {
      "label": "Leaguepedia: Meavedron Benelux",
      "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/meavedron-benelux-vs-the-bandits-academy-benelux-ascend-series-2027-winter-promotion-1076570"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7082,18 +5146,6 @@
     {
      "label": "Leaguepedia: Mind Blue eSports",
      "url": "https://lol.fandom.com/wiki/Mind_Blue_eSports"
-    },
-    {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mind-blue-esports-vs-last-dance-benelux-ascend-series-2026-summer-split-1053095"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7108,16 +5160,12 @@
    "start_utc": "2026-09-17T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mixlag-fra-trondheim-vs-cng-royal-komplettligaen-2026-autumn-1071168"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Mixlag fra Trondheim",
+     "url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim"
     }
    ]
   },
@@ -7138,10 +5186,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/nameless-vs-bipolar-benelux-ascend-series-2026-summer-split-1053096"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7162,18 +5206,6 @@
     {
      "label": "Leaguepedia: Nameless",
      "url": "https://lol.fandom.com/wiki/Nameless"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7194,18 +5226,6 @@
     {
      "label": "Leaguepedia: NextGeneration Esports",
      "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
-    },
-    {
-     "label": "Leaguepedia: Slam Dunk",
-     "url": "https://lol.fandom.com/wiki/Slam_Dunk"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nextgeneration-esports-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079321"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7220,16 +5240,12 @@
    "start_utc": "2026-10-11T16:30:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Northern Wolves Esports",
+     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
     }
    ]
   },
@@ -7250,10 +5266,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-lundqvist-darkside-rivals-league-season-2-1074627"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7268,16 +5280,12 @@
    "start_utc": "2026-10-10T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: OnlyWinByFF",
+     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
     }
    ]
   },
@@ -7292,16 +5300,12 @@
    "start_utc": "2026-09-07T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/p11-esports-vs-hangmen-lit-2027-winter-promotion-1071584"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: P11 Esports",
+     "url": "https://lol.fandom.com/wiki/P11_Esports"
     }
    ]
   },
@@ -7322,18 +5326,6 @@
     {
      "label": "Leaguepedia: Phenti",
      "url": "https://lol.fandom.com/wiki/Phenti"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7354,10 +5346,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075757"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7378,18 +5366,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077744"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7410,18 +5386,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-fenrir-icelandic-esports-league-2026-autumn-1077730"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7442,18 +5406,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077727"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7474,18 +5426,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Whisky",
-     "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-whisky-icelandic-esports-league-2026-autumn-1077724"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7506,10 +5446,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syr-t1-vs-ravagers-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082005"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7530,18 +5466,6 @@
     {
      "label": "Leaguepedia: Slam Dunk",
      "url": "https://lol.fandom.com/wiki/Slam_Dunk"
-    },
-    {
-     "label": "Leaguepedia: JSK Academy",
-     "url": "https://lol.fandom.com/wiki/JSK_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/slam-dunk-vs-jsk-academy-arabian-league-2nd-division-2026-summer-1079137"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7562,18 +5486,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-fenrir-icelandic-esports-league-2026-autumn-1077745"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7594,18 +5506,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077731"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7626,10 +5526,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7650,10 +5546,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071200"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7674,18 +5566,6 @@
     {
      "label": "Leaguepedia: Solid Gaming",
      "url": "https://lol.fandom.com/wiki/Solid_Gaming"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7706,10 +5586,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syrian-rift-masters-vs-b7-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082001"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7730,18 +5606,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7762,18 +5626,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7794,10 +5646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-gala-esports-benelux-ascend-series-rising-2026-summer-playoffs-1053111"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7818,10 +5666,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-les-ravag-s-benelux-ascend-series-rising-2026-summer-playoffs-1069680"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7842,18 +5686,6 @@
     {
      "label": "Leaguepedia: Team VS Esport",
      "url": "https://lol.fandom.com/wiki/Team_VS_Esport"
-    },
-    {
-     "label": "Leaguepedia: Meavedron Benelux",
-     "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-meavedron-benelux-benelux-ascend-series-2027-winter-promotion-1076566"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7874,10 +5706,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-fritt-fall-rivals-league-season-2-1082060"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7898,10 +5726,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-karolinerna-rivals-league-season-2-1074643"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7922,18 +5746,6 @@
     {
      "label": "Leaguepedia: The Bandits Academy",
      "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7954,18 +5766,6 @@
     {
      "label": "Leaguepedia: Triforce Esport",
      "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Leaguepedia: RED OUAT",
-     "url": "https://lol.fandom.com/wiki/RED_OUAT"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-red-ouat-benelux-ascend-series-2027-winter-promotion-1076564"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -7986,18 +5786,6 @@
     {
      "label": "Leaguepedia: Triforce Esport",
      "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Leaguepedia: Venus",
-     "url": "https://lol.fandom.com/wiki/Venus"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8018,18 +5806,6 @@
     {
      "label": "Leaguepedia: Void Walkers",
      "url": "https://lol.fandom.com/wiki/Void_Walkers"
-    },
-    {
-     "label": "Leaguepedia: Pegasus Esports",
-     "url": "https://lol.fandom.com/wiki/Pegasus_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/void-walkers-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079132"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8044,16 +5820,12 @@
    "start_utc": "2026-10-11T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Volda E-Sport",
+     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
     }
    ]
   },
@@ -8074,18 +5846,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Chuds",
-     "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-chuds-icelandic-esports-league-2026-autumn-1077746"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8106,18 +5866,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077728"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8138,10 +5886,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/x-funkass-vs--arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082006"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8150,22 +5894,18 @@
    "severity": "low",
    "title": "Only one external bookmaker prices this fixture",
    "detail": "The market line rests on a single bookmaker/prediction-market price rather than a multi-book consensus.",
-   "fixture_id": "1067676",
-   "match": "G2 Esports vs Dplus KIA",
+   "fixture_id": "1067678",
+   "match": "LØS vs T1",
    "tournament": "Worlds 2026 Main Event",
-   "start_utc": "2026-10-23T21:00:00+00:00",
+   "start_utc": "2026-10-23T23:00:00+00:00",
    "sources": [
     {
-     "label": "Polymarket: LoL: G2 Esports vs Dplus KIA (BO1) - Worlds Group Stage",
-     "url": "https://polymarket.com/event/lol-g2-dk-2026-10-23"
+     "label": "Unibet (Kambi) Match Odds LØS (5.200) vs T1 (1.130) — de-vigged 17.9% / 82.1%",
+     "url": "https://www.unibet.com/sportsbook-feeds/views/filter/esports"
     },
     {
      "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/g2-esports-vs-dplus-kia-worlds-2026-main-event-1067676"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "url": "https://www.hotspawn.com/matches/los-vs-t1-worlds-2026-main-event-1067678"
     }
    ]
   },
@@ -8186,10 +5926,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/2-massive-vs-team-lucidity-esports-rivals-league-season-2-1074636"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8210,10 +5946,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/arena-vs-teambah-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081365"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8234,18 +5966,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077729"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8266,18 +5986,6 @@
     {
      "label": "Leaguepedia: Chuds",
      "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/chuds-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077722"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8298,10 +6006,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/deleted-vs-s7raa-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082002"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8322,10 +6026,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dmg-esports-norway-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071167"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8346,10 +6046,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-baronx-ligagg-celol-b-2026-split-2-playoffs-1081079"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8370,10 +6066,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/docta-esports-club-vs-viktus-ligagg-celol-b-2026-split-2-1069849"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8394,10 +6086,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/dziady-cz-67-vs-adam-west-corp-legends-academy-powered-by-abka-season-3-playoffs-1070823"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8418,10 +6106,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/exile-esports-academy-vs-mighty-eagles-hitpoint-2nd-div-challengers-2026-summer-playoffs-1075850"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8442,18 +6126,6 @@
     {
      "label": "Leaguepedia: Epic Avalanche",
      "url": "https://lol.fandom.com/wiki/Epic_Avalanche"
-    },
-    {
-     "label": "Leaguepedia: Finnish Red Mafia",
-     "url": "https://lol.fandom.com/wiki/Finnish_Red_Mafia"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/epic-avalanche-vs-finnish-red-mafia-fpl-2026-summer-playoffs-1066214"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8474,18 +6146,6 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077726"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8506,18 +6166,6 @@
     {
      "label": "Leaguepedia: Fenrir",
      "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/fenrir-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077723"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8538,10 +6186,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/fritt-fall-vs-tung-sahur-mid-rivals-league-season-2-1079922"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8562,18 +6206,6 @@
     {
      "label": "Leaguepedia: Frost Tails",
      "url": "https://lol.fandom.com/wiki/Frost_Tails"
-    },
-    {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/frost-tails-vs-last-dance-benelux-ascend-series-2026-summer-playoffs-1061779"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8594,10 +6226,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/gala-esports-vs-the-bandits-academy-benelux-ascend-series-rising-2026-summer-playoffs-1070210"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8618,10 +6246,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/glorp-cat-vs-impel-4-nations-2026-halloween-heist-1082061"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8642,10 +6266,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/inquisitors-vs-overpower-arabian-regional-championship-2026-qatar-bahrain-kuwait-1081369"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8666,18 +6286,6 @@
     {
      "label": "Leaguepedia: Invictus Team",
      "url": "https://lol.fandom.com/wiki/Invictus_Team"
-    },
-    {
-     "label": "Leaguepedia: Smoke Tram Ascension",
-     "url": "https://lol.fandom.com/wiki/Smoke_Tram_Ascension"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/invictus-team-vs-smoke-tram-ascension-ligagg-celol-a-2026-split-2-1073030"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8692,16 +6300,12 @@
    "start_utc": "2026-09-25T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/karolinerna-black-vs-lundqvist-lightside-superstrike-league-2026-1073177"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Karolinerna Black",
+     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
     }
    ]
   },
@@ -8722,10 +6326,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/karolinerna-vs-crazy-kittens-e-sport-academy-superstrike-league-2026-1073184"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8746,18 +6346,6 @@
     {
      "label": "Leaguepedia: LANdits",
      "url": "https://lol.fandom.com/wiki/LANdits"
-    },
-    {
-     "label": "Leaguepedia: Frites Esports Club",
-     "url": "https://lol.fandom.com/wiki/Frites_Esports_Club"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/landits-vs-frites-esports-club-pop-esports-masters-season-7-1053536"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8778,10 +6366,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/les-ravag-s-vs-nameless-benelux-ascend-series-2027-winter-promotion-1076565"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8802,10 +6386,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/levelers-vs-team-fifty-fifty-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082003"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8826,10 +6406,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-turbo-gaming-rivals-league-season-2-1074639"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8850,18 +6426,6 @@
     {
      "label": "Leaguepedia: Lund Esports Organization",
      "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Leaguepedia: Karolinerna Black",
-     "url": "https://lol.fandom.com/wiki/Karolinerna_Black"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/lund-esports-organization-vs-karolinerna-black-superstrike-league-2026-1073172"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8882,10 +6446,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/lundqvist-darkside-vs-dmg-esports-sweden-rivals-league-season-2-1074640"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8906,10 +6466,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/mtn-esports-team-vs-ratclub-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082004"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8930,10 +6486,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/marere-academy-vs-torin-ligagg-celol-b-2026-split-2-1069857"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8954,18 +6506,6 @@
     {
      "label": "Leaguepedia: Meavedron Benelux",
      "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Leaguepedia: The Bandits Academy",
-     "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/meavedron-benelux-vs-the-bandits-academy-benelux-ascend-series-2027-winter-promotion-1076570"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -8986,18 +6526,6 @@
     {
      "label": "Leaguepedia: Mind Blue eSports",
      "url": "https://lol.fandom.com/wiki/Mind_Blue_eSports"
-    },
-    {
-     "label": "Leaguepedia: LAST DANCE",
-     "url": "https://lol.fandom.com/wiki/LAST_DANCE"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mind-blue-esports-vs-last-dance-benelux-ascend-series-2026-summer-split-1053095"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9012,16 +6540,12 @@
    "start_utc": "2026-09-17T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/mixlag-fra-trondheim-vs-cng-royal-komplettligaen-2026-autumn-1071168"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Mixlag fra Trondheim",
+     "url": "https://lol.fandom.com/wiki/Mixlag_fra_Trondheim"
     }
    ]
   },
@@ -9042,10 +6566,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/nameless-vs-bipolar-benelux-ascend-series-2026-summer-split-1053096"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9066,18 +6586,6 @@
     {
      "label": "Leaguepedia: Nameless",
      "url": "https://lol.fandom.com/wiki/Nameless"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nameless-vs-triforce-esport-benelux-ascend-series-2027-winter-promotion-1076571"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9098,18 +6606,6 @@
     {
      "label": "Leaguepedia: NextGeneration Esports",
      "url": "https://lol.fandom.com/wiki/NextGeneration_Esports"
-    },
-    {
-     "label": "Leaguepedia: Slam Dunk",
-     "url": "https://lol.fandom.com/wiki/Slam_Dunk"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/nextgeneration-esports-vs-slam-dunk-arabian-league-2nd-division-2026-summer-1079321"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9124,16 +6620,12 @@
    "start_utc": "2026-10-11T16:30:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-b2u-rivals-league-season-2-1074642"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Northern Wolves Esports",
+     "url": "https://lol.fandom.com/wiki/Northern_Wolves_Esports"
     }
    ]
   },
@@ -9154,10 +6646,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/northern-wolves-esports-vs-lundqvist-darkside-rivals-league-season-2-1074627"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9172,16 +6660,12 @@
    "start_utc": "2026-10-10T16:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/onlywinbyff-vs-b2u-superstrike-league-2026-1073186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: OnlyWinByFF",
+     "url": "https://lol.fandom.com/wiki/OnlyWinByFF"
     }
    ]
   },
@@ -9196,16 +6680,12 @@
    "start_utc": "2026-09-07T17:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/p11-esports-vs-hangmen-lit-2027-winter-promotion-1071584"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: P11 Esports",
+     "url": "https://lol.fandom.com/wiki/P11_Esports"
     }
    ]
   },
@@ -9226,18 +6706,6 @@
     {
      "label": "Leaguepedia: Phenti",
      "url": "https://lol.fandom.com/wiki/Phenti"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/phenti-vs-ves-japan-komplettligaen-2026-autumn-1071217"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9258,18 +6726,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Cool Beans Team",
-     "url": "https://lol.fandom.com/wiki/Cool_Beans_Team"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-cool-beans-team-icelandic-esports-league-2026-autumn-1077744"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9290,18 +6746,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-fenrir-icelandic-esports-league-2026-autumn-1077730"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9322,18 +6766,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077727"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9354,18 +6786,6 @@
     {
      "label": "Leaguepedia: Rift Runners",
      "url": "https://lol.fandom.com/wiki/Rift_Runners"
-    },
-    {
-     "label": "Leaguepedia: Whisky",
-     "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/rift-runners-vs-whisky-icelandic-esports-league-2026-autumn-1077724"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9386,10 +6806,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syr-t1-vs-ravagers-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082005"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9410,18 +6826,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Fenrir",
-     "url": "https://lol.fandom.com/wiki/Fenrir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-fenrir-icelandic-esports-league-2026-autumn-1077745"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9442,18 +6846,6 @@
     {
      "label": "Leaguepedia: Smá Nibu",
      "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Leaguepedia: Grísirnir",
-     "url": "https://lol.fandom.com/wiki/Gr%C3%ADsirnir"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/sm-nibu-vs-gr-sirnir-icelandic-esports-league-2026-autumn-1077731"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9474,10 +6866,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ntnui-kometkameratene-komplettligaen-2026-autumn-1071186"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9498,10 +6886,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/solid-gaming-vs-playwell-r-d-q-komplettligaen-2026-autumn-1071200"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9522,18 +6906,6 @@
     {
      "label": "Leaguepedia: Solid Gaming",
      "url": "https://lol.fandom.com/wiki/Solid_Gaming"
-    },
-    {
-     "label": "Leaguepedia: VES Japan",
-     "url": "https://lol.fandom.com/wiki/VES_Japan"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/solid-gaming-vs-ves-japan-komplettligaen-2026-autumn-1071170"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9554,10 +6926,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/syrian-rift-masters-vs-b7-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082001"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9578,18 +6946,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1073183"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9610,18 +6966,6 @@
     {
      "label": "Leaguepedia: Team Lucidity Esports",
      "url": "https://lol.fandom.com/wiki/Team_Lucidity_Esports"
-    },
-    {
-     "label": "Leaguepedia: Lund Esports Organization",
-     "url": "https://lol.fandom.com/wiki/Lund_Esports_Organization"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-lucidity-esports-vs-lund-esports-organization-superstrike-league-2026-1079556"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9642,10 +6986,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-gala-esports-benelux-ascend-series-rising-2026-summer-playoffs-1053111"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9666,10 +7006,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-les-ravag-s-benelux-ascend-series-rising-2026-summer-playoffs-1069680"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9690,18 +7026,6 @@
     {
      "label": "Leaguepedia: Team VS Esport",
      "url": "https://lol.fandom.com/wiki/Team_VS_Esport"
-    },
-    {
-     "label": "Leaguepedia: Meavedron Benelux",
-     "url": "https://lol.fandom.com/wiki/Meavedron_Benelux"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/team-vs-esport-vs-meavedron-benelux-benelux-ascend-series-2027-winter-promotion-1076566"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9722,10 +7046,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/team-cd-vs-karolinerna-rivals-league-season-2-1074643"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9746,18 +7066,6 @@
     {
      "label": "Leaguepedia: The Bandits Academy",
      "url": "https://lol.fandom.com/wiki/The_Bandits_Academy"
-    },
-    {
-     "label": "Leaguepedia: Triforce Esport",
-     "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/the-bandits-academy-vs-triforce-esport-benelux-ascend-series-rising-2026-summer-playoffs-1069681"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9778,18 +7086,6 @@
     {
      "label": "Leaguepedia: Triforce Esport",
      "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Leaguepedia: RED OUAT",
-     "url": "https://lol.fandom.com/wiki/RED_OUAT"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-red-ouat-benelux-ascend-series-2027-winter-promotion-1076564"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9810,18 +7106,6 @@
     {
      "label": "Leaguepedia: Triforce Esport",
      "url": "https://lol.fandom.com/wiki/Triforce_Esport"
-    },
-    {
-     "label": "Leaguepedia: Venus",
-     "url": "https://lol.fandom.com/wiki/Venus"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/triforce-esport-vs-venus-benelux-ascend-series-rising-2026-summer-playoffs-1070209"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9842,18 +7126,6 @@
     {
      "label": "Leaguepedia: Void Walkers",
      "url": "https://lol.fandom.com/wiki/Void_Walkers"
-    },
-    {
-     "label": "Leaguepedia: Pegasus Esports",
-     "url": "https://lol.fandom.com/wiki/Pegasus_Esports"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/void-walkers-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079132"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9868,16 +7140,12 @@
    "start_utc": "2026-10-11T15:00:00+00:00",
    "sources": [
     {
-     "label": "Leaguepedia (no record found)",
+     "label": "Leaguepedia Cargo API (ScoreboardGames)",
      "url": "https://lol.fandom.com/api.php?action=help&modules=cargoquery"
     },
     {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/volda-e-sport-vs-solid-gaming-komplettligaen-2026-autumn-1071206"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
+     "label": "Leaguepedia: Volda E-Sport",
+     "url": "https://lol.fandom.com/wiki/Volda_E-Sport"
     }
    ]
   },
@@ -9898,18 +7166,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Chuds",
-     "url": "https://lol.fandom.com/wiki/Chuds"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-chuds-icelandic-esports-league-2026-autumn-1077746"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9930,18 +7186,6 @@
     {
      "label": "Leaguepedia: Whisky",
      "url": "https://lol.fandom.com/wiki/Whisky"
-    },
-    {
-     "label": "Leaguepedia: Smá Nibu",
-     "url": "https://lol.fandom.com/wiki/Sm%C3%A1_Nibu"
-    },
-    {
-     "label": "Hotspawn match page",
-     "url": "https://www.hotspawn.com/matches/whisky-vs-sm-nibu-icelandic-esports-league-2026-autumn-1077728"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   },
@@ -9962,10 +7206,6 @@
     {
      "label": "Hotspawn match page",
      "url": "https://www.hotspawn.com/matches/x-funkass-vs--arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082006"
-    },
-    {
-     "label": "Hotspawn Pick'em lobby",
-     "url": "https://play.hotspawn.com/lol-pickems"
     }
    ]
   }
