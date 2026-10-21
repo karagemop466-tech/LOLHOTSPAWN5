@@ -39,9 +39,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/leaguepedia_cache.json
-          key: leaguepedia-cache-v1
+          # The Actions cache is immutable per key, so the key must change every
+          # run for the refreshed history to be saved; restore-keys then picks up
+          # the most recent entry.
+          key: leaguepedia-cache-v1-${{ github.run_id }}
           restore-keys: |
-            leaguepedia-cache-
+            leaguepedia-cache-v1-
 
       - name: Run pick generation pipeline
         id: pipeline
@@ -72,20 +75,44 @@ jobs:
       - name: Verify data integrity
         run: |
           python3 - <<'EOF'
-          import json, sys
+          import json, re, sys
+
           with open("data/picks.json") as f:
               data = json.load(f)
+          with open("data/flagged.json") as f:
+              flagged = json.load(f)
+
           n = data.get("count", 0)
           assert n > 0, "No matches found in picks data!"
+
           allowed = {"MARKET", "MODEL", "UNRESOLVED"}
+          ids = set()
           for m in data["matches"]:
-              assert m["pick"] in (m["team1"], m["team2"]), f"Invalid pick: {m['fixture_id']}"
-              assert abs((m["prob_team1"] + m["prob_team2"]) - 1.0) < 0.001, f"Probs != 1: {m['fixture_id']}"
-              assert m["method"] in allowed, f"Unknown method: {m['method']}"
-              assert m["hotspawn_match_url"].startswith("https://www.hotspawn.com/matches/"), m["fixture_id"]
-              assert m["sources"], f"No sources for {m['fixture_id']}"
+              fid = m["fixture_id"]
+              assert fid not in ids, f"Duplicate fixture id: {fid}"
+              ids.add(fid)
+              assert m["pick"] in (m["team1"], m["team2"]), f"Invalid pick: {fid}"
+              assert abs((m["prob_team1"] + m["prob_team2"]) - 1.0) < 0.001, f"Probs != 1: {fid}"
+              assert m["method"] in allowed, f"Unknown method {m['method']} on {fid}"
+              assert re.match(r"^https://www\.hotspawn\.com/matches/[a-z0-9-]+-\d{5,9}$",
+                              m["hotspawn_match_url"]), f"Bad permalink: {m['hotspawn_match_url']}"
+              assert m["sources"], f"No sources for {fid}"
+              for s in m["sources"]:
+                  assert s["url"].startswith("https://"), f"Non-https source on {fid}"
+              if m["method"] == "UNRESOLVED":
+                  assert abs(m["prob_team1"] - 0.5) < 1e-9, f"Unresolved row not 50/50: {fid}"
+
+          # every unresolved row must appear in the flagged set
+          fl_ids = {i["fixture_id"] for i in flagged["items"] if i["kind"] == "unresolved-pick"}
+          un_ids = {m["fixture_id"] for m in data["matches"] if m["method"] == "UNRESOLVED"}
+          assert fl_ids == un_ids, "flagged.json unresolved set does not match picks.json"
+
+          acc = data["debug"].get("permalink_rule_accuracy")
+          print(f"permalink slug rule accuracy: {acc}")
+
           print(f"Verification passed: {n} fixtures, "
-                f"{data['coverage']['resolved']} resolved / {data['coverage']['unresolved']} unresolved")
+                f"{data['coverage']['resolved']} resolved / {data['coverage']['unresolved']} unresolved, "
+                f"{flagged['count']} flagged items")
           EOF
 
       - name: Commit and push changes
