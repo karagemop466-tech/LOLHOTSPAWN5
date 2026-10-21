@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-21T21:15:32Z",
+ "collected_utc": "2026-10-21T21:21:17Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -11,66 +11,18 @@
   "leagues": [
    {
     "sport_id": 12,
-    "id": 225201,
-    "name": "League of Legends - EMEA Masters",
-    "matchup_count": 1
-   },
-   {
-    "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
     "matchup_count": 10
+   },
+   {
+    "sport_id": 12,
+    "id": 225201,
+    "name": "League of Legends - EMEA Masters",
+    "matchup_count": 1
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - EMEA Masters",
-    "league_id": 225201,
-    "matchup_id": 1638709103,
-    "start_utc": "2026-10-22T16:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Solary",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Galions",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 105,
-      "implied_raw": 0.4878,
-      "team": "Solary"
-     },
-     {
-      "designation": "away",
-      "american": -127,
-      "implied_raw": 0.55947,
-      "team": "Galions"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Solary",
-      "prob": 0.46578
-     },
-     {
-      "team": "Galions",
-      "prob": 0.53422
-     }
-    ],
-    "cutoff_utc": "2026-10-22T16:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -454,6 +406,54 @@
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638748200/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - EMEA Masters",
+    "league_id": 225201,
+    "matchup_id": 1638709103,
+    "start_utc": "2026-10-22T16:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Solary",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Galions",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 105,
+      "implied_raw": 0.4878,
+      "team": "Solary"
+     },
+     {
+      "designation": "away",
+      "american": -127,
+      "implied_raw": 0.55947,
+      "team": "Galions"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Solary",
+      "prob": 0.46578
+     },
+     {
+      "team": "Galions",
+      "prob": 0.53422
+     }
+    ],
+    "cutoff_utc": "2026-10-22T16:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1638709103/markets/related/straight"
    }
   ],
   "errors": [],
@@ -489,8 +489,8 @@
       "yes_bid_dollars": "0.4500",
       "yes_ask_dollars": "0.4600",
       "last_price_dollars": "0.4600",
-      "volume_dollars": "3728.57",
-      "open_interest": "3120.27"
+      "volume_dollars": "3736.94",
+      "open_interest": "3128.64"
      },
      {
       "team": "Galions",
@@ -550,8 +550,8 @@
       "yes_bid_dollars": "0.7700",
       "yes_ask_dollars": "0.7800",
       "last_price_dollars": "0.7800",
-      "volume_dollars": "26850.13",
-      "open_interest": "26260.12"
+      "volume_dollars": "26881.38",
+      "open_interest": "26291.37"
      }
     ],
     "devigged": [
@@ -598,7 +598,7 @@
       "team": "Team Liquid",
       "title": "Team Liquid wins",
       "ticker": "KXLOLGAME-26OCT231400CFOTL-TL",
-      "yes_bid_dollars": "0.7000",
+      "yes_bid_dollars": "0.7100",
       "yes_ask_dollars": "0.7200",
       "last_price_dollars": "0.7300",
       "volume_dollars": "15415.75",
@@ -608,11 +608,11 @@
     "devigged": [
      {
       "team": "CTBC Flying Oyster",
-      "prob": 0.28283
+      "prob": 0.28141
      },
      {
       "team": "Team Liquid",
-      "prob": 0.71717
+      "prob": 0.71859
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct231400cfotl",
@@ -990,7 +990,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2634,
+   "body_bytes": 2635,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
