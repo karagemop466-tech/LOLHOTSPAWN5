@@ -97,3 +97,29 @@ implementation using the **same** root page filenames (`index.html`, `picks.html
   refs and anchors resolve, 203 external citations).
 - `sitemap.xml` parses as valid XML and lists all 6 pages; `404.html` generated.
 - Only one workflow remains in `.github/workflows/` (`update.yml`), so there is a single publisher.
+
+## Publication record
+
+| PR | Purpose | Result |
+|---|---|---|
+| [#4](https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/4) | Full-coverage pipeline + mobile site + 4-hourly refresh; archives the superseded parallel implementation | **Merged** into `main` (`--merge`) |
+| [#5](https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/5) | Methodology rendering fix so the scheduled rebuild does not republish a Python dict literal | **Merged** into `main` (`--merge`) |
+
+- **Live site:** https://karagemop466-tech.github.io/LOLHOTSPAWN5/
+- **Deploy:** GitHub Pages, `build_type=legacy`, source `main` `/`; `pages-build-deployment` reported
+  `success` for the post-merge commits, and the deployed pages were fetched back over HTTPS and
+  checked against the committed HTML.
+- **Automation:** `.github/workflows/update.yml` (`17 */4 * * *`) collected, rebuilt, link-checked and
+  committed a refresh (`data: scheduled refresh 2026-10-21T20:45Z`) to `main` on its first run,
+  which is the end-to-end proof that the 4-hour cycle works without manual input.
+- **Single publisher:** the legacy 6-hourly workflow was archived inert
+  (`archive/legacy-site/workflows/refresh-6h.yml.disabled`) so only one workflow writes the site.
+
+### Known open items (non-blocking, all published on review.html)
+
+1. 69 stale Hotspawn rows (past start, still `scheduled`, no match page).
+2. `best_of` is `null` for every Hotspawn row, so series length cannot be shown.
+3. ~96% of fixtures have no external market and rest on the Elo model.
+4. 57 fixtures priced on fewer than 3 rated results for one side.
+5. Bovada (HTTP 400), Polymarket (stale markets) and Kalshi (outright only) contributed no per-match
+   price; each is documented rather than substituted.
