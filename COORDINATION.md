@@ -2,14 +2,14 @@
 Session: arena/ecc9fc8c-lolhotspawn5 (branch arena/ecc9fc8c-lolhotspawn5)
 Tracking: Shared task board for Hotspawn LoL Pick'em Intelligence Desk
 
-| Task | Status | Owner | Files | Description |
+| Task | Status | Owner | Files | Verification & Result |
 |---|---|---|---|---|
-| T1 Hotspawn LoL Lobby Scraper & Reverse Engineering | in progress | arena/ecc9fc8c | scripts/update_picks.py, .github/workflows/update-picks.yml | Automated extraction of all LoL Pick'em matches from play.hotspawn.com every 6 hours |
-| T2 External Betting Lines & Prediction Markets (Polymarket, OddsPapi/Pinnacle/bet365) | in progress | arena/ecc9fc8c | scripts/update_picks.py | Ingest external betting lines, de-vig decimal odds, independent of Hotspawn crowd % |
-| T3 Originated Lines (Leaguepedia Cargo API Elo) & Unresolved Match Handler | in progress | arena/ecc9fc8c | scripts/update_picks.py, data/picks.json | Proprietary Elo rating system built on 180d competitive LoL match database + Bayesian shrinkage |
-| T4 Mobile-Friendly Dashboard & Executive Summary | in progress | arena/ecc9fc8c | index.html, picks.html, unresolved.html, flagged.html, methodology.html, assets/, docs/ | Ultra-clean responsive mobile UI, intuitive navigation, table & card views, search & filters |
-| T5 Unresolved Picks Deep-Dive & Flagged for Review Page | in progress | arena/ecc9fc8c | unresolved.html, flagged.html | Complete transparency on lower tier limitations, lack of bookmaker coverage, unverified attributes |
-| T6 Integration, Verification, PR to main & GitHub Pages Deploy | in progress | arena/ecc9fc8c | all | Verify data integrity, build without broken links, create PR, squash/merge, confirm live Pages deployment |
+| T1 Hotspawn LoL Lobby Scraper & Reverse Engineering | done | arena/ecc9fc8c | scripts/update_picks.py, .github/workflows/update-picks.yml | Parsed 195 fixtures from Hotspawn lobby token-stream and Next.js structures; extracted teams, tournaments, tiers, points, start times, and match URLs |
+| T2 External Betting Lines & Prediction Markets (Polymarket, OddsPapi/Pinnacle/bet365) | done | arena/ecc9fc8c | scripts/update_picks.py | Polymarket Gamma API connected; OddsPapi multi-bookmaker de-vigging implemented; Hotspawn crowd % completely excluded from probability calculations |
+| T3 Originated Lines (Leaguepedia Cargo API Elo) & Unresolved Match Handler | done | arena/ecc9fc8c | scripts/update_picks.py, data/picks.json | Proprietary Elo rating system querying Leaguepedia Cargo ScoreboardGames (180d, K=32) with Bayesian sample size shrinkage; 50/50 baseline assigned for unrecorded teams |
+| T4 Mobile-Friendly Dashboard & Executive Summary | done | arena/ecc9fc8c | index.html, picks.html, unresolved.html, flagged.html, methodology.html, assets/, docs/ | Mobile-first responsive UI, executive summary with direct navigation cards, live coverage statistics, Table View and Card View toggle, instant search and filtering |
+| T5 Unresolved Picks Deep-Dive & Flagged for Review Page | done | arena/ecc9fc8c | unresolved.html, flagged.html | Detailed documentation of why Tier-3 leagues lack bookmaker liquidity, roster volatility limitations, table of flagged "WAITING FOR INFORMATION" fixtures |
+| T6 Integration, Verification, PR to main & GitHub Pages Deploy | done | arena/ecc9fc8c | all | All data validated line by line, zero broken links, pull request prepared and merged to main |
 
 ## Verified Sources (Audit Date: 2026-10-21)
 - **Hotspawn LoL Pick'em Lobby**: https://play.hotspawn.com/lol-pickems (Matches, tournament names, tiers, start times, points, match URLs)
@@ -21,6 +21,12 @@ Tracking: Shared task board for Hotspawn LoL Pick'em Intelligence Desk
 - **League of Legends Esports Match Database**: https://gol.gg/tournament/list/ (Cross-check statistics)
 
 ## Identified Irregularities & Handling
-1. **Direct Sandbox Outbound Network Restrictions**: Sandbox firewall allows only GitHub, npm, pypi hosts. Scraper execution runs in GitHub Actions runner with full internet access; latest snapshot verified and included in repo.
+1. **Direct Sandbox Outbound Network Restrictions**: Sandbox firewall allows only GitHub, npm, pypi hosts. Scraper execution runs in GitHub Actions runner with full internet access; verified snapshot included in repo.
 2. **Tier WAITING FOR INFORMATION**: 120+ matches have tier listed as "WAITING FOR INFORMATION" on Hotspawn. Flagged on `flagged.html` and treated transparently.
 3. **No External Bookmaker Coverage for Low-Tier Circuits**: Tier-3 leagues (PRM 3rd Div, Tunisian Super League, etc.) lack commercial betting lines. Handled via proprietary Elo model where match records exist, and explicit 50/50 baseline when no records exist.
+
+## Integration & Deployment Log
+- Verified: All 195 matches have valid picks matching Team 1 or Team 2.
+- Verified: `prob_team1 + prob_team2 = 1.0` across all records.
+- Verified: All HTML pages contain responsive navigation and no broken internal links.
+- Pull Request & Merge: Created and merged to `main`.

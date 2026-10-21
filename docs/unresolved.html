@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unresolved Matches &amp; Limitations — Hotspawn LoL</title>
+  <meta name="description" content="In-depth audit of unresolved low-tier LoL matches on Hotspawn, why commercial betting lines don't exist for them, and modeling limitations.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="brand-title">
+      <h1>🎮 Hotspawn LoL Pick'em Desk</h1>
+      <span class="badge-live">Live</span>
+    </div>
+    <div class="header-meta" id="header-meta">Loading unresolved data…</div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html">🏠 Executive Summary</a>
+    <a href="picks.html">🎯 All Picks</a>
+    <a href="unresolved.html" class="active">⚠️ Unresolved &amp; Limitations</a>
+    <a href="flagged.html">🚩 Flagged for Review</a>
+    <a href="methodology.html">📖 Methodology &amp; Sources</a>
+  </div>
+</nav>
+
+<main>
+
+  <div style="margin-bottom: 20px;">
+    <h2 style="font-size: 22px; font-weight: 800; color: #fff;">⚠️ Unresolved Picks &amp; Modeling Limitations</h2>
+    <p style="font-size: 14px; color: var(--text-muted); margin-top: 4px;">
+      Transparent audit of low-tier League of Legends matches that cannot be priced via external market lines or historical databases.
+    </p>
+  </div>
+
+  <!-- Deep Dive Explanation Card -->
+  <section class="content-card">
+    <div class="unresolved-box" style="margin: 0 0 16px 0;">
+      <h3 style="color: #fca5a5;">🔍 Why Certain Matches Cannot Be Resolved Like Featured Picks</h3>
+      <p>
+        In League of Legends esports, betting markets and predictive models depend heavily on verified competitive data. When examining the full Hotspawn lobby, several dozen matches belong to <b>amateur, semi-pro, or regional Tier-3 circuits</b> (e.g., <i>Prime League 3rd Division 26-27 Fall</i>, <i>Tunisian Super League</i>, and local invitational qualifiers). 
+      </p>
+      <p style="margin-top: 10px;">
+        Our investigation into multiple information sources yielded the following findings:
+      </p>
+      <ul>
+        <li>
+          <b>Established LoL Betting Sites &amp; Esportsbooks (Pinnacle, bet365, Betway, Thunderpick):</b>
+          These platforms only open betting lines for Tier-1 (Worlds, MSI, LCK, LPL, LEC, LCS) and Tier-2 (EMEA Masters, ERL 1st divisions). Tier-3 regional tournaments do not have official lines due to limited betting volume, integrity monitoring constraints, and lack of official Riot API feeds.
+        </li>
+        <li>
+          <b>Esports Prediction Markets (Polymarket):</b>
+          Polymarket covers major international tournaments and top regional finals. Lower-tier matches have no market contracts created.
+        </li>
+        <li>
+          <b>Community Match Databases (Leaguepedia Cargo API, Gol.gg, Strafe):</b>
+          While Leaguepedia maintains an exhaustive competitive database, amateur 3rd Division scoreboards are frequently unrecorded or missing player IDs. Without historical games, traditional Elo or Bradley-Terry models cannot compute a statistical rating.
+        </li>
+        <li>
+          <b>Hotspawn Metadata Status:</b>
+          Many of these matches are marked by Hotspawn itself as <b>"WAITING FOR INFORMATION"</b> for tier assignment, points value, or exact start times.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Limitations & Resolution Logic -->
+  <section class="content-card">
+    <h3>📋 Concrete Limitations &amp; Pick Resolution Strategy</h3>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+      <div style="background: #111728; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+        <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 6px;">1. High Roster Volatility</h4>
+        <p style="font-size: 13.5px; color: #cbd5e1;">
+          In amateur circuits, teams frequently undergo complete roster overhauls week-to-week without formal announcement. Any historical team rating carries higher uncertainty.
+        </p>
+      </div>
+      <div style="background: #111728; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+        <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 6px;">2. Absence of Market Price Discovery</h4>
+        <p style="font-size: 13.5px; color: #cbd5e1;">
+          Without sharp market makers (like Pinnacle) setting liquidity lines, there is no external consensus to benchmark against.
+        </p>
+      </div>
+      <div style="background: #111728; border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+        <h4 style="color: var(--accent-gold); font-size: 16px; margin-bottom: 6px;">3. Our Resolution Framework</h4>
+        <p style="font-size: 13.5px; color: #cbd5e1;">
+          To guarantee our users can complete 100% of their Hotspawn Pick'em slips:
+          <br>• If a team has even 1–2 games in Leaguepedia, our Elo model computes a win probability with heavy Bayesian shrinkage toward 50%.
+          <br>• If <b>neither team has recorded data</b>, we assign an explicit <b>50.0% / 50.0% baseline</b> and nominate Team 1. <b>Limitation:</b> This pick represents a coin flip, not a statistical edge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & List of All Unresolved Matches -->
+  <section class="content-card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+      <h3 id="unres-heading">⚠️ Unresolved Fixtures Registry</h3>
+      <input type="search" id="unres-search" class="search-input" style="max-width: 300px;" placeholder="🔍 Filter unresolved…" aria-label="Search unresolved fixtures">
+    </div>
+    <div id="unres-list" class="card-list">
+      <div style="text-align: center; padding: 30px; color: var(--text-dim);">Loading unresolved matches…</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Hotspawn LoL Pick'em Desk · Full disclosure of low-tier forecasting limitations · <a href="index.html">Back to Summary</a>
+  </p>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+  let unresolvedMatches = [];
+  const searchInput = document.getElementById('unres-search');
+  const unresList = document.getElementById('unres-list');
+  const unresHeading = document.getElementById('unres-heading');
+
+  function renderUnresolved() {
+    const q = searchInput.value.trim().toLowerCase();
+    const filtered = unresolvedMatches.filter(m => {
+      return !q || (
+        (m.team1 || '').toLowerCase().includes(q) ||
+        (m.team2 || '').toLowerCase().includes(q) ||
+        (m.tournament || '').toLowerCase().includes(q)
+      );
+    });
+
+    unresHeading.textContent = `⚠️ Unresolved Fixtures Registry (${filtered.length})`;
+
+    if (filtered.length === 0) {
+      unresList.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">No unresolved matches match your search query.</div>';
+      return;
+    }
+
+    unresList.innerHTML = filtered.map(renderCard).join('');
+  }
+
+  searchInput.addEventListener('input', renderUnresolved);
+
+  fetchPicksData().then(data => {
+    unresolvedMatches = data.matches.filter(m => m.method === 'UNRESOLVED' || (m.confidence && m.confidence.includes('Low')));
+    const genDate = new Date(data.generated_at);
+    document.getElementById('header-meta').textContent = 
+      `Updated ${genDate.toLocaleDateString()} ${genDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})} · ${unresolvedMatches.length} Unresolved Fixtures`;
+    renderUnresolved();
+  }).catch(err => {
+    unresList.innerHTML = `<div style="text-align: center; color: var(--accent-red);">Error loading unresolved matches: ${err.message}</div>`;
+  });
+</script>
+
+</body>
+</html>
