@@ -4,18 +4,20 @@
 [2/6] Pinnacle esportsbook …
       12 League of Legends matchups on the board, 9 priced
 [3/6] Unibet / Kambi esports …
-      0 League of Legends events priced
+      9 League of Legends events priced
 [4/6] Polymarket …
       1996 two-way markets indexed
 [5/6] Leaguepedia history — 189 teams / 27 competitions …
-      pass 0: 0 teams served from cache (0 games)
-      pass 1: 27 competitions …
-        +0 games from competition pass
-      pass 2: 189 teams in 12 chunk queries …
-        5/12 chunks, 500 games total
-        10/12 chunks, 1101 games total
-      1472 games, 197 teams rated
+      pass 0: 61 teams served from cache (1472 games)
+      pass 1: 27 competitions in 4 batched queries …
+        2/4 batches, 1536 games total
+        4/4 batches, 1536 games total
+        +64 games from competition pass
+      pass 2: 128 teams in 13 chunk queries …
+        5/13 chunks, 1605 games total
+        10/13 chunks, 1660 games total
+      1660 games, 228 teams rated
 [6/6] Resolving picks …
 
-Done. 264 fixtures — {'MODEL': 99, 'UNRESOLVED': 157, 'MARKET': 8}
-      resolved 107 / unresolved 157
+Done. 264 fixtures — {'MODEL': 112, 'UNRESOLVED': 143, 'MARKET': 9}
+      resolved 121 / unresolved 143
