@@ -25,8 +25,10 @@ Tracking: Shared task board for Hotspawn LoL Pick'em Intelligence Desk
 2. **Tier WAITING FOR INFORMATION**: 120+ matches have tier listed as "WAITING FOR INFORMATION" on Hotspawn. Flagged on `flagged.html` and treated transparently.
 3. **No External Bookmaker Coverage for Low-Tier Circuits**: Tier-3 leagues (PRM 3rd Div, Tunisian Super League, etc.) lack commercial betting lines. Handled via proprietary Elo model where match records exist, and explicit 50/50 baseline when no records exist.
 
-## Integration & Deployment Log
-- Verified: All 195 matches have valid picks matching Team 1 or Team 2.
-- Verified: `prob_team1 + prob_team2 = 1.0` across all records.
-- Verified: All HTML pages contain responsive navigation and no broken internal links.
-- Pull Request & Merge: Created and merged to `main`.
+## Integration & Deployment Record
+- **Pull Request**: [#1 Hotspawn LoL: 100% Pick & Probability Coverage](https://github.com/karagemop466-tech/LOLHOTSPAWN5/pull/1)
+- **Merge Commit**: `80b30c441b8022b7a976f9bbaab286c07d3fc471`
+- **Merge Result**: Merged successfully into `main` branch.
+- **GitHub Actions Workflow**: Runs every 6 hours (`0 */6 * * *`) via `.github/workflows/update-picks.yml` (Run ID 39669990400 passed in 11s).
+- **GitHub Pages Deployment**: Deployed live at **https://karagemop466-tech.github.io/LOLHOTSPAWN5/** (Deployment run 39670023880 passed in 26s).
+- **Live Site Status**: Active, serving root `index.html` with mobile-first cards and table views.
