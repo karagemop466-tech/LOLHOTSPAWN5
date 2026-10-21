@@ -10,34 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch and diagnose
-        run: |
-          mkdir -p probe
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-          curl -sS --compressed -A "$UA" -H "Accept-Language: en-US,en;q=0.9" --max-time 45 https://play.hotspawn.com/lol-pickems -o probe/lol-pickems.html -w "HTTP %{http_code} SIZE %{size_download}\n" > probe/fetch.log 2>&1
-          echo "--- SCRIPT SRCS ---" >> probe/fetch.log
-          grep -oE '<script[^>]*src="[^"]+"' probe/lol-pickems.html | head -30 >> probe/fetch.log
-          echo "--- NEXT_DATA? ---" >> probe/fetch.log
-          grep -c "__NEXT_DATA__" probe/lol-pickems.html >> probe/fetch.log
-          grep -c "__NUXT__" probe/lol-pickems.html >> probe/fetch.log
-          echo "--- API PATHS IN HTML ---" >> probe/fetch.log
-          grep -oE '"/api/[a-zA-Z0-9_/.-]*"' probe/lol-pickems.html | sort -u | head -40 >> probe/fetch.log
-          echo "--- ABSOLUTE API URLS ---" >> probe/fetch.log
-          grep -oE 'https://[a-zA-Z0-9_./-]*api[a-zA-Z0-9_./-]*' probe/lol-pickems.html | sort -u | head -40 >> probe/fetch.log
-          echo "--- HTML HEAD ---" >> probe/fetch.log
-          head -c 1500 probe/lol-pickems.html >> probe/fetch.log
-          echo "" >> probe/fetch.log
-          echo "--- ENDPOINT PROBES ---" >> probe/fetch.log
-          for p in /api/lol-pickems /api/lol/pickems /api/games/lol /api/v1/lol-pickems /api/pickems/lol /api/lobby/lol /api/tournaments /api/leaderboard /api/matches/lol /lol-pickems/data ; do
-            printf "%-28s " "$p" >> probe/fetch.log
-            curl -sS -o /tmp/o -w "%{http_code} %{size_download}b %{content_type}\n" -A "$UA" --max-time 20 "https://play.hotspawn.com$p" >> probe/fetch.log 2>&1 || echo FAIL >> probe/fetch.log
-          done
-      - name: Commit results
+      - name: run probe
+        run: bash scripts/probe.sh
+      - name: commit results
         run: |
           git config user.name "arena-collector"
           git config user.email "collector@users.noreply.github.com"
-          git add probe/ fetch.log 2>/dev/null || true
           git add -A probe || true
-          git commit -m "probe: diagnostics [skip ci]" || echo "nothing to commit"
+          git diff --cached --quiet || git commit -m "probe: diagnostics [skip ci]"
           git pull --rebase --autostash origin "$GITHUB_REF_NAME" || true
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME" || true
