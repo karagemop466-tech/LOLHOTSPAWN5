@@ -20,7 +20,7 @@ official source link · blank-out anything unconfirmed and publish it on *Flagge
 | `3552c64a` | `arena/3552c64a-lolhotspawn5` | `scripts/probe.py`, `.github/workflows/probe-sources.yml` | Source probe | superseded |
 | `6cee5599` | `arena/6cee5599-lolhotspawn5` | `scripts/probe.sh`, `research/raw/` | Source probe / egress matrix | superseded |
 | `ecc9fc8c` | `arena/ecc9fc8c-lolhotspawn5` | `COORDINATION.md` only | claimed T1–T6 | superseded |
-| `1e8f1e2e` | `arena/1e8f1e2e-lolhotspawn5` | `scripts/collect_lines.py`, `scripts/collect_results.py`, `scripts/build_model.py`, `scripts/build_site.py`, `scripts/check_invariants.py`, `data/**` (via pipeline runs), this log | Coverage lift: Kalshi ingest, 3-year results window, esportsbook probes, unresolved section in exec summary, integration of own delta | **in progress** |
+| `1e8f1e2e` | `arena/1e8f1e2e-lolhotspawn5` | `scripts/collect_lines.py`, `scripts/collect_results.py`, `scripts/build_model.py`, `scripts/build_site.py`, `scripts/check_invariants.py`, `data/**` (via pipeline runs), this log | Coverage lift: Kalshi ingest, 3-year results window, esportsbook probes, unresolved section in exec summary, integration of own delta | **done** |
 
 `074eaec9` completed the build and performed final integration, so the other claims are closed as
 superseded; no work was discarded — their probe findings were read and credited below.
