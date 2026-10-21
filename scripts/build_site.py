@@ -217,7 +217,6 @@ def build_index(doc):
     soon_cards = "".join(pick_card(r) for r in soon)
 
     body = f"""
-{stale_banner}
 <section class="hero">
   <h1>Every League of Legends match on Hotspawn, with a pick.</h1>
   <p class="lede">
