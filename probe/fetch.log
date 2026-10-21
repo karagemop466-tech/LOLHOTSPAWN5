@@ -1,0 +1,48 @@
+== HOTSPAWN PAGE ==
+status=200 bytes=1985698
+== FRAMEWORK MARKERS ==
+next_data=0
+nuxt=0
+react_root=0
+== SCRIPT SRCS ==
+<script src="polyfills-5CFQRCPP.js"
+<script src="main-GNDEYCXE.js"
+== API PATH LITERALS ==
+== ENDPOINT PROBES ==
+/api/lol-pickems           404 154b text/html; charset=utf-8
+/api/lol/pickems           404 154b text/html; charset=utf-8
+/api/games/lol             404 152b text/html; charset=utf-8
+/api/v1/lol-pickems        404 157b text/html; charset=utf-8
+/api/pickems/lol           404 154b text/html; charset=utf-8
+/api/tournaments           404 154b text/html; charset=utf-8
+/api/matches/lol           404 154b text/html; charset=utf-8
+/lol-pickems/data          404 155b text/html; charset=utf-8
+/lol-pickems.json          404 155b text/html; charset=utf-8
+/api/health                404 149b text/html; charset=utf-8
+== EXTERNAL SOURCE REACHABILITY ==
+https://lol.fandom.com/api.php                           200 104317b
+https://oracleselixir.com                                403 5482b
+https://www.oddsportal.com                               200 409676b
+https://polymarket.com                                   200 1835530b
+https://gamma-api.polymarket.com/events?limit=1          200 5964b
+https://gg.bet                                           403 126b
+https://www.esportbet.com                                301 1b
+https://www.betway.com                                   302 0b
+https://liquipedia.net/leagueoflegends/                  429 2707b
+https://www.leagueoflegends.com                          307 0b
+https://lolesports.com                                   307 0b
+https://www.hotspawn.com/matches                         403 5630b
+https://gol.gg                                           200 176b
+https://www.bayes-esports.com                            curl: (6) Could not resolve host: www.bayes-esports.com
+000 0b
+ERR
+== HTML HEAD ==
+<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>League of Legends Pick'ems | Hotspawn Play</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-fa
