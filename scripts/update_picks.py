@@ -86,9 +86,9 @@ MAX_WIKI_PAGES = 2          # 500 rows each, per team chunk
 WIKI_CHUNK = 16             # teams per Cargo query
 WIKI_BUDGET_SEC = 1500      # hard wall-clock budget for Leaguepedia collection
 CACHE_TTL_DAYS = 7          # how long a team's cached Leaguepedia history stays fresh
-CACHE_PATH = os.path.join(OUT_DIR, "leaguepedia_cache.json")
 
 OUT_DIR = "data"
+CACHE_PATH = os.path.join(OUT_DIR, "leaguepedia_cache.json")
 
 
 # --------------------------------------------------------------------------- #
