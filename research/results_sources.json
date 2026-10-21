@@ -1,0 +1,60 @@
+{
+ "probes": [
+  {
+   "probe": "cargoexport",
+   "status": 200,
+   "bytes": 82,
+   "snippet": "Error: No field named \"Tournament\" found for any of the specified database tables.",
+   "looks_json": false
+  },
+  {
+   "probe": "api_maxlag",
+   "status": 200,
+   "bytes": 159,
+   "snippet": "{\"error\":{\"code\":\"internal_api_error_MWException\",\"info\":\"[6ff779c2e3e3723795cff30e1ea43999] Caught exception of type MWException\",\"errorclass\":\"MWException\"}}",
+   "looks_json": true
+  },
+  {
+   "probe": "mw_query",
+   "status": 200,
+   "bytes": 175,
+   "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"apcontinue\":\"001122\",\"continue\":\"-||\"},\"query\":{\"allpages\":[{\"pageid\":249576,\"ns\":0,\"title\":\"(Rune)\"},{\"pageid\":750356,\"ns\":0,\"title\":\"00\"}]}}",
+   "looks_json": true
+  },
+  {
+   "probe": "riot_leagues",
+   "status": 403,
+   "bytes": 23,
+   "snippet": "{\"message\":\"Forbidden\"}",
+   "looks_json": true
+  },
+  {
+   "probe": "riot_schedule",
+   "status": 403,
+   "bytes": 23,
+   "snippet": "{\"message\":\"Forbidden\"}",
+   "looks_json": true
+  },
+  {
+   "probe": "golgg_list",
+   "status": 200,
+   "bytes": 568873,
+   "snippet": "<!DOCTYPE html>\r <html lang=\"en\">\r <head>\r <title>Lol esport tournaments list - Games of legends</title>\r <base href=\"https://gol.gg/tournament/\" >\r   <meta name=\"description\" content=\"Lol esport tournaments list. Major tournaments are covered : LCS, LCK, LPL and international events.\"/>\r   <meta name=\"keywords\" conten",
+   "looks_json": false
+  },
+  {
+   "probe": "golgg_teamrank",
+   "status": 403,
+   "bytes": 318,
+   "snippet": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>403 Forbidden</title> </head><body> <h1>Forbidden</h1> <p>You don't have permission to access this resource.</p> <p>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</p> </body></html> ",
+   "looks_json": false
+  },
+  {
+   "probe": "bo3_api",
+   "status": 404,
+   "bytes": 0,
+   "snippet": "",
+   "looks_json": false
+  }
+ ]
+}
