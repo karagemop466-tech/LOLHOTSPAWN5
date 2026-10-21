@@ -1,0 +1,49 @@
+=== hotspawn @ 2026-10-21T20:34:49Z rc=0 elapsed=3s ===
+collected 264 matches (lol_alias=264, without_hotspawn_page=69)
+{
+ "collected_utc": "2026-10-21T20:34:49Z",
+ "match_count": 264,
+ "matches_with_hotspawn_page": 195,
+ "matches_without_hotspawn_page": 69
+}
+=== lines @ 2026-10-21T20:34:54Z rc=0 elapsed=5s ===
+{
+ "lol_leagues": [
+  "League of Legends - EMEA Masters",
+  "League of Legends - World Championship"
+ ],
+ "matchups_with_moneyline": 9,
+ "pinnacle_errors": [],
+ "bovada_status": null,
+ "bovada_events": 0
+}
+=== results @ 2026-10-21T20:37:19Z rc=1 elapsed=145s ===
+  ratelimited, sleeping 3s
+  ratelimited, sleeping 6s
+  ratelimited, sleeping 12s
+  ratelimited, sleeping 20s
+  ratelimited, sleeping 3s
+  ratelimited, sleeping 6s
+  ratelimited, sleeping 12s
+  ratelimited, sleeping 20s
+  ratelimited, sleeping 3s
+  ratelimited, sleeping 6s
+  ratelimited, sleeping 12s
+  ratelimited, sleeping 20s
+COLLECTION FAILED: could not establish a working MatchSchedule field set
+could not establish a working MatchSchedule field set
+=== model @ 2026-10-21T20:37:19Z rc=0 elapsed=0s ===
+teams_rated=0 results_rows=0
+{
+ "matches": 264,
+ "live_matches": 195,
+ "by_method": {
+  "market": 9,
+  "model": 0,
+  "unresolved": 255
+ },
+ "market_priced": 9,
+ "model_priced": 0,
+ "unresolved": 255,
+ "with_a_pick": 9
+}
