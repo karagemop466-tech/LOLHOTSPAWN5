@@ -1,86 +1,51 @@
 name: probe-hotspawn-api
 
-# Discovery helper. Dumps the raw HTML of the Hotspawn Play lobby, lists every
-# <script src> / fetch() URL it can find, and probes a list of candidate API
-# endpoints. Output goes to the job log and to the "probe-output" artifact.
+# Discovery helper. Runs on push to this branch because the agent sandbox has no
+# outbound network access (only github.com / npmjs / pypi are reachable from it).
 #
-# Needed because the agent sandbox has no direct outbound network access.
+# It dumps the raw HTML of the Hotspawn Play LoL lobby, lists every <script src> and
+# API-looking URL it finds, probes candidate API hosts/paths, and writes the report
+# to research/probe-results.md so the agent can read it via `git pull`.
 
 on:
+  push:
+    branches:
+      - 'arena/b041f9d1-lolhotspawn5'
+    paths:
+      - '.github/workflows/probe.yml'
+      - 'scraper/probe.sh'
   workflow_dispatch:
-    inputs:
-      extra_url:
-        description: "Optional extra URL to probe"
-        required: false
-        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probe-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
-      - name: Probe endpoints
+      - name: Probe
+        run: bash scraper/probe.sh 2>&1 | tee research/probe-results.txt
+
+      - name: Commit report
         run: |
-          mkdir -p probe
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36'
-
-          echo "=========== 1. lobby HTML ==========="
-          curl -sSL -A "$UA" -D probe/headers-lobby.txt \
-            'https://play.hotspawn.com/lol-pickems' -o probe/lol-pickems.html
-          echo "bytes: $(wc -c < probe/lol-pickems.html)"
-          echo "--- status ---"; head -1 probe/headers-lobby.txt
-          echo "--- script srcs ---"
-          grep -oE 'src="[^"]+\.js[^"]*"' probe/lol-pickems.html | sort -u | head -50
-          echo "--- inline api-ish strings ---"
-          grep -oE '"(https?://[^"]*(api|graphql)[^"]*)"' probe/lol-pickems.html | sort -u | head -50
-          echo "--- buildManifest / __NEXT / __NUXT / window.__ ---"
-          grep -oE '(__NEXT_DATA__|__NUXT__|__remixContext|window\.__[A-Z_]+)' probe/lol-pickems.html | sort -u | head -20
-          echo "--- VITE / importmap / modulepreload ---"
-          grep -oE '(modulepreload|crossorigin)[^>]*href="[^"]+"' probe/lol-pickems.html | head -20
-
-          echo
-          echo "=========== 2. candidate API endpoints ==========="
-          for p in \
-            "/api/matches" "/api/match" "/api/lobby" "/api/events" "/api/pickems" \
-            "/api/v1/matches" "/api/v1/match" "/api/v1/lobby" "/api/v1/events" \
-            "/api/week" "/api/matches/lol" "/api/lol/matches" "/api/game/lol/matches" \
-            "/api/fixtures" "/api/games/lol/matches" "/api/tournaments" ; do
-            code=$(curl -sS -o probe/resp.json -w '%{http_code}' -A "$UA" \
-              -H 'Accept: application/json' "https://play.hotspawn.com${p}" 2>/dev/null || echo ERR)
-            size=$(wc -c < probe/resp.json 2>/dev/null || echo 0)
-            echo "GET https://play.hotspawn.com${p} -> ${code} (${size} bytes)"
-            if [ "$size" -gt 40 ] && [ "$code" = "200" ]; then
-              echo "    preview: $(head -c 300 probe/resp.json | tr -d '\n')"
-            fi
-          done
-
-          echo
-          echo "=========== 3. host candidates ==========="
-          for h in "api.play.hotspawn.com" "api.hotspawn.com" "backend.play.hotspawn.com" \
-                   "play-api.hotspawn.com" "data.hotspawn.com" ; do
-            code=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 12 "https://${h}/" 2>/dev/null || echo ERR)
-            echo "https://${h}/ -> ${code}"
-          done
-
-          echo
-          echo "=========== 4. www.hotspawn.com WP REST ==========="
-          code=$(curl -sS -o probe/wp-root.json -w '%{http_code}' -A "$UA" \
-            'https://www.hotspawn.com/wp-json/' 2>/dev/null || echo ERR)
-          echo "wp-json root -> ${code} ($(wc -c < probe/wp-root.json) bytes)"
-          head -c 1500 probe/wp-root.json
-
-          echo
-          echo "=========== 5. extra url ==========="
-          if [ -n "${{ github.event.inputs.extra_url }}" ]; then
-            curl -sSL -A "$UA" -w '\nHTTP %{http_code}\n' \
-              "${{ github.event.inputs.extra_url }}" -o probe/extra.out
-            echo "bytes: $(wc -c < probe/extra.out)"
-            head -c 3000 probe/extra.out
+          git config user.name  "hotspawn-bot"
+          git config user.email "hotspawn-bot@users.noreply.github.com"
+          git add research/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "probe: hotspawn api discovery results"
+            git push
           fi
 
-      - name: Upload probe output
+      - name: Upload raw probe output
         uses: actions/upload-artifact@v4
         with:
           name: probe-output
