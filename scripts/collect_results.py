@@ -93,11 +93,25 @@ def main():
         t2 = get(r, "Team2")
         w = get(r, "Winner")
         d = get(r, "DateTime UTC", "DateTime_UTC")
+        # Older rows can carry numeric team IDs instead of names; those cannot be
+        # attributed to a team, so they are skipped rather than mixed into ratings.
+        if t1 is not None and not isinstance(t1, str):
+            t1 = str(t1)
+        if t2 is not None and not isinstance(t2, str):
+            t2 = str(t2)
+        if t1:
+            t1 = t1.strip()
+        if t2:
+            t2 = t2.strip()
         if not (t1 and t2 and d):
+            continue
+        if t1.isdigit() or t2.isdigit() or t1 == t2:
             continue
         if not w or t1 == "TBD" or t2 == "TBD":
             continue  # not played yet - cannot inform a rating
         mid = get(r, "MatchId") or f"{t1}|{t2}|{d}"
+        if isinstance(mid, (int, float)):
+            mid = str(mid)
         if mid in seen:
             continue
         seen.add(mid)

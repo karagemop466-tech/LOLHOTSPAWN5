@@ -309,7 +309,22 @@ def join_market(hs_matches, lines):
             dt_h = abs((e["start"] - t).total_seconds()) / 3600.0
             if dt_h > TOLERANCE_HOURS:
                 continue
-            matched[hm["id"]] = {"entry": e, "hours_apart": round(dt_h, 2)}
+            # Secondary quotes (other sources matching the same fixture) are recorded
+            # as corroborating evidence; the priority source supplies the probability.
+            also = []
+            for j, e2 in enumerate(index):
+                if j == i or j in used:
+                    continue
+                if set(e2["names"]) != {h, a} or not e2["start"]:
+                    continue
+                dt_h2 = abs((e2["start"] - t).total_seconds()) / 3600.0
+                if dt_h2 > TOLERANCE_HOURS:
+                    continue
+                also.append({"source": e2["source"], "url": e2["url"],
+                             "api_url": e2["api_url"], "league": e2["league"],
+                             "probs": e2["probs"], "hours_apart": round(dt_h2, 2)})
+                used.add(j)
+            matched[hm["id"]] = {"entry": e, "hours_apart": round(dt_h, 2), "also": also}
             used.add(i)
             break
     return matched
@@ -408,6 +423,12 @@ def main():
                     "market_start_utc": mk["entry"]["raw"].get("start_utc"),
                     "market_hours_apart": mk["hours_apart"],
                     "market_american": price_rows,
+                    "market_quotes": [
+                        {"source": q.get("source"), "url": q.get("url"),
+                         "api_url": q.get("api_url"), "league": q.get("league"),
+                         "probs": q.get("probs"), "hours_apart": q.get("hours_apart")}
+                        for q in (mk.get("also") or [])
+                    ],
                     "model_prob_home": round(p_home_model, 4),
                     "model_vs_market_diff": round(p_home_model - ph, 4),
                 })

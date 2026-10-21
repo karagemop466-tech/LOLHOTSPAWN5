@@ -139,6 +139,10 @@ def source_links(r):
             out.append(f'<a href="{esc(r["market_api_url"])}" rel="noopener">{esc(src)} API price</a>')
         if r.get("market_url"):
             out.append(f'<a href="{esc(r["market_url"])}" rel="noopener">{esc(src)} market</a>')
+        for q in r.get("market_quotes") or []:
+            if q.get("url") or q.get("api_url"):
+                out.append(f'<a href="{esc(q.get("url") or q.get("api_url"))}" rel="noopener">'
+                           f'{esc(q.get("source"))} corroborating line</a>')
     if r.get("method") == "model":
         if r.get("model_url"):
             out.append(f'<a href="{esc(r["model_url"])}" rel="noopener">'
