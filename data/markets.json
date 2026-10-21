@@ -1,0 +1,150 @@
+{
+ "generated_utc": "2026-10-21T20:35:18.181256Z",
+ "quotes": [
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT232000MKOIBLG",
+   "start_utc": "2026-10-23T20:00:00Z",
+   "teams": [
+    "Movistar KOI",
+    "Bilibili Gaming"
+   ],
+   "probs": [
+    0.18181818181818182,
+    0.8181818181818182
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct232000mkoiblg",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231900LYTSW",
+   "start_utc": "2026-10-23T19:00:00Z",
+   "teams": [
+    "Team Secret Whales",
+    "LYON"
+   ],
+   "probs": [
+    0.413265306122449,
+    0.586734693877551
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231900lytsw",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231800T1LOS",
+   "start_utc": "2026-10-23T18:00:00Z",
+   "teams": [
+    "T1",
+    "LOS"
+   ],
+   "probs": [
+    0.8737373737373737,
+    0.12626262626262627
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231800t1los",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231700TESHLE",
+   "start_utc": "2026-10-23T17:00:00Z",
+   "teams": [
+    "Top Esports",
+    "Hanwha Life Esports"
+   ],
+   "probs": [
+    0.225,
+    0.775
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231700teshle",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231600DKG2",
+   "start_utc": "2026-10-23T16:00:00Z",
+   "teams": [
+    "G2 Esports",
+    "Dplus KIA"
+   ],
+   "probs": [
+    0.405,
+    0.595
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231600dkg2",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231500KCAL",
+   "start_utc": "2026-10-23T15:00:00Z",
+   "teams": [
+    "Karmine Corp",
+    "Anyone's Legend"
+   ],
+   "probs": [
+    0.3383838383838384,
+    0.6616161616161617
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231500kcal",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231400CFOTL",
+   "start_utc": "2026-10-23T14:00:00Z",
+   "teams": [
+    "Team Liquid",
+    "CTBC Flying Oyster"
+   ],
+   "probs": [
+    0.7185929648241206,
+    0.28140703517587945
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231400cfotl",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT231300IGGEN",
+   "start_utc": "2026-10-23T13:00:00Z",
+   "teams": [
+    "Invictus Gaming",
+    "Gen.G"
+   ],
+   "probs": [
+    0.225,
+    0.775
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct231300iggen",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  },
+  {
+   "source": "kalshi",
+   "source_label": "Kalshi (CFTC-regulated exchange)",
+   "event": "KXLOLGAME-26OCT220800SLYGAL",
+   "start_utc": "2026-10-22T08:00:00Z",
+   "teams": [
+    "Solary",
+    "Galions"
+   ],
+   "probs": [
+    0.4595959595959596,
+    0.5404040404040404
+   ],
+   "url": "https://kalshi.com/markets/kxlolgame-26oct220800slygal",
+   "retrieved_utc": "2026-10-21T20:35:18.181256Z"
+  }
+ ],
+ "unmatched": []
+}
