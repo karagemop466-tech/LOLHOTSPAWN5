@@ -1,15 +1,42 @@
 {
-  "generated_at": "2026-10-21T20:24:19.041923+00:00",
-  "lobbies": [
-    "https://play.hotspawn.com/lol-pickems",
-    "https://play.hotspawn.com/lobby"
-  ],
-  "lobby_http": 200,
-  "lobby_bytes": 1985584,
-  "active_lobby": "https://play.hotspawn.com/lol-pickems",
-  "parser": "html-token-stream",
-  "matches_parsed": 195,
-  "polymarket_markets": 2154,
-  "oddspapi_fixtures_priced": 0,
-  "elo_teams": 0
+ "generated_at": "2026-10-21T21:35:48.440801+00:00",
+ "pipeline": "v2",
+ "hotspawn_total_fixtures": 12016,
+ "hotspawn_lol_fixtures_alltime": 1501,
+ "hotspawn_lol_scheduled": 264,
+ "hotspawn_week": {
+  "weekId": 274,
+  "sportAlias": "lol",
+  "status": "OPEN",
+  "weekStartUtc": "2026-10-19T00:00:00.000Z",
+  "weekEndUtc": "2026-10-25T23:59:59.999Z",
+  "cutoffUtc": "2026-10-25T23:59:59.999Z"
+ },
+ "lobby_html_bytes": 1985584,
+ "lobby_permalinks_found": 195,
+ "pinnacle_matchups": 226,
+ "pinnacle_markets": 1002,
+ "pinnacle_moneyline_match_markets": 72,
+ "pinnacle_lol_matchups": 12,
+ "pinnacle_lol_matchup_types": {
+  "special": 3,
+  "matchup": 9
+ },
+ "pinnacle_lol_priced": 9,
+ "pinnacle_ok": true,
+ "unibet_esports_events": 57,
+ "unibet_lol_priced": 9,
+ "unibet_ok": true,
+ "polymarket_events": 159,
+ "polymarket_2way_markets": 1996,
+ "leaguepedia_competitions": 27,
+ "leaguepedia_cargo_calls": 10,
+ "leaguepedia_teams_missing_after_pass1": 145,
+ "leaguepedia_budget_exceeded": true,
+ "leaguepedia_teams_skipped": 33,
+ "leaguepedia_games": 1599,
+ "elo_teams_rated": 188,
+ "permalink_constructed": 69,
+ "permalink_rule_hits": 180,
+ "permalink_rule_misses": 15
 }
