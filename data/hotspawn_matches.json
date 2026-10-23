@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-10-22T23:27:04Z",
- "html_sha256": "d3ec92d8250858250ac08d4f792523caa527b43a03340b7fb0bb54c6f33ae8e0",
- "html_bytes": 1779038,
- "match_count": 261,
- "lol_match_count": 261,
+ "collected_utc": "2026-10-23T05:01:10Z",
+ "html_sha256": "e59b4a2f2911183f3219e0ac1fc6f87b78516533e1860122870642ca334ef2bc",
+ "html_bytes": 1796873,
+ "match_count": 262,
+ "lol_match_count": 262,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 171,
- "matches_without_hotspawn_page": 90,
+ "matches_with_hotspawn_page": 173,
+ "matches_without_hotspawn_page": 89,
  "matches": [
   {
    "id": "1053095",
@@ -1961,36 +1961,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1071216",
-   "competition_id": "36279",
-   "competition": "Komplettligaen 2026 Autumn",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-22T15:00:00Z",
-   "start_epoch_ms": "1792681200000",
-   "lock_utc": "2026-10-22T14:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "c",
-   "stage": "waiting for information",
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 32,
-   "home": {
-    "id": "263521",
-    "name": "Solid Gaming",
-    "hotspawn_pick_share": 72,
-    "score": 0
-   },
-   "away": {
-    "id": "126628",
-    "name": "DMG Esports Norway",
-    "hotspawn_pick_share": 28,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1071218",
    "competition_id": "36279",
    "competition": "Komplettligaen 2026 Autumn",
@@ -2725,7 +2695,7 @@
    "stage": "waiting for information",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 28,
+   "total_picks": 29,
    "home": {
     "id": "37072",
     "name": "Rich Gang",
@@ -2815,17 +2785,17 @@
    "stage": "waiting for information",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 16,
    "home": {
     "id": "265585",
     "name": "Levelers",
-    "hotspawn_pick_share": 57,
+    "hotspawn_pick_share": 63,
     "score": 0
    },
    "away": {
     "id": "236326",
     "name": "MTN ESPORTS TEAM",
-    "hotspawn_pick_share": 43,
+    "hotspawn_pick_share": 38,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/levelers-vs-mtn-esports-team-arabian-regional-championship-2026-lebanon-libya-syria-palestine-1082839"
@@ -3758,7 +3728,7 @@
     "hotspawn_pick_share": 100,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=cla-nkz-vorax-vs-neon-esports-league-of-legends-match-at-ligagg-celol-a-2026-split-2-playoffs-1082914"
+   "hotspawn_url": "https://www.hotspawn.com/matches/cla-nkz-vorax-vs-neon-esports-ligagg-celol-a-2026-split-2-playoffs-1082914"
   },
   {
    "id": "1082915",
@@ -3788,7 +3758,7 @@
     "hotspawn_pick_share": 80,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=los-academy-vs-marere-e-sports-league-of-legends-match-at-ligagg-celol-a-2026-split-2-playoffs-1082915"
+   "hotspawn_url": "https://www.hotspawn.com/matches/los-academy-vs-marere-e-sports-ligagg-celol-a-2026-split-2-playoffs-1082915"
   },
   {
    "id": "1081083",
@@ -7119,6 +7089,66 @@
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-vfb-esports-prm-2nd-division-26-27-fall-1079054"
+  },
+  {
+   "id": "1081421",
+   "competition_id": "35766",
+   "competition": "LCP 2027 Promotion",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-10T05:00:00Z",
+   "start_epoch_ms": "1794286800000",
+   "lock_utc": "2026-11-10T04:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": "s",
+   "stage": "waiting for information",
+   "best_of": null,
+   "offered_points": 30,
+   "total_picks": 0,
+   "home": {
+    "id": "74694",
+    "name": "FENNEL",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "away": {
+    "id": "263325",
+    "name": "Nothin'Here",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/matches/fennel-vs-nothinhere-lcp-2027-promotion-1081421"
+  },
+  {
+   "id": "1082007",
+   "competition_id": "35766",
+   "competition": "LCP 2027 Promotion",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-10T09:00:00Z",
+   "start_epoch_ms": "1794301200000",
+   "lock_utc": "2026-11-10T08:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": "s",
+   "stage": "waiting for information",
+   "best_of": null,
+   "offered_points": 30,
+   "total_picks": 0,
+   "home": {
+    "id": "249229",
+    "name": "Saigon Warriors",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "away": {
+    "id": "263527",
+    "name": "Team Gromp",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/matches/saigon-warriors-vs-team-gromp-lcp-2027-promotion-1082007"
   },
   {
    "id": "1081423",
