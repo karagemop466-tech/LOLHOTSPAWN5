@@ -1,35 +1,35 @@
 {
- "generated_utc": "2026-10-24T12:46:28Z",
+ "generated_utc": "2026-10-24T18:51:21Z",
  "inventory_source": "https://play.hotspawn.com/lol-pickems",
  "inventory_collected_utc": "2026-10-24T12:45:23Z",
  "results_source": "https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule",
- "results_collected_utc": "2026-10-24T12:46:27Z",
- "results_rows": 23306,
- "teams_rated": 3981,
+ "results_collected_utc": "2026-10-24T18:51:20Z",
+ "results_rows": 23324,
+ "teams_rated": 3982,
  "totals": {
   "matches": 233,
-  "live_matches": 164,
+  "live_matches": 147,
   "by_method": {
-   "market": 8,
-   "model": 152,
-   "unresolved": 73
+   "market": 6,
+   "model": 137,
+   "unresolved": 90
   },
-  "market_priced": 8,
-  "model_priced": 152,
-  "unresolved": 73,
-  "unresolved_stale": 69,
+  "market_priced": 6,
+  "model_priced": 137,
+  "unresolved": 90,
+  "unresolved_stale": 86,
   "unresolved_insufficient": 4,
-  "with_a_pick": 160,
-  "upcoming_with_a_pick": 160
+  "with_a_pick": 143,
+  "upcoming_with_a_pick": 143
  },
  "data_quality": {
-  "leaguepedia_rows": 23306,
-  "leaguepedia_future_dated_rows": 0,
+  "leaguepedia_rows": 23324,
+  "leaguepedia_future_dated_rows": 1,
   "hotspawn_rows_without_match_page": 65,
-  "hotspawn_stale_rows": 69,
-  "insufficient_data_matches": 73,
+  "hotspawn_stale_rows": 86,
+  "insufficient_data_matches": 90,
   "unresolved_blank_over_prior": 4,
-  "unresolved_blank_stale": 69
+  "unresolved_blank_stale": 86
  },
  "methodology": {
   "elo_start": 1500.0,
@@ -447,12 +447,12 @@
    "hotspawn_url": null,
    "hotspawn_pick_share_home": 67,
    "hotspawn_pick_share_away": 33,
-   "home_rating": 1537.8,
+   "home_rating": 1530.1,
    "away_rating": 1502.2,
-   "home_matches": 10,
+   "home_matches": 11,
    "away_matches": 9,
-   "model_prob_home": 0.551,
-   "model_prob_away": 0.449,
+   "model_prob_home": 0.5401,
+   "model_prob_away": 0.4599,
    "is_past_start": true,
    "has_hotspawn_page": false,
    "method": "unresolved",
@@ -597,7 +597,7 @@
    "hotspawn_url": null,
    "hotspawn_pick_share_home": 0,
    "hotspawn_pick_share_away": 100,
-   "home_rating": 1536.1,
+   "home_rating": 1536.0,
    "away_rating": 1573.0,
    "home_matches": 8,
    "away_matches": 19,
@@ -1918,11 +1918,11 @@
    "hotspawn_pick_share_home": 85,
    "hotspawn_pick_share_away": 15,
    "home_rating": 1566.1,
-   "away_rating": 1521.3,
+   "away_rating": 1530.7,
    "home_matches": 30,
-   "away_matches": 10,
-   "model_prob_home": 0.5641,
-   "model_prob_away": 0.4359,
+   "away_matches": 11,
+   "model_prob_home": 0.5508,
+   "model_prob_away": 0.4492,
    "is_past_start": true,
    "has_hotspawn_page": false,
    "method": "unresolved",
@@ -2007,12 +2007,12 @@
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=keep-yourself-positive-vs-cruel-fate-league-of-legends-match-at-logitech-g-superstrike-cup-qualifier-1083096",
    "hotspawn_pick_share_home": 83,
    "hotspawn_pick_share_away": 17,
-   "home_rating": 1498.1,
-   "away_rating": 1499.6,
-   "home_matches": 1,
-   "away_matches": 2,
-   "model_prob_home": 0.4979,
-   "model_prob_away": 0.5021,
+   "home_rating": 1493.7,
+   "away_rating": 1499.0,
+   "home_matches": 2,
+   "away_matches": 6,
+   "model_prob_home": 0.4925,
+   "model_prob_away": 0.5075,
    "is_past_start": true,
    "has_hotspawn_page": true,
    "method": "unresolved",
@@ -2038,11 +2038,11 @@
    "hotspawn_pick_share_home": 100,
    "hotspawn_pick_share_away": 0,
    "home_rating": 1419.5,
-   "away_rating": 1501.8,
+   "away_rating": 1508.9,
    "home_matches": 42,
-   "away_matches": 1,
-   "model_prob_home": 0.3838,
-   "model_prob_away": 0.6162,
+   "away_matches": 4,
+   "model_prob_home": 0.3741,
+   "model_prob_away": 0.6259,
    "is_past_start": true,
    "has_hotspawn_page": true,
    "method": "unresolved",
@@ -2067,12 +2067,12 @@
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=tupkachi-na-korici-vs-fame-league-of-legends-match-at-logitech-g-superstrike-cup-qualifier-1083098",
    "hotspawn_pick_share_home": 83,
    "hotspawn_pick_share_away": 17,
-   "home_rating": 1501.8,
-   "away_rating": 1498.2,
-   "home_matches": 1,
-   "away_matches": 1,
-   "model_prob_home": 0.5051,
-   "model_prob_away": 0.4949,
+   "home_rating": 1506.4,
+   "away_rating": 1493.7,
+   "home_matches": 2,
+   "away_matches": 2,
+   "model_prob_home": 0.5182,
+   "model_prob_away": 0.4818,
    "is_past_start": true,
    "has_hotspawn_page": true,
    "method": "unresolved",
@@ -2098,11 +2098,11 @@
    "hotspawn_pick_share_home": 83,
    "hotspawn_pick_share_away": 17,
    "home_rating": 1500.0,
-   "away_rating": 1481.3,
+   "away_rating": 1489.9,
    "home_matches": 0,
-   "away_matches": 5,
-   "model_prob_home": 0.5269,
-   "model_prob_away": 0.4731,
+   "away_matches": 6,
+   "model_prob_home": 0.5146,
+   "model_prob_away": 0.4854,
    "is_past_start": true,
    "has_hotspawn_page": true,
    "method": "unresolved",
@@ -2133,27 +2133,17 @@
    "away_matches": 8,
    "model_prob_home": 0.5342,
    "model_prob_away": 0.4658,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5342,
-   "prob_away": 0.4658,
-   "pick": "Berlin 5",
-   "pick_prob": 0.5342,
-   "confidence": "medium",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Berlin 5",
-    "home_rated_results": 11,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "AceGaming Hearts",
-    "away_rated_results": 8,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 11 for Berlin 5, 8 for AceGaming Hearts)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1081085",
@@ -2167,33 +2157,23 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/baronx-vs-marere-academy-ligagg-celol-b-2026-split-2-playoffs-1081085",
    "hotspawn_pick_share_home": 9,
    "hotspawn_pick_share_away": 91,
-   "home_rating": 1521.3,
-   "away_rating": 1537.8,
-   "home_matches": 10,
-   "away_matches": 10,
-   "model_prob_home": 0.4764,
-   "model_prob_away": 0.5236,
-   "is_past_start": false,
+   "home_rating": 1530.7,
+   "away_rating": 1530.1,
+   "home_matches": 11,
+   "away_matches": 11,
+   "model_prob_home": 0.5009,
+   "model_prob_away": 0.4991,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4764,
-   "prob_away": 0.5236,
-   "pick": "Marere Academy",
-   "pick_prob": 0.5236,
-   "confidence": "medium",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BaronX%22+OR+Team2%3D%22BaronX%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Marere+Academy%22+OR+Team2%3D%22Marere+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "BaronX",
-    "home_rated_results": 10,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BaronX%22+OR+Team2%3D%22BaronX%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Marere Academy",
-    "away_rated_results": 10,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Marere+Academy%22+OR+Team2%3D%22Marere+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 10 for BaronX, 10 for Marere Academy)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1081086",
@@ -2207,33 +2187,23 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/final-level-esports-academy-vs-infinity-gaming-ligagg-celol-b-2026-split-2-playoffs-1081086",
    "hotspawn_pick_share_home": 4,
    "hotspawn_pick_share_away": 96,
-   "home_rating": 1493.8,
-   "away_rating": 1544.1,
-   "home_matches": 10,
-   "away_matches": 14,
-   "model_prob_home": 0.4281,
-   "model_prob_away": 0.5719,
-   "is_past_start": false,
+   "home_rating": 1487.3,
+   "away_rating": 1551.6,
+   "home_matches": 11,
+   "away_matches": 15,
+   "model_prob_home": 0.4085,
+   "model_prob_away": 0.5915,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4281,
-   "prob_away": 0.5719,
-   "pick": "Infinity Gaming",
-   "pick_prob": 0.5719,
-   "confidence": "medium",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Final+Level+eSports+Academy%22+OR+Team2%3D%22Final+Level+eSports+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Infinity+Gaming%22+OR+Team2%3D%22Infinity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Final Level eSports Academy",
-    "home_rated_results": 10,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Final+Level+eSports+Academy%22+OR+Team2%3D%22Final+Level+eSports+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Infinity Gaming",
-    "away_rated_results": 14,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Infinity+Gaming%22+OR+Team2%3D%22Infinity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 10 for Final Level eSports Academy, 14 for Infinity Gaming)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1080923",
@@ -2253,27 +2223,17 @@
    "away_matches": 6,
    "model_prob_home": 0.5332,
    "model_prob_away": 0.4668,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5332,
-   "prob_away": 0.4668,
-   "pick": "Jendouba Esports",
-   "pick_prob": 0.5332,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Jendouba Esports",
-    "home_rated_results": 4,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Enfida Esports",
-    "away_rated_results": 6,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 4 for Jendouba Esports, 6 for Enfida Esports)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1080924",
@@ -2287,33 +2247,23 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-el-menzah-esports-tunisian-super-league-2026-1080924",
    "hotspawn_pick_share_home": 93,
    "hotspawn_pick_share_away": 7,
-   "home_rating": 1577.1,
+   "home_rating": 1577.2,
    "away_rating": 1490.6,
    "home_matches": 62,
    "away_matches": 4,
    "model_prob_home": 0.622,
    "model_prob_away": 0.378,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.622,
-   "prob_away": 0.378,
-   "pick": "JSK Esports",
-   "pick_prob": 0.622,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "JSK Esports",
-    "home_rated_results": 62,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "El Menzah Esports",
-    "away_rated_results": 4,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 62 for JSK Esports, 4 for El Menzah Esports)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1080925",
@@ -2333,27 +2283,17 @@
    "away_matches": 4,
    "model_prob_home": 0.5238,
    "model_prob_away": 0.4762,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5238,
-   "prob_away": 0.4762,
-   "pick": "Olympique Mnihla",
-   "pick_prob": 0.5238,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Olympique Mnihla",
-    "home_rated_results": 8,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Supreme Leaders",
-    "away_rated_results": 4,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 8 for Olympique Mnihla, 4 for Supreme Leaders)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1080926",
@@ -2373,27 +2313,17 @@
    "away_matches": 29,
    "model_prob_home": 0.5244,
    "model_prob_away": 0.4756,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5244,
-   "prob_away": 0.4756,
-   "pick": "Simplicity Gaming",
-   "pick_prob": 0.5244,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Simplicity Gaming",
-    "home_rated_results": 4,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "JSK Academy",
-    "away_rated_results": 29,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 4 for Simplicity Gaming, 29 for JSK Academy)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1080927",
@@ -2413,27 +2343,17 @@
    "away_matches": 4,
    "model_prob_home": 0.4726,
    "model_prob_away": 0.5274,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4726,
-   "prob_away": 0.5274,
-   "pick": "Olympique Mnihla Academy",
-   "pick_prob": 0.5274,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Zahrouni Esports",
-    "home_rated_results": 4,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Olympique Mnihla Academy",
-    "away_rated_results": 4,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 4 for Zahrouni Esports, 4 for Olympique Mnihla Academy)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1074655",
@@ -2453,27 +2373,17 @@
    "away_matches": 6,
    "model_prob_home": 0.4626,
    "model_prob_away": 0.5374,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4626,
-   "prob_away": 0.5374,
-   "pick": "Turbo Gaming",
-   "pick_prob": 0.5374,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Karolinerna%22+OR+Team2%3D%22Karolinerna%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Turbo+Gaming%22+OR+Team2%3D%22Turbo+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Karolinerna",
-    "home_rated_results": 21,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Karolinerna%22+OR+Team2%3D%22Karolinerna%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Turbo Gaming",
-    "away_rated_results": 6,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Turbo+Gaming%22+OR+Team2%3D%22Turbo+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 21 for Karolinerna, 6 for Turbo Gaming)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1074657",
@@ -2493,27 +2403,17 @@
    "away_matches": 5,
    "model_prob_home": 0.4265,
    "model_prob_away": 0.5735,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4265,
-   "prob_away": 0.5735,
-   "pick": "Rich Gang Sweden",
-   "pick_prob": 0.5735,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22OnlyWinByFF%22+OR+Team2%3D%22OnlyWinByFF%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang+Sweden%22+OR+Team2%3D%22Rich+Gang+Sweden%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "OnlyWinByFF",
-    "home_rated_results": 13,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22OnlyWinByFF%22+OR+Team2%3D%22OnlyWinByFF%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Rich Gang Sweden",
-    "away_rated_results": 5,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang+Sweden%22+OR+Team2%3D%22Rich+Gang+Sweden%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 13 for OnlyWinByFF, 5 for Rich Gang Sweden)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1074658",
@@ -2533,27 +2433,17 @@
    "away_matches": 4,
    "model_prob_home": 0.4874,
    "model_prob_away": 0.5126,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4874,
-   "prob_away": 0.5126,
-   "pick": "Tung Sahur Mid",
-   "pick_prob": 0.5126,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+cd%22+OR+Team2%3D%22Team+cd%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Tung+Sahur+Mid%22+OR+Team2%3D%22Tung+Sahur+Mid%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Team cd",
-    "home_rated_results": 22,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+cd%22+OR+Team2%3D%22Team+cd%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Tung Sahur Mid",
-    "away_rated_results": 4,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Tung+Sahur+Mid%22+OR+Team2%3D%22Tung+Sahur+Mid%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 22 for Team cd, 4 for Tung Sahur Mid)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1074659",
@@ -2573,27 +2463,17 @@
    "away_matches": 6,
    "model_prob_home": 0.4004,
    "model_prob_away": 0.5996,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4004,
-   "prob_away": 0.5996,
-   "pick": "Fritt Fall",
-   "pick_prob": 0.5996,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+Lucidity+Esports%22+OR+Team2%3D%22Team+Lucidity+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Fritt+Fall%22+OR+Team2%3D%22Fritt+Fall%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Team Lucidity Esports",
-    "home_rated_results": 10,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+Lucidity+Esports%22+OR+Team2%3D%22Team+Lucidity+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Fritt Fall",
-    "away_rated_results": 6,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Fritt+Fall%22+OR+Team2%3D%22Fritt+Fall%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 10 for Team Lucidity Esports, 6 for Fritt Fall)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1067688",
@@ -2607,46 +2487,23 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/top-esports-vs-anyones-legend-worlds-2026-main-event-1067688",
    "hotspawn_pick_share_home": 0,
    "hotspawn_pick_share_away": 100,
-   "home_rating": 1530.1,
-   "away_rating": 1611.7,
-   "home_matches": 97,
-   "away_matches": 97,
-   "model_prob_home": 0.3847,
-   "model_prob_away": 0.6153,
-   "is_past_start": false,
+   "home_rating": 1541.6,
+   "away_rating": 1600.0,
+   "home_matches": 98,
+   "away_matches": 98,
+   "model_prob_home": 0.4167,
+   "model_prob_away": 0.5833,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "market",
-   "prob_home": 0.3888,
-   "prob_away": 0.6112,
-   "pick": "Anyone's Legend",
-   "pick_prob": 0.6112,
-   "confidence": "market-priced",
-   "market_source": "Pinnacle",
-   "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-   "market_api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639121258/markets/related/straight",
-   "market_league": "League of Legends - World Championship",
-   "market_start_utc": "2026-10-24T17:00:00Z",
-   "market_hours_apart": 0.0,
-   "market_american": [
-    {
-     "team": "Top Esports",
-     "american": 147,
-     "implied_raw": 0.40486,
-     "yes_bid_dollars": null,
-     "yes_ask_dollars": null,
-     "ticker": null
-    },
-    {
-     "team": "Anyone's Legend",
-     "american": -175,
-     "implied_raw": 0.63636,
-     "yes_bid_dollars": null,
-     "yes_ask_dollars": null,
-     "ticker": null
-    }
-   ],
-   "market_quotes": [],
-   "model_vs_market_diff": -0.0041
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1075731",
@@ -2666,27 +2523,17 @@
    "away_matches": 22,
    "model_prob_home": 0.4822,
    "model_prob_away": 0.5178,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.4822,
-   "prob_away": 0.5178,
-   "pick": "1. Esport Club Frankfurt e.V.",
-   "pick_prob": 0.5178,
-   "confidence": "high",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%221.+Esport+Club+Frankfurt+e.V.%22+OR+Team2%3D%221.+Esport+Club+Frankfurt+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Whalepower Humpbacks",
-    "home_rated_results": 24,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "1. Esport Club Frankfurt e.V.",
-    "away_rated_results": 22,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%221.+Esport+Club+Frankfurt+e.V.%22+OR+Team2%3D%221.+Esport+Club+Frankfurt+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 24 for Whalepower Humpbacks, 22 for 1. Esport Club Frankfurt e.V.)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1067881",
@@ -2700,58 +2547,23 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/movistar-koi-vs-ctbc-flying-oyster-worlds-2026-main-event-1067881",
    "hotspawn_pick_share_home": 100,
    "hotspawn_pick_share_away": 0,
-   "home_rating": 1575.8,
-   "away_rating": 1551.3,
-   "home_matches": 73,
-   "away_matches": 58,
-   "model_prob_home": 0.5352,
-   "model_prob_away": 0.4648,
-   "is_past_start": false,
+   "home_rating": 1584.1,
+   "away_rating": 1543.2,
+   "home_matches": 74,
+   "away_matches": 59,
+   "model_prob_home": 0.5586,
+   "model_prob_away": 0.4414,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "market",
-   "prob_home": 0.6685,
-   "prob_away": 0.3315,
-   "pick": "Movistar KOI",
-   "pick_prob": 0.6685,
-   "confidence": "market-priced",
-   "market_source": "Pinnacle",
-   "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-   "market_api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639127311/markets/related/straight",
-   "market_league": "League of Legends - World Championship",
-   "market_start_utc": "2026-10-24T18:00:00Z",
-   "market_hours_apart": 0.0,
-   "market_american": [
-    {
-     "team": "CTBC Flying Oyster",
-     "american": 189,
-     "implied_raw": 0.34602,
-     "yes_bid_dollars": null,
-     "yes_ask_dollars": null,
-     "ticker": null
-    },
-    {
-     "team": "Movistar KOI",
-     "american": -231,
-     "implied_raw": 0.69789,
-     "yes_bid_dollars": null,
-     "yes_ask_dollars": null,
-     "ticker": null
-    }
-   ],
-   "market_quotes": [
-    {
-     "source": "Kalshi",
-     "url": "https://kalshi.com/markets/kxlolgame-26oct241400mkoicfo",
-     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-     "league": "KXLOLGAME",
-     "probs": {
-      "movistar koi": 0.68182,
-      "ctbc flying oyster": 0.31818
-     },
-     "hours_apart": 4.0
-    }
-   ],
-   "model_vs_market_diff": -0.1334
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1079141",
@@ -2771,27 +2583,17 @@
    "away_matches": 8,
    "model_prob_home": 0.5052,
    "model_prob_away": 0.4948,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5052,
-   "prob_away": 0.4948,
-   "pick": "JSK Academy",
-   "pick_prob": 0.5052,
-   "confidence": "medium",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22New+Era+Team%22+OR+Team2%3D%22New+Era+Team%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "JSK Academy",
-    "home_rated_results": 29,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "New Era Team",
-    "away_rated_results": 8,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22New+Era+Team%22+OR+Team2%3D%22New+Era+Team%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 29 for JSK Academy, 8 for New Era Team)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1079142",
@@ -2811,27 +2613,17 @@
    "away_matches": 4,
    "model_prob_home": 0.5295,
    "model_prob_away": 0.4705,
-   "is_past_start": false,
+   "is_past_start": true,
    "has_hotspawn_page": true,
-   "method": "model",
-   "prob_home": 0.5295,
-   "prob_away": 0.4705,
-   "pick": "Void Walkers",
-   "pick_prob": 0.5295,
-   "confidence": "low",
-   "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
-   "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Void+Walkers%22+OR+Team2%3D%22Void+Walkers%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Slam+Dunk%22+OR+Team2%3D%22Slam+Dunk%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-   "model_evidence": {
-    "home_team": "Void Walkers",
-    "home_rated_results": 6,
-    "home_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Void+Walkers%22+OR+Team2%3D%22Void+Walkers%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
-    "away_team": "Slam Dunk",
-    "away_rated_results": 4,
-    "away_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Slam+Dunk%22+OR+Team2%3D%22Slam+Dunk%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json"
-   },
-   "no_market_reason": "No external moneyline (Pinnacle / Kalshi / Bovada) matched this fixture at collection time (rated results on file: 6 for Void Walkers, 4 for Slam Dunk)."
+   "method": "unresolved",
+   "prob_home": null,
+   "prob_away": null,
+   "pick": null,
+   "pick_prob": null,
+   "confidence": "insufficient",
+   "unresolved_kind": "stale_fixture",
+   "unresolved_reason": "Hotspawn still lists this fixture as scheduled, but its kickoff has already passed and neither feed publishes a result for it. No pick is issued: the number could not be acted on, and our ratings contain results from after this kickoff, so any figure would be hindsight.",
+   "unresolved_remedy": "A result published in Leaguepedia retires the row; a re-listed future kickoff with a bookmaker line or three-plus rated results per team would make it pickable."
   },
   {
    "id": "1067686",
@@ -2854,10 +2646,10 @@
    "is_past_start": false,
    "has_hotspawn_page": true,
    "method": "market",
-   "prob_home": 0.781,
-   "prob_away": 0.219,
+   "prob_home": 0.8054,
+   "prob_away": 0.1946,
    "pick": "G2 Esports",
-   "pick_prob": 0.781,
+   "pick_prob": 0.8054,
    "confidence": "market-priced",
    "market_source": "Pinnacle",
    "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
@@ -2868,16 +2660,16 @@
    "market_american": [
     {
      "team": "G2",
-     "american": -455,
-     "implied_raw": 0.81982,
+     "american": -550,
+     "implied_raw": 0.84615,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
     },
     {
      "team": "LOS",
-     "american": 335,
-     "implied_raw": 0.22989,
+     "american": 389,
+     "implied_raw": 0.2045,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
@@ -2890,13 +2682,13 @@
      "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
      "league": "KXLOLGAME",
      "probs": {
-      "los": 0.185,
-      "g2 esports": 0.815
+      "los": 0.16667,
+      "g2 esports": 0.83333
      },
      "hours_apart": 6.0
     }
    ],
-   "model_vs_market_diff": -0.2776
+   "model_vs_market_diff": -0.3019
   },
   {
    "id": "1067684",
@@ -2919,10 +2711,10 @@
    "is_past_start": false,
    "has_hotspawn_page": true,
    "method": "market",
-   "prob_home": 0.4436,
-   "prob_away": 0.5564,
+   "prob_home": 0.4474,
+   "prob_away": 0.5526,
    "pick": "Karmine Corp",
-   "pick_prob": 0.5564,
+   "pick_prob": 0.5526,
    "confidence": "market-priced",
    "market_source": "Pinnacle",
    "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
@@ -2933,16 +2725,16 @@
    "market_american": [
     {
      "team": "LYON",
-     "american": 117,
-     "implied_raw": 0.46083,
+     "american": 115,
+     "implied_raw": 0.46512,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
     },
     {
      "team": "Karmine Corp",
-     "american": -137,
-     "implied_raw": 0.57806,
+     "american": -135,
+     "implied_raw": 0.57447,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
@@ -2961,7 +2753,7 @@
      "hours_apart": 4.0
     }
    ],
-   "model_vs_market_diff": -0.0453
+   "model_vs_market_diff": -0.0492
   },
   {
    "id": "1082914",
@@ -2990,7 +2782,7 @@
    "pick_prob": 0.5234,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Cl%C3%A3+NKZ+V%C3%93RAX%22+OR+Team2%3D%22Cl%C3%A3+NKZ+V%C3%93RAX%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Neon+eSports%22+OR+Team2%3D%22Neon+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3030,7 +2822,7 @@
    "pick_prob": 0.6543,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22L%C3%98S+Academy%22+OR+Team2%3D%22L%C3%98S+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Marere+E-Sports%22+OR+Team2%3D%22Marere+E-Sports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3100,8 +2892,8 @@
      "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
      "league": "KXLOLGAME",
      "probs": {
-      "team secret whales": 0.305,
-      "invictus gaming": 0.695
+      "team secret whales": 0.315,
+      "invictus gaming": 0.685
      },
      "hours_apart": 5.0
     }
@@ -3194,10 +2986,10 @@
    "is_past_start": false,
    "has_hotspawn_page": true,
    "method": "market",
-   "prob_home": 0.4474,
-   "prob_away": 0.5526,
+   "prob_home": 0.438,
+   "prob_away": 0.562,
    "pick": "T1",
-   "pick_prob": 0.5526,
+   "pick_prob": 0.562,
    "confidence": "market-priced",
    "market_source": "Pinnacle",
    "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
@@ -3208,16 +3000,16 @@
    "market_american": [
     {
      "team": "Dplus KIA",
-     "american": 115,
-     "implied_raw": 0.46512,
+     "american": 120,
+     "implied_raw": 0.45455,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
     },
     {
      "team": "T1",
-     "american": -135,
-     "implied_raw": 0.57447,
+     "american": -140,
+     "implied_raw": 0.58333,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
@@ -3236,7 +3028,7 @@
      "hours_apart": 2.0
     }
    ],
-   "model_vs_market_diff": 0.0682
+   "model_vs_market_diff": 0.0776
   },
   {
    "id": "1067689",
@@ -3259,10 +3051,10 @@
    "is_past_start": false,
    "has_hotspawn_page": true,
    "method": "market",
-   "prob_home": 0.7171,
-   "prob_away": 0.2829,
+   "prob_home": 0.742,
+   "prob_away": 0.258,
    "pick": "Bilibili Gaming",
-   "pick_prob": 0.7171,
+   "pick_prob": 0.742,
    "confidence": "market-priced",
    "market_source": "Pinnacle",
    "market_url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
@@ -3273,16 +3065,16 @@
    "market_american": [
     {
      "team": "Liquid",
-     "american": 238,
-     "implied_raw": 0.29586,
+     "american": 270,
+     "implied_raw": 0.27027,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
     },
     {
      "team": "Bilibili",
-     "american": -300,
-     "implied_raw": 0.75,
+     "american": -349,
+     "implied_raw": 0.77728,
      "yes_bid_dollars": null,
      "yes_ask_dollars": null,
      "ticker": null
@@ -3295,13 +3087,13 @@
      "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
      "league": "KXLOLGAME",
      "probs": {
-      "bilibili gaming": 0.75253,
-      "team liquid": 0.24747
+      "bilibili gaming": 0.755,
+      "team liquid": 0.245
      },
      "hours_apart": 4.0
     }
    ],
-   "model_vs_market_diff": -0.0998
+   "model_vs_market_diff": -0.1247
   },
   {
    "id": "1081083",
@@ -3330,7 +3122,7 @@
    "pick_prob": 0.5013,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Docta+Esports+Club%22+OR+Team2%3D%22Docta+Esports+Club%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Cl%C3%A3+NKZ+Revengers%22+OR+Team2%3D%22Cl%C3%A3+NKZ+Revengers%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3370,7 +3162,7 @@
    "pick_prob": 0.5939,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Maze+GG%22+OR+Team2%3D%22Maze+GG%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Viktus%22+OR+Team2%3D%22Viktus%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3410,7 +3202,7 @@
    "pick_prob": 0.5599,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Emperors+Bremen%22+OR+Team2%3D%22Emperors+Bremen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3450,7 +3242,7 @@
    "pick_prob": 0.5676,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AIX+eSports%22+OR+Team2%3D%22AIX+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Vision%22+OR+Team2%3D%22MT1+Vision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3520,7 +3312,7 @@
    "pick_prob": 0.5097,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Duplex+Silva+Pigeons+Edition%22+OR+Team2%3D%22Duplex+Silva+Pigeons+Edition%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Sissi+State+Punks%22+OR+Team2%3D%22Sissi+State+Punks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3560,7 +3352,7 @@
    "pick_prob": 0.537,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Eintracht+Spandau+Zwei%22+OR+Team2%3D%22Eintracht+Spandau+Zwei%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300+White%22+OR+Team2%3D%22Team+300+White%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3600,7 +3392,7 @@
    "pick_prob": 0.5049,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Neko+Elite+Kittens%22+OR+Team2%3D%22Neko+Elite+Kittens%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22spongecord+prime%22+OR+Team2%3D%22spongecord+prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3640,7 +3432,7 @@
    "pick_prob": 0.6007,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang%22+OR+Team2%3D%22Rich+Gang%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22LOOKSMAXXER%22+OR+Team2%3D%22LOOKSMAXXER%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3680,7 +3472,7 @@
    "pick_prob": 0.5033,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Socken+und+Sandalen%22+OR+Team2%3D%22Socken+und+Sandalen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3720,7 +3512,7 @@
    "pick_prob": 0.5991,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming%22+OR+Team2%3D%22Babos+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Hannover+Esports+e.V.%22+OR+Team2%3D%22Hannover+Esports+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3760,7 +3552,7 @@
    "pick_prob": 0.5946,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Reveal+Multigaming%22+OR+Team2%3D%22Reveal+Multigaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3800,7 +3592,7 @@
    "pick_prob": 0.5141,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Black+Lion%22+OR+Team2%3D%22Black+Lion%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Glacial+Guardians%22+OR+Team2%3D%22Glacial+Guardians%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3840,7 +3632,7 @@
    "pick_prob": 0.5048,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Second+Time+Alive+Revival%22+OR+Team2%3D%22Second+Time+Alive+Revival%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3865,7 +3657,7 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-enfida-esports-tunisian-super-league-2026-1080928",
    "hotspawn_pick_share_home": 80,
    "hotspawn_pick_share_away": 20,
-   "home_rating": 1577.1,
+   "home_rating": 1577.2,
    "away_rating": 1466.5,
    "home_matches": 62,
    "away_matches": 6,
@@ -3880,7 +3672,7 @@
    "pick_prob": 0.6541,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3920,7 +3712,7 @@
    "pick_prob": 0.539,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -3960,7 +3752,7 @@
    "pick_prob": 0.5153,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4000,7 +3792,7 @@
    "pick_prob": 0.5272,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4040,7 +3832,7 @@
    "pick_prob": 0.5287,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4080,7 +3872,7 @@
    "pick_prob": 0.5084,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%222+Massive%22+OR+Team2%3D%222+Massive%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Tung+Sahur+Mid%22+OR+Team2%3D%22Tung+Sahur+Mid%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4120,7 +3912,7 @@
    "pick_prob": 0.5389,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22OnlyWinByFF%22+OR+Team2%3D%22OnlyWinByFF%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Mazepa%22+OR+Team2%3D%22Mazepa%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4160,7 +3952,7 @@
    "pick_prob": 0.5962,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+Lucidity+Esports%22+OR+Team2%3D%22Team+Lucidity+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+cd%22+OR+Team2%3D%22Team+cd%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4200,7 +3992,7 @@
    "pick_prob": 0.52,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BlackDivision%22+OR+Team2%3D%22BlackDivision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+KIN%22+OR+Team2%3D%22Kanji+Esports+KIN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4240,7 +4032,7 @@
    "pick_prob": 0.6152,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Lundqvist+Darkside%22+OR+Team2%3D%22Lundqvist+Darkside%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22B2U%22+OR+Team2%3D%22B2U%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4280,7 +4072,7 @@
    "pick_prob": 0.6453,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22404+Multigaming+e.V.%22+OR+Team2%3D%22404+Multigaming+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4320,7 +4112,7 @@
    "pick_prob": 0.5222,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Locked+IN%22+OR+Team2%3D%22Locked+IN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4360,7 +4152,7 @@
    "pick_prob": 0.7158,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Mazepa%22+OR+Team2%3D%22Mazepa%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22B2U%22+OR+Team2%3D%22B2U%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4400,7 +4192,7 @@
    "pick_prob": 0.5034,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Lund+Esports+Organization+OGs%22+OR+Team2%3D%22Lund+Esports+Organization+OGs%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Tung+Sahur+Mid%22+OR+Team2%3D%22Tung+Sahur+Mid%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4440,7 +4232,7 @@
    "pick_prob": 0.542,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Packmiko+E-Sports+DACH%22+OR+Team2%3D%22Packmiko+E-Sports+DACH%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Atruvia+M%C3%BCnster+Esports%22+OR+Team2%3D%22Atruvia+M%C3%BCnster+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4480,7 +4272,7 @@
    "pick_prob": 0.5006,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Phong+V%C5%A9+Buffalo%22+OR+Team2%3D%22Phong+V%C5%A9+Buffalo%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4520,7 +4312,7 @@
    "pick_prob": 0.6413,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22No+Need+Orga%22+OR+Team2%3D%22No+Need+Orga%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4560,7 +4352,7 @@
    "pick_prob": 0.5835,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Mental+Rush%22+OR+Team2%3D%22Mental+Rush%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Vitality+Rising+Bees%22+OR+Team2%3D%22Vitality+Rising+Bees%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4600,7 +4392,7 @@
    "pick_prob": 0.5585,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Hannover+Esports+e.V.%22+OR+Team2%3D%22Hannover+Esports+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22No+Need+Orga%22+OR+Team2%3D%22No+Need+Orga%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4640,7 +4432,7 @@
    "pick_prob": 0.5602,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22regnum4games%22+OR+Team2%3D%22regnum4games%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4680,7 +4472,7 @@
    "pick_prob": 0.5747,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22FlameHard%22+OR+Team2%3D%22FlameHard%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22B2U%22+OR+Team2%3D%22B2U%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4720,7 +4512,7 @@
    "pick_prob": 0.5058,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DMG+Esports+Sweden%22+OR+Team2%3D%22DMG+Esports+Sweden%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Northern+Wolves+Esports%22+OR+Team2%3D%22Northern+Wolves+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4760,7 +4552,7 @@
    "pick_prob": 0.6116,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Lundqvist+Darkside%22+OR+Team2%3D%22Lundqvist+Darkside%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Mazepa%22+OR+Team2%3D%22Mazepa%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4800,7 +4592,7 @@
    "pick_prob": 0.5553,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Atruvia+M%C3%BCnster+Esports%22+OR+Team2%3D%22Atruvia+M%C3%BCnster+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Defiance+eSports%22+OR+Team2%3D%22Defiance+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4840,7 +4632,7 @@
    "pick_prob": 0.5242,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Slam+Dunk%22+OR+Team2%3D%22Slam+Dunk%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22New+Era+Team%22+OR+Team2%3D%22New+Era+Team%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4880,7 +4672,7 @@
    "pick_prob": 0.5073,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming+Academy%22+OR+Team2%3D%22Babos+Gaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+x+Engines+Stuttgart%22+OR+Team2%3D%22VfB+x+Engines+Stuttgart%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4920,7 +4712,7 @@
    "pick_prob": 0.5756,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Purple+Emperor+Lizards+-+Atomic%22+OR+Team2%3D%22Purple+Emperor+Lizards+-+Atomic%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Cloud+eSport%22+OR+Team2%3D%22Cloud+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -4960,7 +4752,7 @@
    "pick_prob": 0.537,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Pegasus+Esports%22+OR+Team2%3D%22Pegasus+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5000,7 +4792,7 @@
    "pick_prob": 0.5279,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Reveal+Multigaming%22+OR+Team2%3D%22Reveal+Multigaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300%22+OR+Team2%3D%22Team+300%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5040,7 +4832,7 @@
    "pick_prob": 0.5662,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22reGOLD+eSport%22+OR+Team2%3D%22reGOLD+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5080,7 +4872,7 @@
    "pick_prob": 0.5468,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+Reds%22+OR+Team2%3D%22Team+Reds%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22NextGeneration+Esports%22+OR+Team2%3D%22NextGeneration+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5120,7 +4912,7 @@
    "pick_prob": 0.527,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22regnum4games%22+OR+Team2%3D%22regnum4games%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5160,7 +4952,7 @@
    "pick_prob": 0.5861,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Phong+V%C5%A9+Buffalo%22+OR+Team2%3D%22Phong+V%C5%A9+Buffalo%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5200,7 +4992,7 @@
    "pick_prob": 0.5029,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5225,7 +5017,7 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/jsk-esports-vs-olympique-mnihla-tunisian-super-league-2026-1080934",
    "hotspawn_pick_share_home": 89,
    "hotspawn_pick_share_away": 11,
-   "home_rating": 1577.1,
+   "home_rating": 1577.2,
    "away_rating": 1516.7,
    "home_matches": 62,
    "away_matches": 8,
@@ -5240,7 +5032,7 @@
    "pick_prob": 0.5861,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5280,7 +5072,7 @@
    "pick_prob": 0.5499,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5320,7 +5112,7 @@
    "pick_prob": 0.5424,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5360,7 +5152,7 @@
    "pick_prob": 0.5122,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5400,7 +5192,7 @@
    "pick_prob": 0.5079,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Void+Walkers%22+OR+Team2%3D%22Void+Walkers%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+VDS%22+OR+Team2%3D%22Team+VDS%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5440,7 +5232,7 @@
    "pick_prob": 0.6619,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%221.+Esport+Club+Frankfurt+e.V.%22+OR+Team2%3D%221.+Esport+Club+Frankfurt+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang%22+OR+Team2%3D%22Rich+Gang%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5480,7 +5272,7 @@
    "pick_prob": 0.5367,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Sissi+State+Punks%22+OR+Team2%3D%22Sissi+State+Punks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5520,7 +5312,7 @@
    "pick_prob": 0.5551,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Black+Lion%22+OR+Team2%3D%22Black+Lion%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BlackDivision%22+OR+Team2%3D%22BlackDivision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5560,7 +5352,7 @@
    "pick_prob": 0.5127,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Cloud+eSport%22+OR+Team2%3D%22Cloud+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Defiance+eSports%22+OR+Team2%3D%22Defiance+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5600,7 +5392,7 @@
    "pick_prob": 0.5254,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Eintracht+Spandau+Zwei%22+OR+Team2%3D%22Eintracht+Spandau+Zwei%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22TeamOrangeGaming+Academy%22+OR+Team2%3D%22TeamOrangeGaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5640,7 +5432,7 @@
    "pick_prob": 0.5037,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Emperors+Bremen%22+OR+Team2%3D%22Emperors+Bremen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Neko+Elite+Kittens%22+OR+Team2%3D%22Neko+Elite+Kittens%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5680,7 +5472,7 @@
    "pick_prob": 0.5457,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Glacial+Guardians%22+OR+Team2%3D%22Glacial+Guardians%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Vision%22+OR+Team2%3D%22MT1+Vision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5750,7 +5542,7 @@
    "pick_prob": 0.5259,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+KIN%22+OR+Team2%3D%22Kanji+Esports+KIN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming+Academy%22+OR+Team2%3D%22Babos+Gaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5790,7 +5582,7 @@
    "pick_prob": 0.583,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22LOOKSMAXXER%22+OR+Team2%3D%22LOOKSMAXXER%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5830,7 +5622,7 @@
    "pick_prob": 0.5088,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Purple+Emperor+Lizards+-+Atomic%22+OR+Team2%3D%22Purple+Emperor+Lizards+-+Atomic%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Packmiko+E-Sports+DACH%22+OR+Team2%3D%22Packmiko+E-Sports+DACH%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5870,7 +5662,7 @@
    "pick_prob": 0.5294,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Second+Time+Alive+Revival%22+OR+Team2%3D%22Second+Time+Alive+Revival%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5910,7 +5702,7 @@
    "pick_prob": 0.5707,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22spongecord+prime%22+OR+Team2%3D%22spongecord+prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Duplex+Silva+Pigeons+Edition%22+OR+Team2%3D%22Duplex+Silva+Pigeons+Edition%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5950,7 +5742,7 @@
    "pick_prob": 0.5161,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300+White%22+OR+Team2%3D%22Team+300+White%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Socken+und+Sandalen%22+OR+Team2%3D%22Socken+und+Sandalen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -5990,7 +5782,7 @@
    "pick_prob": 0.5204,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+x+Engines+Stuttgart%22+OR+Team2%3D%22VfB+x+Engines+Stuttgart%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AIX+eSports%22+OR+Team2%3D%22AIX+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6030,7 +5822,7 @@
    "pick_prob": 0.5416,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming%22+OR+Team2%3D%22Babos+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22No+Need+Orga%22+OR+Team2%3D%22No+Need+Orga%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6070,7 +5862,7 @@
    "pick_prob": 0.5187,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300%22+OR+Team2%3D%22Team+300%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Hannover+Esports+e.V.%22+OR+Team2%3D%22Hannover+Esports+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6110,7 +5902,7 @@
    "pick_prob": 0.5347,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6150,7 +5942,7 @@
    "pick_prob": 0.5181,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6190,7 +5982,7 @@
    "pick_prob": 0.5223,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6216,7 +6008,7 @@
    "hotspawn_pick_share_home": 88,
    "hotspawn_pick_share_away": 12,
    "home_rating": 1519.1,
-   "away_rating": 1577.1,
+   "away_rating": 1577.2,
    "home_matches": 4,
    "away_matches": 62,
    "model_prob_home": 0.4172,
@@ -6230,7 +6022,7 @@
    "pick_prob": 0.5828,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6270,7 +6062,7 @@
    "pick_prob": 0.5259,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6310,7 +6102,7 @@
    "pick_prob": 0.5926,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DMG+Esports+Sweden%22+OR+Team2%3D%22DMG+Esports+Sweden%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22FlameHard%22+OR+Team2%3D%22FlameHard%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6350,7 +6142,7 @@
    "pick_prob": 0.5398,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Karolinerna%22+OR+Team2%3D%22Karolinerna%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Lund+Esports+Organization+OGs%22+OR+Team2%3D%22Lund+Esports+Organization+OGs%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6390,7 +6182,7 @@
    "pick_prob": 0.521,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang+Sweden%22+OR+Team2%3D%22Rich+Gang+Sweden%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Northern+Wolves+Esports%22+OR+Team2%3D%22Northern+Wolves+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6430,7 +6222,7 @@
    "pick_prob": 0.5021,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Esports%22+OR+Team2%3D%22MT1+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Locked+IN%22+OR+Team2%3D%22Locked+IN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6470,7 +6262,7 @@
    "pick_prob": 0.5884,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22The+Bandits+Prime%22+OR+Team2%3D%22The+Bandits+Prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22404+Multigaming+e.V.%22+OR+Team2%3D%22404+Multigaming+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6510,7 +6302,7 @@
    "pick_prob": 0.6092,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BvP%22+OR+Team2%3D%22BvP%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22No+Need+Orga%22+OR+Team2%3D%22No+Need+Orga%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6550,7 +6342,7 @@
    "pick_prob": 0.5623,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Phong+V%C5%A9+Buffalo%22+OR+Team2%3D%22Phong+V%C5%A9+Buffalo%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22404+Multigaming+e.V.%22+OR+Team2%3D%22404+Multigaming+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6590,7 +6382,7 @@
    "pick_prob": 0.5051,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%222+Massive%22+OR+Team2%3D%222+Massive%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Lund+Esports+Organization+OGs%22+OR+Team2%3D%22Lund+Esports+Organization+OGs%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6630,7 +6422,7 @@
    "pick_prob": 0.5242,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Esports%22+OR+Team2%3D%22MT1+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6670,7 +6462,7 @@
    "pick_prob": 0.5002,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22regnum4games%22+OR+Team2%3D%22regnum4games%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22The+Bandits+Prime%22+OR+Team2%3D%22The+Bandits+Prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6710,7 +6502,7 @@
    "pick_prob": 0.5618,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22404+Multigaming+e.V.%22+OR+Team2%3D%22404+Multigaming+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6750,7 +6542,7 @@
    "pick_prob": 0.5649,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Locked+IN%22+OR+Team2%3D%22Locked+IN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6790,7 +6582,7 @@
    "pick_prob": 0.6482,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BvP%22+OR+Team2%3D%22BvP%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming%22+OR+Team2%3D%22Babos+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6830,7 +6622,7 @@
    "pick_prob": 0.5674,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300%22+OR+Team2%3D%22Team+300%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6870,7 +6662,7 @@
    "pick_prob": 0.5375,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22El+Menzah+Esports%22+OR+Team2%3D%22El+Menzah+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla%22+OR+Team2%3D%22Olympique+Mnihla%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6896,7 +6688,7 @@
    "hotspawn_pick_share_home": 7,
    "hotspawn_pick_share_away": 93,
    "home_rating": 1502.1,
-   "away_rating": 1577.1,
+   "away_rating": 1577.2,
    "home_matches": 29,
    "away_matches": 62,
    "model_prob_home": 0.3937,
@@ -6910,7 +6702,7 @@
    "pick_prob": 0.6063,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Academy%22+OR+Team2%3D%22JSK+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22JSK+Esports%22+OR+Team2%3D%22JSK+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6950,7 +6742,7 @@
    "pick_prob": 0.5257,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Olympique+Mnihla+Academy%22+OR+Team2%3D%22Olympique+Mnihla+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Simplicity+Gaming%22+OR+Team2%3D%22Simplicity+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -6990,7 +6782,7 @@
    "pick_prob": 0.5153,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Supreme+Leaders%22+OR+Team2%3D%22Supreme+Leaders%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Jendouba+Esports%22+OR+Team2%3D%22Jendouba+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7030,7 +6822,7 @@
    "pick_prob": 0.5226,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Zahrouni+Esports%22+OR+Team2%3D%22Zahrouni+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Enfida+Esports%22+OR+Team2%3D%22Enfida+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7070,7 +6862,7 @@
    "pick_prob": 0.519,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AIX+eSports%22+OR+Team2%3D%22AIX+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BlackDivision%22+OR+Team2%3D%22BlackDivision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7110,7 +6902,7 @@
    "pick_prob": 0.5353,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming+Academy%22+OR+Team2%3D%22Babos+Gaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Glacial+Guardians%22+OR+Team2%3D%22Glacial+Guardians%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7150,7 +6942,7 @@
    "pick_prob": 0.5067,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Defiance+eSports%22+OR+Team2%3D%22Defiance+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+AKA%22+OR+Team2%3D%22Kanji+Esports+AKA%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7190,7 +6982,7 @@
    "pick_prob": 0.5122,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Duplex+Silva+Pigeons+Edition%22+OR+Team2%3D%22Duplex+Silva+Pigeons+Edition%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7230,7 +7022,7 @@
    "pick_prob": 0.5656,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22LOOKSMAXXER%22+OR+Team2%3D%22LOOKSMAXXER%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%221.+Esport+Club+Frankfurt+e.V.%22+OR+Team2%3D%221.+Esport+Club+Frankfurt+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7270,7 +7062,7 @@
    "pick_prob": 0.5317,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Vision%22+OR+Team2%3D%22MT1+Vision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Black+Lion%22+OR+Team2%3D%22Black+Lion%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7310,7 +7102,7 @@
    "pick_prob": 0.5297,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Neko+Elite+Kittens%22+OR+Team2%3D%22Neko+Elite+Kittens%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7350,7 +7142,7 @@
    "pick_prob": 0.5842,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Packmiko+E-Sports+DACH%22+OR+Team2%3D%22Packmiko+E-Sports+DACH%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Cloud+eSport%22+OR+Team2%3D%22Cloud+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7420,7 +7212,7 @@
    "pick_prob": 0.6888,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang%22+OR+Team2%3D%22Rich+Gang%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300+White%22+OR+Team2%3D%22Team+300+White%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7460,7 +7252,7 @@
    "pick_prob": 0.5319,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Sissi+State+Punks%22+OR+Team2%3D%22Sissi+State+Punks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Second+Time+Alive+Revival%22+OR+Team2%3D%22Second+Time+Alive+Revival%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7500,7 +7292,7 @@
    "pick_prob": 0.5529,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Socken+und+Sandalen%22+OR+Team2%3D%22Socken+und+Sandalen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Eintracht+Spandau+Zwei%22+OR+Team2%3D%22Eintracht+Spandau+Zwei%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7540,7 +7332,7 @@
    "pick_prob": 0.5011,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22spongecord+prime%22+OR+Team2%3D%22spongecord+prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Emperors+Bremen%22+OR+Team2%3D%22Emperors+Bremen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7580,7 +7372,7 @@
    "pick_prob": 0.5186,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+x+Engines+Stuttgart%22+OR+Team2%3D%22VfB+x+Engines+Stuttgart%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+KIN%22+OR+Team2%3D%22Kanji+Esports+KIN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7620,7 +7412,7 @@
    "pick_prob": 0.5747,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22TeamOrangeGaming+Academy%22+OR+Team2%3D%22TeamOrangeGaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7660,7 +7452,7 @@
    "pick_prob": 0.5342,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BvP%22+OR+Team2%3D%22BvP%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7700,7 +7492,7 @@
    "pick_prob": 0.6182,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22reGOLD+eSport%22+OR+Team2%3D%22reGOLD+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming%22+OR+Team2%3D%22Babos+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7740,7 +7532,7 @@
    "pick_prob": 0.5237,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Phong+V%C5%A9+Buffalo%22+OR+Team2%3D%22Phong+V%C5%A9+Buffalo%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Esports%22+OR+Team2%3D%22MT1+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7780,7 +7572,7 @@
    "pick_prob": 0.56,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22The+Bandits+Prime%22+OR+Team2%3D%22The+Bandits+Prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7820,7 +7612,7 @@
    "pick_prob": 0.5303,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22FENNEL%22+OR+Team2%3D%22FENNEL%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Nothin%27Here%22+OR+Team2%3D%22Nothin%27Here%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7860,7 +7652,7 @@
    "pick_prob": 0.5846,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Saigon+Warriors%22+OR+Team2%3D%22Saigon+Warriors%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+Gromp%22+OR+Team2%3D%22Team+Gromp%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7900,7 +7692,7 @@
    "pick_prob": 0.6855,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Ground+Zero+Gaming%22+OR+Team2%3D%22Ground+Zero+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Frank+Esports%22+OR+Team2%3D%22Frank+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7940,7 +7732,7 @@
    "pick_prob": 0.5835,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Locked+IN%22+OR+Team2%3D%22Locked+IN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22404+Multigaming+e.V.%22+OR+Team2%3D%22404+Multigaming+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -7980,7 +7772,7 @@
    "pick_prob": 0.503,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Esports%22+OR+Team2%3D%22MT1+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22The+Bandits+Prime%22+OR+Team2%3D%22The+Bandits+Prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8020,7 +7812,7 @@
    "pick_prob": 0.5265,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Phong+V%C5%A9+Buffalo%22+OR+Team2%3D%22Phong+V%C5%A9+Buffalo%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22regnum4games%22+OR+Team2%3D%22regnum4games%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8060,7 +7852,7 @@
    "pick_prob": 0.5866,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+eSports%22+OR+Team2%3D%22VfB+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22DKB+XPERION+NXT%22+OR+Team2%3D%22DKB+XPERION+NXT%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8100,7 +7892,7 @@
    "pick_prob": 0.5025,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming+Hearts%22+OR+Team2%3D%22AceGaming+Hearts%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Sissi+State+Punks%22+OR+Team2%3D%22Sissi+State+Punks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8140,7 +7932,7 @@
    "pick_prob": 0.5487,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Atruvia+M%C3%BCnster+Esports%22+OR+Team2%3D%22Atruvia+M%C3%BCnster+Esports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+AKA%22+OR+Team2%3D%22Kanji+Esports+AKA%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8180,7 +7972,7 @@
    "pick_prob": 0.5131,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming+Academy%22+OR+Team2%3D%22Babos+Gaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AIX+eSports%22+OR+Team2%3D%22AIX+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8220,7 +8012,7 @@
    "pick_prob": 0.5259,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Berlin+5%22+OR+Team2%3D%22Berlin+5%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Emperors+Bremen%22+OR+Team2%3D%22Emperors+Bremen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8260,7 +8052,7 @@
    "pick_prob": 0.5564,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Black+Lion%22+OR+Team2%3D%22Black+Lion%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22VfB+x+Engines+Stuttgart%22+OR+Team2%3D%22VfB+x+Engines+Stuttgart%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8300,7 +8092,7 @@
    "pick_prob": 0.5862,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BlackDivision%22+OR+Team2%3D%22BlackDivision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22MT1+Vision%22+OR+Team2%3D%22MT1+Vision%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8340,7 +8132,7 @@
    "pick_prob": 0.5879,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Defiance+eSports%22+OR+Team2%3D%22Defiance+eSports%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Purple+Emperor+Lizards+-+Atomic%22+OR+Team2%3D%22Purple+Emperor+Lizards+-+Atomic%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8380,7 +8172,7 @@
    "pick_prob": 0.6305,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Eintracht+Spandau+Zwei%22+OR+Team2%3D%22Eintracht+Spandau+Zwei%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22LOOKSMAXXER%22+OR+Team2%3D%22LOOKSMAXXER%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8420,7 +8212,7 @@
    "pick_prob": 0.5609,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Glacial+Guardians%22+OR+Team2%3D%22Glacial+Guardians%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Kanji+Esports+KIN%22+OR+Team2%3D%22Kanji+Esports+KIN%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8460,7 +8252,7 @@
    "pick_prob": 0.5755,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Duplex+Silva+Pigeons+Edition%22+OR+Team2%3D%22Duplex+Silva+Pigeons+Edition%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Neko+Elite+Kittens%22+OR+Team2%3D%22Neko+Elite+Kittens%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8530,7 +8322,7 @@
    "pick_prob": 0.6777,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Rich+Gang%22+OR+Team2%3D%22Rich+Gang%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Whalepower+Humpbacks%22+OR+Team2%3D%22Whalepower+Humpbacks%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8570,7 +8362,7 @@
    "pick_prob": 0.5296,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Second+Time+Alive+Revival%22+OR+Team2%3D%22Second+Time+Alive+Revival%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22spongecord+prime%22+OR+Team2%3D%22spongecord+prime%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8610,7 +8402,7 @@
    "pick_prob": 0.5306,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300+White%22+OR+Team2%3D%22Team+300+White%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%221.+Esport+Club+Frankfurt+e.V.%22+OR+Team2%3D%221.+Esport+Club+Frankfurt+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8650,7 +8442,7 @@
    "pick_prob": 0.5779,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22TeamOrangeGaming+Academy%22+OR+Team2%3D%22TeamOrangeGaming+Academy%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Socken+und+Sandalen%22+OR+Team2%3D%22Socken+und+Sandalen%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8690,7 +8482,7 @@
    "pick_prob": 0.5857,
    "confidence": "medium",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22AceGaming%22+OR+Team2%3D%22AceGaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Hannover+Esports+e.V.%22+OR+Team2%3D%22Hannover+Esports+e.V.%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8730,7 +8522,7 @@
    "pick_prob": 0.5902,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Babos+Gaming%22+OR+Team2%3D%22Babos+Gaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Reveal+Multigaming%22+OR+Team2%3D%22Reveal+Multigaming%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8770,7 +8562,7 @@
    "pick_prob": 0.5768,
    "confidence": "high",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22Team+300%22+OR+Team2%3D%22Team+300%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22No+Need+Orga%22+OR+Team2%3D%22No+Need+Orga%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
@@ -8810,7 +8602,7 @@
    "pick_prob": 0.5322,
    "confidence": "low",
    "market_source": null,
-   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23306 rows)",
+   "model_source": "Our Elo model (Leaguepedia MatchSchedule results, 23324 rows)",
    "model_url": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22BvP%22+OR+Team2%3D%22BvP%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_url_away": "https://lol.fandom.com/wiki/Special:CargoExport?tables=MatchSchedule&fields=OverviewPage%2CTeam1%2CTeam2%2CWinner%2CDateTime_UTC%2CBestOf%2CMatchId&where=%28Team1%3D%22reGOLD+eSport%22+OR+Team2%3D%22reGOLD+eSport%22%29&order_by=DateTime_UTC+DESC&limit=50&format=json",
    "model_evidence": {
