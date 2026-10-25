@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-24T22:33:24Z",
+ "collected_utc": "2026-10-25T04:53:11Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -13,20 +13,68 @@
     "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
-    "matchup_count": 7
+    "matchup_count": 10
    }
   ],
   "matchups": [
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639121259,
-    "start_utc": "2026-10-25T00:00:00Z",
+    "matchup_id": 1639235121,
+    "start_utc": "2026-10-25T19:00:00Z",
     "is_live": false,
     "participants": [
      {
       "id": null,
-      "name": "Liquid",
+      "name": "Gen.G",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "LYON",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -1462,
+      "implied_raw": 0.93598,
+      "team": "Gen.G"
+     },
+     {
+      "designation": "away",
+      "american": 785,
+      "implied_raw": 0.11299,
+      "team": "LYON"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Gen.G",
+      "prob": 0.89228
+     },
+     {
+      "team": "LYON",
+      "prob": 0.10772
+     }
+    ],
+    "cutoff_utc": "2026-10-25T19:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639235121/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639227252,
+    "start_utc": "2026-10-26T17:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Karmine Corp",
       "alignment": "home"
      },
      {
@@ -39,37 +87,133 @@
     "prices": [
      {
       "designation": "home",
-      "american": 270,
-      "implied_raw": 0.27027,
-      "team": "Liquid"
+      "american": 206,
+      "implied_raw": 0.3268,
+      "team": "Karmine Corp"
      },
      {
       "designation": "away",
-      "american": -349,
-      "implied_raw": 0.77728,
+      "american": -254,
+      "implied_raw": 0.71751,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
-      "team": "Liquid",
-      "prob": 0.258
+      "team": "Karmine Corp",
+      "prob": 0.31293
      },
      {
       "team": "Bilibili",
-      "prob": 0.742
+      "prob": 0.68707
      }
     ],
-    "cutoff_utc": "2026-10-25T07:00:00+00:00",
+    "cutoff_utc": "2026-10-26T17:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639121259/markets/related/straight"
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639227252/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639127310,
-    "start_utc": "2026-10-24T23:00:00Z",
+    "matchup_id": 1639229311,
+    "start_utc": "2026-10-26T19:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "LOS",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Secret Whales",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 161,
+      "implied_raw": 0.38314,
+      "team": "LOS"
+     },
+     {
+      "designation": "away",
+      "american": -193,
+      "implied_raw": 0.6587,
+      "team": "Secret Whales"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "LOS",
+      "prob": 0.36775
+     },
+     {
+      "team": "Secret Whales",
+      "prob": 0.63225
+     }
+    ],
+    "cutoff_utc": "2026-10-26T19:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639229311/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639235120,
+    "start_utc": "2026-10-25T18:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Hanwha Life",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Invictus",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -282,
+      "implied_raw": 0.73822,
+      "team": "Hanwha Life"
+     },
+     {
+      "designation": "away",
+      "american": 225,
+      "implied_raw": 0.30769,
+      "team": "Invictus"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Hanwha Life",
+      "prob": 0.70581
+     },
+     {
+      "team": "Invictus",
+      "prob": 0.29419
+     }
+    ],
+    "cutoff_utc": "2026-10-25T18:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639235120/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639229309,
+    "start_utc": "2026-10-25T22:00:00Z",
     "is_live": false,
     "participants": [
      {
@@ -79,7 +223,7 @@
      },
      {
       "id": null,
-      "name": "T1",
+      "name": "Movistar KOI",
       "alignment": "away"
      }
     ],
@@ -87,31 +231,175 @@
     "prices": [
      {
       "designation": "home",
-      "american": 122,
-      "implied_raw": 0.45045,
+      "american": -324,
+      "implied_raw": 0.76415,
       "team": "Dplus KIA"
      },
      {
       "designation": "away",
-      "american": -143,
-      "implied_raw": 0.58848,
-      "team": "T1"
+      "american": 254,
+      "implied_raw": 0.28249,
+      "team": "Movistar KOI"
      }
     ],
     "devigged": [
      {
       "team": "Dplus KIA",
-      "prob": 0.43357
+      "prob": 0.7301
      },
      {
-      "team": "T1",
-      "prob": 0.56643
+      "team": "Movistar KOI",
+      "prob": 0.2699
      }
     ],
-    "cutoff_utc": "2026-10-25T06:00:00+00:00",
+    "cutoff_utc": "2026-10-25T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639127310/markets/related/straight"
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639229309/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639235122,
+    "start_utc": "2026-10-26T18:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "T1",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "CTBC Flying Oyster",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -700,
+      "implied_raw": 0.875,
+      "team": "T1"
+     },
+     {
+      "designation": "away",
+      "american": 467,
+      "implied_raw": 0.17637,
+      "team": "CTBC Flying Oyster"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "T1",
+      "prob": 0.83225
+     },
+     {
+      "team": "CTBC Flying Oyster",
+      "prob": 0.16775
+     }
+    ],
+    "cutoff_utc": "2026-10-26T18:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639235122/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639235119,
+    "start_utc": "2026-10-25T17:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Top Esports",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "G2",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 109,
+      "implied_raw": 0.47847,
+      "team": "Top Esports"
+     },
+     {
+      "designation": "away",
+      "american": -128,
+      "implied_raw": 0.5614,
+      "team": "G2"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Top Esports",
+      "prob": 0.46012
+     },
+     {
+      "team": "G2",
+      "prob": 0.53988
+     }
+    ],
+    "cutoff_utc": "2026-10-25T17:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639235119/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639227251,
+    "start_utc": "2026-10-26T22:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Liquid",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Anyone's Legend",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 200,
+      "implied_raw": 0.33333,
+      "team": "Liquid"
+     },
+     {
+      "designation": "away",
+      "american": -246,
+      "implied_raw": 0.71098,
+      "team": "Anyone's Legend"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Liquid",
+      "prob": 0.31919
+     },
+     {
+      "team": "Anyone's Legend",
+      "prob": 0.68081
+     }
+    ],
+    "cutoff_utc": "2026-10-26T22:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639227251/markets/related/straight"
    }
   ],
   "errors": [],
@@ -127,62 +415,62 @@
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT241300T1DK",
-    "start_utc": "2026-10-24T21:00:00Z",
+    "matchup_id": "KXLOLGAME-26OCT251300G2TES",
+    "start_utc": "2026-10-25T21:00:00Z",
     "participants": [
      {
-      "name": "T1",
+      "name": "G2 Esports",
       "alignment": "home"
      },
      {
-      "name": "Dplus KIA",
+      "name": "Top Esports",
       "alignment": "away"
      }
     ],
     "prices": [
      {
-      "team": "T1",
-      "title": "T1 wins",
-      "ticker": "KXLOLGAME-26OCT241300T1DK-T1",
-      "yes_bid_dollars": "0.5600",
-      "yes_ask_dollars": "0.5700",
-      "last_price_dollars": "0.5700",
-      "volume_dollars": "228655.82",
-      "open_interest": "209348.29"
+      "team": "G2 Esports",
+      "title": "G2 Esports wins",
+      "ticker": "KXLOLGAME-26OCT251300G2TES-G2",
+      "yes_bid_dollars": "0.5300",
+      "yes_ask_dollars": "0.5400",
+      "last_price_dollars": "0.5400",
+      "volume_dollars": "3886.45",
+      "open_interest": "3886.45"
      },
      {
-      "team": "Dplus KIA",
-      "title": "Dplus KIA wins",
-      "ticker": "KXLOLGAME-26OCT241300T1DK-DK",
-      "yes_bid_dollars": "0.4300",
-      "yes_ask_dollars": "0.4400",
-      "last_price_dollars": "0.4400",
-      "volume_dollars": "79067.06",
-      "open_interest": "67299.89"
+      "team": "Top Esports",
+      "title": "Top Esports wins",
+      "ticker": "KXLOLGAME-26OCT251300G2TES-TES",
+      "yes_bid_dollars": "0.4600",
+      "yes_ask_dollars": "0.4700",
+      "last_price_dollars": "0.4700",
+      "volume_dollars": "16981.90",
+      "open_interest": "16981.90"
      }
     ],
     "devigged": [
      {
-      "team": "T1",
-      "prob": 0.565
+      "team": "G2 Esports",
+      "prob": 0.535
      },
      {
-      "team": "Dplus KIA",
-      "prob": 0.435
+      "team": "Top Esports",
+      "prob": 0.465
      }
     ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct241300t1dk",
+    "url": "https://kalshi.com/markets/kxlolgame-26oct251300g2tes",
     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If T1 wins the Worlds 2026: T1 vs. Dplus KIA League of Legends match originally scheduled for Oct 24, 2026 at 1:00 PM EDT, then the market resolves to Yes."
+    "rules_primary": "If G2 Esports wins the Worlds 2026: G2 Esports vs. Top Esports League of Legends match originally scheduled for Oct 25, 2026 at 1:00 PM EDT, then the market resolves to Yes."
    },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT241500GENHLE",
-    "start_utc": "2026-10-24T23:00:00Z",
+    "matchup_id": "KXLOLGAME-26OCT251400IGHLE",
+    "start_utc": "2026-10-25T22:00:00Z",
     "participants": [
      {
-      "name": "Gen.G",
+      "name": "Invictus Gaming",
       "alignment": "home"
      },
      {
@@ -192,48 +480,303 @@
     ],
     "prices": [
      {
-      "team": "Gen.G",
-      "title": "Gen.G wins",
-      "ticker": "KXLOLGAME-26OCT241500GENHLE-GEN",
-      "yes_bid_dollars": "0.6900",
-      "yes_ask_dollars": "0.7000",
-      "last_price_dollars": "0.7000",
-      "volume_dollars": "373807.85",
-      "open_interest": "353348.80"
+      "team": "Invictus Gaming",
+      "title": "Invictus Gaming wins",
+      "ticker": "KXLOLGAME-26OCT251400IGHLE-IG",
+      "yes_bid_dollars": "0.2700",
+      "yes_ask_dollars": "0.2800",
+      "last_price_dollars": "0.2800",
+      "volume_dollars": "1130.01",
+      "open_interest": "1130.01"
      },
      {
       "team": "Hanwha Life Esports",
       "title": "Hanwha Life Esports wins",
-      "ticker": "KXLOLGAME-26OCT241500GENHLE-HLE",
-      "yes_bid_dollars": "0.3000",
-      "yes_ask_dollars": "0.3100",
-      "last_price_dollars": "0.3100",
-      "volume_dollars": "167000.86",
-      "open_interest": "143018.10"
+      "ticker": "KXLOLGAME-26OCT251400IGHLE-HLE",
+      "yes_bid_dollars": "0.7300",
+      "yes_ask_dollars": "0.7400",
+      "last_price_dollars": "0.7400",
+      "volume_dollars": "4181.64",
+      "open_interest": "4181.64"
      }
     ],
     "devigged": [
      {
-      "team": "Gen.G",
-      "prob": 0.695
+      "team": "Invictus Gaming",
+      "prob": 0.27228
      },
      {
       "team": "Hanwha Life Esports",
-      "prob": 0.305
+      "prob": 0.72772
      }
     ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct241500genhle",
+    "url": "https://kalshi.com/markets/kxlolgame-26oct251400ighle",
     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Gen.G wins the Worlds 2026: Gen.G vs. Hanwha Life Esports League of Legends match originally scheduled for Oct 24, 2026 at 3:00 PM EDT, then the market resolves to Yes."
+    "rules_primary": "If Invictus Gaming wins the Worlds 2026: Invictus Gaming vs. Hanwha Life Esports League of Legends match originally scheduled for Oct 25, 2026 at 2:00 PM EDT, then the market resolves to Yes."
    },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT242000BLGTL",
-    "start_utc": "2026-10-25T04:00:00Z",
+    "matchup_id": "KXLOLGAME-26OCT251500LYGEN",
+    "start_utc": "2026-10-25T23:00:00Z",
+    "participants": [
+     {
+      "name": "LYON",
+      "alignment": "home"
+     },
+     {
+      "name": "Gen.G",
+      "alignment": "away"
+     }
+    ],
+    "prices": [
+     {
+      "team": "LYON",
+      "title": "LYON wins",
+      "ticker": "KXLOLGAME-26OCT251500LYGEN-LY",
+      "yes_bid_dollars": "0.1000",
+      "yes_ask_dollars": "0.1100",
+      "last_price_dollars": "0.1100",
+      "volume_dollars": "22281.07",
+      "open_interest": "22281.07"
+     },
+     {
+      "team": "Gen.G",
+      "title": "Gen.G wins",
+      "ticker": "KXLOLGAME-26OCT251500LYGEN-GEN",
+      "yes_bid_dollars": "0.8900",
+      "yes_ask_dollars": "0.9000",
+      "last_price_dollars": "0.9000",
+      "volume_dollars": "3145.94",
+      "open_interest": "3145.94"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "LYON",
+      "prob": 0.105
+     },
+     {
+      "team": "Gen.G",
+      "prob": 0.895
+     }
+    ],
+    "url": "https://kalshi.com/markets/kxlolgame-26oct251500lygen",
+    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
+    "rules_primary": "If LYON wins the Worlds 2026: LYON vs. Gen.G League of Legends match originally scheduled for Oct 25, 2026 at 3:00 PM EDT, then the market resolves to Yes."
+   },
+   {
+    "league": "KXLOLGAME",
+    "source": "Kalshi",
+    "matchup_id": "KXLOLGAME-26OCT251800MKOIDK",
+    "start_utc": "2026-10-26T02:00:00Z",
+    "participants": [
+     {
+      "name": "Movistar KOI",
+      "alignment": "home"
+     },
+     {
+      "name": "Dplus KIA",
+      "alignment": "away"
+     }
+    ],
+    "prices": [
+     {
+      "team": "Movistar KOI",
+      "title": "Movistar KOI wins",
+      "ticker": "KXLOLGAME-26OCT251800MKOIDK-MKOI",
+      "yes_bid_dollars": "0.2300",
+      "yes_ask_dollars": "0.2400",
+      "last_price_dollars": "0.2400",
+      "volume_dollars": "1861.67",
+      "open_interest": "1861.67"
+     },
+     {
+      "team": "Dplus KIA",
+      "title": "Dplus KIA wins",
+      "ticker": "KXLOLGAME-26OCT251800MKOIDK-DK",
+      "yes_bid_dollars": "0.7600",
+      "yes_ask_dollars": "0.7700",
+      "last_price_dollars": "0.7700",
+      "volume_dollars": "4053.16",
+      "open_interest": "4053.16"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Movistar KOI",
+      "prob": 0.235
+     },
+     {
+      "team": "Dplus KIA",
+      "prob": 0.765
+     }
+    ],
+    "url": "https://kalshi.com/markets/kxlolgame-26oct251800mkoidk",
+    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
+    "rules_primary": "If Movistar KOI wins the Worlds 2026: Movistar KOI vs. Dplus KIA League of Legends match originally scheduled for Oct 25, 2026 at 6:00 PM EDT, then the market resolves to Yes."
+   },
+   {
+    "league": "KXLOLGAME",
+    "source": "Kalshi",
+    "matchup_id": "KXLOLGAME-26OCT261300BLGKC",
+    "start_utc": "2026-10-26T21:00:00Z",
     "participants": [
      {
       "name": "Bilibili Gaming",
+      "alignment": "home"
+     },
+     {
+      "name": "Karmine Corp",
+      "alignment": "away"
+     }
+    ],
+    "prices": [
+     {
+      "team": "Bilibili Gaming",
+      "title": "Bilibili Gaming wins",
+      "ticker": "KXLOLGAME-26OCT261300BLGKC-BLG",
+      "yes_bid_dollars": "0.6800",
+      "yes_ask_dollars": "0.6900",
+      "last_price_dollars": "0.6900",
+      "volume_dollars": "871.46",
+      "open_interest": "871.46"
+     },
+     {
+      "team": "Karmine Corp",
+      "title": "Karmine Corp wins",
+      "ticker": "KXLOLGAME-26OCT261300BLGKC-KC",
+      "yes_bid_dollars": "0.2700",
+      "yes_ask_dollars": "0.2900",
+      "last_price_dollars": "0.2900",
+      "volume_dollars": "850.76",
+      "open_interest": "850.76"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Bilibili Gaming",
+      "prob": 0.70984
+     },
+     {
+      "team": "Karmine Corp",
+      "prob": 0.29016
+     }
+    ],
+    "url": "https://kalshi.com/markets/kxlolgame-26oct261300blgkc",
+    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
+    "rules_primary": "If Bilibili Gaming wins the Worlds 2026: Bilibili Gaming vs. Karmine Corp League of Legends match originally scheduled for Oct 26, 2026 at 1:00 PM EDT, then the market resolves to Yes."
+   },
+   {
+    "league": "KXLOLGAME",
+    "source": "Kalshi",
+    "matchup_id": "KXLOLGAME-26OCT261400CFOT1",
+    "start_utc": "2026-10-26T22:00:00Z",
+    "participants": [
+     {
+      "name": "CTBC Flying Oyster",
+      "alignment": "home"
+     },
+     {
+      "name": "T1",
+      "alignment": "away"
+     }
+    ],
+    "prices": [
+     {
+      "team": "CTBC Flying Oyster",
+      "title": "CTBC Flying Oyster wins",
+      "ticker": "KXLOLGAME-26OCT261400CFOT1-CFO",
+      "yes_bid_dollars": "0.1100",
+      "yes_ask_dollars": "0.1300",
+      "last_price_dollars": "0.1300",
+      "volume_dollars": "478.85",
+      "open_interest": "478.85"
+     },
+     {
+      "team": "T1",
+      "title": "T1 wins",
+      "ticker": "KXLOLGAME-26OCT261400CFOT1-T1",
+      "yes_bid_dollars": "0.8600",
+      "yes_ask_dollars": "0.8800",
+      "last_price_dollars": "0.8800",
+      "volume_dollars": "1822.79",
+      "open_interest": "1822.79"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "CTBC Flying Oyster",
+      "prob": 0.12121
+     },
+     {
+      "team": "T1",
+      "prob": 0.87879
+     }
+    ],
+    "url": "https://kalshi.com/markets/kxlolgame-26oct261400cfot1",
+    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
+    "rules_primary": "If CTBC Flying Oyster wins the Worlds 2026: CTBC Flying Oyster vs. T1 League of Legends match originally scheduled for Oct 26, 2026 at 2:00 PM EDT, then the market resolves to Yes."
+   },
+   {
+    "league": "KXLOLGAME",
+    "source": "Kalshi",
+    "matchup_id": "KXLOLGAME-26OCT261500TSWLOS",
+    "start_utc": "2026-10-26T23:00:00Z",
+    "participants": [
+     {
+      "name": "Team Secret Whales",
+      "alignment": "home"
+     },
+     {
+      "name": "LOS",
+      "alignment": "away"
+     }
+    ],
+    "prices": [
+     {
+      "team": "Team Secret Whales",
+      "title": "Team Secret Whales wins",
+      "ticker": "KXLOLGAME-26OCT261500TSWLOS-TSW",
+      "yes_bid_dollars": "0.6400",
+      "yes_ask_dollars": "0.6500",
+      "last_price_dollars": "0.6500",
+      "volume_dollars": "11513.18",
+      "open_interest": "11513.18"
+     },
+     {
+      "team": "LOS",
+      "title": "LOS wins",
+      "ticker": "KXLOLGAME-26OCT261500TSWLOS-LOS",
+      "yes_bid_dollars": "0.3300",
+      "yes_ask_dollars": "0.3500",
+      "last_price_dollars": "0.3700",
+      "volume_dollars": "332.50",
+      "open_interest": "332.50"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Team Secret Whales",
+      "prob": 0.65482
+     },
+     {
+      "team": "LOS",
+      "prob": 0.34518
+     }
+    ],
+    "url": "https://kalshi.com/markets/kxlolgame-26oct261500tswlos",
+    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
+    "rules_primary": "If Team Secret Whales wins the Worlds 2026: Team Secret Whales vs. LOS League of Legends match originally scheduled for Oct 26, 2026 at 3:00 PM EDT, then the market resolves to Yes."
+   },
+   {
+    "league": "KXLOLGAME",
+    "source": "Kalshi",
+    "matchup_id": "KXLOLGAME-26OCT261800ALTL",
+    "start_utc": "2026-10-27T02:00:00Z",
+    "participants": [
+     {
+      "name": "Anyone's Legend",
       "alignment": "home"
      },
      {
@@ -243,39 +786,39 @@
     ],
     "prices": [
      {
-      "team": "Bilibili Gaming",
-      "title": "Bilibili Gaming wins",
-      "ticker": "KXLOLGAME-26OCT242000BLGTL-BLG",
-      "yes_bid_dollars": "0.7500",
-      "yes_ask_dollars": "0.7600",
-      "last_price_dollars": "0.7600",
-      "volume_dollars": "28244.51",
-      "open_interest": "27686.11"
+      "team": "Anyone's Legend",
+      "title": "Anyone's Legend wins",
+      "ticker": "KXLOLGAME-26OCT261800ALTL-AL",
+      "yes_bid_dollars": "0.6800",
+      "yes_ask_dollars": "0.7000",
+      "last_price_dollars": "0.6900",
+      "volume_dollars": "259.79",
+      "open_interest": "259.79"
      },
      {
       "team": "Team Liquid",
       "title": "Team Liquid wins",
-      "ticker": "KXLOLGAME-26OCT242000BLGTL-TL",
-      "yes_bid_dollars": "0.2400",
-      "yes_ask_dollars": "0.2500",
-      "last_price_dollars": "0.2500",
-      "volume_dollars": "45140.94",
-      "open_interest": "44835.78"
+      "ticker": "KXLOLGAME-26OCT261800ALTL-TL",
+      "yes_bid_dollars": "0.2900",
+      "yes_ask_dollars": "0.3100",
+      "last_price_dollars": "0.3200",
+      "volume_dollars": "1155.24",
+      "open_interest": "1155.24"
      }
     ],
     "devigged": [
      {
-      "team": "Bilibili Gaming",
-      "prob": 0.755
+      "team": "Anyone's Legend",
+      "prob": 0.69697
      },
      {
       "team": "Team Liquid",
-      "prob": 0.245
+      "prob": 0.30303
      }
     ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct242000blgtl",
+    "url": "https://kalshi.com/markets/kxlolgame-26oct261800altl",
     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Bilibili Gaming wins the Worlds 2026: Bilibili Gaming vs. Team Liquid League of Legends match originally scheduled for Oct 24, 2026 at 8:00 PM EDT, then the market resolves to Yes."
+    "rules_primary": "If Anyone's Legend wins the Worlds 2026: Anyone's Legend vs. Team Liquid League of Legends match originally scheduled for Oct 26, 2026 at 6:00 PM EDT, then the market resolves to Yes."
    },
    {
     "league": "KXLOLGAME",
@@ -297,31 +840,31 @@
       "team": "Rising Bees",
       "title": "Rising Bees wins",
       "ticker": "KXLOLGAME-26OCT271300RBMR-RB",
-      "yes_bid_dollars": "0.5300",
-      "yes_ask_dollars": "0.6300",
-      "last_price_dollars": "0.6500",
-      "volume_dollars": "22.02",
-      "open_interest": "22.02"
+      "yes_bid_dollars": "0.6100",
+      "yes_ask_dollars": "0.6800",
+      "last_price_dollars": "0.6800",
+      "volume_dollars": "220.02",
+      "open_interest": "220.02"
      },
      {
       "team": "Mental Rush",
       "title": "Mental Rush wins",
       "ticker": "KXLOLGAME-26OCT271300RBMR-MR",
-      "yes_bid_dollars": "0.4000",
-      "yes_ask_dollars": "0.4800",
-      "last_price_dollars": "0.5200",
-      "volume_dollars": "18.88",
-      "open_interest": "16.88"
+      "yes_bid_dollars": "0.3600",
+      "yes_ask_dollars": "0.4000",
+      "last_price_dollars": "0.3600",
+      "volume_dollars": "41.00",
+      "open_interest": "25.88"
      }
     ],
     "devigged": [
      {
       "team": "Rising Bees",
-      "prob": 0.56863
+      "prob": 0.62927
      },
      {
       "team": "Mental Rush",
-      "prob": 0.43137
+      "prob": 0.37073
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct271300rbmr",
@@ -330,7 +873,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 5,
+  "events_seen": 9,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
