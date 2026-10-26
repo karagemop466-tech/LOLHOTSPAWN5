@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-26T04:57:17Z",
+ "collected_utc": "2026-10-26T15:16:20Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -17,54 +17,6 @@
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639227252,
-    "start_utc": "2026-10-26T18:15:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Karmine Corp",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 229,
-      "implied_raw": 0.30395,
-      "team": "Karmine Corp"
-     },
-     {
-      "designation": "away",
-      "american": -288,
-      "implied_raw": 0.74227,
-      "team": "Bilibili"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Karmine Corp",
-      "prob": 0.29052
-     },
-     {
-      "team": "Bilibili",
-      "prob": 0.70948
-     }
-    ],
-    "cutoff_utc": "2026-10-27T01:15:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639227252/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -87,25 +39,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 218,
-      "implied_raw": 0.31447,
+      "american": 242,
+      "implied_raw": 0.2924,
       "team": "Liquid"
      },
      {
       "designation": "away",
-      "american": -272,
-      "implied_raw": 0.73118,
+      "american": -307,
+      "implied_raw": 0.7543,
       "team": "Anyone's Legend"
      }
     ],
     "devigged": [
      {
       "team": "Liquid",
-      "prob": 0.30074
+      "prob": 0.27935
      },
      {
       "team": "Anyone's Legend",
-      "prob": 0.69926
+      "prob": 0.72065
      }
     ],
     "cutoff_utc": "2026-10-27T06:15:00+00:00",
@@ -135,25 +87,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 179,
-      "implied_raw": 0.35842,
+      "american": 180,
+      "implied_raw": 0.35714,
       "team": "LOS"
      },
      {
       "designation": "away",
-      "american": -217,
-      "implied_raw": 0.68454,
+      "american": -218,
+      "implied_raw": 0.68553,
       "team": "Secret Whales"
      }
     ],
     "devigged": [
      {
       "team": "LOS",
-      "prob": 0.34366
+      "prob": 0.34252
      },
      {
       "team": "Secret Whales",
-      "prob": 0.65634
+      "prob": 0.65748
      }
     ],
     "cutoff_utc": "2026-10-27T03:15:00+00:00",
@@ -183,31 +135,79 @@
     "prices": [
      {
       "designation": "home",
-      "american": -826,
-      "implied_raw": 0.89201,
+      "american": -892,
+      "implied_raw": 0.89919,
       "team": "T1"
      },
      {
       "designation": "away",
-      "american": 528,
-      "implied_raw": 0.15924,
+      "american": 558,
+      "implied_raw": 0.15198,
       "team": "CTBC Flying Oyster"
      }
     ],
     "devigged": [
      {
       "team": "T1",
-      "prob": 0.84853
+      "prob": 0.85542
      },
      {
       "team": "CTBC Flying Oyster",
-      "prob": 0.15147
+      "prob": 0.14458
      }
     ],
     "cutoff_utc": "2026-10-27T01:15:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639235122/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639227252,
+    "start_utc": "2026-10-26T18:15:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Karmine Corp",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 199,
+      "implied_raw": 0.33445,
+      "team": "Karmine Corp"
+     },
+     {
+      "designation": "away",
+      "american": -245,
+      "implied_raw": 0.71014,
+      "team": "Bilibili"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Karmine Corp",
+      "prob": 0.32017
+     },
+     {
+      "team": "Bilibili",
+      "prob": 0.67983
+     }
+    ],
+    "cutoff_utc": "2026-10-27T01:15:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639227252/markets/related/straight"
    }
   ],
   "errors": [],
@@ -243,8 +243,8 @@
       "yes_bid_dollars": "0.7000",
       "yes_ask_dollars": "0.7100",
       "last_price_dollars": "0.7100",
-      "volume_dollars": "17462.61",
-      "open_interest": "16499.83"
+      "volume_dollars": "23748.29",
+      "open_interest": "19589.77"
      },
      {
       "team": "Karmine Corp",
@@ -252,9 +252,9 @@
       "ticker": "KXLOLGAME-26OCT261300BLGKC-KC",
       "yes_bid_dollars": "0.2900",
       "yes_ask_dollars": "0.3000",
-      "last_price_dollars": "0.2900",
-      "volume_dollars": "27173.97",
-      "open_interest": "26049.11"
+      "last_price_dollars": "0.3000",
+      "volume_dollars": "36466.34",
+      "open_interest": "35325.60"
      }
     ],
     "devigged": [
@@ -294,8 +294,8 @@
       "yes_bid_dollars": "0.1100",
       "yes_ask_dollars": "0.1200",
       "last_price_dollars": "0.1200",
-      "volume_dollars": "24496.28",
-      "open_interest": "23383.12"
+      "volume_dollars": "52140.15",
+      "open_interest": "50634.51"
      },
      {
       "team": "T1",
@@ -304,8 +304,8 @@
       "yes_bid_dollars": "0.8800",
       "yes_ask_dollars": "0.8900",
       "last_price_dollars": "0.8900",
-      "volume_dollars": "53856.97",
-      "open_interest": "52220.14"
+      "volume_dollars": "113075.17",
+      "open_interest": "108999.50"
      }
     ],
     "devigged": [
@@ -342,31 +342,31 @@
       "team": "Team Secret Whales",
       "title": "Team Secret Whales wins",
       "ticker": "KXLOLGAME-26OCT261500TSWLOS-TSW",
-      "yes_bid_dollars": "0.6400",
-      "yes_ask_dollars": "0.6500",
-      "last_price_dollars": "0.6500",
-      "volume_dollars": "19900.06",
-      "open_interest": "18463.88"
+      "yes_bid_dollars": "0.6700",
+      "yes_ask_dollars": "0.6800",
+      "last_price_dollars": "0.6800",
+      "volume_dollars": "58156.73",
+      "open_interest": "56217.44"
      },
      {
       "team": "LOS",
       "title": "LOS wins",
       "ticker": "KXLOLGAME-26OCT261500TSWLOS-LOS",
-      "yes_bid_dollars": "0.3400",
-      "yes_ask_dollars": "0.3500",
-      "last_price_dollars": "0.3500",
-      "volume_dollars": "16859.43",
-      "open_interest": "16776.43"
+      "yes_bid_dollars": "0.3200",
+      "yes_ask_dollars": "0.3300",
+      "last_price_dollars": "0.3300",
+      "volume_dollars": "21093.77",
+      "open_interest": "19394.80"
      }
     ],
     "devigged": [
      {
       "team": "Team Secret Whales",
-      "prob": 0.65152
+      "prob": 0.675
      },
      {
       "team": "LOS",
-      "prob": 0.34848
+      "prob": 0.325
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct261500tswlos",
@@ -393,31 +393,31 @@
       "team": "Anyone's Legend",
       "title": "Anyone's Legend wins",
       "ticker": "KXLOLGAME-26OCT261800ALTL-AL",
-      "yes_bid_dollars": "0.7000",
-      "yes_ask_dollars": "0.7100",
-      "last_price_dollars": "0.7200",
-      "volume_dollars": "12339.99",
-      "open_interest": "12172.05"
+      "yes_bid_dollars": "0.7300",
+      "yes_ask_dollars": "0.7400",
+      "last_price_dollars": "0.7300",
+      "volume_dollars": "54505.65",
+      "open_interest": "53948.96"
      },
      {
       "team": "Team Liquid",
       "title": "Team Liquid wins",
       "ticker": "KXLOLGAME-26OCT261800ALTL-TL",
-      "yes_bid_dollars": "0.2900",
-      "yes_ask_dollars": "0.3000",
-      "last_price_dollars": "0.3000",
-      "volume_dollars": "18142.65",
-      "open_interest": "18111.73"
+      "yes_bid_dollars": "0.2600",
+      "yes_ask_dollars": "0.2700",
+      "last_price_dollars": "0.2700",
+      "volume_dollars": "37136.54",
+      "open_interest": "34451.93"
      }
     ],
     "devigged": [
      {
       "team": "Anyone's Legend",
-      "prob": 0.705
+      "prob": 0.735
      },
      {
       "team": "Team Liquid",
-      "prob": 0.295
+      "prob": 0.265
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct261800altl",
@@ -444,7 +444,7 @@
       "team": "Rising Bees",
       "title": "Rising Bees wins",
       "ticker": "KXLOLGAME-26OCT271300RBMR-RB",
-      "yes_bid_dollars": "0.6200",
+      "yes_bid_dollars": "0.6300",
       "yes_ask_dollars": "0.6600",
       "last_price_dollars": "0.6300",
       "volume_dollars": "378.20",
@@ -455,20 +455,20 @@
       "title": "Mental Rush wins",
       "ticker": "KXLOLGAME-26OCT271300RBMR-MR",
       "yes_bid_dollars": "0.3600",
-      "yes_ask_dollars": "0.4000",
+      "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3900",
-      "volume_dollars": "164.36",
-      "open_interest": "149.24"
+      "volume_dollars": "166.81",
+      "open_interest": "151.69"
      }
     ],
     "devigged": [
      {
       "team": "Rising Bees",
-      "prob": 0.62745
+      "prob": 0.63547
      },
      {
       "team": "Mental Rush",
-      "prob": 0.37255
+      "prob": 0.36453
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct271300rbmr",
@@ -516,7 +516,7 @@
    "url": "https://linefeed.melbet.com/line/en/",
    "status": 0,
    "body_bytes": 0,
-   "note": "URLError: <urlopen error timed out> - no prices used",
+   "note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)> - no prices used",
    "prices_parsed": 0
   },
   {
@@ -540,7 +540,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2634,
+   "body_bytes": 2633,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
