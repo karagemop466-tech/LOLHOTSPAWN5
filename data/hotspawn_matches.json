@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-10-27T14:37:47Z",
- "html_sha256": "829b46889776722e168b697c2be68d8a13a23eea50eec2bee8f4677025024ee4",
- "html_bytes": 1344766,
+ "collected_utc": "2026-10-27T20:46:18Z",
+ "html_sha256": "43e25ca19182d2948f9c0e39e52fa68b472614de7fae36ce4a0785e3a77831f4",
+ "html_bytes": 1319977,
  "match_count": 211,
  "lol_match_count": 211,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 131,
- "matches_without_hotspawn_page": 80,
+ "matches_with_hotspawn_page": 128,
+ "matches_without_hotspawn_page": 83,
  "matches": [
   {
    "id": "1053095",
@@ -2425,7 +2425,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 27,
+   "total_picks": 28,
    "home": {
     "id": "162888",
     "name": "DKB XPERION NXT",
@@ -2438,7 +2438,7 @@
     "hotspawn_pick_share": 0,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/dkb-xperion-nxt-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079031"
+   "hotspawn_url": null
   },
   {
    "id": "1079032",
@@ -2455,20 +2455,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 27,
+   "total_picks": 28,
    "home": {
     "id": "29694",
     "name": "No Need Orga",
-    "hotspawn_pick_share": 85,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
    "away": {
     "id": "86632",
     "name": "AceGaming",
-    "hotspawn_pick_share": 15,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/no-need-orga-vs-acegaming-prm-2nd-division-26-27-fall-1079032"
+   "hotspawn_url": null
   },
   {
    "id": "1079080",
@@ -2498,7 +2498,7 @@
     "hotspawn_pick_share": 100,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/mental-rush-vs-vitality-rising-bees-lgc-rising-2026-playoffs-1079080"
+   "hotspawn_url": null
   },
   {
    "id": "1082615",
@@ -2515,17 +2515,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 18,
+   "total_picks": 19,
    "home": {
     "id": "126609",
     "name": "DMG Esports Sweden",
-    "hotspawn_pick_share": 94,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
     "id": "263904",
     "name": "Northern Wolves Esports",
-    "hotspawn_pick_share": 6,
+    "hotspawn_pick_share": 0,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/dmg-esports-sweden-vs-northern-wolves-esports-rivals-league-season-2-1082615"
@@ -2545,7 +2545,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 17,
+   "total_picks": 18,
    "home": {
     "id": "54530",
     "name": "Karolinerna",
@@ -2575,17 +2575,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 27,
+   "total_picks": 28,
    "home": {
     "id": "245774",
     "name": "Hannover Esports e.V.",
-    "hotspawn_pick_share": 93,
+    "hotspawn_pick_share": 96,
     "score": 0
    },
    "away": {
     "id": "29694",
     "name": "No Need Orga",
-    "hotspawn_pick_share": 7,
+    "hotspawn_pick_share": 4,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/hannover-esports-e-v-vs-no-need-orga-prm-2nd-division-26-27-fall-1079033"
@@ -2605,17 +2605,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 27,
+   "total_picks": 28,
    "home": {
     "id": "184897",
     "name": "VfB eSports",
-    "hotspawn_pick_share": 85,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
    "away": {
     "id": "170682",
     "name": "regnum4games",
-    "hotspawn_pick_share": 15,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/vfb-esports-vs-regnum4games-prm-2nd-division-26-27-fall-1079034"
@@ -2639,13 +2639,13 @@
    "home": {
     "id": "150322",
     "name": "FlameHard",
-    "hotspawn_pick_share": 81,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
    "away": {
     "id": "232892",
     "name": "B2U",
-    "hotspawn_pick_share": 19,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/flamehard-vs-b2u-rivals-league-season-2-1083035"
@@ -2755,7 +2755,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "145233",
     "name": "Movistar KOI",
@@ -2785,7 +2785,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "5531",
     "name": "Invictus Gaming",
@@ -2935,7 +2935,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "26929",
     "name": "Karmine Corp",
@@ -2965,7 +2965,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "12139",
     "name": "Top Esports",
@@ -3235,7 +3235,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "14945",
     "name": "Team Liquid",
@@ -3265,17 +3265,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "14958",
     "name": "G2 Esports",
-    "hotspawn_pick_share": 25,
+    "hotspawn_pick_share": 20,
     "score": 0
    },
    "away": {
     "id": "10170",
     "name": "Hanwha Life Esports",
-    "hotspawn_pick_share": 75,
+    "hotspawn_pick_share": 80,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/g2-esports-vs-hanwha-life-esports-worlds-2026-main-event-1094913"
@@ -3475,7 +3475,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "20689",
     "name": "Simplicity Esports",
@@ -4195,7 +4195,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "20689",
     "name": "Simplicity Esports",
@@ -4795,7 +4795,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "74587",
     "name": "Magaza Esports",
@@ -4945,7 +4945,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "265306",
     "name": "Olympique Mnihla Academy",
