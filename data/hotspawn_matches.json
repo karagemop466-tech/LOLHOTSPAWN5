@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-10-28T21:10:04Z",
- "html_sha256": "22033b15ab7d0fdd0701032d61845b9492c48d00d6e65388a9cfb0b45ba39d11",
- "html_bytes": 1319191,
- "match_count": 212,
- "lol_match_count": 212,
+ "collected_utc": "2026-10-29T05:57:28Z",
+ "html_sha256": "46704e5122b6134ac4aec164cc97a488d7e9308d46d37cf9e2002d6bd5b21bfd",
+ "html_bytes": 1293515,
+ "match_count": 210,
+ "lol_match_count": 210,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 121,
- "matches_without_hotspawn_page": 91,
+ "matches_with_hotspawn_page": 118,
+ "matches_without_hotspawn_page": 92,
  "matches": [
   {
    "id": "1053095",
@@ -2528,67 +2528,7 @@
     "hotspawn_pick_share": 14,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/slam-dunk-vs-new-era-team-arabian-league-2nd-division-2026-summer-1079144"
-  },
-  {
-   "id": "1094910",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-28T20:00:00Z",
-   "start_epoch_ms": "1793217600000",
-   "lock_utc": "2026-10-28T19:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 9,
-   "home": {
-    "id": "145233",
-    "name": "Movistar KOI",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "10168",
-    "name": "T1",
-    "hotspawn_pick_share": 100,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/movistar-koi-vs-t1-worlds-2026-main-event-1094910"
-  },
-  {
-   "id": "1094909",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-28T23:00:00Z",
-   "start_epoch_ms": "1793228400000",
-   "lock_utc": "2026-10-28T22:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 9,
-   "home": {
-    "id": "5531",
-    "name": "Invictus Gaming",
-    "hotspawn_pick_share": 78,
-    "score": 0
-   },
-   "away": {
-    "id": "203378",
-    "name": "LYON",
-    "hotspawn_pick_share": 22,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/invictus-gaming-vs-lyon-worlds-2026-main-event-1094909"
+   "hotspawn_url": null
   },
   {
    "id": "1075763",
@@ -2605,7 +2545,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 22,
+   "total_picks": 25,
    "home": {
     "id": "238161",
     "name": "Berlin 5",
@@ -2635,17 +2575,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 29,
+   "total_picks": 30,
    "home": {
     "id": "246851",
     "name": "Babos Gaming Academy",
-    "hotspawn_pick_share": 79,
+    "hotspawn_pick_share": 80,
     "score": 0
    },
    "away": {
     "id": "246855",
     "name": "VfB x Engines Stuttgart",
-    "hotspawn_pick_share": 21,
+    "hotspawn_pick_share": 20,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/babos-gaming-academy-vs-vfb-x-engines-stuttgart-prm-3rd-division-26-27-fall-1075749"
@@ -2665,17 +2605,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 21,
+   "total_picks": 24,
    "home": {
     "id": "206094",
     "name": "Glacial Guardians",
-    "hotspawn_pick_share": 95,
+    "hotspawn_pick_share": 96,
     "score": 0
    },
    "away": {
     "id": "233419",
     "name": "MT1 Vision",
-    "hotspawn_pick_share": 5,
+    "hotspawn_pick_share": 4,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/glacial-guardians-vs-mt1-vision-prm-3rd-division-26-27-fall-1075768"
@@ -2695,17 +2635,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 32,
+   "total_picks": 33,
    "home": {
     "id": "218954",
     "name": "Purple Emperor Lizards - Atomic",
-    "hotspawn_pick_share": 81,
+    "hotspawn_pick_share": 79,
     "score": 0
    },
    "away": {
     "id": "237479",
     "name": "Cloud eSport",
-    "hotspawn_pick_share": 19,
+    "hotspawn_pick_share": 21,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/purple-emperor-lizards-atomic-vs-cloud-esport-prm-3rd-division-26-27-fall-1075737"
@@ -2725,17 +2665,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 25,
+   "total_picks": 27,
    "home": {
     "id": "88512",
     "name": "Pegasus Esports",
-    "hotspawn_pick_share": 84,
+    "hotspawn_pick_share": 81,
     "score": 0
    },
    "away": {
     "id": "232309",
     "name": "JSK Academy",
-    "hotspawn_pick_share": 16,
+    "hotspawn_pick_share": 19,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-pegasus-esports-arabian-league-2nd-division-2026-summer-1079145"
@@ -2755,17 +2695,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 15,
+   "total_picks": 17,
    "home": {
     "id": "265504",
     "name": "Crownless",
-    "hotspawn_pick_share": 87,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
    "away": {
     "id": "19455",
     "name": "Absolved",
-    "hotspawn_pick_share": 13,
+    "hotspawn_pick_share": 12,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/crownless-vs-absolved-4-nations-2026-halloween-heist-1081701"
@@ -2785,17 +2725,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 9,
+   "total_picks": 11,
    "home": {
     "id": "26929",
     "name": "Karmine Corp",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "away": {
     "id": "59292",
     "name": "CTBC Flying Oyster",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/karmine-corp-vs-ctbc-flying-oyster-worlds-2026-main-event-1094911"
@@ -2815,7 +2755,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 9,
+   "total_picks": 11,
    "home": {
     "id": "12139",
     "name": "Top Esports",
@@ -5258,7 +5198,7 @@
     "hotspawn_pick_share": 7,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075785"
+   "hotspawn_url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-reh-gaming-prm-3rd-division-26-27-fall-1075785"
   },
   {
    "id": "1075786",
