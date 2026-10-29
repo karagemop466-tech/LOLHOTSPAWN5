@@ -20,7 +20,7 @@
     </a>
     <div class="fresh">
       <span class="dot" aria-hidden="true"></span>
-      <span>Updated <time datetime="2026-10-29T15:18:02Z">2026-10-29 15:18:02 UTC</time></span>
+      <span>Updated <time datetime="2026-10-29T21:14:07Z">2026-10-29 21:14:07 UTC</time></span>
     </div>
   </div>
   <nav class="nav" aria-label="Sections"><a class="navlink" href="index.html">Summary</a><a class="navlink" href="picks.html">All picks</a><a class="navlink" href="unresolved.html">Unresolved</a><a class="navlink" href="methodology.html">Method</a><a class="navlink" href="sources.html">Sources</a><a class="navlink active" href="review.html">Flagged</a></nav>
@@ -46,18 +46,18 @@
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>
-        <td data-l="Finding">Hotspawn returns 206 rows but only 118 carry a match page</td>
-        <td data-l="Detail">88 rows have no Hotspawn match page, and those are exactly the 80 rows whose start time is already in the past while status still reads <code>scheduled</code>. We treat them as stale. They are still listed, but no pick from them should be acted on.</td>
+        <td data-l="Finding">Hotspawn returns 220 rows but only 111 carry a match page</td>
+        <td data-l="Detail">109 rows have no Hotspawn match page, and those are exactly the 87 rows whose start time is already in the past while status still reads <code>scheduled</code>. We treat them as stale. They are still listed, but no pick from them should be acted on.</td>
         <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">source</a></td>
       </tr>
       <tr>
-        <td data-l="Finding">0 of 206 fixtures have tier and stage listed as &#x27;waiting for information&#x27;</td>
+        <td data-l="Finding">0 of 220 fixtures have tier and stage listed as &#x27;waiting for information&#x27;</td>
         <td data-l="Detail">0 fixtures carry <code>tier: waiting for information</code> and 0 also have <code>stage: waiting for information</code>. Series format (BestOf) is <code>null</code> for every row, so the site cannot show match length. This is a limitation of the Hotspawn payload, not an omission on our side.</td>
         <td data-l="Source"><a href="https://play.hotspawn.com/lol-pickems" rel="noopener">source</a></td>
       </tr>
       <tr>
         <td data-l="Finding">No per-match sportsbook market for ~95% of the board</td>
-        <td data-l="Detail">Only 4 fixtures matched a Pinnacle moneyline. The remaining 202 have no external price. This is expected — books price Worlds and EMEA Masters, not the PRM 3rd Division or the Tunisian Super League — but it is the single biggest limitation on the site.</td>
+        <td data-l="Detail">Only 3 fixtures matched a Pinnacle moneyline. The remaining 217 have no external price. This is expected — books price Worlds and EMEA Masters, not the PRM 3rd Division or the Tunisian Super League — but it is the single biggest limitation on the site.</td>
         <td data-l="Source"><a href="https://www.pinnacle.com/en/esports/league-of-legends/matchups/" rel="noopener">source</a></td>
       </tr>
       <tr>
@@ -82,7 +82,7 @@
       </tr>
       <tr>
         <td data-l="Finding">Unverified values are left blank</td>
-        <td data-l="Detail">87 fixtures carry no probability at all — 80 stale rows and 7 with fewer than 3 rated results for a team. A further 33 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
+        <td data-l="Detail">104 fixtures carry no probability at all — 87 stale rows and 17 with fewer than 3 rated results for a team. A further 34 are model-priced on thin samples and are labelled <em>Low</em>. Series format (BestOf) is blank for all fixtures because Hotspawn does not provide it.</td>
         <td data-l="Source"><a href="https://lol.fandom.com/wiki/Special:CargoTables/MatchSchedule" rel="noopener">source</a></td>
       </tr>
       <tr>
@@ -94,7 +94,7 @@
   </div>
 
   <h2>Unverified: fixtures with no Hotspawn match page</h2>
-  <p class="sub">The match link column is left blank for these 88 fixtures rather than
+  <p class="sub">The match link column is left blank for these 109 fixtures rather than
   guessed from the team names. Showing the first 40.</p>
   <div class="tablewrap">
     <table class="data">
@@ -347,7 +347,7 @@
 <footer class="footer">
   <p><strong>Hotspawn LoL Pick Desk</strong> — independent analysis of League of Legends esports markets.</p>
   <p>Match inventory: <a href="https://play.hotspawn.com/lol-pickems">Hotspawn Play pick'ems</a>
-     (collected 2026-10-29 15:16:56 UTC). Probabilities: external sportsbook lines where available,
+     (collected 2026-10-29 21:12:54 UTC). Probabilities: external sportsbook lines where available,
      otherwise our own Elo model. Hotspawn's crowd pick share is never used as a probability.</p>
   <p>Not betting advice. Verify every number against the linked source before acting on it.</p>
 </footer>
