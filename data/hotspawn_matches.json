@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-10-30T15:06:00Z",
- "html_sha256": "001f3918ec593f3d11a5988b398b9ced5fd0f1315966442261d21237a91d40fb",
- "html_bytes": 1322745,
- "match_count": 213,
- "lol_match_count": 213,
+ "collected_utc": "2026-10-30T20:52:19Z",
+ "html_sha256": "dd513d5abf12a8b071f4788ea8c6cc6de6d650452251e23aec828b0fde13a246",
+ "html_bytes": 1277742,
+ "match_count": 210,
+ "lol_match_count": 210,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 112,
- "matches_without_hotspawn_page": 101,
+ "matches_with_hotspawn_page": 107,
+ "matches_without_hotspawn_page": 103,
  "matches": [
   {
    "id": "1053095",
@@ -2381,96 +2381,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1126359",
-   "competition_id": "36652",
-   "competition": "Predator League Philippines 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-30T09:00:00Z",
-   "start_epoch_ms": "1793350800000",
-   "lock_utc": "2026-10-30T08:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 9,
-   "home": {
-    "id": "266050",
-    "name": "For Fun Player",
-    "hotspawn_pick_share": 33,
-    "score": 0
-   },
-   "away": {
-    "id": "266051",
-    "name": "Gorgen Esports",
-    "hotspawn_pick_share": 67,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1126360",
-   "competition_id": "36652",
-   "competition": "Predator League Philippines 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-30T10:00:00Z",
-   "start_epoch_ms": "1793354400000",
-   "lock_utc": "2026-10-30T09:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 9,
-   "home": {
-    "id": "266051",
-    "name": "Gorgen Esports",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "88573",
-    "name": "West Point Esports Philippines",
-    "hotspawn_pick_share": 100,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1126361",
-   "competition_id": "36652",
-   "competition": "Predator League Philippines 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-30T11:00:00Z",
-   "start_epoch_ms": "1793358000000",
-   "lock_utc": "2026-10-30T10:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 9,
-   "home": {
-    "id": "266050",
-    "name": "For Fun Player",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "266053",
-    "name": "No One Knows Esports",
-    "hotspawn_pick_share": 100,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1079036",
    "competition_id": "36492",
    "competition": "PRM 2nd Division 26-27 Fall",
@@ -2498,7 +2408,7 @@
     "hotspawn_pick_share": 14,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/reveal-multigaming-vs-team-300-prm-2nd-division-26-27-fall-1079036"
+   "hotspawn_url": null
   },
   {
    "id": "1079851",
@@ -2528,7 +2438,7 @@
     "hotspawn_pick_share": 93,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-regold-esport-prm-2nd-division-26-27-fall-1079851"
+   "hotspawn_url": null
   },
   {
    "id": "1083039",
@@ -2558,7 +2468,7 @@
     "hotspawn_pick_share": 11,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2208"
+   "hotspawn_url": null
   },
   {
    "id": "1083040",
@@ -2588,7 +2498,7 @@
     "hotspawn_pick_share": 11,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2209"
+   "hotspawn_url": null
   },
   {
    "id": "1083041",
@@ -2618,7 +2528,7 @@
     "hotspawn_pick_share": 84,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2210"
+   "hotspawn_url": null
   },
   {
    "id": "1079147",
@@ -2635,17 +2545,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 28,
+   "total_picks": 29,
    "home": {
     "id": "264945",
     "name": "Team Reds",
-    "hotspawn_pick_share": 89,
+    "hotspawn_pick_share": 90,
     "score": 0
    },
    "away": {
     "id": "206997",
     "name": "NextGeneration Esports",
-    "hotspawn_pick_share": 11,
+    "hotspawn_pick_share": 10,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/team-reds-vs-nextgeneration-esports-arabian-league-2nd-division-2026-summer-1079147"
@@ -2665,7 +2575,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 28,
+   "total_picks": 29,
    "home": {
     "id": "162888",
     "name": "DKB XPERION NXT",
@@ -2695,7 +2605,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 28,
+   "total_picks": 29,
    "home": {
     "id": "184897",
     "name": "VfB eSports",
@@ -2755,17 +2665,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 15,
+   "total_picks": 16,
    "home": {
     "id": "14958",
     "name": "G2 Esports",
-    "hotspawn_pick_share": 27,
+    "hotspawn_pick_share": 25,
     "score": 0
    },
    "away": {
     "id": "10170",
     "name": "Hanwha Life Esports",
-    "hotspawn_pick_share": 73,
+    "hotspawn_pick_share": 75,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/g2-esports-vs-hanwha-life-esports-worlds-2026-main-event-1094913"
@@ -2785,17 +2695,17 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 7,
    "home": {
     "id": "252718",
     "name": "HANJIN BRION Academy",
-    "hotspawn_pick_share": 20,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
    "away": {
     "id": "252029",
     "name": "DN SOOPers Academy",
-    "hotspawn_pick_share": 80,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
    "hotspawn_url": null
@@ -2815,7 +2725,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "266052",
     "name": "Jamba Juice",
@@ -2845,7 +2755,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 2,
+   "total_picks": 4,
    "home": {
     "id": "264061",
     "name": "Team Jamba Juice",
@@ -2875,7 +2785,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "250285",
     "name": "Generation of Miracles",
@@ -2905,7 +2815,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "266049",
     "name": "Celestials",
@@ -2935,7 +2845,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 1,
+   "total_picks": 3,
    "home": {
     "id": "264061",
     "name": "Team Jamba Juice",
@@ -2965,7 +2875,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "266054",
     "name": "Sliang Kavite Telecom",
@@ -2995,7 +2905,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "23670",
     "name": "KT Rolster Academy",
@@ -3025,7 +2935,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "250285",
     "name": "Generation of Miracles",
@@ -3055,7 +2965,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 1,
+   "total_picks": 2,
    "home": {
     "id": "250285",
     "name": "Generation of Miracles",
@@ -3085,7 +2995,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "266054",
     "name": "Sliang Kavite Telecom",
