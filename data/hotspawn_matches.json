@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-10-29T21:12:54Z",
- "html_sha256": "ca78201d777e4c677f46b53e0ed90a029c82ab5ad4fca5a1f15ad46e26ab0586",
- "html_bytes": 1340820,
- "match_count": 220,
- "lol_match_count": 220,
+ "collected_utc": "2026-10-30T05:58:23Z",
+ "html_sha256": "27f78e55ba7d0b0463014875fc160d2066898ed8db20c081ddc49dc2c670e9c7",
+ "html_bytes": 1330762,
+ "match_count": 218,
+ "lol_match_count": 218,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 111,
- "matches_without_hotspawn_page": 109,
+ "matches_with_hotspawn_page": 110,
+ "matches_without_hotspawn_page": 108,
  "matches": [
   {
    "id": "1053095",
@@ -2591,66 +2591,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1094911",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-29T20:00:00Z",
-   "start_epoch_ms": "1793304000000",
-   "lock_utc": "2026-10-29T19:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 14,
-   "home": {
-    "id": "26929",
-    "name": "Karmine Corp",
-    "hotspawn_pick_share": 93,
-    "score": 0
-   },
-   "away": {
-    "id": "59292",
-    "name": "CTBC Flying Oyster",
-    "hotspawn_pick_share": 7,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1094908",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-10-29T23:00:00Z",
-   "start_epoch_ms": "1793314800000",
-   "lock_utc": "2026-10-29T22:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 14,
-   "home": {
-    "id": "12139",
-    "name": "Top Esports",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "5746",
-    "name": "Bilibili Gaming",
-    "hotspawn_pick_share": 100,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/top-esports-vs-bilibili-gaming-worlds-2026-main-event-1094908"
-  },
-  {
    "id": "1126356",
    "competition_id": "36652",
    "competition": "Predator League Philippines 2027",
@@ -2665,7 +2605,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 9,
    "home": {
     "id": "88573",
     "name": "West Point Esports Philippines",
@@ -2695,17 +2635,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 9,
    "home": {
     "id": "266051",
     "name": "Gorgen Esports",
-    "hotspawn_pick_share": 75,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
    "away": {
     "id": "266053",
     "name": "No One Knows Esports",
-    "hotspawn_pick_share": 25,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
    "hotspawn_url": null
@@ -2725,7 +2665,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 9,
    "home": {
     "id": "266053",
     "name": "No One Knows Esports",
@@ -2755,17 +2695,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 8,
    "home": {
     "id": "266050",
     "name": "For Fun Player",
-    "hotspawn_pick_share": 50,
+    "hotspawn_pick_share": 38,
     "score": 0
    },
    "away": {
     "id": "266051",
     "name": "Gorgen Esports",
-    "hotspawn_pick_share": 50,
+    "hotspawn_pick_share": 63,
     "score": 0
    },
    "hotspawn_url": null
@@ -2785,7 +2725,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 8,
    "home": {
     "id": "266051",
     "name": "Gorgen Esports",
@@ -2815,7 +2755,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 8,
    "home": {
     "id": "266050",
     "name": "For Fun Player",
@@ -3142,20 +3082,20 @@
    "lock_utc": "2026-10-31T04:55:00Z",
    "lock_offset_sec": 300,
    "tier": null,
-   "stage": null,
+   "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "252718",
     "name": "HANJIN BRION Academy",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 25,
     "score": 0
    },
    "away": {
     "id": "252029",
     "name": "DN SOOPers Academy",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 75,
     "score": 0
    },
    "hotspawn_url": null
@@ -3175,11 +3115,11 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "266052",
     "name": "Jamba Juice",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -3205,11 +3145,11 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "250285",
     "name": "Generation of Miracles",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -3235,11 +3175,11 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "266049",
     "name": "Celestials",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -3265,7 +3205,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "266054",
     "name": "Sliang Kavite Telecom",
@@ -3275,7 +3215,7 @@
    "away": {
     "id": "250285",
     "name": "Generation of Miracles",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -3292,14 +3232,14 @@
    "lock_utc": "2026-10-31T08:55:00Z",
    "lock_offset_sec": 300,
    "tier": null,
-   "stage": null,
+   "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "23670",
     "name": "KT Rolster Academy",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -3325,7 +3265,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "250285",
     "name": "Generation of Miracles",
@@ -3335,7 +3275,7 @@
    "away": {
     "id": "266052",
     "name": "Jamba Juice",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -3355,7 +3295,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "266054",
     "name": "Sliang Kavite Telecom",
@@ -3365,7 +3305,7 @@
    "away": {
     "id": "266049",
     "name": "Celestials",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -3475,7 +3415,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266015",
     "name": "Infotec Elder Dragons",
@@ -3505,7 +3445,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "251965",
     "name": "MADE IN HEAVEN",
@@ -3535,7 +3475,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "225418",
     "name": "Eclipse",
@@ -3565,7 +3505,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "169490",
     "name": "Oxygen Gaming",
@@ -3595,7 +3535,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "266017",
     "name": "multiculturalidad",
@@ -3625,7 +3565,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "204755",
     "name": "Valkiria's Thunder",
@@ -3655,7 +3595,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "190990",
     "name": "Valkiria's Vikings",
@@ -4405,17 +4345,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 7,
+   "total_picks": 8,
    "home": {
     "id": "20689",
     "name": "Simplicity Esports",
-    "hotspawn_pick_share": 14,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "away": {
     "id": "206980",
     "name": "JSK Esports",
-    "hotspawn_pick_share": 86,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/simplicity-esports-vs-jsk-esports-tunisian-super-league-2026-1103262"

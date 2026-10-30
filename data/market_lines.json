@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-29T21:12:55Z",
+ "collected_utc": "2026-10-30T05:58:24Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -13,25 +13,25 @@
     "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
-    "matchup_count": 8
+    "matchup_count": 4
    }
   ],
   "matchups": [
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639318677,
-    "start_utc": "2026-10-29T20:12:06Z",
+    "matchup_id": 1639318499,
+    "start_utc": "2026-10-30T23:15:00Z",
     "is_live": false,
     "participants": [
      {
       "id": null,
-      "name": "Karmine Corp",
+      "name": "Hanwha Life",
       "alignment": "home"
      },
      {
       "id": null,
-      "name": "CTBC Flying Oyster",
+      "name": "G2",
       "alignment": "away"
      }
     ],
@@ -39,31 +39,31 @@
     "prices": [
      {
       "designation": "home",
-      "american": -534,
-      "implied_raw": 0.84227,
-      "team": "Karmine Corp"
+      "american": -426,
+      "implied_raw": 0.80989,
+      "team": "Hanwha Life"
      },
      {
       "designation": "away",
-      "american": 377,
-      "implied_raw": 0.20964,
-      "team": "CTBC Flying Oyster"
+      "american": 318,
+      "implied_raw": 0.23923,
+      "team": "G2"
      }
     ],
     "devigged": [
      {
-      "team": "Karmine Corp",
-      "prob": 0.8007
+      "team": "Hanwha Life",
+      "prob": 0.77197
      },
      {
-      "team": "CTBC Flying Oyster",
-      "prob": 0.1993
+      "team": "G2",
+      "prob": 0.22803
      }
     ],
-    "cutoff_utc": "2026-10-30T01:00:59.657000+00:00",
+    "cutoff_utc": "2026-10-30T23:15:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318677/markets/related/straight"
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318499/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
@@ -87,127 +87,31 @@
     "prices": [
      {
       "designation": "home",
-      "american": -529,
-      "implied_raw": 0.84102,
+      "american": -514,
+      "implied_raw": 0.83713,
       "team": "Liquid"
      },
      {
       "designation": "away",
-      "american": 378,
-      "implied_raw": 0.20921,
+      "american": 369,
+      "implied_raw": 0.21322,
       "team": "LOS"
      }
     ],
     "devigged": [
      {
       "team": "Liquid",
-      "prob": 0.8008
+      "prob": 0.797
      },
      {
       "team": "LOS",
-      "prob": 0.1992
+      "prob": 0.203
      }
     ],
     "cutoff_utc": "2026-10-30T20:15:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318498/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639318675,
-    "start_utc": "2026-10-29T23:15:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Top Esports",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 295,
-      "implied_raw": 0.25316,
-      "team": "Top Esports"
-     },
-     {
-      "designation": "away",
-      "american": -389,
-      "implied_raw": 0.7955,
-      "team": "Bilibili"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Top Esports",
-      "prob": 0.24142
-     },
-     {
-      "team": "Bilibili",
-      "prob": 0.75858
-     }
-    ],
-    "cutoff_utc": "2026-10-30T05:15:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318675/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639318499,
-    "start_utc": "2026-10-30T23:15:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Hanwha Life",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "G2",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -507,
-      "implied_raw": 0.83526,
-      "team": "Hanwha Life"
-     },
-     {
-      "designation": "away",
-      "american": 365,
-      "implied_raw": 0.21505,
-      "team": "G2"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Hanwha Life",
-      "prob": 0.79525
-     },
-     {
-      "team": "G2",
-      "prob": 0.20475
-     }
-    ],
-    "cutoff_utc": "2026-10-30T23:15:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318499/markets/related/straight"
    }
   ],
   "errors": [],
@@ -220,108 +124,6 @@
    "KXLOLGAME (Kalshi exchange, League of Legends)"
   ],
   "matchups": [
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT281600BLGTES",
-    "start_utc": "2026-10-29T00:00:00Z",
-    "participants": [
-     {
-      "name": "Bilibili Gaming",
-      "alignment": "home"
-     },
-     {
-      "name": "Top Esports",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "Bilibili Gaming",
-      "title": "Bilibili Gaming wins",
-      "ticker": "KXLOLGAME-26OCT281600BLGTES-BLG",
-      "yes_bid_dollars": "0.7500",
-      "yes_ask_dollars": "0.7600",
-      "last_price_dollars": "0.7600",
-      "volume_dollars": "63742.40",
-      "open_interest": "63558.84"
-     },
-     {
-      "team": "Top Esports",
-      "title": "Top Esports wins",
-      "ticker": "KXLOLGAME-26OCT281600BLGTES-TES",
-      "yes_bid_dollars": "0.2400",
-      "yes_ask_dollars": "0.2500",
-      "last_price_dollars": "0.2500",
-      "volume_dollars": "64879.23",
-      "open_interest": "60856.08"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Bilibili Gaming",
-      "prob": 0.755
-     },
-     {
-      "team": "Top Esports",
-      "prob": 0.245
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct281600blgtes",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Bilibili Gaming wins the Worlds 2026: Bilibili Gaming vs. Top Esports League of Legends match originally scheduled for Oct 28, 2026 at 4:00 PM EDT, then the market resolves to Yes."
-   },
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT291900CFOKC",
-    "start_utc": "2026-10-30T03:00:00Z",
-    "participants": [
-     {
-      "name": "CTBC Flying Oyster",
-      "alignment": "home"
-     },
-     {
-      "name": "Karmine Corp",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "CTBC Flying Oyster",
-      "title": "CTBC Flying Oyster wins",
-      "ticker": "KXLOLGAME-26OCT291900CFOKC-CFO",
-      "yes_bid_dollars": "0.2100",
-      "yes_ask_dollars": "0.2200",
-      "last_price_dollars": "0.2200",
-      "volume_dollars": "345729.58",
-      "open_interest": "304991.11"
-     },
-     {
-      "team": "Karmine Corp",
-      "title": "Karmine Corp wins",
-      "ticker": "KXLOLGAME-26OCT291900CFOKC-KC",
-      "yes_bid_dollars": "0.7800",
-      "yes_ask_dollars": "0.7900",
-      "last_price_dollars": "0.8000",
-      "volume_dollars": "240339.24",
-      "open_interest": "210426.91"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "CTBC Flying Oyster",
-      "prob": 0.215
-     },
-     {
-      "team": "Karmine Corp",
-      "prob": 0.785
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct291900cfokc",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If CTBC Flying Oyster wins the Worlds 2026: CTBC Flying Oyster vs. Karmine Corp League of Legends match originally scheduled for Oct 29, 2026 at 7:00 PM EDT, then the market resolves to Yes."
-   },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
@@ -345,8 +147,8 @@
       "yes_bid_dollars": "0.2000",
       "yes_ask_dollars": "0.2100",
       "last_price_dollars": "0.2100",
-      "volume_dollars": "16288.68",
-      "open_interest": "15575.74"
+      "volume_dollars": "19029.88",
+      "open_interest": "18248.26"
      },
      {
       "team": "Team Liquid",
@@ -355,8 +157,8 @@
       "yes_bid_dollars": "0.7900",
       "yes_ask_dollars": "0.8000",
       "last_price_dollars": "0.8000",
-      "volume_dollars": "5294.92",
-      "open_interest": "4539.88"
+      "volume_dollars": "20088.13",
+      "open_interest": "19259.03"
      }
     ],
     "devigged": [
@@ -396,8 +198,8 @@
       "yes_bid_dollars": "0.2100",
       "yes_ask_dollars": "0.2200",
       "last_price_dollars": "0.2200",
-      "volume_dollars": "24270.51",
-      "open_interest": "23839.66"
+      "volume_dollars": "40380.92",
+      "open_interest": "37506.37"
      },
      {
       "team": "Hanwha Life Esports",
@@ -406,8 +208,8 @@
       "yes_bid_dollars": "0.7700",
       "yes_ask_dollars": "0.7800",
       "last_price_dollars": "0.7800",
-      "volume_dollars": "27024.67",
-      "open_interest": "25834.89"
+      "volume_dollars": "45238.12",
+      "open_interest": "40399.26"
      }
     ],
     "devigged": [
@@ -426,7 +228,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 4,
+  "events_seen": 2,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
@@ -489,7 +291,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2810,
+   "body_bytes": 2811,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
