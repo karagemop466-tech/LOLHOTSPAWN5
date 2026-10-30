@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-30T05:58:24Z",
+ "collected_utc": "2026-10-30T15:06:01Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -17,54 +17,6 @@
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639318499,
-    "start_utc": "2026-10-30T23:15:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Hanwha Life",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "G2",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -426,
-      "implied_raw": 0.80989,
-      "team": "Hanwha Life"
-     },
-     {
-      "designation": "away",
-      "american": 318,
-      "implied_raw": 0.23923,
-      "team": "G2"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Hanwha Life",
-      "prob": 0.77197
-     },
-     {
-      "team": "G2",
-      "prob": 0.22803
-     }
-    ],
-    "cutoff_utc": "2026-10-30T23:15:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318499/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -87,31 +39,79 @@
     "prices": [
      {
       "designation": "home",
-      "american": -514,
-      "implied_raw": 0.83713,
+      "american": -557,
+      "implied_raw": 0.84779,
       "team": "Liquid"
      },
      {
       "designation": "away",
-      "american": 369,
-      "implied_raw": 0.21322,
+      "american": 393,
+      "implied_raw": 0.20284,
       "team": "LOS"
      }
     ],
     "devigged": [
      {
       "team": "Liquid",
-      "prob": 0.797
+      "prob": 0.80694
      },
      {
       "team": "LOS",
-      "prob": 0.203
+      "prob": 0.19306
      }
     ],
-    "cutoff_utc": "2026-10-30T20:15:00+00:00",
+    "cutoff_utc": "2026-10-31T06:15:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318498/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639318499,
+    "start_utc": "2026-10-30T23:15:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Hanwha Life",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "G2",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": -468,
+      "implied_raw": 0.82394,
+      "team": "Hanwha Life"
+     },
+     {
+      "designation": "away",
+      "american": 343,
+      "implied_raw": 0.22573,
+      "team": "G2"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Hanwha Life",
+      "prob": 0.78495
+     },
+     {
+      "team": "G2",
+      "prob": 0.21505
+     }
+    ],
+    "cutoff_utc": "2026-10-31T03:15:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639318499/markets/related/straight"
    }
   ],
   "errors": [],
@@ -144,31 +144,31 @@
       "team": "LOS",
       "title": "LOS wins",
       "ticker": "KXLOLGAME-26OCT301600LOSTL-LOS",
-      "yes_bid_dollars": "0.2000",
-      "yes_ask_dollars": "0.2100",
-      "last_price_dollars": "0.2100",
-      "volume_dollars": "19029.88",
-      "open_interest": "18248.26"
+      "yes_bid_dollars": "0.1900",
+      "yes_ask_dollars": "0.2000",
+      "last_price_dollars": "0.2000",
+      "volume_dollars": "26682.35",
+      "open_interest": "25423.14"
      },
      {
       "team": "Team Liquid",
       "title": "Team Liquid wins",
       "ticker": "KXLOLGAME-26OCT301600LOSTL-TL",
-      "yes_bid_dollars": "0.7900",
-      "yes_ask_dollars": "0.8000",
-      "last_price_dollars": "0.8000",
-      "volume_dollars": "20088.13",
-      "open_interest": "19259.03"
+      "yes_bid_dollars": "0.8000",
+      "yes_ask_dollars": "0.8100",
+      "last_price_dollars": "0.8100",
+      "volume_dollars": "124440.34",
+      "open_interest": "123610.24"
      }
     ],
     "devigged": [
      {
       "team": "LOS",
-      "prob": 0.205
+      "prob": 0.195
      },
      {
       "team": "Team Liquid",
-      "prob": 0.795
+      "prob": 0.805
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct301600lostl",
@@ -198,28 +198,28 @@
       "yes_bid_dollars": "0.2100",
       "yes_ask_dollars": "0.2200",
       "last_price_dollars": "0.2200",
-      "volume_dollars": "40380.92",
-      "open_interest": "37506.37"
+      "volume_dollars": "49598.42",
+      "open_interest": "46645.47"
      },
      {
       "team": "Hanwha Life Esports",
       "title": "Hanwha Life Esports wins",
       "ticker": "KXLOLGAME-26OCT301900G2HLE-HLE",
-      "yes_bid_dollars": "0.7700",
-      "yes_ask_dollars": "0.7800",
-      "last_price_dollars": "0.7800",
-      "volume_dollars": "45238.12",
-      "open_interest": "40399.26"
+      "yes_bid_dollars": "0.7800",
+      "yes_ask_dollars": "0.7900",
+      "last_price_dollars": "0.7900",
+      "volume_dollars": "58496.29",
+      "open_interest": "53552.68"
      }
     ],
     "devigged": [
      {
       "team": "G2 Esports",
-      "prob": 0.21717
+      "prob": 0.215
      },
      {
       "team": "Hanwha Life Esports",
-      "prob": 0.78283
+      "prob": 0.785
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct301900g2hle",
@@ -291,7 +291,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2811,
+   "body_bytes": 2809,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
