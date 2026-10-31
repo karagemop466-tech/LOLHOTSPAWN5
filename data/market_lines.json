@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-31T05:54:34Z",
+ "collected_utc": "2026-10-31T14:35:35Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -39,28 +39,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": -157,
-      "implied_raw": 0.61089,
+      "american": -163,
+      "implied_raw": 0.61977,
       "team": "Karmine Corp"
      },
      {
       "designation": "away",
-      "american": 133,
-      "implied_raw": 0.42918,
+      "american": 138,
+      "implied_raw": 0.42017,
       "team": "Movistar KOI"
      }
     ],
     "devigged": [
      {
       "team": "Karmine Corp",
-      "prob": 0.58735
+      "prob": 0.59597
      },
      {
       "team": "Movistar KOI",
-      "prob": 0.41265
+      "prob": 0.40403
      }
     ],
-    "cutoff_utc": "2026-10-31T20:00:00+00:00",
+    "cutoff_utc": "2026-11-01T06:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668666/markets/related/straight"
@@ -87,28 +87,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": 262,
-      "implied_raw": 0.27624,
+      "american": 274,
+      "implied_raw": 0.26738,
       "team": "LOS"
      },
      {
       "designation": "away",
-      "american": -337,
-      "implied_raw": 0.77117,
+      "american": -355,
+      "implied_raw": 0.78022,
       "team": "LYON"
      }
     ],
     "devigged": [
      {
       "team": "LOS",
-      "prob": 0.26374
+      "prob": 0.25523
      },
      {
       "team": "LYON",
-      "prob": 0.73626
+      "prob": 0.74477
      }
     ],
-    "cutoff_utc": "2026-10-31T17:00:00+00:00",
+    "cutoff_utc": "2026-11-01T03:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668664/markets/related/straight"
@@ -135,28 +135,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": -158,
-      "implied_raw": 0.6124,
+      "american": -151,
+      "implied_raw": 0.60159,
       "team": "Hanwha Life"
      },
      {
       "designation": "away",
-      "american": 134,
-      "implied_raw": 0.42735,
+      "american": 128,
+      "implied_raw": 0.4386,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
       "team": "Hanwha Life",
-      "prob": 0.58899
+      "prob": 0.57835
      },
      {
       "team": "Bilibili",
-      "prob": 0.41101
+      "prob": 0.42165
      }
     ],
-    "cutoff_utc": "2026-10-31T23:00:00+00:00",
+    "cutoff_utc": "2026-11-01T06:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668667/markets/related/straight"
@@ -192,31 +192,31 @@
       "team": "LYON",
       "title": "LYON wins",
       "ticker": "KXLOLGAME-26OCT311300LYLOS-LY",
-      "yes_bid_dollars": "0.7300",
-      "yes_ask_dollars": "0.7500",
-      "last_price_dollars": "0.7500",
-      "volume_dollars": "2770.05",
-      "open_interest": "2769.05"
+      "yes_bid_dollars": "0.7500",
+      "yes_ask_dollars": "0.7600",
+      "last_price_dollars": "0.7600",
+      "volume_dollars": "27346.38",
+      "open_interest": "27223.38"
      },
      {
       "team": "LOS",
       "title": "LOS wins",
       "ticker": "KXLOLGAME-26OCT311300LYLOS-LOS",
       "yes_bid_dollars": "0.2400",
-      "yes_ask_dollars": "0.2700",
-      "last_price_dollars": "0.2700",
-      "volume_dollars": "5158.36",
-      "open_interest": "5158.36"
+      "yes_ask_dollars": "0.2500",
+      "last_price_dollars": "0.2500",
+      "volume_dollars": "22657.26",
+      "open_interest": "17258.26"
      }
     ],
     "devigged": [
      {
       "team": "LYON",
-      "prob": 0.74372
+      "prob": 0.755
      },
      {
       "team": "LOS",
-      "prob": 0.25628
+      "prob": 0.245
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct311300lylos",
@@ -243,31 +243,31 @@
       "team": "Movistar KOI",
       "title": "Movistar KOI wins",
       "ticker": "KXLOLGAME-26OCT311600MKOIKC-MKOI",
-      "yes_bid_dollars": "0.4000",
-      "yes_ask_dollars": "0.4100",
-      "last_price_dollars": "0.4100",
-      "volume_dollars": "1043.73",
-      "open_interest": "1043.73"
+      "yes_bid_dollars": "0.3800",
+      "yes_ask_dollars": "0.3900",
+      "last_price_dollars": "0.3900",
+      "volume_dollars": "13783.19",
+      "open_interest": "13557.22"
      },
      {
       "team": "Karmine Corp",
       "title": "Karmine Corp wins",
       "ticker": "KXLOLGAME-26OCT311600MKOIKC-KC",
-      "yes_bid_dollars": "0.5800",
-      "yes_ask_dollars": "0.5900",
-      "last_price_dollars": "0.5900",
-      "volume_dollars": "4439.29",
-      "open_interest": "4438.29"
+      "yes_bid_dollars": "0.6100",
+      "yes_ask_dollars": "0.6200",
+      "last_price_dollars": "0.6200",
+      "volume_dollars": "36314.57",
+      "open_interest": "35001.21"
      }
     ],
     "devigged": [
      {
       "team": "Movistar KOI",
-      "prob": 0.40909
+      "prob": 0.385
      },
      {
       "team": "Karmine Corp",
-      "prob": 0.59091
+      "prob": 0.615
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct311600mkoikc",
@@ -294,11 +294,11 @@
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26OCT311900BLGHLE-BLG",
-      "yes_bid_dollars": "0.3900",
-      "yes_ask_dollars": "0.4100",
-      "last_price_dollars": "0.4100",
-      "volume_dollars": "7511.39",
-      "open_interest": "7511.39"
+      "yes_bid_dollars": "0.4200",
+      "yes_ask_dollars": "0.4300",
+      "last_price_dollars": "0.4300",
+      "volume_dollars": "37286.63",
+      "open_interest": "37286.63"
      },
      {
       "team": "Hanwha Life Esports",
@@ -306,19 +306,19 @@
       "ticker": "KXLOLGAME-26OCT311900BLGHLE-HLE",
       "yes_bid_dollars": "0.5700",
       "yes_ask_dollars": "0.5800",
-      "last_price_dollars": "0.5900",
-      "volume_dollars": "17903.61",
-      "open_interest": "17029.61"
+      "last_price_dollars": "0.5800",
+      "volume_dollars": "48614.47",
+      "open_interest": "47061.05"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili Gaming",
-      "prob": 0.41026
+      "prob": 0.425
      },
      {
       "team": "Hanwha Life Esports",
-      "prob": 0.58974
+      "prob": 0.575
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct311900blghle",
@@ -390,7 +390,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2808,
+   "body_bytes": 2809,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
