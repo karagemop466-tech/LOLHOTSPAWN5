@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-31T14:35:35Z",
+ "collected_utc": "2026-10-31T20:02:33Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -13,63 +13,15 @@
     "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
-    "matchup_count": 5
+    "matchup_count": 7
    }
   ],
   "matchups": [
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639668666,
-    "start_utc": "2026-10-31T20:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Karmine Corp",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Movistar KOI",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -163,
-      "implied_raw": 0.61977,
-      "team": "Karmine Corp"
-     },
-     {
-      "designation": "away",
-      "american": 138,
-      "implied_raw": 0.42017,
-      "team": "Movistar KOI"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Karmine Corp",
-      "prob": 0.59597
-     },
-     {
-      "team": "Movistar KOI",
-      "prob": 0.40403
-     }
-    ],
-    "cutoff_utc": "2026-11-01T06:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668666/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
     "matchup_id": 1639668664,
-    "start_utc": "2026-10-31T17:00:00Z",
+    "start_utc": "2026-10-31T18:59:50Z",
     "is_live": false,
     "participants": [
      {
@@ -87,28 +39,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": 274,
-      "implied_raw": 0.26738,
+      "american": -135,
+      "implied_raw": 0.57447,
       "team": "LOS"
      },
      {
       "designation": "away",
-      "american": -355,
-      "implied_raw": 0.78022,
+      "american": 112,
+      "implied_raw": 0.4717,
       "team": "LYON"
      }
     ],
     "devigged": [
      {
       "team": "LOS",
-      "prob": 0.25523
+      "prob": 0.54912
      },
      {
       "team": "LYON",
-      "prob": 0.74477
+      "prob": 0.45088
      }
     ],
-    "cutoff_utc": "2026-11-01T03:00:00+00:00",
+    "cutoff_utc": "2026-10-31T23:55:33.017000+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668664/markets/related/straight"
@@ -135,25 +87,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": -151,
-      "implied_raw": 0.60159,
+      "american": -154,
+      "implied_raw": 0.6063,
       "team": "Hanwha Life"
      },
      {
       "designation": "away",
-      "american": 128,
-      "implied_raw": 0.4386,
+      "american": 131,
+      "implied_raw": 0.4329,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
       "team": "Hanwha Life",
-      "prob": 0.57835
+      "prob": 0.58343
      },
      {
       "team": "Bilibili",
-      "prob": 0.42165
+      "prob": 0.41657
      }
     ],
     "cutoff_utc": "2026-11-01T06:00:00+00:00",
@@ -192,87 +144,36 @@
       "team": "LYON",
       "title": "LYON wins",
       "ticker": "KXLOLGAME-26OCT311300LYLOS-LY",
-      "yes_bid_dollars": "0.7500",
-      "yes_ask_dollars": "0.7600",
-      "last_price_dollars": "0.7600",
-      "volume_dollars": "27346.38",
-      "open_interest": "27223.38"
+      "yes_bid_dollars": "0.5100",
+      "yes_ask_dollars": "0.5200",
+      "last_price_dollars": "0.5200",
+      "volume_dollars": "433148.41",
+      "open_interest": "382258.58"
      },
      {
       "team": "LOS",
       "title": "LOS wins",
       "ticker": "KXLOLGAME-26OCT311300LYLOS-LOS",
-      "yes_bid_dollars": "0.2400",
-      "yes_ask_dollars": "0.2500",
-      "last_price_dollars": "0.2500",
-      "volume_dollars": "22657.26",
-      "open_interest": "17258.26"
+      "yes_bid_dollars": "0.4900",
+      "yes_ask_dollars": "0.5000",
+      "last_price_dollars": "0.5000",
+      "volume_dollars": "296057.87",
+      "open_interest": "220763.11"
      }
     ],
     "devigged": [
      {
       "team": "LYON",
-      "prob": 0.755
+      "prob": 0.5099
      },
      {
       "team": "LOS",
-      "prob": 0.245
+      "prob": 0.4901
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct311300lylos",
     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
     "rules_primary": "If LYON wins the Worlds 2026: LYON vs. LOS League of Legends match originally scheduled for Oct 31, 2026 at 1:00 PM EDT, then the market resolves to Yes."
-   },
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT311600MKOIKC",
-    "start_utc": "2026-11-01T00:00:00Z",
-    "participants": [
-     {
-      "name": "Movistar KOI",
-      "alignment": "home"
-     },
-     {
-      "name": "Karmine Corp",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "Movistar KOI",
-      "title": "Movistar KOI wins",
-      "ticker": "KXLOLGAME-26OCT311600MKOIKC-MKOI",
-      "yes_bid_dollars": "0.3800",
-      "yes_ask_dollars": "0.3900",
-      "last_price_dollars": "0.3900",
-      "volume_dollars": "13783.19",
-      "open_interest": "13557.22"
-     },
-     {
-      "team": "Karmine Corp",
-      "title": "Karmine Corp wins",
-      "ticker": "KXLOLGAME-26OCT311600MKOIKC-KC",
-      "yes_bid_dollars": "0.6100",
-      "yes_ask_dollars": "0.6200",
-      "last_price_dollars": "0.6200",
-      "volume_dollars": "36314.57",
-      "open_interest": "35001.21"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Movistar KOI",
-      "prob": 0.385
-     },
-     {
-      "team": "Karmine Corp",
-      "prob": 0.615
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct311600mkoikc",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Movistar KOI wins the Worlds 2026: Movistar KOI vs. Karmine Corp League of Legends match originally scheduled for Oct 31, 2026 at 4:00 PM EDT, then the market resolves to Yes."
    },
    {
     "league": "KXLOLGAME",
@@ -296,9 +197,9 @@
       "ticker": "KXLOLGAME-26OCT311900BLGHLE-BLG",
       "yes_bid_dollars": "0.4200",
       "yes_ask_dollars": "0.4300",
-      "last_price_dollars": "0.4300",
-      "volume_dollars": "37286.63",
-      "open_interest": "37286.63"
+      "last_price_dollars": "0.4200",
+      "volume_dollars": "47253.82",
+      "open_interest": "46819.28"
      },
      {
       "team": "Hanwha Life Esports",
@@ -307,8 +208,8 @@
       "yes_bid_dollars": "0.5700",
       "yes_ask_dollars": "0.5800",
       "last_price_dollars": "0.5800",
-      "volume_dollars": "48614.47",
-      "open_interest": "47061.05"
+      "volume_dollars": "139324.60",
+      "open_interest": "136281.55"
      }
     ],
     "devigged": [
@@ -327,7 +228,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 3,
+  "events_seen": 2,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
@@ -390,7 +291,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2809,
+   "body_bytes": 2810,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
