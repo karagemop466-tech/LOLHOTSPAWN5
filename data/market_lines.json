@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-10-31T20:02:33Z",
+ "collected_utc": "2026-10-31T23:27:11Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -13,63 +13,15 @@
     "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
-    "matchup_count": 7
+    "matchup_count": 5
    }
   ],
   "matchups": [
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639668664,
-    "start_utc": "2026-10-31T18:59:50Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "LOS",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "LYON",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": -135,
-      "implied_raw": 0.57447,
-      "team": "LOS"
-     },
-     {
-      "designation": "away",
-      "american": 112,
-      "implied_raw": 0.4717,
-      "team": "LYON"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "LOS",
-      "prob": 0.54912
-     },
-     {
-      "team": "LYON",
-      "prob": 0.45088
-     }
-    ],
-    "cutoff_utc": "2026-10-31T23:55:33.017000+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668664/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
     "matchup_id": 1639668667,
-    "start_utc": "2026-10-31T23:00:00Z",
+    "start_utc": "2026-10-31T22:02:55Z",
     "is_live": false,
     "participants": [
      {
@@ -87,28 +39,28 @@
     "prices": [
      {
       "designation": "home",
-      "american": -154,
-      "implied_raw": 0.6063,
+      "american": 1355,
+      "implied_raw": 0.06873,
       "team": "Hanwha Life"
      },
      {
       "designation": "away",
-      "american": 131,
-      "implied_raw": 0.4329,
+      "american": -2992,
+      "implied_raw": 0.96766,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
       "team": "Hanwha Life",
-      "prob": 0.58343
+      "prob": 0.06632
      },
      {
       "team": "Bilibili",
-      "prob": 0.41657
+      "prob": 0.93368
      }
     ],
-    "cutoff_utc": "2026-11-01T06:00:00+00:00",
+    "cutoff_utc": "2026-11-01T03:06:26.370000+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639668667/markets/related/straight"
@@ -124,57 +76,6 @@
    "KXLOLGAME (Kalshi exchange, League of Legends)"
   ],
   "matchups": [
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26OCT311300LYLOS",
-    "start_utc": "2026-10-31T21:00:00Z",
-    "participants": [
-     {
-      "name": "LYON",
-      "alignment": "home"
-     },
-     {
-      "name": "LOS",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "LYON",
-      "title": "LYON wins",
-      "ticker": "KXLOLGAME-26OCT311300LYLOS-LY",
-      "yes_bid_dollars": "0.5100",
-      "yes_ask_dollars": "0.5200",
-      "last_price_dollars": "0.5200",
-      "volume_dollars": "433148.41",
-      "open_interest": "382258.58"
-     },
-     {
-      "team": "LOS",
-      "title": "LOS wins",
-      "ticker": "KXLOLGAME-26OCT311300LYLOS-LOS",
-      "yes_bid_dollars": "0.4900",
-      "yes_ask_dollars": "0.5000",
-      "last_price_dollars": "0.5000",
-      "volume_dollars": "296057.87",
-      "open_interest": "220763.11"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "LYON",
-      "prob": 0.5099
-     },
-     {
-      "team": "LOS",
-      "prob": 0.4901
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26oct311300lylos",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If LYON wins the Worlds 2026: LYON vs. LOS League of Legends match originally scheduled for Oct 31, 2026 at 1:00 PM EDT, then the market resolves to Yes."
-   },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
@@ -195,31 +96,31 @@
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26OCT311900BLGHLE-BLG",
-      "yes_bid_dollars": "0.4200",
-      "yes_ask_dollars": "0.4300",
-      "last_price_dollars": "0.4200",
-      "volume_dollars": "47253.82",
-      "open_interest": "46819.28"
+      "yes_bid_dollars": "0.9200",
+      "yes_ask_dollars": "0.9300",
+      "last_price_dollars": "0.9300",
+      "volume_dollars": "334691.10",
+      "open_interest": "208527.66"
      },
      {
       "team": "Hanwha Life Esports",
       "title": "Hanwha Life Esports wins",
       "ticker": "KXLOLGAME-26OCT311900BLGHLE-HLE",
-      "yes_bid_dollars": "0.5700",
-      "yes_ask_dollars": "0.5800",
-      "last_price_dollars": "0.5800",
-      "volume_dollars": "139324.60",
-      "open_interest": "136281.55"
+      "yes_bid_dollars": "0.0700",
+      "yes_ask_dollars": "0.0800",
+      "last_price_dollars": "0.0800",
+      "volume_dollars": "965131.76",
+      "open_interest": "740684.60"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili Gaming",
-      "prob": 0.425
+      "prob": 0.925
      },
      {
       "team": "Hanwha Life Esports",
-      "prob": 0.575
+      "prob": 0.075
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26oct311900blghle",
@@ -228,7 +129,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 2,
+  "events_seen": 1,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
