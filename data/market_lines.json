@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-01T15:16:17Z",
+ "collected_utc": "2026-11-01T20:35:30Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -39,25 +39,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 105,
-      "implied_raw": 0.4878,
+      "american": 106,
+      "implied_raw": 0.48544,
       "team": "Top Esports"
      },
      {
       "designation": "away",
-      "american": -135,
-      "implied_raw": 0.57447,
+      "american": -136,
+      "implied_raw": 0.57627,
       "team": "Invictus"
      }
     ],
     "devigged": [
      {
       "team": "Top Esports",
-      "prob": 0.45921
+      "prob": 0.45722
      },
      {
       "team": "Invictus",
-      "prob": 0.54079
+      "prob": 0.54278
      }
     ],
     "cutoff_utc": "2026-11-06T22:00:00+00:00",
@@ -183,25 +183,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 125,
-      "implied_raw": 0.44444,
+      "american": 129,
+      "implied_raw": 0.43668,
       "team": "Dplus KIA"
      },
      {
       "designation": "away",
-      "american": -147,
-      "implied_raw": 0.59514,
+      "american": -152,
+      "implied_raw": 0.60317,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
       "team": "Dplus KIA",
-      "prob": 0.42752
+      "prob": 0.41994
      },
      {
       "team": "Bilibili",
-      "prob": 0.57248
+      "prob": 0.58006
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
@@ -243,8 +243,8 @@
       "yes_bid_dollars": "0.5300",
       "yes_ask_dollars": "0.5400",
       "last_price_dollars": "0.5400",
-      "volume_dollars": "14374.90",
-      "open_interest": "14368.90"
+      "volume_dollars": "20064.78",
+      "open_interest": "19698.53"
      },
      {
       "team": "Top Esports",
@@ -253,8 +253,8 @@
       "yes_bid_dollars": "0.4500",
       "yes_ask_dollars": "0.4600",
       "last_price_dollars": "0.4600",
-      "volume_dollars": "6241.35",
-      "open_interest": "6241.35"
+      "volume_dollars": "8628.62",
+      "open_interest": "8576.26"
      }
     ],
     "devigged": [
@@ -294,8 +294,8 @@
       "yes_bid_dollars": "0.0800",
       "yes_ask_dollars": "0.0900",
       "last_price_dollars": "0.0900",
-      "volume_dollars": "20467.16",
-      "open_interest": "20439.16"
+      "volume_dollars": "55690.09",
+      "open_interest": "55651.65"
      },
      {
       "team": "Gen.G",
@@ -304,8 +304,8 @@
       "yes_bid_dollars": "0.9100",
       "yes_ask_dollars": "0.9200",
       "last_price_dollars": "0.9200",
-      "volume_dollars": "1695.06",
-      "open_interest": "1695.06"
+      "volume_dollars": "10234.53",
+      "open_interest": "9813.73"
      }
     ],
     "devigged": [
@@ -345,8 +345,8 @@
       "yes_bid_dollars": "0.5900",
       "yes_ask_dollars": "0.6000",
       "last_price_dollars": "0.6000",
-      "volume_dollars": "5192.13",
-      "open_interest": "5052.14"
+      "volume_dollars": "6281.04",
+      "open_interest": "6117.64"
      },
      {
       "team": "Dplus KIA",
@@ -355,8 +355,8 @@
       "yes_bid_dollars": "0.4100",
       "yes_ask_dollars": "0.4200",
       "last_price_dollars": "0.4200",
-      "volume_dollars": "2251.71",
-      "open_interest": "2251.71"
+      "volume_dollars": "3655.40",
+      "open_interest": "3655.40"
      }
     ],
     "devigged": [
@@ -396,8 +396,8 @@
       "yes_bid_dollars": "0.8200",
       "yes_ask_dollars": "0.8300",
       "last_price_dollars": "0.8300",
-      "volume_dollars": "2260.30",
-      "open_interest": "2086.30"
+      "volume_dollars": "2925.72",
+      "open_interest": "2751.72"
      },
      {
       "team": "Karmine Corp",
@@ -406,8 +406,8 @@
       "yes_bid_dollars": "0.1700",
       "yes_ask_dollars": "0.1800",
       "last_price_dollars": "0.1800",
-      "volume_dollars": "668.51",
-      "open_interest": "663.27"
+      "volume_dollars": "5865.06",
+      "open_interest": "5859.82"
      }
     ],
     "devigged": [
@@ -489,7 +489,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2810,
+   "body_bytes": 2809,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
