@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-03T02:25:33Z",
+ "collected_utc": "2026-11-03T12:00:50Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -39,25 +39,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 418,
-      "implied_raw": 0.19305,
+      "american": 422,
+      "implied_raw": 0.19157,
       "team": "Karmine Corp"
      },
      {
       "designation": "away",
-      "american": -605,
-      "implied_raw": 0.85816,
+      "american": -612,
+      "implied_raw": 0.85955,
       "team": "T1"
      }
     ],
     "devigged": [
      {
       "team": "Karmine Corp",
-      "prob": 0.18365
+      "prob": 0.18225
      },
      {
       "team": "T1",
-      "prob": 0.81635
+      "prob": 0.81775
      }
     ],
     "cutoff_utc": "2026-11-06T22:00:00+00:00",
@@ -87,25 +87,25 @@
     "prices": [
      {
       "designation": null,
-      "american": 187,
-      "implied_raw": 0.34843,
+      "american": 183,
+      "implied_raw": 0.35336,
       "team": null
      },
      {
       "designation": null,
-      "american": -208,
-      "implied_raw": 0.67532,
+      "american": -200,
+      "implied_raw": 0.66667,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.34035
+      "prob": 0.34642
      },
      {
       "team": null,
-      "prob": 0.65965
+      "prob": 0.65358
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
@@ -135,25 +135,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 130,
-      "implied_raw": 0.43478,
+      "american": 132,
+      "implied_raw": 0.43103,
       "team": "Dplus KIA"
      },
      {
       "designation": "away",
-      "american": -153,
-      "implied_raw": 0.60474,
+      "american": -155,
+      "implied_raw": 0.60784,
       "team": "Bilibili"
      }
     ],
     "devigged": [
      {
       "team": "Dplus KIA",
-      "prob": 0.41825
+      "prob": 0.4149
      },
      {
       "team": "Bilibili",
-      "prob": 0.58175
+      "prob": 0.5851
      }
     ],
     "cutoff_utc": "2026-11-05T22:00:00+00:00",
@@ -183,25 +183,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 113,
-      "implied_raw": 0.46948,
+      "american": 110,
+      "implied_raw": 0.47619,
       "team": "Top Esports"
      },
      {
       "designation": "away",
-      "american": -132,
-      "implied_raw": 0.56897,
+      "american": -126,
+      "implied_raw": 0.55752,
       "team": "Invictus"
      }
     ],
     "devigged": [
      {
       "team": "Top Esports",
-      "prob": 0.4521
+      "prob": 0.46066
      },
      {
       "team": "Invictus",
-      "prob": 0.5479
+      "prob": 0.53934
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
@@ -231,25 +231,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": -2000,
-      "implied_raw": 0.95238,
+      "american": -1955,
+      "implied_raw": 0.95134,
       "team": "Gen.G"
      },
      {
       "designation": "away",
-      "american": 962,
-      "implied_raw": 0.09416,
+      "american": 819,
+      "implied_raw": 0.10881,
       "team": "LYON"
      }
     ],
     "devigged": [
      {
       "team": "Gen.G",
-      "prob": 0.91003
+      "prob": 0.89736
      },
      {
       "team": "LYON",
-      "prob": 0.08997
+      "prob": 0.10264
      }
     ],
     "cutoff_utc": "2026-11-04T22:00:00+00:00",
@@ -279,25 +279,25 @@
     "prices": [
      {
       "designation": null,
-      "american": -105,
-      "implied_raw": 0.5122,
+      "american": 100,
+      "implied_raw": 0.5,
       "team": null
      },
      {
       "designation": null,
-      "american": -105,
-      "implied_raw": 0.5122,
+      "american": -111,
+      "implied_raw": 0.52607,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.5
+      "prob": 0.4873
      },
      {
       "team": null,
-      "prob": 0.5
+      "prob": 0.5127
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
@@ -339,8 +339,8 @@
       "yes_bid_dollars": "0.5300",
       "yes_ask_dollars": "0.5400",
       "last_price_dollars": "0.5400",
-      "volume_dollars": "92110.23",
-      "open_interest": "88535.68"
+      "volume_dollars": "117506.44",
+      "open_interest": "110055.45"
      },
      {
       "team": "Top Esports",
@@ -349,8 +349,8 @@
       "yes_bid_dollars": "0.4600",
       "yes_ask_dollars": "0.4700",
       "last_price_dollars": "0.4700",
-      "volume_dollars": "37742.79",
-      "open_interest": "35175.21"
+      "volume_dollars": "50221.37",
+      "open_interest": "46975.32"
      }
     ],
     "devigged": [
@@ -387,11 +387,11 @@
       "team": "LYON",
       "title": "LYON wins",
       "ticker": "KXLOLGAME-26NOV041700LYGEN-LY",
-      "yes_bid_dollars": "0.0800",
-      "yes_ask_dollars": "0.0900",
-      "last_price_dollars": "0.0900",
-      "volume_dollars": "139969.69",
-      "open_interest": "137702.56"
+      "yes_bid_dollars": "0.0900",
+      "yes_ask_dollars": "0.1000",
+      "last_price_dollars": "0.1000",
+      "volume_dollars": "165339.81",
+      "open_interest": "157559.48"
      },
      {
       "team": "Gen.G",
@@ -400,18 +400,18 @@
       "yes_bid_dollars": "0.9100",
       "yes_ask_dollars": "0.9200",
       "last_price_dollars": "0.9200",
-      "volume_dollars": "13795.70",
-      "open_interest": "13141.58"
+      "volume_dollars": "15527.78",
+      "open_interest": "14821.04"
      }
     ],
     "devigged": [
      {
       "team": "LYON",
-      "prob": 0.085
+      "prob": 0.09406
      },
      {
       "team": "Gen.G",
-      "prob": 0.915
+      "prob": 0.90594
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov041700lygen",
@@ -438,11 +438,11 @@
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26NOV051700BLGDK-BLG",
-      "yes_bid_dollars": "0.5900",
-      "yes_ask_dollars": "0.6000",
-      "last_price_dollars": "0.6000",
-      "volume_dollars": "17905.14",
-      "open_interest": "17680.08"
+      "yes_bid_dollars": "0.5700",
+      "yes_ask_dollars": "0.5800",
+      "last_price_dollars": "0.5800",
+      "volume_dollars": "23514.02",
+      "open_interest": "20197.59"
      },
      {
       "team": "Dplus KIA",
@@ -451,18 +451,18 @@
       "yes_bid_dollars": "0.4100",
       "yes_ask_dollars": "0.4200",
       "last_price_dollars": "0.4200",
-      "volume_dollars": "15719.48",
-      "open_interest": "15343.86"
+      "volume_dollars": "24763.52",
+      "open_interest": "23203.88"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili Gaming",
-      "prob": 0.58911
+      "prob": 0.58081
      },
      {
       "team": "Dplus KIA",
-      "prob": 0.41089
+      "prob": 0.41919
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov051700blgdk",
@@ -492,8 +492,8 @@
       "yes_bid_dollars": "0.8200",
       "yes_ask_dollars": "0.8300",
       "last_price_dollars": "0.8300",
-      "volume_dollars": "24579.31",
-      "open_interest": "24363.65"
+      "volume_dollars": "25495.72",
+      "open_interest": "25280.06"
      },
      {
       "team": "Karmine Corp",
@@ -502,8 +502,8 @@
       "yes_bid_dollars": "0.1700",
       "yes_ask_dollars": "0.1800",
       "last_price_dollars": "0.1800",
-      "volume_dollars": "11142.96",
-      "open_interest": "11111.46"
+      "volume_dollars": "11830.77",
+      "open_interest": "11799.27"
      }
     ],
     "devigged": [
@@ -543,7 +543,7 @@
    "name": "BC.GAME esports",
    "url": "https://bc.game/sports/esports",
    "status": 200,
-   "body_bytes": 10984,
+   "body_bytes": 10987,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": true
