@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-03T12:00:50Z",
+ "collected_utc": "2026-11-03T19:34:46Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -87,127 +87,31 @@
     "prices": [
      {
       "designation": null,
-      "american": 183,
-      "implied_raw": 0.35336,
+      "american": 174,
+      "implied_raw": 0.36496,
       "team": null
      },
      {
       "designation": null,
-      "american": -200,
-      "implied_raw": 0.66667,
+      "american": -205,
+      "implied_raw": 0.67213,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.34642
+      "prob": 0.35191
      },
      {
       "team": null,
-      "prob": 0.65358
+      "prob": 0.64809
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846410/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639751041,
-    "start_utc": "2026-11-05T22:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Dplus KIA",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 132,
-      "implied_raw": 0.43103,
-      "team": "Dplus KIA"
-     },
-     {
-      "designation": "away",
-      "american": -155,
-      "implied_raw": 0.60784,
-      "team": "Bilibili"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Dplus KIA",
-      "prob": 0.4149
-     },
-     {
-      "team": "Bilibili",
-      "prob": 0.5851
-     }
-    ],
-    "cutoff_utc": "2026-11-05T22:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751041/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639751044,
-    "start_utc": "2026-11-03T22:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Top Esports",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Invictus",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 110,
-      "implied_raw": 0.47619,
-      "team": "Top Esports"
-     },
-     {
-      "designation": "away",
-      "american": -126,
-      "implied_raw": 0.55752,
-      "team": "Invictus"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Top Esports",
-      "prob": 0.46066
-     },
-     {
-      "team": "Invictus",
-      "prob": 0.53934
-     }
-    ],
-    "cutoff_utc": "2026-11-03T22:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751044/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
@@ -231,31 +135,79 @@
     "prices": [
      {
       "designation": "home",
-      "american": -1955,
-      "implied_raw": 0.95134,
+      "american": -2329,
+      "implied_raw": 0.95883,
       "team": "Gen.G"
      },
      {
       "designation": "away",
-      "american": 819,
-      "implied_raw": 0.10881,
+      "american": 903,
+      "implied_raw": 0.0997,
       "team": "LYON"
      }
     ],
     "devigged": [
      {
       "team": "Gen.G",
-      "prob": 0.89736
+      "prob": 0.90581
      },
      {
       "team": "LYON",
-      "prob": 0.10264
+      "prob": 0.09419
      }
     ],
     "cutoff_utc": "2026-11-04T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751042/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639751041,
+    "start_utc": "2026-11-05T22:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Dplus KIA",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 135,
+      "implied_raw": 0.42553,
+      "team": "Dplus KIA"
+     },
+     {
+      "designation": "away",
+      "american": -159,
+      "implied_raw": 0.6139,
+      "team": "Bilibili"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Dplus KIA",
+      "prob": 0.40939
+     },
+     {
+      "team": "Bilibili",
+      "prob": 0.59061
+     }
+    ],
+    "cutoff_utc": "2026-11-05T22:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751041/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
@@ -279,31 +231,79 @@
     "prices": [
      {
       "designation": null,
-      "american": 100,
-      "implied_raw": 0.5,
+      "american": 103,
+      "implied_raw": 0.49261,
       "team": null
      },
      {
       "designation": null,
-      "american": -111,
-      "implied_raw": 0.52607,
+      "american": -120,
+      "implied_raw": 0.54545,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.4873
+      "prob": 0.47455
      },
      {
       "team": null,
-      "prob": 0.5127
+      "prob": 0.52545
      }
     ],
     "cutoff_utc": "2026-11-03T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639751044,
+    "start_utc": "2026-11-03T22:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Top Esports",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Invictus",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 117,
+      "implied_raw": 0.46083,
+      "team": "Top Esports"
+     },
+     {
+      "designation": "away",
+      "american": -134,
+      "implied_raw": 0.57265,
+      "team": "Invictus"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Top Esports",
+      "prob": 0.4459
+     },
+     {
+      "team": "Invictus",
+      "prob": 0.5541
+     }
+    ],
+    "cutoff_utc": "2026-11-04T06:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751044/markets/related/straight"
    }
   ],
   "errors": [],
@@ -339,8 +339,8 @@
       "yes_bid_dollars": "0.5300",
       "yes_ask_dollars": "0.5400",
       "last_price_dollars": "0.5400",
-      "volume_dollars": "117506.44",
-      "open_interest": "110055.45"
+      "volume_dollars": "178747.84",
+      "open_interest": "166008.74"
      },
      {
       "team": "Top Esports",
@@ -349,8 +349,8 @@
       "yes_bid_dollars": "0.4600",
       "yes_ask_dollars": "0.4700",
       "last_price_dollars": "0.4700",
-      "volume_dollars": "50221.37",
-      "open_interest": "46975.32"
+      "volume_dollars": "73834.86",
+      "open_interest": "70547.79"
      }
     ],
     "devigged": [
@@ -390,8 +390,8 @@
       "yes_bid_dollars": "0.0900",
       "yes_ask_dollars": "0.1000",
       "last_price_dollars": "0.1000",
-      "volume_dollars": "165339.81",
-      "open_interest": "157559.48"
+      "volume_dollars": "181205.21",
+      "open_interest": "173192.82"
      },
      {
       "team": "Gen.G",
@@ -400,8 +400,8 @@
       "yes_bid_dollars": "0.9100",
       "yes_ask_dollars": "0.9200",
       "last_price_dollars": "0.9200",
-      "volume_dollars": "15527.78",
-      "open_interest": "14821.04"
+      "volume_dollars": "16729.93",
+      "open_interest": "15958.35"
      }
     ],
     "devigged": [
@@ -440,9 +440,9 @@
       "ticker": "KXLOLGAME-26NOV051700BLGDK-BLG",
       "yes_bid_dollars": "0.5700",
       "yes_ask_dollars": "0.5800",
-      "last_price_dollars": "0.5800",
-      "volume_dollars": "23514.02",
-      "open_interest": "20197.59"
+      "last_price_dollars": "0.5700",
+      "volume_dollars": "24768.46",
+      "open_interest": "21452.03"
      },
      {
       "team": "Dplus KIA",
@@ -451,8 +451,8 @@
       "yes_bid_dollars": "0.4100",
       "yes_ask_dollars": "0.4200",
       "last_price_dollars": "0.4200",
-      "volume_dollars": "24763.52",
-      "open_interest": "23203.88"
+      "volume_dollars": "29215.01",
+      "open_interest": "27655.37"
      }
     ],
     "devigged": [
@@ -492,8 +492,8 @@
       "yes_bid_dollars": "0.8200",
       "yes_ask_dollars": "0.8300",
       "last_price_dollars": "0.8300",
-      "volume_dollars": "25495.72",
-      "open_interest": "25280.06"
+      "volume_dollars": "28319.80",
+      "open_interest": "28086.48"
      },
      {
       "team": "Karmine Corp",
@@ -502,8 +502,8 @@
       "yes_bid_dollars": "0.1700",
       "yes_ask_dollars": "0.1800",
       "last_price_dollars": "0.1800",
-      "volume_dollars": "11830.77",
-      "open_interest": "11799.27"
+      "volume_dollars": "12414.68",
+      "open_interest": "12383.18"
      }
     ],
     "devigged": [
@@ -585,7 +585,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2811,
+   "body_bytes": 2812,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
