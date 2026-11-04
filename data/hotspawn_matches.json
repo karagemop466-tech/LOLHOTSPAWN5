@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-03T19:34:45Z",
- "html_sha256": "f09896640283255cb66f26859332857ea06ae88cd4f64918d386b0066c18b998",
- "html_bytes": 877501,
- "match_count": 172,
- "lol_match_count": 172,
+ "collected_utc": "2026-11-04T00:40:02Z",
+ "html_sha256": "3829bbae6e5a7488ac5a69a03d029730b379d33c2dab7d7ffcce1298b1f87702",
+ "html_bytes": 866622,
+ "match_count": 169,
+ "lol_match_count": 169,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 77,
- "matches_without_hotspawn_page": 95,
+ "matches_with_hotspawn_page": 76,
+ "matches_without_hotspawn_page": 93,
  "matches": [
   {
    "id": "1053095",
@@ -2681,66 +2681,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1079043",
-   "competition_id": "36492",
-   "competition": "PRM 2nd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-03T17:00:00Z",
-   "start_epoch_ms": "1793725200000",
-   "lock_utc": "2026-11-03T16:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "c",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 34,
-   "home": {
-    "id": "264940",
-    "name": "BvP",
-    "hotspawn_pick_share": 82,
-    "score": 0
-   },
-   "away": {
-    "id": "29694",
-    "name": "No Need Orga",
-    "hotspawn_pick_share": 18,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1082746",
-   "competition_id": "36492",
-   "competition": "PRM 2nd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-03T17:00:00Z",
-   "start_epoch_ms": "1793725200000",
-   "lock_utc": "2026-11-03T16:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "c",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 29,
-   "home": {
-    "id": "8834",
-    "name": "Phong V\u0169 Buffalo",
-    "hotspawn_pick_share": 14,
-    "score": 0
-   },
-   "away": {
-    "id": "19123",
-    "name": "404 Multigaming e.V.",
-    "hotspawn_pick_share": 86,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1083038",
    "competition_id": "36332",
    "competition": "RIVALS LEAGUE Season 2",
@@ -2861,36 +2801,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1129387",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-03T22:00:00Z",
-   "start_epoch_ms": "1793743200000",
-   "lock_utc": "2026-11-03T21:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 22,
-   "home": {
-    "id": "12139",
-    "name": "Top Esports",
-    "hotspawn_pick_share": 5,
-    "score": 0
-   },
-   "away": {
-    "id": "5531",
-    "name": "Invictus Gaming",
-    "hotspawn_pick_share": 95,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/top-esports-vs-invictus-gaming-worlds-2026-main-event-1129387"
-  },
-  {
    "id": "1075762",
    "competition_id": "36438",
    "competition": "PRM 3rd Division 26-27 Fall",
@@ -2935,17 +2845,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 17,
+   "total_picks": 18,
    "home": {
     "id": "6194",
     "name": "Gen.G",
-    "hotspawn_pick_share": 88,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
    "away": {
     "id": "203378",
     "name": "LYON",
-    "hotspawn_pick_share": 12,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/gen-g-vs-lyon-worlds-2026-main-event-1094919"
@@ -3248,7 +3158,7 @@
     "hotspawn_pick_share": 13,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/t1-vs-karmine-corp-worlds-2026-main-event-1075825"
+   "hotspawn_url": "https://www.hotspawn.com/matches/karmine-corp-vs-t1-worlds-2026-main-event-1075825"
   },
   {
    "id": "1128532",
