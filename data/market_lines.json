@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-05T12:29:25Z",
+ "collected_utc": "2026-11-05T22:06:27Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -39,25 +39,25 @@
     "prices": [
      {
       "designation": null,
-      "american": -191,
-      "implied_raw": 0.65636,
+      "american": -150,
+      "implied_raw": 0.6,
       "team": null
      },
      {
       "designation": null,
-      "american": 169,
-      "implied_raw": 0.37175,
+      "american": 123,
+      "implied_raw": 0.44843,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.63841
+      "prob": 0.57228
      },
      {
       "team": null,
-      "prob": 0.36159
+      "prob": 0.42772
      }
     ],
     "cutoff_utc": "2026-11-05T22:00:00+00:00",
@@ -164,54 +164,6 @@
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
-    "matchup_id": 1639751041,
-    "start_utc": "2026-11-05T22:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Dplus KIA",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 128,
-      "implied_raw": 0.4386,
-      "team": "Dplus KIA"
-     },
-     {
-      "designation": "away",
-      "american": -151,
-      "implied_raw": 0.60159,
-      "team": "Bilibili"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Dplus KIA",
-      "prob": 0.42165
-     },
-     {
-      "team": "Bilibili",
-      "prob": 0.57835
-     }
-    ],
-    "cutoff_utc": "2026-11-05T22:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751041/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
     "matchup_id": 1639756361,
     "start_utc": "2026-11-06T22:00:00Z",
     "is_live": false,
@@ -256,6 +208,54 @@
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639756361/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639751041,
+    "start_utc": "2026-11-05T22:30:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Dplus KIA",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 128,
+      "implied_raw": 0.4386,
+      "team": "Dplus KIA"
+     },
+     {
+      "designation": "away",
+      "american": -150,
+      "implied_raw": 0.6,
+      "team": "Bilibili"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Dplus KIA",
+      "prob": 0.4223
+     },
+     {
+      "team": "Bilibili",
+      "prob": 0.5777
+     }
+    ],
+    "cutoff_utc": "2026-11-06T22:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639751041/markets/related/straight"
    }
   ],
   "errors": [],
@@ -288,11 +288,11 @@
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26NOV051700BLGDK-BLG",
-      "yes_bid_dollars": "0.5900",
-      "yes_ask_dollars": "0.6000",
-      "last_price_dollars": "0.6000",
-      "volume_dollars": "133146.17",
-      "open_interest": "128203.51"
+      "yes_bid_dollars": "0.5800",
+      "yes_ask_dollars": "0.5900",
+      "last_price_dollars": "0.5900",
+      "volume_dollars": "354894.35",
+      "open_interest": "334682.43"
      },
      {
       "team": "Dplus KIA",
@@ -301,18 +301,18 @@
       "yes_bid_dollars": "0.4100",
       "yes_ask_dollars": "0.4200",
       "last_price_dollars": "0.4200",
-      "volume_dollars": "113696.60",
-      "open_interest": "110912.44"
+      "volume_dollars": "431365.95",
+      "open_interest": "427217.75"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili Gaming",
-      "prob": 0.58911
+      "prob": 0.585
      },
      {
       "team": "Dplus KIA",
-      "prob": 0.41089
+      "prob": 0.415
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov051700blgdk",
@@ -342,8 +342,8 @@
       "yes_bid_dollars": "0.8200",
       "yes_ask_dollars": "0.8300",
       "last_price_dollars": "0.8300",
-      "volume_dollars": "86899.74",
-      "open_interest": "85926.72"
+      "volume_dollars": "98030.73",
+      "open_interest": "96515.63"
      },
      {
       "team": "Karmine Corp",
@@ -352,8 +352,8 @@
       "yes_bid_dollars": "0.1700",
       "yes_ask_dollars": "0.1800",
       "last_price_dollars": "0.1800",
-      "volume_dollars": "23330.65",
-      "open_interest": "23242.69"
+      "volume_dollars": "24613.57",
+      "open_interest": "23880.61"
      }
     ],
     "devigged": [
@@ -390,11 +390,11 @@
       "team": "Gen.G",
       "title": "Gen.G wins",
       "ticker": "KXLOLGAME-26NOV071700GENIG-GEN",
-      "yes_bid_dollars": "0.7900",
-      "yes_ask_dollars": "0.8000",
-      "last_price_dollars": "0.8000",
-      "volume_dollars": "2441.97",
-      "open_interest": "2394.92"
+      "yes_bid_dollars": "0.8000",
+      "yes_ask_dollars": "0.8100",
+      "last_price_dollars": "0.8100",
+      "volume_dollars": "3763.78",
+      "open_interest": "3704.41"
      },
      {
       "team": "Invictus Gaming",
@@ -403,18 +403,18 @@
       "yes_bid_dollars": "0.1900",
       "yes_ask_dollars": "0.2000",
       "last_price_dollars": "0.2000",
-      "volume_dollars": "14479.47",
-      "open_interest": "14471.57"
+      "volume_dollars": "29936.65",
+      "open_interest": "29790.07"
      }
     ],
     "devigged": [
      {
       "team": "Gen.G",
-      "prob": 0.80303
+      "prob": 0.805
      },
      {
       "team": "Invictus Gaming",
-      "prob": 0.19697
+      "prob": 0.195
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov071700genig",
