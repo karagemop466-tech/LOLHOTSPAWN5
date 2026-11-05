@@ -1,13 +1,13 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-04T19:55:05Z",
- "html_sha256": "24dc5f90d09ec94827019b87bb2d4b03774b4d074a4b4e723cf2455e451123c4",
- "html_bytes": 1061191,
- "match_count": 192,
- "lol_match_count": 192,
+ "collected_utc": "2026-11-05T00:55:49Z",
+ "html_sha256": "e9fac79149cf80745367da51038d4246c11dff1ae84492cc718c9397026dffea",
+ "html_bytes": 1052100,
+ "match_count": 191,
+ "lol_match_count": 191,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 85,
+ "matches_with_hotspawn_page": 84,
  "matches_without_hotspawn_page": 107,
  "matches": [
   {
@@ -2771,36 +2771,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1094919",
-   "competition_id": "36142",
-   "competition": "Worlds 2026 Main Event",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-04T22:00:00Z",
-   "start_epoch_ms": "1793829600000",
-   "lock_utc": "2026-11-04T21:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "s",
-   "stage": null,
-   "best_of": null,
-   "offered_points": 30,
-   "total_picks": 25,
-   "home": {
-    "id": "6194",
-    "name": "Gen.G",
-    "hotspawn_pick_share": 92,
-    "score": 0
-   },
-   "away": {
-    "id": "203378",
-    "name": "LYON",
-    "hotspawn_pick_share": 8,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/gen-g-vs-lyon-worlds-2026-main-event-1094919"
-  },
-  {
    "id": "1083141",
    "competition_id": "36630",
    "competition": "Predator League Vietnam 2027",
@@ -2815,7 +2785,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 9,
+   "total_picks": 12,
    "home": {
     "id": "266611",
     "name": "No Turning Back",
@@ -2845,7 +2815,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 9,
+   "total_picks": 12,
    "home": {
     "id": "266610",
     "name": "F6 Academy",
@@ -2875,17 +2845,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 8,
+   "total_picks": 11,
    "home": {
     "id": "249227",
     "name": "9Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 18,
     "score": 0
    },
    "away": {
     "id": "266490",
     "name": "1TAP Dino Red",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 82,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2216"
@@ -2905,17 +2875,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 8,
+   "total_picks": 11,
    "home": {
     "id": "266638",
     "name": "S\u1ed1ng B\u1eb1ng T\u00ecnh Y\u00eau",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 18,
     "score": 0
    },
    "away": {
     "id": "266491",
     "name": "CTB Esports",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 82,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2217"
@@ -2935,17 +2905,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 39,
+   "total_picks": 41,
    "home": {
     "id": "206008",
     "name": "Packmiko E-Sports DACH",
-    "hotspawn_pick_share": 18,
+    "hotspawn_pick_share": 22,
     "score": 0
    },
    "away": {
     "id": "249722",
     "name": "Atruvia M\u00fcnster Esports",
-    "hotspawn_pick_share": 82,
+    "hotspawn_pick_share": 78,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/packmiko-e-sports-dach-vs-atruvia-munster-esports-prm-3rd-division-26-27-fall-1075756"
@@ -2965,17 +2935,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 36,
+   "total_picks": 37,
    "home": {
     "id": "246843",
     "name": "Kanji Esports KIN",
-    "hotspawn_pick_share": 14,
+    "hotspawn_pick_share": 16,
     "score": 0
    },
    "away": {
     "id": "246851",
     "name": "Babos Gaming Academy",
-    "hotspawn_pick_share": 86,
+    "hotspawn_pick_share": 84,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/kanji-esports-kin-vs-babos-gaming-academy-prm-3rd-division-26-27-fall-1075770"
@@ -2995,17 +2965,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 27,
+   "total_picks": 29,
    "home": {
     "id": "232208",
     "name": "Brod n Friends",
-    "hotspawn_pick_share": 96,
+    "hotspawn_pick_share": 97,
     "score": 0
    },
    "away": {
     "id": "265461",
     "name": "PNS",
-    "hotspawn_pick_share": 4,
+    "hotspawn_pick_share": 3,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/brod-n-friends-vs-pns-4-nations-2026-halloween-heist-1081703"
@@ -3025,17 +2995,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 22,
+   "total_picks": 24,
    "home": {
     "id": "74448",
     "name": "Dplus KIA",
-    "hotspawn_pick_share": 14,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "away": {
     "id": "5746",
     "name": "Bilibili Gaming",
-    "hotspawn_pick_share": 86,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/dplus-kia-vs-bilibili-gaming-worlds-2026-main-event-1094917"
@@ -3535,7 +3505,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "247777",
     "name": "2 Massive",
@@ -3565,7 +3535,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "232892",
     "name": "B2U",
@@ -3595,7 +3565,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "150322",
     "name": "FlameHard",
@@ -3625,7 +3595,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "264343",
     "name": "Lund Esports Organization OGs",
@@ -3745,7 +3715,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "88573",
     "name": "West Point Esports Philippines",
@@ -3775,7 +3745,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "266050",
     "name": "For Fun Player",
@@ -4375,17 +4345,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266624",
     "name": "IKUZO",
-    "hotspawn_pick_share": 80,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 20,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "hotspawn_url": null
@@ -4405,7 +4375,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
@@ -4435,7 +4405,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
@@ -4585,7 +4555,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
@@ -4615,7 +4585,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266623",
     "name": "Arcanix Esports",
@@ -4645,7 +4615,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266624",
     "name": "IKUZO",
@@ -4765,17 +4735,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
-    "hotspawn_pick_share": 80,
+    "hotspawn_pick_share": 67,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 20,
+    "hotspawn_pick_share": 33,
     "score": 0
    },
    "hotspawn_url": null
@@ -4795,7 +4765,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266624",
     "name": "IKUZO",
@@ -4825,7 +4795,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
@@ -4855,7 +4825,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266627",
     "name": "OH MY DUCK",
@@ -4885,17 +4855,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266624",
     "name": "IKUZO",
-    "hotspawn_pick_share": 80,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "away": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 20,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "hotspawn_url": null
@@ -4945,17 +4915,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 80,
+    "hotspawn_pick_share": 67,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 20,
+    "hotspawn_pick_share": 33,
     "score": 0
    },
    "hotspawn_url": null
@@ -5005,7 +4975,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
@@ -5185,7 +5155,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "266624",
     "name": "IKUZO",
@@ -5215,7 +5185,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 5,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
