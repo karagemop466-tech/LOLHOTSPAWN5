@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-07T06:10:05Z",
+ "collected_utc": "2026-11-07T14:57:04Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -11,12 +11,6 @@
   "leagues": [
    {
     "sport_id": 12,
-    "id": 240706,
-    "name": "League of Legends - LCK AS Academy League",
-    "matchup_count": 2
-   },
-   {
-    "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
     "matchup_count": 6
@@ -24,52 +18,100 @@
   ],
   "matchups": [
    {
-    "league": "League of Legends - LCK AS Academy League",
-    "league_id": 240706,
-    "matchup_id": 1640085483,
-    "start_utc": "2026-11-07T09:00:00Z",
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639846470,
+    "start_utc": "2026-11-04T22:00:00Z",
     "is_live": false,
     "participants": [
      {
-      "id": null,
-      "name": "HANJIN BRION Academy",
-      "alignment": "home"
+      "id": 1639846471,
+      "name": "Yes",
+      "alignment": "neutral"
      },
      {
-      "id": null,
-      "name": "Hanwha Life Academy",
-      "alignment": "away"
+      "id": 1639846472,
+      "name": "No",
+      "alignment": "neutral"
      }
     ],
     "market_status": 200,
     "prices": [
      {
-      "designation": "home",
-      "american": 145,
-      "implied_raw": 0.40816,
-      "team": "HANJIN BRION Academy"
+      "designation": null,
+      "american": -146,
+      "implied_raw": 0.5935,
+      "team": null
      },
      {
-      "designation": "away",
-      "american": -191,
-      "implied_raw": 0.65636,
-      "team": "Hanwha Life Academy"
+      "designation": null,
+      "american": 129,
+      "implied_raw": 0.43668,
+      "team": null
      }
     ],
     "devigged": [
      {
-      "team": "HANJIN BRION Academy",
-      "prob": 0.38342
+      "team": null,
+      "prob": 0.57611
      },
      {
-      "team": "Hanwha Life Academy",
-      "prob": 0.61658
+      "team": null,
+      "prob": 0.42389
      }
     ],
-    "cutoff_utc": "2026-11-07T09:00:00+00:00",
+    "cutoff_utc": "2026-11-07T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640085483/markets/related/straight"
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639846410,
+    "start_utc": "2026-11-07T22:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": 1639846411,
+      "name": "Yes",
+      "alignment": "neutral"
+     },
+     {
+      "id": 1639846412,
+      "name": "No",
+      "alignment": "neutral"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": null,
+      "american": 162,
+      "implied_raw": 0.38168,
+      "team": null
+     },
+     {
+      "designation": null,
+      "american": -190,
+      "implied_raw": 0.65517,
+      "team": null
+     }
+    ],
+    "devigged": [
+     {
+      "team": null,
+      "prob": 0.36811
+     },
+     {
+      "team": null,
+      "prob": 0.63189
+     }
+    ],
+    "cutoff_utc": "2026-11-03T22:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846410/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
@@ -93,79 +135,31 @@
     "prices": [
      {
       "designation": "home",
-      "american": -482,
-      "implied_raw": 0.82818,
+      "american": -448,
+      "implied_raw": 0.81752,
       "team": "Gen.G"
      },
      {
       "designation": "away",
-      "american": 351,
-      "implied_raw": 0.22173,
+      "american": 331,
+      "implied_raw": 0.23202,
       "team": "Invictus"
      }
     ],
     "devigged": [
      {
       "team": "Gen.G",
-      "prob": 0.78881
+      "prob": 0.77893
      },
      {
       "team": "Invictus",
-      "prob": 0.21119
+      "prob": 0.22107
      }
     ],
     "cutoff_utc": "2026-11-07T22:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639986860/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1639846410,
-    "start_utc": "2026-10-31T17:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": 1639846411,
-      "name": "Yes",
-      "alignment": "neutral"
-     },
-     {
-      "id": 1639846412,
-      "name": "No",
-      "alignment": "neutral"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": null,
-      "american": 174,
-      "implied_raw": 0.36496,
-      "team": null
-     },
-     {
-      "designation": null,
-      "american": -205,
-      "implied_raw": 0.67213,
-      "team": null
-     }
-    ],
-    "devigged": [
-     {
-      "team": null,
-      "prob": 0.35191
-     },
-     {
-      "team": null,
-      "prob": 0.64809
-     }
-    ],
-    "cutoff_utc": "2026-11-03T22:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846410/markets/related/straight"
    },
    {
     "league": "League of Legends - World Championship",
@@ -189,25 +183,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": -144,
-      "implied_raw": 0.59016,
+      "american": -131,
+      "implied_raw": 0.5671,
       "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": 123,
-      "implied_raw": 0.44843,
+      "american": 112,
+      "implied_raw": 0.4717,
       "team": "T1"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili",
-      "prob": 0.56823
+      "prob": 0.54592
      },
      {
       "team": "T1",
-      "prob": 0.43177
+      "prob": 0.45408
      }
     ],
     "cutoff_utc": "2026-11-08T22:00:00+00:00",
@@ -249,8 +243,8 @@
       "yes_bid_dollars": "0.8000",
       "yes_ask_dollars": "0.8100",
       "last_price_dollars": "0.8100",
-      "volume_dollars": "69855.95",
-      "open_interest": "66717.72"
+      "volume_dollars": "101394.67",
+      "open_interest": "98225.99"
      },
      {
       "team": "Invictus Gaming",
@@ -259,8 +253,8 @@
       "yes_bid_dollars": "0.1900",
       "yes_ask_dollars": "0.2000",
       "last_price_dollars": "0.2000",
-      "volume_dollars": "238137.30",
-      "open_interest": "237479.62"
+      "volume_dollars": "314850.22",
+      "open_interest": "313477.06"
      }
     ],
     "devigged": [
@@ -300,28 +294,28 @@
       "yes_bid_dollars": "0.4300",
       "yes_ask_dollars": "0.4400",
       "last_price_dollars": "0.4400",
-      "volume_dollars": "26850.51",
-      "open_interest": "26238.83"
+      "volume_dollars": "116166.91",
+      "open_interest": "115337.68"
      },
      {
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26NOV081700T1BLG-BLG",
-      "yes_bid_dollars": "0.5500",
-      "yes_ask_dollars": "0.5600",
+      "yes_bid_dollars": "0.5600",
+      "yes_ask_dollars": "0.5700",
       "last_price_dollars": "0.5600",
-      "volume_dollars": "9568.74",
-      "open_interest": "9560.74"
+      "volume_dollars": "22224.94",
+      "open_interest": "22195.91"
      }
     ],
     "devigged": [
      {
       "team": "T1",
-      "prob": 0.43939
+      "prob": 0.435
      },
      {
       "team": "Bilibili Gaming",
-      "prob": 0.56061
+      "prob": 0.565
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov081700t1blg",
@@ -348,8 +342,8 @@
       "team": "Nothin'Here",
       "title": "Nothin'Here wins",
       "ticker": "KXLOLGAME-26NOV100000NHFNL-NH",
-      "yes_bid_dollars": "0.0700",
-      "yes_ask_dollars": "0.6300",
+      "yes_bid_dollars": "0.0600",
+      "yes_ask_dollars": "0.0700",
       "last_price_dollars": "0.0000",
       "volume_dollars": "0.00",
       "open_interest": "0.00"
@@ -358,8 +352,8 @@
       "team": "FENNEL",
       "title": "FENNEL wins",
       "ticker": "KXLOLGAME-26NOV100000NHFNL-FNL",
-      "yes_bid_dollars": "0.2800",
-      "yes_ask_dollars": "0.9400",
+      "yes_bid_dollars": "0.9000",
+      "yes_ask_dollars": "0.9500",
       "last_price_dollars": "0.0000",
       "volume_dollars": "0.00",
       "open_interest": "0.00"
@@ -368,11 +362,11 @@
     "devigged": [
      {
       "team": "Nothin'Here",
-      "prob": 0.36458
+      "prob": 0.06566
      },
      {
       "team": "FENNEL",
-      "prob": 0.63542
+      "prob": 0.93434
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov100000nhfnl",
@@ -400,7 +394,7 @@
       "title": "Gromp Esports wins",
       "ticker": "KXLOLGAME-26NOV100400GROSGW-GRO",
       "yes_bid_dollars": "0.0700",
-      "yes_ask_dollars": "0.5500",
+      "yes_ask_dollars": "0.4600",
       "last_price_dollars": "0.0000",
       "volume_dollars": "0.00",
       "open_interest": "0.00"
@@ -409,8 +403,8 @@
       "team": "Saigon Warriors",
       "title": "Saigon Warriors wins",
       "ticker": "KXLOLGAME-26NOV100400GROSGW-SGW",
-      "yes_bid_dollars": "0.4600",
-      "yes_ask_dollars": "0.9500",
+      "yes_bid_dollars": "0.5700",
+      "yes_ask_dollars": "0.9400",
       "last_price_dollars": "0.9500",
       "volume_dollars": "24.00",
       "open_interest": "24.00"
@@ -419,11 +413,11 @@
     "devigged": [
      {
       "team": "Gromp Esports",
-      "prob": 0.30542
+      "prob": 0.2598
      },
      {
       "team": "Saigon Warriors",
-      "prob": 0.69458
+      "prob": 0.7402
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov100400grosgw",
@@ -495,7 +489,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2812,
+   "body_bytes": 2810,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
