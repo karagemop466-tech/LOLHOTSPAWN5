@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-08T15:20:51Z",
+ "collected_utc": "2026-11-08T20:33:40Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -135,25 +135,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": -145,
-      "implied_raw": 0.59184,
+      "american": -153,
+      "implied_raw": 0.60474,
       "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": 123,
-      "implied_raw": 0.44843,
+      "american": 130,
+      "implied_raw": 0.43478,
       "team": "T1"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili",
-      "prob": 0.56893
+      "prob": 0.58175
      },
      {
       "team": "T1",
-      "prob": 0.43107
+      "prob": 0.41825
      }
     ],
     "cutoff_utc": "2026-11-08T22:00:00+00:00",
@@ -195,8 +195,8 @@
       "yes_bid_dollars": "0.4300",
       "yes_ask_dollars": "0.4400",
       "last_price_dollars": "0.4400",
-      "volume_dollars": "432241.22",
-      "open_interest": "415567.31"
+      "volume_dollars": "607695.63",
+      "open_interest": "586509.86"
      },
      {
       "team": "Bilibili Gaming",
@@ -205,8 +205,8 @@
       "yes_bid_dollars": "0.5600",
       "yes_ask_dollars": "0.5700",
       "last_price_dollars": "0.5700",
-      "volume_dollars": "196149.28",
-      "open_interest": "185330.95"
+      "volume_dollars": "253200.26",
+      "open_interest": "241576.60"
      }
     ],
     "devigged": [
@@ -245,9 +245,9 @@
       "ticker": "KXLOLGAME-26NOV100000NHFNL-NH",
       "yes_bid_dollars": "0.0600",
       "yes_ask_dollars": "0.0700",
-      "last_price_dollars": "0.0600",
-      "volume_dollars": "642.65",
-      "open_interest": "634.65"
+      "last_price_dollars": "0.0700",
+      "volume_dollars": "986.01",
+      "open_interest": "975.05"
      },
      {
       "team": "FENNEL",
@@ -307,8 +307,8 @@
       "yes_bid_dollars": "0.9400",
       "yes_ask_dollars": "0.9500",
       "last_price_dollars": "0.9500",
-      "volume_dollars": "27.04",
-      "open_interest": "27.04"
+      "volume_dollars": "37.35",
+      "open_interest": "37.35"
      }
     ],
     "devigged": [
@@ -345,17 +345,17 @@
       "team": "Frank Esports",
       "title": "Frank Esports wins",
       "ticker": "KXLOLGAME-26NOV110400FNKGZ-FNK",
-      "yes_bid_dollars": "0.1200",
-      "yes_ask_dollars": "0.4100",
-      "last_price_dollars": "0.6400",
-      "volume_dollars": "1.00",
-      "open_interest": "1.00"
+      "yes_bid_dollars": "0.1000",
+      "yes_ask_dollars": "0.2700",
+      "last_price_dollars": "0.2700",
+      "volume_dollars": "6.00",
+      "open_interest": "4.00"
      },
      {
       "team": "Ground Zero Gaming",
       "title": "Ground Zero Gaming wins",
       "ticker": "KXLOLGAME-26NOV110400FNKGZ-GZ",
-      "yes_bid_dollars": "0.5700",
+      "yes_bid_dollars": "0.6900",
       "yes_ask_dollars": "0.8800",
       "last_price_dollars": "0.0000",
       "volume_dollars": "0.00",
@@ -365,11 +365,11 @@
     "devigged": [
      {
       "team": "Frank Esports",
-      "prob": 0.26768
+      "prob": 0.19072
      },
      {
       "team": "Ground Zero Gaming",
-      "prob": 0.73232
+      "prob": 0.80928
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov110400fnkgz",
@@ -441,7 +441,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2809,
+   "body_bytes": 2811,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false

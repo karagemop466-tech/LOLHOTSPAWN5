@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-08T15:20:50Z",
- "html_sha256": "57e874b04c74cedb56dc24e9b0c3f0401f6ebe5d518a85acadc90b24fdb357cb",
- "html_bytes": 982559,
- "match_count": 191,
- "lol_match_count": 191,
+ "collected_utc": "2026-11-08T20:33:39Z",
+ "html_sha256": "fa47fe16c8de1a7ab951d5e713d42efba2d9e549f1d41f7ebff03ad8a362968d",
+ "html_bytes": 851959,
+ "match_count": 189,
+ "lol_match_count": 189,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 58,
- "matches_without_hotspawn_page": 133,
+ "matches_with_hotspawn_page": 44,
+ "matches_without_hotspawn_page": 145,
  "matches": [
   {
    "id": "1053095",
@@ -2681,66 +2681,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1126368",
-   "competition_id": "36652",
-   "competition": "Predator League Philippines 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-08T09:00:00Z",
-   "start_epoch_ms": "1794128400000",
-   "lock_utc": "2026-11-08T08:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 17,
-   "home": {
-    "id": "88573",
-    "name": "West Point Esports Philippines",
-    "hotspawn_pick_share": 94,
-    "score": 0
-   },
-   "away": {
-    "id": "266054",
-    "name": "Sliang Kavite Telecom",
-    "hotspawn_pick_share": 6,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1128535",
-   "competition_id": "36656",
-   "competition": "LCK AS 2026 2nd Championship Playoffs",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-08T09:00:00Z",
-   "start_epoch_ms": "1794128400000",
-   "lock_utc": "2026-11-08T08:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": "b",
-   "stage": "playoffs",
-   "best_of": null,
-   "offered_points": 15,
-   "total_picks": 0,
-   "home": {
-    "id": "192208",
-    "name": "T1 Esports Academy Rookies",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "75736",
-    "name": "Dplus KIA Youth",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1131164",
    "competition_id": "36732",
    "competition": "LPL Youth Academy 2026",
@@ -2766,66 +2706,6 @@
     "id": "266880",
     "name": "LYA-B",
     "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1131332",
-   "competition_id": "36630",
-   "competition": "Predator League Vietnam 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-08T10:00:00Z",
-   "start_epoch_ms": "1794132000000",
-   "lock_utc": "2026-11-08T09:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 0,
-   "home": {
-    "id": "249227",
-    "name": "9Gaming",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "away": {
-    "id": "266638",
-    "name": "S\u1ed1ng B\u1eb1ng T\u00ecnh Y\u00eau",
-    "hotspawn_pick_share": 0,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1126369",
-   "competition_id": "36652",
-   "competition": "Predator League Philippines 2027",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-08T11:00:00Z",
-   "start_epoch_ms": "1794135600000",
-   "lock_utc": "2026-11-08T10:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 17,
-   "home": {
-    "id": "266050",
-    "name": "For Fun Player",
-    "hotspawn_pick_share": 6,
-    "score": 0
-   },
-   "away": {
-    "id": "250285",
-    "name": "Generation of Miracles",
-    "hotspawn_pick_share": 94,
     "score": 0
    },
    "hotspawn_url": null
@@ -2948,7 +2828,7 @@
     "hotspawn_pick_share": 25,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/mt1-vision-vs-black-lion-prm-3rd-division-26-27-fall-1075782"
+   "hotspawn_url": null
   },
   {
    "id": "1075783",
@@ -2978,7 +2858,7 @@
     "hotspawn_pick_share": 83,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/neko-elite-kittens-vs-berlin-5-prm-3rd-division-26-27-fall-1075783"
+   "hotspawn_url": null
   },
   {
    "id": "1075786",
@@ -2999,16 +2879,16 @@
    "home": {
     "id": "37072",
     "name": "Rich Gang",
-    "hotspawn_pick_share": 89,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "away": {
     "id": "249590",
     "name": "Team 300 White",
-    "hotspawn_pick_share": 11,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-team-300-white-prm-3rd-division-26-27-fall-1075786"
+   "hotspawn_url": null
   },
   {
    "id": "1075787",
@@ -3038,7 +2918,7 @@
     "hotspawn_pick_share": 100,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/sissi-state-punks-vs-second-time-alive-revival-prm-3rd-division-26-27-fall-1075787"
+   "hotspawn_url": null
   },
   {
    "id": "1075790",
@@ -3068,7 +2948,7 @@
     "hotspawn_pick_share": 20,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/vfb-x-engines-stuttgart-vs-kanji-esports-kin-prm-3rd-division-26-27-fall-1075790"
+   "hotspawn_url": null
   },
   {
    "id": "1075791",
@@ -3098,7 +2978,7 @@
     "hotspawn_pick_share": 89,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/whalepower-humpbacks-vs-teamorangegaming-academy-prm-3rd-division-26-27-fall-1075791"
+   "hotspawn_url": null
   },
   {
    "id": "1079051",
@@ -3119,16 +2999,16 @@
    "home": {
     "id": "86632",
     "name": "AceGaming",
-    "hotspawn_pick_share": 87,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
    "away": {
     "id": "264940",
     "name": "BvP",
-    "hotspawn_pick_share": 13,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-bvp-prm-2nd-division-26-27-fall-1079051"
+   "hotspawn_url": null
   },
   {
    "id": "1079852",
@@ -3149,16 +3029,16 @@
    "home": {
     "id": "265041",
     "name": "reGOLD eSport",
-    "hotspawn_pick_share": 11,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "away": {
     "id": "190299",
     "name": "Babos Gaming",
-    "hotspawn_pick_share": 89,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/regold-esport-vs-babos-gaming-prm-2nd-division-26-27-fall-1079852"
+   "hotspawn_url": null
   },
   {
    "id": "1081096",
@@ -3175,20 +3055,20 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 12,
    "home": {
     "id": "258710",
     "name": "Docta Esports Club",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "away": {
     "id": "263171",
     "name": "BaronX",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/docta-esports-club-vs-baronx-ligagg-celol-b-2026-split-2-playoffs-1081096"
+   "hotspawn_url": null
   },
   {
    "id": "1130163",
@@ -3205,17 +3085,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 17,
+   "total_picks": 19,
    "home": {
     "id": "253508",
     "name": "TITANS",
-    "hotspawn_pick_share": 88,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
    "away": {
     "id": "266630",
     "name": "GONGJI",
-    "hotspawn_pick_share": 12,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
    "hotspawn_url": null
@@ -3235,7 +3115,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 8,
+   "total_picks": 10,
    "home": {
     "id": "252804",
     "name": "Void Walkers",
@@ -3278,7 +3158,7 @@
     "hotspawn_pick_share": 74,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/socken-und-sandalen-vs-eintracht-spandau-zwei-prm-3rd-division-26-27-fall-1075788"
+   "hotspawn_url": null
   },
   {
    "id": "1079053",
@@ -3295,20 +3175,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 34,
+   "total_picks": 35,
    "home": {
     "id": "8834",
     "name": "Phong V\u0169 Buffalo",
-    "hotspawn_pick_share": 15,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
    "away": {
     "id": "203880",
     "name": "MT1 Esports",
-    "hotspawn_pick_share": 85,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/phong-vu-buffalo-vs-mt1-esports-prm-2nd-division-26-27-fall-1079053"
+   "hotspawn_url": null
   },
   {
    "id": "1079054",
@@ -3325,20 +3205,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 34,
+   "total_picks": 35,
    "home": {
     "id": "264942",
     "name": "The Bandits Prime",
-    "hotspawn_pick_share": 12,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
    "away": {
     "id": "184897",
     "name": "VfB eSports",
-    "hotspawn_pick_share": 88,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/the-bandits-prime-vs-vfb-esports-prm-2nd-division-26-27-fall-1079054"
+   "hotspawn_url": null
   },
   {
    "id": "1082750",
@@ -3355,20 +3235,20 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 16,
+   "total_picks": 19,
    "home": {
     "id": "232892",
     "name": "B2U",
-    "hotspawn_pick_share": 13,
+    "hotspawn_pick_share": 11,
     "score": 0
    },
    "away": {
     "id": "263907",
     "name": "Turbo Gaming",
-    "hotspawn_pick_share": 88,
+    "hotspawn_pick_share": 89,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/b2u-vs-turbo-gaming-rivals-league-season-2-playoffs-1082750"
+   "hotspawn_url": null
   },
   {
    "id": "1082752",
@@ -3385,7 +3265,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 16,
+   "total_picks": 19,
    "home": {
     "id": "264343",
     "name": "Lund Esports Organization OGs",
@@ -3398,7 +3278,7 @@
     "hotspawn_pick_share": 0,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/lund-esports-organization-ogs-vs-lundqvist-darkside-rivals-league-season-2-playoffs-1082752"
+   "hotspawn_url": null
   },
   {
    "id": "1075773",
@@ -3415,7 +3295,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 37,
+   "total_picks": 38,
    "home": {
     "id": "246853",
     "name": "Second Time Alive Revival",
@@ -3428,7 +3308,7 @@
     "hotspawn_pick_share": 11,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/second-time-alive-revival-vs-acegaming-hearts-prm-3rd-division-26-27-fall-1075773"
+   "hotspawn_url": null
   },
   {
    "id": "1075774",
@@ -3445,7 +3325,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 38,
+   "total_picks": 39,
    "home": {
     "id": "203890",
     "name": "spongecord prime",
@@ -3458,7 +3338,7 @@
     "hotspawn_pick_share": 13,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/spongecord-prime-vs-duplex-silva-pigeons-edition-prm-3rd-division-26-27-fall-1075774"
+   "hotspawn_url": null
   },
   {
    "id": "1084987",
@@ -3475,17 +3355,17 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 7,
+   "total_picks": 13,
    "home": {
     "id": "184110",
     "name": "Smoke Tram",
-    "hotspawn_pick_share": 71,
+    "hotspawn_pick_share": 85,
     "score": 0
    },
    "away": {
     "id": "257415",
     "name": "EmBRAZA! Esports",
-    "hotspawn_pick_share": 29,
+    "hotspawn_pick_share": 15,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/smoke-tram-vs-embraza-esports-ligagg-celol-a-2026-split-2-playoffs-1084987"
@@ -3505,17 +3385,17 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 22,
+   "total_picks": 23,
    "home": {
     "id": "263152",
     "name": "Cl\u00e3 NKZ V\u00d3RAX",
-    "hotspawn_pick_share": 18,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "away": {
     "id": "205798",
     "name": "Marere E-Sports",
-    "hotspawn_pick_share": 82,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/cla-nkz-vorax-vs-marere-e-sports-ligagg-celol-a-2026-split-2-playoffs-1084988"
@@ -3535,17 +3415,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 30,
-   "total_picks": 10,
+   "total_picks": 13,
    "home": {
     "id": "5746",
     "name": "Bilibili Gaming",
-    "hotspawn_pick_share": 30,
+    "hotspawn_pick_share": 31,
     "score": 0
    },
    "away": {
     "id": "10168",
     "name": "T1",
-    "hotspawn_pick_share": 70,
+    "hotspawn_pick_share": 69,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/bilibili-gaming-vs-t1-worlds-2026-main-event-1130194"
@@ -3565,7 +3445,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 8,
    "home": {
     "id": "36396",
     "name": "Ultra Prime",
@@ -3595,7 +3475,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 8,
    "home": {
     "id": "266879",
     "name": "LYA-A",
@@ -3625,17 +3505,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266624",
     "name": "IKUZO",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "hotspawn_url": null
@@ -3655,17 +3535,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "away": {
     "id": "266627",
     "name": "OH MY DUCK",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "hotspawn_url": null
@@ -3685,7 +3565,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 8,
    "home": {
     "id": "10177",
     "name": "Oh My God",
@@ -3715,17 +3595,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "away": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "hotspawn_url": null
@@ -3775,17 +3655,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 13,
    "home": {
     "id": "248837",
     "name": "Inari Esports",
-    "hotspawn_pick_share": 17,
+    "hotspawn_pick_share": 15,
     "score": 0
    },
    "away": {
     "id": "265462",
     "name": "Ruddy Ultras",
-    "hotspawn_pick_share": 83,
+    "hotspawn_pick_share": 85,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/inari-esports-vs-ruddy-ultras-4-nations-2026-halloween-heist-1081705"
@@ -3835,17 +3715,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "57843",
     "name": "Weibo Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 50,
     "score": 0
    },
    "away": {
     "id": "36396",
     "name": "Ultra Prime",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 50,
     "score": 0
    },
    "hotspawn_url": null
@@ -3895,17 +3775,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "12138",
     "name": "LNG Esports",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 75,
     "score": 0
    },
    "away": {
     "id": "266880",
     "name": "LYA-B",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 25,
     "score": 0
    },
    "hotspawn_url": null
@@ -3925,17 +3805,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "away": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "hotspawn_url": null
@@ -3955,17 +3835,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "away": {
     "id": "266627",
     "name": "OH MY DUCK",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "hotspawn_url": null
@@ -3985,7 +3865,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "266879",
     "name": "LYA-A",
@@ -3995,7 +3875,7 @@
    "away": {
     "id": "10177",
     "name": "Oh My God",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -4015,7 +3895,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "266624",
     "name": "IKUZO",
@@ -4045,17 +3925,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 28,
+   "total_picks": 31,
    "home": {
     "id": "249590",
     "name": "Team 300 White",
-    "hotspawn_pick_share": 89,
+    "hotspawn_pick_share": 87,
     "score": 0
    },
    "away": {
     "id": "264562",
     "name": "Socken und Sandalen",
-    "hotspawn_pick_share": 11,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/team-300-white-vs-socken-und-sandalen-prm-3rd-division-26-27-fall-1075775"
@@ -4105,7 +3985,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 12,
    "home": {
     "id": "247777",
     "name": "2 Massive",
@@ -4165,17 +4045,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "57843",
     "name": "Weibo Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 75,
     "score": 0
    },
    "away": {
     "id": "266880",
     "name": "LYA-B",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 25,
     "score": 0
    },
    "hotspawn_url": null
@@ -4225,7 +4105,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "36396",
     "name": "Ultra Prime",
@@ -4235,7 +4115,7 @@
    "away": {
     "id": "10177",
     "name": "Oh My God",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -4255,17 +4135,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
-    "hotspawn_pick_share": 60,
+    "hotspawn_pick_share": 64,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 40,
+    "hotspawn_pick_share": 36,
     "score": 0
    },
    "hotspawn_url": null
@@ -4285,17 +4165,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "266624",
     "name": "IKUZO",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "away": {
     "id": "266627",
     "name": "OH MY DUCK",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "hotspawn_url": null
@@ -4315,11 +4195,11 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "12138",
     "name": "LNG Esports",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -4345,7 +4225,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
@@ -4405,7 +4285,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 31,
+   "total_picks": 33,
    "home": {
     "id": "264565",
     "name": "REH Gaming",
@@ -4435,17 +4315,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 3,
    "home": {
     "id": "57843",
     "name": "Weibo Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 67,
     "score": 0
    },
    "away": {
     "id": "10177",
     "name": "Oh My God",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 33,
     "score": 0
    },
    "hotspawn_url": null
@@ -4465,7 +4345,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "36396",
     "name": "Ultra Prime",
@@ -4475,7 +4355,7 @@
    "away": {
     "id": "12138",
     "name": "LNG Esports",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -4495,17 +4375,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "266627",
     "name": "OH MY DUCK",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "away": {
     "id": "266625",
     "name": "Iron Phoenix Squad",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "hotspawn_url": null
@@ -4525,17 +4405,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 4,
    "home": {
     "id": "266879",
     "name": "LYA-A",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 50,
     "score": 0
    },
    "away": {
     "id": "266880",
     "name": "LYA-B",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 50,
     "score": 0
    },
    "hotspawn_url": null
@@ -4555,17 +4435,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "266624",
     "name": "IKUZO",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "away": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "hotspawn_url": null
@@ -4645,7 +4525,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 4,
+   "total_picks": 6,
    "home": {
     "id": "265504",
     "name": "Crownless",
@@ -4675,17 +4555,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "266626",
     "name": "Jakarta Swamargo",
-    "hotspawn_pick_share": 70,
+    "hotspawn_pick_share": 73,
     "score": 0
    },
    "away": {
     "id": "266623",
     "name": "Arcanix Esports",
-    "hotspawn_pick_share": 30,
+    "hotspawn_pick_share": 27,
     "score": 0
    },
    "hotspawn_url": null
@@ -4735,7 +4615,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 9,
+   "total_picks": 11,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
@@ -4765,17 +4645,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 6,
    "home": {
     "id": "87298",
     "name": "Almo Players",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "away": {
     "id": "261393",
     "name": "Alpha Impact",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "hotspawn_url": null
@@ -4795,7 +4675,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 5,
    "home": {
     "id": "266748",
     "name": "New Generation Gaming",
@@ -4975,7 +4855,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 8,
+   "total_picks": 9,
    "home": {
     "id": "266624",
     "name": "IKUZO",
@@ -5005,7 +4885,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 8,
+   "total_picks": 9,
    "home": {
     "id": "223994",
     "name": "Yang Dae Pal Korean BBQ Restaurant",
@@ -5019,6 +4899,36 @@
     "score": 0
    },
    "hotspawn_url": null
+  },
+  {
+   "id": "1083154",
+   "competition_id": "36630",
+   "competition": "Predator League Vietnam 2027",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-15T09:00:00Z",
+   "start_epoch_ms": "1794733200000",
+   "lock_utc": "2026-11-15T08:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": null,
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 1,
+   "home": {
+    "id": "249229",
+    "name": "Saigon Warriors",
+    "hotspawn_pick_share": 100,
+    "score": 0
+   },
+   "away": {
+    "id": "266638",
+    "name": "S\u1ed1ng B\u1eb1ng T\u00ecnh Y\u00eau",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2227"
   },
   {
    "id": "1075792",
@@ -5455,7 +5365,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "18362",
     "name": "Gamespace Mediterranean College Esports",
@@ -5485,7 +5395,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "266747",
     "name": "Noxium",
@@ -5515,7 +5425,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 3,
+   "total_picks": 4,
    "home": {
     "id": "136252",
     "name": "Zena Esports",
@@ -5695,7 +5605,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 2,
    "home": {
     "id": "266888",
     "name": "\u9670\u967d\u56db\u5c0f\u6642",
@@ -5705,7 +5615,7 @@
    "away": {
     "id": "261750",
     "name": "Sponge Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
@@ -5725,7 +5635,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 2,
    "home": {
     "id": "266887",
     "name": "KR\u8fce\u795e\u968a",
@@ -5735,10 +5645,40 @@
    "away": {
     "id": "266770",
     "name": "\u6c92\u6709\u610f\u7fa9",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "hotspawn_url": null
+  },
+  {
+   "id": "1126370",
+   "competition_id": "36652",
+   "competition": "Predator League Philippines 2027",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-21T14:59:00Z",
+   "start_epoch_ms": "1795273140000",
+   "lock_utc": "2026-11-21T14:54:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": null,
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 1,
+   "home": {
+    "id": "88573",
+    "name": "West Point Esports Philippines",
+    "hotspawn_pick_share": 100,
+    "score": 0
+   },
+   "away": {
+    "id": "250285",
+    "name": "Generation of Miracles",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2232"
   }
  ]
 }
