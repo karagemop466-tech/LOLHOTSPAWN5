@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-11T16:17:37Z",
+ "collected_utc": "2026-11-12T01:55:48Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -11,66 +11,18 @@
   "leagues": [
    {
     "sport_id": 12,
-    "id": 277077,
-    "name": "League of Legends - LCP Promotion",
-    "matchup_count": 1
-   },
-   {
-    "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
     "matchup_count": 2
+   },
+   {
+    "sport_id": 12,
+    "id": 277077,
+    "name": "League of Legends - LCP Promotion",
+    "matchup_count": 1
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - LCP Promotion",
-    "league_id": 277077,
-    "matchup_id": 1640294380,
-    "start_utc": "2026-11-12T09:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Nothin'Here",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Saigon Warriors",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 503,
-      "implied_raw": 0.16584,
-      "team": "Nothin'Here"
-     },
-     {
-      "designation": "away",
-      "american": -1124,
-      "implied_raw": 0.9183,
-      "team": "Saigon Warriors"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Nothin'Here",
-      "prob": 0.15297
-     },
-     {
-      "team": "Saigon Warriors",
-      "prob": 0.84703
-     }
-    ],
-    "cutoff_utc": "2026-11-12T09:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640294380/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -93,25 +45,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 155,
-      "implied_raw": 0.39216,
+      "american": 166,
+      "implied_raw": 0.37594,
       "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": -185,
-      "implied_raw": 0.64912,
+      "american": -200,
+      "implied_raw": 0.66667,
       "team": "Gen.G"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili",
-      "prob": 0.37661
+      "prob": 0.36058
      },
      {
       "team": "Gen.G",
-      "prob": 0.62339
+      "prob": 0.63942
      }
     ],
     "cutoff_utc": "2026-11-14T19:00:00+00:00",
@@ -166,6 +118,54 @@
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - LCP Promotion",
+    "league_id": 277077,
+    "matchup_id": 1640294380,
+    "start_utc": "2026-11-12T09:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Nothin'Here",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Saigon Warriors",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 777,
+      "implied_raw": 0.11403,
+      "team": "Nothin'Here"
+     },
+     {
+      "designation": "away",
+      "american": -2694,
+      "implied_raw": 0.96421,
+      "team": "Saigon Warriors"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Nothin'Here",
+      "prob": 0.10575
+     },
+     {
+      "team": "Saigon Warriors",
+      "prob": 0.89425
+     }
+    ],
+    "cutoff_utc": "2026-11-12T09:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640294380/markets/related/straight"
    }
   ],
   "errors": [],
@@ -178,57 +178,6 @@
    "KXLOLGAME (Kalshi exchange, League of Legends)"
   ],
   "matchups": [
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26NOV110400FNKGZ",
-    "start_utc": "2026-11-11T13:00:00Z",
-    "participants": [
-     {
-      "name": "Frank Esports",
-      "alignment": "home"
-     },
-     {
-      "name": "Ground Zero Gaming",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "Frank Esports",
-      "title": "Frank Esports wins",
-      "ticker": "KXLOLGAME-26NOV110400FNKGZ-FNK",
-      "yes_bid_dollars": "0.2500",
-      "yes_ask_dollars": "0.2900",
-      "last_price_dollars": "0.3100",
-      "volume_dollars": "229921.28",
-      "open_interest": "108173.06"
-     },
-     {
-      "team": "Ground Zero Gaming",
-      "title": "Ground Zero Gaming wins",
-      "ticker": "KXLOLGAME-26NOV110400FNKGZ-GZ",
-      "yes_bid_dollars": "0.7000",
-      "yes_ask_dollars": "0.7600",
-      "last_price_dollars": "0.7800",
-      "volume_dollars": "223798.15",
-      "open_interest": "99146.51"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Frank Esports",
-      "prob": 0.27
-     },
-     {
-      "team": "Ground Zero Gaming",
-      "prob": 0.73
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26nov110400fnkgz",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Frank Esports wins the LCP Promotion 2027: Frank Esports vs. Ground Zero Gaming League of Legends match originally scheduled for Nov 11, 2026 at 4:00 AM EST, then the market resolves to Yes."
-   },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
@@ -249,31 +198,31 @@
       "team": "Saigon Warriors",
       "title": "Saigon Warriors wins",
       "ticker": "KXLOLGAME-26NOV120400SGWNH-SGW",
-      "yes_bid_dollars": "0.8500",
-      "yes_ask_dollars": "0.8600",
-      "last_price_dollars": "0.8600",
-      "volume_dollars": "1321.95",
-      "open_interest": "994.95"
+      "yes_bid_dollars": "0.8600",
+      "yes_ask_dollars": "0.8700",
+      "last_price_dollars": "0.8700",
+      "volume_dollars": "6954.74",
+      "open_interest": "6078.74"
      },
      {
       "team": "Nothin'Here",
       "title": "Nothin'Here wins",
       "ticker": "KXLOLGAME-26NOV120400SGWNH-NH",
-      "yes_bid_dollars": "0.1500",
-      "yes_ask_dollars": "0.1600",
-      "last_price_dollars": "0.1500",
-      "volume_dollars": "21454.46",
-      "open_interest": "17849.30"
+      "yes_bid_dollars": "0.1300",
+      "yes_ask_dollars": "0.1400",
+      "last_price_dollars": "0.1400",
+      "volume_dollars": "35589.68",
+      "open_interest": "27191.60"
      }
     ],
     "devigged": [
      {
       "team": "Saigon Warriors",
-      "prob": 0.84653
+      "prob": 0.865
      },
      {
       "team": "Nothin'Here",
-      "prob": 0.15347
+      "prob": 0.135
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov120400sgwnh",
@@ -303,8 +252,8 @@
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
       "last_price_dollars": "0.6300",
-      "volume_dollars": "94787.74",
-      "open_interest": "90956.42"
+      "volume_dollars": "105111.14",
+      "open_interest": "101026.87"
      },
      {
       "team": "Bilibili Gaming",
@@ -313,8 +262,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "191824.73",
-      "open_interest": "179866.23"
+      "volume_dollars": "215173.71",
+      "open_interest": "201927.04"
      }
     ],
     "devigged": [
@@ -333,7 +282,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 3,
+  "events_seen": 2,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
@@ -396,7 +345,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2809,
+   "body_bytes": 2810,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
