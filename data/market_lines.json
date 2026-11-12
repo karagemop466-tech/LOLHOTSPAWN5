@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-12T12:52:47Z",
+ "collected_utc": "2026-11-12T22:16:43Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -17,6 +17,54 @@
    }
   ],
   "matchups": [
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1640273349,
+    "start_utc": "2026-11-14T19:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Gen.G",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 165,
+      "implied_raw": 0.37736,
+      "team": "Bilibili"
+     },
+     {
+      "designation": "away",
+      "american": -198,
+      "implied_raw": 0.66443,
+      "team": "Gen.G"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Bilibili",
+      "prob": 0.36222
+     },
+     {
+      "team": "Gen.G",
+      "prob": 0.63778
+     }
+    ],
+    "cutoff_utc": "2026-11-14T19:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
+   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -64,54 +112,6 @@
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
-   },
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1640273349,
-    "start_utc": "2026-11-14T19:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Gen.G",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 158,
-      "implied_raw": 0.3876,
-      "team": "Bilibili"
-     },
-     {
-      "designation": "away",
-      "american": -189,
-      "implied_raw": 0.65398,
-      "team": "Gen.G"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Bilibili",
-      "prob": 0.37213
-     },
-     {
-      "team": "Gen.G",
-      "prob": 0.62787
-     }
-    ],
-    "cutoff_utc": "2026-11-14T19:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
    }
   ],
   "errors": [],
@@ -144,31 +144,31 @@
       "team": "Saigon Warriors",
       "title": "Saigon Warriors wins",
       "ticker": "KXLOLGAME-26NOV130400SGWDFM-SGW",
-      "yes_bid_dollars": "0.4700",
-      "yes_ask_dollars": "0.5800",
-      "last_price_dollars": "0.6600",
-      "volume_dollars": "5.00",
-      "open_interest": "5.00"
+      "yes_bid_dollars": "0.5300",
+      "yes_ask_dollars": "0.5400",
+      "last_price_dollars": "0.5300",
+      "volume_dollars": "1284.46",
+      "open_interest": "1065.94"
      },
      {
       "team": "DetonatioN FocusMe",
       "title": "DetonatioN FocusMe wins",
       "ticker": "KXLOLGAME-26NOV130400SGWDFM-DFM",
-      "yes_bid_dollars": "0.4500",
-      "yes_ask_dollars": "0.5000",
-      "last_price_dollars": "0.6000",
-      "volume_dollars": "1.62",
-      "open_interest": "1.62"
+      "yes_bid_dollars": "0.4700",
+      "yes_ask_dollars": "0.4800",
+      "last_price_dollars": "0.4600",
+      "volume_dollars": "613.63",
+      "open_interest": "613.63"
      }
     ],
     "devigged": [
      {
       "team": "Saigon Warriors",
-      "prob": 0.525
+      "prob": 0.5297
      },
      {
       "team": "DetonatioN FocusMe",
-      "prob": 0.475
+      "prob": 0.4703
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov130400sgwdfm",
@@ -198,8 +198,8 @@
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
       "last_price_dollars": "0.6300",
-      "volume_dollars": "162562.13",
-      "open_interest": "152683.07"
+      "volume_dollars": "179540.90",
+      "open_interest": "168863.96"
      },
      {
       "team": "Bilibili Gaming",
@@ -208,8 +208,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "249112.46",
-      "open_interest": "233445.45"
+      "volume_dollars": "275003.97",
+      "open_interest": "256729.18"
      }
     ],
     "devigged": [
