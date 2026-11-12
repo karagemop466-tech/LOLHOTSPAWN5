@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-12T01:55:48Z",
+ "collected_utc": "2026-11-12T12:52:47Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -14,63 +14,9 @@
     "id": 9587,
     "name": "League of Legends - World Championship",
     "matchup_count": 2
-   },
-   {
-    "sport_id": 12,
-    "id": 277077,
-    "name": "League of Legends - LCP Promotion",
-    "matchup_count": 1
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1640273349,
-    "start_utc": "2026-11-14T19:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Gen.G",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 166,
-      "implied_raw": 0.37594,
-      "team": "Bilibili"
-     },
-     {
-      "designation": "away",
-      "american": -200,
-      "implied_raw": 0.66667,
-      "team": "Gen.G"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Bilibili",
-      "prob": 0.36058
-     },
-     {
-      "team": "Gen.G",
-      "prob": 0.63942
-     }
-    ],
-    "cutoff_utc": "2026-11-14T19:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -93,25 +39,25 @@
     "prices": [
      {
       "designation": null,
-      "american": -200,
-      "implied_raw": 0.66667,
+      "american": -198,
+      "implied_raw": 0.66443,
       "team": null
      },
      {
       "designation": null,
-      "american": 164,
-      "implied_raw": 0.37879,
+      "american": 162,
+      "implied_raw": 0.38168,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.63768
+      "prob": 0.63514
      },
      {
       "team": null,
-      "prob": 0.36232
+      "prob": 0.36486
      }
     ],
     "cutoff_utc": "2026-11-14T19:00:00+00:00",
@@ -120,20 +66,20 @@
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
    },
    {
-    "league": "League of Legends - LCP Promotion",
-    "league_id": 277077,
-    "matchup_id": 1640294380,
-    "start_utc": "2026-11-12T09:00:00Z",
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1640273349,
+    "start_utc": "2026-11-14T19:00:00Z",
     "is_live": false,
     "participants": [
      {
       "id": null,
-      "name": "Nothin'Here",
+      "name": "Bilibili",
       "alignment": "home"
      },
      {
       "id": null,
-      "name": "Saigon Warriors",
+      "name": "Gen.G",
       "alignment": "away"
      }
     ],
@@ -141,31 +87,31 @@
     "prices": [
      {
       "designation": "home",
-      "american": 777,
-      "implied_raw": 0.11403,
-      "team": "Nothin'Here"
+      "american": 158,
+      "implied_raw": 0.3876,
+      "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": -2694,
-      "implied_raw": 0.96421,
-      "team": "Saigon Warriors"
+      "american": -189,
+      "implied_raw": 0.65398,
+      "team": "Gen.G"
      }
     ],
     "devigged": [
      {
-      "team": "Nothin'Here",
-      "prob": 0.10575
+      "team": "Bilibili",
+      "prob": 0.37213
      },
      {
-      "team": "Saigon Warriors",
-      "prob": 0.89425
+      "team": "Gen.G",
+      "prob": 0.62787
      }
     ],
-    "cutoff_utc": "2026-11-12T09:00:00+00:00",
+    "cutoff_utc": "2026-11-14T19:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640294380/markets/related/straight"
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
    }
   ],
   "errors": [],
@@ -181,15 +127,15 @@
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26NOV120400SGWNH",
-    "start_utc": "2026-11-12T13:00:00Z",
+    "matchup_id": "KXLOLGAME-26NOV130400SGWDFM",
+    "start_utc": "2026-11-13T13:00:00Z",
     "participants": [
      {
       "name": "Saigon Warriors",
       "alignment": "home"
      },
      {
-      "name": "Nothin'Here",
+      "name": "DetonatioN FocusMe",
       "alignment": "away"
      }
     ],
@@ -197,37 +143,37 @@
      {
       "team": "Saigon Warriors",
       "title": "Saigon Warriors wins",
-      "ticker": "KXLOLGAME-26NOV120400SGWNH-SGW",
-      "yes_bid_dollars": "0.8600",
-      "yes_ask_dollars": "0.8700",
-      "last_price_dollars": "0.8700",
-      "volume_dollars": "6954.74",
-      "open_interest": "6078.74"
+      "ticker": "KXLOLGAME-26NOV130400SGWDFM-SGW",
+      "yes_bid_dollars": "0.4700",
+      "yes_ask_dollars": "0.5800",
+      "last_price_dollars": "0.6600",
+      "volume_dollars": "5.00",
+      "open_interest": "5.00"
      },
      {
-      "team": "Nothin'Here",
-      "title": "Nothin'Here wins",
-      "ticker": "KXLOLGAME-26NOV120400SGWNH-NH",
-      "yes_bid_dollars": "0.1300",
-      "yes_ask_dollars": "0.1400",
-      "last_price_dollars": "0.1400",
-      "volume_dollars": "35589.68",
-      "open_interest": "27191.60"
+      "team": "DetonatioN FocusMe",
+      "title": "DetonatioN FocusMe wins",
+      "ticker": "KXLOLGAME-26NOV130400SGWDFM-DFM",
+      "yes_bid_dollars": "0.4500",
+      "yes_ask_dollars": "0.5000",
+      "last_price_dollars": "0.6000",
+      "volume_dollars": "1.62",
+      "open_interest": "1.62"
      }
     ],
     "devigged": [
      {
       "team": "Saigon Warriors",
-      "prob": 0.865
+      "prob": 0.525
      },
      {
-      "team": "Nothin'Here",
-      "prob": 0.135
+      "team": "DetonatioN FocusMe",
+      "prob": 0.475
      }
     ],
-    "url": "https://kalshi.com/markets/kxlolgame-26nov120400sgwnh",
+    "url": "https://kalshi.com/markets/kxlolgame-26nov130400sgwdfm",
     "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Saigon Warriors wins the LCP Promotion 2027: Saigon Warriors vs. Nothin'Here League of Legends match originally scheduled for Nov 12, 2026 at 4:00 AM EST, then the market resolves to Yes."
+    "rules_primary": "If Saigon Warriors wins the LCP Promotion 2027: Saigon Warriors vs. DetonatioN FocusMe League of Legends match originally scheduled for Nov 13, 2026 at 4:00 AM EST, then the market resolves to Yes."
    },
    {
     "league": "KXLOLGAME",
@@ -252,8 +198,8 @@
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
       "last_price_dollars": "0.6300",
-      "volume_dollars": "105111.14",
-      "open_interest": "101026.87"
+      "volume_dollars": "162562.13",
+      "open_interest": "152683.07"
      },
      {
       "team": "Bilibili Gaming",
@@ -262,8 +208,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "215173.71",
-      "open_interest": "201927.04"
+      "volume_dollars": "249112.46",
+      "open_interest": "233445.45"
      }
     ],
     "devigged": [
@@ -303,7 +249,7 @@
    "name": "BC.GAME esports",
    "url": "https://bc.game/sports/esports",
    "status": 200,
-   "body_bytes": 10954,
+   "body_bytes": 10848,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": true
@@ -345,7 +291,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2810,
+   "body_bytes": 2809,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
