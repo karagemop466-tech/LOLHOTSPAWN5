@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-12T22:16:43Z",
+ "collected_utc": "2026-11-13T06:54:52Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -39,25 +39,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 165,
-      "implied_raw": 0.37736,
+      "american": 164,
+      "implied_raw": 0.37879,
       "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": -198,
-      "implied_raw": 0.66443,
+      "american": -196,
+      "implied_raw": 0.66216,
       "team": "Gen.G"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili",
-      "prob": 0.36222
+      "prob": 0.36389
      },
      {
       "team": "Gen.G",
-      "prob": 0.63778
+      "prob": 0.63611
      }
     ],
     "cutoff_utc": "2026-11-14T19:00:00+00:00",
@@ -144,31 +144,31 @@
       "team": "Saigon Warriors",
       "title": "Saigon Warriors wins",
       "ticker": "KXLOLGAME-26NOV130400SGWDFM-SGW",
-      "yes_bid_dollars": "0.5300",
-      "yes_ask_dollars": "0.5400",
-      "last_price_dollars": "0.5300",
-      "volume_dollars": "1284.46",
-      "open_interest": "1065.94"
+      "yes_bid_dollars": "0.7200",
+      "yes_ask_dollars": "0.7300",
+      "last_price_dollars": "0.7300",
+      "volume_dollars": "73811.23",
+      "open_interest": "61098.22"
      },
      {
       "team": "DetonatioN FocusMe",
       "title": "DetonatioN FocusMe wins",
       "ticker": "KXLOLGAME-26NOV130400SGWDFM-DFM",
-      "yes_bid_dollars": "0.4700",
-      "yes_ask_dollars": "0.4800",
-      "last_price_dollars": "0.4600",
-      "volume_dollars": "613.63",
-      "open_interest": "613.63"
+      "yes_bid_dollars": "0.2700",
+      "yes_ask_dollars": "0.2800",
+      "last_price_dollars": "0.2700",
+      "volume_dollars": "35023.91",
+      "open_interest": "22172.09"
      }
     ],
     "devigged": [
      {
       "team": "Saigon Warriors",
-      "prob": 0.5297
+      "prob": 0.725
      },
      {
       "team": "DetonatioN FocusMe",
-      "prob": 0.4703
+      "prob": 0.275
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov130400sgwdfm",
@@ -198,8 +198,8 @@
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
       "last_price_dollars": "0.6300",
-      "volume_dollars": "179540.90",
-      "open_interest": "168863.96"
+      "volume_dollars": "265931.06",
+      "open_interest": "245805.28"
      },
      {
       "team": "Bilibili Gaming",
@@ -208,8 +208,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "275003.97",
-      "open_interest": "256729.18"
+      "volume_dollars": "324190.06",
+      "open_interest": "299453.01"
      }
     ],
     "devigged": [
@@ -249,7 +249,7 @@
    "name": "BC.GAME esports",
    "url": "https://bc.game/sports/esports",
    "status": 200,
-   "body_bytes": 10848,
+   "body_bytes": 10849,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": true
@@ -291,7 +291,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2809,
+   "body_bytes": 2811,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
