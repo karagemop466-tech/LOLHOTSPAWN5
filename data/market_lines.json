@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-13T06:54:52Z",
+ "collected_utc": "2026-11-13T16:31:49Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -17,54 +17,6 @@
    }
   ],
   "matchups": [
-   {
-    "league": "League of Legends - World Championship",
-    "league_id": 9587,
-    "matchup_id": 1640273349,
-    "start_utc": "2026-11-14T19:00:00Z",
-    "is_live": false,
-    "participants": [
-     {
-      "id": null,
-      "name": "Bilibili",
-      "alignment": "home"
-     },
-     {
-      "id": null,
-      "name": "Gen.G",
-      "alignment": "away"
-     }
-    ],
-    "market_status": 200,
-    "prices": [
-     {
-      "designation": "home",
-      "american": 164,
-      "implied_raw": 0.37879,
-      "team": "Bilibili"
-     },
-     {
-      "designation": "away",
-      "american": -196,
-      "implied_raw": 0.66216,
-      "team": "Gen.G"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Bilibili",
-      "prob": 0.36389
-     },
-     {
-      "team": "Gen.G",
-      "prob": 0.63611
-     }
-    ],
-    "cutoff_utc": "2026-11-14T19:00:00+00:00",
-    "source": "Pinnacle",
-    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
-    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
-   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -87,31 +39,79 @@
     "prices": [
      {
       "designation": null,
-      "american": -198,
-      "implied_raw": 0.66443,
+      "american": -182,
+      "implied_raw": 0.64539,
       "team": null
      },
      {
       "designation": null,
-      "american": 162,
-      "implied_raw": 0.38168,
+      "american": 149,
+      "implied_raw": 0.40161,
       "team": null
      }
     ],
     "devigged": [
      {
       "team": null,
-      "prob": 0.63514
+      "prob": 0.61642
      },
      {
       "team": null,
-      "prob": 0.36486
+      "prob": 0.38358
      }
     ],
     "cutoff_utc": "2026-11-14T19:00:00+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
+   },
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1640273349,
+    "start_utc": "2026-11-14T19:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": null,
+      "name": "Bilibili",
+      "alignment": "home"
+     },
+     {
+      "id": null,
+      "name": "Gen.G",
+      "alignment": "away"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": "home",
+      "american": 150,
+      "implied_raw": 0.4,
+      "team": "Bilibili"
+     },
+     {
+      "designation": "away",
+      "american": -178,
+      "implied_raw": 0.64029,
+      "team": "Gen.G"
+     }
+    ],
+    "devigged": [
+     {
+      "team": "Bilibili",
+      "prob": 0.38451
+     },
+     {
+      "team": "Gen.G",
+      "prob": 0.61549
+     }
+    ],
+    "cutoff_utc": "2026-11-14T19:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
    }
   ],
   "errors": [],
@@ -124,57 +124,6 @@
    "KXLOLGAME (Kalshi exchange, League of Legends)"
   ],
   "matchups": [
-   {
-    "league": "KXLOLGAME",
-    "source": "Kalshi",
-    "matchup_id": "KXLOLGAME-26NOV130400SGWDFM",
-    "start_utc": "2026-11-13T13:00:00Z",
-    "participants": [
-     {
-      "name": "Saigon Warriors",
-      "alignment": "home"
-     },
-     {
-      "name": "DetonatioN FocusMe",
-      "alignment": "away"
-     }
-    ],
-    "prices": [
-     {
-      "team": "Saigon Warriors",
-      "title": "Saigon Warriors wins",
-      "ticker": "KXLOLGAME-26NOV130400SGWDFM-SGW",
-      "yes_bid_dollars": "0.7200",
-      "yes_ask_dollars": "0.7300",
-      "last_price_dollars": "0.7300",
-      "volume_dollars": "73811.23",
-      "open_interest": "61098.22"
-     },
-     {
-      "team": "DetonatioN FocusMe",
-      "title": "DetonatioN FocusMe wins",
-      "ticker": "KXLOLGAME-26NOV130400SGWDFM-DFM",
-      "yes_bid_dollars": "0.2700",
-      "yes_ask_dollars": "0.2800",
-      "last_price_dollars": "0.2700",
-      "volume_dollars": "35023.91",
-      "open_interest": "22172.09"
-     }
-    ],
-    "devigged": [
-     {
-      "team": "Saigon Warriors",
-      "prob": 0.725
-     },
-     {
-      "team": "DetonatioN FocusMe",
-      "prob": 0.275
-     }
-    ],
-    "url": "https://kalshi.com/markets/kxlolgame-26nov130400sgwdfm",
-    "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME&status=open&with_nested_markets=true&limit=200",
-    "rules_primary": "If Saigon Warriors wins the LCP Promotion 2027: Saigon Warriors vs. DetonatioN FocusMe League of Legends match originally scheduled for Nov 13, 2026 at 4:00 AM EST, then the market resolves to Yes."
-   },
    {
     "league": "KXLOLGAME",
     "source": "Kalshi",
@@ -198,8 +147,8 @@
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
       "last_price_dollars": "0.6300",
-      "volume_dollars": "265931.06",
-      "open_interest": "245805.28"
+      "volume_dollars": "286655.23",
+      "open_interest": "264961.45"
      },
      {
       "team": "Bilibili Gaming",
@@ -208,8 +157,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "324190.06",
-      "open_interest": "299453.01"
+      "volume_dollars": "363725.56",
+      "open_interest": "338988.51"
      }
     ],
     "devigged": [
@@ -228,7 +177,7 @@
    }
   ],
   "errors": [],
-  "events_seen": 2,
+  "events_seen": 1,
   "api_url": "https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXLOLGAME"
  },
  "bovada": {
@@ -291,7 +240,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2811,
+   "body_bytes": 2809,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
