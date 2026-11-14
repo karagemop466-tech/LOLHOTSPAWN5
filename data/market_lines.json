@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-14T00:54:45Z",
+ "collected_utc": "2026-11-14T11:35:21Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -17,6 +17,54 @@
    }
   ],
   "matchups": [
+   {
+    "league": "League of Legends - World Championship",
+    "league_id": 9587,
+    "matchup_id": 1639846470,
+    "start_utc": "2026-11-14T19:00:00Z",
+    "is_live": false,
+    "participants": [
+     {
+      "id": 1639846471,
+      "name": "Yes",
+      "alignment": "neutral"
+     },
+     {
+      "id": 1639846472,
+      "name": "No",
+      "alignment": "neutral"
+     }
+    ],
+    "market_status": 200,
+    "prices": [
+     {
+      "designation": null,
+      "american": -174,
+      "implied_raw": 0.63504,
+      "team": null
+     },
+     {
+      "designation": null,
+      "american": 143,
+      "implied_raw": 0.41152,
+      "team": null
+     }
+    ],
+    "devigged": [
+     {
+      "team": null,
+      "prob": 0.60679
+     },
+     {
+      "team": null,
+      "prob": 0.39321
+     }
+    ],
+    "cutoff_utc": "2026-11-14T19:00:00+00:00",
+    "source": "Pinnacle",
+    "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
+    "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1639846470/markets/related/straight"
+   },
    {
     "league": "League of Legends - World Championship",
     "league_id": 9587,
@@ -39,25 +87,25 @@
     "prices": [
      {
       "designation": "home",
-      "american": 148,
-      "implied_raw": 0.40323,
+      "american": 144,
+      "implied_raw": 0.40984,
       "team": "Bilibili"
      },
      {
       "designation": "away",
-      "american": -176,
-      "implied_raw": 0.63768,
+      "american": -171,
+      "implied_raw": 0.631,
       "team": "Gen.G"
      }
     ],
     "devigged": [
      {
       "team": "Bilibili",
-      "prob": 0.38738
+      "prob": 0.39376
      },
      {
       "team": "Gen.G",
-      "prob": 0.61262
+      "prob": 0.60624
      }
     ],
     "cutoff_utc": "2026-11-14T19:00:00+00:00",
@@ -98,9 +146,9 @@
       "ticker": "KXLOLGAME-26NOV141400GENBLG-GEN",
       "yes_bid_dollars": "0.6200",
       "yes_ask_dollars": "0.6300",
-      "last_price_dollars": "0.6200",
-      "volume_dollars": "331559.73",
-      "open_interest": "305424.11"
+      "last_price_dollars": "0.6300",
+      "volume_dollars": "462860.60",
+      "open_interest": "431829.09"
      },
      {
       "team": "Bilibili Gaming",
@@ -109,8 +157,8 @@
       "yes_bid_dollars": "0.3700",
       "yes_ask_dollars": "0.3800",
       "last_price_dollars": "0.3800",
-      "volume_dollars": "526221.68",
-      "open_interest": "434361.95"
+      "volume_dollars": "679982.25",
+      "open_interest": "571840.84"
      }
     ],
     "devigged": [
@@ -192,7 +240,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2810,
+   "body_bytes": 2811,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
