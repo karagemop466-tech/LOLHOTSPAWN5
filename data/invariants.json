@@ -1,16 +1,16 @@
 {
- "checked_utc": "2026-11-13T16:32:58Z",
+ "checked_utc": "2026-11-14T00:55:57Z",
  "rows": 155,
  "by_method": {
   "market": 1,
-  "model": 50,
-  "unresolved": 104
+  "model": 44,
+  "unresolved": 110
  },
- "with_a_pick": 51,
+ "with_a_pick": 45,
  "errors": [],
  "warnings": [],
  "notes": [
-  "match_results.json collected 2026-11-13T16:32:57Z (23390 rows)"
+  "match_results.json collected 2026-11-14T00:55:57Z (23396 rows)"
  ],
  "status": "pass",
  "results_snapshot_age_hours": 0.0

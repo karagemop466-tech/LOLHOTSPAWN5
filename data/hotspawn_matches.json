@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-13T16:31:48Z",
- "html_sha256": "3d3b45b26c396cbfceb4b7e8515f9f9622fd453c290623abc39f8e5369122032",
- "html_bytes": 712660,
+ "collected_utc": "2026-11-14T00:54:44Z",
+ "html_sha256": "74c518832373920d61be29ea6d583cfebf2b7f22c449af7d659e9467c389c54b",
+ "html_bytes": 663415,
  "match_count": 155,
  "lol_match_count": 155,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 56,
- "matches_without_hotspawn_page": 99,
+ "matches_with_hotspawn_page": 50,
+ "matches_without_hotspawn_page": 105,
  "matches": [
   {
    "id": "1053095",
@@ -2948,7 +2948,7 @@
     "hotspawn_pick_share": 87,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/atruvia-munster-esports-vs-kanji-esports-aka-prm-3rd-division-26-27-fall-1075793"
+   "hotspawn_url": null
   },
   {
    "id": "1079055",
@@ -2978,7 +2978,7 @@
     "hotspawn_pick_share": 80,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/locked-in-vs-404-multigaming-e-v-prm-2nd-division-26-27-fall-1079055"
+   "hotspawn_url": null
   },
   {
    "id": "1079056",
@@ -3008,7 +3008,7 @@
     "hotspawn_pick_share": 12,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-the-bandits-prime-prm-2nd-division-26-27-fall-1079056"
+   "hotspawn_url": null
   },
   {
    "id": "1079057",
@@ -3038,7 +3038,7 @@
     "hotspawn_pick_share": 76,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/regnum4games-vs-phong-vu-buffalo-prm-2nd-division-26-27-fall-1079057"
+   "hotspawn_url": null
   },
   {
    "id": "1079058",
@@ -3068,7 +3068,7 @@
     "hotspawn_pick_share": 17,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/vfb-esports-vs-dkb-xperion-nxt-prm-2nd-division-26-27-fall-1079058"
+   "hotspawn_url": null
   },
   {
    "id": "1081096",
@@ -3089,16 +3089,16 @@
    "home": {
     "id": "258710",
     "name": "Docta Esports Club",
-    "hotspawn_pick_share": 92,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
    "away": {
     "id": "263171",
     "name": "BaronX",
-    "hotspawn_pick_share": 8,
+    "hotspawn_pick_share": 12,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/docta-esports-club-vs-baronx-ligagg-celol-b-2026-split-2-playoffs-1081096"
+   "hotspawn_url": null
   },
   {
    "id": "1130143",
@@ -3175,7 +3175,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "190021",
     "name": "Madrid in Game",
@@ -3205,17 +3205,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "17496",
     "name": "Kawaii Kiwis",
-    "hotspawn_pick_share": 79,
+    "hotspawn_pick_share": 80,
     "score": 0
    },
    "away": {
     "id": "251968",
     "name": "UB Ascensus",
-    "hotspawn_pick_share": 21,
+    "hotspawn_pick_share": 20,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=kawaii-kiwis-vs-ub-ascensus-league-of-legends-match-at-madrid-in-game-2026-1131685"
@@ -3235,7 +3235,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "267004",
     "name": "Navarra In Game",
@@ -3265,7 +3265,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "169490",
     "name": "Oxygen Gaming",
@@ -3295,17 +3295,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "252913",
     "name": "Valkiria's Valhalla",
-    "hotspawn_pick_share": 86,
+    "hotspawn_pick_share": 87,
     "score": 0
    },
    "away": {
     "id": "189776",
     "name": "UCAM University Esports",
-    "hotspawn_pick_share": 14,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/?fixtures=valkirias-valhalla-vs-ucam-university-esports-league-of-legends-match-at-madrid-in-game-2026-1131688"
@@ -3325,7 +3325,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "204755",
     "name": "Valkiria's Thunder",
@@ -3355,7 +3355,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "252706",
     "name": "AzE eSports",
@@ -3385,7 +3385,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 15,
    "home": {
     "id": "169491",
     "name": "Veni Vidi Vici",
@@ -3415,7 +3415,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 9,
+   "total_picks": 10,
    "home": {
     "id": "142402",
     "name": "El Menzah Esports",
@@ -3445,7 +3445,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 9,
+   "total_picks": 10,
    "home": {
     "id": "241506",
     "name": "Olympique Mnihla",
