@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-14T18:15:08Z",
+ "collected_utc": "2026-11-14T23:57:58Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -13,7 +13,7 @@
     "sport_id": 12,
     "id": 9587,
     "name": "League of Legends - World Championship",
-    "matchup_count": 2
+    "matchup_count": 4
    }
   ],
   "matchups": [
@@ -69,7 +69,7 @@
     "league": "League of Legends - World Championship",
     "league_id": 9587,
     "matchup_id": 1640273349,
-    "start_utc": "2026-11-14T19:00:00Z",
+    "start_utc": "2026-11-14T19:53:19Z",
     "is_live": false,
     "participants": [
      {
@@ -86,29 +86,39 @@
     "market_status": 200,
     "prices": [
      {
-      "designation": "home",
-      "american": 162,
-      "implied_raw": 0.38168,
-      "team": "Bilibili"
+      "designation": null,
+      "american": 1000,
+      "implied_raw": 0.09091,
+      "team": null
      },
      {
-      "designation": "away",
-      "american": -193,
-      "implied_raw": 0.6587,
-      "team": "Gen.G"
+      "designation": null,
+      "american": -950,
+      "implied_raw": 0.90476,
+      "team": null
+     },
+     {
+      "designation": null,
+      "american": 1000,
+      "implied_raw": 0.09091,
+      "team": null
      }
     ],
     "devigged": [
      {
-      "team": "Bilibili",
-      "prob": 0.36686
+      "team": null,
+      "prob": 0.08367
      },
      {
-      "team": "Gen.G",
-      "prob": 0.63314
+      "team": null,
+      "prob": 0.83267
+     },
+     {
+      "team": null,
+      "prob": 0.08367
      }
     ],
-    "cutoff_utc": "2026-11-15T07:00:00+00:00",
+    "cutoff_utc": "2026-11-15T03:19:31.253000+00:00",
     "source": "Pinnacle",
     "url": "https://www.pinnacle.com/en/esports/league-of-legends/matchups/",
     "api_url": "https://guest.api.arcadia.pinnacle.com/0.1/matchups/1640273349/markets/related/straight"
@@ -144,31 +154,31 @@
       "team": "Gen.G",
       "title": "Gen.G wins",
       "ticker": "KXLOLGAME-26NOV141400GENBLG-GEN",
-      "yes_bid_dollars": "0.6100",
-      "yes_ask_dollars": "0.6200",
-      "last_price_dollars": "0.6200",
-      "volume_dollars": "650807.22",
-      "open_interest": "603690.09"
+      "yes_bid_dollars": "0.0700",
+      "yes_ask_dollars": "0.1000",
+      "last_price_dollars": "0.0200",
+      "volume_dollars": "3394285.18",
+      "open_interest": "2204868.60"
      },
      {
       "team": "Bilibili Gaming",
       "title": "Bilibili Gaming wins",
       "ticker": "KXLOLGAME-26NOV141400GENBLG-BLG",
-      "yes_bid_dollars": "0.3800",
-      "yes_ask_dollars": "0.3900",
-      "last_price_dollars": "0.3900",
-      "volume_dollars": "916976.48",
-      "open_interest": "805671.44"
+      "yes_bid_dollars": "0.9000",
+      "yes_ask_dollars": "0.9100",
+      "last_price_dollars": "0.9100",
+      "volume_dollars": "4247831.77",
+      "open_interest": "2312504.33"
      }
     ],
     "devigged": [
      {
       "team": "Gen.G",
-      "prob": 0.615
+      "prob": 0.08586
      },
      {
       "team": "Bilibili Gaming",
-      "prob": 0.385
+      "prob": 0.91414
      }
     ],
     "url": "https://kalshi.com/markets/kxlolgame-26nov141400genblg",
