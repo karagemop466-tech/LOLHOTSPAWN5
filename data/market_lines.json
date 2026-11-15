@@ -1,5 +1,5 @@
 {
- "collected_utc": "2026-11-15T06:46:00Z",
+ "collected_utc": "2026-11-15T15:42:37Z",
  "source_notes": {
   "pinnacle": "Pinnacle guest/arcadia API, sport=Esports, leagues matching 'League of Legends'. American prices stored verbatim; probabilities de-vigged proportionally.",
   "kalshi": "Kalshi trade API, series KXLOLGAME (per-match League of Legends moneylines). Dollar bid/ask stored verbatim; side midpoints de-vigged proportionally. Evidence: market ticker + API URL per row.",
@@ -10,8 +10,9 @@
  "pinnacle": {
   "leagues": [],
   "matchups": [],
-  "errors": [
-   "sports list: HTTP 403"
+  "errors": [],
+  "esports_sport_ids_probed": [
+   12
   ]
  },
  "kalshi": {
@@ -83,7 +84,7 @@
    "name": "1xBet esports",
    "url": "https://1xbet.com/esports",
    "status": 203,
-   "body_bytes": 2810,
+   "body_bytes": 2808,
    "note": "",
    "prices_parsed": 0,
    "mentions_lol": false
