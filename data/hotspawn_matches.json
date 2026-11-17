@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-17T02:58:26Z",
- "html_sha256": "29b3f1434e87edce7f62fd86862670d438ec3ef391f0ce8efafbdcd578aa4d21",
- "html_bytes": 456240,
- "match_count": 129,
- "lol_match_count": 129,
+ "collected_utc": "2026-11-17T13:35:45Z",
+ "html_sha256": "233bf23f0e09f35947d19e9dad441d755f510629c322f1809def652a325c3394",
+ "html_bytes": 468481,
+ "match_count": 127,
+ "lol_match_count": 127,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 26,
- "matches_without_hotspawn_page": 103,
+ "matches_with_hotspawn_page": 31,
+ "matches_without_hotspawn_page": 96,
  "matches": [
   {
    "id": "1053095",
@@ -2891,96 +2891,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1075794",
-   "competition_id": "36438",
-   "competition": "PRM 3rd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-16T18:00:00Z",
-   "start_epoch_ms": "1794852000000",
-   "lock_utc": "2026-11-16T17:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 43,
-   "home": {
-    "id": "246851",
-    "name": "Babos Gaming Academy",
-    "hotspawn_pick_share": 21,
-    "score": 0
-   },
-   "away": {
-    "id": "184871",
-    "name": "AIX eSports",
-    "hotspawn_pick_share": 79,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1075806",
-   "competition_id": "36438",
-   "competition": "PRM 3rd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-16T18:00:00Z",
-   "start_epoch_ms": "1794852000000",
-   "lock_utc": "2026-11-16T17:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 43,
-   "home": {
-    "id": "203851",
-    "name": "TeamOrangeGaming Academy",
-    "hotspawn_pick_share": 91,
-    "score": 0
-   },
-   "away": {
-    "id": "264562",
-    "name": "Socken und Sandalen",
-    "hotspawn_pick_share": 9,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1081707",
-   "competition_id": "36571",
-   "competition": "4 Nations 2026 Halloween Heist",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-16T19:00:00Z",
-   "start_epoch_ms": "1794855600000",
-   "lock_utc": "2026-11-16T18:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 28,
-   "home": {
-    "id": "248837",
-    "name": "Inari Esports",
-    "hotspawn_pick_share": 96,
-    "score": 0
-   },
-   "away": {
-    "id": "265504",
-    "name": "Crownless",
-    "hotspawn_pick_share": 4,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1132748",
    "competition_id": "36753",
    "competition": "GG Arena by Teknosa Season 2",
@@ -2995,20 +2905,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 2,
+   "total_picks": 17,
    "home": {
     "id": "267265",
     "name": "\u00c7ak\u0131l",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 29,
     "score": 0
    },
    "away": {
     "id": "246401",
     "name": "PCIFIC Esports",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 71,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2325"
+   "hotspawn_url": "https://www.hotspawn.com/matches/cakil-vs-pcific-esports-gg-arena-by-teknosa-season-2-1132748"
   },
   {
    "id": "1132749",
@@ -3025,20 +2935,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 2,
+   "total_picks": 16,
    "home": {
     "id": "267261",
     "name": "Balta Esports",
-    "hotspawn_pick_share": 50,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "away": {
     "id": "246400",
     "name": "SU Esports",
-    "hotspawn_pick_share": 50,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2326"
+   "hotspawn_url": "https://www.hotspawn.com/matches/balta-esports-vs-su-esports-gg-arena-by-teknosa-season-2-1132749"
   },
   {
    "id": "1082754",
@@ -3055,17 +2965,17 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 24,
+   "total_picks": 30,
    "home": {
     "id": "264344",
     "name": "Tung Sahur Mid",
-    "hotspawn_pick_share": 4,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "away": {
     "id": "54525",
     "name": "Lundqvist Darkside",
-    "hotspawn_pick_share": 96,
+    "hotspawn_pick_share": 87,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/tung-sahur-mid-vs-lundqvist-darkside-rivals-league-season-2-playoffs-1082754"
@@ -3085,7 +2995,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 41,
+   "total_picks": 46,
    "home": {
     "id": "246848",
     "name": "Defiance eSports",
@@ -3145,7 +3055,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 37,
+   "total_picks": 38,
    "home": {
     "id": "264565",
     "name": "REH Gaming",
@@ -3159,36 +3069,6 @@
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-cloud-esport-prm-3rd-division-26-27-fall-1075802"
-  },
-  {
-   "id": "1075803",
-   "competition_id": "36438",
-   "competition": "PRM 3rd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-19T18:00:00Z",
-   "start_epoch_ms": "1795111200000",
-   "lock_utc": "2026-11-19T17:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 37,
-   "home": {
-    "id": "37072",
-    "name": "Rich Gang",
-    "hotspawn_pick_share": 5,
-    "score": 0
-   },
-   "away": {
-    "id": "203886",
-    "name": "Whalepower Humpbacks",
-    "hotspawn_pick_share": 95,
-    "score": 0
-   },
-   "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075803"
   },
   {
    "id": "1082753",
@@ -3221,6 +3101,36 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/2-massive-vs-b2u-rivals-league-season-2-playoffs-1082753"
   },
   {
+   "id": "1081708",
+   "competition_id": "36571",
+   "competition": "4 Nations 2026 Halloween Heist",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-19T19:00:00Z",
+   "start_epoch_ms": "1795114800000",
+   "lock_utc": "2026-11-19T18:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": null,
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 1,
+   "home": {
+    "id": "19455",
+    "name": "Absolved",
+    "hotspawn_pick_share": 100,
+    "score": 0
+   },
+   "away": {
+    "id": "248837",
+    "name": "Inari Esports",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/matches/absolved-vs-inari-esports-4-nations-2026-halloween-heist-1081708"
+  },
+  {
    "id": "1130167",
    "competition_id": "36709",
    "competition": "Breeze of Glory 2026",
@@ -3248,7 +3158,7 @@
     "hotspawn_pick_share": 73,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2311"
+   "hotspawn_url": "https://www.hotspawn.com/matches/macko-esports-vs-gongji-breeze-of-glory-2026-1130167"
   },
   {
    "id": "1075791",
@@ -3308,7 +3218,7 @@
     "hotspawn_pick_share": 96,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=%e9%99%b0%e9%99%bd%e5%9b%9b%e5%b0%8f%e6%99%82-vs-sponge-gaming-league-of-legends-match-at-asia-esports-championship-2026-1130918"
+   "hotspawn_url": "https://www.hotspawn.com/matches/%e9%99%b0%e9%99%bd%e5%9b%9b%e5%b0%8f%e6%99%82-vs-sponge-gaming-asia-esports-championship-2026-1130918"
   },
   {
    "id": "1130919",
@@ -3338,7 +3248,7 @@
     "hotspawn_pick_share": 87,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=kr%e8%bf%8e%e7%a5%9e%e9%9a%8a-vs-%e6%b2%92%e6%9c%89%e6%84%8f%e7%be%a9-league-of-legends-match-at-asia-esports-championship-2026-1130919"
+   "hotspawn_url": "https://www.hotspawn.com/matches/kr%e8%bf%8e%e7%a5%9e%e9%9a%8a-vs-%e6%b2%92%e6%9c%89%e6%84%8f%e7%be%a9-asia-esports-championship-2026-1130919"
   },
   {
    "id": "1126370",
@@ -3359,16 +3269,16 @@
    "home": {
     "id": "88573",
     "name": "West Point Esports Philippines",
-    "hotspawn_pick_share": 95,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "away": {
     "id": "250285",
     "name": "Generation of Miracles",
-    "hotspawn_pick_share": 5,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2232"
+   "hotspawn_url": "https://www.hotspawn.com/matches/west-point-esports-philippines-vs-generation-of-miracles-predator-league-philippines-2027-1126370"
   },
   {
    "id": "1130709",
@@ -3398,7 +3308,7 @@
     "hotspawn_pick_share": 93,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2307"
+   "hotspawn_url": "https://www.hotspawn.com/matches/team-phantasma-vs-alpha-impact-hll-2026-super-cup-1130709"
   },
   {
    "id": "1130710",
@@ -3428,7 +3338,7 @@
     "hotspawn_pick_share": 93,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2308"
+   "hotspawn_url": "https://www.hotspawn.com/matches/zerolag-esports-vs-valerion-hll-2026-super-cup-1130710"
   },
   {
    "id": "1134344",
@@ -3445,17 +3355,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 13,
    "home": {
     "id": "232309",
     "name": "JSK Academy",
-    "hotspawn_pick_share": 92,
+    "hotspawn_pick_share": 85,
     "score": 0
    },
    "away": {
     "id": "241506",
     "name": "Olympique Mnihla",
-    "hotspawn_pick_share": 8,
+    "hotspawn_pick_share": 15,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/jsk-academy-vs-olympique-mnihla-tunisian-super-league-2026-1134344"
@@ -3475,20 +3385,50 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "265304",
     "name": "Supreme Leaders",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 82,
     "score": 0
    },
    "away": {
     "id": "142402",
     "name": "El Menzah Esports",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 18,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/supreme-leaders-vs-el-menzah-esports-tunisian-super-league-2026-1134345"
+  },
+  {
+   "id": "1075803",
+   "competition_id": "36438",
+   "competition": "PRM 3rd Division 26-27 Fall",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-21T18:00:00Z",
+   "start_epoch_ms": "1795284000000",
+   "lock_utc": "2026-11-21T17:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": null,
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 37,
+   "home": {
+    "id": "37072",
+    "name": "Rich Gang",
+    "hotspawn_pick_share": 5,
+    "score": 0
+   },
+   "away": {
+    "id": "203886",
+    "name": "Whalepower Humpbacks",
+    "hotspawn_pick_share": 95,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/matches/rich-gang-vs-whalepower-humpbacks-prm-3rd-division-26-27-fall-1075803"
   },
   {
    "id": "1131698",
@@ -3505,20 +3445,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 7,
    "home": {
     "id": "169490",
     "name": "Oxygen Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
    "away": {
     "id": "189776",
     "name": "UCAM University Esports",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/?fixtures=waiting-for-information-2320"
+   "hotspawn_url": "https://www.hotspawn.com/matches/oxygen-gaming-vs-ucam-university-esports-madrid-in-game-2026-1131698"
   },
   {
    "id": "1075804",
@@ -3625,20 +3565,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 7,
    "home": {
     "id": "203880",
     "name": "MT1 Esports",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 71,
     "score": 0
    },
    "away": {
     "id": "235214",
     "name": "Reveal Multigaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 29,
     "score": 0
    },
-   "hotspawn_url": null
+   "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-reveal-multigaming-prm-2nd-division-26-27-fall-relegation-1134485"
   },
   {
    "id": "1134486",
@@ -3655,20 +3595,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 7,
    "home": {
     "id": "19123",
     "name": "404 Multigaming e.V.",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 86,
     "score": 0
    },
    "away": {
     "id": "37855",
     "name": "Team 300",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 14,
     "score": 0
    },
-   "hotspawn_url": null
+   "hotspawn_url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-team-300-prm-2nd-division-26-27-fall-relegation-1134486"
   },
   {
    "id": "1134483",
@@ -3685,20 +3625,20 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "86632",
     "name": "AceGaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "away": {
     "id": "170682",
     "name": "regnum4games",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
-   "hotspawn_url": null
+   "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-regnum4games-prm-2nd-division-26-27-fall-playoffs-1134483"
   },
   {
    "id": "1134484",
@@ -3715,7 +3655,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 5,
+   "total_picks": 6,
    "home": {
     "id": "265041",
     "name": "reGOLD eSport",
@@ -3728,7 +3668,7 @@
     "hotspawn_pick_share": 0,
     "score": 0
    },
-   "hotspawn_url": null
+   "hotspawn_url": "https://www.hotspawn.com/matches/regold-esport-vs-the-bandits-prime-prm-2nd-division-26-27-fall-playoffs-1134484"
   },
   {
    "id": "1132597",
