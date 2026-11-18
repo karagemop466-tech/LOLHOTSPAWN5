@@ -1,9 +1,9 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-18T07:40:15Z",
- "html_sha256": "248d77530b333fb17838a4a57434d5f2706e0c13eeac14858a06a9eb9189efd2",
- "html_bytes": 443654,
+ "collected_utc": "2026-11-18T17:19:56Z",
+ "html_sha256": "cf2a51b4a67d685bb9e701dde3f1c805398a30c7ce35fd50bf3f2692cb3b8c2f",
+ "html_bytes": 451015,
  "match_count": 126,
  "lol_match_count": 126,
  "non_lol_rows": [],
@@ -2891,66 +2891,6 @@
    "hotspawn_url": null
   },
   {
-   "id": "1082754",
-   "competition_id": "36333",
-   "competition": "RIVALS LEAGUE Season 2 Playoffs",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-17T18:00:00Z",
-   "start_epoch_ms": "1794938400000",
-   "lock_utc": "2026-11-17T17:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": "playoffs",
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 33,
-   "home": {
-    "id": "264344",
-    "name": "Tung Sahur Mid",
-    "hotspawn_pick_share": 12,
-    "score": 0
-   },
-   "away": {
-    "id": "54525",
-    "name": "Lundqvist Darkside",
-    "hotspawn_pick_share": 88,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
-   "id": "1075798",
-   "competition_id": "36438",
-   "competition": "PRM 3rd Division 26-27 Fall",
-   "sport": "League of Legends",
-   "sport_alias": "lol",
-   "status": "scheduled",
-   "start_utc": "2026-11-17T19:00:00Z",
-   "start_epoch_ms": "1794942000000",
-   "lock_utc": "2026-11-17T18:55:00Z",
-   "lock_offset_sec": 300,
-   "tier": null,
-   "stage": null,
-   "best_of": null,
-   "offered_points": 10,
-   "total_picks": 49,
-   "home": {
-    "id": "246848",
-    "name": "Defiance eSports",
-    "hotspawn_pick_share": 78,
-    "score": 0
-   },
-   "away": {
-    "id": "218954",
-    "name": "Purple Emperor Lizards - Atomic",
-    "hotspawn_pick_share": 22,
-    "score": 0
-   },
-   "hotspawn_url": null
-  },
-  {
    "id": "1132750",
    "competition_id": "36753",
    "competition": "GG Arena by Teknosa Season 2",
@@ -2965,20 +2905,20 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 6,
+   "total_picks": 17,
    "home": {
     "id": "267265",
     "name": "\u00c7ak\u0131l",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 35,
     "score": 0
    },
    "away": {
     "id": "246400",
     "name": "SU Esports",
-    "hotspawn_pick_share": 100,
+    "hotspawn_pick_share": 65,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/cakil-vs-su-esports-gg-arena-by-teknosa-season-2-1132750"
+   "hotspawn_url": null
   },
   {
    "id": "1075797",
@@ -2995,17 +2935,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 42,
+   "total_picks": 48,
    "home": {
     "id": "264564",
     "name": "BlackDivision",
-    "hotspawn_pick_share": 95,
+    "hotspawn_pick_share": 96,
     "score": 0
    },
    "away": {
     "id": "233419",
     "name": "MT1 Vision",
-    "hotspawn_pick_share": 5,
+    "hotspawn_pick_share": 4,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/blackdivision-vs-mt1-vision-prm-3rd-division-26-27-fall-1075797"
@@ -3025,11 +2965,11 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 42,
+   "total_picks": 48,
    "home": {
     "id": "264565",
     "name": "REH Gaming",
-    "hotspawn_pick_share": 12,
+    "hotspawn_pick_share": 13,
     "score": 0
    },
    "away": {
@@ -3085,17 +3025,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 14,
    "home": {
     "id": "19455",
     "name": "Absolved",
-    "hotspawn_pick_share": 92,
+    "hotspawn_pick_share": 93,
     "score": 0
    },
    "away": {
     "id": "248837",
     "name": "Inari Esports",
-    "hotspawn_pick_share": 8,
+    "hotspawn_pick_share": 7,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/absolved-vs-inari-esports-4-nations-2026-halloween-heist-1081708"
@@ -3311,6 +3251,36 @@
    "hotspawn_url": "https://www.hotspawn.com/matches/zerolag-esports-vs-valerion-hll-2026-super-cup-1130710"
   },
   {
+   "id": "1072686",
+   "competition_id": "36333",
+   "competition": "RIVALS LEAGUE Season 2 Playoffs",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-21T17:00:00Z",
+   "start_epoch_ms": "1795280400000",
+   "lock_utc": "2026-11-21T16:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": "playoffs",
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 0,
+   "home": {
+    "id": "263907",
+    "name": "Turbo Gaming",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "away": {
+    "id": "54525",
+    "name": "Lundqvist Darkside",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": "https://www.hotspawn.com/matches/turbo-gaming-vs-lundqvist-darkside-rivals-league-season-2-playoffs-1072686"
+  },
+  {
    "id": "1134344",
    "competition_id": "36557",
    "competition": "Tunisian Super League 2026",
@@ -3415,17 +3385,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 13,
    "home": {
     "id": "169490",
     "name": "Oxygen Gaming",
-    "hotspawn_pick_share": 25,
+    "hotspawn_pick_share": 23,
     "score": 0
    },
    "away": {
     "id": "189776",
     "name": "UCAM University Esports",
-    "hotspawn_pick_share": 75,
+    "hotspawn_pick_share": 77,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/oxygen-gaming-vs-ucam-university-esports-madrid-in-game-2026-1131698"
@@ -3535,17 +3505,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "203880",
     "name": "MT1 Esports",
-    "hotspawn_pick_share": 82,
+    "hotspawn_pick_share": 83,
     "score": 0
    },
    "away": {
     "id": "235214",
     "name": "Reveal Multigaming",
-    "hotspawn_pick_share": 18,
+    "hotspawn_pick_share": 17,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-reveal-multigaming-prm-2nd-division-26-27-fall-relegation-1134485"
@@ -3565,17 +3535,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 11,
+   "total_picks": 12,
    "home": {
     "id": "19123",
     "name": "404 Multigaming e.V.",
-    "hotspawn_pick_share": 91,
+    "hotspawn_pick_share": 92,
     "score": 0
    },
    "away": {
     "id": "37855",
     "name": "Team 300",
-    "hotspawn_pick_share": 9,
+    "hotspawn_pick_share": 8,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/404-multigaming-e-v-vs-team-300-prm-2nd-division-26-27-fall-relegation-1134486"
@@ -3595,17 +3565,17 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "86632",
     "name": "AceGaming",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "away": {
     "id": "170682",
     "name": "regnum4games",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/acegaming-vs-regnum4games-prm-2nd-division-26-27-fall-playoffs-1134483"
@@ -3625,20 +3595,50 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 10,
+   "total_picks": 11,
    "home": {
     "id": "265041",
     "name": "reGOLD eSport",
-    "hotspawn_pick_share": 90,
+    "hotspawn_pick_share": 91,
     "score": 0
    },
    "away": {
     "id": "264942",
     "name": "The Bandits Prime",
-    "hotspawn_pick_share": 10,
+    "hotspawn_pick_share": 9,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/regold-esport-vs-the-bandits-prime-prm-2nd-division-26-27-fall-playoffs-1134484"
+  },
+  {
+   "id": "1134835",
+   "competition_id": "36438",
+   "competition": "PRM 3rd Division 26-27 Fall",
+   "sport": "League of Legends",
+   "sport_alias": "lol",
+   "status": "scheduled",
+   "start_utc": "2026-11-29T16:00:00Z",
+   "start_epoch_ms": "1795968000000",
+   "lock_utc": "2026-11-29T15:55:00Z",
+   "lock_offset_sec": 300,
+   "tier": null,
+   "stage": null,
+   "best_of": null,
+   "offered_points": 10,
+   "total_picks": 0,
+   "home": {
+    "id": "206094",
+    "name": "Glacial Guardians",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "away": {
+    "id": "184871",
+    "name": "AIX eSports",
+    "hotspawn_pick_share": 0,
+    "score": 0
+   },
+   "hotspawn_url": null
   },
   {
    "id": "1132597",
