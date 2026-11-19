@@ -1,14 +1,14 @@
 {
  "source": "https://play.hotspawn.com/lol-pickems",
  "source_name": "Hotspawn Play - League of Legends Pick'ems",
- "collected_utc": "2026-11-18T17:19:56Z",
- "html_sha256": "cf2a51b4a67d685bb9e701dde3f1c805398a30c7ce35fd50bf3f2692cb3b8c2f",
- "html_bytes": 451015,
+ "collected_utc": "2026-11-19T01:54:46Z",
+ "html_sha256": "979a4ee8f2e781ad2e0b73615b2e7d5a492e01efdca1e1a75417516be8b8bca8",
+ "html_bytes": 435077,
  "match_count": 126,
  "lol_match_count": 126,
  "non_lol_rows": [],
- "matches_with_hotspawn_page": 28,
- "matches_without_hotspawn_page": 98,
+ "matches_with_hotspawn_page": 26,
+ "matches_without_hotspawn_page": 100,
  "matches": [
   {
    "id": "1053095",
@@ -2948,7 +2948,7 @@
     "hotspawn_pick_share": 4,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/blackdivision-vs-mt1-vision-prm-3rd-division-26-27-fall-1075797"
+   "hotspawn_url": null
   },
   {
    "id": "1075802",
@@ -2978,7 +2978,7 @@
     "hotspawn_pick_share": 88,
     "score": 0
    },
-   "hotspawn_url": "https://www.hotspawn.com/matches/reh-gaming-vs-cloud-esport-prm-3rd-division-26-27-fall-1075802"
+   "hotspawn_url": null
   },
   {
    "id": "1082753",
@@ -2995,7 +2995,7 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 20,
+   "total_picks": 21,
    "home": {
     "id": "247777",
     "name": "2 Massive",
@@ -3025,17 +3025,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 14,
+   "total_picks": 16,
    "home": {
     "id": "19455",
     "name": "Absolved",
-    "hotspawn_pick_share": 93,
+    "hotspawn_pick_share": 94,
     "score": 0
    },
    "away": {
     "id": "248837",
     "name": "Inari Esports",
-    "hotspawn_pick_share": 7,
+    "hotspawn_pick_share": 6,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/absolved-vs-inari-esports-4-nations-2026-halloween-heist-1081708"
@@ -3059,13 +3059,13 @@
    "home": {
     "id": "27171",
     "name": "Macko Esports",
-    "hotspawn_pick_share": 30,
+    "hotspawn_pick_share": 25,
     "score": 0
    },
    "away": {
     "id": "266630",
     "name": "GONGJI",
-    "hotspawn_pick_share": 70,
+    "hotspawn_pick_share": 75,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/macko-esports-vs-gongji-breeze-of-glory-2026-1130167"
@@ -3149,13 +3149,13 @@
    "home": {
     "id": "266887",
     "name": "KR\u8fce\u795e\u968a",
-    "hotspawn_pick_share": 15,
+    "hotspawn_pick_share": 12,
     "score": 0
    },
    "away": {
     "id": "266770",
     "name": "\u6c92\u6709\u610f\u7fa9",
-    "hotspawn_pick_share": 85,
+    "hotspawn_pick_share": 88,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/kr%e8%bf%8e%e7%a5%9e%e9%9a%8a-vs-%e6%b2%92%e6%9c%89%e6%84%8f%e7%be%a9-asia-esports-championship-2026-1130919"
@@ -3239,13 +3239,13 @@
    "home": {
     "id": "24526",
     "name": "Zerolag eSports",
-    "hotspawn_pick_share": 11,
+    "hotspawn_pick_share": 5,
     "score": 0
    },
    "away": {
     "id": "260757",
     "name": "Valerion",
-    "hotspawn_pick_share": 89,
+    "hotspawn_pick_share": 95,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/zerolag-esports-vs-valerion-hll-2026-super-cup-1130710"
@@ -3265,11 +3265,11 @@
    "stage": "playoffs",
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 0,
+   "total_picks": 1,
    "home": {
     "id": "263907",
     "name": "Turbo Gaming",
-    "hotspawn_pick_share": 0,
+    "hotspawn_pick_share": 100,
     "score": 0
    },
    "away": {
@@ -3385,17 +3385,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 13,
+   "total_picks": 14,
    "home": {
     "id": "169490",
     "name": "Oxygen Gaming",
-    "hotspawn_pick_share": 23,
+    "hotspawn_pick_share": 21,
     "score": 0
    },
    "away": {
     "id": "189776",
     "name": "UCAM University Esports",
-    "hotspawn_pick_share": 77,
+    "hotspawn_pick_share": 79,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/oxygen-gaming-vs-ucam-university-esports-madrid-in-game-2026-1131698"
@@ -3505,17 +3505,17 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 13,
    "home": {
     "id": "203880",
     "name": "MT1 Esports",
-    "hotspawn_pick_share": 83,
+    "hotspawn_pick_share": 85,
     "score": 0
    },
    "away": {
     "id": "235214",
     "name": "Reveal Multigaming",
-    "hotspawn_pick_share": 17,
+    "hotspawn_pick_share": 15,
     "score": 0
    },
    "hotspawn_url": "https://www.hotspawn.com/matches/mt1-esports-vs-reveal-multigaming-prm-2nd-division-26-27-fall-relegation-1134485"
@@ -3535,7 +3535,7 @@
    "stage": null,
    "best_of": null,
    "offered_points": 10,
-   "total_picks": 12,
+   "total_picks": 13,
    "home": {
     "id": "19123",
     "name": "404 Multigaming e.V.",

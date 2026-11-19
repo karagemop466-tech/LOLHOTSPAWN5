@@ -1,20 +1,20 @@
 {
- "generated_utc": "2026-11-18T17:21:01Z",
+ "generated_utc": "2026-11-19T01:55:56Z",
  "totals": {
   "matches": 126,
-  "live_matches": 29,
+  "live_matches": 27,
   "by_method": {
    "market": 0,
-   "model": 27,
-   "unresolved": 99
+   "model": 25,
+   "unresolved": 101
   },
   "market_priced": 0,
-  "model_priced": 27,
-  "unresolved": 99,
-  "unresolved_stale": 97,
+  "model_priced": 25,
+  "unresolved": 101,
+  "unresolved_stale": 99,
   "unresolved_insufficient": 2,
-  "with_a_pick": 27,
-  "upcoming_with_a_pick": 27
+  "with_a_pick": 25,
+  "upcoming_with_a_pick": 25
  },
  "pages": [
   "index.html",
